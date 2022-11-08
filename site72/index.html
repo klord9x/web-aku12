@@ -70,15 +70,54 @@ img.emoji {
 <link rel="stylesheet" id="js_composer_front-css" href="/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=6.8.0" type="text/css" media="all">
 <link rel="stylesheet" id="dt-web-fonts-css" href="https://fonts.googleapis.com/css?family=Hind:400,600,700|Open Sans:400,600,700|Roboto:400,600,700|Raleway:400,600,700" type="text/css" media="all">
 <link rel="stylesheet" id="dt-main-css" href="/wp-content/themes/dt-the7/css/main.min.css?ver=11.1.1" type="text/css" media="all">
+<style id="dt-main-inline-css" type="text/css">body #load {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 9901;
+  opacity: 1;
+  visibility: visible;
+  transition: all .35s ease-out;
+}
+.load-wrap {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -ms-flex-pack: center;
+  -ms-justify-content: center;
+  justify-content: center;
+}
+.load-wrap > svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+#load {
+  background: var(--the7-elementor-beautiful-loading-bg,#ffffff);
+  --the7-beautiful-spinner-color2: var(--the7-beautiful-spinner-color,#fc656c);
+}</style>
 <link rel="stylesheet" id="the7-custom-scrollbar-css" href="/wp-content/themes/dt-the7/lib/custom-scrollbar/custom-scrollbar.min.css?ver=11.1.1" type="text/css" media="all">
 <link rel="stylesheet" id="the7-wpbakery-css" href="/wp-content/themes/dt-the7/css/wpbakery.min.css?ver=11.1.1" type="text/css" media="all">
 <link rel="stylesheet" id="the7-core-css" href="/wp-content/plugins/dt-the7-core/assets/css/post-type.min.css?ver=2.7.0" type="text/css" media="all">
-<link rel="stylesheet" id="the7-css-vars-css" href="/wp-content/uploads/sites/72/the7-css/css-vars.css?ver=dd7702c441e0" type="text/css" media="all">
-<link rel="stylesheet" id="dt-custom-css" href="/wp-content/uploads/sites/72/the7-css/custom.css?ver=dd7702c441e0" type="text/css" media="all">
-<link rel="stylesheet" id="dt-media-css" href="/wp-content/uploads/sites/72/the7-css/media.css?ver=dd7702c441e0" type="text/css" media="all">
-<link rel="stylesheet" id="the7-mega-menu-css" href="/wp-content/uploads/sites/72/the7-css/mega-menu.css?ver=dd7702c441e0" type="text/css" media="all">
-<link rel="stylesheet" id="the7-elements-albums-portfolio-css" href="/wp-content/uploads/sites/72/the7-css/the7-elements-albums-portfolio.css?ver=dd7702c441e0" type="text/css" media="all">
-<link rel="stylesheet" id="the7-elements-css" href="/wp-content/uploads/sites/72/the7-css/post-type-dynamic.css?ver=dd7702c441e0" type="text/css" media="all">
+<link rel="stylesheet" id="the7-css-vars-css" href="/wp-content/uploads/sites/72/the7-css/css-vars.css?ver=6a4ba6c474e4" type="text/css" media="all">
+<link rel="stylesheet" id="dt-custom-css" href="/wp-content/uploads/sites/72/the7-css/custom.css?ver=6a4ba6c474e4" type="text/css" media="all">
+<link rel="stylesheet" id="dt-media-css" href="/wp-content/uploads/sites/72/the7-css/media.css?ver=6a4ba6c474e4" type="text/css" media="all">
+<link rel="stylesheet" id="the7-mega-menu-css" href="/wp-content/uploads/sites/72/the7-css/mega-menu.css?ver=6a4ba6c474e4" type="text/css" media="all">
+<link rel="stylesheet" id="the7-elements-albums-portfolio-css" href="/wp-content/uploads/sites/72/the7-css/the7-elements-albums-portfolio.css?ver=6a4ba6c474e4" type="text/css" media="all">
+<link rel="stylesheet" id="the7-elements-css" href="/wp-content/uploads/sites/72/the7-css/post-type-dynamic.css?ver=6a4ba6c474e4" type="text/css" media="all">
 <link rel="stylesheet" id="style-css" href="/wp-content/themes/dt-the7/style.css?ver=11.1.1" type="text/css" media="all">
 <link rel="stylesheet" id="ultimate-vc-addons-google-fonts-css" href="https://fonts.googleapis.com/css?family=Raleway:regular,700,800|Hind:regular,600,700|" type="text/css" media="all">
 <link rel="stylesheet" id="ultimate-vc-addons-style-css" href="/wp-content/plugins/Ultimate_VC_Addons/assets/min-css/style.min.css?ver=3.19.11" type="text/css" media="all">
@@ -92,7 +131,7 @@ img.emoji {
 <script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
 <script type="text/javascript" id="dt-above-fold-js-extra">
 /* <![CDATA[ */
-var dtLocal = {"themeUrl":"\/wp-content\/themes\/dt-the7","passText":"To view this protected post, enter the password below:","moreButtonText":{"loading":"Loading...","loadMore":"Load more"},"postID":"857","ajaxurl":"\/wp-admin\/admin-ajax.php","REST":{"baseUrl":"\/site72\/wp-json\/the7\/v1","endpoints":{"sendMail":"\/send-mail"}},"contactMessages":{"required":"One or more fields have an error. Please check and try again.","terms":"Please accept the privacy policy.","fillTheCaptchaError":"Please, fill the captcha."},"captchaSiteKey":"","ajaxNonce":"bf9aed7ca8","pageData":{"type":"page","template":"microsite","layout":null},"themeSettings":{"smoothScroll":"off","lazyLoading":false,"accentColor":{"mode":"solid","color":"#ff6369"},"desktopHeader":{"height":""},"ToggleCaptionEnabled":"disabled","ToggleCaption":"Navigation","floatingHeader":{"showAfter":140,"showMenu":true,"height":60,"logo":{"showLogo":true,"html":"","url":"#!\/up"}},"topLine":{"floatingTopLine":{"logo":{"showLogo":false,"html":""}}},"mobileHeader":{"firstSwitchPoint":778,"secondSwitchPoint":0,"firstSwitchPointHeight":60,"secondSwitchPointHeight":60,"mobileToggleCaptionEnabled":"right","mobileToggleCaption":"menu"},"stickyMobileHeaderFirstSwitch":{"logo":{"html":"<img class=\" preload-me\" src=\"\/wp-content\/uploads\/sites\/72\/2016\/07\/logo-mob.gif\" srcset=\"\/wp-content\/uploads\/sites\/72\/2016\/07\/logo-mob.gif 60w, \/wp-content\/uploads\/sites\/72\/2016\/07\/logo-mob-hd.gif 120w\" width=\"60\" height=\"60\"   sizes=\"60px\" alt=\"Site72\" \/>"}},"stickyMobileHeaderSecondSwitch":{"logo":{"html":"<img class=\" preload-me\" src=\"\/wp-content\/uploads\/sites\/72\/2016\/07\/logo-mob.gif\" srcset=\"\/wp-content\/uploads\/sites\/72\/2016\/07\/logo-mob.gif 60w, \/wp-content\/uploads\/sites\/72\/2016\/07\/logo-mob-hd.gif 120w\" width=\"60\" height=\"60\"   sizes=\"60px\" alt=\"Site72\" \/>"}},"content":{"textColor":"#000000","headerColor":"#000000"},"sidebar":{"switchPoint":992},"boxedWidth":"1520px","stripes":{"stripe1":{"textColor":"#ffffff","headerColor":"#ffffff"},"stripe2":{"textColor":"#ffffff","headerColor":"#ffffff"},"stripe3":{"textColor":"#ffffff","headerColor":"#ffffff"}}},"VCMobileScreenWidth":"768"};
+var dtLocal = {"themeUrl":"\/wp-content\/themes\/dt-the7","passText":"To view this protected post, enter the password below:","moreButtonText":{"loading":"Loading...","loadMore":"Load more"},"postID":"857","ajaxurl":"\/wp-admin\/admin-ajax.php","REST":{"baseUrl":"\/site72\/wp-json\/the7\/v1","endpoints":{"sendMail":"\/send-mail"}},"contactMessages":{"required":"One or more fields have an error. Please check and try again.","terms":"Please accept the privacy policy.","fillTheCaptchaError":"Please, fill the captcha."},"captchaSiteKey":"","ajaxNonce":"7617c7901d","pageData":{"type":"page","template":"microsite","layout":null},"themeSettings":{"smoothScroll":"off","lazyLoading":false,"accentColor":{"mode":"solid","color":"#ff6369"},"desktopHeader":{"height":""},"ToggleCaptionEnabled":"disabled","ToggleCaption":"Navigation","floatingHeader":{"showAfter":140,"showMenu":true,"height":60,"logo":{"showLogo":true,"html":"","url":"#!\/up"}},"topLine":{"floatingTopLine":{"logo":{"showLogo":false,"html":""}}},"mobileHeader":{"firstSwitchPoint":778,"secondSwitchPoint":0,"firstSwitchPointHeight":60,"secondSwitchPointHeight":60,"mobileToggleCaptionEnabled":"right","mobileToggleCaption":"menu"},"stickyMobileHeaderFirstSwitch":{"logo":{"html":"<img class=\" preload-me\" src=\"\/wp-content\/uploads\/sites\/72\/2016\/07\/logo-mob.gif\" srcset=\"\/wp-content\/uploads\/sites\/72\/2016\/07\/logo-mob.gif 60w, \/wp-content\/uploads\/sites\/72\/2016\/07\/logo-mob-hd.gif 120w\" width=\"60\" height=\"60\"   sizes=\"60px\" alt=\"Site72\" \/>"}},"stickyMobileHeaderSecondSwitch":{"logo":{"html":"<img class=\" preload-me\" src=\"\/wp-content\/uploads\/sites\/72\/2016\/07\/logo-mob.gif\" srcset=\"\/wp-content\/uploads\/sites\/72\/2016\/07\/logo-mob.gif 60w, \/wp-content\/uploads\/sites\/72\/2016\/07\/logo-mob-hd.gif 120w\" width=\"60\" height=\"60\"   sizes=\"60px\" alt=\"Site72\" \/>"}},"content":{"textColor":"#000000","headerColor":"#000000"},"sidebar":{"switchPoint":992},"boxedWidth":"1520px","stripes":{"stripe1":{"textColor":"#ffffff","headerColor":"#ffffff"},"stripe2":{"textColor":"#ffffff","headerColor":"#ffffff"},"stripe3":{"textColor":"#ffffff","headerColor":"#ffffff"}}},"VCMobileScreenWidth":"768"};
 var dtShare = {"shareButtonText":{"facebook":"Share on Facebook","twitter":"Tweet","pinterest":"Pin it","linkedin":"Share on Linkedin","whatsapp":"Share on Whatsapp"},"overlayOpacity":"85"};
 /* ]]> */
 </script>
@@ -358,9 +397,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			<!-- END REVOLUTION SLIDER -->
 </div></div></div></div>
 <!-- Row Backgrounds --><div id="about" class="vc_row wpb_row vc_row-fluid vc_custom_1470077823677 vc_row-o-equal-height vc_row-flex">
-<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1470220624603"><div class="wpb_wrapper"><div id="ultimate-heading-15016369f0004fa78" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-15016369f0004fa78 uvc-2817 " data-hspacer="line_only" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-15016369f0004fa78 h2" data-responsive-json-new='{"font-size":"desktop:130px;tablet:130px;tablet_portrait:110px;mobile_landscape:80px;mobile:60px;","line-height":"desktop:130px;tablet:130px;tablet_portrait:130px;mobile_landscape:130px;mobile:130px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:700;color:rgba(0,0,0,0.05);">ABOUT ME</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-15016369f0004fa78 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:36px;tablet:36px;tablet_portrait:36px;mobile_landscape:36px;mobile:24px;","line-height":"desktop:42px;tablet:42px;tablet_portrait:42px;mobile_landscape:42px;mobile:42px;"}' style="font-family:&#039;Raleway&#039;;font-weight:700;color:#000000;margin-top:-86px;">Know Me Better</div>
+<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1470220624603"><div class="wpb_wrapper"><div id="ultimate-heading-9410636a45c2b3626" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-9410636a45c2b3626 uvc-5119 " data-hspacer="line_only" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9410636a45c2b3626 h2" data-responsive-json-new='{"font-size":"desktop:130px;tablet:130px;tablet_portrait:110px;mobile_landscape:80px;mobile:60px;","line-height":"desktop:130px;tablet:130px;tablet_portrait:130px;mobile_landscape:130px;mobile:130px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:700;color:rgba(0,0,0,0.05);">ABOUT ME</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9410636a45c2b3626 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:36px;tablet:36px;tablet_portrait:36px;mobile_landscape:36px;mobile:24px;","line-height":"desktop:42px;tablet:42px;tablet_portrait:42px;mobile_landscape:42px;mobile:42px;"}' style="font-family:&#039;Raleway&#039;;font-weight:700;color:#000000;margin-top:-86px;">Know Me Better</div>
 <div class="uvc-heading-spacer line_only" style="margin-top:5px;height:4px;"><span class="uvc-headings-line" style="border-style:solid;border-bottom-width:4px;border-color:#fc656c;width:120px;"></span></div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-lg-6 vc_col-md-4 vc_hidden-md vc_hidden-sm vc_hidden-xs"><div class="vc_column-inner vc_custom_1470074845956"><div class="wpb_wrapper">
@@ -372,17 +411,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	</div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-0 vc_col-lg-6 vc_col-md-offset-2 vc_col-md-8 vc_col-sm-offset-0 vc_col-xs-12"><div class="vc_column-inner vc_custom_1470075386481"><div class="wpb_wrapper">
-<div class="ult-spacer spacer-6369f00066724" data-id="6369f00066724" data-height="60" data-height-mobile="0" data-height-tab="0" data-height-tab-portrait="0" data-height-mobile-landscape="0" style="clear:both;display:block;"></div>
+<div class="ult-spacer spacer-636a45c2b48f1" data-id="636a45c2b48f1" data-height="60" data-height-mobile="0" data-height-tab="0" data-height-tab-portrait="0" data-height-mobile-landscape="0" style="clear:both;display:block;"></div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid custom-mobile-paddings vc_custom_1469973381534 vc_row-has-fill">
 <div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1470047104646"><div class="wpb_wrapper">
-<div id="ultimate-heading-10026369f00067490" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-10026369f00067490 uvc-2987 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div id="ultimate-heading-8988636a45c2b4e06" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-8988636a45c2b4e06 uvc-3256 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-10026369f00067490 h2" data-responsive-json-new='{"font-size":"desktop:36px;tablet:36px;tablet_portrait:36px;mobile_landscape:26px;mobile:18px;","line-height":"desktop:42px;tablet:42px;tablet_portrait:42px;mobile_landscape:32px;mobile:24px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:700;color:#ff6369;">Discover My</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-10026369f00067490 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:44px;tablet:44px;tablet_portrait:44px;mobile_landscape:34px;mobile:24px;","line-height":"desktop:50px;tablet:50px;tablet_portrait:50px;mobile_landscape:40px;mobile:30px;"}' style="font-family:&#039;Raleway&#039;;font-weight:700;color:#000000;margin-bottom:30px;">WORK &amp; LIFESTYLE</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-8988636a45c2b4e06 h2" data-responsive-json-new='{"font-size":"desktop:36px;tablet:36px;tablet_portrait:36px;mobile_landscape:26px;mobile:18px;","line-height":"desktop:42px;tablet:42px;tablet_portrait:42px;mobile_landscape:32px;mobile:24px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:700;color:#ff6369;">Discover My</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-8988636a45c2b4e06 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:44px;tablet:44px;tablet_portrait:44px;mobile_landscape:34px;mobile:24px;","line-height":"desktop:50px;tablet:50px;tablet_portrait:50px;mobile_landscape:40px;mobile:30px;"}' style="font-family:&#039;Raleway&#039;;font-weight:700;color:#000000;margin-bottom:30px;">WORK &amp; LIFESTYLE</div>
 </div>
-<div id="ultimate-heading-46916369f00067512" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-46916369f00067512 uvc-8927  uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div id="ultimate-heading-103636a45c2b4e6b" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-103636a45c2b4e6b uvc-438  uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-46916369f00067512 .uvc-sub-heading " data-responsive-json-new='{"font-size":"mobile:15px;","line-height":"mobile:25px;"}' style="font-weight:normal;margin-bottom:30px;">Aenean volutpat ipsum augue, quis pretium nisi sollicitudina. Morbi eget ultricies lacus, id ultrices lorem.
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-103636a45c2b4e6b .uvc-sub-heading " data-responsive-json-new='{"font-size":"mobile:15px;","line-height":"mobile:25px;"}' style="font-weight:normal;margin-bottom:30px;">Aenean volutpat ipsum augue, quis pretium nisi sollicitudina. Morbi eget ultricies lacus, id ultrices lorem.
 <p>Etiam at gravida odio, tincidunt sollicitudin enim. Phasellus luctus enim sed sapien ullamcorper, eu lobortis leo fringilla. Praesent aliquet malesuada velit, vehicula nulla for maximus tellus posuere ac.</p>
 </div>
 </div>
@@ -394,9 +433,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	<i class="icomoon-brankic-32x32-pictures"></i>
 </div>
 </div></div></div>
-<div class="stats-desc" id="counter-responsv-wrap-1445">
-<div id="counter_36868454816369f00067b86" data-id="counter_36868454816369f00067b86" data-ultimate-target="#counter-responsv-wrap-1445 .stats-number" data-responsive-json-new='{"font-size":"desktop:50px;","line-height":"desktop:50px;"}' class="stats-number ult-responsive" style=" color:#000000; font-family:&#039;Hind&#039;;font-weight:600;color:#000000;" data-speed="0" data-counter-value="120" data-separator="," data-decimal=".">0</div>
-<div id="counter_36868454816369f00067b86" data-ultimate-target="#counter-responsv-wrap-1445 .stats-text" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:26px;"}' class="stats-text ult-responsive" style="font-size:px; color:#000000; font-weight:bold;">Illustrations Done</div>
+<div class="stats-desc" id="counter-responsv-wrap-8950">
+<div id="counter_680808306636a45c2b514d" data-id="counter_680808306636a45c2b514d" data-ultimate-target="#counter-responsv-wrap-8950 .stats-number" data-responsive-json-new='{"font-size":"desktop:50px;","line-height":"desktop:50px;"}' class="stats-number ult-responsive" style=" color:#000000; font-family:&#039;Hind&#039;;font-weight:600;color:#000000;" data-speed="0" data-counter-value="120" data-separator="," data-decimal=".">0</div>
+<div id="counter_680808306636a45c2b514d" data-ultimate-target="#counter-responsv-wrap-8950 .stats-text" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:26px;"}' class="stats-text ult-responsive" style="font-size:px; color:#000000; font-weight:bold;">Illustrations Done</div>
 </div>
 </div>
 <div class="stats-block stats-left  ">
@@ -405,9 +444,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	<i class="icomoon-brankic-32x32-smiley"></i>
 </div>
 </div></div></div>
-<div class="stats-desc" id="counter-responsv-wrap-8259">
-<div id="counter_33839413606369f00067cad" data-id="counter_33839413606369f00067cad" data-ultimate-target="#counter-responsv-wrap-8259 .stats-number" data-responsive-json-new='{"font-size":"desktop:50px;","line-height":"desktop:50px;"}' class="stats-number ult-responsive" style=" color:#000000; font-family:&#039;Hind&#039;;font-weight:600;color:#000000;" data-speed="0" data-counter-value="27" data-separator="," data-decimal=".">0</div>
-<div id="counter_33839413606369f00067cad" data-ultimate-target="#counter-responsv-wrap-8259 .stats-text" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:26px;"}' class="stats-text ult-responsive" style="font-size:px; color:#000000; font-weight:bold;">Satisfied Clients</div>
+<div class="stats-desc" id="counter-responsv-wrap-4226">
+<div id="counter_2397467872636a45c2b5211" data-id="counter_2397467872636a45c2b5211" data-ultimate-target="#counter-responsv-wrap-4226 .stats-number" data-responsive-json-new='{"font-size":"desktop:50px;","line-height":"desktop:50px;"}' class="stats-number ult-responsive" style=" color:#000000; font-family:&#039;Hind&#039;;font-weight:600;color:#000000;" data-speed="0" data-counter-value="27" data-separator="," data-decimal=".">0</div>
+<div id="counter_2397467872636a45c2b5211" data-ultimate-target="#counter-responsv-wrap-4226 .stats-text" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:26px;"}' class="stats-text ult-responsive" style="font-size:px; color:#000000; font-weight:bold;">Satisfied Clients</div>
 </div>
 </div>
 </div></div></div>
@@ -418,9 +457,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	<i class="icomoon-brankic-32x32-calendar3"></i>
 </div>
 </div></div></div>
-<div class="stats-desc" id="counter-responsv-wrap-8327">
-<div id="counter_35452192366369f00067f4d" data-id="counter_35452192366369f00067f4d" data-ultimate-target="#counter-responsv-wrap-8327 .stats-number" data-responsive-json-new='{"font-size":"desktop:50px;","line-height":"desktop:50px;"}' class="stats-number ult-responsive" style=" color:#000000; font-family:&#039;Hind&#039;;font-weight:600;color:#000000;" data-speed="0" data-counter-value="12" data-separator="," data-decimal=".">0</div>
-<div id="counter_35452192366369f00067f4d" data-ultimate-target="#counter-responsv-wrap-8327 .stats-text" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:26px;"}' class="stats-text ult-responsive" style="font-size:px; color:#000000; font-weight:bold;">Years of Experience</div>
+<div class="stats-desc" id="counter-responsv-wrap-7656">
+<div id="counter_1091338910636a45c2b547f" data-id="counter_1091338910636a45c2b547f" data-ultimate-target="#counter-responsv-wrap-7656 .stats-number" data-responsive-json-new='{"font-size":"desktop:50px;","line-height":"desktop:50px;"}' class="stats-number ult-responsive" style=" color:#000000; font-family:&#039;Hind&#039;;font-weight:600;color:#000000;" data-speed="0" data-counter-value="12" data-separator="," data-decimal=".">0</div>
+<div id="counter_1091338910636a45c2b547f" data-ultimate-target="#counter-responsv-wrap-7656 .stats-text" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:26px;"}' class="stats-text ult-responsive" style="font-size:px; color:#000000; font-weight:bold;">Years of Experience</div>
 </div>
 </div>
 <div class="stats-block stats-left  ">
@@ -429,55 +468,55 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	<i class="icomoon-brankic-32x32-medal2"></i>
 </div>
 </div></div></div>
-<div class="stats-desc" id="counter-responsv-wrap-2415">
-<div id="counter_21835237266369f0007ca46" data-id="counter_21835237266369f0007ca46" data-ultimate-target="#counter-responsv-wrap-2415 .stats-number" data-responsive-json-new='{"font-size":"desktop:50px;","line-height":"desktop:50px;"}' class="stats-number ult-responsive" style=" color:#000000; font-family:&#039;Hind&#039;;font-weight:600;color:#000000;" data-speed="0" data-counter-value="8" data-separator="," data-decimal=".">0</div>
-<div id="counter_21835237266369f0007ca46" data-ultimate-target="#counter-responsv-wrap-2415 .stats-text" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:26px;"}' class="stats-text ult-responsive" style="font-size:px; color:#000000; font-weight:bold;">Awards Won</div>
+<div class="stats-desc" id="counter-responsv-wrap-5948">
+<div id="counter_146655946636a45c2b55c3" data-id="counter_146655946636a45c2b55c3" data-ultimate-target="#counter-responsv-wrap-5948 .stats-number" data-responsive-json-new='{"font-size":"desktop:50px;","line-height":"desktop:50px;"}' class="stats-number ult-responsive" style=" color:#000000; font-family:&#039;Hind&#039;;font-weight:600;color:#000000;" data-speed="0" data-counter-value="8" data-separator="," data-decimal=".">0</div>
+<div id="counter_146655946636a45c2b55c3" data-ultimate-target="#counter-responsv-wrap-5948 .stats-text" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:26px;"}' class="stats-text ult-responsive" style="font-size:px; color:#000000; font-weight:bold;">Awards Won</div>
 </div>
 </div>
 </div></div></div>
 </div>
 </div></div></div>
 </div>
-<div class="vc_row wpb_row vc_row-fluid vc_custom_1470218453781"><div class="wpb_column vc_column_container vc_col-sm-10 vc_col-lg-offset-3 vc_col-lg-6 vc_col-md-offset-2 vc_col-md-8 vc_col-sm-offset-1 vc_col-xs-12"><div class="vc_column-inner vc_custom_1470077885047"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid custom-mobile-paddings vc_custom_1469973262886 vc_row-has-fill"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1469972972735"><div class="wpb_wrapper"><div id="ultimate-heading-39516369f0007efc9" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-39516369f0007efc9 uvc-4492 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div class="vc_row wpb_row vc_row-fluid vc_custom_1470218453781"><div class="wpb_column vc_column_container vc_col-sm-10 vc_col-lg-offset-3 vc_col-lg-6 vc_col-md-offset-2 vc_col-md-8 vc_col-sm-offset-1 vc_col-xs-12"><div class="vc_column-inner vc_custom_1470077885047"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid custom-mobile-paddings vc_custom_1469973262886 vc_row-has-fill"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1469972972735"><div class="wpb_wrapper"><div id="ultimate-heading-1985636a45c2b615c" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-1985636a45c2b615c uvc-4659 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-39516369f0007efc9 h2" data-responsive-json-new='{"font-size":"desktop:30px;tablet:30px;tablet_portrait:30px;mobile_landscape:24px;mobile:16px;","line-height":"desktop:40px;tablet:42px;tablet_portrait:42px;mobile_landscape:36px;mobile:26px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:700;color:#ffffff;">“The greatness of art is not to find what is common but what is unique.”</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-39516369f0007efc9 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:20px;tablet:20px;tablet_portrait:20px;mobile_landscape:15px;mobile:12px;","line-height":"desktop:30px;tablet:30px;tablet_portrait:30px;mobile_landscape:25px;mobile:18px;"}' style="font-weight:900;color:#fc656c;margin-top:20px;margin-bottom:30px;">&#8211; Isaac Bashevis Singer</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1985636a45c2b615c h2" data-responsive-json-new='{"font-size":"desktop:30px;tablet:30px;tablet_portrait:30px;mobile_landscape:24px;mobile:16px;","line-height":"desktop:40px;tablet:42px;tablet_portrait:42px;mobile_landscape:36px;mobile:26px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:700;color:#ffffff;">“The greatness of art is not to find what is common but what is unique.”</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1985636a45c2b615c .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:20px;tablet:20px;tablet_portrait:20px;mobile_landscape:15px;mobile:12px;","line-height":"desktop:30px;tablet:30px;tablet_portrait:30px;mobile_landscape:25px;mobile:18px;"}' style="font-weight:900;color:#fc656c;margin-top:20px;margin-bottom:30px;">&#8211; Isaac Bashevis Singer</div>
 </div></div></div></div></div></div></div></div></div>
 <!-- Row Backgrounds --><div class="upb_bg_img" data-ultimate-bg="url(/wp-content/uploads/sites/72/2016/07/q-02.jpg)" data-image-id="id^920|url^/wp-content/uploads/sites/72/2016/07/q-02.jpg|caption^null|alt^null|title^q-02|description^null" data-ultimate-bg-style="vcpb-vz-jquery" data-bg-img-repeat="no-repeat" data-bg-img-size="cover" data-bg-img-position="" data-parallx_sense="20" data-bg-override="0" data-bg_img_attach="scroll" data-upb-overlay-color="rgba(0,0,0,0.5)" data-upb-bg-animation="" data-fadeout="" data-bg-animation="left-animation" data-bg-animation-type="h" data-animation-repeat="repeat" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false" data-custom-vc-row="" data-vc="6.8.0" data-is_old_vc="" data-theme-support="" data-overlay="true" data-overlay-color="rgba(0,0,0,0.5)" data-overlay-pattern="" data-overlay-pattern-opacity="0.8" data-overlay-pattern-size="" data-overlay-pattern-attachment="scroll"></div>
 <div id="services" class="vc_row wpb_row vc_row-fluid vc_custom_1470222121792 vc_row-o-equal-height vc_row-flex">
-<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1470220721637"><div class="wpb_wrapper"><div id="ultimate-heading-56046369f000806c9" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-56046369f000806c9 uvc-3921 " data-hspacer="line_only" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-56046369f000806c9 h2" data-responsive-json-new='{"font-size":"desktop:130px;tablet:130px;tablet_portrait:110px;mobile_landscape:80px;mobile:60px;","line-height":"desktop:130px;tablet:130px;tablet_portrait:130px;mobile_landscape:130px;mobile:130px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:700;color:rgba(0,0,0,0.05);">SERVICES</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-56046369f000806c9 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:36px;tablet:36px;tablet_portrait:36px;mobile_landscape:36px;mobile:24px;","line-height":"desktop:42px;tablet:42px;tablet_portrait:42px;mobile_landscape:42px;mobile:42px;"}' style="font-family:&#039;Raleway&#039;;font-weight:700;color:#000000;margin-top:-86px;">I Make Digital Stuff</div>
+<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1470220721637"><div class="wpb_wrapper"><div id="ultimate-heading-6734636a45c2b69f7" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-6734636a45c2b69f7 uvc-5584 " data-hspacer="line_only" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6734636a45c2b69f7 h2" data-responsive-json-new='{"font-size":"desktop:130px;tablet:130px;tablet_portrait:110px;mobile_landscape:80px;mobile:60px;","line-height":"desktop:130px;tablet:130px;tablet_portrait:130px;mobile_landscape:130px;mobile:130px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:700;color:rgba(0,0,0,0.05);">SERVICES</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6734636a45c2b69f7 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:36px;tablet:36px;tablet_portrait:36px;mobile_landscape:36px;mobile:24px;","line-height":"desktop:42px;tablet:42px;tablet_portrait:42px;mobile_landscape:42px;mobile:42px;"}' style="font-family:&#039;Raleway&#039;;font-weight:700;color:#000000;margin-top:-86px;">I Make Digital Stuff</div>
 <div class="uvc-heading-spacer line_only" style="margin-top:5px;height:4px;"><span class="uvc-headings-line" style="border-style:solid;border-bottom-width:4px;border-color:#fc656c;width:120px;"></span></div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1469968235724"><div class="wpb_wrapper">
 <div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1469968386153">
 <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-offset-1 vc_col-lg-4 vc_col-md-offset-0 vc_col-md-6 vc_col-sm-offset-0"><div class="vc_column-inner vc_custom_1470075893641"><div class="wpb_wrapper">
-<div class="ult-spacer spacer-6369f000815c6" data-id="6369f000815c6" data-height="60" data-height-mobile="0" data-height-tab="0" data-height-tab-portrait="0" data-height-mobile-landscape="0" style="clear:both;display:block;"></div>
+<div class="ult-spacer spacer-636a45c2b6e6f" data-id="636a45c2b6e6f" data-height="60" data-height-mobile="0" data-height-tab="0" data-height-tab-portrait="0" data-height-mobile-landscape="0" style="clear:both;display:block;"></div>
 <div class="aio-icon-component  vc_custom_1470042142328   style_2">
-<div id="Info-box-wrap-5771" class="aio-icon-box left-icon">
+<div id="Info-box-wrap-2951" class="aio-icon-box left-icon">
 <div class="aio-icon-left"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon advanced " data-animation="fadeInDown" data-animation-delay="03" style="color:#fc656c;background:#ffffff;border-style:solid;border-color:#fc656c;border-width:4px;width:70px;height:70px;line-height:70px;border-radius:500px;font-size:40px;display:inline-block;">
 	<i class="icomoon-brankic-32x32-pictures"></i>
 </div>
 </div></div></div>
 <div class="aio-ibd-block">
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-5771 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:24px;mobile:20px;","line-height":"desktop:30px;mobile:26px;"}' style="font-weight:700;color:#000000;">Commercial Art</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-5771 .aio-icon-description" data-responsive-json-new='{"font-size":"mobile:15px;","line-height":"mobile:25px;"}'>Fusce vitae ullamcorper nulla, aliquam commodo erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-2951 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:24px;mobile:20px;","line-height":"desktop:30px;mobile:26px;"}' style="font-weight:700;color:#000000;">Commercial Art</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-2951 .aio-icon-description" data-responsive-json-new='{"font-size":"mobile:15px;","line-height":"mobile:25px;"}'>Fusce vitae ullamcorper nulla, aliquam commodo erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</div> <!-- description -->
 </div> <!-- aio-ibd-block -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component -->
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-4 vc_col-md-6"><div class="vc_column-inner vc_custom_1470075969614"><div class="wpb_wrapper">
-<div class="ult-spacer spacer-6369f00096056" data-id="6369f00096056" data-height="60" data-height-mobile="0" data-height-tab="0" data-height-tab-portrait="0" data-height-mobile-landscape="0" style="clear:both;display:block;"></div>
+<div class="ult-spacer spacer-636a45c2c6218" data-id="636a45c2c6218" data-height="60" data-height-mobile="0" data-height-tab="0" data-height-tab-portrait="0" data-height-mobile-landscape="0" style="clear:both;display:block;"></div>
 <div class="aio-icon-component  vc_custom_1470042155469   style_2">
-<div id="Info-box-wrap-6115" class="aio-icon-box left-icon">
+<div id="Info-box-wrap-5999" class="aio-icon-box left-icon">
 <div class="aio-icon-left"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon advanced " data-animation="fadeInDown" data-animation-delay="03" style="color:#fc656c;background:#ffffff;border-style:solid;border-color:#fc656c;border-width:4px;width:70px;height:70px;line-height:70px;border-radius:500px;font-size:40px;display:inline-block;">
 	<i class="icomoon-brankic-32x32-book2"></i>
 </div>
 </div></div></div>
 <div class="aio-ibd-block">
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-6115 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:24px;mobile:20px;","line-height":"desktop:30px;mobile:26px;"}' style="font-weight:700;color:#000000;">Books Illustrations</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-6115 .aio-icon-description" data-responsive-json-new='{"font-size":"mobile:15px;","line-height":"mobile:25px;"}'>Lorem ipsum dolor venenatis eleifend tellus, sit amet suscipit lorem posuere nec. Phasellus finibus sapien at orci pretium lacinia from.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-5999 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:24px;mobile:20px;","line-height":"desktop:30px;mobile:26px;"}' style="font-weight:700;color:#000000;">Books Illustrations</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-5999 .aio-icon-description" data-responsive-json-new='{"font-size":"mobile:15px;","line-height":"mobile:25px;"}'>Lorem ipsum dolor venenatis eleifend tellus, sit amet suscipit lorem posuere nec. Phasellus finibus sapien at orci pretium lacinia from.</div> <!-- description -->
 </div> <!-- aio-ibd-block -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component -->
@@ -501,31 +540,31 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	</div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-offset-0 vc_col-lg-4 vc_col-md-offset-0 vc_col-md-6 vc_col-sm-offset-0"><div class="vc_column-inner vc_custom_1470075914668"><div class="wpb_wrapper">
-<div class="ult-spacer spacer-6369f0009cddb" data-id="6369f0009cddb" data-height="30" data-height-mobile="0" data-height-tab="0" data-height-tab-portrait="0" data-height-mobile-landscape="0" style="clear:both;display:block;"></div>
+<div class="ult-spacer spacer-636a45c2c742e" data-id="636a45c2c742e" data-height="30" data-height-mobile="0" data-height-tab="0" data-height-tab-portrait="0" data-height-mobile-landscape="0" style="clear:both;display:block;"></div>
 <div class="aio-icon-component  vc_custom_1470065487664   style_2">
-<div id="Info-box-wrap-3414" class="aio-icon-box left-icon">
+<div id="Info-box-wrap-2654" class="aio-icon-box left-icon">
 <div class="aio-icon-left"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon advanced " data-animation="fadeInDown" data-animation-delay="03" style="color:#fc656c;background:#ffffff;border-style:solid;border-color:#fc656c;border-width:4px;width:70px;height:70px;line-height:70px;border-radius:500px;font-size:40px;display:inline-block;">
 	<i class="icomoon-brankic-32x32-window"></i>
 </div>
 </div></div></div>
 <div class="aio-ibd-block">
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-3414 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:24px;mobile:20px;","line-height":"desktop:30px;mobile:26px;"}' style="font-weight:700;color:#000000;">Web Illustrations</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-3414 .aio-icon-description" data-responsive-json-new='{"font-size":"mobile:15px;","line-height":"mobile:25px;"}'>Nulla venenatis eleifend tellus, sit amet suscipit lorem posuere nec. Phasellus finibus sapien at orci pretium lacinia dolor.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-2654 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:24px;mobile:20px;","line-height":"desktop:30px;mobile:26px;"}' style="font-weight:700;color:#000000;">Web Illustrations</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-2654 .aio-icon-description" data-responsive-json-new='{"font-size":"mobile:15px;","line-height":"mobile:25px;"}'>Nulla venenatis eleifend tellus, sit amet suscipit lorem posuere nec. Phasellus finibus sapien at orci pretium lacinia dolor.</div> <!-- description -->
 </div> <!-- aio-ibd-block -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component -->
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-4 vc_col-md-6 vc_col-sm-offset-0"><div class="vc_column-inner vc_custom_1470075925962"><div class="wpb_wrapper">
-<div class="ult-spacer spacer-6369f0009d0ff" data-id="6369f0009d0ff" data-height="30" data-height-mobile="0" data-height-tab="0" data-height-tab-portrait="0" data-height-mobile-landscape="0" style="clear:both;display:block;"></div>
+<div class="ult-spacer spacer-636a45c2c7712" data-id="636a45c2c7712" data-height="30" data-height-mobile="0" data-height-tab="0" data-height-tab-portrait="0" data-height-mobile-landscape="0" style="clear:both;display:block;"></div>
 <div class="aio-icon-component  vc_custom_1470042176914   style_2">
-<div id="Info-box-wrap-8274" class="aio-icon-box left-icon">
+<div id="Info-box-wrap-9831" class="aio-icon-box left-icon">
 <div class="aio-icon-left"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon advanced " data-animation="fadeInDown" data-animation-delay="03" style="color:#fc656c;background:#ffffff;border-style:solid;border-color:#fc656c;border-width:4px;width:70px;height:70px;line-height:70px;border-radius:500px;font-size:40px;display:inline-block;">
 	<i class="icomoon-brankic-32x32-box2"></i>
 </div>
 </div></div></div>
 <div class="aio-ibd-block">
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-8274 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:24px;mobile:20px;","line-height":"desktop:30px;mobile:26px;"}' style="font-weight:700;color:#000000;">Packaging</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-8274 .aio-icon-description" data-responsive-json-new='{"font-size":"mobile:15px;","line-height":"mobile:25px;"}'>Fusce vitae ullamcorper nulla, aliquam commodo erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-9831 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:24px;mobile:20px;","line-height":"desktop:30px;mobile:26px;"}' style="font-weight:700;color:#000000;">Packaging</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-9831 .aio-icon-description" data-responsive-json-new='{"font-size":"mobile:15px;","line-height":"mobile:25px;"}'>Fusce vitae ullamcorper nulla, aliquam commodo erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</div> <!-- description -->
 </div> <!-- aio-ibd-block -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component -->
@@ -533,16 +572,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </div>
 </div></div></div>
 </div>
-<div class="vc_row wpb_row vc_row-fluid vc_custom_1470232520586"><div class="wpb_column vc_column_container vc_col-sm-10 vc_col-lg-offset-3 vc_col-lg-6 vc_col-md-offset-2 vc_col-md-8 vc_col-sm-offset-1 vc_col-xs-12"><div class="vc_column-inner vc_custom_1470077903008"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid custom-mobile-paddings vc_custom_1469973262886 vc_row-has-fill"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1469972972735"><div class="wpb_wrapper"><div id="ultimate-heading-90986369f000ada29" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-90986369f000ada29 uvc-5889 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div class="vc_row wpb_row vc_row-fluid vc_custom_1470232520586"><div class="wpb_column vc_column_container vc_col-sm-10 vc_col-lg-offset-3 vc_col-lg-6 vc_col-md-offset-2 vc_col-md-8 vc_col-sm-offset-1 vc_col-xs-12"><div class="vc_column-inner vc_custom_1470077903008"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid custom-mobile-paddings vc_custom_1469973262886 vc_row-has-fill"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1469972972735"><div class="wpb_wrapper"><div id="ultimate-heading-2386636a45c2c815f" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2386636a45c2c815f uvc-7636 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-90986369f000ada29 h2" data-responsive-json-new='{"font-size":"desktop:30px;tablet:30px;tablet_portrait:30px;mobile_landscape:24px;mobile:16px;","line-height":"desktop:40px;tablet:42px;tablet_portrait:42px;mobile_landscape:36px;mobile:26px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:700;color:#ffffff;">“Drawing is the honesty of the art. There is no possibility of cheating. It is either good or bad.”</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-90986369f000ada29 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:20px;tablet:20px;tablet_portrait:20px;mobile_landscape:15px;mobile:12px;","line-height":"desktop:30px;tablet:30px;tablet_portrait:30px;mobile_landscape:25px;mobile:18px;"}' style="font-weight:900;color:#fc656c;margin-top:20px;margin-bottom:30px;">– Salvador Dali</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2386636a45c2c815f h2" data-responsive-json-new='{"font-size":"desktop:30px;tablet:30px;tablet_portrait:30px;mobile_landscape:24px;mobile:16px;","line-height":"desktop:40px;tablet:42px;tablet_portrait:42px;mobile_landscape:36px;mobile:26px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:700;color:#ffffff;">“Drawing is the honesty of the art. There is no possibility of cheating. It is either good or bad.”</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2386636a45c2c815f .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:20px;tablet:20px;tablet_portrait:20px;mobile_landscape:15px;mobile:12px;","line-height":"desktop:30px;tablet:30px;tablet_portrait:30px;mobile_landscape:25px;mobile:18px;"}' style="font-weight:900;color:#fc656c;margin-top:20px;margin-bottom:30px;">– Salvador Dali</div>
 </div></div></div></div></div></div></div></div></div>
 <!-- Row Backgrounds --><div class="upb_bg_img" data-ultimate-bg="url(/wp-content/uploads/sites/72/2016/07/q-15.jpg)" data-image-id="id^981|url^/wp-content/uploads/sites/72/2016/07/q-15.jpg|caption^null|alt^null|title^q-15|description^null" data-ultimate-bg-style="vcpb-vz-jquery" data-bg-img-repeat="no-repeat" data-bg-img-size="cover" data-bg-img-position="" data-parallx_sense="20" data-bg-override="0" data-bg_img_attach="scroll" data-upb-overlay-color="rgba(0,0,0,0.5)" data-upb-bg-animation="" data-fadeout="" data-bg-animation="left-animation" data-bg-animation-type="h" data-animation-repeat="repeat" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false" data-custom-vc-row="" data-vc="6.8.0" data-is_old_vc="" data-theme-support="" data-overlay="true" data-overlay-color="rgba(0,0,0,0.5)" data-overlay-pattern="" data-overlay-pattern-opacity="0.8" data-overlay-pattern-size="" data-overlay-pattern-attachment="scroll"></div>
 <div id="portfolio" class="vc_row wpb_row vc_row-fluid vc_custom_1474195411254 vc_row-o-equal-height vc_row-flex">
-<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1474195416997"><div class="wpb_wrapper"><div id="ultimate-heading-55596369f000aecf5" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-55596369f000aecf5 uvc-8632 " data-hspacer="line_only" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-55596369f000aecf5 h2" data-responsive-json-new='{"font-size":"desktop:130px;tablet:130px;tablet_portrait:110px;mobile_landscape:80px;mobile:60px;","line-height":"desktop:130px;tablet:130px;tablet_portrait:130px;mobile_landscape:130px;mobile:130px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:700;color:rgba(0,0,0,0.05);">PORTFOLIO</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-55596369f000aecf5 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:36px;tablet:36px;tablet_portrait:36px;mobile_landscape:36px;mobile:24px;","line-height":"desktop:42px;tablet:42px;tablet_portrait:42px;mobile_landscape:42px;mobile:42px;"}' style="font-family:&#039;Raleway&#039;;font-weight:700;color:#000000;margin-top:-86px;">Discover My Works</div>
+<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1474195416997"><div class="wpb_wrapper"><div id="ultimate-heading-6768636a45c2c8b0e" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-6768636a45c2c8b0e uvc-8137 " data-hspacer="line_only" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6768636a45c2c8b0e h2" data-responsive-json-new='{"font-size":"desktop:130px;tablet:130px;tablet_portrait:110px;mobile_landscape:80px;mobile:60px;","line-height":"desktop:130px;tablet:130px;tablet_portrait:130px;mobile_landscape:130px;mobile:130px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:700;color:rgba(0,0,0,0.05);">PORTFOLIO</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6768636a45c2c8b0e .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:36px;tablet:36px;tablet_portrait:36px;mobile_landscape:36px;mobile:24px;","line-height":"desktop:42px;tablet:42px;tablet_portrait:42px;mobile_landscape:42px;mobile:42px;"}' style="font-family:&#039;Raleway&#039;;font-weight:700;color:#000000;margin-top:-86px;">Discover My Works</div>
 <div class="uvc-heading-spacer line_only" style="margin-top:5px;height:4px;"><span class="uvc-headings-line" style="border-style:solid;border-bottom-width:4px;border-color:#fc656c;width:120px;"></span></div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="dt-shortcode with-isotope">
@@ -710,27 +749,27 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </div>
 </div></div></div></div>
 </div>
-<div class="vc_row wpb_row vc_row-fluid vc_custom_1470232508366"><div class="wpb_column vc_column_container vc_col-sm-10 vc_col-lg-offset-3 vc_col-lg-6 vc_col-md-offset-2 vc_col-md-8 vc_col-sm-offset-1 vc_col-xs-12"><div class="vc_column-inner vc_custom_1470077934025"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid custom-mobile-paddings vc_custom_1469973262886 vc_row-has-fill"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1469972972735"><div class="wpb_wrapper"><div id="ultimate-heading-18616369f00b81a19" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-18616369f00b81a19 uvc-229 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div class="vc_row wpb_row vc_row-fluid vc_custom_1470232508366"><div class="wpb_column vc_column_container vc_col-sm-10 vc_col-lg-offset-3 vc_col-lg-6 vc_col-md-offset-2 vc_col-md-8 vc_col-sm-offset-1 vc_col-xs-12"><div class="vc_column-inner vc_custom_1470077934025"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid custom-mobile-paddings vc_custom_1469973262886 vc_row-has-fill"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1469972972735"><div class="wpb_wrapper"><div id="ultimate-heading-7315636a45c3068c5" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-7315636a45c3068c5 uvc-5357 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-18616369f00b81a19 h2" data-responsive-json-new='{"font-size":"desktop:30px;tablet:30px;tablet_portrait:30px;mobile_landscape:24px;mobile:16px;","line-height":"desktop:40px;tablet:42px;tablet_portrait:42px;mobile_landscape:36px;mobile:26px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:700;color:#ffffff;">“An artist is not paid for his labor but for his vision.”</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-18616369f00b81a19 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:20px;tablet:20px;tablet_portrait:20px;mobile_landscape:15px;mobile:12px;","line-height":"desktop:30px;tablet:30px;tablet_portrait:30px;mobile_landscape:25px;mobile:18px;"}' style="font-weight:900;color:#fc656c;margin-top:20px;margin-bottom:30px;">– James Whistler</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-7315636a45c3068c5 h2" data-responsive-json-new='{"font-size":"desktop:30px;tablet:30px;tablet_portrait:30px;mobile_landscape:24px;mobile:16px;","line-height":"desktop:40px;tablet:42px;tablet_portrait:42px;mobile_landscape:36px;mobile:26px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:700;color:#ffffff;">“An artist is not paid for his labor but for his vision.”</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-7315636a45c3068c5 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:20px;tablet:20px;tablet_portrait:20px;mobile_landscape:15px;mobile:12px;","line-height":"desktop:30px;tablet:30px;tablet_portrait:30px;mobile_landscape:25px;mobile:18px;"}' style="font-weight:900;color:#fc656c;margin-top:20px;margin-bottom:30px;">– James Whistler</div>
 </div></div></div></div></div></div></div></div></div>
 <!-- Row Backgrounds --><div class="upb_bg_img" data-ultimate-bg="url(/wp-content/uploads/sites/72/2016/07/q-04.jpg)" data-image-id="id^923|url^/wp-content/uploads/sites/72/2016/07/q-04.jpg|caption^null|alt^null|title^q-04|description^null" data-ultimate-bg-style="vcpb-vz-jquery" data-bg-img-repeat="no-repeat" data-bg-img-size="cover" data-bg-img-position="" data-parallx_sense="20" data-bg-override="0" data-bg_img_attach="scroll" data-upb-overlay-color="rgba(0,0,0,0.5)" data-upb-bg-animation="" data-fadeout="" data-bg-animation="left-animation" data-bg-animation-type="h" data-animation-repeat="repeat" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false" data-custom-vc-row="" data-vc="6.8.0" data-is_old_vc="" data-theme-support="" data-overlay="true" data-overlay-color="rgba(0,0,0,0.5)" data-overlay-pattern="" data-overlay-pattern-opacity="0.8" data-overlay-pattern-size="" data-overlay-pattern-attachment="scroll"></div>
 <div id="clients" class="vc_row wpb_row vc_row-fluid vc_custom_1470073786854 vc_row-o-equal-height vc_row-flex">
-<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1470220975817"><div class="wpb_wrapper"><div id="ultimate-heading-59616369f00b95a46" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-59616369f00b95a46 uvc-5112 " data-hspacer="line_only" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-59616369f00b95a46 h2" data-responsive-json-new='{"font-size":"desktop:130px;tablet:130px;tablet_portrait:110px;mobile_landscape:80px;mobile:60px;","line-height":"desktop:130px;tablet:130px;tablet_portrait:130px;mobile_landscape:130px;mobile:130px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:700;color:rgba(0,0,0,0.05);">CLIENTS</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-59616369f00b95a46 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:36px;tablet:36px;tablet_portrait:36px;mobile_landscape:36px;mobile:24px;","line-height":"desktop:42px;tablet:42px;tablet_portrait:42px;mobile_landscape:42px;mobile:42px;"}' style="font-family:&#039;Raleway&#039;;font-weight:700;color:#000000;margin-top:-86px;">I Build Relations</div>
+<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1470220975817"><div class="wpb_wrapper"><div id="ultimate-heading-2769636a45c3070eb" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2769636a45c3070eb uvc-8302 " data-hspacer="line_only" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2769636a45c3070eb h2" data-responsive-json-new='{"font-size":"desktop:130px;tablet:130px;tablet_portrait:110px;mobile_landscape:80px;mobile:60px;","line-height":"desktop:130px;tablet:130px;tablet_portrait:130px;mobile_landscape:130px;mobile:130px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:700;color:rgba(0,0,0,0.05);">CLIENTS</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2769636a45c3070eb .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:36px;tablet:36px;tablet_portrait:36px;mobile_landscape:36px;mobile:24px;","line-height":"desktop:42px;tablet:42px;tablet_portrait:42px;mobile_landscape:42px;mobile:42px;"}' style="font-family:&#039;Raleway&#039;;font-weight:700;color:#000000;margin-top:-86px;">I Build Relations</div>
 <div class="uvc-heading-spacer line_only" style="margin-top:5px;height:4px;"><span class="uvc-headings-line" style="border-style:solid;border-bottom-width:4px;border-color:#fc656c;width:120px;"></span></div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-0 vc_col-lg-8 vc_col-md-offset-1 vc_col-md-10 vc_col-sm-offset-0"><div class="vc_column-inner vc_custom_1470075439165"><div class="wpb_wrapper">
-<div class="ult-spacer spacer-6369f00b95ec3" data-id="6369f00b95ec3" data-height="60" data-height-mobile="0" data-height-tab="0" data-height-tab-portrait="0" data-height-mobile-landscape="0" style="clear:both;display:block;"></div>
+<div class="ult-spacer spacer-636a45c3072b5" data-id="636a45c3072b5" data-height="60" data-height-mobile="0" data-height-tab="0" data-height-tab-portrait="0" data-height-mobile-landscape="0" style="clear:both;display:block;"></div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid custom-mobile-paddings vc_custom_1469976414447 vc_row-has-fill"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1469976402976"><div class="wpb_wrapper">
-<div id="ultimate-heading-29016369f00b96393" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-29016369f00b96393 uvc-7118 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-2699636a45c307636" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2699636a45c307636 uvc-9398 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-29016369f00b96393 h2" data-responsive-json-new='{"font-size":"desktop:36px;tablet:36px;tablet_portrait:36px;mobile_landscape:26px;mobile:18px;","line-height":"desktop:42px;tablet:42px;tablet_portrait:42px;mobile_landscape:32px;mobile:24px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:700;color:#ff6369;">I'm Proud to Work With</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-29016369f00b96393 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:44px;tablet:44px;tablet_portrait:44px;mobile_landscape:34px;mobile:24px;","line-height":"desktop:50px;tablet:50px;tablet_portrait:50px;mobile_landscape:40px;mobile:30px;"}' style="font-family:&#039;Raleway&#039;;font-weight:700;color:#000000;margin-bottom:30px;">THESE AWESOME GUYS</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2699636a45c307636 h2" data-responsive-json-new='{"font-size":"desktop:36px;tablet:36px;tablet_portrait:36px;mobile_landscape:26px;mobile:18px;","line-height":"desktop:42px;tablet:42px;tablet_portrait:42px;mobile_landscape:32px;mobile:24px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:700;color:#ff6369;">I'm Proud to Work With</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2699636a45c307636 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:44px;tablet:44px;tablet_portrait:44px;mobile_landscape:34px;mobile:24px;","line-height":"desktop:50px;tablet:50px;tablet_portrait:50px;mobile_landscape:40px;mobile:30px;"}' style="font-family:&#039;Raleway&#039;;font-weight:700;color:#000000;margin-bottom:30px;">THESE AWESOME GUYS</div>
 </div>
-<div id="ult-carousel-38135096036369f00b96458" class="ult-carousel-wrapper  vc_custom_1469976364226  ult_horizontal" data-gutter="20" data-rtl="false"><div class="ult-carousel-7088711396369f00b96419 ">
+<div id="ult-carousel-2404284367636a45c3076fd" class="ult-carousel-wrapper  vc_custom_1469976364226  ult_horizontal" data-gutter="20" data-rtl="false"><div class="ult-carousel-1338155283636a45c3076c3 ">
 <div class="ult-item-wrap" data-animation="animated no-animation">
 	<div class="wpb_single_image wpb_content_element vc_align_center">
 		
@@ -789,8 +828,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </div>
 </div></div>			<script type="text/javascript">
 				jQuery(document).ready(function ($) {
-					if( typeof jQuery('.ult-carousel-7088711396369f00b96419').slick == "function"){
-						$('.ult-carousel-7088711396369f00b96419').slick({dots: false,autoplaySpeed: 5000,speed: 600,infinite: true,arrows: true,nextArrow: '<button type="button" role="button" aria-label="Next" style="color:#fc656c; font-size:36px;" class="slick-next default"><i class="ultsl-arrow-right4"><\/i><\/button>',prevArrow: '<button type="button" role="button" aria-label="Previous" style="color:#fc656c; font-size:36px;" class="slick-prev default"><i class="ultsl-arrow-left4"><\/i><\/button>',slidesToScroll:1,slidesToShow:4,swipe: true,draggable: true,touchMove: true,pauseOnHover: true,pauseOnFocus: false,responsive: [
+					if( typeof jQuery('.ult-carousel-1338155283636a45c3076c3').slick == "function"){
+						$('.ult-carousel-1338155283636a45c3076c3').slick({dots: false,autoplaySpeed: 5000,speed: 600,infinite: true,arrows: true,nextArrow: '<button type="button" role="button" aria-label="Next" style="color:#fc656c; font-size:36px;" class="slick-next default"><i class="ultsl-arrow-right4"><\/i><\/button>',prevArrow: '<button type="button" role="button" aria-label="Previous" style="color:#fc656c; font-size:36px;" class="slick-prev default"><i class="ultsl-arrow-left4"><\/i><\/button>',slidesToScroll:1,slidesToShow:4,swipe: true,draggable: true,touchMove: true,pauseOnHover: true,pauseOnFocus: false,responsive: [
 							{
 							  breakpoint: 1026,
 							  settings: {
@@ -818,9 +857,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 					}
 				});
 			</script>
-			<div id="ultimate-heading-4576369f00bde9c6" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-4576369f00bde9c6 uvc-7280  uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+			<div id="ultimate-heading-2080636a45c31bb06" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2080636a45c31bb06 uvc-4259  uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4576369f00bde9c6 .uvc-sub-heading " data-responsive-json-new='{"font-size":"mobile:15px;","line-height":"mobile:25px;"}' style="font-weight:normal;margin-top:30px;margin-bottom:30px;">Etiam at gravida odio, tincidunt sollicitudin enim. Phasellus luctus enim sed sapien ullamcorper, eu lobortis leo fringilla. Praesent aliquet malesuada velit!</div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2080636a45c31bb06 .uvc-sub-heading " data-responsive-json-new='{"font-size":"mobile:15px;","line-height":"mobile:25px;"}' style="font-weight:normal;margin-top:30px;margin-bottom:30px;">Etiam at gravida odio, tincidunt sollicitudin enim. Phasellus luctus enim sed sapien ullamcorper, eu lobortis leo fringilla. Praesent aliquet malesuada velit!</div>
 </div>
 <style type="text/css">#dt-btn-1 {color: #000000;border-color: #000000;}#dt-btn-1 > .text-wrap * {color: #000000;}</style>
 <div class="text-centered"><a href="#!/testimonials" class="btn-shortcode dt-btn-m dt-btn outline-btn custom-btn-color accent-btn-hover-color accent-btn-bg-hover-color anchor-link" id="dt-btn-1"><span>Read testimonials</span></a></div>
@@ -835,24 +874,24 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	</div>
 </div></div></div>
 </div>
-<div class="vc_row wpb_row vc_row-fluid vc_custom_1470219317633"><div class="wpb_column vc_column_container vc_col-sm-10 vc_col-lg-offset-3 vc_col-lg-6 vc_col-md-offset-2 vc_col-md-8 vc_col-sm-offset-1 vc_col-xs-12"><div class="vc_column-inner vc_custom_1470077954593"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid custom-mobile-paddings vc_custom_1469973262886 vc_row-has-fill"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1469972972735"><div class="wpb_wrapper"><div id="ultimate-heading-79916369f00bdffae" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-79916369f00bdffae uvc-8984 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div class="vc_row wpb_row vc_row-fluid vc_custom_1470219317633"><div class="wpb_column vc_column_container vc_col-sm-10 vc_col-lg-offset-3 vc_col-lg-6 vc_col-md-offset-2 vc_col-md-8 vc_col-sm-offset-1 vc_col-xs-12"><div class="vc_column-inner vc_custom_1470077954593"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid custom-mobile-paddings vc_custom_1469973262886 vc_row-has-fill"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1469972972735"><div class="wpb_wrapper"><div id="ultimate-heading-225636a45c31cc59" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-225636a45c31cc59 uvc-4628 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-79916369f00bdffae h2" data-responsive-json-new='{"font-size":"desktop:30px;tablet:30px;tablet_portrait:30px;mobile_landscape:24px;mobile:16px;","line-height":"desktop:40px;tablet:42px;tablet_portrait:42px;mobile_landscape:36px;mobile:26px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:700;color:#ffffff;">“I dream my painting and I paint my dream.” </h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-79916369f00bdffae .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:20px;tablet:20px;tablet_portrait:20px;mobile_landscape:15px;mobile:12px;","line-height":"desktop:30px;tablet:30px;tablet_portrait:30px;mobile_landscape:25px;mobile:18px;"}' style="font-weight:900;color:#fc656c;margin-top:20px;margin-bottom:30px;">&#8211; Vincent van Gogh</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-225636a45c31cc59 h2" data-responsive-json-new='{"font-size":"desktop:30px;tablet:30px;tablet_portrait:30px;mobile_landscape:24px;mobile:16px;","line-height":"desktop:40px;tablet:42px;tablet_portrait:42px;mobile_landscape:36px;mobile:26px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:700;color:#ffffff;">“I dream my painting and I paint my dream.” </h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-225636a45c31cc59 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:20px;tablet:20px;tablet_portrait:20px;mobile_landscape:15px;mobile:12px;","line-height":"desktop:30px;tablet:30px;tablet_portrait:30px;mobile_landscape:25px;mobile:18px;"}' style="font-weight:900;color:#fc656c;margin-top:20px;margin-bottom:30px;">&#8211; Vincent van Gogh</div>
 </div></div></div></div></div></div></div></div></div>
 <!-- Row Backgrounds --><div class="upb_bg_img" data-ultimate-bg="url(/wp-content/uploads/sites/72/2016/07/q-08.jpg)" data-image-id="id^931|url^/wp-content/uploads/sites/72/2016/07/q-08.jpg|caption^null|alt^null|title^q-08|description^null" data-ultimate-bg-style="vcpb-vz-jquery" data-bg-img-repeat="no-repeat" data-bg-img-size="cover" data-bg-img-position="" data-parallx_sense="20" data-bg-override="0" data-bg_img_attach="scroll" data-upb-overlay-color="rgba(0,0,0,0.5)" data-upb-bg-animation="" data-fadeout="" data-bg-animation="left-animation" data-bg-animation-type="h" data-animation-repeat="repeat" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false" data-custom-vc-row="" data-vc="6.8.0" data-is_old_vc="" data-theme-support="" data-overlay="true" data-overlay-color="rgba(0,0,0,0.5)" data-overlay-pattern="" data-overlay-pattern-opacity="0.8" data-overlay-pattern-size="" data-overlay-pattern-attachment="scroll"></div>
 <div id="testimonials" class="vc_row wpb_row vc_row-fluid vc_custom_1470077974571 vc_row-o-equal-height vc_row-flex">
-<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1470221042933"><div class="wpb_wrapper"><div id="ultimate-heading-66846369f00be089d" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-66846369f00be089d uvc-9101 " data-hspacer="line_only" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-66846369f00be089d h2" data-responsive-json-new='{"font-size":"desktop:130px;tablet:130px;tablet_portrait:110px;mobile_landscape:80px;mobile:60px;","line-height":"desktop:130px;tablet:130px;tablet_portrait:130px;mobile_landscape:130px;mobile:130px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:700;color:rgba(0,0,0,0.05);">TESTIMONIALS</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-66846369f00be089d .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:36px;tablet:36px;tablet_portrait:36px;mobile_landscape:36px;mobile:24px;","line-height":"desktop:42px;tablet:42px;tablet_portrait:42px;mobile_landscape:42px;mobile:42px;"}' style="font-family:&#039;Raleway&#039;;font-weight:700;color:#000000;margin-top:-86px;">What My Clients Say</div>
+<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1470221042933"><div class="wpb_wrapper"><div id="ultimate-heading-2723636a45c31d4a3" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2723636a45c31d4a3 uvc-2750 " data-hspacer="line_only" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2723636a45c31d4a3 h2" data-responsive-json-new='{"font-size":"desktop:130px;tablet:130px;tablet_portrait:110px;mobile_landscape:80px;mobile:60px;","line-height":"desktop:130px;tablet:130px;tablet_portrait:130px;mobile_landscape:130px;mobile:130px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:700;color:rgba(0,0,0,0.05);">TESTIMONIALS</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2723636a45c31d4a3 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:36px;tablet:36px;tablet_portrait:36px;mobile_landscape:36px;mobile:24px;","line-height":"desktop:42px;tablet:42px;tablet_portrait:42px;mobile_landscape:42px;mobile:42px;"}' style="font-family:&#039;Raleway&#039;;font-weight:700;color:#000000;margin-top:-86px;">What My Clients Say</div>
 <div class="uvc-heading-spacer line_only" style="margin-top:5px;height:4px;"><span class="uvc-headings-line" style="border-style:solid;border-bottom-width:4px;border-color:#fc656c;width:120px;"></span></div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-2 vc_col-lg-8 vc_col-md-offset-2 vc_col-md-8 vc_col-sm-offset-0 vc_col-xs-12"><div class="vc_column-inner"><div class="wpb_wrapper">
-<div id="ult-carousel-17455219296369f00be0aa3" class="ult-carousel-wrapper  vc_custom_1469961846568  ult_horizontal" data-gutter="20" data-rtl="false"><div class="ult-carousel-3031239706369f00be0a6e ">
+<div id="ult-carousel-3663436045636a45c31d724" class="ult-carousel-wrapper  vc_custom_1469961846568  ult_horizontal" data-gutter="20" data-rtl="false"><div class="ult-carousel-2533767476636a45c31d6e7 ">
 <div class="ult-item-wrap" data-animation="animated no-animation"><div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="ult-item-wrap" data-animation="animated no-animation"><div class="wpb_column vc_column_container vc_col-sm-10 vc_col-lg-offset-1 vc_col-md-offset-1 vc_col-sm-offset-1"><div class="vc_column-inner"><div class="wpb_wrapper">
-<div class="ult-item-wrap" data-animation="animated no-animation"><div id="ultimate-heading-15896369f00be0e1d" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-15896369f00be0e1d uvc-4834 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div class="ult-item-wrap" data-animation="animated no-animation"><div id="ultimate-heading-2808636a45c31dc25" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2808636a45c31dc25 uvc-50 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-15896369f00be0e1d h2" data-responsive-json-new='{"font-size":"desktop:30px;tablet:30px;tablet_portrait:30px;mobile_landscape:24px;mobile:16px;","line-height":"desktop:40px;tablet:42px;tablet_portrait:42px;mobile_landscape:36px;mobile:26px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:700;color:#000000;">“Thanx! Etiam at gravida odio enim. Phasellus luctus enim sed sapien ullamcorper, eu lobortis leo fringilla. Praesent aliquet malesuada velit!” </h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2808636a45c31dc25 h2" data-responsive-json-new='{"font-size":"desktop:30px;tablet:30px;tablet_portrait:30px;mobile_landscape:24px;mobile:16px;","line-height":"desktop:40px;tablet:42px;tablet_portrait:42px;mobile_landscape:36px;mobile:26px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:700;color:#000000;">“Thanx! Etiam at gravida odio enim. Phasellus luctus enim sed sapien ullamcorper, eu lobortis leo fringilla. Praesent aliquet malesuada velit!” </h2></div>
 </div></div>
 <div class="ult-item-wrap" data-animation="animated no-animation">
 	<div class="wpb_single_image wpb_content_element vc_align_center  vc_custom_1470221218589">
@@ -862,16 +901,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		</figure>
 	</div>
 </div>
-<div class="ult-item-wrap" data-animation="animated no-animation"><div id="ultimate-heading-29956369f00c02b0d" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-29956369f00c02b0d uvc-103 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div class="ult-item-wrap" data-animation="animated no-animation"><div id="ultimate-heading-3325636a45c31dfb9" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-3325636a45c31dfb9 uvc-9545 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-29956369f00c02b0d h2" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:30px;"}'><h2 style="font-family:&#039;Hind&#039;;font-weight:700;color:#000000;">Mark Williams</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-29956369f00c02b0d .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:24px;"}' style="font-family:&#039;Hind&#039;;font-weight:normal;color:#000000;margin-top:10px;margin-bottom:30px;">CEO &#8211; Seven Media</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3325636a45c31dfb9 h2" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:30px;"}'><h2 style="font-family:&#039;Hind&#039;;font-weight:700;color:#000000;">Mark Williams</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3325636a45c31dfb9 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:24px;"}' style="font-family:&#039;Hind&#039;;font-weight:normal;color:#000000;margin-top:10px;margin-bottom:30px;">CEO &#8211; Seven Media</div>
 </div></div>
 </div></div></div></div></div></div>
 <div class="ult-item-wrap" data-animation="animated no-animation"><div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="ult-item-wrap" data-animation="animated no-animation"><div class="wpb_column vc_column_container vc_col-sm-10 vc_col-lg-offset-1 vc_col-md-offset-1 vc_col-sm-offset-1"><div class="vc_column-inner"><div class="wpb_wrapper">
-<div class="ult-item-wrap" data-animation="animated no-animation"><div id="ultimate-heading-66566369f00c02f24" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-66566369f00c02f24 uvc-8577 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div class="ult-item-wrap" data-animation="animated no-animation"><div id="ultimate-heading-771636a45c31e31e" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-771636a45c31e31e uvc-5988 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-66566369f00c02f24 h2" data-responsive-json-new='{"font-size":"desktop:30px;tablet:30px;tablet_portrait:30px;mobile_landscape:24px;mobile:16px;","line-height":"desktop:40px;tablet:42px;tablet_portrait:42px;mobile_landscape:36px;mobile:26px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:700;color:#000000;">“WOW! Dolor amet glavrida gravida vitae tortor id semper. Nulla velit felis, malesuada quis eros vitae, elementum lobortis ligula...”</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-771636a45c31e31e h2" data-responsive-json-new='{"font-size":"desktop:30px;tablet:30px;tablet_portrait:30px;mobile_landscape:24px;mobile:16px;","line-height":"desktop:40px;tablet:42px;tablet_portrait:42px;mobile_landscape:36px;mobile:26px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:700;color:#000000;">“WOW! Dolor amet glavrida gravida vitae tortor id semper. Nulla velit felis, malesuada quis eros vitae, elementum lobortis ligula...”</h2></div>
 </div></div>
 <div class="ult-item-wrap" data-animation="animated no-animation">
 	<div class="wpb_single_image wpb_content_element vc_align_center  vc_custom_1470221218589">
@@ -881,16 +920,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		</figure>
 	</div>
 </div>
-<div class="ult-item-wrap" data-animation="animated no-animation"><div id="ultimate-heading-55036369f00c0324f" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-55036369f00c0324f uvc-5147 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div class="ult-item-wrap" data-animation="animated no-animation"><div id="ultimate-heading-3095636a45c31e5df" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-3095636a45c31e5df uvc-899 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-55036369f00c0324f h2" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:30px;"}'><h2 style="font-family:&#039;Hind&#039;;font-weight:700;color:#000000;">Selena Sweet</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-55036369f00c0324f .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:24px;"}' style="font-family:&#039;Hind&#039;;font-weight:normal;color:#000000;margin-top:10px;margin-bottom:30px;">CEO &#8211; Seven Arts</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3095636a45c31e5df h2" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:30px;"}'><h2 style="font-family:&#039;Hind&#039;;font-weight:700;color:#000000;">Selena Sweet</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3095636a45c31e5df .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:24px;"}' style="font-family:&#039;Hind&#039;;font-weight:normal;color:#000000;margin-top:10px;margin-bottom:30px;">CEO &#8211; Seven Arts</div>
 </div></div>
 </div></div></div></div></div></div>
 <div class="ult-item-wrap" data-animation="animated no-animation"><div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="ult-item-wrap" data-animation="animated no-animation"><div class="wpb_column vc_column_container vc_col-sm-10 vc_col-lg-offset-1 vc_col-md-offset-1 vc_col-sm-offset-1"><div class="vc_column-inner"><div class="wpb_wrapper">
-<div class="ult-item-wrap" data-animation="animated no-animation"><div id="ultimate-heading-33996369f00c035eb" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-33996369f00c035eb uvc-7726 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div class="ult-item-wrap" data-animation="animated no-animation"><div id="ultimate-heading-1146636a45c31e949" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-1146636a45c31e949 uvc-7728 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-33996369f00c035eb h2" data-responsive-json-new='{"font-size":"desktop:30px;tablet:30px;tablet_portrait:30px;mobile_landscape:24px;mobile:16px;","line-height":"desktop:40px;tablet:42px;tablet_portrait:42px;mobile_landscape:36px;mobile:26px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:700;color:#000000;">“Nulla velit felis, malesuada quis eros vitae, elementum lobortis ligula. Proin efficitur placerat ante. Mauris gravida semper. Thanx!”</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1146636a45c31e949 h2" data-responsive-json-new='{"font-size":"desktop:30px;tablet:30px;tablet_portrait:30px;mobile_landscape:24px;mobile:16px;","line-height":"desktop:40px;tablet:42px;tablet_portrait:42px;mobile_landscape:36px;mobile:26px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:700;color:#000000;">“Nulla velit felis, malesuada quis eros vitae, elementum lobortis ligula. Proin efficitur placerat ante. Mauris gravida semper. Thanx!”</h2></div>
 </div></div>
 <div class="ult-item-wrap" data-animation="animated no-animation">
 	<div class="wpb_single_image wpb_content_element vc_align_center  vc_custom_1470221218589">
@@ -900,16 +939,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		</figure>
 	</div>
 </div>
-<div class="ult-item-wrap" data-animation="animated no-animation"><div id="ultimate-heading-15726369f00c05396" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-15726369f00c05396 uvc-4759 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div class="ult-item-wrap" data-animation="animated no-animation"><div id="ultimate-heading-2332636a45c31ec1b" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2332636a45c31ec1b uvc-7862 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-15726369f00c05396 h2" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:30px;"}'><h2 style="font-family:&#039;Hind&#039;;font-weight:700;color:#000000;">John Doe</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-15726369f00c05396 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:24px;"}' style="font-family:&#039;Hind&#039;;font-weight:normal;color:#000000;margin-top:10px;margin-bottom:30px;">Marketologist &#8211; Seven Digital</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2332636a45c31ec1b h2" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:30px;"}'><h2 style="font-family:&#039;Hind&#039;;font-weight:700;color:#000000;">John Doe</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2332636a45c31ec1b .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:24px;"}' style="font-family:&#039;Hind&#039;;font-weight:normal;color:#000000;margin-top:10px;margin-bottom:30px;">Marketologist &#8211; Seven Digital</div>
 </div></div>
 </div></div></div></div></div></div>
 </div></div>			<script type="text/javascript">
 				jQuery(document).ready(function ($) {
-					if( typeof jQuery('.ult-carousel-3031239706369f00be0a6e').slick == "function"){
-						$('.ult-carousel-3031239706369f00be0a6e').slick({dots: true,autoplaySpeed: 5000,speed: 600,infinite: true,arrows: true,nextArrow: '<button type="button" role="button" aria-label="Next" style="color:#fc656c; font-size:36px;" class="slick-next default"><i class="ultsl-arrow-right4"><\/i><\/button>',prevArrow: '<button type="button" role="button" aria-label="Previous" style="color:#fc656c; font-size:36px;" class="slick-prev default"><i class="ultsl-arrow-left4"><\/i><\/button>',slidesToScroll:1,slidesToShow:1,swipe: true,draggable: true,touchMove: true,pauseOnHover: true,pauseOnFocus: false,responsive: [
+					if( typeof jQuery('.ult-carousel-2533767476636a45c31d6e7').slick == "function"){
+						$('.ult-carousel-2533767476636a45c31d6e7').slick({dots: true,autoplaySpeed: 5000,speed: 600,infinite: true,arrows: true,nextArrow: '<button type="button" role="button" aria-label="Next" style="color:#fc656c; font-size:36px;" class="slick-next default"><i class="ultsl-arrow-right4"><\/i><\/button>',prevArrow: '<button type="button" role="button" aria-label="Previous" style="color:#fc656c; font-size:36px;" class="slick-prev default"><i class="ultsl-arrow-left4"><\/i><\/button>',slidesToScroll:1,slidesToShow:1,swipe: true,draggable: true,touchMove: true,pauseOnHover: true,pauseOnFocus: false,responsive: [
 							{
 							  breakpoint: 1026,
 							  settings: {
@@ -941,63 +980,63 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </div>
 <div class="vc_row wpb_row vc_row-fluid vc_custom_1471420971648 vc_row-has-fill vc_row-o-equal-height vc_row-flex">
 <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-lg-2 vc_col-md-4 vc_col-xs-6"><div class="vc_column-inner vc_custom_1469966132586"><div class="wpb_wrapper">
-<div class="aio-icon-component    style_2"><a class="aio-icon-box-link" href="http://the7.io/digital-artist/contact"><div id="Info-box-wrap-3388" class="aio-icon-box top-icon">
+<div class="aio-icon-component    style_2"><a class="aio-icon-box-link" href="http://the7.io/digital-artist/contact"><div id="Info-box-wrap-1572" class="aio-icon-box top-icon">
 <div class="aio-icon-top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="color:#ffffff;font-size:32px;display:inline-block;">
 	<i class="icomoon-free-social-contact-16x16-mail4"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-3388 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:30px;"}' style="font-family:&#039;Raleway&#039;;font-weight:800;color:#ffffff;">Contact Me</h3></div> <!-- header -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-1572 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:30px;"}' style="font-family:&#039;Raleway&#039;;font-weight:800;color:#ffffff;">Contact Me</h3></div> <!-- header -->
 </div> <!-- aio-icon-box --></a></div> <!-- aio-icon-component -->
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-lg-2 vc_col-md-4 vc_col-xs-6"><div class="vc_column-inner vc_custom_1469966101407"><div class="wpb_wrapper">
-<div class="aio-icon-component    style_2"><a class="aio-icon-box-link" href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener"><div id="Info-box-wrap-1650" class="aio-icon-box top-icon">
+<div class="aio-icon-component    style_2"><a class="aio-icon-box-link" href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener"><div id="Info-box-wrap-4771" class="aio-icon-box top-icon">
 <div class="aio-icon-top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="color:#ffffff;font-size:32px;display:inline-block;">
 	<i class="icomoon-free-social-contact-16x16-facebook2"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-1650 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:30px;"}' style="font-family:&#039;Raleway&#039;;font-weight:800;color:#ffffff;">Facebook</h3></div> <!-- header -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-4771 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:30px;"}' style="font-family:&#039;Raleway&#039;;font-weight:800;color:#ffffff;">Facebook</h3></div> <!-- header -->
 </div> <!-- aio-icon-box --></a></div> <!-- aio-icon-component -->
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-lg-2 vc_col-md-4 vc_col-xs-6"><div class="vc_column-inner vc_custom_1469966107102"><div class="wpb_wrapper">
-<div class="aio-icon-component    style_2"><a class="aio-icon-box-link" href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener"><div id="Info-box-wrap-2864" class="aio-icon-box top-icon">
+<div class="aio-icon-component    style_2"><a class="aio-icon-box-link" href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener"><div id="Info-box-wrap-9490" class="aio-icon-box top-icon">
 <div class="aio-icon-top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="color:#ffffff;font-size:32px;display:inline-block;">
 	<i class="icomoon-free-social-contact-16x16-pinterest2"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-2864 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:30px;"}' style="font-family:&#039;Raleway&#039;;font-weight:800;color:#ffffff;">Pinterest</h3></div> <!-- header -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-9490 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:30px;"}' style="font-family:&#039;Raleway&#039;;font-weight:800;color:#ffffff;">Pinterest</h3></div> <!-- header -->
 </div> <!-- aio-icon-box --></a></div> <!-- aio-icon-component -->
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-lg-2 vc_col-md-4 vc_col-xs-6"><div class="vc_column-inner vc_custom_1469966112123"><div class="wpb_wrapper">
-<div class="aio-icon-component    style_2"><a class="aio-icon-box-link" href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener"><div id="Info-box-wrap-8375" class="aio-icon-box top-icon">
+<div class="aio-icon-component    style_2"><a class="aio-icon-box-link" href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener"><div id="Info-box-wrap-2920" class="aio-icon-box top-icon">
 <div class="aio-icon-top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="color:#ffffff;font-size:32px;display:inline-block;">
 	<i class="icomoon-free-social-contact-16x16-behance"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-8375 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:30px;"}' style="font-family:&#039;Raleway&#039;;font-weight:800;color:#ffffff;">Behance</h3></div> <!-- header -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-2920 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:30px;"}' style="font-family:&#039;Raleway&#039;;font-weight:800;color:#ffffff;">Behance</h3></div> <!-- header -->
 </div> <!-- aio-icon-box --></a></div> <!-- aio-icon-component -->
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-lg-2 vc_col-md-4 vc_col-xs-6"><div class="vc_column-inner vc_custom_1469966117048"><div class="wpb_wrapper">
-<div class="aio-icon-component    style_2"><a class="aio-icon-box-link" href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener"><div id="Info-box-wrap-6737" class="aio-icon-box top-icon">
+<div class="aio-icon-component    style_2"><a class="aio-icon-box-link" href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener"><div id="Info-box-wrap-7471" class="aio-icon-box top-icon">
 <div class="aio-icon-top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="color:#ffffff;font-size:32px;display:inline-block;">
 	<i class="icomoon-free-social-contact-16x16-dribbble"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-6737 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:30px;"}' style="font-family:&#039;Raleway&#039;;font-weight:800;color:#ffffff;">Dribbble</h3></div> <!-- header -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-7471 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:30px;"}' style="font-family:&#039;Raleway&#039;;font-weight:800;color:#ffffff;">Dribbble</h3></div> <!-- header -->
 </div> <!-- aio-icon-box --></a></div> <!-- aio-icon-component -->
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-lg-2 vc_col-md-4 vc_col-xs-6"><div class="vc_column-inner vc_custom_1469966127009"><div class="wpb_wrapper">
-<div class="aio-icon-component    style_2"><a class="aio-icon-box-link" href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener"><div id="Info-box-wrap-6171" class="aio-icon-box top-icon">
+<div class="aio-icon-component    style_2"><a class="aio-icon-box-link" href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener"><div id="Info-box-wrap-6281" class="aio-icon-box top-icon">
 <div class="aio-icon-top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="color:#ffffff;font-size:32px;display:inline-block;">
 	<i class="icomoon-free-social-contact-16x16-linkedin"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-6171 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:30px;"}' style="font-family:&#039;Raleway&#039;;font-weight:800;color:#ffffff;">Linkedin</h3></div> <!-- header -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-6281 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:30px;"}' style="font-family:&#039;Raleway&#039;;font-weight:800;color:#ffffff;">Linkedin</h3></div> <!-- header -->
 </div> <!-- aio-icon-box --></a></div> <!-- aio-icon-component -->
 </div></div></div>
 </div>
@@ -1218,5 +1257,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </body>
 
 
-<!-- Page supported by LiteSpeed Cache 5.3 on 2022-11-08 05:58:36 -->
+<!-- Page supported by LiteSpeed Cache 5.3 on 2022-11-08 12:04:19 -->
 </html>
