@@ -70,14 +70,53 @@ img.emoji {
 <link rel="stylesheet" id="js_composer_front-css" href="/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=6.8.0" type="text/css" media="all">
 <link rel="stylesheet" id="dt-web-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto Condensed:400,600,700|Roboto:400,600,700|PT Sans:400,600,700" type="text/css" media="all">
 <link rel="stylesheet" id="dt-main-css" href="/wp-content/themes/dt-the7/css/main.min.css?ver=11.1.1" type="text/css" media="all">
+<style id="dt-main-inline-css" type="text/css">body #load {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 9901;
+  opacity: 1;
+  visibility: visible;
+  transition: all .35s ease-out;
+}
+.load-wrap {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -ms-flex-pack: center;
+  -ms-justify-content: center;
+  justify-content: center;
+}
+.load-wrap > svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+#load {
+  background: var(--the7-elementor-beautiful-loading-bg,#ffffff);
+  --the7-beautiful-spinner-color2: var(--the7-beautiful-spinner-color,#896b69);
+}</style>
 <link rel="stylesheet" id="the7-custom-scrollbar-css" href="/wp-content/themes/dt-the7/lib/custom-scrollbar/custom-scrollbar.min.css?ver=11.1.1" type="text/css" media="all">
 <link rel="stylesheet" id="the7-wpbakery-css" href="/wp-content/themes/dt-the7/css/wpbakery.min.css?ver=11.1.1" type="text/css" media="all">
 <link rel="stylesheet" id="the7-core-css" href="/wp-content/plugins/dt-the7-core/assets/css/post-type.min.css?ver=2.7.0" type="text/css" media="all">
-<link rel="stylesheet" id="the7-css-vars-css" href="/wp-content/uploads/sites/65/the7-css/css-vars.css?ver=0878b68f48fb" type="text/css" media="all">
-<link rel="stylesheet" id="dt-custom-css" href="/wp-content/uploads/sites/65/the7-css/custom.css?ver=0878b68f48fb" type="text/css" media="all">
-<link rel="stylesheet" id="dt-media-css" href="/wp-content/uploads/sites/65/the7-css/media.css?ver=0878b68f48fb" type="text/css" media="all">
-<link rel="stylesheet" id="the7-mega-menu-css" href="/wp-content/uploads/sites/65/the7-css/mega-menu.css?ver=0878b68f48fb" type="text/css" media="all">
-<link rel="stylesheet" id="the7-elements-css" href="/wp-content/uploads/sites/65/the7-css/post-type-dynamic.css?ver=0878b68f48fb" type="text/css" media="all">
+<link rel="stylesheet" id="the7-css-vars-css" href="/wp-content/uploads/sites/65/the7-css/css-vars.css?ver=5a932c8f10b5" type="text/css" media="all">
+<link rel="stylesheet" id="dt-custom-css" href="/wp-content/uploads/sites/65/the7-css/custom.css?ver=5a932c8f10b5" type="text/css" media="all">
+<link rel="stylesheet" id="dt-media-css" href="/wp-content/uploads/sites/65/the7-css/media.css?ver=5a932c8f10b5" type="text/css" media="all">
+<link rel="stylesheet" id="the7-mega-menu-css" href="/wp-content/uploads/sites/65/the7-css/mega-menu.css?ver=5a932c8f10b5" type="text/css" media="all">
+<link rel="stylesheet" id="the7-elements-css" href="/wp-content/uploads/sites/65/the7-css/post-type-dynamic.css?ver=5a932c8f10b5" type="text/css" media="all">
 <link rel="stylesheet" id="style-css" href="/wp-content/themes/dt-the7/style.css?ver=11.1.1" type="text/css" media="all">
 <link rel="stylesheet" id="ultimate-vc-addons-google-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto:regular,700|Roboto Condensed:regular,700|" type="text/css" media="all">
 <link rel="stylesheet" id="ultimate-vc-addons-style-css" href="/wp-content/plugins/Ultimate_VC_Addons/assets/min-css/style.min.css?ver=3.19.11" type="text/css" media="all">
@@ -353,9 +392,9 @@ color: #997b79;
 <div id="content" class="content" role="main">
 
 	<div id="about" class="vc_row wpb_row vc_row-fluid vc_custom_1563305941438 vc_row-o-equal-height vc_row-flex">
-<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1493202419869"><div class="wpb_wrapper"><div id="ultimate-heading-65896369e897e4a27" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-65896369e897e4a27 uvc-7394 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1493202419869"><div class="wpb_wrapper"><div id="ultimate-heading-3993636a41a095920" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-3993636a41a095920 uvc-6943 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-65896369e897e4a27 h2" data-responsive-json-new='{"font-size":"desktop:46px;mobile_landscape:34px;","line-height":"desktop:56px;mobile_landscape:44px;"}'><h2 style="font-weight:bold;">Why Choose Seven Dance School</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3993636a41a095920 h2" data-responsive-json-new='{"font-size":"desktop:46px;mobile_landscape:34px;","line-height":"desktop:56px;mobile_landscape:44px;"}'><h2 style="font-weight:bold;">Why Choose Seven Dance School</h2></div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid vc_column-gap-10 vc_row-o-equal-height vc_row-flex">
 <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-has-fill"><div class="vc_column-inner vc_custom_1563276161425"><div class="wpb_wrapper">
@@ -364,8 +403,8 @@ color: #997b79;
 	<i class="icomoon-elegent-line-icons-32x32-target"></i>
 </div>
 </div></div>
-<div id="ultimate-heading-39336369e898041ea" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-39336369e898041ea uvc-3224 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-39336369e898041ea h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="font-weight:bold;margin-bottom:20px;">100% result guarantee</h2></div>
+<div id="ultimate-heading-3920636a41a095fe5" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-3920636a41a095fe5 uvc-8222 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3920636a41a095fe5 h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="font-weight:bold;margin-bottom:20px;">100% result guarantee</h2></div>
 <div class="uvc-heading-spacer line_only" style="topheight:3px;"><span class="uvc-headings-line" style="border-style:solid;border-bottom-width:3px;border-color:#ccc;width:40px;"></span></div>
 </div>
 </div></div></div>
@@ -375,8 +414,8 @@ color: #997b79;
 	<i class="icomoon-elegent-line-icons-32x32-trophy"></i>
 </div>
 </div></div>
-<div id="ultimate-heading-66696369e8980447c" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-66696369e8980447c uvc-6732 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-66696369e8980447c h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="font-weight:bold;margin-bottom:20px;">Famous trainers</h2></div>
+<div id="ultimate-heading-8160636a41a096157" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-8160636a41a096157 uvc-8939 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-8160636a41a096157 h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="font-weight:bold;margin-bottom:20px;">Famous trainers</h2></div>
 <div class="uvc-heading-spacer line_only" style="topheight:3px;"><span class="uvc-headings-line" style="border-style:solid;border-bottom-width:3px;border-color:#ccc;width:40px;"></span></div>
 </div>
 </div></div></div>
@@ -386,8 +425,8 @@ color: #997b79;
 	<i class="icomoon-elegent-line-icons-32x32-presentation"></i>
 </div>
 </div></div>
-<div id="ultimate-heading-48286369e898046ae" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-48286369e898046ae uvc-1272 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-48286369e898046ae h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="font-weight:bold;margin-bottom:20px;">5 years of experience</h2></div>
+<div id="ultimate-heading-4715636a41a09634a" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-4715636a41a09634a uvc-3727 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4715636a41a09634a h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="font-weight:bold;margin-bottom:20px;">5 years of experience</h2></div>
 <div class="uvc-heading-spacer line_only" style="topheight:3px;"><span class="uvc-headings-line" style="border-style:solid;border-bottom-width:3px;border-color:#ccc;width:40px;"></span></div>
 </div>
 </div></div></div>
@@ -397,8 +436,8 @@ color: #997b79;
 	<i class="icomoon-elegent-line-icons-32x32-profile-male"></i>
 </div>
 </div></div>
-<div id="ultimate-heading-39456369e898048d4" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-39456369e898048d4 uvc-3007 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-39456369e898048d4 h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="font-weight:bold;margin-bottom:20px;">1500+ happy clients</h2></div>
+<div id="ultimate-heading-2618636a41a0964aa" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2618636a41a0964aa uvc-3771 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2618636a41a0964aa h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="font-weight:bold;margin-bottom:20px;">1500+ happy clients</h2></div>
 <div class="uvc-heading-spacer line_only" style="topheight:3px;"><span class="uvc-headings-line" style="border-style:solid;border-bottom-width:3px;border-color:#ccc;width:40px;"></span></div>
 </div>
 </div></div></div>
@@ -408,8 +447,8 @@ color: #997b79;
 	<i class="icomoon-elegent-line-icons-32x32-calendar"></i>
 </div>
 </div></div>
-<div id="ultimate-heading-85776369e898052aa" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-85776369e898052aa uvc-9748 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-85776369e898052aa h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="font-weight:bold;margin-bottom:20px;">Flexible timetable</h2></div>
+<div id="ultimate-heading-3715636a41a096622" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-3715636a41a096622 uvc-2290 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3715636a41a096622 h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="font-weight:bold;margin-bottom:20px;">Flexible timetable</h2></div>
 <div class="uvc-heading-spacer line_only" style="topheight:3px;"><span class="uvc-headings-line" style="border-style:solid;border-bottom-width:3px;border-color:#ccc;width:40px;"></span></div>
 </div>
 </div></div></div>
@@ -419,25 +458,25 @@ color: #997b79;
 	<i class="icomoon-elegent-line-icons-32x32-map-pin"></i>
 </div>
 </div></div>
-<div id="ultimate-heading-17096369e898054ea" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-17096369e898054ea uvc-487 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-17096369e898054ea h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="font-weight:bold;margin-bottom:20px;">Comfortable location</h2></div>
+<div id="ultimate-heading-4940636a41a096770" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-4940636a41a096770 uvc-5190 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4940636a41a096770 h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="font-weight:bold;margin-bottom:20px;">Comfortable location</h2></div>
 <div class="uvc-heading-spacer line_only" style="topheight:3px;"><span class="uvc-headings-line" style="border-style:solid;border-bottom-width:3px;border-color:#ccc;width:40px;"></span></div>
 </div>
 </div></div></div>
 </div></div></div></div>
 </div>
 <div class="vc_row wpb_row vc_row-fluid vc_custom_1563305949169 vc_row-has-fill vc_row-o-equal-height vc_row-o-content-middle vc_row-flex">
-<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1493325872182"><div class="wpb_wrapper"><div id="ultimate-heading-79756369e89806142" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-79756369e89806142 uvc-7837 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1493325872182"><div class="wpb_wrapper"><div id="ultimate-heading-5477636a41a0971c0" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-5477636a41a0971c0 uvc-4498 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-79756369e89806142 h2" data-responsive-json-new='{"font-size":"desktop:46px;mobile_landscape:34px;","line-height":"desktop:56px;mobile_landscape:44px;"}'><h2 style="font-weight:bold;">Some Facts About Us</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5477636a41a0971c0 h2" data-responsive-json-new='{"font-size":"desktop:46px;mobile_landscape:34px;","line-height":"desktop:56px;mobile_landscape:44px;"}'><h2 style="font-weight:bold;">Some Facts About Us</h2></div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-has-fill"><div class="vc_column-inner vc_custom_1493216714125"><div class="wpb_wrapper">
 <div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1493217135844 vc_row-has-fill vc_row-o-equal-height vc_row-o-content-middle vc_row-flex">
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6 vc_col-has-fill"><div class="vc_column-inner vc_custom_1563439488491"><div class="wpb_wrapper"></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6 vc_col-has-fill"><div class="vc_column-inner vc_custom_1563439493038"><div class="wpb_wrapper">
-<div id="ultimate-heading-82246369e8980693c" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-82246369e8980693c uvc-2872 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div id="ultimate-heading-3066636a41a0978c2" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-3066636a41a0978c2 uvc-7656 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-82246369e8980693c h2" data-responsive-json-new='{"font-size":"desktop:34px;","line-height":"desktop:44px;"}'><h2 style="font-weight:bold;margin-bottom:20px;">Modern &amp; cozy studios</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3066636a41a0978c2 h2" data-responsive-json-new='{"font-size":"desktop:34px;","line-height":"desktop:44px;"}'><h2 style="font-weight:bold;margin-bottom:20px;">Modern &amp; cozy studios</h2></div>
 </div>
 	<div class="wpb_text_column wpb_content_element  vc_custom_1458406129345">
 		<div class="wpb_wrapper">
@@ -451,9 +490,9 @@ color: #997b79;
 <div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1493217127296 vc_row-has-fill vc_row-o-equal-height vc_row-o-content-middle vc_row-flex">
 <div class="vc_col-sm-push-0 vc_col-md-push-6 wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6 vc_col-has-fill"><div class="vc_column-inner vc_custom_1563440905053"><div class="wpb_wrapper"></div></div></div>
 <div class="vc_col-sm-pull-0 vc_col-md-pull-6 wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6 vc_col-has-fill"><div class="vc_column-inner vc_custom_1563440916126"><div class="wpb_wrapper">
-<div id="ultimate-heading-41346369e89806e33" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-41346369e89806e33 uvc-7136 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div id="ultimate-heading-9240636a41a097f05" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-9240636a41a097f05 uvc-9947 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-41346369e89806e33 h2" data-responsive-json-new='{"font-size":"desktop:34px;","line-height":"desktop:44px;"}'><h2 style="font-weight:bold;margin-bottom:20px;">Quality equipment</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9240636a41a097f05 h2" data-responsive-json-new='{"font-size":"desktop:34px;","line-height":"desktop:44px;"}'><h2 style="font-weight:bold;margin-bottom:20px;">Quality equipment</h2></div>
 </div>
 	<div class="wpb_text_column wpb_content_element  vc_custom_1458407074705">
 		<div class="wpb_wrapper">
@@ -467,9 +506,9 @@ color: #997b79;
 <div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1493217118336 vc_row-has-fill vc_row-o-equal-height vc_row-o-content-middle vc_row-flex">
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6 vc_col-has-fill"><div class="vc_column-inner vc_custom_1563305116232"><div class="wpb_wrapper"></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6 vc_col-has-fill"><div class="vc_column-inner vc_custom_1493326587661"><div class="wpb_wrapper">
-<div id="ultimate-heading-29806369e8980722b" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-29806369e8980722b uvc-9262 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div id="ultimate-heading-9661636a41a098432" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-9661636a41a098432 uvc-5004 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-29806369e8980722b h2" data-responsive-json-new='{"font-size":"desktop:34px;","line-height":"desktop:44px;"}'><h2 style="font-weight:bold;margin-bottom:20px;">Stretching classes</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9661636a41a098432 h2" data-responsive-json-new='{"font-size":"desktop:34px;","line-height":"desktop:44px;"}'><h2 style="font-weight:bold;margin-bottom:20px;">Stretching classes</h2></div>
 </div>
 	<div class="wpb_text_column wpb_content_element  vc_custom_1458406935580">
 		<div class="wpb_wrapper">
@@ -483,9 +522,9 @@ color: #997b79;
 <div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1493217194126 vc_row-has-fill vc_row-o-equal-height vc_row-o-content-middle vc_row-flex">
 <div class="vc_col-sm-push-0 vc_col-md-push-6 wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6 vc_col-has-fill"><div class="vc_column-inner vc_custom_1563440910430"><div class="wpb_wrapper"></div></div></div>
 <div class="vc_col-sm-pull-0 vc_col-md-pull-6 wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6 vc_col-has-fill"><div class="vc_column-inner vc_custom_1563440920098"><div class="wpb_wrapper">
-<div id="ultimate-heading-11356369e8981b0fc" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-11356369e8981b0fc uvc-7755 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div id="ultimate-heading-1871636a41a098919" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-1871636a41a098919 uvc-2302 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-11356369e8981b0fc h2" data-responsive-json-new='{"font-size":"desktop:34px;","line-height":"desktop:44px;"}'><h2 style="font-weight:bold;margin-bottom:20px;">Superstar instructors</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1871636a41a098919 h2" data-responsive-json-new='{"font-size":"desktop:34px;","line-height":"desktop:44px;"}'><h2 style="font-weight:bold;margin-bottom:20px;">Superstar instructors</h2></div>
 </div>
 	<div class="wpb_text_column wpb_content_element  vc_custom_1563288351790">
 		<div class="wpb_wrapper">
@@ -500,9 +539,9 @@ color: #997b79;
 </div>
 <!-- Row Backgrounds --><div class="upb_bg_img" data-ultimate-bg="url(/wp-content/uploads/sites/65/2019/07/art-gr.png)" data-image-id="id^1363|url^/wp-content/uploads/sites/65/2019/07/art-gr.png|caption^null|alt^null|title^art-gr|description^null" data-ultimate-bg-style="vcpb-vz-jquery" data-bg-img-repeat="repeat-y" data-bg-img-size="contain" data-bg-img-position="" data-parallx_sense="30" data-bg-override="ex-full" data-bg_img_attach="scroll" data-upb-overlay-color="" data-upb-bg-animation="" data-fadeout="" data-bg-animation="left-animation" data-bg-animation-type="h" data-animation-repeat="repeat" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false" data-custom-vc-row="" data-vc="6.8.0" data-is_old_vc="" data-theme-support="" data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size=""></div>
 <div id="instructors" class="vc_row wpb_row vc_row-fluid vc_custom_1563296859577 vc_row-o-equal-height vc_row-flex"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-0 vc_col-lg-12 vc_col-md-offset-0 vc_col-md-12 vc_col-sm-offset-0 vc_col-xs-offset-1 vc_col-xs-10"><div class="vc_column-inner"><div class="wpb_wrapper">
-<div id="ultimate-heading-98486369e8981c26d" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-98486369e8981c26d uvc-1599 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-7604636a41a09b5ff" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-7604636a41a09b5ff uvc-6671 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-98486369e8981c26d h2" data-responsive-json-new='{"font-size":"desktop:46px;mobile_landscape:34px;","line-height":"desktop:56px;mobile_landscape:44px;"}'><h2 style="font-weight:bold;margin-bottom:70px;">Meet Our Instructors</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-7604636a41a09b5ff h2" data-responsive-json-new='{"font-size":"desktop:46px;mobile_landscape:34px;","line-height":"desktop:56px;mobile_landscape:44px;"}'><h2 style="font-weight:bold;margin-bottom:70px;">Meet Our Instructors</h2></div>
 </div>
 <style type="text/css" data-type="the7_shortcodes-inline-css">.team-carousel-shortcode.team-carousel-shortcode-id-dc10c23d6db182ac647f7f9668ba0f45.owl-carousel .owl-nav a {
   width: 30px;
@@ -716,9 +755,9 @@ color: #997b79;
 </div></div></div></div>
 <!-- Row Backgrounds --><div class="upb_color" data-bg-override="ex-full" data-bg-color="#ffffff" data-fadeout="" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false" data-custom-vc-row="" data-vc="6.8.0" data-is_old_vc="" data-theme-support="" data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size=""></div>
 <div id="testimonials" class="vc_row wpb_row vc_row-fluid vc_custom_1563305961868 vc_row-has-fill vc_row-o-equal-height vc_row-flex">
-<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1493220302140"><div class="wpb_wrapper"><div id="ultimate-heading-81096369e89904f33" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-81096369e89904f33 uvc-9001 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1493220302140"><div class="wpb_wrapper"><div id="ultimate-heading-3855636a41a0b4235" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-3855636a41a0b4235 uvc-3508 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-81096369e89904f33 h2" data-responsive-json-new='{"font-size":"desktop:46px;mobile_landscape:34px;","line-height":"desktop:56px;mobile_landscape:44px;"}'><h2 style="font-weight:bold;">What Our Students Say</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3855636a41a0b4235 h2" data-responsive-json-new='{"font-size":"desktop:46px;mobile_landscape:34px;","line-height":"desktop:56px;mobile_landscape:44px;"}'><h2 style="font-weight:bold;">What Our Students Say</h2></div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1493223801007"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid vc_column-gap-10 vc_row-o-equal-height vc_row-flex">
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-4 vc_col-md-4 vc_col-has-fill"><div class="vc_column-inner vc_custom_1493326119048"><div class="wpb_wrapper">
@@ -744,10 +783,10 @@ color: #997b79;
 <div class="shortcode-single-image-wrap shortcode-single-image-b8c38f2b2f5f430fe7d03fabc30016c4 alignnone  vc_custom_1563290575719 enable-bg-rollover dt-icon-bg-off"><div class="shortcode-single-image"><div class="fancy-media-wrap"><div class="layzr-bg rollover-video">
 <img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%201000%20666&#39;%2F%3E" data-src="/wp-content/uploads/sites/65/2019/07/d031-1000x666.jpg" data-srcset="/wp-content/uploads/sites/65/2019/07/d031-1000x666.jpg 1000w, /wp-content/uploads/sites/65/2019/07/d031.jpg 1200w" width="1000" height="666" data-dt-location="/site65/home/d031/"><a class="video-icon dt-pswp-item pswp-video" href="https://www.youtube.com/watch?v=Q4xG5-mjOg0" title="d031" data-dt-img-description=""></a>
 </div></div></div></div>
-<div id="ultimate-heading-86456369e89a68b61" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-86456369e89a68b61 uvc-838 accent-subtitle-color" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-9660636a41a0c77b9" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-9660636a41a0c77b9 uvc-9800 accent-subtitle-color" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-86456369e89a68b61 h2" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:28px;"}'><h2 style="font-family:&#039;Roboto&#039;;font-weight:700;">Alexa Greenwood</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-86456369e89a68b61 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:bold;">32, programmer</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9660636a41a0c77b9 h2" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:28px;"}'><h2 style="font-family:&#039;Roboto&#039;;font-weight:700;">Alexa Greenwood</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9660636a41a0c77b9 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:bold;">32, programmer</div>
 </div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-4 vc_col-md-4 vc_col-has-fill"><div class="vc_column-inner vc_custom_1493326139452"><div class="wpb_wrapper">
@@ -773,10 +812,10 @@ color: #997b79;
 <div class="shortcode-single-image-wrap shortcode-single-image-a7553b3c1a99fdd2591a4925b19acbf9 alignnone  vc_custom_1563291524588 enable-bg-rollover dt-icon-bg-off"><div class="shortcode-single-image"><div class="fancy-media-wrap"><div class="layzr-bg rollover-video">
 <img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%201000%20666&#39;%2F%3E" data-src="/wp-content/uploads/sites/65/2019/07/d044-1000x666.jpg" data-srcset="/wp-content/uploads/sites/65/2019/07/d044-1000x666.jpg 1000w, /wp-content/uploads/sites/65/2019/07/d044.jpg 1200w" width="1000" height="666" data-dt-location="/site65/home/d044/"><a class="video-icon dt-pswp-item pswp-video" href="https://www.youtube.com/watch?v=Q4xG5-mjOg0" title="d044" data-dt-img-description=""></a>
 </div></div></div></div>
-<div id="ultimate-heading-60456369e89b80bcb" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-60456369e89b80bcb uvc-9470 accent-subtitle-color" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-6841636a41a0c8503" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-6841636a41a0c8503 uvc-9923 accent-subtitle-color" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-60456369e89b80bcb h2" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:28px;"}'><h2 style="font-family:&#039;Roboto&#039;;font-weight:700;">Tiffany Wreewind</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-60456369e89b80bcb .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:bold;">19, artist</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6841636a41a0c8503 h2" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:28px;"}'><h2 style="font-family:&#039;Roboto&#039;;font-weight:700;">Tiffany Wreewind</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6841636a41a0c8503 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:bold;">19, artist</div>
 </div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-4 vc_col-md-4 vc_col-has-fill"><div class="vc_column-inner vc_custom_1493326129500"><div class="wpb_wrapper">
@@ -802,10 +841,10 @@ color: #997b79;
 <div class="shortcode-single-image-wrap shortcode-single-image-c37e269435c4bad2fe9ae9591c0b3016 alignnone  vc_custom_1563291508073 enable-bg-rollover dt-icon-bg-off"><div class="shortcode-single-image"><div class="fancy-media-wrap"><div class="layzr-bg rollover-video">
 <img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%201000%20666&#39;%2F%3E" data-src="/wp-content/uploads/sites/65/2019/07/d046-1000x666.jpg" data-srcset="/wp-content/uploads/sites/65/2019/07/d046-1000x666.jpg 1000w, /wp-content/uploads/sites/65/2019/07/d046.jpg 1200w" width="1000" height="666" data-dt-location="/site65/home/d046/"><a class="video-icon dt-pswp-item pswp-video" href="https://www.youtube.com/watch?v=Q4xG5-mjOg0" title="d046" data-dt-img-description=""></a>
 </div></div></div></div>
-<div id="ultimate-heading-40446369e89d37272" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-40446369e89d37272 uvc-9079 accent-subtitle-color" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-2574636a41a0c8fbc" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2574636a41a0c8fbc uvc-1232 accent-subtitle-color" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-40446369e89d37272 h2" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:28px;"}'><h2 style="font-family:&#039;Roboto&#039;;font-weight:700;">Viola Brown</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-40446369e89d37272 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:bold;">22, student</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2574636a41a0c8fbc h2" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:28px;"}'><h2 style="font-family:&#039;Roboto&#039;;font-weight:700;">Viola Brown</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2574636a41a0c8fbc .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:bold;">22, student</div>
 </div>
 </div></div></div>
 </div></div></div></div>
@@ -1014,9 +1053,9 @@ color: #997b79;
 <!-- Row Backgrounds --><div class="upb_bg_img" data-ultimate-bg="url(/wp-content/uploads/sites/65/2019/07/art-gr.png)" data-image-id="id^1363|url^/wp-content/uploads/sites/65/2019/07/art-gr.png|caption^null|alt^null|title^art-gr|description^null" data-ultimate-bg-style="vcpb-vz-jquery" data-bg-img-repeat="repeat-y" data-bg-img-size="contain" data-bg-img-position="" data-parallx_sense="30" data-bg-override="ex-full" data-bg_img_attach="scroll" data-upb-overlay-color="" data-upb-bg-animation="" data-fadeout="" data-bg-animation="left-animation" data-bg-animation-type="h" data-animation-repeat="repeat" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false" data-custom-vc-row="" data-vc="6.8.0" data-is_old_vc="" data-theme-support="" data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size=""></div>
 <div id="gallery" class="vc_row wpb_row vc_row-fluid vc_custom_1458636953250">
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-2 vc_col-lg-8 vc_col-md-offset-2 vc_col-md-8"><div class="vc_column-inner vc_custom_1458123967518"><div class="wpb_wrapper">
-<div id="ultimate-heading-48316369e89e9a8d5" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-48316369e89e9a8d5 uvc-7034 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-2340636a41a0cbbe5" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2340636a41a0cbbe5 uvc-9878 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-48316369e89e9a8d5 h2" data-responsive-json-new='{"font-size":"desktop:46px;mobile_landscape:34px;","line-height":"desktop:56px;mobile_landscape:44px;"}'><h2 style="font-weight:bold;margin-bottom:35px;">Photo Gallery</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2340636a41a0cbbe5 h2" data-responsive-json-new='{"font-size":"desktop:46px;mobile_landscape:34px;","line-height":"desktop:56px;mobile_landscape:44px;"}'><h2 style="font-weight:bold;margin-bottom:35px;">Photo Gallery</h2></div>
 </div>
 	<div class="wpb_text_column wpb_content_element ">
 		<div class="wpb_wrapper">
@@ -1295,10 +1334,10 @@ color: #997b79;
 </div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6 vc_col-xs-12"><div class="vc_column-inner"><div class="wpb_wrapper">
-<div id="ultimate-heading-47816369e8b7b18a0" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-47816369e8b7b18a0 uvc-7726 color-title" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div id="ultimate-heading-2716636a41a106f39" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2716636a41a106f39 uvc-4684 color-title" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-47816369e8b7b18a0 h2" data-responsive-json-new='{"font-size":"desktop:34px;mobile_landscape:22px;","line-height":"desktop:44px;mobile_landscape:32px;"}'><h2 style="font-weight:bold;color:#ffffff;">Get invitation for your</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-47816369e8b7b18a0 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:46px;mobile_landscape:34px;","line-height":"desktop:56px;mobile_landscape:44px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:700;color:#ffffff;margin-bottom:25px;">Free First Dance Class!</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2716636a41a106f39 h2" data-responsive-json-new='{"font-size":"desktop:34px;mobile_landscape:22px;","line-height":"desktop:44px;mobile_landscape:32px;"}'><h2 style="font-weight:bold;color:#ffffff;">Get invitation for your</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2716636a41a106f39 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:46px;mobile_landscape:34px;","line-height":"desktop:56px;mobile_landscape:44px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:700;color:#ffffff;margin-bottom:25px;">Free First Dance Class!</div>
 </div>
 	<div class="wpb_text_column wpb_content_element  vc_custom_1563297804595">
 		<div class="wpb_wrapper">
@@ -1311,9 +1350,9 @@ color: #997b79;
 <!-- Row Backgrounds --><div class="upb_bg_img" data-ultimate-bg="url(/wp-content/uploads/sites/65/2019/07/art-gr-dark.png)" data-image-id="id^1423|url^/wp-content/uploads/sites/65/2019/07/art-gr-dark.png|caption^null|alt^null|title^art-gr-dark|description^null" data-ultimate-bg-style="vcpb-default" data-bg-img-repeat="repeat-y" data-bg-img-size="contain" data-bg-img-position="" data-parallx_sense="30" data-bg-override="ex-full" data-bg_img_attach="scroll" data-upb-overlay-color="" data-upb-bg-animation="" data-fadeout="" data-bg-animation="left-animation" data-bg-animation-type="h" data-animation-repeat="repeat" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false" data-custom-vc-row="" data-vc="6.8.0" data-is_old_vc="" data-theme-support="" data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size=""></div>
 <div id="prices" class="vc_row wpb_row vc_row-fluid vc_custom_1458637184911 vc_row-o-equal-height vc_row-flex">
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-2 vc_col-lg-8 vc_col-md-offset-2 vc_col-md-8"><div class="vc_column-inner vc_custom_1458123967518"><div class="wpb_wrapper">
-<div id="ultimate-heading-72056369e8b7c6108" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-72056369e8b7c6108 uvc-9709 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-5684636a41a107840" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-5684636a41a107840 uvc-4240 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-72056369e8b7c6108 h2" data-responsive-json-new='{"font-size":"desktop:46px;mobile_landscape:34px;","line-height":"desktop:56px;mobile_landscape:44px;"}'><h2 style="font-weight:bold;margin-bottom:35px;">Prices</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5684636a41a107840 h2" data-responsive-json-new='{"font-size":"desktop:46px;mobile_landscape:34px;","line-height":"desktop:56px;mobile_landscape:44px;"}'><h2 style="font-weight:bold;margin-bottom:35px;">Prices</h2></div>
 </div>
 	<div class="wpb_text_column wpb_content_element ">
 		<div class="wpb_wrapper">
@@ -1325,8 +1364,8 @@ color: #997b79;
 <div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
 <div class="vc_row wpb_row vc_inner vc_row-fluid vc_column-gap-10 vc_row-o-equal-height vc_row-flex">
 <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-has-fill"><div class="vc_column-inner vc_custom_1563297018642"><div class="wpb_wrapper">
-<div id="ultimate-heading-3006369e8b7c6fae" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-3006369e8b7c6fae uvc-8269 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3006369e8b7c6fae h2" data-responsive-json-new='{"font-size":"desktop:34px;mobile_landscape:22px;","line-height":"desktop:44px;mobile_landscape:32px;"}'><h2 style="font-weight:bold;margin-bottom:20px;">Light</h2></div>
+<div id="ultimate-heading-5958636a41a107f63" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-5958636a41a107f63 uvc-5724 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5958636a41a107f63 h2" data-responsive-json-new='{"font-size":"desktop:34px;mobile_landscape:22px;","line-height":"desktop:44px;mobile_landscape:32px;"}'><h2 style="font-weight:bold;margin-bottom:20px;">Light</h2></div>
 <div class="uvc-heading-spacer line_only" style="margin-bottom:20px;height:3px;"><span class="uvc-headings-line" style="border-style:solid;border-bottom-width:3px;border-color:#ccc;width:40px;"></span></div>
 </div>
 	<div class="wpb_text_column wpb_content_element  vc_custom_1458133274107">
@@ -1356,15 +1395,15 @@ color: #997b79;
 
 		</div>
 	</div>
-<div id="ultimate-heading-2076369e8b7c7424" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2076369e8b7c7424 uvc-1079 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-8241636a41a108302" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-8241636a41a108302 uvc-2693 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2076369e8b7c7424 h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="font-weight:bold;margin-top:30px;margin-bottom:30px;">$349 / month</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-8241636a41a108302 h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="font-weight:bold;margin-top:30px;margin-bottom:30px;">$349 / month</h2></div>
 </div>
 <div class="text-centered"><a href="#!/contact" class="btn-shortcode dt-btn-m dt-btn default-btn-color default-btn-hover-color default-btn-bg-color default-btn-bg-hover-color anchor-link" id="dt-btn-1"><span>Book now!</span></a></div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-has-fill"><div class="vc_column-inner vc_custom_1563297024934"><div class="wpb_wrapper">
-<div id="ultimate-heading-90436369e8b7c76b4" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-90436369e8b7c76b4 uvc-3974 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-90436369e8b7c76b4 h2" data-responsive-json-new='{"font-size":"desktop:34px;mobile_landscape:22px;","line-height":"desktop:44px;mobile_landscape:32px;"}'><h2 style="font-weight:bold;margin-bottom:20px;">Standard</h2></div>
+<div id="ultimate-heading-8013636a41a1087c8" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-8013636a41a1087c8 uvc-5905 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-8013636a41a1087c8 h2" data-responsive-json-new='{"font-size":"desktop:34px;mobile_landscape:22px;","line-height":"desktop:44px;mobile_landscape:32px;"}'><h2 style="font-weight:bold;margin-bottom:20px;">Standard</h2></div>
 <div class="uvc-heading-spacer line_only" style="margin-bottom:20px;height:3px;"><span class="uvc-headings-line" style="border-style:solid;border-bottom-width:3px;border-color:#ccc;width:40px;"></span></div>
 </div>
 	<div class="wpb_text_column wpb_content_element  vc_custom_1458641495699">
@@ -1394,15 +1433,15 @@ color: #997b79;
 
 		</div>
 	</div>
-<div id="ultimate-heading-35476369e8b7c85e0" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-35476369e8b7c85e0 uvc-4052 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-9487636a41a108b24" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-9487636a41a108b24 uvc-1855 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-35476369e8b7c85e0 h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="font-weight:bold;margin-top:30px;margin-bottom:30px;">$349 / month</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9487636a41a108b24 h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="font-weight:bold;margin-top:30px;margin-bottom:30px;">$349 / month</h2></div>
 </div>
 <div class="text-centered"><a href="#!/contact" class="btn-shortcode dt-btn-m dt-btn default-btn-color default-btn-hover-color default-btn-bg-color default-btn-bg-hover-color anchor-link" id="dt-btn-2"><span>Book now!</span></a></div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-has-fill"><div class="vc_column-inner vc_custom_1563297036570"><div class="wpb_wrapper">
-<div id="ultimate-heading-8996369e8b7c8848" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-8996369e8b7c8848 uvc-3393 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-8996369e8b7c8848 h2" data-responsive-json-new='{"font-size":"desktop:34px;mobile_landscape:22px;","line-height":"desktop:44px;mobile_landscape:32px;"}'><h2 style="font-weight:bold;margin-bottom:20px;">Premium</h2></div>
+<div id="ultimate-heading-6982636a41a108d53" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-6982636a41a108d53 uvc-4904 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6982636a41a108d53 h2" data-responsive-json-new='{"font-size":"desktop:34px;mobile_landscape:22px;","line-height":"desktop:44px;mobile_landscape:32px;"}'><h2 style="font-weight:bold;margin-bottom:20px;">Premium</h2></div>
 <div class="uvc-heading-spacer line_only" style="margin-bottom:20px;height:3px;"><span class="uvc-headings-line" style="border-style:solid;border-bottom-width:3px;border-color:#ccc;width:40px;"></span></div>
 </div>
 	<div class="wpb_text_column wpb_content_element  vc_custom_1458641560003">
@@ -1432,18 +1471,18 @@ color: #997b79;
 
 		</div>
 	</div>
-<div id="ultimate-heading-77666369e8b7c8ba0" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-77666369e8b7c8ba0 uvc-7190 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-3953636a41a108fda" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-3953636a41a108fda uvc-5177 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-77666369e8b7c8ba0 h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="font-weight:bold;margin-top:30px;margin-bottom:30px;">$349 / month</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3953636a41a108fda h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="font-weight:bold;margin-top:30px;margin-bottom:30px;">$349 / month</h2></div>
 </div>
 <div class="text-centered"><a href="#!/contact" class="btn-shortcode dt-btn-m dt-btn default-btn-color default-btn-hover-color default-btn-bg-color default-btn-bg-hover-color anchor-link" id="dt-btn-3"><span>Book now!</span></a></div>
 </div></div></div>
 </div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1563297045343 vc_row-has-fill vc_row-o-equal-height vc_row-o-content-middle vc_row-flex">
 <div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner"><div class="wpb_wrapper">
-<div id="ultimate-heading-786369e8b7c90f3" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-786369e8b7c90f3 uvc-322 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-2891636a41a1092c3" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2891636a41a1092c3 uvc-8113 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-786369e8b7c90f3 h2" data-responsive-json-new='{"font-size":"desktop:34px;mobile_landscape:22px;","line-height":"desktop:44px;mobile_landscape:32px;"}'><h2 style="font-weight:bold;margin-bottom:10px;">Single dance class</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2891636a41a1092c3 h2" data-responsive-json-new='{"font-size":"desktop:34px;mobile_landscape:22px;","line-height":"desktop:44px;mobile_landscape:32px;"}'><h2 style="font-weight:bold;margin-bottom:10px;">Single dance class</h2></div>
 </div>
 	<div class="wpb_text_column wpb_content_element ">
 		<div class="wpb_wrapper">
@@ -1452,9 +1491,9 @@ color: #997b79;
 		</div>
 	</div>
 </div></div></div>
-<div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner"><div class="wpb_wrapper"><div id="ultimate-heading-49026369e8b7c93a0" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-49026369e8b7c93a0 uvc-7111 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner"><div class="wpb_wrapper"><div id="ultimate-heading-5837636a41a1094d6" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-5837636a41a1094d6 uvc-2440 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-49026369e8b7c93a0 h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="font-weight:bold;margin-top:30px;margin-bottom:30px;">$29 / 1.5 hours</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5837636a41a1094d6 h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="font-weight:bold;margin-top:30px;margin-bottom:30px;">$29 / 1.5 hours</h2></div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1458138416110"><div class="wpb_wrapper"><div class="text-centered"><a href="#!/contact" class="btn-shortcode dt-btn-m dt-btn default-btn-color default-btn-hover-color default-btn-bg-color default-btn-bg-hover-color anchor-link" id="dt-btn-4"><span>Book now!</span></a></div></div></div></div>
 </div>
@@ -1462,9 +1501,9 @@ color: #997b79;
 </div>
 <!-- Row Backgrounds --><div class="upb_color" data-bg-override="ex-full" data-bg-color="#ffffff" data-fadeout="" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false" data-custom-vc-row="" data-vc="6.8.0" data-is_old_vc="" data-theme-support="" data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size=""></div>
 <div id="qa" class="vc_row wpb_row vc_row-fluid vc_custom_1563305972269 vc_row-has-fill vc_column-gap-10 vc_row-o-equal-height vc_row-flex">
-<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1493307960424"><div class="wpb_wrapper"><div id="ultimate-heading-41636369e8b7de917" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-41636369e8b7de917 uvc-7319 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1493307960424"><div class="wpb_wrapper"><div id="ultimate-heading-5914636a41a109b86" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-5914636a41a109b86 uvc-6292 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-41636369e8b7de917 h2" data-responsive-json-new='{"font-size":"desktop:46px;mobile_landscape:34px;","line-height":"desktop:56px;mobile_landscape:44px;"}'><h2 style="font-weight:bold;">Frequently Asked Questions</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5914636a41a109b86 h2" data-responsive-json-new='{"font-size":"desktop:46px;mobile_landscape:34px;","line-height":"desktop:56px;mobile_landscape:44px;"}'><h2 style="font-weight:bold;">Frequently Asked Questions</h2></div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-8 vc_col-md-7 vc_col-has-fill"><div class="vc_column-inner vc_custom_1563297203563"><div class="wpb_wrapper">
 	<div class="wpb_accordion wpb_content_element  not-column-inherit dt-style dt-accordion-line-on dt-accordion-h6-size" data-collapsible="yes" data-vc-disable-keydown="false" data-active-tab="1">
@@ -1614,9 +1653,9 @@ color: #997b79;
 	</div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-4 vc_col-md-5 vc_col-has-fill"><div class="vc_column-inner vc_custom_1563297209774"><div class="wpb_wrapper">
-<div id="ultimate-heading-2216369e8b7e2960" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2216369e8b7e2960 uvc-2941 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div id="ultimate-heading-46636a41a11bdd2" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-46636a41a11bdd2 uvc-4109 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2216369e8b7e2960 h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="font-weight:bold;margin-bottom:20px;">Didn't find the answer?</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-46636a41a11bdd2 h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="font-weight:bold;margin-bottom:20px;">Didn't find the answer?</h2></div>
 </div>
 	<div class="wpb_text_column wpb_content_element  vc_custom_1493323352268">
 		<div class="wpb_wrapper">
@@ -1629,9 +1668,9 @@ color: #997b79;
 <!-- Row Backgrounds --><div class="upb_bg_img" data-ultimate-bg="url(/wp-content/uploads/sites/65/2019/07/art-gr.png)" data-image-id="id^1363|url^/wp-content/uploads/sites/65/2019/07/art-gr.png|caption^null|alt^null|title^art-gr|description^null" data-ultimate-bg-style="vcpb-default" data-bg-img-repeat="repeat-y" data-bg-img-size="contain" data-bg-img-position="" data-parallx_sense="30" data-bg-override="ex-full" data-bg_img_attach="scroll" data-upb-overlay-color="" data-upb-bg-animation="" data-fadeout="" data-bg-animation="left-animation" data-bg-animation-type="h" data-animation-repeat="repeat" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false" data-custom-vc-row="" data-vc="6.8.0" data-is_old_vc="" data-theme-support="" data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size=""></div>
 <div id="contact" class="vc_row wpb_row vc_row-fluid vc_custom_1563304430878 vc_row-has-fill vc_row-o-equal-height vc_row-o-content-middle vc_row-flex">
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6 vc_col-xs-12"><div class="vc_column-inner"><div class="wpb_wrapper">
-<div id="ultimate-heading-77436369e8b803452" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-77436369e8b803452 uvc-6705 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div id="ultimate-heading-1603636a41a11c42f" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-1603636a41a11c42f uvc-5259 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-77436369e8b803452 h2" data-responsive-json-new='{"font-size":"desktop:46px;mobile_landscape:34px;","line-height":"desktop:56px;mobile_landscape:44px;"}'><h2 style="font-weight:bold;color:#ffffff;margin-bottom:30px;">Contact</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1603636a41a11c42f h2" data-responsive-json-new='{"font-size":"desktop:46px;mobile_landscape:34px;","line-height":"desktop:56px;mobile_landscape:44px;"}'><h2 style="font-weight:bold;color:#ffffff;margin-bottom:30px;">Contact</h2></div>
 </div>
 	<div class="wpb_text_column wpb_content_element  vc_custom_1563298111306">
 		<div class="wpb_wrapper">
@@ -1640,40 +1679,40 @@ color: #997b79;
 		</div>
 	</div>
 <div class="aio-icon-component  vc_custom_1563303934943  dt-phone style_1">
-<div id="Info-box-wrap-3150" class="aio-icon-box default-icon">
+<div id="Info-box-wrap-7053" class="aio-icon-box default-icon">
 <div class="aio-icon-default"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon advanced " style="color:#ffffff;border-style:solid;border-color:rgba(137,107,105,0.4);border-width:3px;width:34px;height:34px;line-height:34px;border-radius:500px;font-size:20px;display:inline-block;">
 	<i class="icomoon-free-social-contact-16x16-mobile"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-3150 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:22px;"}' style="font-weight:bold;color:#ffffff;">330 566 788 77</h3></div> <!-- header -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-7053 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:22px;"}' style="font-weight:bold;color:#ffffff;">330 566 788 77</h3></div> <!-- header -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component --><div class="aio-icon-component  vc_custom_1563303940461   style_1">
-<div id="Info-box-wrap-1094" class="aio-icon-box default-icon">
+<div id="Info-box-wrap-3452" class="aio-icon-box default-icon">
 <div class="aio-icon-default"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon advanced " style="color:#ffffff;background:rgba(255,255,255,0.01);border-style:solid;border-color:rgba(137,107,105,0.4);border-width:3px;width:34px;height:34px;line-height:34px;border-radius:500px;font-size:18px;display:inline-block;">
 	<i class="icomoon-free-social-contact-16x16-envelop"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-1094 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:22px;"}' style="font-weight:bold;color:#ffffff;">dance@the7.io</h3></div> <!-- header -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-3452 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:22px;"}' style="font-weight:bold;color:#ffffff;">dance@the7.io</h3></div> <!-- header -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component --><div class="aio-icon-component  vc_custom_1563303952753   style_1">
-<div id="Info-box-wrap-9478" class="aio-icon-box default-icon">
+<div id="Info-box-wrap-3495" class="aio-icon-box default-icon">
 <div class="aio-icon-default"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon advanced " style="color:#ffffff;background:rgba(255,255,255,0.01);border-style:solid;border-color:rgba(137,107,105,0.4);border-width:3px;width:34px;height:34px;line-height:34px;border-radius:500px;font-size:18px;display:inline-block;">
 	<i class="icomoon-free-social-contact-16x16-clock"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-9478 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:22px;"}' style="font-weight:bold;color:#ffffff;">Everyday 7:00 - 22:30</h3></div> <!-- header -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-3495 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:22px;"}' style="font-weight:bold;color:#ffffff;">Everyday 7:00 - 22:30</h3></div> <!-- header -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component --><div class="aio-icon-component  vc_custom_1563303958660   style_1">
-<div id="Info-box-wrap-5726" class="aio-icon-box default-icon">
+<div id="Info-box-wrap-1684" class="aio-icon-box default-icon">
 <div class="aio-icon-default"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon advanced " style="color:#ffffff;background:rgba(255,255,255,0.01);border-style:solid;border-color:rgba(137,107,105,0.4);border-width:3px;width:34px;height:34px;line-height:34px;border-radius:500px;font-size:20px;display:inline-block;">
 	<i class="icomoon-free-social-contact-16x16-location"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-5726 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:22px;"}' style="font-weight:bold;color:#ffffff;">8500 Beverly Boulevard Los Angeles, CA 90048</h3></div> <!-- header -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-1684 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:22px;"}' style="font-weight:bold;color:#ffffff;">8500 Beverly Boulevard Los Angeles, CA 90048</h3></div> <!-- header -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component --><style type="text/css" data-type="the7_shortcodes-inline-css">.dt-shortcode-soc-icons.soc-icons-fc38fe2fbc66eff0b1e8a372d53b4cc0 a {
   margin-right: 10px;
@@ -1825,7 +1864,7 @@ color: #997b79;
 </div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6 vc_col-xs-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="ult_hotspot_container ult-adjust-bottom-margin ult-hotspot-tooltip-wrapper ">  <img class="ult_hotspot_image" src="/wp-content/uploads/sites/65/2019/07/d-map.jpg" alt="null">     <div class="utl-hotspot-items ult-hotspot-item">
-<div class="ult-hotspot-item  " style="top:-webkit-calc(44.75180697278912% - 18px);top:-moz-calc(44.75180697278912% - 18px);top:calc(44.75180697278912% - 18px);left: -webkit-calc(48.16132858837485% - 18px);left: -moz-calc(48.16132858837485% - 18px);left: calc(48.16132858837485% - 18px);">  <div style="z-index: 39;position: relative;">   <a data-link_style="tootip" data-mycust-id="hotspot-tooltip-7342" data-ultimate-target="#hotspot-tooltip-7342 .ult-tooltipster-content" data-responsive-json-new='{"font-size":"","line-height":""}' data-tooltip-content-style="width:200px;" data-tooltip-base-style="background-color:#896b69;color:#ffffff;" data-bubble-arrow="true" data-tooltip-offsety="18" class="ult-tooltipstered ult-hotspot-tooltip" href="#" data-status="show"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
+<div class="ult-hotspot-item  " style="top:-webkit-calc(44.75180697278912% - 18px);top:-moz-calc(44.75180697278912% - 18px);top:calc(44.75180697278912% - 18px);left: -webkit-calc(48.16132858837485% - 18px);left: -moz-calc(48.16132858837485% - 18px);left: calc(48.16132858837485% - 18px);">  <div style="z-index: 39;position: relative;">   <a data-link_style="tootip" data-mycust-id="hotspot-tooltip-1324" data-ultimate-target="#hotspot-tooltip-1324 .ult-tooltipster-content" data-responsive-json-new='{"font-size":"","line-height":""}' data-tooltip-content-style="width:200px;" data-tooltip-base-style="background-color:#896b69;color:#ffffff;" data-bubble-arrow="true" data-tooltip-offsety="18" class="ult-tooltipstered ult-hotspot-tooltip" href="#" data-status="show"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon  " style="color:#896b69;font-size:36px;display:inline-block;">
 	<i class="icomoon-free-social-contact-16x16-location"></i>
 </div>
@@ -2021,5 +2060,5 @@ color: #997b79;
 </body>
 
 
-<!-- Page supported by LiteSpeed Cache 5.3 on 2022-11-08 05:27:20 -->
+<!-- Page supported by LiteSpeed Cache 5.3 on 2022-11-08 11:46:41 -->
 </html>
