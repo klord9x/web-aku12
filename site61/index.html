@@ -69,13 +69,52 @@ img.emoji {
 <link rel="stylesheet" id="js_composer_front-css" href="/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=6.8.0" type="text/css" media="all">
 <link rel="stylesheet" id="dt-web-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto:400,500,600,700" type="text/css" media="all">
 <link rel="stylesheet" id="dt-main-css" href="/wp-content/themes/dt-the7/css/main.min.css?ver=11.1.1" type="text/css" media="all">
+<style id="dt-main-inline-css" type="text/css">body #load {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 9901;
+  opacity: 1;
+  visibility: visible;
+  transition: all .35s ease-out;
+}
+.load-wrap {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -ms-flex-pack: center;
+  -ms-justify-content: center;
+  justify-content: center;
+}
+.load-wrap > svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+#load {
+  background: var(--the7-elementor-beautiful-loading-bg,#ffffff);
+  --the7-beautiful-spinner-color2: var(--the7-beautiful-spinner-color,#c4c4c4);
+}</style>
 <link rel="stylesheet" id="the7-custom-scrollbar-css" href="/wp-content/themes/dt-the7/lib/custom-scrollbar/custom-scrollbar.min.css?ver=11.1.1" type="text/css" media="all">
 <link rel="stylesheet" id="the7-wpbakery-css" href="/wp-content/themes/dt-the7/css/wpbakery.min.css?ver=11.1.1" type="text/css" media="all">
-<link rel="stylesheet" id="the7-css-vars-css" href="/wp-content/uploads/sites/61/the7-css/css-vars.css?ver=f3d271cd7c13" type="text/css" media="all">
-<link rel="stylesheet" id="dt-custom-css" href="/wp-content/uploads/sites/61/the7-css/custom.css?ver=f3d271cd7c13" type="text/css" media="all">
-<link rel="stylesheet" id="dt-media-css" href="/wp-content/uploads/sites/61/the7-css/media.css?ver=f3d271cd7c13" type="text/css" media="all">
-<link rel="stylesheet" id="the7-mega-menu-css" href="/wp-content/uploads/sites/61/the7-css/mega-menu.css?ver=f3d271cd7c13" type="text/css" media="all">
-<link rel="stylesheet" id="the7-elements-css" href="/wp-content/uploads/sites/61/the7-css/post-type-dynamic.css?ver=f3d271cd7c13" type="text/css" media="all">
+<link rel="stylesheet" id="the7-css-vars-css" href="/wp-content/uploads/sites/61/the7-css/css-vars.css?ver=b49d6c7d59ab" type="text/css" media="all">
+<link rel="stylesheet" id="dt-custom-css" href="/wp-content/uploads/sites/61/the7-css/custom.css?ver=b49d6c7d59ab" type="text/css" media="all">
+<link rel="stylesheet" id="dt-media-css" href="/wp-content/uploads/sites/61/the7-css/media.css?ver=b49d6c7d59ab" type="text/css" media="all">
+<link rel="stylesheet" id="the7-mega-menu-css" href="/wp-content/uploads/sites/61/the7-css/mega-menu.css?ver=b49d6c7d59ab" type="text/css" media="all">
+<link rel="stylesheet" id="the7-elements-css" href="/wp-content/uploads/sites/61/the7-css/post-type-dynamic.css?ver=b49d6c7d59ab" type="text/css" media="all">
 <link rel="stylesheet" id="style-css" href="/wp-content/themes/dt-the7/style.css?ver=11.1.1" type="text/css" media="all">
 <link rel="stylesheet" id="ultimate-vc-addons-google-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto:regular,700" type="text/css" media="all">
 <link rel="stylesheet" id="ultimate-vc-addons-style-css" href="/wp-content/plugins/Ultimate_VC_Addons/assets/min-css/style.min.css?ver=3.19.11" type="text/css" media="all">
@@ -253,22 +292,22 @@ document.addEventListener("DOMContentLoaded", function(event) {
   box-shadow: none;
 }</style>
 <div class="shortcode-single-image-wrap shortcode-single-image-b38d3137ca6747f96747904c2aba3098 alignnone  vc_custom_1481706653209 enable-bg-rollover dt-icon-bg-off"><div class="shortcode-single-image"><div class="fancy-media-wrap  layzr-bg"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%2098%2098&#39;%2F%3E" data-src="/wp-content/uploads/sites/61/2016/12/logo-c-s.png" data-srcset="/wp-content/uploads/sites/61/2016/12/logo-c-s.png 98w" width="98" height="98" data-dt-location="/site61/coming-soon-simple/logo-c-s/"></div></div></div>
-<div id="ultimate-heading-31466369d4b0d498e" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-31466369d4b0d498e uvc-7373 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-1341636a33b63861e" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-1341636a33b63861e uvc-5226 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-31466369d4b0d498e h2" data-responsive-json-new='{"font-size":"desktop:34px;","line-height":"desktop:44px;"}'><h2 style="--font-weight:theme;color:#ffffff;margin-bottom:15px;">OUR WEBSITE IS COMING SOON</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-31466369d4b0d498e .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:28px;"}' style="font-weight:normal;color:rgba(255,255,255,0.5);margin-bottom:45px;">Lorem ipsum dolor sit amet adipiscing elit. Mauris porttitor id, lobortis tempor. Donec sapien diam aliquet in ultricies.</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1341636a33b63861e h2" data-responsive-json-new='{"font-size":"desktop:34px;","line-height":"desktop:44px;"}'><h2 style="--font-weight:theme;color:#ffffff;margin-bottom:15px;">OUR WEBSITE IS COMING SOON</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1341636a33b63861e .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:28px;"}' style="font-weight:normal;color:rgba(255,255,255,0.5);margin-bottom:45px;">Lorem ipsum dolor sit amet adipiscing elit. Mauris porttitor id, lobortis tempor. Donec sapien diam aliquet in ultricies.</div>
 </div>
-<style>#count-down-wrap-8478 .ult_countdown-amount { font-weight:normal;  font-family : ;	color: #ffffff; } #count-down-wrap-8478 .ult_countdown-period{font-weight:normal;	color: rgba(255,255,255,0.5);	font-family: ;font-weight:bold;bold}</style>
-<div data-ultimate-target="#count-down-wrap-8478 .ult_countdown-period" data-responsive-json-new='{"font-size":"desktop:13px;","line-height":"desktop:23px;"}' class="ult-responsive ult_countdown  vc_custom_1638369145711  ult-cd-no-border ult-cd-s2"><div id="count-down-wrap-8478" class="ult-responsive ult_countdown-div ult_countdown-dateAndTime ult-wptz" data-labels="Years,Months,Weeks,Days,Hours,Minutes,Seconds" data-labels2="Year,Month,Week,Day,Hour,Minute,Second" data-terminal-date="2023/02/01 00:00:00" data-countformat="DHMS" data-time-zone="0" data-time-now="2022/11/08 04:01:52" data-tick-col="#ffffff" data-ultimate-target="#count-down-wrap-8478 .ult_countdown-amount" data-responsive-json-new='{"font-size":"desktop:46px;mobile_landscape:30px;","line-height":"desktop:46px;mobile_landscape:30px;"}' data-tick-p-col="rgba(255,255,255,0.5)" data-tick-style="font-weight:normal;" data-tick-p-style="bold" data-bg-color="" data-br-radius="" data-padd="">2023/02/01 00:00:00</div></div>
-			<div class="ult_dual_button  vc_custom_1495554765384 ult-adjust-bottom-margin to-center  anchor-link" data-response="on" id="ult_btn_3292508603">
+<style>#count-down-wrap-8049 .ult_countdown-amount { font-weight:normal;  font-family : ;	color: #ffffff; } #count-down-wrap-8049 .ult_countdown-period{font-weight:normal;	color: rgba(255,255,255,0.5);	font-family: ;font-weight:bold;bold}</style>
+<div data-ultimate-target="#count-down-wrap-8049 .ult_countdown-period" data-responsive-json-new='{"font-size":"desktop:13px;","line-height":"desktop:23px;"}' class="ult-responsive ult_countdown  vc_custom_1638369145711  ult-cd-no-border ult-cd-s2"><div id="count-down-wrap-8049" class="ult-responsive ult_countdown-div ult_countdown-dateAndTime ult-wptz" data-labels="Years,Months,Weeks,Days,Hours,Minutes,Seconds" data-labels2="Year,Month,Week,Day,Hour,Minute,Second" data-terminal-date="2023/02/01 00:00:00" data-countformat="DHMS" data-time-zone="0" data-time-now="2022/11/08 10:47:18" data-tick-col="#ffffff" data-ultimate-target="#count-down-wrap-8049 .ult_countdown-amount" data-responsive-json-new='{"font-size":"desktop:46px;mobile_landscape:30px;","line-height":"desktop:46px;mobile_landscape:30px;"}' data-tick-p-col="rgba(255,255,255,0.5)" data-tick-style="font-weight:normal;" data-tick-p-style="bold" data-bg-color="" data-br-radius="" data-padd="">2023/02/01 00:00:00</div></div>
+			<div class="ult_dual_button  vc_custom_1495554765384 ult-adjust-bottom-margin to-center  anchor-link" data-response="on" id="ult_btn_3515185124">
 
-			<div id="dualbtn-1542" class="ulitmate_dual_buttons ult-dual-btn ult_main_dualbtn " data-bcolor="#ffffff" data-bhcolor="">
+			<div id="dualbtn-1613" class="ulitmate_dual_buttons ult-dual-btn ult_main_dualbtn " data-bcolor="#ffffff" data-bhcolor="">
 
 			<div class="ult_dualbutton-wrapper btn-inline place-template bt1 ">
 <a href="#!/contact" class="ult_ivan_button round-square with-icon icon-before with-text place-template ult_dual1" style=";margin-right:px;;background-color:rgba(0,0,0,0.01) !important;; border-color:#ffffff;border-style:solid;border-width:2px;border-radius:100px;width:200px;;">
 			<span class="ult-dual-btn-1 Style 1" style="" data-bgcolor="rgba(0,0,0,0.01)" data-bghovercolor="rgba(255,255,255,0.2)" data-icon_color="#333333" data-icon_hover_color="#333333" data-textcolor="#ffffff" data-texthovercolor="#ffffff" data-iconbgcolor="transperent" data-iconbghovercolor="transperent" data-iconborder="transperent" data-iconhoverborder="transperent">
 			<span class="icon-simple icon-left1 ult_btn1span ult-dual-btn-no-icon" style=";padding-left:0px; "></span>
-			<span class="text-btn ult-dual-button-title ult-responsive" data-ultimate-target="#dualbtn-1542 .ult-dual-button-title" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-family:Roboto;font-weight:700;color:#ffffff;">Contact Us</span>
+			<span class="text-btn ult-dual-button-title ult-responsive" data-ultimate-target="#dualbtn-1613 .ult-dual-button-title" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-family:Roboto;font-weight:700;color:#ffffff;">Contact Us</span>
 
 			</span>
 			</a><span class="middle-text" style="line-height: 1.8em;color:#111111;background-color:#ffffff;border-width:0px;">
@@ -290,23 +329,23 @@ document.addEventListener("DOMContentLoaded", function(event) {
 <div class="vc_row-full-width vc_clearfix"></div>
 <!-- Row Backgrounds --><div class="upb_bg_img" data-ultimate-bg="url(/wp-content/uploads/sites/61/2016/12/coming-soon-the7-bg-90.jpg)" data-image-id="id^135|url^/wp-content/uploads/sites/61/2016/12/coming-soon-the7-bg-90.jpg|caption^null|alt^null|title^coming-soon-the7-bg-90|description^null" data-ultimate-bg-style="vcpb-default" data-bg-img-repeat="no-repeat" data-bg-img-size="cover" data-bg-img-position="" data-parallx_sense="30" data-bg-override="ex-full" data-bg_img_attach="fixed" data-upb-overlay-color="rgba(0,0,0,0.45)" data-upb-bg-animation="" data-fadeout="" data-bg-animation="left-animation" data-bg-animation-type="h" data-animation-repeat="repeat" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false" data-custom-vc-row="" data-vc="6.8.0" data-is_old_vc="" data-theme-support="" data-overlay="true" data-overlay-color="rgba(0,0,0,0.45)" data-overlay-pattern="" data-overlay-pattern-opacity="0.8" data-overlay-pattern-size="" data-overlay-pattern-attachment="scroll"></div>
 <div id="contact" data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1481745378436 vc_row-has-fill vc_row-o-full-height vc_row-o-columns-middle vc_row-flex"><div class="wpb_column vc_column_container vc_col-sm-10 vc_col-lg-offset-2 vc_col-lg-8 vc_col-md-offset-2 vc_col-md-8 vc_col-sm-offset-1 vc_col-has-fill"><div class="vc_column-inner vc_custom_1511360697431"><div class="wpb_wrapper">
-<div id="ultimate-heading-87696369d4b0d6fa5" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-87696369d4b0d6fa5 uvc-3055 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-87696369d4b0d6fa5 h2" data-responsive-json-new='{"font-size":"desktop:34px;","line-height":"desktop:44px;"}'><h2 style="--font-weight:theme;color:#ffffff;margin-bottom:10px;">CONTACT US</h2></div>
+<div id="ultimate-heading-3083636a33b6396e4" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-3083636a33b6396e4 uvc-1344 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3083636a33b6396e4 h2" data-responsive-json-new='{"font-size":"desktop:34px;","line-height":"desktop:44px;"}'><h2 style="--font-weight:theme;color:#ffffff;margin-bottom:10px;">CONTACT US</h2></div>
 <div class="uvc-heading-spacer line_only" style="margin-bottom:60px;height:3px;"><span class="uvc-headings-line" style="border-style:solid;border-bottom-width:3px;border-color:#ccc;width:80px;"></span></div>
 </div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1511360614807">
 <div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper">
 <div class="aio-icon-component  vc_custom_1481742507724   style_1">
-<div id="Info-box-wrap-6209" class="aio-icon-box default-icon">
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-6209 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:13px;","line-height":"desktop:15px;"}' style="font-weight:bold;color:rgba(255,255,255,0.5);">Phone number</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-6209 .aio-icon-description" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:26px;"}' style="color:#ffffff;">+999 123 456 89</div> <!-- description -->
+<div id="Info-box-wrap-4991" class="aio-icon-box default-icon">
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-4991 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:13px;","line-height":"desktop:15px;"}' style="font-weight:bold;color:rgba(255,255,255,0.5);">Phone number</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-4991 .aio-icon-description" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:26px;"}' style="color:#ffffff;">+999 123 456 89</div> <!-- description -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component --><div class="aio-icon-component  vc_custom_1481742512841   style_1">
-<div id="Info-box-wrap-6635" class="aio-icon-box default-icon">
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-6635 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:13px;","line-height":"desktop:15px;"}' style="font-weight:bold;color:rgba(255,255,255,0.5);">Email</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-6635 .aio-icon-description" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="color:#ffffff;">hello@dream-theme.com</div> <!-- description -->
+<div id="Info-box-wrap-1296" class="aio-icon-box default-icon">
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-1296 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:13px;","line-height":"desktop:15px;"}' style="font-weight:bold;color:rgba(255,255,255,0.5);">Email</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-1296 .aio-icon-description" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="color:#ffffff;">hello@dream-theme.com</div> <!-- description -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component --><div class="aio-icon-component  vc_custom_1481742517909   style_1">
-<div id="Info-box-wrap-3986" class="aio-icon-box default-icon">
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-3986 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:13px;","line-height":"desktop:15px;"}' style="font-weight:bold;color:rgba(255,255,255,0.5);">Address</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-3986 .aio-icon-description" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="color:#ffffff;">121 Rock Sreet, 21 Avenue, New York,<br>
+<div id="Info-box-wrap-5599" class="aio-icon-box default-icon">
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-5599 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:13px;","line-height":"desktop:15px;"}' style="font-weight:bold;color:rgba(255,255,255,0.5);">Address</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-5599 .aio-icon-description" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="color:#ffffff;">121 Rock Sreet, 21 Avenue, New York,<br>
 NY 92103-9000</div> <!-- description -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component --><div class=" vc_custom_1511360779107  uavc-icons ">
@@ -341,10 +380,10 @@ NY 92103-9000</div> <!-- description -->
 <div class="vc_row-full-width vc_clearfix"></div>
 <!-- Row Backgrounds --><div class="upb_bg_img" data-ultimate-bg="url(/wp-content/uploads/sites/61/2016/12/coming-soon-the7-bg-90.jpg)" data-image-id="id^135|url^/wp-content/uploads/sites/61/2016/12/coming-soon-the7-bg-90.jpg|caption^null|alt^null|title^coming-soon-the7-bg-90|description^null" data-ultimate-bg-style="vcpb-default" data-bg-img-repeat="no-repeat" data-bg-img-size="cover" data-bg-img-position="" data-parallx_sense="30" data-bg-override="ex-full" data-bg_img_attach="fixed" data-upb-overlay-color="rgba(0,0,0,0.45)" data-upb-bg-animation="" data-fadeout="" data-bg-animation="left-animation" data-bg-animation-type="h" data-animation-repeat="repeat" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false" data-custom-vc-row="" data-vc="6.8.0" data-is_old_vc="" data-theme-support="" data-overlay="true" data-overlay-color="rgba(0,0,0,0.45)" data-overlay-pattern="" data-overlay-pattern-opacity="0.8" data-overlay-pattern-size="" data-overlay-pattern-attachment="scroll"></div>
 <div id="subscribe" data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1481745390521 vc_row-has-fill vc_row-o-full-height vc_row-o-columns-middle vc_row-flex"><div class="text-centered wpb_column vc_column_container vc_col-sm-10 vc_col-lg-offset-2 vc_col-lg-8 vc_col-md-offset-2 vc_col-md-8 vc_col-sm-offset-1 vc_col-has-fill"><div class="vc_column-inner vc_custom_1511360728242"><div class="wpb_wrapper">
-<div id="ultimate-heading-82996369d4b0e4285" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-82996369d4b0e4285 uvc-1948 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-82996369d4b0e4285 h2" data-responsive-json-new='{"font-size":"desktop:34px;","line-height":"desktop:44px;"}'><h2 style="--font-weight:theme;color:#ffffff;margin-bottom:10px;">SUBSCRIBE</h2></div>
+<div id="ultimate-heading-3612636a33b63a960" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-3612636a33b63a960 uvc-155 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3612636a33b63a960 h2" data-responsive-json-new='{"font-size":"desktop:34px;","line-height":"desktop:44px;"}'><h2 style="--font-weight:theme;color:#ffffff;margin-bottom:10px;">SUBSCRIBE</h2></div>
 <div class="uvc-heading-spacer line_only" style="margin-bottom:30px;height:3px;"><span class="uvc-headings-line" style="border-style:solid;border-bottom-width:3px;border-color:#ccc;width:80px;"></span></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-82996369d4b0e4285 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:28px;"}' style="font-weight:normal;color:rgba(255,255,255,0.5);margin-bottom:40px;">
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3612636a33b63a960 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:28px;"}' style="font-weight:normal;color:rgba(255,255,255,0.5);margin-bottom:40px;">
 <p style="text-align: center;">Lorem ipsum dolor sit amet adipiscing elit.<br>
 Mauris porttitor id, lobortis tempor.</p>
 <p></p>
@@ -480,5 +519,5 @@ Mauris porttitor id, lobortis tempor.</p>
 </body>
 
 
-<!-- Page supported by LiteSpeed Cache 5.3 on 2022-11-08 04:01:53 -->
+<!-- Page supported by LiteSpeed Cache 5.3 on 2022-11-08 10:47:18 -->
 </html>
