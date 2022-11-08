@@ -1,0 +1,18 @@
+.elementor-4973 .elementor-element.elementor-element-57dcf64 > .elementor-element-populated{padding:0px 0px 0px 0px;}/* Start custom CSS for html, class: .elementor-element-d74ed21 */.content .elementor-4973 .elementor-element.elementor-element-d74ed21 ol {
+    list-style-position: inside;
+    margin: 0 0 20px 0;
+}
+.content .elementor-4973 .elementor-element.elementor-element-d74ed21 ol ol {
+    margin-left: 30px;
+}
+.content .elementor-4973 .elementor-element.elementor-element-d74ed21 li::marker {
+    font-weight: bold;
+}
+
+.content .elementor-4973 .elementor-element.elementor-element-d74ed21 ol ol {
+    margin-top: 10px;
+    list-style-type: lower-alpha;
+}
+.content .elementor-4973 .elementor-element.elementor-element-d74ed21 ol ol ol {
+    list-style-type: lower-roman;
+}/* End custom CSS */
