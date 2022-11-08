@@ -72,6 +72,45 @@ img.emoji {
 <link rel="stylesheet" id="js_composer_front-css" href="/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=6.8.0" type="text/css" media="all">
 <link rel="stylesheet" id="dt-web-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto Condensed:400,600,700|Roboto:400,500,600,700" type="text/css" media="all">
 <link rel="stylesheet" id="dt-main-css" href="/wp-content/themes/dt-the7/css/main.min.css?ver=11.1.1" type="text/css" media="all">
+<style id="dt-main-inline-css" type="text/css">body #load {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 9901;
+  opacity: 1;
+  visibility: visible;
+  transition: all .35s ease-out;
+}
+.load-wrap {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -ms-flex-pack: center;
+  -ms-justify-content: center;
+  justify-content: center;
+}
+.load-wrap > svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+#load {
+  background: var(--the7-elementor-beautiful-loading-bg,#ffffff);
+  --the7-beautiful-spinner-color2: var(--the7-beautiful-spinner-color,#ef524a);
+}</style>
 <link rel="stylesheet" id="the7-custom-scrollbar-css" href="/wp-content/themes/dt-the7/lib/custom-scrollbar/custom-scrollbar.min.css?ver=11.1.1" type="text/css" media="all">
 <link rel="stylesheet" id="the7-wpbakery-css" href="/wp-content/themes/dt-the7/css/wpbakery.min.css?ver=11.1.1" type="text/css" media="all">
 <link rel="stylesheet" id="the7-core-css" href="/wp-content/plugins/dt-the7-core/assets/css/post-type.min.css?ver=2.7.0" type="text/css" media="all">
@@ -446,8 +485,8 @@ margin: 15px 0 0 0;
 	<div id="content" class="content" role="main">
 
 		<div class="vc_row wpb_row vc_row-fluid vc_custom_1491850701777"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
-<div id="ultimate-heading-2226369bf4168efb" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2226369bf4168efb uvc-3032 " data-hspacer="line_with_icon" data-hline_width="230" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="2" data-hborder_color="rgba(204,204,204,0.85)" data-icon_width="14" data-hfixer="10" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2226369bf4168efb h2" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}'><h2 style="font-weight:bold;margin-bottom:0px;">FEATURED PRODUCTS</h2></div>
+<div id="ultimate-heading-6971636a1b26e2e27" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-6971636a1b26e2e27 uvc-8518 " data-hspacer="line_with_icon" data-hline_width="230" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="2" data-hborder_color="rgba(204,204,204,0.85)" data-icon_width="14" data-hfixer="10" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6971636a1b26e2e27 h2" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}'><h2 style="font-weight:bold;margin-bottom:0px;">FEATURED PRODUCTS</h2></div>
 <div class="uvc-heading-spacer line_with_icon" style="margin-bottom:40px;height:14px;"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="color:#cccccc;font-size:14px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-star"></i>
@@ -659,25 +698,25 @@ margin: 15px 0 0 0;
 </div></div></div></div>
 <div class="vc_row wpb_row vc_row-fluid vc_custom_1491998279206"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1491998312113 vc_column-gap-30 vc_row-o-equal-height vc_row-o-content-middle vc_row-flex">
 <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-has-fill"><div class="vc_column-inner vc_custom_1502285985329"><div class="wpb_wrapper">
-<div class="aio-icon-component  vc_custom_1491998629455   style_1"><a class="aio-icon-box-link" href="http://the7.io/shop/all-products/"><div id="Info-box-wrap-9331" class="aio-icon-box default-icon">
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-9331 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:28px;","line-height":"desktop:32px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;color:#ffffff;">SEASONAL SALE</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-9331 .aio-icon-description" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:24px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:700;color:#ec544e;">Winter Collection -50% OFF</div> <!-- description -->
+<div class="aio-icon-component  vc_custom_1491998629455   style_1"><a class="aio-icon-box-link" href="http://the7.io/shop/all-products/"><div id="Info-box-wrap-3006" class="aio-icon-box default-icon">
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-3006 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:28px;","line-height":"desktop:32px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;color:#ffffff;">SEASONAL SALE</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-3006 .aio-icon-description" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:24px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:700;color:#ec544e;">Winter Collection -50% OFF</div> <!-- description -->
 </div> <!-- aio-icon-box --></a></div> <!-- aio-icon-component -->
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-has-fill"><div class="vc_column-inner vc_custom_1502285995695"><div class="wpb_wrapper">
-<div class="aio-icon-component  vc_custom_1491998618890   style_1"><a class="aio-icon-box-link" href="http://the7.io/shop/all-products/"><div id="Info-box-wrap-1970" class="aio-icon-box default-icon">
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-1970 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:28px;","line-height":"desktop:32px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;color:#ffffff;">NEW FOOTWEAR COLLECTION</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-1970 .aio-icon-description" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:24px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:700;color:#ec544e;">Spring / Summer 2017</div> <!-- description -->
+<div class="aio-icon-component  vc_custom_1491998618890   style_1"><a class="aio-icon-box-link" href="http://the7.io/shop/all-products/"><div id="Info-box-wrap-2710" class="aio-icon-box default-icon">
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-2710 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:28px;","line-height":"desktop:32px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;color:#ffffff;">NEW FOOTWEAR COLLECTION</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-2710 .aio-icon-description" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:24px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:700;color:#ec544e;">Spring / Summer 2017</div> <!-- description -->
 </div> <!-- aio-icon-box --></a></div> <!-- aio-icon-component -->
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-has-fill"><div class="vc_column-inner vc_custom_1502286005425"><div class="wpb_wrapper">
-<div class="aio-icon-component  vc_custom_1491998546568   style_1"><a class="aio-icon-box-link" href="http://the7.io/shop/all-products/"><div id="Info-box-wrap-7334" class="aio-icon-box default-icon">
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-7334 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:28px;","line-height":"desktop:32px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;color:#ffffff;">T-SHIRTS</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-7334 .aio-icon-description" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:24px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:700;color:#ec544e;">New Trendy Prints</div> <!-- description -->
+<div class="aio-icon-component  vc_custom_1491998546568   style_1"><a class="aio-icon-box-link" href="http://the7.io/shop/all-products/"><div id="Info-box-wrap-1005" class="aio-icon-box default-icon">
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-1005 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:28px;","line-height":"desktop:32px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;color:#ffffff;">T-SHIRTS</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-1005 .aio-icon-description" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:24px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:700;color:#ec544e;">New Trendy Prints</div> <!-- description -->
 </div> <!-- aio-icon-box --></a></div> <!-- aio-icon-component -->
 </div></div></div>
 </div></div></div></div></div>
 <!-- Row Backgrounds --><div class="upb_color" data-bg-override="ex-full" data-bg-color="#f3f3f5" data-fadeout="" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false" data-custom-vc-row="" data-vc="6.8.0" data-is_old_vc="" data-theme-support="" data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size=""></div>
 <div class="vc_row wpb_row vc_row-fluid vc_custom_1491850882058"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
-<div id="ultimate-heading-37036369bf434d5c5" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-37036369bf434d5c5 uvc-9363 " data-hspacer="line_with_icon" data-hline_width="230" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="2" data-hborder_color="rgba(204,204,204,0.85)" data-icon_width="14" data-hfixer="10" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-37036369bf434d5c5 h2" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}'><h2 style="font-weight:bold;">SPRING/SUMER 2017 NEW INCOMES</h2></div>
+<div id="ultimate-heading-9807636a1b2820021" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-9807636a1b2820021 uvc-3527 " data-hspacer="line_with_icon" data-hline_width="230" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="2" data-hborder_color="rgba(204,204,204,0.85)" data-icon_width="14" data-hfixer="10" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9807636a1b2820021 h2" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}'><h2 style="font-weight:bold;">SPRING/SUMER 2017 NEW INCOMES</h2></div>
 <div class="uvc-heading-spacer line_with_icon" style="margin-bottom:40px;height:14px;"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="color:#cccccc;font-size:14px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-star"></i>
@@ -890,17 +929,17 @@ margin: 15px 0 0 0;
 </div>
 </div></div></div></div>
 <div class="vc_row wpb_row vc_row-fluid vc_custom_1491906400514 vc_row-has-fill vc_row-o-equal-height vc_row-o-content-middle vc_row-flex">
-<div class="wpb_column vc_column_container vc_col-sm-8"><div class="vc_column-inner vc_custom_1491852083406"><div class="wpb_wrapper"><div id="ultimate-heading-61346369bf46c8a84" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-61346369bf46c8a84 uvc-9026 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div class="wpb_column vc_column_container vc_col-sm-8"><div class="vc_column-inner vc_custom_1491852083406"><div class="wpb_wrapper"><div id="ultimate-heading-1887636a1b2907d59" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-1887636a1b2907d59 uvc-5184 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-61346369bf46c8a84 h2" data-responsive-json-new='{"font-size":"desktop:40px;","line-height":"desktop:50px;"}'><h2 style="font-weight:bold;color:#ffffff;">TOTAL SALE: -50% for all winter collection!</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1887636a1b2907d59 h2" data-responsive-json-new='{"font-size":"desktop:40px;","line-height":"desktop:50px;"}'><h2 style="font-weight:bold;color:#ffffff;">TOTAL SALE: -50% for all winter collection!</h2></div>
 </div></div></div></div>
-<div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1491852088239"><div class="wpb_wrapper"><div class=" vc_custom_1491938146668 ubtn-ctn-center "><button type="button" id="ubtn-5994" class="ubtn ult-adjust-bottom-margin ult-responsive ubtn-custom ubtn-no-hover-bg  none  ubtn-center   tooltip-6369bf46c9875" data-hover="#ec544e" data-border-color="#ffffff" data-bg="rgba(255,255,255,0.01)" data-hover-bg="#ffffff" data-border-hover="#ffffff" data-shadow-hover="" data-shadow-click="none" data-shadow="" data-shd-shadow="" data-ultimate-target="#ubtn-5994" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:20px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:700;width:500px;min-height:px;padding:20px 20px;border-radius:0px;border-width:3px;border-color:#ffffff;border-style:solid;background: rgba(255,255,255,0.01);color: #ffffff;"><span class="ubtn-hover" style="background-color:#ffffff"></span><span class="ubtn-data ubtn-text ">BROWSE SALE PRODUCTS</span></button></div></div></div></div>
+<div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1491852088239"><div class="wpb_wrapper"><div class=" vc_custom_1491938146668 ubtn-ctn-center "><button type="button" id="ubtn-5198" class="ubtn ult-adjust-bottom-margin ult-responsive ubtn-custom ubtn-no-hover-bg  none  ubtn-center   tooltip-636a1b29080a8" data-hover="#ec544e" data-border-color="#ffffff" data-bg="rgba(255,255,255,0.01)" data-hover-bg="#ffffff" data-border-hover="#ffffff" data-shadow-hover="" data-shadow-click="none" data-shadow="" data-shd-shadow="" data-ultimate-target="#ubtn-5198" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:20px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:700;width:500px;min-height:px;padding:20px 20px;border-radius:0px;border-width:3px;border-color:#ffffff;border-style:solid;background: rgba(255,255,255,0.01);color: #ffffff;"><span class="ubtn-hover" style="background-color:#ffffff"></span><span class="ubtn-data ubtn-text ">BROWSE SALE PRODUCTS</span></button></div></div></div></div>
 </div>
 <!-- Row Backgrounds --><div class="upb_bg_img" data-ultimate-bg="url(/wp-content/uploads/sites/47/2014/09/patt-sale.png)" data-image-id="id^36052|url^/wp-content/uploads/sites/47/2014/09/patt-sale.png|caption^null|alt^null|title^patt-sale|description^null" data-ultimate-bg-style="vcpb-animated" data-bg-img-repeat="repeat" data-bg-img-size="initial" data-bg-img-position="" data-parallx_sense="30" data-bg-override="ex-full" data-bg_img_attach="scroll" data-upb-overlay-color="" data-upb-bg-animation="" data-fadeout="" data-bg-animation="left-animation" data-bg-animation-type="h" data-animation-repeat="repeat" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false" data-custom-vc-row="" data-vc="6.8.0" data-is_old_vc="" data-theme-support="" data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size=""></div>
 <div class="vc_row wpb_row vc_row-fluid vc_custom_1491851194190">
 <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-4 vc_col-md-4 vc_col-xs-12"><div class="vc_column-inner vc_custom_1491851201585"><div class="wpb_wrapper">
-<div id="ultimate-heading-23226369bf46def4f" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-23226369bf46def4f uvc-5039 " data-hspacer="line_with_icon" data-hline_width="230" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="2" data-hborder_color="rgba(204,204,204,0.85)" data-icon_width="14" data-hfixer="10" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-23226369bf46def4f h2" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}'><h2 style="font-weight:bold;">RECENT NEWS</h2></div>
+<div id="ultimate-heading-6043636a1b291d3c4" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-6043636a1b291d3c4 uvc-3721 " data-hspacer="line_with_icon" data-hline_width="230" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="2" data-hborder_color="rgba(204,204,204,0.85)" data-icon_width="14" data-hfixer="10" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6043636a1b291d3c4 h2" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}'><h2 style="font-weight:bold;">RECENT NEWS</h2></div>
 <div class="uvc-heading-spacer line_with_icon" style="margin-bottom:40px;height:14px;"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="color:#cccccc;font-size:14px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-star"></i>
@@ -925,8 +964,8 @@ margin: 15px 0 0 0;
 </div></article></div></section>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-4 vc_col-md-4 vc_col-xs-12"><div class="vc_column-inner vc_custom_1491851209720"><div class="wpb_wrapper">
-<div id="ultimate-heading-31696369bf4b0a8d6" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-31696369bf4b0a8d6 uvc-5943 " data-hspacer="line_with_icon" data-hline_width="230" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="2" data-hborder_color="rgba(204,204,204,0.85)" data-icon_width="14" data-hfixer="10" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-31696369bf4b0a8d6 h2" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}'><h2 style="font-weight:bold;">SHIPPING &amp; RETURN POLICY</h2></div>
+<div id="ultimate-heading-2423636a1b294ef48" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2423636a1b294ef48 uvc-7023 " data-hspacer="line_with_icon" data-hline_width="230" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="2" data-hborder_color="rgba(204,204,204,0.85)" data-icon_width="14" data-hfixer="10" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2423636a1b294ef48 h2" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}'><h2 style="font-weight:bold;">SHIPPING &amp; RETURN POLICY</h2></div>
 <div class="uvc-heading-spacer line_with_icon" style="margin-bottom:40px;height:14px;"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="color:#cccccc;font-size:14px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-star"></i>
@@ -953,8 +992,8 @@ margin: 15px 0 0 0;
 </div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-4 vc_col-md-4 vc_col-xs-12"><div class="vc_column-inner vc_custom_1491851218103"><div class="wpb_wrapper">
-<div id="ultimate-heading-93456369bf4b0b21b" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-93456369bf4b0b21b uvc-5721 " data-hspacer="line_with_icon" data-hline_width="230" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="2" data-hborder_color="rgba(204,204,204,0.85)" data-icon_width="14" data-hfixer="10" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-93456369bf4b0b21b h2" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}'><h2 style="font-weight:bold;">WHY CHOOSE OUR STORE</h2></div>
+<div id="ultimate-heading-356636a1b294f975" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-356636a1b294f975 uvc-2075 " data-hspacer="line_with_icon" data-hline_width="230" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="2" data-hborder_color="rgba(204,204,204,0.85)" data-icon_width="14" data-hfixer="10" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-356636a1b294f975 h2" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}'><h2 style="font-weight:bold;">WHY CHOOSE OUR STORE</h2></div>
 <div class="uvc-heading-spacer line_with_icon" style="margin-bottom:40px;height:14px;"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="color:#cccccc;font-size:14px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-star"></i>
@@ -1389,5 +1428,5 @@ var wc_cart_fragments_params = {"ajax_url":"\/site47\/wp-admin\/admin-ajax.php",
 </body>
 
 
-<!-- Page supported by LiteSpeed Cache 5.3 on 2022-11-08 02:30:36 -->
+<!-- Page supported by LiteSpeed Cache 5.3 on 2022-11-08 09:02:33 -->
 </html>
