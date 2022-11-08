@@ -71,6 +71,45 @@ img.emoji {
 <link rel="stylesheet" id="js_composer_front-css" href="/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=6.8.0" type="text/css" media="all">
 <link rel="stylesheet" id="dt-web-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto:400,500,600,700" type="text/css" media="all">
 <link rel="stylesheet" id="dt-main-css" href="/wp-content/themes/dt-the7/css/main.min.css?ver=11.1.1" type="text/css" media="all">
+<style id="dt-main-inline-css" type="text/css">body #load {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 9901;
+  opacity: 1;
+  visibility: visible;
+  transition: all .35s ease-out;
+}
+.load-wrap {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -ms-flex-pack: center;
+  -ms-justify-content: center;
+  justify-content: center;
+}
+.load-wrap > svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+#load {
+  background: var(--the7-elementor-beautiful-loading-bg,#ffffff);
+  --the7-beautiful-spinner-color2: var(--the7-beautiful-spinner-color,#c4c4c4);
+}</style>
 <link rel="stylesheet" id="the7-custom-scrollbar-css" href="/wp-content/themes/dt-the7/lib/custom-scrollbar/custom-scrollbar.min.css?ver=11.1.1" type="text/css" media="all">
 <link rel="stylesheet" id="the7-wpbakery-css" href="/wp-content/themes/dt-the7/css/wpbakery.min.css?ver=11.1.1" type="text/css" media="all">
 <link rel="stylesheet" id="the7-css-vars-css" href="/wp-content/uploads/sites/71/the7-css/css-vars.css?ver=bc6c17b0641c" type="text/css" media="all">
@@ -89,7 +128,7 @@ img.emoji {
 <script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
 <script type="text/javascript" id="dt-above-fold-js-extra">
 /* <![CDATA[ */
-var dtLocal = {"themeUrl":"\/wp-content\/themes\/dt-the7","passText":"To view this protected post, enter the password below:","moreButtonText":{"loading":"Loading...","loadMore":"Load more"},"postID":"4","ajaxurl":"\/wp-admin\/admin-ajax.php","REST":{"baseUrl":"\/site71\/wp-json\/the7\/v1","endpoints":{"sendMail":"\/send-mail"}},"contactMessages":{"required":"One or more fields have an error. Please check and try again.","terms":"Please accept the privacy policy.","fillTheCaptchaError":"Please, fill the captcha."},"captchaSiteKey":"","ajaxNonce":"bf9aed7ca8","pageData":{"type":"page","template":"microsite","layout":null},"themeSettings":{"smoothScroll":"off","lazyLoading":false,"accentColor":{"mode":"solid","color":"#3a71ec"},"desktopHeader":{"height":90},"ToggleCaptionEnabled":"disabled","ToggleCaption":"Navigation","floatingHeader":{"showAfter":450,"showMenu":true,"height":60,"logo":{"showLogo":true,"html":"<img class=\" preload-me\" src=\"\/wp-content\/uploads\/sites\/71\/2017\/05\/g.png\" srcset=\"\/wp-content\/uploads\/sites\/71\/2017\/05\/g.png 36w, \/wp-content\/uploads\/sites\/71\/2017\/05\/g-hd.png 72w\" width=\"36\" height=\"36\"   sizes=\"36px\" alt=\"Site71\" \/>","url":"#!\/up"}},"topLine":{"floatingTopLine":{"logo":{"showLogo":false,"html":""}}},"mobileHeader":{"firstSwitchPoint":1050,"secondSwitchPoint":778,"firstSwitchPointHeight":60,"secondSwitchPointHeight":60,"mobileToggleCaptionEnabled":"disabled","mobileToggleCaption":"Menu"},"stickyMobileHeaderFirstSwitch":{"logo":{"html":"<img class=\" preload-me\" src=\"\/wp-content\/uploads\/sites\/71\/2017\/05\/g.png\" srcset=\"\/wp-content\/uploads\/sites\/71\/2017\/05\/g.png 36w, \/wp-content\/uploads\/sites\/71\/2017\/05\/g-hd.png 72w\" width=\"36\" height=\"36\"   sizes=\"36px\" alt=\"Site71\" \/>"}},"stickyMobileHeaderSecondSwitch":{"logo":{"html":"<img class=\" preload-me\" src=\"\/wp-content\/uploads\/sites\/71\/2017\/05\/g.png\" srcset=\"\/wp-content\/uploads\/sites\/71\/2017\/05\/g.png 36w, \/wp-content\/uploads\/sites\/71\/2017\/05\/g-hd.png 72w\" width=\"36\" height=\"36\"   sizes=\"36px\" alt=\"Site71\" \/>"}},"content":{"textColor":"#787d85","headerColor":"#1d2028"},"sidebar":{"switchPoint":992},"boxedWidth":"1280px","stripes":{"stripe1":{"textColor":"#787d85","headerColor":"#3b3f4a"},"stripe2":{"textColor":"#8b9199","headerColor":"#ffffff"},"stripe3":{"textColor":"#ffffff","headerColor":"#ffffff"}}},"VCMobileScreenWidth":"768"};
+var dtLocal = {"themeUrl":"\/wp-content\/themes\/dt-the7","passText":"To view this protected post, enter the password below:","moreButtonText":{"loading":"Loading...","loadMore":"Load more"},"postID":"4","ajaxurl":"\/wp-admin\/admin-ajax.php","REST":{"baseUrl":"\/site71\/wp-json\/the7\/v1","endpoints":{"sendMail":"\/send-mail"}},"contactMessages":{"required":"One or more fields have an error. Please check and try again.","terms":"Please accept the privacy policy.","fillTheCaptchaError":"Please, fill the captcha."},"captchaSiteKey":"","ajaxNonce":"7617c7901d","pageData":{"type":"page","template":"microsite","layout":null},"themeSettings":{"smoothScroll":"off","lazyLoading":false,"accentColor":{"mode":"solid","color":"#3a71ec"},"desktopHeader":{"height":90},"ToggleCaptionEnabled":"disabled","ToggleCaption":"Navigation","floatingHeader":{"showAfter":450,"showMenu":true,"height":60,"logo":{"showLogo":true,"html":"<img class=\" preload-me\" src=\"\/wp-content\/uploads\/sites\/71\/2017\/05\/g.png\" srcset=\"\/wp-content\/uploads\/sites\/71\/2017\/05\/g.png 36w, \/wp-content\/uploads\/sites\/71\/2017\/05\/g-hd.png 72w\" width=\"36\" height=\"36\"   sizes=\"36px\" alt=\"Site71\" \/>","url":"#!\/up"}},"topLine":{"floatingTopLine":{"logo":{"showLogo":false,"html":""}}},"mobileHeader":{"firstSwitchPoint":1050,"secondSwitchPoint":778,"firstSwitchPointHeight":60,"secondSwitchPointHeight":60,"mobileToggleCaptionEnabled":"disabled","mobileToggleCaption":"Menu"},"stickyMobileHeaderFirstSwitch":{"logo":{"html":"<img class=\" preload-me\" src=\"\/wp-content\/uploads\/sites\/71\/2017\/05\/g.png\" srcset=\"\/wp-content\/uploads\/sites\/71\/2017\/05\/g.png 36w, \/wp-content\/uploads\/sites\/71\/2017\/05\/g-hd.png 72w\" width=\"36\" height=\"36\"   sizes=\"36px\" alt=\"Site71\" \/>"}},"stickyMobileHeaderSecondSwitch":{"logo":{"html":"<img class=\" preload-me\" src=\"\/wp-content\/uploads\/sites\/71\/2017\/05\/g.png\" srcset=\"\/wp-content\/uploads\/sites\/71\/2017\/05\/g.png 36w, \/wp-content\/uploads\/sites\/71\/2017\/05\/g-hd.png 72w\" width=\"36\" height=\"36\"   sizes=\"36px\" alt=\"Site71\" \/>"}},"content":{"textColor":"#787d85","headerColor":"#1d2028"},"sidebar":{"switchPoint":992},"boxedWidth":"1280px","stripes":{"stripe1":{"textColor":"#787d85","headerColor":"#3b3f4a"},"stripe2":{"textColor":"#8b9199","headerColor":"#ffffff"},"stripe3":{"textColor":"#ffffff","headerColor":"#ffffff"}}},"VCMobileScreenWidth":"768"};
 var dtShare = {"shareButtonText":{"facebook":"Share on Facebook","twitter":"Tweet","pinterest":"Pin it","linkedin":"Share on Linkedin","whatsapp":"Share on Whatsapp"},"overlayOpacity":"85"};
 /* ]]> */
 </script>
@@ -337,28 +376,28 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </div></div></div></div></div>
 <!-- Row Backgrounds --><div class="upb_bg_img" data-ultimate-bg="url(/wp-content/uploads/sites/71/2016/12/bg-creative-pattern.gif)" data-image-id="id^57|url^/wp-content/uploads/sites/71/2016/12/bg-creative-pattern.gif|caption^null|alt^null|title^bg-creative-pattern|description^null" data-ultimate-bg-style="vcpb-vz-jquery" data-bg-img-repeat="repeat" data-bg-img-size="initial" data-bg-img-position="" data-parallx_sense="50" data-bg-override="ex-full" data-bg_img_attach="scroll" data-upb-overlay-color="rgba(0,0,0,0.7)" data-upb-bg-animation="" data-fadeout="" data-bg-animation="left-animation" data-bg-animation-type="h" data-animation-repeat="repeat" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false" data-custom-vc-row="" data-vc="6.8.0" data-is_old_vc="" data-theme-support="" data-overlay="true" data-overlay-color="rgba(0,0,0,0.7)" data-overlay-pattern="" data-overlay-pattern-opacity="0.8" data-overlay-pattern-size="" data-overlay-pattern-attachment="scroll" data-multi-color-overlay="uvc-multi-color-bg" data-multi-color-overlay-opacity="0.85" data-seperator="true" data-seperator-type="xlarge_triangle_seperator" data-seperator-shape-size="40" data-seperator-svg-height="220" data-seperator-full-width="true" data-seperator-position="bottom_seperator" data-seperator-background-color="#fff" data-icon=""></div>
 <div id="about" class="vc_row wpb_row vc_row-fluid vc_custom_1493725940488"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-0 vc_col-lg-12 vc_col-md-offset-0 vc_col-md-12 vc_col-sm-offset-0"><div class="vc_column-inner"><div class="wpb_wrapper">
-<div id="ultimate-heading-69336369ef661c373" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-69336369ef661c373 uvc-5281 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div id="ultimate-heading-9492636a45631c8d3" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-9492636a45631c8d3 uvc-8363 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-69336369ef661c373 h2" data-responsive-json-new='{"font-size":"desktop:90px;mobile_landscape:60px;","line-height":"desktop:100px;mobile_landscape:70px;"}'><h2 style="font-weight:bold;color:rgba(59,63,74,0.12);margin-bottom:-45px;">*ABOUT ME</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9492636a45631c8d3 h2" data-responsive-json-new='{"font-size":"desktop:90px;mobile_landscape:60px;","line-height":"desktop:100px;mobile_landscape:70px;"}'><h2 style="font-weight:bold;color:rgba(59,63,74,0.12);margin-bottom:-45px;">*ABOUT ME</h2></div>
 </div>
-<div id="ultimate-heading-9546369ef661c3bf" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-9546369ef661c3bf uvc-2911 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div id="ultimate-heading-9243636a45631ccfa" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-9243636a45631ccfa uvc-7520 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9546369ef661c3bf h2" data-responsive-json-new='{"font-size":"desktop:38px;mobile_landscape:30px;","line-height":"desktop:48px;mobile_landscape:40px;"}'><h2 style="font-weight:bold;margin-bottom:50px;">Who I am &amp; what I do</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9243636a45631ccfa h2" data-responsive-json-new='{"font-size":"desktop:38px;mobile_landscape:30px;","line-height":"desktop:48px;mobile_landscape:40px;"}'><h2 style="font-weight:bold;margin-bottom:50px;">Who I am &amp; what I do</h2></div>
 </div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid vc_row-o-equal-height vc_row-o-content-middle vc_row-flex">
 <div class="wpb_column vc_column_container vc_col-sm-7 vc_col-lg-7 vc_col-md-7"><div class="vc_column-inner vc_custom_1493714771624"><div class="wpb_wrapper">
-<div id="ultimate-heading-94736369ef661c72c" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-94736369ef661c72c uvc-5042 accent-subtitle-color" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div id="ultimate-heading-9025636a45631d718" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-9025636a45631d718 uvc-3198 accent-subtitle-color" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-94736369ef661c72c h2" data-responsive-json-new='{"font-size":"desktop:28px;mobile_landscape:30px;","line-height":"desktop:38px;mobile_landscape:40px;"}'><h2 style="font-weight:bold;margin-bottom:5px;">Andrew Seven</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-94736369ef661c72c .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:31px;"}' style="font-weight:bold;margin-bottom:20px;">UX &amp; WEB DESIGNER</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9025636a45631d718 h2" data-responsive-json-new='{"font-size":"desktop:28px;mobile_landscape:30px;","line-height":"desktop:38px;mobile_landscape:40px;"}'><h2 style="font-weight:bold;margin-bottom:5px;">Andrew Seven</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9025636a45631d718 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:31px;"}' style="font-weight:bold;margin-bottom:20px;">UX &amp; WEB DESIGNER</div>
 </div>
-<div id="ultimate-heading-98826369ef661c76d" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-98826369ef661c76d uvc-9222  uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div id="ultimate-heading-8544636a45631d781" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-8544636a45631d781 uvc-7678  uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-98826369ef661c76d .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:31px;"}' style="font-weight:normal;margin-bottom:30px;">Phasellus dui enim, posuere ac porta non, convallis non eros. Mauris massa purus, ultricies vel venenatis in, cursus vitae tortor. Nam vehicula blandit velit, a fermentum elit blandit et. Praesent sit amet &#8211; felis venenatis, porttitor urna pulvinar, vestibulum ex.
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-8544636a45631d781 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:31px;"}' style="font-weight:normal;margin-bottom:30px;">Phasellus dui enim, posuere ac porta non, convallis non eros. Mauris massa purus, ultricies vel venenatis in, cursus vitae tortor. Nam vehicula blandit velit, a fermentum elit blandit et. Praesent sit amet &#8211; felis venenatis, porttitor urna pulvinar, vestibulum ex.
 <p>Posuere ac porta non, convallis non eros. Mauris massa purus, ultricies vel venenatis in, cursus vitae tortor.</p>
 </div>
 </div>
-<div class=" vc_custom_1493808442827 ubtn-ctn-left anchor-link"><a class="ubtn-link ult-adjust-bottom-margin ubtn-left ubtn-custom anchor-link" href="#!/contact"><button type="button" id="ubtn-4836" class="ubtn ult-adjust-bottom-margin ult-responsive ubtn-custom ubtn-fade-bg  none  ubtn-left   tooltip-6369ef661c7b0" data-hover="#ffffff" data-border-color="#3a71ec" data-bg="" data-hover-bg="#3a71ec" data-border-hover="#3a71ec" data-shadow-hover="" data-shadow-click="none" data-shadow="" data-shd-shadow="" data-ultimate-target="#ubtn-4836" data-responsive-json-new='{"font-size":"desktop:14px;","line-height":""}' style="font-weight:bold;width:px;min-height:46px;padding:5px 15px;border-radius:0px;border-width:3px;border-color:#3a71ec;border-style:solid;color: #3a71ec;"><span class="ubtn-data ubtn-icon"><i class="none" style="font-size:24px;color:;"></i></span><span class="ubtn-hover" style="background-color:#3a71ec"></span><span class="ubtn-data ubtn-text ">START A PROJECT WITH ME</span></button></a></div>
+<div class=" vc_custom_1493808442827 ubtn-ctn-left anchor-link"><a class="ubtn-link ult-adjust-bottom-margin ubtn-left ubtn-custom anchor-link" href="#!/contact"><button type="button" id="ubtn-8533" class="ubtn ult-adjust-bottom-margin ult-responsive ubtn-custom ubtn-fade-bg  none  ubtn-left   tooltip-636a45631d7e4" data-hover="#ffffff" data-border-color="#3a71ec" data-bg="" data-hover-bg="#3a71ec" data-border-hover="#3a71ec" data-shadow-hover="" data-shadow-click="none" data-shadow="" data-shd-shadow="" data-ultimate-target="#ubtn-8533" data-responsive-json-new='{"font-size":"desktop:14px;","line-height":""}' style="font-weight:bold;width:px;min-height:46px;padding:5px 15px;border-radius:0px;border-width:3px;border-color:#3a71ec;border-style:solid;color: #3a71ec;"><span class="ubtn-data ubtn-icon"><i class="none" style="font-size:24px;color:;"></i></span><span class="ubtn-hover" style="background-color:#3a71ec"></span><span class="ubtn-data ubtn-text ">START A PROJECT WITH ME</span></button></a></div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-5 vc_col-lg-offset-0 vc_col-lg-5 vc_col-md-offset-0 vc_col-md-5 vc_col-sm-offset-0 vc_col-xs-offset-2 vc_col-xs-8"><div class="vc_column-inner vc_custom_1493714765213"><div class="wpb_wrapper">
 <style type="text/css" data-type="the7_shortcodes-inline-css">.shortcode-single-image-wrap.shortcode-single-image-02f6c4f9bdc28128496e6e585ac7591b.enable-bg-rollover .rollover i,
@@ -386,14 +425,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </div></div></div></div>
 <!-- Row Backgrounds --><div class="upb_color" data-bg-override="ex-full" data-bg-color="#ffffff" data-fadeout="" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false" data-custom-vc-row="" data-vc="6.8.0" data-is_old_vc="" data-theme-support="" data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size=""></div>
 <div id="portfolio" class="vc_row wpb_row vc_row-fluid vc_custom_1493804588075"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
-<div id="ultimate-heading-2566369ef66b821e" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2566369ef66b821e uvc-6485 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div id="ultimate-heading-1098636a4563218ff" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-1098636a4563218ff uvc-5139 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2566369ef66b821e h2" data-responsive-json-new='{"font-size":"desktop:90px;mobile_landscape:60px;","line-height":"desktop:100px;mobile_landscape:70px;"}'><h2 style="font-weight:bold;color:rgba(59,63,74,0.12);margin-bottom:-45px;">*PORTFOLIO</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1098636a4563218ff h2" data-responsive-json-new='{"font-size":"desktop:90px;mobile_landscape:60px;","line-height":"desktop:100px;mobile_landscape:70px;"}'><h2 style="font-weight:bold;color:rgba(59,63,74,0.12);margin-bottom:-45px;">*PORTFOLIO</h2></div>
 </div>
-<div id="ultimate-heading-95036369ef66b82aa" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-95036369ef66b82aa uvc-1713 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div id="ultimate-heading-7085636a456321a32" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-7085636a456321a32 uvc-9929 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-95036369ef66b82aa h2" data-responsive-json-new='{"font-size":"desktop:38px;mobile_landscape:30px;","line-height":"desktop:48px;mobile_landscape:40px;"}'><h2 style="font-weight:bold;margin-bottom:50px;">A showcase of my works</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-95036369ef66b82aa .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:31px;"}' style="font-weight:normal;margin-bottom:15px;">Phasellus dui enim, posuere ac porta non, convallis non eros. Mauris massa purus, ultricies vel venenatis in, cursus vitae tortor. Nam vehicula blandit velit, a fermentum elit blandit et.</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-7085636a456321a32 h2" data-responsive-json-new='{"font-size":"desktop:38px;mobile_landscape:30px;","line-height":"desktop:48px;mobile_landscape:40px;"}'><h2 style="font-weight:bold;margin-bottom:50px;">A showcase of my works</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-7085636a456321a32 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:31px;"}' style="font-weight:normal;margin-bottom:15px;">Phasellus dui enim, posuere ac porta non, convallis non eros. Mauris massa purus, ultricies vel venenatis in, cursus vitae tortor. Nam vehicula blandit velit, a fermentum elit blandit et.</div>
 </div>
 </div></div></div></div>
 <!-- Row Backgrounds --><div class="upb_color" data-bg-override="ex-full" data-bg-color="#f8f8f9" data-fadeout="" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false" data-custom-vc-row="" data-vc="6.8.0" data-is_old_vc="" data-theme-support="" data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size=""></div>
@@ -517,7 +556,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   box-shadow: none;
 }</style>
 <div class="shortcode-single-image-wrap shortcode-single-image-c5ddb927184b64aa5ee6e2338da40981 alignnone  vc_custom_1482935292362 enable-bg-rollover dt-icon-bg-off"><div class="shortcode-single-image"><div class="fancy-media-wrap"><a href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" class=" layzr-bg rollover" style="box-shadow:0px 5px 15px 0px rgba(0,0,0,0.2); -webkit-box-shadow:0px 5px 15px 0px rgba(0,0,0,0.2);" target="_blank" rel="noopener" aria-label="Image"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20800%201100&#39;%2F%3E" data-src="/wp-content/uploads/sites/71/2016/12/por-05.jpg" data-srcset="/wp-content/uploads/sites/71/2016/12/por-05.jpg 800w" width="800" height="1100" data-dt-location="/site71/homepage/por-05/"></a></div></div></div>
-<div class=" vc_custom_1493806653114 ubtn-ctn-center color-title"><a class="ubtn-link ult-adjust-bottom-margin ubtn-center ubtn-custom color-title" href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener"><button type="button" id="ubtn-9767" class="ubtn ult-adjust-bottom-margin ult-responsive ubtn-custom ubtn-no-hover-bg  none  ubtn-center   tooltip-6369ef66e3128" data-hover="#3a71ec" data-border-color="" data-bg="" data-hover-bg="" data-border-hover="" data-shadow-hover="" data-shadow-click="none" data-shadow="" data-shd-shadow="" data-ultimate-target="#ubtn-9767" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:20px;"}' style="font-weight:bold;width:px;min-height:20px;padding:5px 15px;border:none;"><span class="ubtn-data ubtn-icon"><i class="none" style="font-size:24px;color:;"></i></span><span class="ubtn-hover" style="background-color:"></span><span class="ubtn-data ubtn-text ">Water Sports Blog</span></button></a></div>
+<div class=" vc_custom_1493806653114 ubtn-ctn-center color-title"><a class="ubtn-link ult-adjust-bottom-margin ubtn-center ubtn-custom color-title" href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener"><button type="button" id="ubtn-5241" class="ubtn ult-adjust-bottom-margin ult-responsive ubtn-custom ubtn-no-hover-bg  none  ubtn-center   tooltip-636a4563239b2" data-hover="#3a71ec" data-border-color="" data-bg="" data-hover-bg="" data-border-hover="" data-shadow-hover="" data-shadow-click="none" data-shadow="" data-shd-shadow="" data-ultimate-target="#ubtn-5241" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:20px;"}' style="font-weight:bold;width:px;min-height:20px;padding:5px 15px;border:none;"><span class="ubtn-data ubtn-icon"><i class="none" style="font-size:24px;color:;"></i></span><span class="ubtn-hover" style="background-color:"></span><span class="ubtn-data ubtn-text ">Water Sports Blog</span></button></a></div>
 </div></div></div></div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1483525494667"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
 <style type="text/css" data-type="the7_shortcodes-inline-css">.shortcode-single-image-wrap.shortcode-single-image-211887c646965d6a3984cddeb3ce616f.enable-bg-rollover .rollover i,
@@ -540,7 +579,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   box-shadow: none;
 }</style>
 <div class="shortcode-single-image-wrap shortcode-single-image-211887c646965d6a3984cddeb3ce616f alignnone  vc_custom_1493805424521 enable-bg-rollover dt-icon-bg-off"><div class="shortcode-single-image"><div class="fancy-media-wrap"><a href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" class=" layzr-bg rollover" style="box-shadow:0px 5px 15px 0px rgba(0,0,0,0.2); -webkit-box-shadow:0px 5px 15px 0px rgba(0,0,0,0.2);" target="_blank" rel="noopener" aria-label="Image"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20800%201100&#39;%2F%3E" data-src="/wp-content/uploads/sites/71/2016/12/por-08.jpg" data-srcset="/wp-content/uploads/sites/71/2016/12/por-08.jpg 800w" width="800" height="1100" data-dt-location="/site71/homepage/por-08/"></a></div></div></div>
-<div class=" vc_custom_1493806659108 ubtn-ctn-center color-title"><a class="ubtn-link ult-adjust-bottom-margin ubtn-center ubtn-custom color-title" href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener"><button type="button" id="ubtn-2280" class="ubtn ult-adjust-bottom-margin ult-responsive ubtn-custom ubtn-no-hover-bg  none  ubtn-center   tooltip-6369ef671c454" data-hover="#3a71ec" data-border-color="" data-bg="" data-hover-bg="" data-border-hover="" data-shadow-hover="" data-shadow-click="none" data-shadow="" data-shd-shadow="" data-ultimate-target="#ubtn-2280" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:20px;"}' style="font-weight:bold;width:px;min-height:20px;padding:5px 15px;border:none;"><span class="ubtn-data ubtn-icon"><i class="none" style="font-size:24px;color:;"></i></span><span class="ubtn-hover" style="background-color:"></span><span class="ubtn-data ubtn-text ">Casual Store</span></button></a></div>
+<div class=" vc_custom_1493806659108 ubtn-ctn-center color-title"><a class="ubtn-link ult-adjust-bottom-margin ubtn-center ubtn-custom color-title" href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener"><button type="button" id="ubtn-3372" class="ubtn ult-adjust-bottom-margin ult-responsive ubtn-custom ubtn-no-hover-bg  none  ubtn-center   tooltip-636a456324901" data-hover="#3a71ec" data-border-color="" data-bg="" data-hover-bg="" data-border-hover="" data-shadow-hover="" data-shadow-click="none" data-shadow="" data-shd-shadow="" data-ultimate-target="#ubtn-3372" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:20px;"}' style="font-weight:bold;width:px;min-height:20px;padding:5px 15px;border:none;"><span class="ubtn-data ubtn-icon"><i class="none" style="font-size:24px;color:;"></i></span><span class="ubtn-hover" style="background-color:"></span><span class="ubtn-data ubtn-text ">Casual Store</span></button></a></div>
 </div></div></div></div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1483525617545"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
 <style type="text/css" data-type="the7_shortcodes-inline-css">.shortcode-single-image-wrap.shortcode-single-image-385fd889a2b42736e2fc321929491b50.enable-bg-rollover .rollover i,
@@ -563,7 +602,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   box-shadow: none;
 }</style>
 <div class="shortcode-single-image-wrap shortcode-single-image-385fd889a2b42736e2fc321929491b50 alignnone  vc_custom_1482935311653 enable-bg-rollover dt-icon-bg-off"><div class="shortcode-single-image"><div class="fancy-media-wrap"><a href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" class=" layzr-bg rollover" style="box-shadow:0px 5px 15px 0px rgba(0,0,0,0.2); -webkit-box-shadow:0px 5px 15px 0px rgba(0,0,0,0.2);" target="_blank" rel="noopener" aria-label="Image"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20800%201100&#39;%2F%3E" data-src="/wp-content/uploads/sites/71/2016/12/por-02.jpg" data-srcset="/wp-content/uploads/sites/71/2016/12/por-02.jpg 800w" width="800" height="1100" data-dt-location="/site71/homepage/por-02/"></a></div></div></div>
-<div class=" vc_custom_1493806665685 ubtn-ctn-center color-title"><a class="ubtn-link ult-adjust-bottom-margin ubtn-center ubtn-custom color-title" href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener"><button type="button" id="ubtn-5802" class="ubtn ult-adjust-bottom-margin ult-responsive ubtn-custom ubtn-no-hover-bg  none  ubtn-center   tooltip-6369ef67348ee" data-hover="#3a71ec" data-border-color="" data-bg="" data-hover-bg="" data-border-hover="" data-shadow-hover="" data-shadow-click="none" data-shadow="" data-shd-shadow="" data-ultimate-target="#ubtn-5802" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:20px;"}' style="font-weight:bold;width:px;min-height:20px;padding:5px 15px;border:none;"><span class="ubtn-data ubtn-icon"><i class="none" style="font-size:24px;color:;"></i></span><span class="ubtn-hover" style="background-color:"></span><span class="ubtn-data ubtn-text ">Bakery Website</span></button></a></div>
+<div class=" vc_custom_1493806665685 ubtn-ctn-center color-title"><a class="ubtn-link ult-adjust-bottom-margin ubtn-center ubtn-custom color-title" href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener"><button type="button" id="ubtn-8513" class="ubtn ult-adjust-bottom-margin ult-responsive ubtn-custom ubtn-no-hover-bg  none  ubtn-center   tooltip-636a4563258a4" data-hover="#3a71ec" data-border-color="" data-bg="" data-hover-bg="" data-border-hover="" data-shadow-hover="" data-shadow-click="none" data-shadow="" data-shd-shadow="" data-ultimate-target="#ubtn-8513" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:20px;"}' style="font-weight:bold;width:px;min-height:20px;padding:5px 15px;border:none;"><span class="ubtn-data ubtn-icon"><i class="none" style="font-size:24px;color:;"></i></span><span class="ubtn-hover" style="background-color:"></span><span class="ubtn-data ubtn-text ">Bakery Website</span></button></a></div>
 </div></div></div></div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1483525494667"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
 <style type="text/css" data-type="the7_shortcodes-inline-css">.shortcode-single-image-wrap.shortcode-single-image-ff34461526872ea1bbacf86c8102a4d5.enable-bg-rollover .rollover i,
@@ -586,7 +625,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   box-shadow: none;
 }</style>
 <div class="shortcode-single-image-wrap shortcode-single-image-ff34461526872ea1bbacf86c8102a4d5 alignnone  vc_custom_1482935209997 enable-bg-rollover dt-icon-bg-off"><div class="shortcode-single-image"><div class="fancy-media-wrap"><a href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" class=" layzr-bg rollover" style="box-shadow:0px 5px 15px 0px rgba(0,0,0,0.2); -webkit-box-shadow:0px 5px 15px 0px rgba(0,0,0,0.2);" target="_blank" rel="noopener" aria-label="Image"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20800%201100&#39;%2F%3E" data-src="/wp-content/uploads/sites/71/2016/12/por-01.jpg" data-srcset="/wp-content/uploads/sites/71/2016/12/por-01.jpg 800w" width="800" height="1100" data-dt-location="/site71/homepage/por-01/"></a></div></div></div>
-<div class=" vc_custom_1493806671573 ubtn-ctn-center color-title"><a class="ubtn-link ult-adjust-bottom-margin ubtn-center ubtn-custom color-title" href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener"><button type="button" id="ubtn-8677" class="ubtn ult-adjust-bottom-margin ult-responsive ubtn-custom ubtn-no-hover-bg  none  ubtn-center   tooltip-6369ef67396dd" data-hover="#3a71ec" data-border-color="" data-bg="" data-hover-bg="" data-border-hover="" data-shadow-hover="" data-shadow-click="none" data-shadow="" data-shd-shadow="" data-ultimate-target="#ubtn-8677" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:20px;"}' style="font-weight:bold;width:px;min-height:20px;padding:5px 15px;border:none;"><span class="ubtn-data ubtn-icon"><i class="none" style="font-size:24px;color:;"></i></span><span class="ubtn-hover" style="background-color:"></span><span class="ubtn-data ubtn-text ">Ave Online Store</span></button></a></div>
+<div class=" vc_custom_1493806671573 ubtn-ctn-center color-title"><a class="ubtn-link ult-adjust-bottom-margin ubtn-center ubtn-custom color-title" href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener"><button type="button" id="ubtn-6926" class="ubtn ult-adjust-bottom-margin ult-responsive ubtn-custom ubtn-no-hover-bg  none  ubtn-center   tooltip-636a456335bb4" data-hover="#3a71ec" data-border-color="" data-bg="" data-hover-bg="" data-border-hover="" data-shadow-hover="" data-shadow-click="none" data-shadow="" data-shd-shadow="" data-ultimate-target="#ubtn-6926" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:20px;"}' style="font-weight:bold;width:px;min-height:20px;padding:5px 15px;border:none;"><span class="ubtn-data ubtn-icon"><i class="none" style="font-size:24px;color:;"></i></span><span class="ubtn-hover" style="background-color:"></span><span class="ubtn-data ubtn-text ">Ave Online Store</span></button></a></div>
 </div></div></div></div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1483525547257"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
 <style type="text/css" data-type="the7_shortcodes-inline-css">.shortcode-single-image-wrap.shortcode-single-image-bee6611a9b1a1a5a68038ffb8d1e2ab2.enable-bg-rollover .rollover i,
@@ -609,7 +648,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   box-shadow: none;
 }</style>
 <div class="shortcode-single-image-wrap shortcode-single-image-bee6611a9b1a1a5a68038ffb8d1e2ab2 alignnone  vc_custom_1482935304250 enable-bg-rollover dt-icon-bg-off"><div class="shortcode-single-image"><div class="fancy-media-wrap"><a href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" class=" layzr-bg rollover" style="box-shadow:0px 5px 15px 0px rgba(0,0,0,0.2); -webkit-box-shadow:0px 5px 15px 0px rgba(0,0,0,0.2);" target="_blank" rel="noopener" aria-label="Image"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20800%201100&#39;%2F%3E" data-src="/wp-content/uploads/sites/71/2016/12/por-04.jpg" data-srcset="/wp-content/uploads/sites/71/2016/12/por-04.jpg 800w" width="800" height="1100" data-dt-location="/site71/homepage/por-04/"></a></div></div></div>
-<div class=" vc_custom_1493806677241 ubtn-ctn-center color-title"><a class="ubtn-link ult-adjust-bottom-margin ubtn-center ubtn-custom color-title" href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener"><button type="button" id="ubtn-8378" class="ubtn ult-adjust-bottom-margin ult-responsive ubtn-custom ubtn-no-hover-bg  none  ubtn-center   tooltip-6369ef6764cb7" data-hover="#3a71ec" data-border-color="" data-bg="" data-hover-bg="" data-border-hover="" data-shadow-hover="" data-shadow-click="none" data-shadow="" data-shd-shadow="" data-ultimate-target="#ubtn-8378" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:20px;"}' style="font-weight:bold;width:px;min-height:20px;padding:5px 15px;border:none;"><span class="ubtn-data ubtn-icon"><i class="none" style="font-size:24px;color:;"></i></span><span class="ubtn-hover" style="background-color:"></span><span class="ubtn-data ubtn-text ">News Portal</span></button></a></div>
+<div class=" vc_custom_1493806677241 ubtn-ctn-center color-title"><a class="ubtn-link ult-adjust-bottom-margin ubtn-center ubtn-custom color-title" href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener"><button type="button" id="ubtn-5586" class="ubtn ult-adjust-bottom-margin ult-responsive ubtn-custom ubtn-no-hover-bg  none  ubtn-center   tooltip-636a456336c21" data-hover="#3a71ec" data-border-color="" data-bg="" data-hover-bg="" data-border-hover="" data-shadow-hover="" data-shadow-click="none" data-shadow="" data-shd-shadow="" data-ultimate-target="#ubtn-5586" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:20px;"}' style="font-weight:bold;width:px;min-height:20px;padding:5px 15px;border:none;"><span class="ubtn-data ubtn-icon"><i class="none" style="font-size:24px;color:;"></i></span><span class="ubtn-hover" style="background-color:"></span><span class="ubtn-data ubtn-text ">News Portal</span></button></a></div>
 </div></div></div></div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1483525507436"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
 <style type="text/css" data-type="the7_shortcodes-inline-css">.shortcode-single-image-wrap.shortcode-single-image-7cf31dd5b5e5a933a1bcc837d0c1433a.enable-bg-rollover .rollover i,
@@ -632,92 +671,92 @@ document.addEventListener("DOMContentLoaded", function(event) {
   box-shadow: none;
 }</style>
 <div class="shortcode-single-image-wrap shortcode-single-image-7cf31dd5b5e5a933a1bcc837d0c1433a alignnone  vc_custom_1482935274018 enable-bg-rollover dt-icon-bg-off"><div class="shortcode-single-image"><div class="fancy-media-wrap"><a href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" class=" layzr-bg rollover" style="box-shadow:0px 5px 15px 0px rgba(0,0,0,0.2); -webkit-box-shadow:0px 5px 15px 0px rgba(0,0,0,0.2);" target="_blank" rel="noopener" aria-label="Image"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20800%201100&#39;%2F%3E" data-src="/wp-content/uploads/sites/71/2016/12/por-03.jpg" data-srcset="/wp-content/uploads/sites/71/2016/12/por-03.jpg 800w" width="800" height="1100" data-dt-location="/site71/homepage/por-03/"></a></div></div></div>
-<div class=" vc_custom_1493806684042 ubtn-ctn-center color-title"><a class="ubtn-link ult-adjust-bottom-margin ubtn-center ubtn-custom color-title" href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener"><button type="button" id="ubtn-3115" class="ubtn ult-adjust-bottom-margin ult-responsive ubtn-custom ubtn-no-hover-bg  none  ubtn-center   tooltip-6369ef6768128" data-hover="#3a71ec" data-border-color="" data-bg="" data-hover-bg="" data-border-hover="" data-shadow-hover="" data-shadow-click="none" data-shadow="" data-shd-shadow="" data-ultimate-target="#ubtn-3115" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:20px;"}' style="font-weight:bold;width:px;min-height:20px;padding:5px 15px;border:none;"><span class="ubtn-data ubtn-icon"><i class="none" style="font-size:24px;color:;"></i></span><span class="ubtn-hover" style="background-color:"></span><span class="ubtn-data ubtn-text ">Snowboarding Portal</span></button></a></div>
+<div class=" vc_custom_1493806684042 ubtn-ctn-center color-title"><a class="ubtn-link ult-adjust-bottom-margin ubtn-center ubtn-custom color-title" href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener"><button type="button" id="ubtn-4832" class="ubtn ult-adjust-bottom-margin ult-responsive ubtn-custom ubtn-no-hover-bg  none  ubtn-center   tooltip-636a456337a14" data-hover="#3a71ec" data-border-color="" data-bg="" data-hover-bg="" data-border-hover="" data-shadow-hover="" data-shadow-click="none" data-shadow="" data-shd-shadow="" data-ultimate-target="#ubtn-4832" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:20px;"}' style="font-weight:bold;width:px;min-height:20px;padding:5px 15px;border:none;"><span class="ubtn-data ubtn-icon"><i class="none" style="font-size:24px;color:;"></i></span><span class="ubtn-hover" style="background-color:"></span><span class="ubtn-data ubtn-text ">Snowboarding Portal</span></button></a></div>
 </div></div></div></div>
 </div>
 </div></div></div></div>
 <div class="vc_row-full-width vc_clearfix"></div>
 <!-- Row Backgrounds --><div class="upb_color" data-bg-override="ex-full" data-bg-color="#f8f8f9" data-fadeout="" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false" data-custom-vc-row="" data-vc="6.8.0" data-is_old_vc="" data-theme-support="" data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size=""></div>
 <div id="expertise" class="vc_row wpb_row vc_row-fluid vc_custom_1495554266065 vc_row-has-fill"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-0 vc_col-lg-12 vc_col-md-offset-0 vc_col-md-12 vc_col-sm-offset-0"><div class="vc_column-inner"><div class="wpb_wrapper">
-<div id="ultimate-heading-35586369ef6768d8d" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-35586369ef6768d8d uvc-5607 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div id="ultimate-heading-7482636a45633817d" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-7482636a45633817d uvc-2479 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-35586369ef6768d8d h2" data-responsive-json-new='{"font-size":"desktop:90px;mobile_landscape:60px;","line-height":"desktop:100px;mobile_landscape:70px;"}'><h2 style="font-weight:bold;color:rgba(138,138,138,0.4);margin-bottom:-45px;">*EXPERTISE</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-7482636a45633817d h2" data-responsive-json-new='{"font-size":"desktop:90px;mobile_landscape:60px;","line-height":"desktop:100px;mobile_landscape:70px;"}'><h2 style="font-weight:bold;color:rgba(138,138,138,0.4);margin-bottom:-45px;">*EXPERTISE</h2></div>
 </div>
-<div id="ultimate-heading-51666369ef6768e36" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-51666369ef6768e36 uvc-4799 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div id="ultimate-heading-421636a4563381c2" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-421636a4563381c2 uvc-7689 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-51666369ef6768e36 h2" data-responsive-json-new='{"font-size":"desktop:38px;mobile_landscape:30px;","line-height":"desktop:48px;mobile_landscape:40px;"}'><h2 style="font-weight:bold;color:#ffffff;margin-bottom:50px;">What I'm good at</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-51666369ef6768e36 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:31px;"}' style="font-weight:normal;color:#9aa0a7;margin-bottom:70px;">Ipsum fosuere ac porta non, convallis non eros. Mauris massa purus, ultricies vel venenatis in, cursus vitae dui enim, posuere ac porta non, convallis non eros tortor. Nam vehicula blandit velit, a fermentum elit blandit et. Praesent sit amet felis venenatis, porttitor urna pulvinar, vestibulum ex.</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-421636a4563381c2 h2" data-responsive-json-new='{"font-size":"desktop:38px;mobile_landscape:30px;","line-height":"desktop:48px;mobile_landscape:40px;"}'><h2 style="font-weight:bold;color:#ffffff;margin-bottom:50px;">What I'm good at</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-421636a4563381c2 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:31px;"}' style="font-weight:normal;color:#9aa0a7;margin-bottom:70px;">Ipsum fosuere ac porta non, convallis non eros. Mauris massa purus, ultricies vel venenatis in, cursus vitae dui enim, posuere ac porta non, convallis non eros tortor. Nam vehicula blandit velit, a fermentum elit blandit et. Praesent sit amet felis venenatis, porttitor urna pulvinar, vestibulum ex.</div>
 </div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid vc_row-o-equal-height vc_row-flex">
 <div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1478279490968"><div class="wpb_wrapper">
 <div class="aio-icon-component  vc_custom_1493723314812  accent-icon-color accent-border-color style_1">
-<div id="Info-box-wrap-7307" class="aio-icon-box top-icon">
+<div id="Info-box-wrap-1460" class="aio-icon-box top-icon">
 <div class="aio-icon-top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon advanced " style="border-style:solid;border-color:;border-width:4px;width:100px;height:100px;line-height:100px;border-radius:500px;font-size:48px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-tablet"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-7307 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-weight:bold;color:#ffffff;">Mobile apps</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-7307 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":"desktop:26px;"}' style="color:#9aa0a7;">Ipsum fosuere ac porta non ipsum nulla amet dolor convallis non lorem ipsum nulla amet eros.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-1460 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-weight:bold;color:#ffffff;">Mobile apps</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-1460 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":"desktop:26px;"}' style="color:#9aa0a7;">Ipsum fosuere ac porta non ipsum nulla amet dolor convallis non lorem ipsum nulla amet eros.</div> <!-- description -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component -->
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1478279496028"><div class="wpb_wrapper">
 <div class="aio-icon-component  vc_custom_1493723325965  accent-icon-color accent-border-color style_1">
-<div id="Info-box-wrap-6991" class="aio-icon-box top-icon">
+<div id="Info-box-wrap-9171" class="aio-icon-box top-icon">
 <div class="aio-icon-top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon advanced " style="border-style:solid;border-color:;border-width:4px;width:100px;height:100px;line-height:100px;border-radius:500px;font-size:48px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-comments-o"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-6991 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-weight:bold;color:#ffffff;">Communication</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-6991 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":"desktop:26px;"}' style="color:#9aa0a7;">Praesent sit amet felis venenatis sit amet felis venenatis &#8211; from porttitor urna.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-9171 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-weight:bold;color:#ffffff;">Communication</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-9171 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":"desktop:26px;"}' style="color:#9aa0a7;">Praesent sit amet felis venenatis sit amet felis venenatis &#8211; from porttitor urna.</div> <!-- description -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component -->
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1478279506972"><div class="wpb_wrapper">
 <div class="aio-icon-component  vc_custom_1493723385710  accent-icon-color accent-border-color style_1">
-<div id="Info-box-wrap-9252" class="aio-icon-box top-icon">
+<div id="Info-box-wrap-5763" class="aio-icon-box top-icon">
 <div class="aio-icon-top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon advanced " style="border-style:solid;border-color:;border-width:4px;width:100px;height:100px;line-height:100px;border-radius:500px;font-size:48px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-copy files-o"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-9252 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-weight:bold;color:#ffffff;">Copywriting</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-9252 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":"desktop:26px;"}' style="color:#9aa0a7;">Nam vehicula &#8211; blandit velit a fermentum sit amet felis venenatis, porttitor for elit.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-5763 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-weight:bold;color:#ffffff;">Copywriting</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-5763 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":"desktop:26px;"}' style="color:#9aa0a7;">Nam vehicula &#8211; blandit velit a fermentum sit amet felis venenatis, porttitor for elit.</div> <!-- description -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component -->
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1478279515020"><div class="wpb_wrapper">
 <div class="aio-icon-component  vc_custom_1493723304520  accent-icon-color accent-border-color style_1">
-<div id="Info-box-wrap-7171" class="aio-icon-box top-icon">
+<div id="Info-box-wrap-7063" class="aio-icon-box top-icon">
 <div class="aio-icon-top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon advanced " style="border-style:solid;border-color:;border-width:4px;width:100px;height:100px;line-height:100px;border-radius:500px;font-size:48px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-line-chart"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-7171 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-weight:bold;color:#ffffff;">SEO</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-7171 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":"desktop:26px;"}' style="color:#9aa0a7;">Lorem a sit amet felis venenatis, porttitor vehicula blandit velit a fermentum.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-7063 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-weight:bold;color:#ffffff;">SEO</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-7063 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":"desktop:26px;"}' style="color:#9aa0a7;">Lorem a sit amet felis venenatis, porttitor vehicula blandit velit a fermentum.</div> <!-- description -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component -->
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1478279520453"><div class="wpb_wrapper">
 <div class="aio-icon-component  vc_custom_1493723265938  accent-icon-color accent-border-color style_1">
-<div id="Info-box-wrap-6143" class="aio-icon-box top-icon">
+<div id="Info-box-wrap-2800" class="aio-icon-box top-icon">
 <div class="aio-icon-top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon advanced " style="border-style:solid;border-color:;border-width:4px;width:100px;height:100px;line-height:100px;border-radius:500px;font-size:48px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-desktop"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-6143 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-weight:bold;color:#ffffff;">Web design</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-6143 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":"desktop:26px;"}' style="color:#9aa0a7;">Mauris massa ultricies vel venenatis incursus tortor sit amet felis venenatis porttitor.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-2800 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-weight:bold;color:#ffffff;">Web design</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-2800 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":"desktop:26px;"}' style="color:#9aa0a7;">Mauris massa ultricies vel venenatis incursus tortor sit amet felis venenatis porttitor.</div> <!-- description -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component -->
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1478279525924"><div class="wpb_wrapper">
 <div class="aio-icon-component  vc_custom_1493723257572  accent-icon-color accent-border-color style_1">
-<div id="Info-box-wrap-1785" class="aio-icon-box top-icon">
+<div id="Info-box-wrap-9299" class="aio-icon-box top-icon">
 <div class="aio-icon-top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon advanced " style="border-style:solid;border-color:;border-width:4px;width:100px;height:100px;line-height:100px;border-radius:500px;font-size:48px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-briefcase"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-1785 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-weight:bold;color:#ffffff;">Complex sollutions</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-1785 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":"desktop:26px;"}' style="color:#9aa0a7;">Cursus vitae tortor &#8211; from glavrida lorem fermentum! Ipsum nulla glavrida amet &#8211; sit amet felis venenatis porttitor.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-9299 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-weight:bold;color:#ffffff;">Complex sollutions</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-9299 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":"desktop:26px;"}' style="color:#9aa0a7;">Cursus vitae tortor &#8211; from glavrida lorem fermentum! Ipsum nulla glavrida amet &#8211; sit amet felis venenatis porttitor.</div> <!-- description -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component -->
 </div></div></div>
@@ -725,14 +764,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </div></div></div></div>
 <!-- Row Backgrounds --><div class="upb_bg_img" data-ultimate-bg="url(/wp-content/uploads/sites/71/2016/12/bg-creative-pattern.gif)" data-image-id="id^57|url^/wp-content/uploads/sites/71/2016/12/bg-creative-pattern.gif|caption^null|alt^null|title^bg-creative-pattern|description^null" data-ultimate-bg-style="vcpb-vz-jquery" data-bg-img-repeat="repeat" data-bg-img-size="initial" data-bg-img-position="" data-parallx_sense="50" data-bg-override="ex-full" data-bg_img_attach="scroll" data-upb-overlay-color="rgba(24,27,34,0.97)" data-upb-bg-animation="" data-fadeout="" data-bg-animation="left-animation" data-bg-animation-type="h" data-animation-repeat="repeat" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false" data-custom-vc-row="" data-vc="6.8.0" data-is_old_vc="" data-theme-support="" data-overlay="true" data-overlay-color="rgba(24,27,34,0.97)" data-overlay-pattern="" data-overlay-pattern-opacity="0.8" data-overlay-pattern-size="" data-overlay-pattern-attachment="scroll"></div>
 <div id="clients" class="vc_row wpb_row vc_row-fluid vc_custom_1493715216692"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-0 vc_col-lg-12 vc_col-md-offset-0 vc_col-md-12"><div class="vc_column-inner"><div class="wpb_wrapper">
-<div id="ultimate-heading-63536369ef678015a" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-63536369ef678015a uvc-3085 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div id="ultimate-heading-7475636a4563395de" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-7475636a4563395de uvc-1027 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-63536369ef678015a h2" data-responsive-json-new='{"font-size":"desktop:90px;mobile_landscape:60px;","line-height":"desktop:100px;mobile_landscape:70px;"}'><h2 style="font-weight:bold;color:rgba(59,63,74,0.12);margin-bottom:-45px;">*CLIENTS</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-7475636a4563395de h2" data-responsive-json-new='{"font-size":"desktop:90px;mobile_landscape:60px;","line-height":"desktop:100px;mobile_landscape:70px;"}'><h2 style="font-weight:bold;color:rgba(59,63,74,0.12);margin-bottom:-45px;">*CLIENTS</h2></div>
 </div>
-<div id="ultimate-heading-86816369ef67801c2" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-86816369ef67801c2 uvc-185 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div id="ultimate-heading-5598636a456339644" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-5598636a456339644 uvc-1224 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-86816369ef67801c2 h2" data-responsive-json-new='{"font-size":"desktop:38px;mobile_landscape:30px;","line-height":"desktop:48px;mobile_landscape:40px;"}'><h2 style="font-weight:bold;margin-bottom:50px;">I work with cool companies</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-86816369ef67801c2 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:31px;"}' style="font-weight:normal;margin-bottom:50px;">Posuere ac porta non, convallis non eros. Mauris massa purus, ultricies vel venenatis in, cursus vitae tortor. Nam vehicula blandit velit, a fermentum elit blandit et. Praesent sit amet felis venenatis, porttitor urna pulvinar.</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5598636a456339644 h2" data-responsive-json-new='{"font-size":"desktop:38px;mobile_landscape:30px;","line-height":"desktop:48px;mobile_landscape:40px;"}'><h2 style="font-weight:bold;margin-bottom:50px;">I work with cool companies</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5598636a456339644 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:31px;"}' style="font-weight:normal;margin-bottom:50px;">Posuere ac porta non, convallis non eros. Mauris massa purus, ultricies vel venenatis in, cursus vitae tortor. Nam vehicula blandit velit, a fermentum elit blandit et. Praesent sit amet felis venenatis, porttitor urna pulvinar.</div>
 </div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1493807723955 vc_row-o-equal-height vc_row-flex">
 <div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner vc_custom_1493807557937"><div class="wpb_wrapper">
@@ -756,10 +795,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
   box-shadow: none;
 }</style>
 <div class="shortcode-single-image-wrap shortcode-single-image-2b040ea5df247f6d277065ed86eaa521 alignnone  vc_custom_1493807192983 enable-bg-rollover dt-icon-bg-off"><div class="shortcode-single-image"><div class="fancy-media-wrap"><a href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" class=" layzr-bg rollover" target="_blank" rel="noopener" aria-label="Image"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20400%20300&#39;%2F%3E" data-src="/wp-content/uploads/sites/71/2016/12/4-logo-12.png" data-srcset="/wp-content/uploads/sites/71/2016/12/4-logo-12.png 400w" width="400" height="300" data-dt-location="/site71/homepage/4-logo-12/"></a></div></div></div>
-<div id="ultimate-heading-5466369ef679cf41" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-5466369ef679cf41 uvc-9432 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-4076636a45633a83d" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-4076636a45633a83d uvc-8849 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer line_only" style="margin-bottom:20px;height:4px;"><span class="uvc-headings-line" style="border-style:solid;border-bottom-width:4px;border-color:#ccc;width:30px;"></span></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5466369ef679cf41 h2" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'><h2 style="font-weight:bold;margin-bottom:10px;">Wall Paint Shop</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5466369ef679cf41 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:normal;">Nam vehicula blandit velit. Praesent sit amet felis venenatis, porttitor urna pulvinar.</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4076636a45633a83d h2" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'><h2 style="font-weight:bold;margin-bottom:10px;">Wall Paint Shop</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4076636a45633a83d .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:normal;">Nam vehicula blandit velit. Praesent sit amet felis venenatis, porttitor urna pulvinar.</div>
 </div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner vc_custom_1493807588247"><div class="wpb_wrapper">
@@ -783,10 +822,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
   box-shadow: none;
 }</style>
 <div class="shortcode-single-image-wrap shortcode-single-image-4ee8f888490a76d5031a4f8608fabae6 alignnone  vc_custom_1493807216638 enable-bg-rollover dt-icon-bg-off"><div class="shortcode-single-image"><div class="fancy-media-wrap"><a href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" class=" layzr-bg rollover" target="_blank" rel="noopener" aria-label="Image"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20400%20300&#39;%2F%3E" data-src="/wp-content/uploads/sites/71/2016/12/4-logo-22.png" data-srcset="/wp-content/uploads/sites/71/2016/12/4-logo-22.png 400w" width="400" height="300" data-dt-location="/site71/homepage/4-logo-22/"></a></div></div></div>
-<div id="ultimate-heading-22696369ef67b6792" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-22696369ef67b6792 uvc-7137 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-1455636a45634c2dc" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-1455636a45634c2dc uvc-143 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer line_only" style="margin-bottom:20px;height:4px;"><span class="uvc-headings-line" style="border-style:solid;border-bottom-width:4px;border-color:#ccc;width:30px;"></span></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-22696369ef67b6792 h2" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'><h2 style="font-weight:bold;margin-bottom:10px;">Ron Jones</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-22696369ef67b6792 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:normal;">Praesent sit amet venenatis, porttitor urna pulvinar. Nam vehicula blandit velit nulla!</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1455636a45634c2dc h2" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'><h2 style="font-weight:bold;margin-bottom:10px;">Ron Jones</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1455636a45634c2dc .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:normal;">Praesent sit amet venenatis, porttitor urna pulvinar. Nam vehicula blandit velit nulla!</div>
 </div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner vc_custom_1493807596419"><div class="wpb_wrapper">
@@ -810,10 +849,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
   box-shadow: none;
 }</style>
 <div class="shortcode-single-image-wrap shortcode-single-image-fced442186706d3eed6f9008f822a0bb alignnone  vc_custom_1493807212892 enable-bg-rollover dt-icon-bg-off"><div class="shortcode-single-image"><div class="fancy-media-wrap"><a href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" class=" layzr-bg rollover" target="_blank" rel="noopener" aria-label="Image"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20400%20300&#39;%2F%3E" data-src="/wp-content/uploads/sites/71/2016/12/4-logo-23.png" data-srcset="/wp-content/uploads/sites/71/2016/12/4-logo-23.png 400w" width="400" height="300" data-dt-location="/site71/homepage/4-logo-23/"></a></div></div></div>
-<div id="ultimate-heading-69776369ef67cd458" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-69776369ef67cd458 uvc-1234 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-4472636a45634d139" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-4472636a45634d139 uvc-4236 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer line_only" style="margin-bottom:20px;height:4px;"><span class="uvc-headings-line" style="border-style:solid;border-bottom-width:4px;border-color:#ccc;width:30px;"></span></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-69776369ef67cd458 h2" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'><h2 style="font-weight:bold;margin-bottom:10px;">David Smith</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-69776369ef67cd458 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:normal;">Nulla from dolor &#8211; ehicula blandit velit. Praesent sit amet felis.</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4472636a45634d139 h2" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'><h2 style="font-weight:bold;margin-bottom:10px;">David Smith</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4472636a45634d139 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:normal;">Nulla from dolor &#8211; ehicula blandit velit. Praesent sit amet felis.</div>
 </div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner vc_custom_1493807601265"><div class="wpb_wrapper">
@@ -837,10 +876,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
   box-shadow: none;
 }</style>
 <div class="shortcode-single-image-wrap shortcode-single-image-1a75135488ef5bc2c4d7804d45c86b76 alignnone  vc_custom_1493807173272 enable-bg-rollover dt-icon-bg-off"><div class="shortcode-single-image"><div class="fancy-media-wrap"><a href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" class=" layzr-bg rollover" target="_blank" rel="noopener" aria-label="Image"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20400%20300&#39;%2F%3E" data-src="/wp-content/uploads/sites/71/2016/12/4-logo-16.png" data-srcset="/wp-content/uploads/sites/71/2016/12/4-logo-16.png 400w" width="400" height="300" data-dt-location="/site71/homepage/4-logo-16/"></a></div></div></div>
-<div id="ultimate-heading-58546369ef67e5b80" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-58546369ef67e5b80 uvc-9107 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-6512636a45634dd8b" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-6512636a45634dd8b uvc-5790 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer line_only" style="margin-bottom:20px;height:4px;"><span class="uvc-headings-line" style="border-style:solid;border-bottom-width:4px;border-color:#ccc;width:30px;"></span></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-58546369ef67e5b80 h2" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'><h2 style="font-weight:bold;margin-bottom:10px;">Climb the Mountain</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-58546369ef67e5b80 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:normal;">Climb dolor from nulla from dolor &#8211; ehicula blandit velit. Praesent sit amet felis.</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6512636a45634dd8b h2" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'><h2 style="font-weight:bold;margin-bottom:10px;">Climb the Mountain</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6512636a45634dd8b .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:normal;">Climb dolor from nulla from dolor &#8211; ehicula blandit velit. Praesent sit amet felis.</div>
 </div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner vc_custom_1493807606046"><div class="wpb_wrapper">
@@ -864,10 +903,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
   box-shadow: none;
 }</style>
 <div class="shortcode-single-image-wrap shortcode-single-image-5e2e4d31a8a37c6a03ee3dc34de568f5 alignnone  vc_custom_1493807304406 enable-bg-rollover dt-icon-bg-off"><div class="shortcode-single-image"><div class="fancy-media-wrap"><a href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" class=" layzr-bg rollover" target="_blank" rel="noopener" aria-label="Image"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20400%20300&#39;%2F%3E" data-src="/wp-content/uploads/sites/71/2016/12/4-logo-20.png" data-srcset="/wp-content/uploads/sites/71/2016/12/4-logo-20.png 400w" width="400" height="300" data-dt-location="/site71/homepage/4-logo-20/"></a></div></div></div>
-<div id="ultimate-heading-89376369ef681bd48" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-89376369ef681bd48 uvc-3428 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-224636a45634eca6" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-224636a45634eca6 uvc-198 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer line_only" style="margin-bottom:20px;height:4px;"><span class="uvc-headings-line" style="border-style:solid;border-bottom-width:4px;border-color:#ccc;width:30px;"></span></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-89376369ef681bd48 h2" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'><h2 style="font-weight:bold;margin-bottom:10px;">Bullseye</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-89376369ef681bd48 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:normal;">Praesent sit amet felis venenatis, porttitor urna pulvinar</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-224636a45634eca6 h2" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'><h2 style="font-weight:bold;margin-bottom:10px;">Bullseye</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-224636a45634eca6 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:normal;">Praesent sit amet felis venenatis, porttitor urna pulvinar</div>
 </div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner vc_custom_1493807612044"><div class="wpb_wrapper">
@@ -891,10 +930,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
   box-shadow: none;
 }</style>
 <div class="shortcode-single-image-wrap shortcode-single-image-778e9e008c8c27054fe524dd512ee3a2 alignnone  vc_custom_1493807294781 enable-bg-rollover dt-icon-bg-off"><div class="shortcode-single-image"><div class="fancy-media-wrap"><a href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" class=" layzr-bg rollover" target="_blank" rel="noopener" aria-label="Image"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20400%20300&#39;%2F%3E" data-src="/wp-content/uploads/sites/71/2016/12/4-logo-19.png" data-srcset="/wp-content/uploads/sites/71/2016/12/4-logo-19.png 400w" width="400" height="300" data-dt-location="/site71/homepage/4-logo-19/"></a></div></div></div>
-<div id="ultimate-heading-74106369ef6835381" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-74106369ef6835381 uvc-1687 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-2842636a45634f8f6" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2842636a45634f8f6 uvc-8751 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer line_only" style="margin-bottom:20px;height:4px;"><span class="uvc-headings-line" style="border-style:solid;border-bottom-width:4px;border-color:#ccc;width:30px;"></span></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-74106369ef6835381 h2" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'><h2 style="font-weight:bold;margin-bottom:10px;">Lifeguard</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-74106369ef6835381 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:normal;">Lorem nulla dolor from nulla from dolor &#8211; ehicula blandit velit. Praesent sit amet felis.</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2842636a45634f8f6 h2" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'><h2 style="font-weight:bold;margin-bottom:10px;">Lifeguard</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2842636a45634f8f6 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:normal;">Lorem nulla dolor from nulla from dolor &#8211; ehicula blandit velit. Praesent sit amet felis.</div>
 </div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner vc_custom_1493807616654"><div class="wpb_wrapper">
@@ -918,10 +957,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
   box-shadow: none;
 }</style>
 <div class="shortcode-single-image-wrap shortcode-single-image-10c5736316c8d89b7f421ebd04cb1d89 alignnone  vc_custom_1493807419932 enable-bg-rollover dt-icon-bg-off"><div class="shortcode-single-image"><div class="fancy-media-wrap"><a href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" class=" layzr-bg rollover" target="_blank" rel="noopener" aria-label="Image"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20400%20300&#39;%2F%3E" data-src="/wp-content/uploads/sites/71/2016/12/4-logo-15.png" data-srcset="/wp-content/uploads/sites/71/2016/12/4-logo-15.png 400w" width="400" height="300" data-dt-location="/site71/homepage/4-logo-15/"></a></div></div></div>
-<div id="ultimate-heading-48336369ef6839a78" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-48336369ef6839a78 uvc-3297 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-2700636a4563504e1" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2700636a4563504e1 uvc-6411 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer line_only" style="margin-bottom:20px;height:4px;"><span class="uvc-headings-line" style="border-style:solid;border-bottom-width:4px;border-color:#ccc;width:30px;"></span></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-48336369ef6839a78 h2" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'><h2 style="font-weight:bold;margin-bottom:10px;">Sweety</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-48336369ef6839a78 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:normal;">Ehicula blandit velit. Praesent sit amet felis dolor glavrida unicos.</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2700636a4563504e1 h2" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'><h2 style="font-weight:bold;margin-bottom:10px;">Sweety</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2700636a4563504e1 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:normal;">Ehicula blandit velit. Praesent sit amet felis dolor glavrida unicos.</div>
 </div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner vc_custom_1493807622563"><div class="wpb_wrapper">
@@ -945,24 +984,24 @@ document.addEventListener("DOMContentLoaded", function(event) {
   box-shadow: none;
 }</style>
 <div class="shortcode-single-image-wrap shortcode-single-image-8358672456fdfd5386feedd707a32f30 alignnone  vc_custom_1493807456272 enable-bg-rollover dt-icon-bg-off"><div class="shortcode-single-image"><div class="fancy-media-wrap"><a href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" class=" layzr-bg rollover" target="_blank" rel="noopener" aria-label="Image"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20400%20300&#39;%2F%3E" data-src="/wp-content/uploads/sites/71/2016/12/4-logo-09.png" data-srcset="/wp-content/uploads/sites/71/2016/12/4-logo-09.png 400w" width="400" height="300" data-dt-location="/site71/homepage/4-logo-09/"></a></div></div></div>
-<div id="ultimate-heading-77176369ef684f681" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-77176369ef684f681 uvc-1466 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-4160636a4563513e2" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-4160636a4563513e2 uvc-5891 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer line_only" style="margin-bottom:20px;height:4px;"><span class="uvc-headings-line" style="border-style:solid;border-bottom-width:4px;border-color:#ccc;width:30px;"></span></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-77176369ef684f681 h2" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'><h2 style="font-weight:bold;margin-bottom:10px;">Avantgarde</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-77176369ef684f681 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:normal;">Glavrida from nulla from dolor &#8211; ehicula blandit velit. Praesent sit amet felis.</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4160636a4563513e2 h2" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'><h2 style="font-weight:bold;margin-bottom:10px;">Avantgarde</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4160636a4563513e2 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:normal;">Glavrida from nulla from dolor &#8211; ehicula blandit velit. Praesent sit amet felis.</div>
 </div>
 </div></div></div>
 </div>
-<div class=" vc_custom_1493809034265 ubtn-ctn-left anchor-link"><a class="ubtn-link ult-adjust-bottom-margin ubtn-left ubtn-custom anchor-link" href="#!/contact"><button type="button" id="ubtn-5392" class="ubtn ult-adjust-bottom-margin ult-responsive ubtn-custom ubtn-fade-bg  none  ubtn-left   tooltip-6369ef684f9e2" data-hover="#ffffff" data-border-color="#3a71ec" data-bg="" data-hover-bg="#3a71ec" data-border-hover="#3a71ec" data-shadow-hover="" data-shadow-click="none" data-shadow="" data-shd-shadow="" data-ultimate-target="#ubtn-5392" data-responsive-json-new='{"font-size":"desktop:14px;","line-height":""}' style="font-weight:bold;width:px;min-height:46px;padding:5px 15px;border-radius:0px;border-width:3px;border-color:#3a71ec;border-style:solid;color: #3a71ec;"><span class="ubtn-data ubtn-icon"><i class="none" style="font-size:24px;color:;"></i></span><span class="ubtn-hover" style="background-color:#3a71ec"></span><span class="ubtn-data ubtn-text ">BECOME MY CLIENT</span></button></a></div>
+<div class=" vc_custom_1493809034265 ubtn-ctn-left anchor-link"><a class="ubtn-link ult-adjust-bottom-margin ubtn-left ubtn-custom anchor-link" href="#!/contact"><button type="button" id="ubtn-6176" class="ubtn ult-adjust-bottom-margin ult-responsive ubtn-custom ubtn-fade-bg  none  ubtn-left   tooltip-636a4563514e0" data-hover="#ffffff" data-border-color="#3a71ec" data-bg="" data-hover-bg="#3a71ec" data-border-hover="#3a71ec" data-shadow-hover="" data-shadow-click="none" data-shadow="" data-shd-shadow="" data-ultimate-target="#ubtn-6176" data-responsive-json-new='{"font-size":"desktop:14px;","line-height":""}' style="font-weight:bold;width:px;min-height:46px;padding:5px 15px;border-radius:0px;border-width:3px;border-color:#3a71ec;border-style:solid;color: #3a71ec;"><span class="ubtn-data ubtn-icon"><i class="none" style="font-size:24px;color:;"></i></span><span class="ubtn-hover" style="background-color:#3a71ec"></span><span class="ubtn-data ubtn-text ">BECOME MY CLIENT</span></button></a></div>
 </div></div></div></div>
 <!-- Row Backgrounds --><div class="upb_color" data-bg-override="ex-full" data-bg-color="#f8f8f9" data-fadeout="" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false" data-custom-vc-row="" data-vc="6.8.0" data-is_old_vc="" data-theme-support="" data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size=""></div>
 <div id="testimonials" class="vc_row wpb_row vc_row-fluid vc_custom_1493724640531"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-0 vc_col-lg-12 vc_col-md-offset-0 vc_col-md-12 vc_col-sm-offset-0"><div class="vc_column-inner"><div class="wpb_wrapper">
-<div id="ultimate-heading-9746369ef68651e8" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-9746369ef68651e8 uvc-7344 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div id="ultimate-heading-7573636a456351af5" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-7573636a456351af5 uvc-246 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9746369ef68651e8 h2" data-responsive-json-new='{"font-size":"desktop:90px;mobile_landscape:60px;","line-height":"desktop:100px;mobile_landscape:70px;"}'><h2 style="font-weight:bold;color:rgba(59,63,74,0.12);margin-bottom:-45px;">*TESTIMONIALS</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-7573636a456351af5 h2" data-responsive-json-new='{"font-size":"desktop:90px;mobile_landscape:60px;","line-height":"desktop:100px;mobile_landscape:70px;"}'><h2 style="font-weight:bold;color:rgba(59,63,74,0.12);margin-bottom:-45px;">*TESTIMONIALS</h2></div>
 </div>
-<div id="ultimate-heading-77316369ef6865752" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-77316369ef6865752 uvc-6729 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div id="ultimate-heading-4063636a456351b39" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-4063636a456351b39 uvc-3247 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-77316369ef6865752 h2" data-responsive-json-new='{"font-size":"desktop:38px;mobile_landscape:30px;","line-height":"desktop:48px;mobile_landscape:40px;"}'><h2 style="font-weight:bold;margin-bottom:50px;">Don't take my word for it</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4063636a456351b39 h2" data-responsive-json-new='{"font-size":"desktop:38px;mobile_landscape:30px;","line-height":"desktop:48px;mobile_landscape:40px;"}'><h2 style="font-weight:bold;margin-bottom:50px;">Don't take my word for it</h2></div>
 </div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid vc_row-o-equal-height vc_row-flex">
 <div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1493724463942"><div class="wpb_wrapper">
@@ -985,14 +1024,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
   background: rgba(255,255,255,0.3);
   box-shadow: none;
 }</style>
-<div id="ultimate-heading-75206369ef6867031" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-75206369ef6867031 uvc-4944 accent-subtitle-color" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-1456636a456351fbb" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-1456636a456351fbb uvc-5086 accent-subtitle-color" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-75206369ef6867031 h2" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}'><h2 style="font-weight:bold;margin-bottom:5px;">Jason Brown</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-75206369ef6867031 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-weight:bold;margin-bottom:25px;">Art Director &#8211; Seven Media</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1456636a456351fbb h2" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}'><h2 style="font-weight:bold;margin-bottom:5px;">Jason Brown</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1456636a456351fbb .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-weight:bold;margin-bottom:25px;">Art Director &#8211; Seven Media</div>
 </div>
-<div id="ultimate-heading-98406369ef68670a0" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-98406369ef68670a0 uvc-2673  uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-2845636a456351ffe" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2845636a456351ffe uvc-4491  uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-98406369ef68670a0 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:18px;mobile_landscape:15px;","line-height":"desktop:31px;mobile_landscape:28px;"}' style="font-style:italic;font-weight:normal;">Auris massa purus, ultricies vel venenatis in, cursus vitae tortor. Nam vehicula blandit velit, a fermentum elit blandit et. Praesent sit amet felis venenatis, porttitor urna pulvinar.</div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2845636a456351ffe .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:18px;mobile_landscape:15px;","line-height":"desktop:31px;mobile_landscape:28px;"}' style="font-style:italic;font-weight:normal;">Auris massa purus, ultricies vel venenatis in, cursus vitae tortor. Nam vehicula blandit velit, a fermentum elit blandit et. Praesent sit amet felis venenatis, porttitor urna pulvinar.</div>
 </div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1493809185719"><div class="wpb_wrapper">
@@ -1015,14 +1054,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
   background: rgba(255,255,255,0.3);
   box-shadow: none;
 }</style>
-<div id="ultimate-heading-35976369ef687cf64" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-35976369ef687cf64 uvc-4573 accent-subtitle-color" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-895636a456352209" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-895636a456352209 uvc-8843 accent-subtitle-color" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-35976369ef687cf64 h2" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}'><h2 style="font-weight:bold;margin-bottom:5px;">Tiffany Bright</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-35976369ef687cf64 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-weight:bold;margin-bottom:25px;">Executive Director &#8211; Seven Creative</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-895636a456352209 h2" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}'><h2 style="font-weight:bold;margin-bottom:5px;">Tiffany Bright</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-895636a456352209 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-weight:bold;margin-bottom:25px;">Executive Director &#8211; Seven Creative</div>
 </div>
-<div id="ultimate-heading-96176369ef687cfc7" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-96176369ef687cfc7 uvc-1991  uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-4179636a456352249" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-4179636a456352249 uvc-452  uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-96176369ef687cfc7 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:18px;mobile_landscape:15px;","line-height":"desktop:31px;mobile_landscape:28px;"}' style="font-style:italic;font-weight:normal;">Lorem convallis non eros &#8211; auris massa purus, ultricies vel venenatis in, cursus vitae tortor. Nam vehicula blandit velit, a fermentum elit blandit et. Praesent sit amet felis venenatis, porttitor urna pulvinar.</div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4179636a456352249 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:18px;mobile_landscape:15px;","line-height":"desktop:31px;mobile_landscape:28px;"}' style="font-style:italic;font-weight:normal;">Lorem convallis non eros &#8211; auris massa purus, ultricies vel venenatis in, cursus vitae tortor. Nam vehicula blandit velit, a fermentum elit blandit et. Praesent sit amet felis venenatis, porttitor urna pulvinar.</div>
 </div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1493809180673"><div class="wpb_wrapper">
@@ -1045,14 +1084,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
   background: rgba(255,255,255,0.3);
   box-shadow: none;
 }</style>
-<div id="ultimate-heading-56326369ef6880982" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-56326369ef6880982 uvc-4292 accent-subtitle-color" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-8198636a456352430" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-8198636a456352430 uvc-139 accent-subtitle-color" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-56326369ef6880982 h2" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}'><h2 style="font-weight:bold;margin-bottom:5px;">Miranda Blackwood</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-56326369ef6880982 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-weight:bold;margin-bottom:25px;">Marketing Manager &#8211; Seven Digital</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-8198636a456352430 h2" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}'><h2 style="font-weight:bold;margin-bottom:5px;">Miranda Blackwood</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-8198636a456352430 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-weight:bold;margin-bottom:25px;">Marketing Manager &#8211; Seven Digital</div>
 </div>
-<div id="ultimate-heading-73166369ef68809e5" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-73166369ef68809e5 uvc-2970  uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-9010636a45635246a" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-9010636a45635246a uvc-4915  uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-73166369ef68809e5 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:18px;mobile_landscape:15px;","line-height":"desktop:31px;mobile_landscape:28px;"}' style="font-style:italic;font-weight:normal;">Nam vehicula blandit velit, a fermentum elit blandit et. Praesent sit amet felis venenatis, porttitor urna pulvinar, vestibulum ex &#8211; auris massa purus, ultricies vel venenatis in, cursus vitae tortont sit amet felis venenatis!</div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9010636a45635246a .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:18px;mobile_landscape:15px;","line-height":"desktop:31px;mobile_landscape:28px;"}' style="font-style:italic;font-weight:normal;">Nam vehicula blandit velit, a fermentum elit blandit et. Praesent sit amet felis venenatis, porttitor urna pulvinar, vestibulum ex &#8211; auris massa purus, ultricies vel venenatis in, cursus vitae tortont sit amet felis venenatis!</div>
 </div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1493809193918"><div class="wpb_wrapper">
@@ -1075,159 +1114,159 @@ document.addEventListener("DOMContentLoaded", function(event) {
   background: rgba(255,255,255,0.3);
   box-shadow: none;
 }</style>
-<div id="ultimate-heading-80426369ef6896227" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-80426369ef6896227 uvc-3086 accent-subtitle-color" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-8251636a456352643" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-8251636a456352643 uvc-167 accent-subtitle-color" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-80426369ef6896227 h2" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}'><h2 style="font-weight:bold;margin-bottom:5px;">Richard Redfox</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-80426369ef6896227 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-weight:bold;margin-bottom:25px;">Marketing Manager &#8211; Seven Digital</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-8251636a456352643 h2" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}'><h2 style="font-weight:bold;margin-bottom:5px;">Richard Redfox</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-8251636a456352643 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-weight:bold;margin-bottom:25px;">Marketing Manager &#8211; Seven Digital</div>
 </div>
-<div id="ultimate-heading-91486369ef689628d" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-91486369ef689628d uvc-6136  uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-6688636a45635277b" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-6688636a45635277b uvc-4278  uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-91486369ef689628d .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:18px;mobile_landscape:15px;","line-height":"desktop:31px;mobile_landscape:28px;"}' style="font-style:italic;font-weight:normal;">Lorem convallis non eros &#8211; auris massa purus, ultricies vel venenatis in, cursus vitae tortor. Nam vehicula blandit velit, a fermentum elit blandit et. Praesent sit amet felis venenatis, porttitor urna pulvinar.</div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6688636a45635277b .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:18px;mobile_landscape:15px;","line-height":"desktop:31px;mobile_landscape:28px;"}' style="font-style:italic;font-weight:normal;">Lorem convallis non eros &#8211; auris massa purus, ultricies vel venenatis in, cursus vitae tortor. Nam vehicula blandit velit, a fermentum elit blandit et. Praesent sit amet felis venenatis, porttitor urna pulvinar.</div>
 </div>
 </div></div></div>
 </div>
 </div></div></div></div>
 <!-- Row Backgrounds --><div class="upb_color" data-bg-override="ex-full" data-bg-color="#ffffff" data-fadeout="" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false" data-custom-vc-row="" data-vc="6.8.0" data-is_old_vc="" data-theme-support="" data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size=""></div>
 <div id="process" class="vc_row wpb_row vc_row-fluid vc_custom_1495554276908 vc_row-has-fill"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-0 vc_col-lg-12 vc_col-md-offset-0 vc_col-md-12 vc_col-sm-offset-0"><div class="vc_column-inner"><div class="wpb_wrapper">
-<div id="ultimate-heading-5416369ef6897345" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-5416369ef6897345 uvc-9 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div id="ultimate-heading-4726636a456352d45" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-4726636a456352d45 uvc-1968 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5416369ef6897345 h2" data-responsive-json-new='{"font-size":"desktop:90px;mobile_landscape:60px;","line-height":"desktop:100px;mobile_landscape:70px;"}'><h2 style="font-weight:bold;color:rgba(138,138,138,0.4);margin-bottom:-45px;">*PROCESS</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4726636a456352d45 h2" data-responsive-json-new='{"font-size":"desktop:90px;mobile_landscape:60px;","line-height":"desktop:100px;mobile_landscape:70px;"}'><h2 style="font-weight:bold;color:rgba(138,138,138,0.4);margin-bottom:-45px;">*PROCESS</h2></div>
 </div>
-<div id="ultimate-heading-2336369ef689739d" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2336369ef689739d uvc-9250 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div id="ultimate-heading-283636a456352d86" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-283636a456352d86 uvc-9498 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2336369ef689739d h2" data-responsive-json-new='{"font-size":"desktop:38px;mobile_landscape:30px;","line-height":"desktop:48px;mobile_landscape:40px;"}'><h2 style="font-weight:bold;color:#ffffff;margin-bottom:50px;">That’s how I work</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2336369ef689739d .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:31px;"}' style="font-weight:normal;color:#9aa0a7;margin-bottom:60px;">Lorem ipsum nulla amos – vehicula blandit blandit et. Praesent sit amet enenatis, porttitor urna pulvinar, vestibulum ex. Convallis non eros. Mauris massa purus, ultricies vel venenatis in, cursus vitae tortor. Nam vehicula blandit velit, a fermentum elit blandit et. Praesent sit amet felis venenatis, porttitor urna pulvinar.</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-283636a456352d86 h2" data-responsive-json-new='{"font-size":"desktop:38px;mobile_landscape:30px;","line-height":"desktop:48px;mobile_landscape:40px;"}'><h2 style="font-weight:bold;color:#ffffff;margin-bottom:50px;">That’s how I work</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-283636a456352d86 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:31px;"}' style="font-weight:normal;color:#9aa0a7;margin-bottom:60px;">Lorem ipsum nulla amos – vehicula blandit blandit et. Praesent sit amet enenatis, porttitor urna pulvinar, vestibulum ex. Convallis non eros. Mauris massa purus, ultricies vel venenatis in, cursus vitae tortor. Nam vehicula blandit velit, a fermentum elit blandit et. Praesent sit amet felis venenatis, porttitor urna pulvinar.</div>
 </div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1493717442720">
 <div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper">
 <div class="aio-icon-component  vc_custom_1493717077317  accent-icon-color style_1">
-<div id="Info-box-wrap-6794" class="aio-icon-box left-icon">
+<div id="Info-box-wrap-8874" class="aio-icon-box left-icon">
 <div class="aio-icon-left"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="font-size:64px;display:inline-block;">
 	<i class="icomoon-numbers-32x32-number"></i>
 </div>
 </div></div></div>
 <div class="aio-ibd-block">
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-6794 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-weight:bold;color:#ffffff;">Defining the problem</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-6794 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}' style="color:#9aa0a7;">Nam vehicula blandit velit, a fermentum elit blandit et. Praesent sit amet felis venenatis, porttitor urna pulvinar.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-8874 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-weight:bold;color:#ffffff;">Defining the problem</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-8874 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}' style="color:#9aa0a7;">Nam vehicula blandit velit, a fermentum elit blandit et. Praesent sit amet felis venenatis, porttitor urna pulvinar.</div> <!-- description -->
 </div> <!-- aio-ibd-block -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component --><div class="aio-icon-component  vc_custom_1493717071033  accent-icon-color style_1">
-<div id="Info-box-wrap-3312" class="aio-icon-box left-icon">
+<div id="Info-box-wrap-5855" class="aio-icon-box left-icon">
 <div class="aio-icon-left"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="font-size:64px;display:inline-block;">
 	<i class="icomoon-numbers-32x32-number2"></i>
 </div>
 </div></div></div>
 <div class="aio-ibd-block">
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-3312 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-weight:bold;color:#ffffff;">Conduct the research</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-3312 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}' style="color:#9aa0a7;">Lorem ipsum dolor amet bulla &#8211; ipsum am vehicula blandit velit, a fermentum elit blandit et. Praesent sit amet felis venenatis, porttitor urna pulvinar.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-5855 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-weight:bold;color:#ffffff;">Conduct the research</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-5855 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}' style="color:#9aa0a7;">Lorem ipsum dolor amet bulla &#8211; ipsum am vehicula blandit velit, a fermentum elit blandit et. Praesent sit amet felis venenatis, porttitor urna pulvinar.</div> <!-- description -->
 </div> <!-- aio-ibd-block -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component --><div class="aio-icon-component  vc_custom_1493717064526  accent-icon-color style_1">
-<div id="Info-box-wrap-1022" class="aio-icon-box left-icon">
+<div id="Info-box-wrap-3836" class="aio-icon-box left-icon">
 <div class="aio-icon-left"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="font-size:64px;display:inline-block;">
 	<i class="icomoon-numbers-32x32-number3"></i>
 </div>
 </div></div></div>
 <div class="aio-ibd-block">
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-1022 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-weight:bold;color:#ffffff;">Basic skatches</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-1022 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}' style="color:#9aa0a7;">Cursus vitae tortor &#8211; from glavrida lorem fermentum! Ipsum nulla glavrida amet &#8211; sit amet felis venenatis porttitor lorem ipsum.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-3836 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-weight:bold;color:#ffffff;">Basic skatches</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-3836 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}' style="color:#9aa0a7;">Cursus vitae tortor &#8211; from glavrida lorem fermentum! Ipsum nulla glavrida amet &#8211; sit amet felis venenatis porttitor lorem ipsum.</div> <!-- description -->
 </div> <!-- aio-ibd-block -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component -->
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper">
 <div class="aio-icon-component  vc_custom_1493717115224  accent-icon-color style_1">
-<div id="Info-box-wrap-6059" class="aio-icon-box left-icon">
+<div id="Info-box-wrap-4058" class="aio-icon-box left-icon">
 <div class="aio-icon-left"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="font-size:64px;display:inline-block;">
 	<i class="icomoon-numbers-32x32-number4"></i>
 </div>
 </div></div></div>
 <div class="aio-ibd-block">
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-6059 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-weight:bold;color:#ffffff;">Design &amp; development</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-6059 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}' style="color:#9aa0a7;">Lorem ipsum nulla amos &#8211; vehicula blandit blandit et. Praesent sit amet enenatis, porttitor urna pulvinar, vestibulum ex.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-4058 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-weight:bold;color:#ffffff;">Design &amp; development</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-4058 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}' style="color:#9aa0a7;">Lorem ipsum nulla amos &#8211; vehicula blandit blandit et. Praesent sit amet enenatis, porttitor urna pulvinar, vestibulum ex.</div> <!-- description -->
 </div> <!-- aio-ibd-block -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component --><div class="aio-icon-component  vc_custom_1493717143050  accent-icon-color style_1">
-<div id="Info-box-wrap-6882" class="aio-icon-box left-icon">
+<div id="Info-box-wrap-8457" class="aio-icon-box left-icon">
 <div class="aio-icon-left"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="font-size:64px;display:inline-block;">
 	<i class="icomoon-numbers-32x32-number5"></i>
 </div>
 </div></div></div>
 <div class="aio-ibd-block">
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-6882 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-weight:bold;color:#ffffff;">Final discussion</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-6882 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}' style="color:#9aa0a7;">Nam vehicula blandit velit, a fermentum elit blandit et. Praesent sit amet felis sum amet from.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-8457 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-weight:bold;color:#ffffff;">Final discussion</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-8457 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}' style="color:#9aa0a7;">Nam vehicula blandit velit, a fermentum elit blandit et. Praesent sit amet felis sum amet from.</div> <!-- description -->
 </div> <!-- aio-ibd-block -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component --><div class="aio-icon-component  vc_custom_1493717043669  accent-icon-color style_1">
-<div id="Info-box-wrap-4810" class="aio-icon-box left-icon">
+<div id="Info-box-wrap-3539" class="aio-icon-box left-icon">
 <div class="aio-icon-left"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="font-size:64px;display:inline-block;">
 	<i class="icomoon-numbers-32x32-number6"></i>
 </div>
 </div></div></div>
 <div class="aio-ibd-block">
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-4810 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-weight:bold;color:#ffffff;">Product launch</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-4810 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}' style="color:#9aa0a7;">Dolor ipsum amet &#8211; nam vehicula blandit velit, a fermentum elit blandit et. Praesent sit amet felis venenatis, porttitor urna pulvinar, vestibulum ex.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-3539 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-weight:bold;color:#ffffff;">Product launch</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-3539 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}' style="color:#9aa0a7;">Dolor ipsum amet &#8211; nam vehicula blandit velit, a fermentum elit blandit et. Praesent sit amet felis venenatis, porttitor urna pulvinar, vestibulum ex.</div> <!-- description -->
 </div> <!-- aio-ibd-block -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component -->
 </div></div></div>
 </div>
-<div class=" vc_custom_1493809067467 ubtn-ctn-left anchor-link"><a class="ubtn-link ult-adjust-bottom-margin ubtn-left ubtn-custom anchor-link" href="#!/contact"><button type="button" id="ubtn-9142" class="ubtn ult-adjust-bottom-margin ult-responsive ubtn-custom ubtn-fade-bg  none  ubtn-left   tooltip-6369ef689997d" data-hover="#ffffff" data-border-color="#3a71ec" data-bg="" data-hover-bg="#3a71ec" data-border-hover="#3a71ec" data-shadow-hover="" data-shadow-click="none" data-shadow="" data-shd-shadow="" data-ultimate-target="#ubtn-9142" data-responsive-json-new='{"font-size":"desktop:14px;","line-height":""}' style="font-weight:bold;width:px;min-height:46px;padding:5px 15px;border-radius:0px;border-width:3px;border-color:#3a71ec;border-style:solid;color: #3a71ec;"><span class="ubtn-data ubtn-icon"><i class="none" style="font-size:24px;color:;"></i></span><span class="ubtn-hover" style="background-color:#3a71ec"></span><span class="ubtn-data ubtn-text ">LET&#039;S DISCUSS YOUR PROJECT</span></button></a></div>
+<div class=" vc_custom_1493809067467 ubtn-ctn-left anchor-link"><a class="ubtn-link ult-adjust-bottom-margin ubtn-left ubtn-custom anchor-link" href="#!/contact"><button type="button" id="ubtn-2926" class="ubtn ult-adjust-bottom-margin ult-responsive ubtn-custom ubtn-fade-bg  none  ubtn-left   tooltip-636a456353536" data-hover="#ffffff" data-border-color="#3a71ec" data-bg="" data-hover-bg="#3a71ec" data-border-hover="#3a71ec" data-shadow-hover="" data-shadow-click="none" data-shadow="" data-shd-shadow="" data-ultimate-target="#ubtn-2926" data-responsive-json-new='{"font-size":"desktop:14px;","line-height":""}' style="font-weight:bold;width:px;min-height:46px;padding:5px 15px;border-radius:0px;border-width:3px;border-color:#3a71ec;border-style:solid;color: #3a71ec;"><span class="ubtn-data ubtn-icon"><i class="none" style="font-size:24px;color:;"></i></span><span class="ubtn-hover" style="background-color:#3a71ec"></span><span class="ubtn-data ubtn-text ">LET&#039;S DISCUSS YOUR PROJECT</span></button></a></div>
 </div></div></div></div>
 <!-- Row Backgrounds --><div class="upb_bg_img" data-ultimate-bg="url(/wp-content/uploads/sites/71/2016/12/bg-creative-pattern.gif)" data-image-id="id^57|url^/wp-content/uploads/sites/71/2016/12/bg-creative-pattern.gif|caption^null|alt^null|title^bg-creative-pattern|description^null" data-ultimate-bg-style="vcpb-vz-jquery" data-bg-img-repeat="repeat" data-bg-img-size="initial" data-bg-img-position="" data-parallx_sense="50" data-bg-override="ex-full" data-bg_img_attach="scroll" data-upb-overlay-color="rgba(24,27,34,0.97)" data-upb-bg-animation="" data-fadeout="" data-bg-animation="left-animation" data-bg-animation-type="h" data-animation-repeat="repeat" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false" data-custom-vc-row="" data-vc="6.8.0" data-is_old_vc="" data-theme-support="" data-overlay="true" data-overlay-color="rgba(24,27,34,0.97)" data-overlay-pattern="" data-overlay-pattern-opacity="0.8" data-overlay-pattern-size="" data-overlay-pattern-attachment="scroll"></div>
 <div id="contact" class="vc_row wpb_row vc_row-fluid vc_custom_1493718013755"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-0 vc_col-lg-12 vc_col-md-offset-0 vc_col-md-12 vc_col-sm-offset-0"><div class="vc_column-inner"><div class="wpb_wrapper">
-<div id="ultimate-heading-45696369ef689bbf9" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-45696369ef689bbf9 uvc-2746 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div id="ultimate-heading-5531636a456364cdd" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-5531636a456364cdd uvc-6924 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-45696369ef689bbf9 h2" data-responsive-json-new='{"font-size":"desktop:90px;mobile_landscape:60px;","line-height":"desktop:100px;mobile_landscape:70px;"}'><h2 style="font-weight:bold;color:rgba(59,63,74,0.12);margin-bottom:-45px;">*CONTACT</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5531636a456364cdd h2" data-responsive-json-new='{"font-size":"desktop:90px;mobile_landscape:60px;","line-height":"desktop:100px;mobile_landscape:70px;"}'><h2 style="font-weight:bold;color:rgba(59,63,74,0.12);margin-bottom:-45px;">*CONTACT</h2></div>
 </div>
-<div id="ultimate-heading-456369ef689bc5d" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-456369ef689bc5d uvc-1071 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div id="ultimate-heading-2140636a456364d38" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2140636a456364d38 uvc-1295 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-456369ef689bc5d h2" data-responsive-json-new='{"font-size":"desktop:38px;mobile_landscape:30px;","line-height":"desktop:48px;mobile_landscape:40px;"}'><h2 style="font-weight:bold;margin-bottom:70px;">Let's start a project together!</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2140636a456364d38 h2" data-responsive-json-new='{"font-size":"desktop:38px;mobile_landscape:30px;","line-height":"desktop:48px;mobile_landscape:40px;"}'><h2 style="font-weight:bold;margin-bottom:70px;">Let's start a project together!</h2></div>
 </div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid">
 <div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1482943658375"><div class="wpb_wrapper">
 <div class="aio-icon-component  vc_custom_1493719057394  accent-icon-color style_1">
-<div id="Info-box-wrap-2562" class="aio-icon-box left-icon">
+<div id="Info-box-wrap-6240" class="aio-icon-box left-icon">
 <div class="aio-icon-left"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="font-size:28px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-envelope"></i>
 </div>
 </div></div></div>
 <div class="aio-ibd-block">
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-2562 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:20px;"}' style="font-weight:bold;">Mail</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-2562 .aio-icon-description" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:20px;"}'>hello@dream-theme.com</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-6240 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:20px;"}' style="font-weight:bold;">Mail</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-6240 .aio-icon-description" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:20px;"}'>hello@dream-theme.com</div> <!-- description -->
 </div> <!-- aio-ibd-block -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component --><div class="aio-icon-component  vc_custom_1493719090010  accent-icon-color style_1">
-<div id="Info-box-wrap-2714" class="aio-icon-box left-icon">
+<div id="Info-box-wrap-7439" class="aio-icon-box left-icon">
 <div class="aio-icon-left"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="font-size:28px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-phone"></i>
 </div>
 </div></div></div>
 <div class="aio-ibd-block">
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-2714 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:20px;"}' style="font-weight:bold;">Call me</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-2714 .aio-icon-description" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:20px;"}'>+ 009 876 54 321</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-7439 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:20px;"}' style="font-weight:bold;">Call me</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-7439 .aio-icon-description" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:20px;"}'>+ 009 876 54 321</div> <!-- description -->
 </div> <!-- aio-ibd-block -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component --><div class="aio-icon-component  vc_custom_1493719150643  accent-icon-color style_1">
-<div id="Info-box-wrap-6690" class="aio-icon-box left-icon">
+<div id="Info-box-wrap-1992" class="aio-icon-box left-icon">
 <div class="aio-icon-left"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="font-size:28px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-map"></i>
 </div>
 </div></div></div>
 <div class="aio-ibd-block">
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-6690 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:20px;"}' style="font-weight:bold;">My location</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-6690 .aio-icon-description" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:20px;"}'>Los Angeles, California, USA</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-1992 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:20px;"}' style="font-weight:bold;">My location</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-1992 .aio-icon-description" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:20px;"}'>Los Angeles, California, USA</div> <!-- description -->
 </div> <!-- aio-ibd-block -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component --><div class="aio-icon-component  vc_custom_1493719528442  accent-icon-color style_1">
-<div id="Info-box-wrap-5887" class="aio-icon-box left-icon">
+<div id="Info-box-wrap-3938" class="aio-icon-box left-icon">
 <div class="aio-icon-left"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="font-size:28px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-clock-o"></i>
 </div>
 </div></div></div>
 <div class="aio-ibd-block">
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-5887 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:20px;"}' style="font-weight:bold;">Business time</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-5887 .aio-icon-description" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:20px;"}'>Mon &#8211; Fri 10.00 &#8211; 19.00</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-3938 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:20px;"}' style="font-weight:bold;">Business time</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-3938 .aio-icon-description" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:20px;"}'>Mon &#8211; Fri 10.00 &#8211; 19.00</div> <!-- description -->
 </div> <!-- aio-ibd-block -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component -->
@@ -1250,50 +1289,50 @@ document.addEventListener("DOMContentLoaded", function(event) {
 <div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_custom_1510139763201 vc_row-no-padding"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid">
 <div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner vc_custom_1476289576226"><div class="wpb_wrapper">
 <div class="ult-just-icon-wrapper   vc_custom_1493721097003"><div class="align-icon" style="text-align:center;">
-<a class="aio-tooltip 6369ef68b3053" href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener" data-toggle="tooltip" data-placement=""><div class="aio-icon advanced " style="color:#ffffff;border-style:solid;border-color:#ffffff;border-width:4px;width:70px;height:70px;line-height:70px;border-radius:500px;font-size:28px;display:inline-block;">
+<a class="aio-tooltip 636a456367005" href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener" data-toggle="tooltip" data-placement=""><div class="aio-icon advanced " style="color:#ffffff;border-style:solid;border-color:#ffffff;border-width:4px;width:70px;height:70px;line-height:70px;border-radius:500px;font-size:28px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-pinterest-p"></i>
 </div></a>
 </div></div>
-<div id="ultimate-heading-30186369ef68b30c2" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-30186369ef68b30c2 uvc-9275 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-3698636a45636707c" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-3698636a45636707c uvc-8775 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-30186369ef68b30c2 h2" data-responsive-json-new='{"font-size":"desktop:12px;","line-height":"desktop:20px;"}'><h2 style="font-weight:bold;color:rgba(255,255,255,0.5);margin-bottom:0px;">PINTEREST</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-30186369ef68b30c2 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-weight:bold;color:#ffffff;margin-bottom:0px;">@Dream-Theme</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3698636a45636707c h2" data-responsive-json-new='{"font-size":"desktop:12px;","line-height":"desktop:20px;"}'><h2 style="font-weight:bold;color:rgba(255,255,255,0.5);margin-bottom:0px;">PINTEREST</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3698636a45636707c .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-weight:bold;color:#ffffff;margin-bottom:0px;">@Dream-Theme</div>
 </div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner vc_custom_1482916661181"><div class="wpb_wrapper">
 <div class="ult-just-icon-wrapper   vc_custom_1493721104513"><div class="align-icon" style="text-align:center;">
-<a class="aio-tooltip 6369ef68b328b" href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener" data-toggle="tooltip" data-placement=""><div class="aio-icon advanced " style="color:#ffffff;border-style:solid;border-color:#ffffff;border-width:4px;width:70px;height:70px;line-height:70px;border-radius:500px;font-size:28px;display:inline-block;">
+<a class="aio-tooltip 636a45636734d" href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener" data-toggle="tooltip" data-placement=""><div class="aio-icon advanced " style="color:#ffffff;border-style:solid;border-color:#ffffff;border-width:4px;width:70px;height:70px;line-height:70px;border-radius:500px;font-size:28px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-twitter"></i>
 </div></a>
 </div></div>
-<div id="ultimate-heading-26856369ef68b3303" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-26856369ef68b3303 uvc-1657 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-9680636a4563673af" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-9680636a4563673af uvc-4681 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-26856369ef68b3303 h2" data-responsive-json-new='{"font-size":"desktop:12px;","line-height":"desktop:20px;"}'><h2 style="font-weight:bold;color:rgba(255,255,255,0.5);margin-bottom:0px;">TWITTER</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-26856369ef68b3303 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-weight:bold;color:#ffffff;margin-bottom:0px;">@premium_theme</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9680636a4563673af h2" data-responsive-json-new='{"font-size":"desktop:12px;","line-height":"desktop:20px;"}'><h2 style="font-weight:bold;color:rgba(255,255,255,0.5);margin-bottom:0px;">TWITTER</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9680636a4563673af .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-weight:bold;color:#ffffff;margin-bottom:0px;">@premium_theme</div>
 </div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner vc_custom_1482916667587"><div class="wpb_wrapper">
 <div class="ult-just-icon-wrapper   vc_custom_1493721110933"><div class="align-icon" style="text-align:center;">
-<a class="aio-tooltip 6369ef68c5e09" href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener" data-toggle="tooltip" data-placement=""><div class="aio-icon advanced " style="color:#ffffff;border-style:solid;border-color:#ffffff;border-width:4px;width:70px;height:70px;line-height:70px;border-radius:500px;font-size:28px;display:inline-block;">
+<a class="aio-tooltip 636a45636759b" href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener" data-toggle="tooltip" data-placement=""><div class="aio-icon advanced " style="color:#ffffff;border-style:solid;border-color:#ffffff;border-width:4px;width:70px;height:70px;line-height:70px;border-radius:500px;font-size:28px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-facebook facebook-f"></i>
 </div></a>
 </div></div>
-<div id="ultimate-heading-45006369ef68c5e97" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-45006369ef68c5e97 uvc-8736 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-6316636a4563675f4" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-6316636a4563675f4 uvc-5667 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-45006369ef68c5e97 h2" data-responsive-json-new='{"font-size":"desktop:12px;","line-height":"desktop:20px;"}'><h2 style="font-weight:bold;color:rgba(255,255,255,0.5);margin-bottom:0px;">FACEBOOK</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-45006369ef68c5e97 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-weight:bold;color:#ffffff;margin-bottom:0px;">@WordPress.Premium.Theme</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6316636a4563675f4 h2" data-responsive-json-new='{"font-size":"desktop:12px;","line-height":"desktop:20px;"}'><h2 style="font-weight:bold;color:rgba(255,255,255,0.5);margin-bottom:0px;">FACEBOOK</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6316636a4563675f4 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-weight:bold;color:#ffffff;margin-bottom:0px;">@WordPress.Premium.Theme</div>
 </div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner vc_custom_1482916687440"><div class="wpb_wrapper">
 <div class="ult-just-icon-wrapper   vc_custom_1493721116197"><div class="align-icon" style="text-align:center;">
-<a class="aio-tooltip 6369ef68c60ba" href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener" data-toggle="tooltip" data-placement=""><div class="aio-icon advanced " style="color:#ffffff;border-style:solid;border-color:#ffffff;border-width:4px;width:70px;height:70px;line-height:70px;border-radius:500px;font-size:28px;display:inline-block;">
+<a class="aio-tooltip 636a4563677ae" href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener" data-toggle="tooltip" data-placement=""><div class="aio-icon advanced " style="color:#ffffff;border-style:solid;border-color:#ffffff;border-width:4px;width:70px;height:70px;line-height:70px;border-radius:500px;font-size:28px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-behance"></i>
 </div></a>
 </div></div>
-<div id="ultimate-heading-28616369ef68c6114" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-28616369ef68c6114 uvc-9079 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-4647636a456367801" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-4647636a456367801 uvc-3148 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-28616369ef68c6114 h2" data-responsive-json-new='{"font-size":"desktop:12px;","line-height":"desktop:20px;"}'><h2 style="font-weight:bold;color:rgba(255,255,255,0.5);margin-bottom:0px;">BEHANCE</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-28616369ef68c6114 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-weight:bold;color:#ffffff;margin-bottom:0px;">@YourProfile</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4647636a456367801 h2" data-responsive-json-new='{"font-size":"desktop:12px;","line-height":"desktop:20px;"}'><h2 style="font-weight:bold;color:rgba(255,255,255,0.5);margin-bottom:0px;">BEHANCE</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4647636a456367801 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-weight:bold;color:#ffffff;margin-bottom:0px;">@YourProfile</div>
 </div>
 </div></div></div>
 </div></div></div></div></div>
@@ -1485,5 +1524,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </body>
 
 
-<!-- Page supported by LiteSpeed Cache 5.3 on 2022-11-08 05:55:53 -->
+<!-- Page supported by LiteSpeed Cache 5.3 on 2022-11-08 12:02:43 -->
 </html>
