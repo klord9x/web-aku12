@@ -70,15 +70,54 @@ img.emoji {
 <link rel="stylesheet" id="js_composer_front-css" href="/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=6.8.0" type="text/css" media="all">
 <link rel="stylesheet" id="dt-web-fonts-css" href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Open Sans:400,600,700|Roboto:400,600,700" type="text/css" media="all">
 <link rel="stylesheet" id="dt-main-css" href="/wp-content/themes/dt-the7/css/main.min.css?ver=11.1.1" type="text/css" media="all">
+<style id="dt-main-inline-css" type="text/css">body #load {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 9901;
+  opacity: 1;
+  visibility: visible;
+  transition: all .35s ease-out;
+}
+.load-wrap {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -ms-flex-pack: center;
+  -ms-justify-content: center;
+  justify-content: center;
+}
+.load-wrap > svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+#load {
+  background: var(--the7-elementor-beautiful-loading-bg,#ffffff);
+  --the7-beautiful-spinner-color2: var(--the7-beautiful-spinner-color,#34a6f7);
+}</style>
 <link rel="stylesheet" id="the7-custom-scrollbar-css" href="/wp-content/themes/dt-the7/lib/custom-scrollbar/custom-scrollbar.min.css?ver=11.1.1" type="text/css" media="all">
 <link rel="stylesheet" id="the7-wpbakery-css" href="/wp-content/themes/dt-the7/css/wpbakery.min.css?ver=11.1.1" type="text/css" media="all">
 <link rel="stylesheet" id="the7-core-css" href="/wp-content/plugins/dt-the7-core/assets/css/post-type.min.css?ver=2.7.0" type="text/css" media="all">
-<link rel="stylesheet" id="the7-css-vars-css" href="/wp-content/uploads/sites/52/the7-css/css-vars.css?ver=aa96480d6286" type="text/css" media="all">
-<link rel="stylesheet" id="dt-custom-css" href="/wp-content/uploads/sites/52/the7-css/custom.css?ver=aa96480d6286" type="text/css" media="all">
-<link rel="stylesheet" id="dt-media-css" href="/wp-content/uploads/sites/52/the7-css/media.css?ver=aa96480d6286" type="text/css" media="all">
-<link rel="stylesheet" id="the7-mega-menu-css" href="/wp-content/uploads/sites/52/the7-css/mega-menu.css?ver=aa96480d6286" type="text/css" media="all">
-<link rel="stylesheet" id="the7-elements-albums-portfolio-css" href="/wp-content/uploads/sites/52/the7-css/the7-elements-albums-portfolio.css?ver=aa96480d6286" type="text/css" media="all">
-<link rel="stylesheet" id="the7-elements-css" href="/wp-content/uploads/sites/52/the7-css/post-type-dynamic.css?ver=aa96480d6286" type="text/css" media="all">
+<link rel="stylesheet" id="the7-css-vars-css" href="/wp-content/uploads/sites/52/the7-css/css-vars.css?ver=ef96c726b392" type="text/css" media="all">
+<link rel="stylesheet" id="dt-custom-css" href="/wp-content/uploads/sites/52/the7-css/custom.css?ver=ef96c726b392" type="text/css" media="all">
+<link rel="stylesheet" id="dt-media-css" href="/wp-content/uploads/sites/52/the7-css/media.css?ver=ef96c726b392" type="text/css" media="all">
+<link rel="stylesheet" id="the7-mega-menu-css" href="/wp-content/uploads/sites/52/the7-css/mega-menu.css?ver=ef96c726b392" type="text/css" media="all">
+<link rel="stylesheet" id="the7-elements-albums-portfolio-css" href="/wp-content/uploads/sites/52/the7-css/the7-elements-albums-portfolio.css?ver=ef96c726b392" type="text/css" media="all">
+<link rel="stylesheet" id="the7-elements-css" href="/wp-content/uploads/sites/52/the7-css/post-type-dynamic.css?ver=ef96c726b392" type="text/css" media="all">
 <link rel="stylesheet" id="style-css" href="/wp-content/themes/dt-the7/style.css?ver=11.1.1" type="text/css" media="all">
 <link rel="stylesheet" id="ultimate-vc-addons-google-fonts-css" href="https://fonts.googleapis.com/css?family=Montserrat:regular,700" type="text/css" media="all">
 <link rel="stylesheet" id="ultimate-vc-addons-style-css" href="/wp-content/plugins/Ultimate_VC_Addons/assets/min-css/style.min.css?ver=3.19.11" type="text/css" media="all">
@@ -400,10 +439,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	<div id="content" class="content" role="main">
 
 		<div class="vc_row wpb_row vc_row-fluid vc_custom_1494490890104 vc_column-gap-30 vc_row-o-equal-height vc_row-flex">
-<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-offset-2 vc_col-md-offset-2 vc_col-sm-offset-2"><div class="vc_column-inner"><div class="wpb_wrapper"><div id="ultimate-heading-31986369c9fae3a88" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-31986369c9fae3a88 uvc-9383  uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-offset-2 vc_col-md-offset-2 vc_col-sm-offset-2"><div class="vc_column-inner"><div class="wpb_wrapper"><div id="ultimate-heading-1035636a2cb609d1a" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-1035636a2cb609d1a uvc-5310  uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-31986369c9fae3a88 h1" data-responsive-json-new='{"font-size":"","line-height":""}'><h1 style="font-weight:bold;">We are San Diego's health care leader</h1></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-31986369c9fae3a88 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:30px;"}' style="font-weight:normal;color:#9a9a9a;margin-top:20px;margin-bottom:20px;">Nulla a mi arcu. In lobortis elementum eleifend. Nunc vestibulum ipsum mauris. Sed ut aliquet ante, ac pulvinar risus.</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1035636a2cb609d1a h1" data-responsive-json-new='{"font-size":"","line-height":""}'><h1 style="font-weight:bold;">We are San Diego's health care leader</h1></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1035636a2cb609d1a .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:30px;"}' style="font-weight:normal;color:#9a9a9a;margin-top:20px;margin-bottom:20px;">Nulla a mi arcu. In lobortis elementum eleifend. Nunc vestibulum ipsum mauris. Sed ut aliquet ante, ac pulvinar risus.</div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-offset-0 vc_col-lg-4 vc_col-md-offset-0 vc_col-md-4 vc_col-sm-offset-2 vc_col-has-fill"><div class="vc_column-inner vc_custom_1471297612919"><div class="wpb_wrapper">
 <div class="ult-just-icon-wrapper   vc_custom_1471287151498"><div class="align-icon" style="text-align:center;">
@@ -411,12 +450,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	<i class="icomoon-brankic-32x32-health"></i>
 </div>
 </div></div>
-<div id="ultimate-heading-71776369c9fae3dbf" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-71776369c9fae3dbf uvc-9919  uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-7175636a2cb609f2d" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-7175636a2cb609f2d uvc-5382  uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-71776369c9fae3dbf h3" data-responsive-json-new='{"font-size":"","line-height":""}'><h3 style="font-weight:bold;color:#ffffff;">ABOUT US</h3></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-71776369c9fae3dbf .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:28px;"}' style="font-weight:normal;color:#ffffff;margin-top:10px;margin-bottom:20px;">Duis sit amet nulla vestibulum, interdum felis a, malesuada enim. Ut vel risus accumsan.</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-7175636a2cb609f2d h3" data-responsive-json-new='{"font-size":"","line-height":""}'><h3 style="font-weight:bold;color:#ffffff;">ABOUT US</h3></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-7175636a2cb609f2d .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:28px;"}' style="font-weight:normal;color:#ffffff;margin-top:10px;margin-bottom:20px;">Duis sit amet nulla vestibulum, interdum felis a, malesuada enim. Ut vel risus accumsan.</div>
 </div>
-<div class=" vc_custom_1471330641593 ubtn-ctn-center "><button type="button" id="ubtn-6725" class="ubtn ult-adjust-bottom-margin ult-responsive ubtn-custom ubtn-fade-bg  none  ubtn-center   tooltip-6369c9fae3e09" data-hover="#28a7fb" data-border-color="rgba(255,255,255,0.4)" data-bg="rgba(255,255,255,0.01)" data-hover-bg="#ffffff" data-border-hover="#ffffff" data-shadow-hover="" data-shadow-click="none" data-shadow="" data-shd-shadow="" data-ultimate-target="#ubtn-6725" data-responsive-json-new='{"font-size":"desktop:12px;","line-height":"desktop:12px;"}' style="font-family:&#039;Montserrat&#039;;font-weight:normal;font-style:normal;width:px;min-height:34px;padding:5px 12px;border-radius:0px;border-width:2px;border-color:rgba(255,255,255,0.4);border-style:solid;background: rgba(255,255,255,0.01);color: #ffffff;"><span class="ubtn-hover" style="background-color:#ffffff"></span><span class="ubtn-data ubtn-text ">More Information</span></button></div>
+<div class=" vc_custom_1471330641593 ubtn-ctn-center "><button type="button" id="ubtn-5019" class="ubtn ult-adjust-bottom-margin ult-responsive ubtn-custom ubtn-fade-bg  none  ubtn-center   tooltip-636a2cb609f86" data-hover="#28a7fb" data-border-color="rgba(255,255,255,0.4)" data-bg="rgba(255,255,255,0.01)" data-hover-bg="#ffffff" data-border-hover="#ffffff" data-shadow-hover="" data-shadow-click="none" data-shadow="" data-shd-shadow="" data-ultimate-target="#ubtn-5019" data-responsive-json-new='{"font-size":"desktop:12px;","line-height":"desktop:12px;"}' style="font-family:&#039;Montserrat&#039;;font-weight:normal;font-style:normal;width:px;min-height:34px;padding:5px 12px;border-radius:0px;border-width:2px;border-color:rgba(255,255,255,0.4);border-style:solid;background: rgba(255,255,255,0.01);color: #ffffff;"><span class="ubtn-hover" style="background-color:#ffffff"></span><span class="ubtn-data ubtn-text ">More Information</span></button></div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-offset-0 vc_col-lg-4 vc_col-md-offset-0 vc_col-md-4 vc_col-sm-offset-2 vc_col-has-fill"><div class="vc_column-inner vc_custom_1471297618475"><div class="wpb_wrapper">
 <div class="ult-just-icon-wrapper   vc_custom_1471287207331"><div class="align-icon" style="text-align:center;">
@@ -424,12 +463,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	<i class="icomoon-brankic-32x32-profile2"></i>
 </div>
 </div></div>
-<div id="ultimate-heading-66986369c9fb028ae" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-66986369c9fb028ae uvc-1279  uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-2902636a2cb60a157" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2902636a2cb60a157 uvc-3649  uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-66986369c9fb028ae h3" data-responsive-json-new='{"font-size":"","line-height":""}'><h3 style="font-weight:bold;color:#ffffff;">DOCTORS</h3></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-66986369c9fb028ae .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:28px;"}' style="font-weight:normal;color:#ffffff;margin-top:10px;margin-bottom:20px;">Sed id bibendum lectus, sit amet malesuada erat. Lorem ipsum dolor sit amet, consectetur adipis.</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2902636a2cb60a157 h3" data-responsive-json-new='{"font-size":"","line-height":""}'><h3 style="font-weight:bold;color:#ffffff;">DOCTORS</h3></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2902636a2cb60a157 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:28px;"}' style="font-weight:normal;color:#ffffff;margin-top:10px;margin-bottom:20px;">Sed id bibendum lectus, sit amet malesuada erat. Lorem ipsum dolor sit amet, consectetur adipis.</div>
 </div>
-<div class=" vc_custom_1471330651922 ubtn-ctn-center "><button type="button" id="ubtn-2974" class="ubtn ult-adjust-bottom-margin ult-responsive ubtn-custom ubtn-fade-bg  none  ubtn-center   tooltip-6369c9fb0294c" data-hover="#28a7fb" data-border-color="rgba(255,255,255,0.4)" data-bg="rgba(255,255,255,0.01)" data-hover-bg="#ffffff" data-border-hover="#ffffff" data-shadow-hover="" data-shadow-click="none" data-shadow="" data-shd-shadow="" data-ultimate-target="#ubtn-2974" data-responsive-json-new='{"font-size":"desktop:12px;","line-height":"desktop:12px;"}' style="font-family:&#039;Montserrat&#039;;font-weight:normal;font-style:normal;width:px;min-height:34px;padding:5px 12px;border-radius:0px;border-width:2px;border-color:rgba(255,255,255,0.4);border-style:solid;background: rgba(255,255,255,0.01);color: #ffffff;"><span class="ubtn-hover" style="background-color:#ffffff"></span><span class="ubtn-data ubtn-text ">Meet Our Doctors</span></button></div>
+<div class=" vc_custom_1471330651922 ubtn-ctn-center "><button type="button" id="ubtn-2383" class="ubtn ult-adjust-bottom-margin ult-responsive ubtn-custom ubtn-fade-bg  none  ubtn-center   tooltip-636a2cb60a194" data-hover="#28a7fb" data-border-color="rgba(255,255,255,0.4)" data-bg="rgba(255,255,255,0.01)" data-hover-bg="#ffffff" data-border-hover="#ffffff" data-shadow-hover="" data-shadow-click="none" data-shadow="" data-shd-shadow="" data-ultimate-target="#ubtn-2383" data-responsive-json-new='{"font-size":"desktop:12px;","line-height":"desktop:12px;"}' style="font-family:&#039;Montserrat&#039;;font-weight:normal;font-style:normal;width:px;min-height:34px;padding:5px 12px;border-radius:0px;border-width:2px;border-color:rgba(255,255,255,0.4);border-style:solid;background: rgba(255,255,255,0.01);color: #ffffff;"><span class="ubtn-hover" style="background-color:#ffffff"></span><span class="ubtn-data ubtn-text ">Meet Our Doctors</span></button></div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-offset-0 vc_col-lg-4 vc_col-md-offset-0 vc_col-md-4 vc_col-sm-offset-2 vc_col-has-fill"><div class="vc_column-inner vc_custom_1471297623988"><div class="wpb_wrapper">
 <div class="ult-just-icon-wrapper   vc_custom_1471287169774"><div class="align-icon" style="text-align:center;">
@@ -437,101 +476,101 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	<i class="icomoon-brankic-32x32-calendar"></i>
 </div>
 </div></div>
-<div id="ultimate-heading-98526369c9fb03455" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-98526369c9fb03455 uvc-738  uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-3095636a2cb60a330" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-3095636a2cb60a330 uvc-4576  uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-98526369c9fb03455 h3" data-responsive-json-new='{"font-size":"","line-height":""}'><h3 style="font-weight:bold;color:#ffffff;">APPOINTMENTS</h3></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-98526369c9fb03455 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:28px;"}' style="font-weight:normal;color:#ffffff;margin-top:10px;margin-bottom:20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tempor congue.</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3095636a2cb60a330 h3" data-responsive-json-new='{"font-size":"","line-height":""}'><h3 style="font-weight:bold;color:#ffffff;">APPOINTMENTS</h3></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3095636a2cb60a330 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:28px;"}' style="font-weight:normal;color:#ffffff;margin-top:10px;margin-bottom:20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tempor congue.</div>
 </div>
-<div class=" vc_custom_1471330661038 ubtn-ctn-center "><button type="button" id="ubtn-2615" class="ubtn ult-adjust-bottom-margin ult-responsive ubtn-custom ubtn-fade-bg  none  ubtn-center   tooltip-6369c9fb034bb" data-hover="#28a7fb" data-border-color="rgba(255,255,255,0.4)" data-bg="rgba(255,255,255,0.01)" data-hover-bg="#ffffff" data-border-hover="#ffffff" data-shadow-hover="" data-shadow-click="none" data-shadow="" data-shd-shadow="" data-ultimate-target="#ubtn-2615" data-responsive-json-new='{"font-size":"desktop:12px;","line-height":"desktop:12px;"}' style="font-family:&#039;Montserrat&#039;;font-weight:normal;font-style:normal;width:px;min-height:34px;padding:5px 12px;border-radius:0px;border-width:2px;border-color:rgba(255,255,255,0.4);border-style:solid;background: rgba(255,255,255,0.01);color: #ffffff;"><span class="ubtn-hover" style="background-color:#ffffff"></span><span class="ubtn-data ubtn-text ">Appoint Consultation</span></button></div>
+<div class=" vc_custom_1471330661038 ubtn-ctn-center "><button type="button" id="ubtn-3515" class="ubtn ult-adjust-bottom-margin ult-responsive ubtn-custom ubtn-fade-bg  none  ubtn-center   tooltip-636a2cb60a36d" data-hover="#28a7fb" data-border-color="rgba(255,255,255,0.4)" data-bg="rgba(255,255,255,0.01)" data-hover-bg="#ffffff" data-border-hover="#ffffff" data-shadow-hover="" data-shadow-click="none" data-shadow="" data-shd-shadow="" data-ultimate-target="#ubtn-3515" data-responsive-json-new='{"font-size":"desktop:12px;","line-height":"desktop:12px;"}' style="font-family:&#039;Montserrat&#039;;font-weight:normal;font-style:normal;width:px;min-height:34px;padding:5px 12px;border-radius:0px;border-width:2px;border-color:rgba(255,255,255,0.4);border-style:solid;background: rgba(255,255,255,0.01);color: #ffffff;"><span class="ubtn-hover" style="background-color:#ffffff"></span><span class="ubtn-data ubtn-text ">Appoint Consultation</span></button></div>
 </div></div></div>
 </div>
 <!-- Row Backgrounds --><div class="upb_color" data-bg-override="ex-full" data-bg-color="#f4f4f4" data-fadeout="" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false" data-custom-vc-row="" data-vc="6.8.0" data-is_old_vc="" data-theme-support="" data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size=""></div>
 <div class="vc_row wpb_row vc_row-fluid vc_custom_1462822508532 vc_row-o-equal-height vc_row-flex">
-<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-offset-2 vc_col-md-offset-2 vc_col-sm-offset-2"><div class="vc_column-inner"><div class="wpb_wrapper"><div id="ultimate-heading-39836369c9fb04268" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-39836369c9fb04268 uvc-6661  uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-offset-2 vc_col-md-offset-2 vc_col-sm-offset-2"><div class="vc_column-inner"><div class="wpb_wrapper"><div id="ultimate-heading-4664636a2cb60aaef" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-4664636a2cb60aaef uvc-198  uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-39836369c9fb04268 h1" data-responsive-json-new='{"font-size":"","line-height":""}'><h1 style="font-weight:bold;">A True Devotion to Healing</h1></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-39836369c9fb04268 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:28px;"}' style="font-weight:normal;color:#9a9a9a;margin-top:20px;margin-bottom:60px;">Ut quis ligula vitae dui feugiat rutrum. Maecenas sit amet arcu lacinia, ultricies sem eu, vehicula nisl. Integer posuere, ex eget mattis rutrum.</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4664636a2cb60aaef h1" data-responsive-json-new='{"font-size":"","line-height":""}'><h1 style="font-weight:bold;">A True Devotion to Healing</h1></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4664636a2cb60aaef .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:28px;"}' style="font-weight:normal;color:#9a9a9a;margin-top:20px;margin-bottom:60px;">Ut quis ligula vitae dui feugiat rutrum. Maecenas sit amet arcu lacinia, ultricies sem eu, vehicula nisl. Integer posuere, ex eget mattis rutrum.</div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner"><div class="wpb_wrapper">
 <div class="aio-icon-component    style_1">
-<div id="Info-box-wrap-8824" class="aio-icon-box left-icon">
+<div id="Info-box-wrap-1706" class="aio-icon-box left-icon">
 <div class="aio-icon-left"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon-img " style="font-size:48px;display:inline-block;">
 	<img class="img-icon" alt="null" src="/wp-content/uploads/sites/52/2016/04/noimage-2.gif">
 </div>
 </div></div></div>
 <div class="aio-ibd-block">
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-8824 .aio-icon-title" data-responsive-json-new='{"font-size":"","line-height":""}' style="">Licensed Therapist </h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-8824 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Nulla ut sapien massa. Sed eget elit eget magna faucibus eleifend. Pellentesque a mauris et nibh consequa.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-1706 .aio-icon-title" data-responsive-json-new='{"font-size":"","line-height":""}' style="">Licensed Therapist </h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-1706 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Nulla ut sapien massa. Sed eget elit eget magna faucibus eleifend. Pellentesque a mauris et nibh consequa.</div> <!-- description -->
 </div> <!-- aio-ibd-block -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component -->
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner"><div class="wpb_wrapper">
 <div class="aio-icon-component    style_1">
-<div id="Info-box-wrap-7624" class="aio-icon-box left-icon">
+<div id="Info-box-wrap-4954" class="aio-icon-box left-icon">
 <div class="aio-icon-left"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon-img " style="font-size:48px;display:inline-block;">
 	<img class="img-icon" alt="null" src="/wp-content/uploads/sites/52/2016/04/noimage-3.gif">
 </div>
 </div></div></div>
 <div class="aio-ibd-block">
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-7624 .aio-icon-title" data-responsive-json-new='{"font-size":"","line-height":""}' style="">Quick Examination</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-7624 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>roin egestas, orci at tincidunt tincidunt, arcu mi pharetra nisl, nec cursus odio purus vel nulla.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-4954 .aio-icon-title" data-responsive-json-new='{"font-size":"","line-height":""}' style="">Quick Examination</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-4954 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>roin egestas, orci at tincidunt tincidunt, arcu mi pharetra nisl, nec cursus odio purus vel nulla.</div> <!-- description -->
 </div> <!-- aio-ibd-block -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component -->
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner"><div class="wpb_wrapper">
 <div class="aio-icon-component    style_1">
-<div id="Info-box-wrap-4142" class="aio-icon-box left-icon">
+<div id="Info-box-wrap-1777" class="aio-icon-box left-icon">
 <div class="aio-icon-left"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon-img " style="font-size:48px;display:inline-block;">
 	<img class="img-icon" alt="null" src="/wp-content/uploads/sites/52/2016/04/noimage-5.gif">
 </div>
 </div></div></div>
 <div class="aio-ibd-block">
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-4142 .aio-icon-title" data-responsive-json-new='{"font-size":"","line-height":""}' style="">Child Care</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-4142 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Vivamus hendrerit lectus nec metus accumsan rhoncus. Aliquam commodo elit orci, sed malesuada odio bibendum sed.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-1777 .aio-icon-title" data-responsive-json-new='{"font-size":"","line-height":""}' style="">Child Care</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-1777 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Vivamus hendrerit lectus nec metus accumsan rhoncus. Aliquam commodo elit orci, sed malesuada odio bibendum sed.</div> <!-- description -->
 </div> <!-- aio-ibd-block -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component -->
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner"><div class="wpb_wrapper">
 <div class="aio-icon-component    style_1">
-<div id="Info-box-wrap-2571" class="aio-icon-box left-icon">
+<div id="Info-box-wrap-2917" class="aio-icon-box left-icon">
 <div class="aio-icon-left"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon-img " style="font-size:48px;display:inline-block;">
 	<img class="img-icon" alt="null" src="/wp-content/uploads/sites/52/2016/04/noimage-4.gif">
 </div>
 </div></div></div>
 <div class="aio-ibd-block">
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-2571 .aio-icon-title" data-responsive-json-new='{"font-size":"","line-height":""}' style="">24 Hours Emergency</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-2571 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Nulla facilisi. Phasellus feugiat feugiat commodo. Curabitur nunc ante, aliquet viverra leo at, scelerisque condimentum risus.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-2917 .aio-icon-title" data-responsive-json-new='{"font-size":"","line-height":""}' style="">24 Hours Emergency</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-2917 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Nulla facilisi. Phasellus feugiat feugiat commodo. Curabitur nunc ante, aliquet viverra leo at, scelerisque condimentum risus.</div> <!-- description -->
 </div> <!-- aio-ibd-block -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component -->
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner"><div class="wpb_wrapper">
 <div class="aio-icon-component    style_1">
-<div id="Info-box-wrap-8414" class="aio-icon-box left-icon">
+<div id="Info-box-wrap-7071" class="aio-icon-box left-icon">
 <div class="aio-icon-left"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon-img " style="font-size:48px;display:inline-block;">
 	<img class="img-icon" alt="null" src="/wp-content/uploads/sites/52/2016/04/noimage-1.gif">
 </div>
 </div></div></div>
 <div class="aio-ibd-block">
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-8414 .aio-icon-title" data-responsive-json-new='{"font-size":"","line-height":""}' style="">X-Ray IR</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-8414 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Vestibulum a tristique nisl, sit amet vestibulum nisi. Vestibulum nec enim a ipsum eleifend malesuada.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-7071 .aio-icon-title" data-responsive-json-new='{"font-size":"","line-height":""}' style="">X-Ray IR</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-7071 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Vestibulum a tristique nisl, sit amet vestibulum nisi. Vestibulum nec enim a ipsum eleifend malesuada.</div> <!-- description -->
 </div> <!-- aio-ibd-block -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component -->
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner"><div class="wpb_wrapper">
 <div class="aio-icon-component    style_1">
-<div id="Info-box-wrap-4886" class="aio-icon-box left-icon">
+<div id="Info-box-wrap-2557" class="aio-icon-box left-icon">
 <div class="aio-icon-left"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon-img " style="font-size:48px;display:inline-block;">
 	<img class="img-icon" alt="null" src="/wp-content/uploads/sites/52/2016/04/noimage.gif">
 </div>
 </div></div></div>
 <div class="aio-ibd-block">
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-4886 .aio-icon-title" data-responsive-json-new='{"font-size":"","line-height":""}' style="">Electrocardiography</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-4886 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Donec tristique at mauris vel varius. Proin bibendum nunc ac lacus eleifend pretium. Fusce ac metus in lorem finibus faucibus.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-2557 .aio-icon-title" data-responsive-json-new='{"font-size":"","line-height":""}' style="">Electrocardiography</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-2557 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Donec tristique at mauris vel varius. Proin bibendum nunc ac lacus eleifend pretium. Fusce ac metus in lorem finibus faucibus.</div> <!-- description -->
 </div> <!-- aio-ibd-block -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component -->
@@ -547,21 +586,21 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </div>
 <div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1471297632374 vc_row-has-fill vc_row-o-equal-height vc_row-o-content-middle vc_row-flex">
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-8 vc_col-md-8 vc_col-xs-12"><div class="vc_column-inner"><div class="wpb_wrapper">
-<div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12 vc_hidden-sm vc_hidden-xs"><div class="vc_column-inner"><div class="wpb_wrapper"><div id="ultimate-heading-77786369c9fb65255" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-77786369c9fb65255 uvc-9828 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12 vc_hidden-sm vc_hidden-xs"><div class="vc_column-inner"><div class="wpb_wrapper"><div id="ultimate-heading-6850636a2cb628e7e" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-6850636a2cb628e7e uvc-8625 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-77786369c9fb65255 h2" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:40px;"}'><h2 style="--font-weight:theme;color:#ffffff;margin-bottom:10px;">Are you ready for a consultation?</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-77786369c9fb65255 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:17px;","line-height":"desktop:27px;"}' style="font-weight:normal;color:#ffffff;">Your treatment will be performed by licensed therapist. Schedule your appointment now!</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6850636a2cb628e7e h2" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:40px;"}'><h2 style="--font-weight:theme;color:#ffffff;margin-bottom:10px;">Are you ready for a consultation?</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6850636a2cb628e7e .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:17px;","line-height":"desktop:27px;"}' style="font-weight:normal;color:#ffffff;">Your treatment will be performed by licensed therapist. Schedule your appointment now!</div>
 </div></div></div></div></div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12 vc_hidden-lg vc_hidden-md"><div class="vc_column-inner"><div class="wpb_wrapper">
-<div id="ultimate-heading-79186369c9fb65626" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-79186369c9fb65626 uvc-7185 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-2096636a2cb6291dc" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2096636a2cb6291dc uvc-7354 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-79186369c9fb65626 h2" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:40px;"}'><h2 style="--font-weight:theme;color:#ffffff;margin-bottom:10px;">Are you ready for a consultation?</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-79186369c9fb65626 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:17px;","line-height":"desktop:27px;"}' style="font-weight:normal;color:#ffffff;">Your treatment will be performed by licensed therapist. Schedule your appointment now!</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2096636a2cb6291dc h2" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:40px;"}'><h2 style="--font-weight:theme;color:#ffffff;margin-bottom:10px;">Are you ready for a consultation?</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2096636a2cb6291dc .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:17px;","line-height":"desktop:27px;"}' style="font-weight:normal;color:#ffffff;">Your treatment will be performed by licensed therapist. Schedule your appointment now!</div>
 </div>
-<div class=" vc_custom_1471330901093 ubtn-ctn-center "><button type="button" id="ubtn-9711" class="ubtn ult-adjust-bottom-margin ult-responsive ubtn-custom ubtn-fade-bg  none  ubtn-center   tooltip-6369c9fb6567a" data-hover="#28a7fb" data-border-color="rgba(255,255,255,0.4)" data-bg="rgba(255,255,255,0.01)" data-hover-bg="#ffffff" data-border-hover="#ffffff" data-shadow-hover="" data-shadow-click="none" data-shadow="" data-shd-shadow="" data-ultimate-target="#ubtn-9711" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:18px;"}' style="font-family:&#039;Montserrat&#039;;font-weight:700;width:px;min-height:38px;padding:15px 25px;border-radius:0px;border-width:4px;border-color:rgba(255,255,255,0.4);border-style:solid;background: rgba(255,255,255,0.01);color: #ffffff;"><span class="ubtn-hover" style="background-color:#ffffff"></span><span class="ubtn-data ubtn-text ">Contact Us Today!</span></button></div>
+<div class=" vc_custom_1471330901093 ubtn-ctn-center "><button type="button" id="ubtn-9223" class="ubtn ult-adjust-bottom-margin ult-responsive ubtn-custom ubtn-fade-bg  none  ubtn-center   tooltip-636a2cb629221" data-hover="#28a7fb" data-border-color="rgba(255,255,255,0.4)" data-bg="rgba(255,255,255,0.01)" data-hover-bg="#ffffff" data-border-hover="#ffffff" data-shadow-hover="" data-shadow-click="none" data-shadow="" data-shd-shadow="" data-ultimate-target="#ubtn-9223" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:18px;"}' style="font-family:&#039;Montserrat&#039;;font-weight:700;width:px;min-height:38px;padding:15px 25px;border-radius:0px;border-width:4px;border-color:rgba(255,255,255,0.4);border-style:solid;background: rgba(255,255,255,0.01);color: #ffffff;"><span class="ubtn-hover" style="background-color:#ffffff"></span><span class="ubtn-data ubtn-text ">Contact Us Today!</span></button></div>
 </div></div></div></div>
 </div></div></div>
-<div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-4 vc_col-md-4 vc_hidden-sm vc_col-xs-12 vc_hidden-xs"><div class="vc_column-inner"><div class="wpb_wrapper"><div class=" vc_custom_1471330923845 ubtn-ctn-right "><a class="ubtn-link ult-adjust-bottom-margin ubtn-right ubtn-custom " href="http://the7.io/medical/contact/"><button type="button" id="ubtn-6328" class="ubtn ult-adjust-bottom-margin ult-responsive ubtn-custom ubtn-fade-bg  none  ubtn-right   tooltip-6369c9fb658a6" data-hover="#28a7fb" data-border-color="rgba(255,255,255,0.4)" data-bg="rgba(255,255,255,0.01)" data-hover-bg="#ffffff" data-border-hover="#ffffff" data-shadow-hover="" data-shadow-click="none" data-shadow="" data-shd-shadow="" data-ultimate-target="#ubtn-6328" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:20px;"}' style="font-family:&#039;Montserrat&#039;;font-weight:700;width:px;min-height:38px;padding:15px 25px;border-radius:0px;border-width:4px;border-color:rgba(255,255,255,0.4);border-style:solid;background: rgba(255,255,255,0.01);color: #ffffff;"><span class="ubtn-hover" style="background-color:#ffffff"></span><span class="ubtn-data ubtn-text ">Contact Us Today!</span></button></a></div></div></div></div>
+<div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-4 vc_col-md-4 vc_hidden-sm vc_col-xs-12 vc_hidden-xs"><div class="vc_column-inner"><div class="wpb_wrapper"><div class=" vc_custom_1471330923845 ubtn-ctn-right "><a class="ubtn-link ult-adjust-bottom-margin ubtn-right ubtn-custom " href="http://the7.io/medical/contact/"><button type="button" id="ubtn-3467" class="ubtn ult-adjust-bottom-margin ult-responsive ubtn-custom ubtn-fade-bg  none  ubtn-right   tooltip-636a2cb62947a" data-hover="#28a7fb" data-border-color="rgba(255,255,255,0.4)" data-bg="rgba(255,255,255,0.01)" data-hover-bg="#ffffff" data-border-hover="#ffffff" data-shadow-hover="" data-shadow-click="none" data-shadow="" data-shd-shadow="" data-ultimate-target="#ubtn-3467" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:20px;"}' style="font-family:&#039;Montserrat&#039;;font-weight:700;width:px;min-height:38px;padding:15px 25px;border-radius:0px;border-width:4px;border-color:rgba(255,255,255,0.4);border-style:solid;background: rgba(255,255,255,0.01);color: #ffffff;"><span class="ubtn-hover" style="background-color:#ffffff"></span><span class="ubtn-data ubtn-text ">Contact Us Today!</span></button></a></div></div></div></div>
 </div>
 <div class="vc_row-full-width vc_clearfix"></div>
 <div class="vc_row wpb_row vc_row-fluid">
@@ -604,7 +643,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 		</div>
 	</div>
-<div class=" vc_custom_1471330795671 ubtn-ctn-left "><a class="ubtn-link ult-adjust-bottom-margin ubtn-left ubtn-custom " href="http://the7.io/medical/departments/"><button type="button" id="ubtn-8201" class="ubtn ult-adjust-bottom-margin ult-responsive ubtn-custom ubtn-fade-bg  none  ubtn-left   tooltip-6369c9fc517cb" data-hover="#ffffff" data-border-color="#34a6f7" data-bg="rgba(255,255,255,0.01)" data-hover-bg="#34a6f7" data-border-hover="#28a7fb" data-shadow-hover="" data-shadow-click="none" data-shadow="" data-shd-shadow="" data-ultimate-target="#ubtn-8201" data-responsive-json-new='{"font-size":"desktop:12px;","line-height":"desktop:12px;"}' style="font-family:&#039;Montserrat&#039;;font-weight:normal;font-style:normal;width:px;min-height:34px;padding:5px 12px;border-radius:0px;border-width:2px;border-color:#34a6f7;border-style:solid;background: rgba(255,255,255,0.01);color: #34a6f7;"><span class="ubtn-hover" style="background-color:#34a6f7"></span><span class="ubtn-data ubtn-text ">View Details</span></button></a></div>
+<div class=" vc_custom_1471330795671 ubtn-ctn-left "><a class="ubtn-link ult-adjust-bottom-margin ubtn-left ubtn-custom " href="http://the7.io/medical/departments/"><button type="button" id="ubtn-2520" class="ubtn ult-adjust-bottom-margin ult-responsive ubtn-custom ubtn-fade-bg  none  ubtn-left   tooltip-636a2cb634cc2" data-hover="#ffffff" data-border-color="#34a6f7" data-bg="rgba(255,255,255,0.01)" data-hover-bg="#34a6f7" data-border-hover="#28a7fb" data-shadow-hover="" data-shadow-click="none" data-shadow="" data-shd-shadow="" data-ultimate-target="#ubtn-2520" data-responsive-json-new='{"font-size":"desktop:12px;","line-height":"desktop:12px;"}' style="font-family:&#039;Montserrat&#039;;font-weight:normal;font-style:normal;width:px;min-height:34px;padding:5px 12px;border-radius:0px;border-width:2px;border-color:#34a6f7;border-style:solid;background: rgba(255,255,255,0.01);color: #34a6f7;"><span class="ubtn-hover" style="background-color:#34a6f7"></span><span class="ubtn-data ubtn-text ">View Details</span></button></a></div>
 </div></div></div>
 </div>
 		</div>
@@ -629,7 +668,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 		</div>
 	</div>
-<div class=" vc_custom_1471330795671 ubtn-ctn-left "><a class="ubtn-link ult-adjust-bottom-margin ubtn-left ubtn-custom " href="http://the7.io/medical/departments/"><button type="button" id="ubtn-5498" class="ubtn ult-adjust-bottom-margin ult-responsive ubtn-custom ubtn-fade-bg  none  ubtn-left   tooltip-6369c9fc9c50e" data-hover="#ffffff" data-border-color="#34a6f7" data-bg="rgba(255,255,255,0.01)" data-hover-bg="#34a6f7" data-border-hover="#28a7fb" data-shadow-hover="" data-shadow-click="none" data-shadow="" data-shd-shadow="" data-ultimate-target="#ubtn-5498" data-responsive-json-new='{"font-size":"desktop:12px;","line-height":"desktop:12px;"}' style="font-family:&#039;Montserrat&#039;;font-weight:normal;font-style:normal;width:px;min-height:34px;padding:5px 12px;border-radius:0px;border-width:2px;border-color:#34a6f7;border-style:solid;background: rgba(255,255,255,0.01);color: #34a6f7;"><span class="ubtn-hover" style="background-color:#34a6f7"></span><span class="ubtn-data ubtn-text ">View Details</span></button></a></div>
+<div class=" vc_custom_1471330795671 ubtn-ctn-left "><a class="ubtn-link ult-adjust-bottom-margin ubtn-left ubtn-custom " href="http://the7.io/medical/departments/"><button type="button" id="ubtn-1685" class="ubtn ult-adjust-bottom-margin ult-responsive ubtn-custom ubtn-fade-bg  none  ubtn-left   tooltip-636a2cb635cc4" data-hover="#ffffff" data-border-color="#34a6f7" data-bg="rgba(255,255,255,0.01)" data-hover-bg="#34a6f7" data-border-hover="#28a7fb" data-shadow-hover="" data-shadow-click="none" data-shadow="" data-shd-shadow="" data-ultimate-target="#ubtn-1685" data-responsive-json-new='{"font-size":"desktop:12px;","line-height":"desktop:12px;"}' style="font-family:&#039;Montserrat&#039;;font-weight:normal;font-style:normal;width:px;min-height:34px;padding:5px 12px;border-radius:0px;border-width:2px;border-color:#34a6f7;border-style:solid;background: rgba(255,255,255,0.01);color: #34a6f7;"><span class="ubtn-hover" style="background-color:#34a6f7"></span><span class="ubtn-data ubtn-text ">View Details</span></button></a></div>
 </div></div></div>
 </div>
 		</div>
@@ -654,7 +693,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 		</div>
 	</div>
-<div class=" vc_custom_1471330795671 ubtn-ctn-left "><a class="ubtn-link ult-adjust-bottom-margin ubtn-left ubtn-custom " href="http://the7.io/medical/departments/"><button type="button" id="ubtn-9056" class="ubtn ult-adjust-bottom-margin ult-responsive ubtn-custom ubtn-fade-bg  none  ubtn-left   tooltip-6369c9fce0e57" data-hover="#ffffff" data-border-color="#34a6f7" data-bg="rgba(255,255,255,0.01)" data-hover-bg="#34a6f7" data-border-hover="#28a7fb" data-shadow-hover="" data-shadow-click="none" data-shadow="" data-shd-shadow="" data-ultimate-target="#ubtn-9056" data-responsive-json-new='{"font-size":"desktop:12px;","line-height":"desktop:12px;"}' style="font-family:&#039;Montserrat&#039;;font-weight:normal;font-style:normal;width:px;min-height:34px;padding:5px 12px;border-radius:0px;border-width:2px;border-color:#34a6f7;border-style:solid;background: rgba(255,255,255,0.01);color: #34a6f7;"><span class="ubtn-hover" style="background-color:#34a6f7"></span><span class="ubtn-data ubtn-text ">View Details</span></button></a></div>
+<div class=" vc_custom_1471330795671 ubtn-ctn-left "><a class="ubtn-link ult-adjust-bottom-margin ubtn-left ubtn-custom " href="http://the7.io/medical/departments/"><button type="button" id="ubtn-3179" class="ubtn ult-adjust-bottom-margin ult-responsive ubtn-custom ubtn-fade-bg  none  ubtn-left   tooltip-636a2cb636ac4" data-hover="#ffffff" data-border-color="#34a6f7" data-bg="rgba(255,255,255,0.01)" data-hover-bg="#34a6f7" data-border-hover="#28a7fb" data-shadow-hover="" data-shadow-click="none" data-shadow="" data-shd-shadow="" data-ultimate-target="#ubtn-3179" data-responsive-json-new='{"font-size":"desktop:12px;","line-height":"desktop:12px;"}' style="font-family:&#039;Montserrat&#039;;font-weight:normal;font-style:normal;width:px;min-height:34px;padding:5px 12px;border-radius:0px;border-width:2px;border-color:#34a6f7;border-style:solid;background: rgba(255,255,255,0.01);color: #34a6f7;"><span class="ubtn-hover" style="background-color:#34a6f7"></span><span class="ubtn-data ubtn-text ">View Details</span></button></a></div>
 </div></div></div>
 </div>
 		</div>
@@ -679,7 +718,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 		</div>
 	</div>
-<div class=" vc_custom_1471330795671 ubtn-ctn-left "><a class="ubtn-link ult-adjust-bottom-margin ubtn-left ubtn-custom " href="http://the7.io/medical/departments/"><button type="button" id="ubtn-1450" class="ubtn ult-adjust-bottom-margin ult-responsive ubtn-custom ubtn-fade-bg  none  ubtn-left   tooltip-6369c9fd3514e" data-hover="#ffffff" data-border-color="#34a6f7" data-bg="rgba(255,255,255,0.01)" data-hover-bg="#34a6f7" data-border-hover="#28a7fb" data-shadow-hover="" data-shadow-click="none" data-shadow="" data-shd-shadow="" data-ultimate-target="#ubtn-1450" data-responsive-json-new='{"font-size":"desktop:12px;","line-height":"desktop:12px;"}' style="font-family:&#039;Montserrat&#039;;font-weight:normal;font-style:normal;width:px;min-height:34px;padding:5px 12px;border-radius:0px;border-width:2px;border-color:#34a6f7;border-style:solid;background: rgba(255,255,255,0.01);color: #34a6f7;"><span class="ubtn-hover" style="background-color:#34a6f7"></span><span class="ubtn-data ubtn-text ">View Details</span></button></a></div>
+<div class=" vc_custom_1471330795671 ubtn-ctn-left "><a class="ubtn-link ult-adjust-bottom-margin ubtn-left ubtn-custom " href="http://the7.io/medical/departments/"><button type="button" id="ubtn-6020" class="ubtn ult-adjust-bottom-margin ult-responsive ubtn-custom ubtn-fade-bg  none  ubtn-left   tooltip-636a2cb637b5e" data-hover="#ffffff" data-border-color="#34a6f7" data-bg="rgba(255,255,255,0.01)" data-hover-bg="#34a6f7" data-border-hover="#28a7fb" data-shadow-hover="" data-shadow-click="none" data-shadow="" data-shd-shadow="" data-ultimate-target="#ubtn-6020" data-responsive-json-new='{"font-size":"desktop:12px;","line-height":"desktop:12px;"}' style="font-family:&#039;Montserrat&#039;;font-weight:normal;font-style:normal;width:px;min-height:34px;padding:5px 12px;border-radius:0px;border-width:2px;border-color:#34a6f7;border-style:solid;background: rgba(255,255,255,0.01);color: #34a6f7;"><span class="ubtn-hover" style="background-color:#34a6f7"></span><span class="ubtn-data ubtn-text ">View Details</span></button></a></div>
 </div></div></div>
 </div>
 		</div>
@@ -704,7 +743,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 		</div>
 	</div>
-<div class=" vc_custom_1471330795671 ubtn-ctn-left "><a class="ubtn-link ult-adjust-bottom-margin ubtn-left ubtn-custom " href="http://the7.io/medical/departments/"><button type="button" id="ubtn-2847" class="ubtn ult-adjust-bottom-margin ult-responsive ubtn-custom ubtn-fade-bg  none  ubtn-left   tooltip-6369c9fd6c671" data-hover="#ffffff" data-border-color="#34a6f7" data-bg="rgba(255,255,255,0.01)" data-hover-bg="#34a6f7" data-border-hover="#28a7fb" data-shadow-hover="" data-shadow-click="none" data-shadow="" data-shd-shadow="" data-ultimate-target="#ubtn-2847" data-responsive-json-new='{"font-size":"desktop:12px;","line-height":"desktop:12px;"}' style="font-family:&#039;Montserrat&#039;;font-weight:normal;font-style:normal;width:px;min-height:34px;padding:5px 12px;border-radius:0px;border-width:2px;border-color:#34a6f7;border-style:solid;background: rgba(255,255,255,0.01);color: #34a6f7;"><span class="ubtn-hover" style="background-color:#34a6f7"></span><span class="ubtn-data ubtn-text ">View Details</span></button></a></div>
+<div class=" vc_custom_1471330795671 ubtn-ctn-left "><a class="ubtn-link ult-adjust-bottom-margin ubtn-left ubtn-custom " href="http://the7.io/medical/departments/"><button type="button" id="ubtn-5935" class="ubtn ult-adjust-bottom-margin ult-responsive ubtn-custom ubtn-fade-bg  none  ubtn-left   tooltip-636a2cb63889b" data-hover="#ffffff" data-border-color="#34a6f7" data-bg="rgba(255,255,255,0.01)" data-hover-bg="#34a6f7" data-border-hover="#28a7fb" data-shadow-hover="" data-shadow-click="none" data-shadow="" data-shd-shadow="" data-ultimate-target="#ubtn-5935" data-responsive-json-new='{"font-size":"desktop:12px;","line-height":"desktop:12px;"}' style="font-family:&#039;Montserrat&#039;;font-weight:normal;font-style:normal;width:px;min-height:34px;padding:5px 12px;border-radius:0px;border-width:2px;border-color:#34a6f7;border-style:solid;background: rgba(255,255,255,0.01);color: #34a6f7;"><span class="ubtn-hover" style="background-color:#34a6f7"></span><span class="ubtn-data ubtn-text ">View Details</span></button></a></div>
 </div></div></div>
 </div>
 		</div>
@@ -715,10 +754,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </div></div></div>
 </div>
 <div class="vc_row wpb_row vc_row-fluid vc_custom_1471299639718 vc_row-o-equal-height vc_row-flex">
-<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-offset-2 vc_col-md-offset-2 vc_col-sm-offset-2"><div class="vc_column-inner"><div class="wpb_wrapper"><div id="ultimate-heading-71846369c9fd6ce1e" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-71846369c9fd6ce1e uvc-5231  uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-offset-2 vc_col-md-offset-2 vc_col-sm-offset-2"><div class="vc_column-inner"><div class="wpb_wrapper"><div id="ultimate-heading-2971636a2cb638ece" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2971636a2cb638ece uvc-9515  uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-71846369c9fd6ce1e h1" data-responsive-json-new='{"font-size":"","line-height":""}'><h1 style="font-weight:bold;color:#ffffff;">We believe the heart of healthcare is service</h1></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-71846369c9fd6ce1e .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:28px;"}' style="font-weight:normal;color:#d3d3d3;margin-top:20px;margin-bottom:60px;">Vestibulum tempus, ante tincidunt posuere sodales, justo odio ornare diam, imperdiet finibus ligula nisi sed enim.</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2971636a2cb638ece h1" data-responsive-json-new='{"font-size":"","line-height":""}'><h1 style="font-weight:bold;color:#ffffff;">We believe the heart of healthcare is service</h1></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2971636a2cb638ece .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:28px;"}' style="font-weight:normal;color:#d3d3d3;margin-top:20px;margin-bottom:60px;">Vestibulum tempus, ante tincidunt posuere sodales, justo odio ornare diam, imperdiet finibus ligula nisi sed enim.</div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-offset-0 vc_col-lg-3 vc_col-md-offset-1 vc_col-md-5 vc_col-sm-offset-0 vc_col-has-fill"><div class="vc_column-inner vc_custom_1471297641929"><div class="wpb_wrapper">
 	<div class="wpb_single_image wpb_content_element vc_align_center">
@@ -727,9 +766,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			<a href="https://the7.io/medical/services/" target="_self" class="vc_single_image-wrapper   vc_box_border_grey rollover" data-large_image_width="1000" data-large_image_height="700"><img class="vc_single_image-img " src="/wp-content/uploads/sites/52/2016/04/noimage-4-600x600.jpg" width="600" height="600" alt="blog01" title="blog01" data-dt-location="/site52/2016/04/26/hello-world-2/blog01/"></a>
 		</figure>
 	</div>
-<div id="ultimate-heading-28366369c9fe2517e" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-28366369c9fe2517e uvc-5919 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-403636a2cb639d3c" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-403636a2cb639d3c uvc-2609 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-28366369c9fe2517e h3" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'><h3 style="--font-weight:theme;color:#ffffff;margin-top:13px;margin-bottom:12px;">Pharmaceutical Service</h3></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-403636a2cb639d3c h3" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'><h3 style="--font-weight:theme;color:#ffffff;margin-top:13px;margin-bottom:12px;">Pharmaceutical Service</h3></div>
 </div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-offset-0 vc_col-lg-3 vc_col-md-offset-0 vc_col-md-5 vc_col-sm-offset-0 vc_col-has-fill"><div class="vc_column-inner vc_custom_1471297648170"><div class="wpb_wrapper">
@@ -739,9 +778,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			<a href="https://the7.io/medical/services/" target="_self" class="vc_single_image-wrapper   vc_box_border_grey rollover" data-large_image_width="1000" data-large_image_height="700"><img class="vc_single_image-img " src="/wp-content/uploads/sites/52/2016/04/noimage-3-600x600.jpg" width="600" height="600" alt="blog04" title="blog04" data-dt-location="/site52/2016/04/26/hello-world-2/blog04/"></a>
 		</figure>
 	</div>
-<div id="ultimate-heading-3626369c9fe9738e" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-3626369c9fe9738e uvc-6429 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-110636a2cb63c883" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-110636a2cb63c883 uvc-5603 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3626369c9fe9738e h3" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'><h3 style="--font-weight:theme;color:#ffffff;margin-top:13px;margin-bottom:12px;">Medical Counseling</h3></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-110636a2cb63c883 h3" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'><h3 style="--font-weight:theme;color:#ffffff;margin-top:13px;margin-bottom:12px;">Medical Counseling</h3></div>
 </div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-offset-0 vc_col-lg-3 vc_col-md-offset-1 vc_col-md-5 vc_col-has-fill"><div class="vc_column-inner vc_custom_1471297655246"><div class="wpb_wrapper">
@@ -751,9 +790,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			<a href="https://the7.io/medical/services/" target="_self" class="vc_single_image-wrapper   vc_box_border_grey rollover" data-large_image_width="1000" data-large_image_height="700"><img class="vc_single_image-img " src="/wp-content/uploads/sites/52/2016/04/noimage-7-600x600.jpg" width="600" height="600" alt="background_color" title="background_color" data-dt-location="/site52/our-clinic/background_color/"></a>
 		</figure>
 	</div>
-<div id="ultimate-heading-34236369c9ff807c1" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-34236369c9ff807c1 uvc-6554 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-1936636a2cb64c1d3" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-1936636a2cb64c1d3 uvc-8537 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-34236369c9ff807c1 h3" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'><h3 style="--font-weight:theme;color:#ffffff;margin-top:13px;margin-bottom:12px;">Emergency Care</h3></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1936636a2cb64c1d3 h3" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'><h3 style="--font-weight:theme;color:#ffffff;margin-top:13px;margin-bottom:12px;">Emergency Care</h3></div>
 </div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-offset-0 vc_col-lg-3 vc_col-md-offset-0 vc_col-md-5 vc_col-sm-offset-0 vc_col-has-fill"><div class="vc_column-inner vc_custom_1471297660763"><div class="wpb_wrapper">
@@ -763,27 +802,27 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			<a href="https://the7.io/medical/services/" target="_self" class="vc_single_image-wrapper   vc_box_border_grey rollover" data-large_image_width="1000" data-large_image_height="700"><img class="vc_single_image-img " src="/wp-content/uploads/sites/52/2016/05/noimage-6-600x600.jpg" width="600" height="600" alt="dr_7" title="dr_7" data-dt-location="/site52/services/dr_7/"></a>
 		</figure>
 	</div>
-<div id="ultimate-heading-33996369ca003ad55" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-33996369ca003ad55 uvc-9780 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-9023636a2cb64cdd8" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-9023636a2cb64cdd8 uvc-8273 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-33996369ca003ad55 h3" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'><h3 style="--font-weight:theme;color:#ffffff;margin-top:13px;margin-bottom:12px;">Dental Implants</h3></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9023636a2cb64cdd8 h3" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'><h3 style="--font-weight:theme;color:#ffffff;margin-top:13px;margin-bottom:12px;">Dental Implants</h3></div>
 </div>
 </div></div></div>
-<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1471290668451"><div class="wpb_wrapper"><div class=" vc_custom_1471330969021 ubtn-ctn-center "><a class="ubtn-link ult-adjust-bottom-margin ubtn-center ubtn-custom " href="http://the7.io/medical/services/"><button type="button" id="ubtn-2890" class="ubtn ult-adjust-bottom-margin ult-responsive ubtn-custom ubtn-fade-bg  none  ubtn-center   tooltip-6369ca003af69" data-hover="#ffffff" data-border-color="rgba(255,255,255,0.4)" data-bg="rgba(255,255,255,0.01)" data-hover-bg="#34a6f7" data-border-hover="#34a6f7" data-shadow-hover="" data-shadow-click="none" data-shadow="" data-shd-shadow="" data-ultimate-target="#ubtn-2890" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:16px;"}' style="font-family:&#039;Montserrat&#039;;font-weight:700;width:240px;min-height:44px;padding:14px 25px;border-radius:0px;border-width:3px;border-color:rgba(255,255,255,0.4);border-style:solid;background: rgba(255,255,255,0.01);color: #ffffff;"><span class="ubtn-hover" style="background-color:#34a6f7"></span><span class="ubtn-data ubtn-text ">View All Services</span></button></a></div></div></div></div>
+<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1471290668451"><div class="wpb_wrapper"><div class=" vc_custom_1471330969021 ubtn-ctn-center "><a class="ubtn-link ult-adjust-bottom-margin ubtn-center ubtn-custom " href="http://the7.io/medical/services/"><button type="button" id="ubtn-4451" class="ubtn ult-adjust-bottom-margin ult-responsive ubtn-custom ubtn-fade-bg  none  ubtn-center   tooltip-636a2cb64d01c" data-hover="#ffffff" data-border-color="rgba(255,255,255,0.4)" data-bg="rgba(255,255,255,0.01)" data-hover-bg="#34a6f7" data-border-hover="#34a6f7" data-shadow-hover="" data-shadow-click="none" data-shadow="" data-shd-shadow="" data-ultimate-target="#ubtn-4451" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:16px;"}' style="font-family:&#039;Montserrat&#039;;font-weight:700;width:240px;min-height:44px;padding:14px 25px;border-radius:0px;border-width:3px;border-color:rgba(255,255,255,0.4);border-style:solid;background: rgba(255,255,255,0.01);color: #ffffff;"><span class="ubtn-hover" style="background-color:#34a6f7"></span><span class="ubtn-data ubtn-text ">View All Services</span></button></a></div></div></div></div>
 </div>
 <!-- Row Backgrounds --><div class="upb_bg_img" data-ultimate-bg="url(/wp-content/uploads/sites/52/2016/08/noimage.jpg)" data-image-id="id^1212|url^https://the7.io/medical/wp-content/uploads/sites/22/2016/08/bg-img-slider.jpg|caption^null|alt^null|title^bg-img-slider|description^null" data-ultimate-bg-style="vcpb-default" data-bg-img-repeat="no-repeat" data-bg-img-size="cover" data-bg-img-position="" data-parallx_sense="30" data-bg-override="ex-full" data-bg_img_attach="scroll" data-upb-overlay-color="rgba(37,37,37,0.8)" data-upb-bg-animation="" data-fadeout="" data-bg-animation="left-animation" data-bg-animation-type="h" data-animation-repeat="repeat" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false" data-custom-vc-row="" data-vc="6.8.0" data-is_old_vc="" data-theme-support="" data-overlay="true" data-overlay-color="rgba(37,37,37,0.8)" data-overlay-pattern="" data-overlay-pattern-opacity="0.8" data-overlay-pattern-size="" data-overlay-pattern-attachment="scroll"></div>
 <div class="vc_row wpb_row vc_row-fluid vc_custom_1471333741766 vc_column-gap-35 vc_row-o-equal-height vc_row-flex">
-<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-offset-2 vc_col-md-offset-2 vc_col-sm-offset-2 vc_col-has-fill"><div class="vc_column-inner vc_custom_1467285822009"><div class="wpb_wrapper"><div id="ultimate-heading-46886369ca004d40a" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-46886369ca004d40a uvc-5802 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-offset-2 vc_col-md-offset-2 vc_col-sm-offset-2 vc_col-has-fill"><div class="vc_column-inner vc_custom_1467285822009"><div class="wpb_wrapper"><div id="ultimate-heading-347636a2cb64e1e8" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-347636a2cb64e1e8 uvc-3445 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-46886369ca004d40a h2" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:36px;"}'><h2 style="font-weight:bold;">Better Doctors. Better Care</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-46886369ca004d40a .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:28px;"}' style="font-weight:normal;color:#9a9a9a;margin-top:20px;margin-bottom:30px;">Quisque nec quam convallis, scelerisque risus in, viverra ipsum. Mauris sed molestie magna. Nunc auctor aliquet tortor in venenatis.</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-347636a2cb64e1e8 h2" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:36px;"}'><h2 style="font-weight:bold;">Better Doctors. Better Care</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-347636a2cb64e1e8 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:28px;"}' style="font-weight:normal;color:#9a9a9a;margin-top:20px;margin-bottom:30px;">Quisque nec quam convallis, scelerisque risus in, viverra ipsum. Mauris sed molestie magna. Nunc auctor aliquet tortor in venenatis.</div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-xs-12"><div class="vc_column-inner vc_custom_1471333784237"><div class="wpb_wrapper">
-<div id="ult-carousel-39904291666369ca004d646" class="ult-carousel-wrapper  vc_custom_1471331891673  ult_horizontal" data-gutter="25" data-rtl="false"><div class="ult-carousel-21325194406369ca004d608 ">
+<div id="ult-carousel-773362407636a2cb64e540" class="ult-carousel-wrapper  vc_custom_1471331891673  ult_horizontal" data-gutter="25" data-rtl="false"><div class="ult-carousel-2866549035636a2cb64e4fc ">
 <div class="ult-item-wrap" data-animation="animated no-animation"><div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1471289175547 vc_row-o-equal-height vc_row-flex"><div class="ult-item-wrap" data-animation="animated no-animation"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-has-fill"><div class="vc_column-inner vc_custom_1471289102295"><div class="wpb_wrapper">
-<div class="ult-item-wrap" data-animation="animated no-animation"><div id="ultimate-heading-12536369ca004db8a" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-12536369ca004db8a uvc-8837 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div class="ult-item-wrap" data-animation="animated no-animation"><div id="ultimate-heading-809636a2cb64ea1f" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-809636a2cb64ea1f uvc-710 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-12536369ca004db8a h3" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:28px;"}'><h3 style="font-weight:bold;margin-top:30px;">Margaret Sander</h3></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-12536369ca004db8a .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":""}' style="font-weight:bold;color:#34a6f7;margin-top:3px;margin-bottom:10px;">Cardiologist</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-809636a2cb64ea1f h3" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:28px;"}'><h3 style="font-weight:bold;margin-top:30px;">Margaret Sander</h3></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-809636a2cb64ea1f .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":""}' style="font-weight:bold;color:#34a6f7;margin-top:3px;margin-bottom:10px;">Cardiologist</div>
 </div></div>
 <div class="ult-item-wrap" data-animation="animated no-animation">
 	<div class="wpb_single_image wpb_content_element vc_align_left">
@@ -795,10 +834,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </div>
 </div></div></div></div></div></div>
 <div class="ult-item-wrap" data-animation="animated no-animation"><div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1471289355800 vc_row-o-equal-height vc_row-flex"><div class="ult-item-wrap" data-animation="animated no-animation"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-has-fill"><div class="vc_column-inner vc_custom_1471289364917"><div class="wpb_wrapper">
-<div class="ult-item-wrap" data-animation="animated no-animation"><div id="ultimate-heading-17866369ca0050175" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-17866369ca0050175 uvc-9532 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div class="ult-item-wrap" data-animation="animated no-animation"><div id="ultimate-heading-5910636a2cb64f760" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-5910636a2cb64f760 uvc-4532 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-17866369ca0050175 h3" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:28px;"}'><h3 style="font-weight:bold;margin-top:30px;">John Ostin</h3></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-17866369ca0050175 .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":""}' style="font-weight:bold;color:#34a6f7;margin-top:3px;margin-bottom:10px;">Cardiologyst</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5910636a2cb64f760 h3" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:28px;"}'><h3 style="font-weight:bold;margin-top:30px;">John Ostin</h3></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5910636a2cb64f760 .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":""}' style="font-weight:bold;color:#34a6f7;margin-top:3px;margin-bottom:10px;">Cardiologyst</div>
 </div></div>
 <div class="ult-item-wrap" data-animation="animated no-animation">
 	<div class="wpb_single_image wpb_content_element vc_align_left">
@@ -810,10 +849,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </div>
 </div></div></div></div></div></div>
 <div class="ult-item-wrap" data-animation="animated no-animation"><div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1471289189806 vc_row-o-equal-height vc_row-flex"><div class="ult-item-wrap" data-animation="animated no-animation"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-has-fill"><div class="vc_column-inner vc_custom_1471289123642"><div class="wpb_wrapper">
-<div class="ult-item-wrap" data-animation="animated no-animation"><div id="ultimate-heading-35166369ca00b232a" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-35166369ca00b232a uvc-7604 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div class="ult-item-wrap" data-animation="animated no-animation"><div id="ultimate-heading-5956636a2cb65093e" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-5956636a2cb65093e uvc-9534 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-35166369ca00b232a h3" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:28px;"}'><h3 style="font-weight:bold;margin-top:30px;">Cinthia Lamp</h3></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-35166369ca00b232a .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":""}' style="font-weight:bold;color:#34a6f7;margin-top:3px;margin-bottom:10px;">Pediatrician</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5956636a2cb65093e h3" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:28px;"}'><h3 style="font-weight:bold;margin-top:30px;">Cinthia Lamp</h3></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5956636a2cb65093e .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":""}' style="font-weight:bold;color:#34a6f7;margin-top:3px;margin-bottom:10px;">Pediatrician</div>
 </div></div>
 <div class="ult-item-wrap" data-animation="animated no-animation">
 	<div class="wpb_single_image wpb_content_element vc_align_left">
@@ -825,10 +864,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </div>
 </div></div></div></div></div></div>
 <div class="ult-item-wrap" data-animation="animated no-animation"><div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1471289332733 vc_row-o-equal-height vc_row-flex"><div class="ult-item-wrap" data-animation="animated no-animation"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-has-fill"><div class="vc_column-inner vc_custom_1471289342595"><div class="wpb_wrapper">
-<div class="ult-item-wrap" data-animation="animated no-animation"><div id="ultimate-heading-87166369ca014e396" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-87166369ca014e396 uvc-6784 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div class="ult-item-wrap" data-animation="animated no-animation"><div id="ultimate-heading-6040636a2cb651582" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-6040636a2cb651582 uvc-4642 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-87166369ca014e396 h3" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:28px;"}'><h3 style="font-weight:bold;margin-top:30px;">James Back</h3></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-87166369ca014e396 .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":""}' style="font-weight:bold;color:#34a6f7;margin-top:3px;margin-bottom:10px;">Pediatrician</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6040636a2cb651582 h3" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:28px;"}'><h3 style="font-weight:bold;margin-top:30px;">James Back</h3></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6040636a2cb651582 .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":""}' style="font-weight:bold;color:#34a6f7;margin-top:3px;margin-bottom:10px;">Pediatrician</div>
 </div></div>
 <div class="ult-item-wrap" data-animation="animated no-animation">
 	<div class="wpb_single_image wpb_content_element vc_align_left">
@@ -840,10 +879,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </div>
 </div></div></div></div></div></div>
 <div class="ult-item-wrap" data-animation="animated no-animation"><div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1471289355800 vc_row-o-equal-height vc_row-flex"><div class="ult-item-wrap" data-animation="animated no-animation"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-has-fill"><div class="vc_column-inner vc_custom_1471289364917"><div class="wpb_wrapper">
-<div class="ult-item-wrap" data-animation="animated no-animation"><div id="ultimate-heading-90096369ca0199cd5" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-90096369ca0199cd5 uvc-4743 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div class="ult-item-wrap" data-animation="animated no-animation"><div id="ultimate-heading-5956636a2cb6529d6" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-5956636a2cb6529d6 uvc-4528 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-90096369ca0199cd5 h3" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:28px;"}'><h3 style="font-weight:bold;margin-top:30px;">Tim Tinder</h3></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-90096369ca0199cd5 .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":""}' style="font-weight:bold;color:#34a6f7;margin-top:3px;margin-bottom:10px;">Pediatrician</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5956636a2cb6529d6 h3" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:28px;"}'><h3 style="font-weight:bold;margin-top:30px;">Tim Tinder</h3></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5956636a2cb6529d6 .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":""}' style="font-weight:bold;color:#34a6f7;margin-top:3px;margin-bottom:10px;">Pediatrician</div>
 </div></div>
 <div class="ult-item-wrap" data-animation="animated no-animation">
 	<div class="wpb_single_image wpb_content_element vc_align_left">
@@ -856,8 +895,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </div></div></div></div></div></div>
 </div></div>			<script type="text/javascript">
 				jQuery(document).ready(function ($) {
-					if( typeof jQuery('.ult-carousel-21325194406369ca004d608').slick == "function"){
-						$('.ult-carousel-21325194406369ca004d608').slick({dots: false,autoplaySpeed: 5000,speed: 600,infinite: true,arrows: true,nextArrow: '<button type="button" role="button" aria-label="Next" style="color:#252525; font-size:40px;" class="slick-next default"><i class="ultsl-arrow-right6"><\/i><\/button>',prevArrow: '<button type="button" role="button" aria-label="Previous" style="color:#252525; font-size:40px;" class="slick-prev default"><i class="ultsl-arrow-left6"><\/i><\/button>',slidesToScroll:1,slidesToShow:4,swipe: true,draggable: true,touchMove: true,pauseOnHover: true,pauseOnFocus: false,responsive: [
+					if( typeof jQuery('.ult-carousel-2866549035636a2cb64e4fc').slick == "function"){
+						$('.ult-carousel-2866549035636a2cb64e4fc').slick({dots: false,autoplaySpeed: 5000,speed: 600,infinite: true,arrows: true,nextArrow: '<button type="button" role="button" aria-label="Next" style="color:#252525; font-size:40px;" class="slick-next default"><i class="ultsl-arrow-right6"><\/i><\/button>',prevArrow: '<button type="button" role="button" aria-label="Previous" style="color:#252525; font-size:40px;" class="slick-prev default"><i class="ultsl-arrow-left6"><\/i><\/button>',slidesToScroll:1,slidesToShow:4,swipe: true,draggable: true,touchMove: true,pauseOnHover: true,pauseOnFocus: false,responsive: [
 							{
 							  breakpoint: 1026,
 							  settings: {
@@ -886,14 +925,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
 				});
 			</script>
 			</div></div></div>
-<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1471290676926"><div class="wpb_wrapper"><div class=" vc_custom_1471331059963 ubtn-ctn-center "><a class="ubtn-link ult-adjust-bottom-margin ubtn-center ubtn-custom " href="http://the7.io/medical/doctors/"><button type="button" id="ubtn-5196" class="ubtn ult-adjust-bottom-margin ult-responsive ubtn-custom ubtn-fade-bg  none  ubtn-center   tooltip-6369ca02340a1" data-hover="#ffffff" data-border-color="#34a6f7" data-bg="rgba(255,255,255,0.01)" data-hover-bg="#34a6f7" data-border-hover="#28a7fb" data-shadow-hover="" data-shadow-click="none" data-shadow="" data-shd-shadow="" data-ultimate-target="#ubtn-5196" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:16px;"}' style="font-family:&#039;Montserrat&#039;;font-weight:700;width:240px;min-height:44px;padding:14px 25px;border-radius:0px;border-width:3px;border-color:#34a6f7;border-style:solid;background: rgba(255,255,255,0.01);color: #34a6f7;"><span class="ubtn-hover" style="background-color:#34a6f7"></span><span class="ubtn-data ubtn-text ">All Our Doctors</span></button></a></div></div></div></div>
+<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1471290676926"><div class="wpb_wrapper"><div class=" vc_custom_1471331059963 ubtn-ctn-center "><a class="ubtn-link ult-adjust-bottom-margin ubtn-center ubtn-custom " href="http://the7.io/medical/doctors/"><button type="button" id="ubtn-8082" class="ubtn ult-adjust-bottom-margin ult-responsive ubtn-custom ubtn-fade-bg  none  ubtn-center   tooltip-636a2cb6539f2" data-hover="#ffffff" data-border-color="#34a6f7" data-bg="rgba(255,255,255,0.01)" data-hover-bg="#34a6f7" data-border-hover="#28a7fb" data-shadow-hover="" data-shadow-click="none" data-shadow="" data-shd-shadow="" data-ultimate-target="#ubtn-8082" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:16px;"}' style="font-family:&#039;Montserrat&#039;;font-weight:700;width:240px;min-height:44px;padding:14px 25px;border-radius:0px;border-width:3px;border-color:#34a6f7;border-style:solid;background: rgba(255,255,255,0.01);color: #34a6f7;"><span class="ubtn-hover" style="background-color:#34a6f7"></span><span class="ubtn-data ubtn-text ">All Our Doctors</span></button></a></div></div></div></div>
 </div>
 <!-- Row Backgrounds --><div class="upb_color" data-bg-override="ex-full" data-bg-color="#f4f4f4" data-fadeout="" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false" data-custom-vc-row="" data-vc="6.8.0" data-is_old_vc="" data-theme-support="" data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size=""></div>
 <div class="vc_row wpb_row vc_row-fluid vc_custom_1461851167541">
-<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-offset-2 vc_col-md-offset-2 vc_col-sm-offset-2"><div class="vc_column-inner"><div class="wpb_wrapper"><div id="ultimate-heading-70296369ca023510f" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-70296369ca023510f uvc-1145  uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-offset-2 vc_col-md-offset-2 vc_col-sm-offset-2"><div class="vc_column-inner"><div class="wpb_wrapper"><div id="ultimate-heading-2055636a2cb655422" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2055636a2cb655422 uvc-7922  uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-70296369ca023510f h1" data-responsive-json-new='{"font-size":"","line-height":""}'><h1 style="font-weight:bold;">Transforming healthcare</h1></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-70296369ca023510f .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:28px;"}' style="font-weight:normal;color:#9a9a9a;margin-top:20px;margin-bottom:60px;">Duis vehicula egestas purus, quis consequat sem finibus at. Fusce facilisis laoreet nunc, sit amet posuere massa facilisis vel</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2055636a2cb655422 h1" data-responsive-json-new='{"font-size":"","line-height":""}'><h1 style="font-weight:bold;">Transforming healthcare</h1></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2055636a2cb655422 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:28px;"}' style="font-weight:normal;color:#9a9a9a;margin-top:20px;margin-bottom:60px;">Duis vehicula egestas purus, quis consequat sem finibus at. Fusce facilisis laoreet nunc, sit amet posuere massa facilisis vel</div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="dt-shortcode with-isotope"><div class="wf-container dt-blog-shortcode resize-by-browser-width vertical-fancy-style loading-effect-none iso-grid description-under-image content-align-left" data-padding="25px" data-cur-page="1" data-posts-per-page="-1" data-desktop-columns-num="3" data-v-tablet-columns-num="3" data-h-tablet-columns-num="3" data-phone-columns-num="1" data-width="370px" data-columns="3">
 <div class="wf-cell" data-post-id="1" data-date="2022-11-07T14:18:26+00:00" data-name="Hello world!">
@@ -965,9 +1004,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	<i class="icomoon-brankic-32x32-heart"></i>
 </div>
 </div></div></div>
-<div class="stats-desc" id="counter-responsv-wrap-6538">
-<div id="counter_1224350066369ca04344f5" data-id="counter_1224350066369ca04344f5" data-ultimate-target="#counter-responsv-wrap-6538 .stats-number" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:35px;"}' class="stats-number ult-responsive" style=" color:#ffffff; font-family:&#039;Montserrat&#039;;font-weight:700;color:#ffffff;" data-speed="2" data-counter-value="2800" data-separator="." data-decimal="none">0</div>
-<div id="counter_1224350066369ca04344f5" data-ultimate-target="#counter-responsv-wrap-6538 .stats-text" data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:28px;"}' class="stats-text ult-responsive" style="font-size:px; color:#ffffff; font-family:&#039;Montserrat&#039;;font-weight:bold;">LIFES SAVED</div>
+<div class="stats-desc" id="counter-responsv-wrap-3993">
+<div id="counter_3729372991636a2cb667e2e" data-id="counter_3729372991636a2cb667e2e" data-ultimate-target="#counter-responsv-wrap-3993 .stats-number" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:35px;"}' class="stats-number ult-responsive" style=" color:#ffffff; font-family:&#039;Montserrat&#039;;font-weight:700;color:#ffffff;" data-speed="2" data-counter-value="2800" data-separator="." data-decimal="none">0</div>
+<div id="counter_3729372991636a2cb667e2e" data-ultimate-target="#counter-responsv-wrap-3993 .stats-text" data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:28px;"}' class="stats-text ult-responsive" style="font-size:px; color:#ffffff; font-family:&#039;Montserrat&#039;;font-weight:bold;">LIFES SAVED</div>
 </div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-3 vc_col-lg-3 vc_col-md-3 vc_col-xs-6"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="stats-block stats-top   vc_custom_1471290362292">
@@ -976,9 +1015,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	<i class="icomoon-brankic-32x32-health"></i>
 </div>
 </div></div></div>
-<div class="stats-desc" id="counter-responsv-wrap-1849">
-<div id="counter_19430563266369ca04358a2" data-id="counter_19430563266369ca04358a2" data-ultimate-target="#counter-responsv-wrap-1849 .stats-number" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:35px;"}' class="stats-number ult-responsive" style=" color:#ffffff; font-family:&#039;Montserrat&#039;;font-weight:700;color:#ffffff;" data-speed="2" data-counter-value="30" data-separator="." data-decimal="none">0</div>
-<div id="counter_19430563266369ca04358a2" data-ultimate-target="#counter-responsv-wrap-1849 .stats-text" data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:28px;"}' class="stats-text ult-responsive" style="font-size:px; color:#ffffff; font-family:&#039;Montserrat&#039;;font-weight:bold;">PARAMEDIC TEAMS</div>
+<div class="stats-desc" id="counter-responsv-wrap-6939">
+<div id="counter_3321982659636a2cb668002" data-id="counter_3321982659636a2cb668002" data-ultimate-target="#counter-responsv-wrap-6939 .stats-number" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:35px;"}' class="stats-number ult-responsive" style=" color:#ffffff; font-family:&#039;Montserrat&#039;;font-weight:700;color:#ffffff;" data-speed="2" data-counter-value="30" data-separator="." data-decimal="none">0</div>
+<div id="counter_3321982659636a2cb668002" data-ultimate-target="#counter-responsv-wrap-6939 .stats-text" data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:28px;"}' class="stats-text ult-responsive" style="font-size:px; color:#ffffff; font-family:&#039;Montserrat&#039;;font-weight:bold;">PARAMEDIC TEAMS</div>
 </div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-3 vc_col-lg-3 vc_col-md-3 vc_col-xs-6"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="stats-block stats-top   vc_custom_1471290370201">
@@ -987,9 +1026,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	<i class="icomoon-brankic-32x32-profile2"></i>
 </div>
 </div></div></div>
-<div class="stats-desc" id="counter-responsv-wrap-5474">
-<div id="counter_28182512046369ca0435b9f" data-id="counter_28182512046369ca0435b9f" data-ultimate-target="#counter-responsv-wrap-5474 .stats-number" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:35px;"}' class="stats-number ult-responsive" style=" color:#ffffff; font-family:&#039;Montserrat&#039;;font-weight:700;color:#ffffff;" data-speed="2" data-counter-value="65" data-separator="," data-decimal=".">0</div>
-<div id="counter_28182512046369ca0435b9f" data-ultimate-target="#counter-responsv-wrap-5474 .stats-text" data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:28px;"}' class="stats-text ult-responsive" style="font-size:px; color:#ffffff; font-family:&#039;Montserrat&#039;;font-weight:bold;">DOCTORS</div>
+<div class="stats-desc" id="counter-responsv-wrap-7518">
+<div id="counter_2420694494636a2cb668306" data-id="counter_2420694494636a2cb668306" data-ultimate-target="#counter-responsv-wrap-7518 .stats-number" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:35px;"}' class="stats-number ult-responsive" style=" color:#ffffff; font-family:&#039;Montserrat&#039;;font-weight:700;color:#ffffff;" data-speed="2" data-counter-value="65" data-separator="," data-decimal=".">0</div>
+<div id="counter_2420694494636a2cb668306" data-ultimate-target="#counter-responsv-wrap-7518 .stats-text" data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:28px;"}' class="stats-text ult-responsive" style="font-size:px; color:#ffffff; font-family:&#039;Montserrat&#039;;font-weight:bold;">DOCTORS</div>
 </div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-3 vc_col-lg-3 vc_col-md-3 vc_col-xs-6"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="stats-block stats-top   vc_custom_1471290376693">
@@ -998,9 +1037,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	<i class="icomoon-brankic-32x32-medal2"></i>
 </div>
 </div></div></div>
-<div class="stats-desc" id="counter-responsv-wrap-9269">
-<div id="counter_24774111846369ca04368d3" data-id="counter_24774111846369ca04368d3" data-ultimate-target="#counter-responsv-wrap-9269 .stats-number" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:35px;"}' class="stats-number ult-responsive" style=" color:#ffffff; font-family:&#039;Montserrat&#039;;font-weight:700;color:#ffffff;" data-speed="2" data-counter-value="24" data-separator="." data-decimal=".">0</div>
-<div id="counter_24774111846369ca04368d3" data-ultimate-target="#counter-responsv-wrap-9269 .stats-text" data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:28px;"}' class="stats-text ult-responsive" style="font-size:px; color:#ffffff; font-family:&#039;Montserrat&#039;;font-weight:bold;">MEDICAL AWARDS</div>
+<div class="stats-desc" id="counter-responsv-wrap-4361">
+<div id="counter_3882891860636a2cb668512" data-id="counter_3882891860636a2cb668512" data-ultimate-target="#counter-responsv-wrap-4361 .stats-number" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:35px;"}' class="stats-number ult-responsive" style=" color:#ffffff; font-family:&#039;Montserrat&#039;;font-weight:700;color:#ffffff;" data-speed="2" data-counter-value="24" data-separator="." data-decimal=".">0</div>
+<div id="counter_3882891860636a2cb668512" data-ultimate-target="#counter-responsv-wrap-4361 .stats-text" data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:28px;"}' class="stats-text ult-responsive" style="font-size:px; color:#ffffff; font-family:&#039;Montserrat&#039;;font-weight:bold;">MEDICAL AWARDS</div>
 </div>
 </div></div></div></div>
 </div>
@@ -1216,5 +1255,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </body>
 
 
-<!-- Page supported by LiteSpeed Cache 5.3 on 2022-11-08 03:16:20 -->
+<!-- Page supported by LiteSpeed Cache 5.3 on 2022-11-08 10:17:26 -->
 </html>
