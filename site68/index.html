@@ -70,15 +70,54 @@ img.emoji {
 <link rel="stylesheet" id="js_composer_front-css" href="/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=6.8.0" type="text/css" media="all">
 <link rel="stylesheet" id="dt-web-fonts-css" href="https://fonts.googleapis.com/css?family=Open Sans:400,600,700|Roboto:400,600,700" type="text/css" media="all">
 <link rel="stylesheet" id="dt-main-css" href="/wp-content/themes/dt-the7/css/main.min.css?ver=11.1.1" type="text/css" media="all">
+<style id="dt-main-inline-css" type="text/css">body #load {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 9901;
+  opacity: 1;
+  visibility: visible;
+  transition: all .35s ease-out;
+}
+.load-wrap {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -ms-flex-pack: center;
+  -ms-justify-content: center;
+  justify-content: center;
+}
+.load-wrap > svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+#load {
+  background: var(--the7-elementor-beautiful-loading-bg,#ffffff);
+  --the7-beautiful-spinner-color2: var(--the7-beautiful-spinner-color,#0eb4ec);
+}</style>
 <link rel="stylesheet" id="the7-custom-scrollbar-css" href="/wp-content/themes/dt-the7/lib/custom-scrollbar/custom-scrollbar.min.css?ver=11.1.1" type="text/css" media="all">
 <link rel="stylesheet" id="the7-wpbakery-css" href="/wp-content/themes/dt-the7/css/wpbakery.min.css?ver=11.1.1" type="text/css" media="all">
 <link rel="stylesheet" id="the7-core-css" href="/wp-content/plugins/dt-the7-core/assets/css/post-type.min.css?ver=2.7.0" type="text/css" media="all">
-<link rel="stylesheet" id="the7-css-vars-css" href="/wp-content/uploads/sites/68/the7-css/css-vars.css?ver=85f97fdc8ef3" type="text/css" media="all">
-<link rel="stylesheet" id="dt-custom-css" href="/wp-content/uploads/sites/68/the7-css/custom.css?ver=85f97fdc8ef3" type="text/css" media="all">
-<link rel="stylesheet" id="dt-media-css" href="/wp-content/uploads/sites/68/the7-css/media.css?ver=85f97fdc8ef3" type="text/css" media="all">
-<link rel="stylesheet" id="the7-mega-menu-css" href="/wp-content/uploads/sites/68/the7-css/mega-menu.css?ver=85f97fdc8ef3" type="text/css" media="all">
-<link rel="stylesheet" id="the7-elements-albums-portfolio-css" href="/wp-content/uploads/sites/68/the7-css/the7-elements-albums-portfolio.css?ver=85f97fdc8ef3" type="text/css" media="all">
-<link rel="stylesheet" id="the7-elements-css" href="/wp-content/uploads/sites/68/the7-css/post-type-dynamic.css?ver=85f97fdc8ef3" type="text/css" media="all">
+<link rel="stylesheet" id="the7-css-vars-css" href="/wp-content/uploads/sites/68/the7-css/css-vars.css?ver=807089894c12" type="text/css" media="all">
+<link rel="stylesheet" id="dt-custom-css" href="/wp-content/uploads/sites/68/the7-css/custom.css?ver=807089894c12" type="text/css" media="all">
+<link rel="stylesheet" id="dt-media-css" href="/wp-content/uploads/sites/68/the7-css/media.css?ver=807089894c12" type="text/css" media="all">
+<link rel="stylesheet" id="the7-mega-menu-css" href="/wp-content/uploads/sites/68/the7-css/mega-menu.css?ver=807089894c12" type="text/css" media="all">
+<link rel="stylesheet" id="the7-elements-albums-portfolio-css" href="/wp-content/uploads/sites/68/the7-css/the7-elements-albums-portfolio.css?ver=807089894c12" type="text/css" media="all">
+<link rel="stylesheet" id="the7-elements-css" href="/wp-content/uploads/sites/68/the7-css/post-type-dynamic.css?ver=807089894c12" type="text/css" media="all">
 <link rel="stylesheet" id="style-css" href="/wp-content/themes/dt-the7/style.css?ver=11.1.1" type="text/css" media="all">
 <link rel="stylesheet" id="ultimate-vc-addons-google-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto" type="text/css" media="all">
 <link rel="stylesheet" id="ultimate-vc-addons-style-css" href="/wp-content/plugins/Ultimate_VC_Addons/assets/min-css/style.min.css?ver=3.19.11" type="text/css" media="all">
@@ -364,10 +403,10 @@ padding-bottom: 4px;
 	<i class="icomoon-material-24x24-desktop_windows"></i>
 </div>
 </div></div>
-<div id="ultimate-heading-65096369ebacadc0e" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-65096369ebacadc0e uvc-6543 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-65096369ebacadc0e h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="--font-weight:theme;margin-bottom:12px;">Web Design</h2></div>
+<div id="ultimate-heading-5268636a430a7fa9c" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-5268636a430a7fa9c uvc-8722 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5268636a430a7fa9c h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="--font-weight:theme;margin-bottom:12px;">Web Design</h2></div>
 <div class="uvc-heading-spacer line_only" style="margin-bottom:15px;height:3px;"><span class="uvc-headings-line" style="border-style:solid;border-bottom-width:3px;border-color:#ccc;width:40px;"></span></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-65096369ebacadc0e .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":"desktop:28px;"}' style="font-weight:normal;">Sed in purus ipsum dolor amet  purus unde non males fames ac ante ipsum primis in dolor.</div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5268636a430a7fa9c .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":"desktop:28px;"}' style="font-weight:normal;">Sed in purus ipsum dolor amet  purus unde non males fames ac ante ipsum primis in dolor.</div>
 </div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-3"><div class="vc_column-inner vc_custom_1490263827527"><div class="wpb_wrapper">
@@ -376,10 +415,10 @@ padding-bottom: 4px;
 	<i class="icomoon-material-24x24-poll"></i>
 </div>
 </div></div>
-<div id="ultimate-heading-74646369ebacadebf" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-74646369ebacadebf uvc-5827 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-74646369ebacadebf h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="--font-weight:theme;margin-bottom:12px;">SEO</h2></div>
+<div id="ultimate-heading-6567636a430a7fc77" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-6567636a430a7fc77 uvc-8809 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6567636a430a7fc77 h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="--font-weight:theme;margin-bottom:12px;">SEO</h2></div>
 <div class="uvc-heading-spacer line_only" style="margin-bottom:15px;height:3px;"><span class="uvc-headings-line" style="border-style:solid;border-bottom-width:3px;border-color:#ccc;width:40px;"></span></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-74646369ebacadebf .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":"desktop:28px;"}' style="font-weight:normal;">Lorem ipsum dolor in purus ipsum dolor amet purus unde non males fames ac ante ipsum primis amet.</div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6567636a430a7fc77 .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":"desktop:28px;"}' style="font-weight:normal;">Lorem ipsum dolor in purus ipsum dolor amet purus unde non males fames ac ante ipsum primis amet.</div>
 </div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-3 vc_col-xs-12"><div class="vc_column-inner vc_custom_1490263831293"><div class="wpb_wrapper">
@@ -388,10 +427,10 @@ padding-bottom: 4px;
 	<i class="icomoon-material-24x24-format_shapes"></i>
 </div>
 </div></div>
-<div id="ultimate-heading-23256369ebacaea4a" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-23256369ebacaea4a uvc-4004 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-23256369ebacaea4a h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="--font-weight:theme;margin-bottom:12px;">Digital Art</h2></div>
+<div id="ultimate-heading-7875636a430a7feaf" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-7875636a430a7feaf uvc-9509 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-7875636a430a7feaf h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="--font-weight:theme;margin-bottom:12px;">Digital Art</h2></div>
 <div class="uvc-heading-spacer line_only" style="margin-bottom:15px;height:3px;"><span class="uvc-headings-line" style="border-style:solid;border-bottom-width:3px;border-color:#ccc;width:40px;"></span></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-23256369ebacaea4a .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":"desktop:28px;"}' style="font-weight:normal;">Amet sodales in purus ipsum dolor amet glavrida non males fames ac ante ipsum primis in dolor amet.</div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-7875636a430a7feaf .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":"desktop:28px;"}' style="font-weight:normal;">Amet sodales in purus ipsum dolor amet glavrida non males fames ac ante ipsum primis in dolor amet.</div>
 </div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-3 vc_col-xs-12"><div class="vc_column-inner vc_custom_1490263840144"><div class="wpb_wrapper">
@@ -400,17 +439,17 @@ padding-bottom: 4px;
 	<i class="icomoon-material-24x24-phone_android"></i>
 </div>
 </div></div>
-<div id="ultimate-heading-78106369ebacaec87" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-78106369ebacaec87 uvc-7241 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-78106369ebacaec87 h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="--font-weight:theme;margin-bottom:12px;">Apps Development</h2></div>
+<div id="ultimate-heading-6207636a430a80125" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-6207636a430a80125 uvc-4029 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6207636a430a80125 h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="--font-weight:theme;margin-bottom:12px;">Apps Development</h2></div>
 <div class="uvc-heading-spacer line_only" style="margin-bottom:15px;height:3px;"><span class="uvc-headings-line" style="border-style:solid;border-bottom-width:3px;border-color:#ccc;width:40px;"></span></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-78106369ebacaec87 .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":"desktop:28px;"}' style="font-weight:normal;">Unicos amos purus ipsum dolor amet non males fames ac ante ipsum primis in glavrida!</div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6207636a430a80125 .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":"desktop:28px;"}' style="font-weight:normal;">Unicos amos purus ipsum dolor amet non males fames ac ante ipsum primis in glavrida!</div>
 </div>
 </div></div></div>
 </div>
 <div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid text-centered vc_custom_1490292003134 vc_row-no-padding">
 <div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-offset-3 vc_col-lg-6 vc_col-md-offset-2 vc_col-md-8 vc_col-sm-offset-2 vc_col-xs-12"><div class="vc_column-inner vc_custom_1490267763327"><div class="wpb_wrapper">
-<div id="ultimate-heading-596369ebacaf5ca" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-596369ebacaf5ca uvc-6380 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-596369ebacaf5ca h2" data-responsive-json-new='{"font-size":"desktop:40px;","line-height":"desktop:50px;"}'><h2 style="--font-weight:theme;margin-bottom:15px;">Featured Projects</h2></div>
+<div id="ultimate-heading-1481636a430a809c5" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-1481636a430a809c5 uvc-2713 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1481636a430a809c5 h2" data-responsive-json-new='{"font-size":"desktop:40px;","line-height":"desktop:50px;"}'><h2 style="--font-weight:theme;margin-bottom:15px;">Featured Projects</h2></div>
 <div class="uvc-heading-spacer line_only" style="margin-bottom:40px;height:4px;"><span class="uvc-headings-line" style="border-style:solid;border-bottom-width:4px;border-color:#ccc;width:120px;"></span></div>
 </div>
 	<div class="wpb_text_column wpb_content_element  vc_custom_1490267970322">
@@ -933,9 +972,9 @@ padding-bottom: 4px;
 </div>
 </div></article>
 </div>
-			<div class="ult_dual_button  vc_custom_1490343630566 ult-adjust-bottom-margin to-center  " data-response="on" id="ult_btn_3701819657">
+			<div class="ult_dual_button  vc_custom_1490343630566 ult-adjust-bottom-margin to-center  " data-response="on" id="ult_btn_778167292">
 
-			<div id="dualbtn-7710" class="ulitmate_dual_buttons ult-dual-btn ult_main_dualbtn " data-bcolor="#0fbcf5" data-bhcolor="">
+			<div id="dualbtn-4085" class="ulitmate_dual_buttons ult-dual-btn ult_main_dualbtn " data-bcolor="#0fbcf5" data-bhcolor="">
 
 			<div class="ult_dualbutton-wrapper btn-inline place-template bt1 ">
 <a href="http://the7.io/creative/projects/" class="ult_ivan_button round-square with-icon icon-before with-text place-template ult_dual1" style=";margin-right:px;;background-color:#f2f3f3 !important;; border-color:#0fbcf5;border-style:solid;border-width:3px;border-radius:5px;width:300px;;">
@@ -944,7 +983,7 @@ padding-bottom: 4px;
 <span class="aio-icon btn1icon none " style="color:#0fbcf5;font-size:20px;">
 	<i class="icomoon-material-24x24-dashboard"></i>
 </span></span>
-			<span class="text-btn ult-dual-button-title ult-responsive" data-ultimate-target="#dualbtn-7710 .ult-dual-button-title" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:18px;"}' style="font-family:Roboto;font-weight:bold;color:#0fbcf5;">VIEW MORE PROJECTS</span>
+			<span class="text-btn ult-dual-button-title ult-responsive" data-ultimate-target="#dualbtn-4085 .ult-dual-button-title" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:18px;"}' style="font-family:Roboto;font-weight:bold;color:#0fbcf5;">VIEW MORE PROJECTS</span>
 
 			</span>
 			</a><span class="middle-text" style="line-height: 1.8em;color:#ffffff;background-color:#0fbcf5;border-color:#0fbcf5;border-width:3px;border-style:solid;border-radius:100px;">
@@ -971,8 +1010,8 @@ padding-bottom: 4px;
 <!-- Row Backgrounds --><div class="upb_bg_img" data-ultimate-bg="url(/wp-content/uploads/sites/68/2014/03/skin05r.stripes-stripe-1-bg-image.gif)" data-image-id="id^1690|url^/wp-content/uploads/sites/68/2014/03/skin05r.stripes-stripe-1-bg-image.gif|caption^null|alt^null|title^skin05r.stripes-stripe-1-bg-image|description^null" data-ultimate-bg-style="vcpb-default" data-bg-img-repeat="repeat" data-bg-img-size="initial" data-bg-img-position="" data-parallx_sense="30" data-bg-override="ex-full" data-bg_img_attach="scroll" data-upb-overlay-color="" data-upb-bg-animation="" data-fadeout="" data-bg-animation="left-animation" data-bg-animation-type="h" data-animation-repeat="repeat" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false" data-custom-vc-row="" data-vc="6.8.0" data-is_old_vc="" data-theme-support="" data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size=""></div>
 <div class="vc_row wpb_row vc_row-fluid vc_custom_1490264426818">
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6 vc_col-xs-12"><div class="vc_column-inner vc_custom_1490267921696"><div class="wpb_wrapper">
-<div id="ultimate-heading-1406369ebb37eaaf" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-1406369ebb37eaaf uvc-1557 accent-border-color" data-hspacer="line_only" data-halign="left" style="text-align:left">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1406369ebb37eaaf h2" data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:36px;"}'><h2 style="--font-weight:theme;margin-bottom:10px;">Our skills &amp; experience</h2></div>
+<div id="ultimate-heading-7329636a430ab25c9" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-7329636a430ab25c9 uvc-390 accent-border-color" data-hspacer="line_only" data-halign="left" style="text-align:left">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-7329636a430ab25c9 h2" data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:36px;"}'><h2 style="--font-weight:theme;margin-bottom:10px;">Our skills &amp; experience</h2></div>
 <div class="uvc-heading-spacer line_only" style="margin-bottom:45px;height:3px;"><span class="uvc-headings-line" style="border-style:solid;border-bottom-width:3px;border-color:#ccc;width:70px;"></span></div>
 </div>
 	<div class="wpb_text_column wpb_content_element  vc_custom_1490284962399">
@@ -989,8 +1028,8 @@ padding-bottom: 4px;
 </div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6 vc_col-xs-12"><div class="vc_column-inner vc_custom_1490267927866"><div class="wpb_wrapper">
-<div id="ultimate-heading-80446369ebb37f05a" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-80446369ebb37f05a uvc-8077 accent-border-color" data-hspacer="line_only" data-halign="left" style="text-align:left">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-80446369ebb37f05a h2" data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:36px;"}'><h2 style="--font-weight:theme;margin-bottom:10px;">We are proud to work with</h2></div>
+<div id="ultimate-heading-8753636a430ab2a51" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-8753636a430ab2a51 uvc-1599 accent-border-color" data-hspacer="line_only" data-halign="left" style="text-align:left">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-8753636a430ab2a51 h2" data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:36px;"}'><h2 style="--font-weight:theme;margin-bottom:10px;">We are proud to work with</h2></div>
 <div class="uvc-heading-spacer line_only" style="margin-bottom:45px;height:3px;"><span class="uvc-headings-line" style="border-style:solid;border-bottom-width:3px;border-color:#ccc;width:70px;"></span></div>
 </div>
 	<div class="wpb_text_column wpb_content_element  vc_custom_1490284967218">
@@ -1421,5 +1460,5 @@ padding-bottom: 4px;
 </body>
 
 
-<!-- Page supported by LiteSpeed Cache 5.3 on 2022-11-08 05:40:14 -->
+<!-- Page supported by LiteSpeed Cache 5.3 on 2022-11-08 11:52:43 -->
 </html>
