@@ -71,6 +71,45 @@ img.emoji {
 <link rel="stylesheet" id="js_composer_front-css" href="/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=6.8.0" type="text/css" media="all">
 <link rel="stylesheet" id="dt-web-fonts-css" href="https://fonts.googleapis.com/css?family=Open Sans:300,400,600,700|Roboto:400,600,700|Dosis:400,600,700" type="text/css" media="all">
 <link rel="stylesheet" id="dt-main-css" href="/wp-content/themes/dt-the7/css/main.min.css?ver=11.1.1" type="text/css" media="all">
+<style id="dt-main-inline-css" type="text/css">body #load {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 9901;
+  opacity: 1;
+  visibility: visible;
+  transition: all .35s ease-out;
+}
+.load-wrap {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -ms-flex-pack: center;
+  -ms-justify-content: center;
+  justify-content: center;
+}
+.load-wrap > svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+#load {
+  background: var(--the7-elementor-beautiful-loading-bg,#ffffff);
+  --the7-beautiful-spinner-color2: var(--the7-beautiful-spinner-color,#329bd2);
+}</style>
 <link rel="stylesheet" id="the7-custom-scrollbar-css" href="/wp-content/themes/dt-the7/lib/custom-scrollbar/custom-scrollbar.min.css?ver=11.1.1" type="text/css" media="all">
 <link rel="stylesheet" id="the7-wpbakery-css" href="/wp-content/themes/dt-the7/css/wpbakery.min.css?ver=11.1.1" type="text/css" media="all">
 <link rel="stylesheet" id="the7-css-vars-css" href="/wp-content/uploads/sites/70/the7-css/css-vars.css?ver=f184992f933d" type="text/css" media="all">
@@ -89,7 +128,7 @@ img.emoji {
 <script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
 <script type="text/javascript" id="dt-above-fold-js-extra">
 /* <![CDATA[ */
-var dtLocal = {"themeUrl":"\/wp-content\/themes\/dt-the7","passText":"To view this protected post, enter the password below:","moreButtonText":{"loading":"Loading...","loadMore":"Load more"},"postID":"3","ajaxurl":"\/site70\/wp-admin\/admin-ajax.php","REST":{"baseUrl":"\/site70\/wp-json\/the7\/v1","endpoints":{"sendMail":"\/send-mail"}},"contactMessages":{"required":"One or more fields have an error. Please check and try again.","terms":"Please accept the privacy policy.","fillTheCaptchaError":"Please, fill the captcha."},"captchaSiteKey":"","ajaxNonce":"bf9aed7ca8","pageData":{"type":"page","template":"microsite","layout":null},"themeSettings":{"smoothScroll":"off","lazyLoading":false,"accentColor":{"mode":"solid","color":"#329bd2"},"desktopHeader":{"height":""},"ToggleCaptionEnabled":"disabled","ToggleCaption":"Navigation","floatingHeader":{"showAfter":500,"showMenu":true,"height":56,"logo":{"showLogo":true,"html":"<img class=\" preload-me\" src=\"\/wp-content\/uploads\/sites\/70\/2016\/02\/the7-logo-app-small.png\" srcset=\"\/wp-content\/uploads\/sites\/70\/2016\/02\/the7-logo-app-small.png 42w, \/wp-content\/uploads\/sites\/70\/2016\/02\/the7-logo-app-small-hd.png 84w\" width=\"42\" height=\"42\"   sizes=\"42px\" alt=\"Site70\" \/>","url":"\/site70\/"}},"topLine":{"floatingTopLine":{"logo":{"showLogo":false,"html":""}}},"mobileHeader":{"firstSwitchPoint":320,"secondSwitchPoint":320,"firstSwitchPointHeight":52,"secondSwitchPointHeight":52,"mobileToggleCaptionEnabled":"disabled","mobileToggleCaption":"Menu"},"stickyMobileHeaderFirstSwitch":{"logo":{"html":"<img class=\" preload-me\" src=\"\/wp-content\/uploads\/sites\/70\/2016\/02\/the7-logo-app-small.png\" srcset=\"\/wp-content\/uploads\/sites\/70\/2016\/02\/the7-logo-app-small.png 42w, \/wp-content\/uploads\/sites\/70\/2016\/02\/the7-logo-app-small-hd.png 84w\" width=\"42\" height=\"42\"   sizes=\"42px\" alt=\"Site70\" \/>"}},"stickyMobileHeaderSecondSwitch":{"logo":{"html":"<img class=\" preload-me\" src=\"\/wp-content\/uploads\/sites\/70\/2016\/02\/the7-logo-app-small.png\" srcset=\"\/wp-content\/uploads\/sites\/70\/2016\/02\/the7-logo-app-small.png 42w, \/wp-content\/uploads\/sites\/70\/2016\/02\/the7-logo-app-small-hd.png 84w\" width=\"42\" height=\"42\"   sizes=\"42px\" alt=\"Site70\" \/>"}},"content":{"textColor":"#8f9194","headerColor":"#45474b"},"sidebar":{"switchPoint":992},"boxedWidth":"1250px","stripes":{"stripe1":{"textColor":"#8f9194","headerColor":"#45474b"},"stripe2":{"textColor":"#ffffff","headerColor":"#ffffff"},"stripe3":{"textColor":"#ffffff","headerColor":"#ffffff"}}},"VCMobileScreenWidth":"768"};
+var dtLocal = {"themeUrl":"\/wp-content\/themes\/dt-the7","passText":"To view this protected post, enter the password below:","moreButtonText":{"loading":"Loading...","loadMore":"Load more"},"postID":"3","ajaxurl":"\/site70\/wp-admin\/admin-ajax.php","REST":{"baseUrl":"\/site70\/wp-json\/the7\/v1","endpoints":{"sendMail":"\/send-mail"}},"contactMessages":{"required":"One or more fields have an error. Please check and try again.","terms":"Please accept the privacy policy.","fillTheCaptchaError":"Please, fill the captcha."},"captchaSiteKey":"","ajaxNonce":"7617c7901d","pageData":{"type":"page","template":"microsite","layout":null},"themeSettings":{"smoothScroll":"off","lazyLoading":false,"accentColor":{"mode":"solid","color":"#329bd2"},"desktopHeader":{"height":""},"ToggleCaptionEnabled":"disabled","ToggleCaption":"Navigation","floatingHeader":{"showAfter":500,"showMenu":true,"height":56,"logo":{"showLogo":true,"html":"<img class=\" preload-me\" src=\"\/wp-content\/uploads\/sites\/70\/2016\/02\/the7-logo-app-small.png\" srcset=\"\/wp-content\/uploads\/sites\/70\/2016\/02\/the7-logo-app-small.png 42w, \/wp-content\/uploads\/sites\/70\/2016\/02\/the7-logo-app-small-hd.png 84w\" width=\"42\" height=\"42\"   sizes=\"42px\" alt=\"Site70\" \/>","url":"\/site70\/"}},"topLine":{"floatingTopLine":{"logo":{"showLogo":false,"html":""}}},"mobileHeader":{"firstSwitchPoint":320,"secondSwitchPoint":320,"firstSwitchPointHeight":52,"secondSwitchPointHeight":52,"mobileToggleCaptionEnabled":"disabled","mobileToggleCaption":"Menu"},"stickyMobileHeaderFirstSwitch":{"logo":{"html":"<img class=\" preload-me\" src=\"\/wp-content\/uploads\/sites\/70\/2016\/02\/the7-logo-app-small.png\" srcset=\"\/wp-content\/uploads\/sites\/70\/2016\/02\/the7-logo-app-small.png 42w, \/wp-content\/uploads\/sites\/70\/2016\/02\/the7-logo-app-small-hd.png 84w\" width=\"42\" height=\"42\"   sizes=\"42px\" alt=\"Site70\" \/>"}},"stickyMobileHeaderSecondSwitch":{"logo":{"html":"<img class=\" preload-me\" src=\"\/wp-content\/uploads\/sites\/70\/2016\/02\/the7-logo-app-small.png\" srcset=\"\/wp-content\/uploads\/sites\/70\/2016\/02\/the7-logo-app-small.png 42w, \/wp-content\/uploads\/sites\/70\/2016\/02\/the7-logo-app-small-hd.png 84w\" width=\"42\" height=\"42\"   sizes=\"42px\" alt=\"Site70\" \/>"}},"content":{"textColor":"#8f9194","headerColor":"#45474b"},"sidebar":{"switchPoint":992},"boxedWidth":"1250px","stripes":{"stripe1":{"textColor":"#8f9194","headerColor":"#45474b"},"stripe2":{"textColor":"#ffffff","headerColor":"#ffffff"},"stripe3":{"textColor":"#ffffff","headerColor":"#ffffff"}}},"VCMobileScreenWidth":"768"};
 var dtShare = {"shareButtonText":{"facebook":"Share on Facebook","twitter":"Tweet","pinterest":"Pin it","linkedin":"Share on Linkedin","whatsapp":"Share on Whatsapp"},"overlayOpacity":"85"};
 /* ]]> */
 </script>
@@ -369,42 +408,42 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	<div id="about" class="vc_row wpb_row vc_row-fluid vc_custom_1495803723082 vc_row-o-equal-height vc_row-flex">
 <div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner"><div class="wpb_wrapper">
 <div class="aio-icon-component  vc_custom_1495718402764  accent-icon-color style_1">
-<div id="Info-box-wrap-7358" class="aio-icon-box left-icon">
+<div id="Info-box-wrap-5921" class="aio-icon-box left-icon">
 <div class="aio-icon-left"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " data-animation="fadeIn" data-animation-delay="03" style="font-size:24px;display:inline-block;">
 	<i class="icomoon-feather-24x24-download"></i>
 </div>
 </div></div></div>
 <div class="aio-ibd-block">
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-7358 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:normal;font-style:normal;">Download App</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-7358 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Maecenas sit amet tincidunt morbi tristique malesuada facilisi tristique senectus et netus fames ac turpis egestas dolor for nulla.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-5921 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:normal;font-style:normal;">Download App</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-5921 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Maecenas sit amet tincidunt morbi tristique malesuada facilisi tristique senectus et netus fames ac turpis egestas dolor for nulla.</div> <!-- description -->
 </div> <!-- aio-ibd-block -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component -->
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner"><div class="wpb_wrapper">
 <div class="aio-icon-component  vc_custom_1495718474807  accent-icon-color style_1">
-<div id="Info-box-wrap-8767" class="aio-icon-box left-icon">
+<div id="Info-box-wrap-1234" class="aio-icon-box left-icon">
 <div class="aio-icon-left"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " data-animation="fadeIn" data-animation-delay="03" style="font-size:24px;display:inline-block;">
 	<i class="icomoon-feather-24x24-image"></i>
 </div>
 </div></div></div>
 <div class="aio-ibd-block">
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-8767 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:normal;font-style:normal;">Choose Image</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-8767 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Lorem ipsum dolor &#8211; sit amet tincidunt morbi tristique malesuada facilisi tristique senectus et netus fames ac turpis egestas dolor.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-1234 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:normal;font-style:normal;">Choose Image</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-1234 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Lorem ipsum dolor &#8211; sit amet tincidunt morbi tristique malesuada facilisi tristique senectus et netus fames ac turpis egestas dolor.</div> <!-- description -->
 </div> <!-- aio-ibd-block -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component -->
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner"><div class="wpb_wrapper">
 <div class="aio-icon-component  vc_custom_1495718506315  accent-icon-color style_1">
-<div id="Info-box-wrap-8739" class="aio-icon-box left-icon">
+<div id="Info-box-wrap-7374" class="aio-icon-box left-icon">
 <div class="aio-icon-left"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " data-animation="fadeIn" data-animation-delay="03" style="font-size:24px;display:inline-block;">
 	<i class="icomoon-feather-24x24-grid"></i>
 </div>
 </div></div></div>
 <div class="aio-ibd-block">
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-8739 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:normal;font-style:normal;">Edit &amp; Share</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-8739 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Nulla from sit amet tincidunt morbi tristique malesuada facilisi tristique senectus et netus fames ac turpis egestas dolor for amet dolor.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-7374 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:normal;font-style:normal;">Edit &amp; Share</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-7374 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Nulla from sit amet tincidunt morbi tristique malesuada facilisi tristique senectus et netus fames ac turpis egestas dolor for amet dolor.</div> <!-- description -->
 </div> <!-- aio-ibd-block -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component -->
@@ -435,10 +474,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 <div class="shortcode-single-image-wrap shortcode-single-image-812f3dc057707563c2fb6ae67faa82e6 alignleft  enable-bg-rollover dt-icon-bg-off" style="margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; width:505px;"><div class="shortcode-single-image"><div class="fancy-media-wrap  layzr-bg"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20505%20538&#39;%2F%3E" data-src="/wp-content/uploads/sites/70/2016/02/scr-app-001.png" data-srcset="/wp-content/uploads/sites/70/2016/02/scr-app-001.png 505w" width="505" height="538" data-dt-location="/site70/sample-page-2/scr-app-001/"></div></div></div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6"><div class="vc_column-inner vc_custom_1495717991298"><div class="wpb_wrapper">
-<div id="ultimate-heading-60576369eeda67c9f" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-60576369eeda67c9f uvc-5781 accent-title-color color-title" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div id="ultimate-heading-4922636a451851663" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-4922636a451851663 uvc-7586 accent-title-color color-title" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-60576369eeda67c9f h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="font-family:&#039;Open Sans&#039;;font-weight:normal;font-style:normal;">Next generation photography app</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-60576369eeda67c9f .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:48px;","line-height":"desktop:58px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:300;margin-bottom:35px;">What Is Seven App</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4922636a451851663 h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="font-family:&#039;Open Sans&#039;;font-weight:normal;font-style:normal;">Next generation photography app</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4922636a451851663 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:48px;","line-height":"desktop:58px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:300;margin-bottom:35px;">What Is Seven App</div>
 </div>
 	<div class="wpb_text_column wpb_content_element ">
 		<div class="wpb_wrapper">
@@ -474,10 +513,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 <!-- Row Backgrounds --><div class="upb_color" data-bg-override="ex-full" data-bg-color="#f8f8f9" data-fadeout="" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false" data-custom-vc-row="" data-vc="6.8.0" data-is_old_vc="" data-theme-support="" data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size=""></div>
 <div class="vc_row wpb_row vc_row-fluid vc_custom_1495717843695 vc_row-has-fill vc_row-o-equal-height vc_row-o-content-middle vc_row-flex">
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6"><div class="vc_column-inner vc_custom_1495718033911"><div class="wpb_wrapper">
-<div id="ultimate-heading-44966369eeda7d83f" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-44966369eeda7d83f uvc-3585 accent-title-color color-title" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div id="ultimate-heading-3518636a45185242a" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-3518636a45185242a uvc-4851 accent-title-color color-title" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-44966369eeda7d83f h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="font-family:&#039;Open Sans&#039;;font-weight:normal;font-style:normal;">50 000+ people already use Seven App!</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-44966369eeda7d83f .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:48px;","line-height":"desktop:58px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:300;margin-bottom:35px;">Great App for You</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3518636a45185242a h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="font-family:&#039;Open Sans&#039;;font-weight:normal;font-style:normal;">50 000+ people already use Seven App!</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3518636a45185242a .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:48px;","line-height":"desktop:58px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:300;margin-bottom:35px;">Great App for You</div>
 </div>
 	<div class="wpb_text_column wpb_content_element ">
 		<div class="wpb_wrapper">
@@ -534,16 +573,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </div>
 <!-- Row Backgrounds --><div class="upb_color" data-bg-override="ex-full" data-bg-color="#ffffff" data-fadeout="" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false" data-custom-vc-row="" data-vc="6.8.0" data-is_old_vc="" data-theme-support="" data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size=""></div>
 <div id="features" class="vc_row wpb_row vc_row-fluid vc_custom_1495803745758 vc_row-o-equal-height vc_row-o-content-middle vc_row-flex">
-<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1495714030119"><div class="wpb_wrapper"><div id="ultimate-heading-27336369eeda964f0" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-27336369eeda964f0 uvc-4720 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1495714030119"><div class="wpb_wrapper"><div id="ultimate-heading-9965636a451864ab0" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-9965636a451864ab0 uvc-3061 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-27336369eeda964f0 h2" data-responsive-json-new='{"font-size":"desktop:48px;","line-height":"desktop:58px;"}'><h2 style="font-family:&#039;Open Sans&#039;;font-weight:300;">Unique Features</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9965636a451864ab0 h2" data-responsive-json-new='{"font-size":"desktop:48px;","line-height":"desktop:58px;"}'><h2 style="font-family:&#039;Open Sans&#039;;font-weight:300;">Unique Features</h2></div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_hidden-lg vc_hidden-md"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="smile_icon_list_wrap ult_info_list_container ult-adjust-bottom-margin  "><ul class="smile_icon_list left circle with_bg">
 <li class="icon_list_item" style=" font-size:72px;">
 <div class="icon_list_icon" data-animation="fadeIn" data-animation-delay="03" style="font-size:24px;border-width:1px;border-style:none;background:#ffffff;color:#329bd2;border-color:#333333;"><i class="icomoon-feather-24x24-cog"></i></div>
-<div class="icon_description" id="Info-list-wrap-7999" style="font-size:24px;">
-<h3 class="ult-responsive info-list-heading" data-ultimate-target="#Info-list-wrap-7999 h3" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:28px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:normal;font-style:normal;color:#45474b;">Lorem ipsum dolor</h3>
-<div class="icon_description_text ult-responsive" data-ultimate-target="#Info-list-wrap-7999 .icon_description_text" data-responsive-json-new='{"font-size":"desktop:15px;","line-height":"desktop:26px;"}' style="color:#8f9194;">
+<div class="icon_description" id="Info-list-wrap-7809" style="font-size:24px;">
+<h3 class="ult-responsive info-list-heading" data-ultimate-target="#Info-list-wrap-7809 h3" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:28px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:normal;font-style:normal;color:#45474b;">Lorem ipsum dolor</h3>
+<div class="icon_description_text ult-responsive" data-ultimate-target="#Info-list-wrap-7809 .icon_description_text" data-responsive-json-new='{"font-size":"desktop:15px;","line-height":"desktop:26px;"}' style="color:#8f9194;">
 <p>Tristique for senectus et netuset malesuada fames ac turpis egestas nulla lorem ipsum.</p>
 </div>
 </div>
@@ -551,9 +590,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </li>
 <li class="icon_list_item" style=" font-size:72px;">
 <div class="icon_list_icon" data-animation="fadeIn" data-animation-delay="03" style="font-size:24px;border-width:1px;border-style:none;background:#ffffff;color:#329bd2;border-color:#333333;"><i class="icomoon-feather-24x24-layers"></i></div>
-<div class="icon_description" id="Info-list-wrap-4017" style="font-size:24px;">
-<h3 class="ult-responsive info-list-heading" data-ultimate-target="#Info-list-wrap-4017 h3" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:28px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:normal;font-style:normal;color:#45474b;">Nulla for amet</h3>
-<div class="icon_description_text ult-responsive" data-ultimate-target="#Info-list-wrap-4017 .icon_description_text" data-responsive-json-new='{"font-size":"desktop:15px;","line-height":"desktop:26px;"}' style="color:#8f9194;">
+<div class="icon_description" id="Info-list-wrap-1329" style="font-size:24px;">
+<h3 class="ult-responsive info-list-heading" data-ultimate-target="#Info-list-wrap-1329 h3" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:28px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:normal;font-style:normal;color:#45474b;">Nulla for amet</h3>
+<div class="icon_description_text ult-responsive" data-ultimate-target="#Info-list-wrap-1329 .icon_description_text" data-responsive-json-new='{"font-size":"desktop:15px;","line-height":"desktop:26px;"}' style="color:#8f9194;">
 <p>Glavrida senectus et netuset litora torquent malesuada fames ac turpis egestas lorem ipsum.</p>
 </div>
 </div>
@@ -561,9 +600,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </li>
 <li class="icon_list_item" style=" font-size:72px;">
 <div class="icon_list_icon" data-animation="fadeIn" data-animation-delay="03" style="font-size:24px;border-width:1px;border-style:none;background:#ffffff;color:#329bd2;border-color:#333333;"><i class="icomoon-feather-24x24-download"></i></div>
-<div class="icon_description" id="Info-list-wrap-3945" style="font-size:24px;">
-<h3 class="ult-responsive info-list-heading" data-ultimate-target="#Info-list-wrap-3945 h3" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:28px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:normal;font-style:normal;color:#45474b;">Habitant morbi</h3>
-<div class="icon_description_text ult-responsive" data-ultimate-target="#Info-list-wrap-3945 .icon_description_text" data-responsive-json-new='{"font-size":"desktop:15px;","line-height":"desktop:26px;"}' style="color:#8f9194;">
+<div class="icon_description" id="Info-list-wrap-3645" style="font-size:24px;">
+<h3 class="ult-responsive info-list-heading" data-ultimate-target="#Info-list-wrap-3645 h3" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:28px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:normal;font-style:normal;color:#45474b;">Habitant morbi</h3>
+<div class="icon_description_text ult-responsive" data-ultimate-target="#Info-list-wrap-3645 .icon_description_text" data-responsive-json-new='{"font-size":"desktop:15px;","line-height":"desktop:26px;"}' style="color:#8f9194;">
 <p>Malesuada from fames ac turpis egestas lorem ipsum dolor nulla facilisi. Glavrida lacus et amos for aute.</p>
 </div>
 </div>
@@ -571,9 +610,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </li>
 <li class="icon_list_item" style=" font-size:72px;">
 <div class="icon_list_icon" data-animation="fadeIn" data-animation-delay="03" style="font-size:24px;border-width:1px;border-style:none;background:#ffffff;color:#329bd2;border-color:#333333;"><i class="icomoon-feather-24x24-bar-graph-2"></i></div>
-<div class="icon_description" id="Info-list-wrap-5642" style="font-size:24px;">
-<h3 class="ult-responsive info-list-heading" data-ultimate-target="#Info-list-wrap-5642 h3" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:28px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:normal;font-style:normal;color:#45474b;">Litora torquent</h3>
-<div class="icon_description_text ult-responsive" data-ultimate-target="#Info-list-wrap-5642 .icon_description_text" data-responsive-json-new='{"font-size":"desktop:15px;","line-height":"desktop:26px;"}' style="color:#8f9194;">
+<div class="icon_description" id="Info-list-wrap-8264" style="font-size:24px;">
+<h3 class="ult-responsive info-list-heading" data-ultimate-target="#Info-list-wrap-8264 h3" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:28px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:normal;font-style:normal;color:#45474b;">Litora torquent</h3>
+<div class="icon_description_text ult-responsive" data-ultimate-target="#Info-list-wrap-8264 .icon_description_text" data-responsive-json-new='{"font-size":"desktop:15px;","line-height":"desktop:26px;"}' style="color:#8f9194;">
 <p>Class aptent tasociosqu ad litora torquent peer incepet mauris in erat justo litora dolor torquent.</p>
 </div>
 </div>
@@ -581,9 +620,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </li>
 <li class="icon_list_item" style=" font-size:72px;">
 <div class="icon_list_icon" data-animation="fadeIn" data-animation-delay="03" style="font-size:24px;border-width:1px;border-style:none;background:#ffffff;color:#329bd2;border-color:#333333;"><i class="icomoon-feather-24x24-clock"></i></div>
-<div class="icon_description" id="Info-list-wrap-9675" style="font-size:24px;">
-<h3 class="ult-responsive info-list-heading" data-ultimate-target="#Info-list-wrap-9675 h3" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:28px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:normal;font-style:normal;color:#45474b;">Lorem ipsum dolor</h3>
-<div class="icon_description_text ult-responsive" data-ultimate-target="#Info-list-wrap-9675 .icon_description_text" data-responsive-json-new='{"font-size":"desktop:15px;","line-height":"desktop:26px;"}' style="color:#8f9194;">
+<div class="icon_description" id="Info-list-wrap-5806" style="font-size:24px;">
+<h3 class="ult-responsive info-list-heading" data-ultimate-target="#Info-list-wrap-5806 h3" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:28px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:normal;font-style:normal;color:#45474b;">Lorem ipsum dolor</h3>
+<div class="icon_description_text ult-responsive" data-ultimate-target="#Info-list-wrap-5806 .icon_description_text" data-responsive-json-new='{"font-size":"desktop:15px;","line-height":"desktop:26px;"}' style="color:#8f9194;">
 <p>Tristique for senectus et netuset malesuada fames ac turpis egestas nulla lorem ipsum.</p>
 </div>
 </div>
@@ -591,9 +630,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </li>
 <li class="icon_list_item" style=" font-size:72px;">
 <div class="icon_list_icon" data-animation="fadeIn" data-animation-delay="03" style="font-size:24px;border-width:1px;border-style:none;background:#ffffff;color:#329bd2;border-color:#333333;"><i class="icomoon-feather-24x24-tag"></i></div>
-<div class="icon_description" id="Info-list-wrap-7963" style="font-size:24px;">
-<h3 class="ult-responsive info-list-heading" data-ultimate-target="#Info-list-wrap-7963 h3" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:28px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:normal;font-style:normal;color:#45474b;">Malesuada from fames</h3>
-<div class="icon_description_text ult-responsive" data-ultimate-target="#Info-list-wrap-7963 .icon_description_text" data-responsive-json-new='{"font-size":"desktop:15px;","line-height":"desktop:26px;"}' style="color:#8f9194;">
+<div class="icon_description" id="Info-list-wrap-7076" style="font-size:24px;">
+<h3 class="ult-responsive info-list-heading" data-ultimate-target="#Info-list-wrap-7076 h3" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:28px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:normal;font-style:normal;color:#45474b;">Malesuada from fames</h3>
+<div class="icon_description_text ult-responsive" data-ultimate-target="#Info-list-wrap-7076 .icon_description_text" data-responsive-json-new='{"font-size":"desktop:15px;","line-height":"desktop:26px;"}' style="color:#8f9194;">
 <p>Amet for senectus et netuset malesuada fames turpis egestas nulla lorem dolor.</p>
 </div>
 </div>
@@ -603,9 +642,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-4 vc_col-md-4 vc_hidden-sm vc_hidden-xs"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="smile_icon_list_wrap ult_info_list_container ult-adjust-bottom-margin  "><ul class="smile_icon_list right circle with_bg">
 <li class="icon_list_item" style=" font-size:72px;">
 <div class="icon_list_icon" data-animation="fadeIn" data-animation-delay="03" style="font-size:24px;border-width:1px;border-style:none;background:#ffffff;color:#329bd2;border-color:#333333;"><i class="icomoon-feather-24x24-cog"></i></div>
-<div class="icon_description" id="Info-list-wrap-3660" style="font-size:24px;">
-<h3 class="ult-responsive info-list-heading" data-ultimate-target="#Info-list-wrap-3660 h3" data-responsive-json-new='{"font-size":"desktop:15px;","line-height":"desktop:35px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:600;color:#45474b;">Lorem ipsum dolor</h3>
-<div class="icon_description_text ult-responsive" data-ultimate-target="#Info-list-wrap-3660 .icon_description_text" data-responsive-json-new='{"font-size":"desktop:13px;","line-height":"desktop:22px;"}' style="color:#8f9194;">
+<div class="icon_description" id="Info-list-wrap-2740" style="font-size:24px;">
+<h3 class="ult-responsive info-list-heading" data-ultimate-target="#Info-list-wrap-2740 h3" data-responsive-json-new='{"font-size":"desktop:15px;","line-height":"desktop:35px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:600;color:#45474b;">Lorem ipsum dolor</h3>
+<div class="icon_description_text ult-responsive" data-ultimate-target="#Info-list-wrap-2740 .icon_description_text" data-responsive-json-new='{"font-size":"desktop:13px;","line-height":"desktop:22px;"}' style="color:#8f9194;">
 <p>Tristique for senectus et netuset malesuada fames ac turpis egestas nulla lorem ipsum.</p>
 </div>
 </div>
@@ -613,9 +652,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </li>
 <li class="icon_list_item" style=" font-size:72px;">
 <div class="icon_list_icon" data-animation="fadeIn" data-animation-delay="03" style="font-size:24px;border-width:1px;border-style:none;background:#ffffff;color:#329bd2;border-color:#333333;"><i class="icomoon-feather-24x24-layers"></i></div>
-<div class="icon_description" id="Info-list-wrap-7046" style="font-size:24px;">
-<h3 class="ult-responsive info-list-heading" data-ultimate-target="#Info-list-wrap-7046 h3" data-responsive-json-new='{"font-size":"desktop:15px;","line-height":"desktop:35px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:600;color:#45474b;">Nulla for amet</h3>
-<div class="icon_description_text ult-responsive" data-ultimate-target="#Info-list-wrap-7046 .icon_description_text" data-responsive-json-new='{"font-size":"desktop:13px;","line-height":"desktop:22px;"}' style="color:#8f9194;">
+<div class="icon_description" id="Info-list-wrap-8605" style="font-size:24px;">
+<h3 class="ult-responsive info-list-heading" data-ultimate-target="#Info-list-wrap-8605 h3" data-responsive-json-new='{"font-size":"desktop:15px;","line-height":"desktop:35px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:600;color:#45474b;">Nulla for amet</h3>
+<div class="icon_description_text ult-responsive" data-ultimate-target="#Info-list-wrap-8605 .icon_description_text" data-responsive-json-new='{"font-size":"desktop:13px;","line-height":"desktop:22px;"}' style="color:#8f9194;">
 <p>Glavrida senectus et netuset litora torquent malesuada fames ac turpis egestas lorem ipsum.</p>
 </div>
 </div>
@@ -623,9 +662,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </li>
 <li class="icon_list_item" style=" font-size:72px;">
 <div class="icon_list_icon" data-animation="fadeIn" data-animation-delay="03" style="font-size:24px;border-width:1px;border-style:none;background:#ffffff;color:#329bd2;border-color:#333333;"><i class="icomoon-feather-24x24-download"></i></div>
-<div class="icon_description" id="Info-list-wrap-8848" style="font-size:24px;">
-<h3 class="ult-responsive info-list-heading" data-ultimate-target="#Info-list-wrap-8848 h3" data-responsive-json-new='{"font-size":"desktop:15px;","line-height":"desktop:35px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:600;color:#45474b;">Habitant morbi</h3>
-<div class="icon_description_text ult-responsive" data-ultimate-target="#Info-list-wrap-8848 .icon_description_text" data-responsive-json-new='{"font-size":"desktop:13px;","line-height":"desktop:22px;"}' style="color:#8f9194;">
+<div class="icon_description" id="Info-list-wrap-1607" style="font-size:24px;">
+<h3 class="ult-responsive info-list-heading" data-ultimate-target="#Info-list-wrap-1607 h3" data-responsive-json-new='{"font-size":"desktop:15px;","line-height":"desktop:35px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:600;color:#45474b;">Habitant morbi</h3>
+<div class="icon_description_text ult-responsive" data-ultimate-target="#Info-list-wrap-1607 .icon_description_text" data-responsive-json-new='{"font-size":"desktop:13px;","line-height":"desktop:22px;"}' style="color:#8f9194;">
 <p>Malesuada from fames ac turpis egestas lorem ipsum dolor nulla facilisi. Glavrida lacus et amos for aute.</p>
 </div>
 </div>
@@ -657,9 +696,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-4 vc_col-md-4 vc_hidden-sm vc_hidden-xs"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="smile_icon_list_wrap ult_info_list_container ult-adjust-bottom-margin  "><ul class="smile_icon_list left circle with_bg">
 <li class="icon_list_item" style=" font-size:72px;">
 <div class="icon_list_icon" data-animation="fadeIn" data-animation-delay="03" style="font-size:24px;border-width:1px;border-style:none;background:#ffffff;color:#329bd2;border-color:#333333;"><i class="icomoon-feather-24x24-bar-graph-2"></i></div>
-<div class="icon_description" id="Info-list-wrap-7089" style="font-size:24px;">
-<h3 class="ult-responsive info-list-heading" data-ultimate-target="#Info-list-wrap-7089 h3" data-responsive-json-new='{"font-size":"desktop:15px;","line-height":"desktop:35px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:600;color:#45474b;">Litora torquent</h3>
-<div class="icon_description_text ult-responsive" data-ultimate-target="#Info-list-wrap-7089 .icon_description_text" data-responsive-json-new='{"font-size":"desktop:13px;","line-height":"desktop:22px;"}' style="color:#8f9194;">
+<div class="icon_description" id="Info-list-wrap-4520" style="font-size:24px;">
+<h3 class="ult-responsive info-list-heading" data-ultimate-target="#Info-list-wrap-4520 h3" data-responsive-json-new='{"font-size":"desktop:15px;","line-height":"desktop:35px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:600;color:#45474b;">Litora torquent</h3>
+<div class="icon_description_text ult-responsive" data-ultimate-target="#Info-list-wrap-4520 .icon_description_text" data-responsive-json-new='{"font-size":"desktop:13px;","line-height":"desktop:22px;"}' style="color:#8f9194;">
 <p>Class aptent tasociosqu ad litora torquent peer incepet mauris in erat justo litora dolor torquent.</p>
 </div>
 </div>
@@ -667,9 +706,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </li>
 <li class="icon_list_item" style=" font-size:72px;">
 <div class="icon_list_icon" data-animation="fadeIn" data-animation-delay="03" style="font-size:24px;border-width:1px;border-style:none;background:#ffffff;color:#329bd2;border-color:#333333;"><i class="icomoon-feather-24x24-clock"></i></div>
-<div class="icon_description" id="Info-list-wrap-5917" style="font-size:24px;">
-<h3 class="ult-responsive info-list-heading" data-ultimate-target="#Info-list-wrap-5917 h3" data-responsive-json-new='{"font-size":"desktop:15px;","line-height":"desktop:35px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:600;color:#45474b;">Lorem ipsum dolor</h3>
-<div class="icon_description_text ult-responsive" data-ultimate-target="#Info-list-wrap-5917 .icon_description_text" data-responsive-json-new='{"font-size":"desktop:13px;","line-height":"desktop:22px;"}' style="color:#8f9194;">
+<div class="icon_description" id="Info-list-wrap-7518" style="font-size:24px;">
+<h3 class="ult-responsive info-list-heading" data-ultimate-target="#Info-list-wrap-7518 h3" data-responsive-json-new='{"font-size":"desktop:15px;","line-height":"desktop:35px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:600;color:#45474b;">Lorem ipsum dolor</h3>
+<div class="icon_description_text ult-responsive" data-ultimate-target="#Info-list-wrap-7518 .icon_description_text" data-responsive-json-new='{"font-size":"desktop:13px;","line-height":"desktop:22px;"}' style="color:#8f9194;">
 <p>Tristique for senectus et netuset malesuada fames ac turpis egestas nulla lorem ipsum.</p>
 </div>
 </div>
@@ -677,9 +716,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </li>
 <li class="icon_list_item" style=" font-size:72px;">
 <div class="icon_list_icon" data-animation="fadeIn" data-animation-delay="03" style="font-size:24px;border-width:1px;border-style:none;background:#ffffff;color:#329bd2;border-color:#333333;"><i class="icomoon-feather-24x24-tag"></i></div>
-<div class="icon_description" id="Info-list-wrap-4555" style="font-size:24px;">
-<h3 class="ult-responsive info-list-heading" data-ultimate-target="#Info-list-wrap-4555 h3" data-responsive-json-new='{"font-size":"desktop:15px;","line-height":"desktop:35px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:600;color:#45474b;">Malesuada from fames</h3>
-<div class="icon_description_text ult-responsive" data-ultimate-target="#Info-list-wrap-4555 .icon_description_text" data-responsive-json-new='{"font-size":"desktop:13px;","line-height":"desktop:22px;"}' style="color:#8f9194;">
+<div class="icon_description" id="Info-list-wrap-6641" style="font-size:24px;">
+<h3 class="ult-responsive info-list-heading" data-ultimate-target="#Info-list-wrap-6641 h3" data-responsive-json-new='{"font-size":"desktop:15px;","line-height":"desktop:35px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:600;color:#45474b;">Malesuada from fames</h3>
+<div class="icon_description_text ult-responsive" data-ultimate-target="#Info-list-wrap-6641 .icon_description_text" data-responsive-json-new='{"font-size":"desktop:13px;","line-height":"desktop:22px;"}' style="color:#8f9194;">
 <p>Amet for senectus et netuset malesuada fames turpis egestas nulla lorem dolor.</p>
 </div>
 </div>
@@ -689,10 +728,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </div>
 <!-- Row Backgrounds --><div class="upb_color" data-bg-override="ex-full" data-bg-color="#f8f8f9" data-fadeout="" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false" data-custom-vc-row="" data-vc="6.8.0" data-is_old_vc="" data-theme-support="" data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size=""></div>
 <div class="vc_row wpb_row vc_row-fluid vc_custom_1495799426580 vc_row-o-equal-height vc_row-o-content-middle vc_row-flex">
-<div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6 vc_col-xs-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div id="ultimate-heading-97586369eeda9b3d0" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-97586369eeda9b3d0 uvc-1099 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6 vc_col-xs-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div id="ultimate-heading-6052636a4518666af" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-6052636a4518666af uvc-818 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-97586369eeda9b3d0 h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="font-family:&#039;Open Sans&#039;;font-weight:normal;font-style:normal;color:rgba(255,255,255,0.5);margin-bottom:10px;">Available on App Store and Google Play</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-97586369eeda9b3d0 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:38px;","line-height":"desktop:48px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:300;color:#ffffff;">Find Infinite Inspiration &amp; Share Great Photos!</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6052636a4518666af h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="font-family:&#039;Open Sans&#039;;font-weight:normal;font-style:normal;color:rgba(255,255,255,0.5);margin-bottom:10px;">Available on App Store and Google Play</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6052636a4518666af .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:38px;","line-height":"desktop:48px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:300;color:#ffffff;">Find Infinite Inspiration &amp; Share Great Photos!</div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6 vc_col-xs-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid">
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_hidden-sm vc_hidden-xs"><div class="vc_column-inner"><div class="wpb_wrapper">
@@ -793,10 +832,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6"><div class="vc_column-inner"><div class="wpb_wrapper"></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6"><div class="vc_column-inner vc_custom_1495715643618"><div class="wpb_wrapper">
-<div class="ult-spacer spacer-6369eedab2d8c" data-id="6369eedab2d8c" data-height="50" data-height-mobile="0" data-height-tab="50" data-height-tab-portrait="0" data-height-mobile-landscape="0" style="clear:both;display:block;"></div>
-<div id="ultimate-heading-41536369eedab2df0" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-41536369eedab2df0 uvc-7848 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div class="ult-spacer spacer-636a45186a5e7" data-id="636a45186a5e7" data-height="50" data-height-mobile="0" data-height-tab="50" data-height-tab-portrait="0" data-height-mobile-landscape="0" style="clear:both;display:block;"></div>
+<div id="ultimate-heading-607636a45186a638" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-607636a45186a638 uvc-2121 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-41536369eedab2df0 h2" data-responsive-json-new='{"font-size":"desktop:48px;","line-height":"desktop:58px;"}'><h2 style="font-family:&#039;Open Sans&#039;;font-weight:300;margin-bottom:40px;">Outstanding Flexibility</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-607636a45186a638 h2" data-responsive-json-new='{"font-size":"desktop:48px;","line-height":"desktop:58px;"}'><h2 style="font-family:&#039;Open Sans&#039;;font-weight:300;margin-bottom:40px;">Outstanding Flexibility</h2></div>
 </div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1495715945305">
 <div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper">
@@ -806,8 +845,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </div>
 </div></div>
 <div class="aio-icon-component    style_1">
-<div id="Info-box-wrap-9347" class="aio-icon-box default-icon">
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-9347 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:normal;font-style:normal;">Download App</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-9347 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Еristique malesuada facilisi tristique senectus et netus fames ac turpis egestas dolor for nulla.</div> <!-- description -->
+<div id="Info-box-wrap-4080" class="aio-icon-box default-icon">
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-4080 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:normal;font-style:normal;">Download App</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-4080 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Еristique malesuada facilisi tristique senectus et netus fames ac turpis egestas dolor for nulla.</div> <!-- description -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component --><div class="ult-just-icon-wrapper accent-icon-color  vc_custom_1495715492978"><div class="align-icon" style="text-align:left;">
 <div class="aio-icon none " style="font-size:24px;">
@@ -815,8 +854,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </div>
 </div></div>
 <div class="aio-icon-component    style_1">
-<div id="Info-box-wrap-8786" class="aio-icon-box default-icon">
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-8786 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:normal;font-style:normal;">Social Share</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-8786 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Maecenas sit amet tincidunt morbi tristique et netus fames ac turpis egestas dolor for nulla.</div> <!-- description -->
+<div id="Info-box-wrap-5305" class="aio-icon-box default-icon">
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-5305 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:normal;font-style:normal;">Social Share</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-5305 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Maecenas sit amet tincidunt morbi tristique et netus fames ac turpis egestas dolor for nulla.</div> <!-- description -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component -->
 </div></div></div>
@@ -827,8 +866,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </div>
 </div></div>
 <div class="aio-icon-component    style_1">
-<div id="Info-box-wrap-7066" class="aio-icon-box default-icon">
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-7066 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:normal;font-style:normal;">Social Share</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-7066 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Maecenas sit amet tincidunt morbi tristique et netus fames ac turpis egestas dolor for nulla.</div> <!-- description -->
+<div id="Info-box-wrap-9079" class="aio-icon-box default-icon">
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-9079 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:normal;font-style:normal;">Social Share</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-9079 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Maecenas sit amet tincidunt morbi tristique et netus fames ac turpis egestas dolor for nulla.</div> <!-- description -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component --><div class="ult-just-icon-wrapper accent-icon-color  vc_custom_1495715504379"><div class="align-icon" style="text-align:left;">
 <div class="aio-icon none " style="font-size:24px;">
@@ -836,13 +875,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </div>
 </div></div>
 <div class="aio-icon-component    style_1">
-<div id="Info-box-wrap-8750" class="aio-icon-box default-icon">
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-8750 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:normal;font-style:normal;">Download App</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-8750 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Malesuada facilisi tristique senectus et netus fames ac turpis egestas dolor for.</div> <!-- description -->
+<div id="Info-box-wrap-4991" class="aio-icon-box default-icon">
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-4991 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:normal;font-style:normal;">Download App</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-4991 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Malesuada facilisi tristique senectus et netus fames ac turpis egestas dolor for.</div> <!-- description -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component -->
 </div></div></div>
 </div>
-<div class="ult-spacer spacer-6369eedab376b" data-id="6369eedab376b" data-height="20" data-height-mobile="0" data-height-tab="20" data-height-tab-portrait="0" data-height-mobile-landscape="0" style="clear:both;display:block;"></div>
+<div class="ult-spacer spacer-636a45186add4" data-id="636a45186add4" data-height="20" data-height-mobile="0" data-height-tab="20" data-height-tab-portrait="0" data-height-mobile-landscape="0" style="clear:both;display:block;"></div>
 </div></div></div>
 </div>
 <!-- Row Backgrounds --><div class="upb_color" data-bg-override="ex-full" data-bg-color="#ffffff" data-fadeout="" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false" data-custom-vc-row="" data-vc="6.8.0" data-is_old_vc="" data-theme-support="" data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size=""></div>
@@ -856,54 +895,54 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	</div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6"><div class="vc_column-inner vc_custom_1495716402015"><div class="wpb_wrapper">
-<div class="ult-spacer spacer-6369eedac6653" data-id="6369eedac6653" data-height="50" data-height-mobile="0" data-height-tab="50" data-height-tab-portrait="0" data-height-mobile-landscape="0" style="clear:both;display:block;"></div>
-<div id="ultimate-heading-50576369eedac669b" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-50576369eedac669b uvc-7221 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div class="ult-spacer spacer-636a45186b81f" data-id="636a45186b81f" data-height="50" data-height-mobile="0" data-height-tab="50" data-height-tab-portrait="0" data-height-mobile-landscape="0" style="clear:both;display:block;"></div>
+<div id="ultimate-heading-7658636a45186b860" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-7658636a45186b860 uvc-8066 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-50576369eedac669b h2" data-responsive-json-new='{"font-size":"desktop:48px;","line-height":"desktop:58px;"}'><h2 style="font-family:&#039;Open Sans&#039;;font-weight:300;margin-bottom:40px;">How It Works</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-7658636a45186b860 h2" data-responsive-json-new='{"font-size":"desktop:48px;","line-height":"desktop:58px;"}'><h2 style="font-family:&#039;Open Sans&#039;;font-weight:300;margin-bottom:40px;">How It Works</h2></div>
 </div>
 <div class="aio-icon-component  vc_custom_1495798768185  accent-icon-color style_1">
-<div id="Info-box-wrap-4667" class="aio-icon-box left-icon">
+<div id="Info-box-wrap-9577" class="aio-icon-box left-icon">
 <div class="aio-icon-left"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " data-animation="fadeIn" data-animation-delay="03" style="font-size:48px;display:inline-block;">
 	<i class="icomoon-numbers-32x32-number"></i>
 </div>
 </div></div></div>
 <div class="aio-ibd-block">
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-4667 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:28px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:normal;font-style:normal;color:#45474b;">Download App</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-4667 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Maecenas sit amet tincidunt morbi ames ac turpis egestas dolor for nulla. Pellentesque hes ac turpis egestas nulla.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-9577 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:28px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:normal;font-style:normal;color:#45474b;">Download App</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-9577 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Maecenas sit amet tincidunt morbi ames ac turpis egestas dolor for nulla. Pellentesque hes ac turpis egestas nulla.</div> <!-- description -->
 </div> <!-- aio-ibd-block -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component --><div class="aio-icon-component  vc_custom_1495798774856  accent-icon-color style_1">
-<div id="Info-box-wrap-9458" class="aio-icon-box left-icon">
+<div id="Info-box-wrap-9284" class="aio-icon-box left-icon">
 <div class="aio-icon-left"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " data-animation="fadeIn" data-animation-delay="03" style="font-size:48px;display:inline-block;">
 	<i class="icomoon-numbers-32x32-number2"></i>
 </div>
 </div></div></div>
 <div class="aio-ibd-block">
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-9458 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:28px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:normal;font-style:normal;color:#45474b;">Upload Your Images</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-9458 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Ratincidunt morbi tristique et netus fames ac turpis egestas dolor for nulla. Pellentesque habitant morbi tristique senectus et netus!</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-9284 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:28px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:normal;font-style:normal;color:#45474b;">Upload Your Images</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-9284 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Ratincidunt morbi tristique et netus fames ac turpis egestas dolor for nulla. Pellentesque habitant morbi tristique senectus et netus!</div> <!-- description -->
 </div> <!-- aio-ibd-block -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component --><div class="aio-icon-component  vc_custom_1495798780192  accent-icon-color style_1">
-<div id="Info-box-wrap-4674" class="aio-icon-box left-icon">
+<div id="Info-box-wrap-1565" class="aio-icon-box left-icon">
 <div class="aio-icon-left"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " data-animation="fadeIn" data-animation-delay="03" style="font-size:48px;display:inline-block;">
 	<i class="icomoon-numbers-32x32-number3"></i>
 </div>
 </div></div></div>
 <div class="aio-ibd-block">
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-4674 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:28px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:normal;font-style:normal;color:#45474b;">Share with Friends &amp; Have Fun!</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-4674 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Netus fames ac turpis egestas dolor for nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-1565 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:28px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:normal;font-style:normal;color:#45474b;">Share with Friends &amp; Have Fun!</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-1565 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Netus fames ac turpis egestas dolor for nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</div> <!-- description -->
 </div> <!-- aio-ibd-block -->
 </div> <!-- aio-icon-box -->
-</div> <!-- aio-icon-component --><div class="ult-spacer spacer-6369eedac6937" data-id="6369eedac6937" data-height="20" data-height-mobile="0" data-height-tab="20" data-height-tab-portrait="0" data-height-mobile-landscape="0" style="clear:both;display:block;"></div>
+</div> <!-- aio-icon-component --><div class="ult-spacer spacer-636a45186ba95" data-id="636a45186ba95" data-height="20" data-height-mobile="0" data-height-tab="20" data-height-tab-portrait="0" data-height-mobile-landscape="0" style="clear:both;display:block;"></div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6"><div class="vc_column-inner"><div class="wpb_wrapper"></div></div></div>
 </div>
 <!-- Row Backgrounds --><div class="upb_color" data-bg-override="ex-full" data-bg-color="#f8f8f9" data-fadeout="" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false" data-custom-vc-row="" data-vc="6.8.0" data-is_old_vc="" data-theme-support="" data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size=""></div>
 <div id="video" class="vc_row wpb_row vc_row-fluid vc_custom_1495803802236 vc_row-has-fill">
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-2 vc_col-lg-8 vc_col-md-offset-2 vc_col-md-8 vc_col-sm-offset-0"><div class="vc_column-inner vc_custom_1495717685094"><div class="wpb_wrapper">
-<div id="ultimate-heading-63206369eedac7040" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-63206369eedac7040 uvc-601 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-3092636a45186be8c" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-3092636a45186be8c uvc-2857 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-63206369eedac7040 h2" data-responsive-json-new='{"font-size":"desktop:48px;","line-height":"desktop:58px;"}'><h2 style="font-family:&#039;Open Sans&#039;;font-weight:300;margin-bottom:35px;">Let’s Watch Video!</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3092636a45186be8c h2" data-responsive-json-new='{"font-size":"desktop:48px;","line-height":"desktop:58px;"}'><h2 style="font-family:&#039;Open Sans&#039;;font-weight:300;margin-bottom:35px;">Let’s Watch Video!</h2></div>
 </div>
 	<div class="wpb_text_column wpb_content_element ">
 		<div class="wpb_wrapper">
@@ -946,9 +985,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 <!-- Row Backgrounds --><div class="upb_color" data-bg-override="ex-full" data-bg-color="#ffffff" data-fadeout="" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false" data-custom-vc-row="" data-vc="6.8.0" data-is_old_vc="" data-theme-support="" data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size=""></div>
 <div class="vc_row wpb_row vc_row-fluid vc_custom_1495801596541 vc_row-has-fill">
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6"><div class="vc_column-inner vc_custom_1495801649687"><div class="wpb_wrapper">
-<div id="ultimate-heading-15646369eedacd719" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-15646369eedacd719 uvc-599 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div id="ultimate-heading-5560636a45187ee44" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-5560636a45187ee44 uvc-9691 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-15646369eedacd719 h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="font-family:&#039;Open Sans&#039;;font-weight:normal;font-style:normal;color:#ffffff;margin-bottom:35px;">Get Seven App Today!</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5560636a45187ee44 h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="font-family:&#039;Open Sans&#039;;font-weight:normal;font-style:normal;color:#ffffff;margin-bottom:35px;">Get Seven App Today!</h2></div>
 </div>
 <style type="text/css" data-type="the7_shortcodes-inline-css">.shortcode-single-image-wrap.shortcode-single-image-9c3165c03d1a432607b0c40ad0dfc2a4.enable-bg-rollover .rollover i,
 .shortcode-single-image-wrap.shortcode-single-image-9c3165c03d1a432607b0c40ad0dfc2a4.enable-bg-rollover .rollover-video i {
@@ -1020,9 +1059,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </div></div></div></div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6"><div class="vc_column-inner vc_custom_1495801614457"><div class="wpb_wrapper">
-<div id="ultimate-heading-72416369eedae141d" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-72416369eedae141d uvc-9619 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div id="ultimate-heading-3374636a4518815ba" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-3374636a4518815ba uvc-2850 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-72416369eedae141d h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="font-family:&#039;Open Sans&#039;;font-weight:normal;font-style:normal;color:#ffffff;margin-bottom:35px;">Check Out Other Apps!</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3374636a4518815ba h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="font-family:&#039;Open Sans&#039;;font-weight:normal;font-style:normal;color:#ffffff;margin-bottom:35px;">Check Out Other Apps!</h2></div>
 </div>
 <style type="text/css" data-type="the7_shortcodes-inline-css">.carousel-shortcode.carousel-shortcode-id-14c58a51949dd303b89d93b663a47e8c .owl-nav a {
   width: 36px;
@@ -1117,55 +1156,55 @@ document.addEventListener("DOMContentLoaded", function(event) {
   }
 }</style>
 <div class="owl-carousel carousel-shortcode dt-owl-carousel-call carousel-shortcode-id-14c58a51949dd303b89d93b663a47e8c bullets-small-dot-stroke reposition-arrows arrows-bg-off dt-arrow-border-on dt-arrow-hover-border-on disable-arrows-hover-bg arrows-hover-bg-off  " data-scroll-mode="1" data-col-num="3" data-wide-col-num="3" data-laptop-col="3" data-h-tablet-columns-num="3" data-v-tablet-columns-num="2" data-phone-columns-num="1" data-auto-height="false" data-col-gap="30" data-stage-padding="0" data-speed="600" data-autoplay="false" data-autoplay_speed="6000" data-arrows="true" data-bullet="false" data-next-icon="icon-ar-018-r" data-prev-icon="icon-ar-018-l">
-<div class="aio-icon-component  vc_custom_1495800953348   style_1"><a class="aio-icon-box-link" href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener"><div id="Info-box-wrap-5777" class="aio-icon-box top-icon">
+<div class="aio-icon-component  vc_custom_1495800953348   style_1"><a class="aio-icon-box-link" href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener"><div id="Info-box-wrap-8377" class="aio-icon-box top-icon">
 <div class="aio-icon-top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon-img " style="font-size:90px;display:inline-block;">
 	<img class="img-icon" alt="null" src="/wp-content/uploads/sites/70/2016/02/app-icon-01.png">
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-5777 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:18px;"}' style="font-weight:bold;color:#ffffff;">Gaming App</h3></div> <!-- header -->
-</div> <!-- aio-icon-box --></a></div> <!-- aio-icon-component --><div class="aio-icon-component  vc_custom_1495800916536   style_1"><a class="aio-icon-box-link" href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener"><div id="Info-box-wrap-3882" class="aio-icon-box top-icon">
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-8377 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:18px;"}' style="font-weight:bold;color:#ffffff;">Gaming App</h3></div> <!-- header -->
+</div> <!-- aio-icon-box --></a></div> <!-- aio-icon-component --><div class="aio-icon-component  vc_custom_1495800916536   style_1"><a class="aio-icon-box-link" href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener"><div id="Info-box-wrap-3677" class="aio-icon-box top-icon">
 <div class="aio-icon-top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon-img " style="font-size:90px;display:inline-block;">
 	<img class="img-icon" alt="null" src="/wp-content/uploads/sites/70/2016/02/app-icon-02-1.png">
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-3882 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:18px;"}' style="font-weight:bold;color:#ffffff;">Marine App</h3></div> <!-- header -->
-</div> <!-- aio-icon-box --></a></div> <!-- aio-icon-component --><div class="aio-icon-component  vc_custom_1495800975532   style_1"><a class="aio-icon-box-link" href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener"><div id="Info-box-wrap-1114" class="aio-icon-box top-icon">
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-3677 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:18px;"}' style="font-weight:bold;color:#ffffff;">Marine App</h3></div> <!-- header -->
+</div> <!-- aio-icon-box --></a></div> <!-- aio-icon-component --><div class="aio-icon-component  vc_custom_1495800975532   style_1"><a class="aio-icon-box-link" href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener"><div id="Info-box-wrap-3277" class="aio-icon-box top-icon">
 <div class="aio-icon-top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon-img " style="font-size:90px;display:inline-block;">
 	<img class="img-icon" alt="null" src="/wp-content/uploads/sites/70/2016/02/app-icon-05.png">
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-1114 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:18px;"}' style="font-weight:bold;color:#ffffff;">Online Maps</h3></div> <!-- header -->
-</div> <!-- aio-icon-box --></a></div> <!-- aio-icon-component --><div class="aio-icon-component  vc_custom_1495801026186   style_1"><a class="aio-icon-box-link" href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener"><div id="Info-box-wrap-8145" class="aio-icon-box top-icon">
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-3277 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:18px;"}' style="font-weight:bold;color:#ffffff;">Online Maps</h3></div> <!-- header -->
+</div> <!-- aio-icon-box --></a></div> <!-- aio-icon-component --><div class="aio-icon-component  vc_custom_1495801026186   style_1"><a class="aio-icon-box-link" href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener"><div id="Info-box-wrap-4569" class="aio-icon-box top-icon">
 <div class="aio-icon-top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon-img " style="font-size:90px;display:inline-block;">
 	<img class="img-icon" alt="null" src="/wp-content/uploads/sites/70/2016/02/app-icon-04.png">
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-8145 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:18px;"}' style="font-weight:bold;color:#ffffff;">Flight App</h3></div> <!-- header -->
-</div> <!-- aio-icon-box --></a></div> <!-- aio-icon-component --><div class="aio-icon-component  vc_custom_1495801043678   style_1"><a class="aio-icon-box-link" href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener"><div id="Info-box-wrap-4042" class="aio-icon-box top-icon">
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-4569 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:18px;"}' style="font-weight:bold;color:#ffffff;">Flight App</h3></div> <!-- header -->
+</div> <!-- aio-icon-box --></a></div> <!-- aio-icon-component --><div class="aio-icon-component  vc_custom_1495801043678   style_1"><a class="aio-icon-box-link" href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener"><div id="Info-box-wrap-9686" class="aio-icon-box top-icon">
 <div class="aio-icon-top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon-img " style="font-size:90px;display:inline-block;">
 	<img class="img-icon" alt="null" src="/wp-content/uploads/sites/70/2016/02/app-icon-07.png">
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-4042 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:18px;"}' style="font-weight:bold;color:#ffffff;">Gambling App</h3></div> <!-- header -->
-</div> <!-- aio-icon-box --></a></div> <!-- aio-icon-component --><div class="aio-icon-component  vc_custom_1495801080854   style_1"><a class="aio-icon-box-link" href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener"><div id="Info-box-wrap-8753" class="aio-icon-box top-icon">
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-9686 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:18px;"}' style="font-weight:bold;color:#ffffff;">Gambling App</h3></div> <!-- header -->
+</div> <!-- aio-icon-box --></a></div> <!-- aio-icon-component --><div class="aio-icon-component  vc_custom_1495801080854   style_1"><a class="aio-icon-box-link" href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener"><div id="Info-box-wrap-3897" class="aio-icon-box top-icon">
 <div class="aio-icon-top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon-img " style="font-size:90px;display:inline-block;">
 	<img class="img-icon" alt="null" src="/wp-content/uploads/sites/70/2016/02/app-icon-06.png">
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-8753 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:18px;"}' style="font-weight:bold;color:#ffffff;">Note Ideas</h3></div> <!-- header -->
-</div> <!-- aio-icon-box --></a></div> <!-- aio-icon-component --><div class="aio-icon-component  vc_custom_1495801107328   style_1"><a class="aio-icon-box-link" href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener"><div id="Info-box-wrap-1931" class="aio-icon-box top-icon">
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-3897 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:18px;"}' style="font-weight:bold;color:#ffffff;">Note Ideas</h3></div> <!-- header -->
+</div> <!-- aio-icon-box --></a></div> <!-- aio-icon-component --><div class="aio-icon-component  vc_custom_1495801107328   style_1"><a class="aio-icon-box-link" href="https://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener"><div id="Info-box-wrap-5444" class="aio-icon-box top-icon">
 <div class="aio-icon-top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon-img " style="font-size:90px;display:inline-block;">
 	<img class="img-icon" alt="null" src="/wp-content/uploads/sites/70/2016/02/app-icon-03.png">
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-1931 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:18px;"}' style="font-weight:bold;color:#ffffff;">Smart Navigator</h3></div> <!-- header -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-5444 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:18px;"}' style="font-weight:bold;color:#ffffff;">Smart Navigator</h3></div> <!-- header -->
 </div> <!-- aio-icon-box --></a></div> <!-- aio-icon-component -->
 </div>
 </div></div></div>
@@ -1181,19 +1220,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	</div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-4 vc_col-md-4"><div class="vc_column-inner"><div class="wpb_wrapper"><div class=" vc_custom_1454495274532 uavc-icons-center uavc-icons ">
-<a class="aio-tooltip 6369eedae3eff" href="http://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener" data-toggle="tooltip" data-placement="" title=""><div class="aio-icon advanced " data-animation="" data-animation-delay="03" style="color:#ffffff;background:rgba(0,0,0,0.01);border-style:solid;border-color:rgba(255,255,255,0.2);border-width:2px;width:32px;height:32px;line-height:32px;border-radius:500px;font-size:16px;margin-right:5px;">
+<a class="aio-tooltip 636a451883721" href="http://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener" data-toggle="tooltip" data-placement="" title=""><div class="aio-icon advanced " data-animation="" data-animation-delay="03" style="color:#ffffff;background:rgba(0,0,0,0.01);border-style:solid;border-color:rgba(255,255,255,0.2);border-width:2px;width:32px;height:32px;line-height:32px;border-radius:500px;font-size:16px;margin-right:5px;">
 	<i class="icomoon-free-social-contact-16x16-facebook"></i>
 </div></a>
-<a class="aio-tooltip 6369eedae3f50" href="http://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener" data-toggle="tooltip" data-placement="" title=""><div class="aio-icon advanced " data-animation="" data-animation-delay="03" style="color:#ffffff;background:rgba(0,0,0,0.01);border-style:solid;border-color:rgba(255,255,255,0.2);border-width:2px;width:32px;height:32px;line-height:32px;border-radius:500px;font-size:16px;margin-right:5px;">
+<a class="aio-tooltip 636a451883759" href="http://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener" data-toggle="tooltip" data-placement="" title=""><div class="aio-icon advanced " data-animation="" data-animation-delay="03" style="color:#ffffff;background:rgba(0,0,0,0.01);border-style:solid;border-color:rgba(255,255,255,0.2);border-width:2px;width:32px;height:32px;line-height:32px;border-radius:500px;font-size:16px;margin-right:5px;">
 	<i class="icomoon-free-social-contact-16x16-twitter"></i>
 </div></a>
-<a class="aio-tooltip 6369eedae3f7f" href="http://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener" data-toggle="tooltip" data-placement="" title=""><div class="aio-icon advanced " data-animation="" data-animation-delay="03" style="color:#ffffff;background:rgba(0,0,0,0.01);border-style:solid;border-color:rgba(255,255,255,0.2);border-width:2px;width:32px;height:32px;line-height:32px;border-radius:500px;font-size:16px;margin-right:5px;">
+<a class="aio-tooltip 636a451883785" href="http://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener" data-toggle="tooltip" data-placement="" title=""><div class="aio-icon advanced " data-animation="" data-animation-delay="03" style="color:#ffffff;background:rgba(0,0,0,0.01);border-style:solid;border-color:rgba(255,255,255,0.2);border-width:2px;width:32px;height:32px;line-height:32px;border-radius:500px;font-size:16px;margin-right:5px;">
 	<i class="icomoon-free-social-contact-16x16-linkedin2"></i>
 </div></a>
-<a class="aio-tooltip 6369eedae3fa7" href="http://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener" data-toggle="tooltip" data-placement="" title=""><div class="aio-icon advanced " data-animation="" data-animation-delay="03" style="color:#ffffff;background:rgba(0,0,0,0.01);border-style:solid;border-color:rgba(255,255,255,0.2);border-width:2px;width:32px;height:32px;line-height:32px;border-radius:500px;font-size:16px;margin-right:5px;">
+<a class="aio-tooltip 636a4518837af" href="http://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener" data-toggle="tooltip" data-placement="" title=""><div class="aio-icon advanced " data-animation="" data-animation-delay="03" style="color:#ffffff;background:rgba(0,0,0,0.01);border-style:solid;border-color:rgba(255,255,255,0.2);border-width:2px;width:32px;height:32px;line-height:32px;border-radius:500px;font-size:16px;margin-right:5px;">
 	<i class="icomoon-free-social-contact-16x16-appleinc"></i>
 </div></a>
-<a class="aio-tooltip 6369eedae3fcd" href="http://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener" data-toggle="tooltip" data-placement="" title=""><div class="aio-icon advanced " data-animation="" data-animation-delay="03" style="color:#ffffff;background:rgba(0,0,0,0.01);border-style:solid;border-color:rgba(255,255,255,0.2);border-width:2px;width:32px;height:32px;line-height:32px;border-radius:500px;font-size:16px;margin-right:5px;">
+<a class="aio-tooltip 636a4518837d7" href="http://themeforest.net/item/the7-responsive-multipurpose-wordpress-theme/5556590" target="_blank" rel="noopener" data-toggle="tooltip" data-placement="" title=""><div class="aio-icon advanced " data-animation="" data-animation-delay="03" style="color:#ffffff;background:rgba(0,0,0,0.01);border-style:solid;border-color:rgba(255,255,255,0.2);border-width:2px;width:32px;height:32px;line-height:32px;border-radius:500px;font-size:16px;margin-right:5px;">
 	<i class="icomoon-free-social-contact-16x16-android"></i>
 </div></a>
 </div></div></div></div>
@@ -1408,5 +1447,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </body>
 
 
-<!-- Page supported by LiteSpeed Cache 5.3 on 2022-11-08 05:53:31 -->
+<!-- Page supported by LiteSpeed Cache 5.3 on 2022-11-08 12:01:28 -->
 </html>
