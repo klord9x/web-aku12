@@ -69,6 +69,45 @@ img.emoji {
 <link rel="stylesheet" id="js_composer_front-css" href="/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=6.8.0" type="text/css" media="all">
 <link rel="stylesheet" id="dt-web-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto Condensed:400,600,700|Roboto:400,600,700|Open Sans:400,600,700" type="text/css" media="all">
 <link rel="stylesheet" id="dt-main-css" href="/wp-content/themes/dt-the7/css/main.min.css?ver=11.1.1" type="text/css" media="all">
+<style id="dt-main-inline-css" type="text/css">body #load {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 9901;
+  opacity: 1;
+  visibility: visible;
+  transition: all .35s ease-out;
+}
+.load-wrap {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -ms-flex-pack: center;
+  -ms-justify-content: center;
+  justify-content: center;
+}
+.load-wrap > svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+#load {
+  background: var(--the7-elementor-beautiful-loading-bg,#ffffff);
+  --the7-beautiful-spinner-color2: var(--the7-beautiful-spinner-color,#f9325a);
+}</style>
 <link rel="stylesheet" id="the7-custom-scrollbar-css" href="/wp-content/themes/dt-the7/lib/custom-scrollbar/custom-scrollbar.min.css?ver=11.1.1" type="text/css" media="all">
 <link rel="stylesheet" id="the7-wpbakery-css" href="/wp-content/themes/dt-the7/css/wpbakery.min.css?ver=11.1.1" type="text/css" media="all">
 <link rel="stylesheet" id="the7-core-css" href="/wp-content/plugins/dt-the7-core/assets/css/post-type.min.css?ver=2.7.0" type="text/css" media="all">
@@ -360,8 +399,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 <div id="content" class="content" role="main">
 
 	<div id="about" class="vc_row wpb_row vc_row-fluid vc_custom_1490641200089">
-<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1490617754354"><div class="wpb_wrapper"><div id="ultimate-heading-44056369e93dadd91" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-44056369e93dadd91 uvc-7010 " data-hspacer="line_with_icon" data-hline_width="250" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="3" data-hborder_color="#fc2e58" data-icon_width="14" data-hfixer="15" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-44056369e93dadd91 h2" data-responsive-json-new='{"font-size":"desktop:50px;","line-height":"desktop:60px;"}'><h2 style="font-weight:bold;margin-bottom:10px;">ABOUT SEVEN CONFERENCE</h2></div>
+<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1490617754354"><div class="wpb_wrapper"><div id="ultimate-heading-4777636a41cb1e90f" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-4777636a41cb1e90f uvc-1125 " data-hspacer="line_with_icon" data-hline_width="250" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="3" data-hborder_color="#fc2e58" data-icon_width="14" data-hfixer="15" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4777636a41cb1e90f h2" data-responsive-json-new='{"font-size":"desktop:50px;","line-height":"desktop:60px;"}'><h2 style="font-weight:bold;margin-bottom:10px;">ABOUT SEVEN CONFERENCE</h2></div>
 <div class="uvc-heading-spacer line_with_icon" style="topheight:14px;"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="color:#fc2e58;font-size:14px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-bookmark"></i>
@@ -369,10 +408,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </div></div></div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-7 vc_col-md-6 vc_col-xs-12"><div class="vc_column-inner vc_custom_1458851239606"><div class="wpb_wrapper">
-<div id="ultimate-heading-63456369e93dae001" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-63456369e93dae001 uvc-8155 accent-title-color color-title" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div id="ultimate-heading-8118636a41cb1eb4f" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-8118636a41cb1eb4f uvc-3468 accent-title-color color-title" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-63456369e93dae001 h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="font-weight:bold;margin-bottom:10px;">MAIN CONFERENCE TOPIC:</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-63456369e93dae001 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:40px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;margin-bottom:20px;">Eincidunt eleifend dapibus func. Auris id luctus – faucibus dapibus quis suscipit lorem.</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-8118636a41cb1eb4f h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="font-weight:bold;margin-bottom:10px;">MAIN CONFERENCE TOPIC:</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-8118636a41cb1eb4f .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:40px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;margin-bottom:20px;">Eincidunt eleifend dapibus func. Auris id luctus – faucibus dapibus quis suscipit lorem.</div>
 </div>
 	<div class="wpb_text_column wpb_content_element  vc_custom_1490638778796">
 		<div class="wpb_wrapper">
@@ -381,9 +420,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 		</div>
 	</div>
-<div id="ultimate-heading-24426369e93dae24d" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-24426369e93dae24d uvc-7429 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div id="ultimate-heading-9551636a41cb1ed48" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-9551636a41cb1ed48 uvc-9047 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-24426369e93dae24d h2" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:40px;"}'><h2 style="font-weight:bold;margin-bottom:20px;">What information You’ll get:</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9551636a41cb1ed48 h2" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:40px;"}'><h2 style="font-weight:bold;margin-bottom:20px;">What information You’ll get:</h2></div>
 </div>
 <div class="standard-arrow bullet-top">
 <ul>
@@ -396,55 +435,55 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-offset-0 vc_col-lg-5 vc_col-md-offset-0 vc_col-md-6 vc_col-sm-offset-2 vc_col-xs-12"><div class="vc_column-inner vc_custom_1458851220355"><div class="wpb_wrapper">
-<div class="info-wrapper ult-adjust-bottom-margin"><div id="info-circle-wrapper-6369e93dae9d1" data-uniqid="6369e93dae9d1" class="info-circle-wrapper  info-circle-responsive " data-half-percentage="70" data-circle-type="full-circle">
+<div class="info-wrapper ult-adjust-bottom-margin"><div id="info-circle-wrapper-636a41cb1f231" data-uniqid="636a41cb1f231" class="info-circle-wrapper  info-circle-responsive " data-half-percentage="70" data-circle-type="full-circle">
 <div class="info-c-full-br" style="border:3px solid #3148bf;width:100%;opacity:0;" data-start-degree="90" data-divert="" data-info-circle-angle="full" data-responsive-circle="on" data-responsive-breakpoint="400" data-launch="linear" data-launch-duration="0.6" data-launch-delay="0.2" data-slide-true="on" data-slide-duration="5" data-icon-size="24" data-icon-show="show" data-icon-show-size="56" data-highlight-style="info-circle-pop" data-focus-on="hover">
 <div class="icon-circle-list">
 <div class="info-circle-icons " style="background:#3148bf;color:#ffffff;"><i class="icomoon-font-awesome-14x14-suitcase info-circle-icon"></i></div>
 <div class="info-details" data-icon-class="ult-info-circle-icon"><div class="info-circle-def"><div class="info-circle-sub-def">
 <i class="icomoon-font-awesome-14x14-suitcase info-circle-icon"></i><div class="responsive-font-class ult-responsive">
-<h3 data-ultimate-target="#info-cirlce-wrap-9278 .responsive-font-class h3.new-cust-responsive-class" data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:36px;"}' class="info-circle-heading ult-responsive new-cust-responsive-class" style="font-weight:bold;">Famous Speakers</h3>
+<h3 data-ultimate-target="#info-cirlce-wrap-6759 .responsive-font-class h3.new-cust-responsive-class" data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:36px;"}' class="info-circle-heading ult-responsive new-cust-responsive-class" style="font-weight:bold;">Famous Speakers</h3>
 <div class="info-circle-text " style="font-weight:normal;">Nullam faucibus dictum nibh vel tempor &#8211; at dapibus!</div>
 </div>
 </div></div></div>
 <div class="info-circle-icons " style="background:#3148bf;color:#ffffff;"><i class="icomoon-font-awesome-14x14-info info-circle-icon"></i></div>
 <div class="info-details" data-icon-class="ult-info-circle-icon"><div class="info-circle-def"><div class="info-circle-sub-def">
 <i class="icomoon-font-awesome-14x14-info info-circle-icon"></i><div class="responsive-font-class ult-responsive">
-<h3 data-ultimate-target="#info-cirlce-wrap-9278 .responsive-font-class h3.new-cust-responsive-class" data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:36px;"}' class="info-circle-heading ult-responsive new-cust-responsive-class" style="font-weight:bold;">Actual Topics</h3>
+<h3 data-ultimate-target="#info-cirlce-wrap-6759 .responsive-font-class h3.new-cust-responsive-class" data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:36px;"}' class="info-circle-heading ult-responsive new-cust-responsive-class" style="font-weight:bold;">Actual Topics</h3>
 <div class="info-circle-text " style="font-weight:normal;">Nunc facilisis mauris id luctus nunc lacus faucibus lorem.</div>
 </div>
 </div></div></div>
 <div class="info-circle-icons " style="background:#3148bf;color:#ffffff;"><i class="icomoon-font-awesome-14x14-coffee info-circle-icon"></i></div>
 <div class="info-details" data-icon-class="ult-info-circle-icon"><div class="info-circle-def"><div class="info-circle-sub-def">
 <i class="icomoon-font-awesome-14x14-coffee info-circle-icon"></i><div class="responsive-font-class ult-responsive">
-<h3 data-ultimate-target="#info-cirlce-wrap-9278 .responsive-font-class h3.new-cust-responsive-class" data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:36px;"}' class="info-circle-heading ult-responsive new-cust-responsive-class" style="font-weight:bold;">Coffee Breaks Included</h3>
+<h3 data-ultimate-target="#info-cirlce-wrap-6759 .responsive-font-class h3.new-cust-responsive-class" data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:36px;"}' class="info-circle-heading ult-responsive new-cust-responsive-class" style="font-weight:bold;">Coffee Breaks Included</h3>
 <div class="info-circle-text " style="font-weight:normal;">Pellen tesque habitant morbi tristique senectu.</div>
 </div>
 </div></div></div>
 <div class="info-circle-icons " style="background:#3148bf;color:#ffffff;"><i class="icomoon-font-awesome-14x14-comments info-circle-icon"></i></div>
 <div class="info-details" data-icon-class="ult-info-circle-icon"><div class="info-circle-def"><div class="info-circle-sub-def">
 <i class="icomoon-font-awesome-14x14-comments info-circle-icon"></i><div class="responsive-font-class ult-responsive">
-<h3 data-ultimate-target="#info-cirlce-wrap-9278 .responsive-font-class h3.new-cust-responsive-class" data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:36px;"}' class="info-circle-heading ult-responsive new-cust-responsive-class" style="font-weight:bold;">Individual Consultations</h3>
+<h3 data-ultimate-target="#info-cirlce-wrap-6759 .responsive-font-class h3.new-cust-responsive-class" data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:36px;"}' class="info-circle-heading ult-responsive new-cust-responsive-class" style="font-weight:bold;">Individual Consultations</h3>
 <div class="info-circle-text " style="font-weight:normal;">Lorem ipsum &#8211; tesque morbi dolor for tristique senectu.</div>
 </div>
 </div></div></div>
 <div class="info-circle-icons " style="background:#3148bf;color:#ffffff;"><i class="icomoon-font-awesome-14x14-folder-open info-circle-icon"></i></div>
 <div class="info-details" data-icon-class="ult-info-circle-icon"><div class="info-circle-def"><div class="info-circle-sub-def">
 <i class="icomoon-font-awesome-14x14-folder-open info-circle-icon"></i><div class="responsive-font-class ult-responsive">
-<h3 data-ultimate-target="#info-cirlce-wrap-9278 .responsive-font-class h3.new-cust-responsive-class" data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:36px;"}' class="info-circle-heading ult-responsive new-cust-responsive-class" style="font-weight:bold;">Free Materials</h3>
+<h3 data-ultimate-target="#info-cirlce-wrap-6759 .responsive-font-class h3.new-cust-responsive-class" data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:36px;"}' class="info-circle-heading ult-responsive new-cust-responsive-class" style="font-weight:bold;">Free Materials</h3>
 <div class="info-circle-text " style="font-weight:normal;">Dolor glavrida amet habitant morbi dolor agalvida &#8211; for tristique lorem senectu.</div>
 </div>
 </div></div></div>
 </div>
-<div id="info-cirlce-wrap-9278" class="info-c-full" style="background-color:#3148bf;color:#ffffff;width:80%;height:80%;margin:10%;"><div class="info-c-full-wrap"></div></div>
+<div id="info-cirlce-wrap-6759" class="info-c-full" style="background-color:#3148bf;color:#ffffff;width:80%;height:80%;margin:10%;"><div class="info-c-full-wrap"></div></div>
 </div>
 <div class="smile_icon_list_wrap " data-content_bg="#3148bf" data-content_color="#ffffff">
-							<ul id="info-cirlce-wrap-9278" class="smile_icon_list left circle with_bg"><li class="icon_list_item" style="font-size:72px;">
+							<ul id="info-cirlce-wrap-6759" class="smile_icon_list left circle with_bg"><li class="icon_list_item" style="font-size:72px;">
 									<div class="icon_list_icon" style="font-size:24px;width:24px;height:24px;line-height:1;">
 										<i class="smt-pencil"></i>
 									</div>
 									<div class="icon_description" style="font-size:24px;">
-										<div class="responsive-font-class ult-responsive" data-ultimate-target="#info-cirlce-wrap-9278 .responsive-font-class *" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-weight:normal;">
-											<h3 data-ultimate-target="#info-cirlce-wrap-9278 .responsive-font-class h3.new-cust-responsive-class" data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:36px;"}' class="ult-responsive new-cust-responsive-class" style="font-weight:bold;"></h3>
+										<div class="responsive-font-class ult-responsive" data-ultimate-target="#info-cirlce-wrap-6759 .responsive-font-class *" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-weight:normal;">
+											<h3 data-ultimate-target="#info-cirlce-wrap-6759 .responsive-font-class h3.new-cust-responsive-class" data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:36px;"}' class="ult-responsive new-cust-responsive-class" style="font-weight:bold;"></h3>
 											<p></p>
 										</div>
 									</div>
@@ -453,16 +492,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </li></ul>
 						</div>
 </div></div>
-<div id="ultimate-heading-41926369e93daeb8c" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-41926369e93daeb8c uvc-7083 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-4855636a41cb1f4ed" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-4855636a41cb1f4ed uvc-9310 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-41926369e93daeb8c h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="font-weight:bold;margin-bottom:30px;">Eincidunt eleifend dapibus func, auris id luctus faucibus dapibus quis suscipit lorem.</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4855636a41cb1f4ed h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="font-weight:bold;margin-bottom:30px;">Eincidunt eleifend dapibus func, auris id luctus faucibus dapibus quis suscipit lorem.</h2></div>
 </div>
-<div class=" ubtn-ctn-center anchor-link"><a class="ubtn-link ult-adjust-bottom-margin ubtn-center ubtn-custom anchor-link" href="#!/contact"><button type="button" id="ubtn-2716" class="ubtn ult-adjust-bottom-margin ult-responsive ubtn-custom ubtn-no-hover-bg  none  ubtn-center   tooltip-6369e93daebcf" data-hover="" data-border-color="" data-bg="#fc2e58" data-hover-bg="#d9163e" data-border-hover="" data-shadow-hover="" data-shadow-click="none" data-shadow="" data-shd-shadow="" data-ultimate-target="#ubtn-2716" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:18px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;width:px;min-height:px;padding:15px 25px;border:none;background: #fc2e58;color: #ffffff;"><span class="ubtn-hover" style="background-color:#d9163e"></span><span class="ubtn-data ubtn-text ">ONLINE REGISTRATION</span></button></a></div>
+<div class=" ubtn-ctn-center anchor-link"><a class="ubtn-link ult-adjust-bottom-margin ubtn-center ubtn-custom anchor-link" href="#!/contact"><button type="button" id="ubtn-7398" class="ubtn ult-adjust-bottom-margin ult-responsive ubtn-custom ubtn-no-hover-bg  none  ubtn-center   tooltip-636a41cb1f532" data-hover="" data-border-color="" data-bg="#fc2e58" data-hover-bg="#d9163e" data-border-hover="" data-shadow-hover="" data-shadow-click="none" data-shadow="" data-shd-shadow="" data-ultimate-target="#ubtn-7398" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:18px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;width:px;min-height:px;padding:15px 25px;border:none;background: #fc2e58;color: #ffffff;"><span class="ubtn-hover" style="background-color:#d9163e"></span><span class="ubtn-data ubtn-text ">ONLINE REGISTRATION</span></button></a></div>
 </div></div></div>
 </div>
 <div id="schedule" class="vc_row wpb_row vc_row-fluid vc_custom_1490641178080">
-<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1490612137801"><div class="wpb_wrapper"><div id="ultimate-heading-30596369e93db1e0a" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-30596369e93db1e0a uvc-4419 " data-hspacer="line_with_icon" data-hline_width="250" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="3" data-hborder_color="#fc2e58" data-icon_width="14" data-hfixer="15" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-30596369e93db1e0a h2" data-responsive-json-new='{"font-size":"desktop:50px;","line-height":"desktop:60px;"}'><h2 style="font-weight:bold;color:#ffffff;margin-bottom:10px;">CONFERENCE SCHEDULE</h2></div>
+<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1490612137801"><div class="wpb_wrapper"><div id="ultimate-heading-2311636a41cb21411" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2311636a41cb21411 uvc-7827 " data-hspacer="line_with_icon" data-hline_width="250" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="3" data-hborder_color="#fc2e58" data-icon_width="14" data-hfixer="15" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2311636a41cb21411 h2" data-responsive-json-new='{"font-size":"desktop:50px;","line-height":"desktop:60px;"}'><h2 style="font-weight:bold;color:#ffffff;margin-bottom:10px;">CONFERENCE SCHEDULE</h2></div>
 <div class="uvc-heading-spacer line_with_icon" style="topheight:14px;"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="color:#fc2e58;font-size:14px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-bookmark"></i>
@@ -472,9 +511,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 <div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="smile-icon-timeline-wrap csstime   " data-time_sep_bg_color="#fc2e58" data-time_block_bg_color="#ffffff" data-time_sep_color="#ffffff">
 <div class="timeline-line " style="border-right-color:rgba(255,255,255,0.25);"><span></span></div>
 <div class="timeline-wrapper"></div>
-				<div id="timeline-seperator-2281" class="timeline-separator-text " data-sep-col="#ffffff" data-sep-bg-col=""><span class="sep-text ult-responsive" data-ultimate-target="#timeline-seperator-2281 .sep-text" data-responsive-json-new='{"font-size":"desktop:36px;","line-height":"desktop:36px;"}' style="color:#ffffff;border-style:solid;border-color:#fc2e58;border-width:10px;border-radius:0px;font-family:&#039;Roboto Condensed&#039;;font-weight:bold;">DAY 1: BUSINESS</span></div>
+				<div id="timeline-seperator-8911" class="timeline-separator-text " data-sep-col="#ffffff" data-sep-bg-col=""><span class="sep-text ult-responsive" data-ultimate-target="#timeline-seperator-8911 .sep-text" data-responsive-json-new='{"font-size":"desktop:36px;","line-height":"desktop:36px;"}' style="color:#ffffff;border-style:solid;border-color:#fc2e58;border-width:10px;border-radius:0px;font-family:&#039;Roboto Condensed&#039;;font-weight:bold;">DAY 1: BUSINESS</span></div>
 <div class="timeline-wrapper "></div>
-				<div id="timeline-seperator-6676" class="timeline-separator-text " data-sep-col="#ffffff" data-sep-bg-col=""><span class="sep-text ult-responsive" data-ultimate-target="#timeline-seperator-6676 .sep-text" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:22px;"}' style="color:#ffffff;border-style:solid;border-color:#fc2e58;border-width:8px;border-radius:0px;font-family:&#039;Roboto Condensed&#039;;font-weight:bold;">8:30-9:00 Registration</span></div>
+				<div id="timeline-seperator-5575" class="timeline-separator-text " data-sep-col="#ffffff" data-sep-bg-col=""><span class="sep-text ult-responsive" data-ultimate-target="#timeline-seperator-5575 .sep-text" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:22px;"}' style="color:#ffffff;border-style:solid;border-color:#fc2e58;border-width:8px;border-radius:0px;font-family:&#039;Roboto Condensed&#039;;font-weight:bold;">8:30-9:00 Registration</span></div>
 <div class="timeline-wrapper ">
 <div class="timeline-block ">
 <div class="timeline-dot"></div>
@@ -489,9 +528,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </div></div></div> <!-- icon -->
 </div>
 <div class="timeline-header-block">
-							<div id="timeline-item-2360" class="timeline-header">
-<h3 class="ult-timeline-title ult-responsive" data-ultimate-target="#timeline-item-2360 .ult-timeline-title" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;">Lorem ipsum dolor - vitae dui cursus glavrida.</h3>
-<div class="ult-responsive timeline-item-spt" data-ultimate-target="#timeline-item-2360 .timeline-item-spt" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'>Speaker: <span class="paint-accent-color">Alex Fireblood</span><br>
+							<div id="timeline-item-6180" class="timeline-header">
+<h3 class="ult-timeline-title ult-responsive" data-ultimate-target="#timeline-item-6180 .ult-timeline-title" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;">Lorem ipsum dolor - vitae dui cursus glavrida.</h3>
+<div class="ult-responsive timeline-item-spt" data-ultimate-target="#timeline-item-6180 .timeline-item-spt" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'>Speaker: <span class="paint-accent-color">Alex Fireblood</span><br>
 9:00 &#8211; 10:00</div>
 </div> <!-- header -->
 </div>
@@ -509,9 +548,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </div></div></div> <!-- icon -->
 </div>
 <div class="timeline-header-block">
-							<div id="timeline-item-8091" class="timeline-header">
-<h3 class="ult-timeline-title ult-responsive" data-ultimate-target="#timeline-item-8091 .ult-timeline-title" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}' style="font-family:&#039;Roboto Condensed&#039;;">Phasellus quis: mi vitae dui elementum cursus</h3>
-<div class="ult-responsive timeline-item-spt" data-ultimate-target="#timeline-item-8091 .timeline-item-spt" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'>Speaker: <span class="paint-accent-color">Richard Black</span><br>
+							<div id="timeline-item-2658" class="timeline-header">
+<h3 class="ult-timeline-title ult-responsive" data-ultimate-target="#timeline-item-2658 .ult-timeline-title" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}' style="font-family:&#039;Roboto Condensed&#039;;">Phasellus quis: mi vitae dui elementum cursus</h3>
+<div class="ult-responsive timeline-item-spt" data-ultimate-target="#timeline-item-2658 .timeline-item-spt" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'>Speaker: <span class="paint-accent-color">Richard Black</span><br>
 10:00 &#8211; 11:30</div>
 </div> <!-- header -->
 </div>
@@ -529,15 +568,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </div></div></div> <!-- icon -->
 </div>
 <div class="timeline-header-block">
-							<div id="timeline-item-6500" class="timeline-header">
-<h3 class="ult-timeline-title ult-responsive" data-ultimate-target="#timeline-item-6500 .ult-timeline-title" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;">Morbi vitae nunc aliquet euismod dia dolor.</h3>
-<div class="ult-responsive timeline-item-spt" data-ultimate-target="#timeline-item-6500 .timeline-item-spt" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'>Speaker: <span class="paint-accent-color">David Wildwind</span><br>
+							<div id="timeline-item-6614" class="timeline-header">
+<h3 class="ult-timeline-title ult-responsive" data-ultimate-target="#timeline-item-6614 .ult-timeline-title" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;">Morbi vitae nunc aliquet euismod dia dolor.</h3>
+<div class="ult-responsive timeline-item-spt" data-ultimate-target="#timeline-item-6614 .timeline-item-spt" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'>Speaker: <span class="paint-accent-color">David Wildwind</span><br>
 11:30 &#8211; 13:30</div>
 </div> <!-- header -->
 </div>
 </div>
 </div>
-				<div id="timeline-seperator-4149" class="timeline-separator-text " data-sep-col="#ffffff" data-sep-bg-col=""><span class="sep-text ult-responsive" data-ultimate-target="#timeline-seperator-4149 .sep-text" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:22px;"}' style="color:#ffffff;border-style:solid;border-color:#fc2e58;border-width:8px;border-radius:0px;font-family:&#039;Roboto Condensed&#039;;font-weight:bold;">13:30-14:30 Coffee Break</span></div>
+				<div id="timeline-seperator-6901" class="timeline-separator-text " data-sep-col="#ffffff" data-sep-bg-col=""><span class="sep-text ult-responsive" data-ultimate-target="#timeline-seperator-6901 .sep-text" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:22px;"}' style="color:#ffffff;border-style:solid;border-color:#fc2e58;border-width:8px;border-radius:0px;font-family:&#039;Roboto Condensed&#039;;font-weight:bold;">13:30-14:30 Coffee Break</span></div>
 <div class="timeline-wrapper ">
 <div class="timeline-block ">
 <div class="timeline-dot"></div>
@@ -552,9 +591,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </div></div></div> <!-- icon -->
 </div>
 <div class="timeline-header-block">
-							<div id="timeline-item-7429" class="timeline-header">
-<h3 class="ult-timeline-title ult-responsive" data-ultimate-target="#timeline-item-7429 .ult-timeline-title" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;">Lorem ipsum dolor - vitae dui cursus glavrida.</h3>
-<div class="ult-responsive timeline-item-spt" data-ultimate-target="#timeline-item-7429 .timeline-item-spt" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'>Speaker: <span class="paint-accent-color">Alex Fireblood</span><br>
+							<div id="timeline-item-6349" class="timeline-header">
+<h3 class="ult-timeline-title ult-responsive" data-ultimate-target="#timeline-item-6349 .ult-timeline-title" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;">Lorem ipsum dolor - vitae dui cursus glavrida.</h3>
+<div class="ult-responsive timeline-item-spt" data-ultimate-target="#timeline-item-6349 .timeline-item-spt" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'>Speaker: <span class="paint-accent-color">Alex Fireblood</span><br>
 14:30 &#8211; 15:30</div>
 </div> <!-- header -->
 </div>
@@ -572,9 +611,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </div></div></div> <!-- icon -->
 </div>
 <div class="timeline-header-block">
-							<div id="timeline-item-9488" class="timeline-header">
-<h3 class="ult-timeline-title ult-responsive" data-ultimate-target="#timeline-item-9488 .ult-timeline-title" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}' style="font-family:&#039;Roboto Condensed&#039;;">Phasellus quis: mi vitae dui elementum cursus</h3>
-<div class="ult-responsive timeline-item-spt" data-ultimate-target="#timeline-item-9488 .timeline-item-spt" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'>Speaker: <span class="paint-accent-color">Richard Black</span><br>
+							<div id="timeline-item-1847" class="timeline-header">
+<h3 class="ult-timeline-title ult-responsive" data-ultimate-target="#timeline-item-1847 .ult-timeline-title" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}' style="font-family:&#039;Roboto Condensed&#039;;">Phasellus quis: mi vitae dui elementum cursus</h3>
+<div class="ult-responsive timeline-item-spt" data-ultimate-target="#timeline-item-1847 .timeline-item-spt" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'>Speaker: <span class="paint-accent-color">Richard Black</span><br>
 15:30 &#8211; 17:00</div>
 </div> <!-- header -->
 </div>
@@ -592,15 +631,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </div></div></div> <!-- icon -->
 </div>
 <div class="timeline-header-block">
-							<div id="timeline-item-1964" class="timeline-header">
-<h3 class="ult-timeline-title ult-responsive" data-ultimate-target="#timeline-item-1964 .ult-timeline-title" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;">Morbi vitae nunc aliquet euismod dia dolor.</h3>
-<div class="ult-responsive timeline-item-spt" data-ultimate-target="#timeline-item-1964 .timeline-item-spt" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'>Speaker: <span class="paint-accent-color">David Wildwind</span><br>
+							<div id="timeline-item-4093" class="timeline-header">
+<h3 class="ult-timeline-title ult-responsive" data-ultimate-target="#timeline-item-4093 .ult-timeline-title" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;">Morbi vitae nunc aliquet euismod dia dolor.</h3>
+<div class="ult-responsive timeline-item-spt" data-ultimate-target="#timeline-item-4093 .timeline-item-spt" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'>Speaker: <span class="paint-accent-color">David Wildwind</span><br>
 17:00 &#8211; 18:00</div>
 </div> <!-- header -->
 </div>
 </div>
 </div>
-				<div id="timeline-seperator-6615" class="timeline-separator-text " data-sep-col="#ffffff" data-sep-bg-col=""><span class="sep-text ult-responsive" data-ultimate-target="#timeline-seperator-6615 .sep-text" data-responsive-json-new='{"font-size":"desktop:36px;","line-height":"desktop:36px;"}' style="color:#ffffff;border-style:solid;border-color:#fc2e58;border-width:10px;border-radius:0px;font-family:&#039;Roboto Condensed&#039;;font-weight:bold;">DAY 2: FINANCE</span></div>
+				<div id="timeline-seperator-7907" class="timeline-separator-text " data-sep-col="#ffffff" data-sep-bg-col=""><span class="sep-text ult-responsive" data-ultimate-target="#timeline-seperator-7907 .sep-text" data-responsive-json-new='{"font-size":"desktop:36px;","line-height":"desktop:36px;"}' style="color:#ffffff;border-style:solid;border-color:#fc2e58;border-width:10px;border-radius:0px;font-family:&#039;Roboto Condensed&#039;;font-weight:bold;">DAY 2: FINANCE</span></div>
 <div class="timeline-wrapper ">
 <div class="timeline-block ">
 <div class="timeline-dot"></div>
@@ -615,9 +654,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </div></div></div> <!-- icon -->
 </div>
 <div class="timeline-header-block">
-							<div id="timeline-item-7295" class="timeline-header">
-<h3 class="ult-timeline-title ult-responsive" data-ultimate-target="#timeline-item-7295 .ult-timeline-title" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;">Lorem ipsum dolor - vitae dui cursus glavrida.</h3>
-<div class="ult-responsive timeline-item-spt" data-ultimate-target="#timeline-item-7295 .timeline-item-spt" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'>Speaker: <span class="paint-accent-color">Alex Fireblood</span><br>
+							<div id="timeline-item-4393" class="timeline-header">
+<h3 class="ult-timeline-title ult-responsive" data-ultimate-target="#timeline-item-4393 .ult-timeline-title" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;">Lorem ipsum dolor - vitae dui cursus glavrida.</h3>
+<div class="ult-responsive timeline-item-spt" data-ultimate-target="#timeline-item-4393 .timeline-item-spt" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'>Speaker: <span class="paint-accent-color">Alex Fireblood</span><br>
 9:00 &#8211; 10:00</div>
 </div> <!-- header -->
 </div>
@@ -635,9 +674,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </div></div></div> <!-- icon -->
 </div>
 <div class="timeline-header-block">
-							<div id="timeline-item-9480" class="timeline-header">
-<h3 class="ult-timeline-title ult-responsive" data-ultimate-target="#timeline-item-9480 .ult-timeline-title" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}' style="font-family:&#039;Roboto Condensed&#039;;">Phasellus quis: mi vitae dui elementum cursus</h3>
-<div class="ult-responsive timeline-item-spt" data-ultimate-target="#timeline-item-9480 .timeline-item-spt" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'>Speaker: <span class="paint-accent-color">Richard Black</span><br>
+							<div id="timeline-item-9205" class="timeline-header">
+<h3 class="ult-timeline-title ult-responsive" data-ultimate-target="#timeline-item-9205 .ult-timeline-title" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}' style="font-family:&#039;Roboto Condensed&#039;;">Phasellus quis: mi vitae dui elementum cursus</h3>
+<div class="ult-responsive timeline-item-spt" data-ultimate-target="#timeline-item-9205 .timeline-item-spt" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'>Speaker: <span class="paint-accent-color">Richard Black</span><br>
 10:00 &#8211; 11:30</div>
 </div> <!-- header -->
 </div>
@@ -655,15 +694,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </div></div></div> <!-- icon -->
 </div>
 <div class="timeline-header-block">
-							<div id="timeline-item-7399" class="timeline-header">
-<h3 class="ult-timeline-title ult-responsive" data-ultimate-target="#timeline-item-7399 .ult-timeline-title" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;">Morbi vitae nunc aliquet euismod dia dolor.</h3>
-<div class="ult-responsive timeline-item-spt" data-ultimate-target="#timeline-item-7399 .timeline-item-spt" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'>Speaker: <span class="paint-accent-color">David Wildwind</span><br>
+							<div id="timeline-item-7160" class="timeline-header">
+<h3 class="ult-timeline-title ult-responsive" data-ultimate-target="#timeline-item-7160 .ult-timeline-title" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;">Morbi vitae nunc aliquet euismod dia dolor.</h3>
+<div class="ult-responsive timeline-item-spt" data-ultimate-target="#timeline-item-7160 .timeline-item-spt" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'>Speaker: <span class="paint-accent-color">David Wildwind</span><br>
 11:30 &#8211; 13:30</div>
 </div> <!-- header -->
 </div>
 </div>
 </div>
-				<div id="timeline-seperator-9708" class="timeline-separator-text " data-sep-col="#ffffff" data-sep-bg-col=""><span class="sep-text ult-responsive" data-ultimate-target="#timeline-seperator-9708 .sep-text" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:22px;"}' style="color:#ffffff;border-style:solid;border-color:#fc2e58;border-width:8px;border-radius:0px;font-family:&#039;Roboto Condensed&#039;;font-weight:bold;">13:30-14:30 Coffee Break</span></div>
+				<div id="timeline-seperator-4893" class="timeline-separator-text " data-sep-col="#ffffff" data-sep-bg-col=""><span class="sep-text ult-responsive" data-ultimate-target="#timeline-seperator-4893 .sep-text" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:22px;"}' style="color:#ffffff;border-style:solid;border-color:#fc2e58;border-width:8px;border-radius:0px;font-family:&#039;Roboto Condensed&#039;;font-weight:bold;">13:30-14:30 Coffee Break</span></div>
 <div class="timeline-wrapper ">
 <div class="timeline-block ">
 <div class="timeline-dot"></div>
@@ -678,9 +717,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </div></div></div> <!-- icon -->
 </div>
 <div class="timeline-header-block">
-							<div id="timeline-item-9512" class="timeline-header">
-<h3 class="ult-timeline-title ult-responsive" data-ultimate-target="#timeline-item-9512 .ult-timeline-title" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;">Lorem ipsum dolor - vitae dui cursus glavrida.</h3>
-<div class="ult-responsive timeline-item-spt" data-ultimate-target="#timeline-item-9512 .timeline-item-spt" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'>Speaker: <span class="paint-accent-color">Alex Fireblood</span><br>
+							<div id="timeline-item-5564" class="timeline-header">
+<h3 class="ult-timeline-title ult-responsive" data-ultimate-target="#timeline-item-5564 .ult-timeline-title" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;">Lorem ipsum dolor - vitae dui cursus glavrida.</h3>
+<div class="ult-responsive timeline-item-spt" data-ultimate-target="#timeline-item-5564 .timeline-item-spt" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'>Speaker: <span class="paint-accent-color">Alex Fireblood</span><br>
 14:30 &#8211; 15:30</div>
 </div> <!-- header -->
 </div>
@@ -698,9 +737,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </div></div></div> <!-- icon -->
 </div>
 <div class="timeline-header-block">
-							<div id="timeline-item-1763" class="timeline-header">
-<h3 class="ult-timeline-title ult-responsive" data-ultimate-target="#timeline-item-1763 .ult-timeline-title" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;">Morbi vitae nunc aliquet euismod dia dolor.</h3>
-<div class="ult-responsive timeline-item-spt" data-ultimate-target="#timeline-item-1763 .timeline-item-spt" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'>Speaker: <span class="paint-accent-color">David Wildwind</span><br>
+							<div id="timeline-item-6719" class="timeline-header">
+<h3 class="ult-timeline-title ult-responsive" data-ultimate-target="#timeline-item-6719 .ult-timeline-title" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;">Morbi vitae nunc aliquet euismod dia dolor.</h3>
+<div class="ult-responsive timeline-item-spt" data-ultimate-target="#timeline-item-6719 .timeline-item-spt" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'>Speaker: <span class="paint-accent-color">David Wildwind</span><br>
 17:00 &#8211; 18:00</div>
 </div> <!-- header -->
 </div>
@@ -719,9 +758,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </div></div></div> <!-- icon -->
 </div>
 <div class="timeline-header-block">
-							<div class="timeline-header" id="timeline-featured-3309">
-<h3 class="ult-timeline-title ult-responsive" data-ultimate-target="#timeline-featured-3309 .ult-timeline-title" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":""}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;">CONFERENCE AFTERPARTY</h3>
-<div class="ult-responsive custom-lht" data-ultimate-target="#timeline-featured-3309 .custom-lht" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'>
+							<div class="timeline-header" id="timeline-featured-1398">
+<h3 class="ult-timeline-title ult-responsive" data-ultimate-target="#timeline-featured-1398 .ult-timeline-title" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":""}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;">CONFERENCE AFTERPARTY</h3>
+<div class="ult-responsive custom-lht" data-ultimate-target="#timeline-featured-1398 .custom-lht" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'>
 <strong><span style="color: #fc2e58">Seven Restaurant</span> <span style="color: #222222">&#8211; starting at 19:30</span></strong>
 <p>Donec vel lobortis justo, a auctor eros. Praesent lobortis fermentum gravida.<br>
 Vivamus et mi libero. Etiam consectetur sem id gravida hendrerit.</p>
@@ -734,8 +773,8 @@ Vivamus et mi libero. Etiam consectetur sem id gravida hendrerit.</p>
 </div>
 <!-- Row Backgrounds --><div class="upb_bg_img" data-ultimate-bg="url(/wp-content/uploads/sites/66/2015/01/noimage-1.jpg)" data-image-id="id^781|url^https://the7.io/conference/wp-content/uploads/sites/9/2015/01/img-bg-005.jpg|caption^null|alt^null|title^img-bg-005|description^null" data-ultimate-bg-style="vcpb-default" data-bg-img-repeat="repeat" data-bg-img-size="cover" data-bg-img-position="" data-parallx_sense="30" data-bg-override="ex-full" data-bg_img_attach="fixed" data-upb-overlay-color="rgba(0,17,62,0.88)" data-upb-bg-animation="" data-fadeout="" data-bg-animation="left-animation" data-bg-animation-type="h" data-animation-repeat="repeat" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false" data-custom-vc-row="" data-vc="6.8.0" data-is_old_vc="" data-theme-support="" data-overlay="true" data-overlay-color="rgba(0,17,62,0.88)" data-overlay-pattern="" data-overlay-pattern-opacity="0.8" data-overlay-pattern-size="" data-overlay-pattern-attachment="scroll"></div>
 <div id="speakers" class="vc_row wpb_row vc_row-fluid vc_custom_1490641156998">
-<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1490620464676"><div class="wpb_wrapper"><div id="ultimate-heading-75176369e93dc89ef" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-75176369e93dc89ef uvc-8776 " data-hspacer="line_with_icon" data-hline_width="250" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="3" data-hborder_color="#fc2e58" data-icon_width="14" data-hfixer="15" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-75176369e93dc89ef h2" data-responsive-json-new='{"font-size":"desktop:50px;","line-height":"desktop:60px;"}'><h2 style="font-weight:bold;margin-bottom:10px;">SPEAKERS</h2></div>
+<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1490620464676"><div class="wpb_wrapper"><div id="ultimate-heading-2541636a41cb22a3c" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2541636a41cb22a3c uvc-8642 " data-hspacer="line_with_icon" data-hline_width="250" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="3" data-hborder_color="#fc2e58" data-icon_width="14" data-hfixer="15" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2541636a41cb22a3c h2" data-responsive-json-new='{"font-size":"desktop:50px;","line-height":"desktop:60px;"}'><h2 style="font-weight:bold;margin-bottom:10px;">SPEAKERS</h2></div>
 <div class="uvc-heading-spacer line_with_icon" style="topheight:14px;"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="color:#fc2e58;font-size:14px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-bookmark"></i>
@@ -883,10 +922,10 @@ Vivamus et mi libero. Etiam consectetur sem id gravida hendrerit.</p>
   box-shadow: none;
 }</style>
 <div class="shortcode-single-image-wrap shortcode-single-image-4aa5c416e52fc6cf0c6f402f2643c90c alignnone  vc_custom_1490693161517 enable-bg-rollover dt-icon-bg-off"><div class="shortcode-single-image"><div class="fancy-media-wrap  layzr-bg" style="border-radius:300px;"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20600%20600&#39;%2F%3E" data-src="/wp-content/uploads/sites/66/2015/01/noimage-19-600x600.jpg" data-srcset="/wp-content/uploads/sites/66/2015/01/noimage-19-600x600.jpg 600w, /wp-content/uploads/sites/66/2015/01/noimage-19-700x700.jpg 700w" width="600" height="600" data-dt-location="/site66/conference/t-006/" style="border-radius:300px;"></div></div></div>
-<div id="ultimate-heading-19796369e93f24870" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-19796369e93f24870 uvc-5541 accent-subtitle-color" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-122636a41cb358e9" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-122636a41cb358e9 uvc-294 accent-subtitle-color" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-19796369e93f24870 h2" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:40px;"}'><h2 style="font-weight:bold;margin-bottom:20px;">Alex Fireblood</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-19796369e93f24870 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:28px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;margin-bottom:25px;">Marketing manager<br>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-122636a41cb358e9 h2" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:40px;"}'><h2 style="font-weight:bold;margin-bottom:20px;">Alex Fireblood</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-122636a41cb358e9 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:28px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;margin-bottom:25px;">Marketing manager<br>
 at Seven &amp; Partners</div>
 </div>
 	<div class="wpb_text_column wpb_content_element ">
@@ -917,10 +956,10 @@ at Seven &amp; Partners</div>
   box-shadow: none;
 }</style>
 <div class="shortcode-single-image-wrap shortcode-single-image-2a6d99ebd625e59c559f12dcb7d0a826 alignnone  vc_custom_1490693368689 enable-bg-rollover dt-icon-bg-off"><div class="shortcode-single-image"><div class="fancy-media-wrap  layzr-bg" style="border-radius:300px;"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20600%20600&#39;%2F%3E" data-src="/wp-content/uploads/sites/66/2015/01/noimage-21-600x600.jpg" data-srcset="/wp-content/uploads/sites/66/2015/01/noimage-21-600x600.jpg 600w, /wp-content/uploads/sites/66/2015/01/noimage-21-700x700.jpg 700w" width="600" height="600" data-dt-location="/site66/conference/t-009/" style="border-radius:300px;"></div></div></div>
-<div id="ultimate-heading-50256369e93fc720d" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-50256369e93fc720d uvc-5449 accent-subtitle-color" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-6800636a41cb37104" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-6800636a41cb37104 uvc-940 accent-subtitle-color" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-50256369e93fc720d h2" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:40px;"}'><h2 style="font-weight:bold;margin-bottom:20px;">Jane Fireblood</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-50256369e93fc720d .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:28px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;margin-bottom:25px;">Marketing manager<br>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6800636a41cb37104 h2" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:40px;"}'><h2 style="font-weight:bold;margin-bottom:20px;">Jane Fireblood</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6800636a41cb37104 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:28px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;margin-bottom:25px;">Marketing manager<br>
 at Seven Digital</div>
 </div>
 	<div class="wpb_text_column wpb_content_element ">
@@ -951,10 +990,10 @@ at Seven Digital</div>
   box-shadow: none;
 }</style>
 <div class="shortcode-single-image-wrap shortcode-single-image-bbd730882629a23d7f8e0bae7a574521 alignnone  vc_custom_1490693541051 enable-bg-rollover dt-icon-bg-off"><div class="shortcode-single-image"><div class="fancy-media-wrap  layzr-bg" style="border-radius:300px;"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20600%20600&#39;%2F%3E" data-src="/wp-content/uploads/sites/66/2015/01/noimage-22-600x600.jpg" data-srcset="/wp-content/uploads/sites/66/2015/01/noimage-22-600x600.jpg 600w, /wp-content/uploads/sites/66/2015/01/noimage-22-700x700.jpg 700w" width="600" height="600" data-dt-location="/site66/conference/t-010/" style="border-radius:300px;"></div></div></div>
-<div id="ultimate-heading-98886369e940b005f" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-98886369e940b005f uvc-1123 accent-subtitle-color" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-965636a41cb38f4e" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-965636a41cb38f4e uvc-3747 accent-subtitle-color" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-98886369e940b005f h2" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:40px;"}'><h2 style="font-weight:bold;margin-bottom:20px;">Diana Whitearm</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-98886369e940b005f .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:28px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;margin-bottom:25px;">HR director<br>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-965636a41cb38f4e h2" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:40px;"}'><h2 style="font-weight:bold;margin-bottom:20px;">Diana Whitearm</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-965636a41cb38f4e .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:28px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;margin-bottom:25px;">HR director<br>
 at Seven Media</div>
 </div>
 	<div class="wpb_text_column wpb_content_element ">
@@ -985,10 +1024,10 @@ at Seven Media</div>
   box-shadow: none;
 }</style>
 <div class="shortcode-single-image-wrap shortcode-single-image-b1ee27048c96baac0827a5ce05076f6c alignnone  vc_custom_1490694045844 enable-bg-rollover dt-icon-bg-off"><div class="shortcode-single-image"><div class="fancy-media-wrap  layzr-bg" style="border-radius:300px;"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20600%20600&#39;%2F%3E" data-src="/wp-content/uploads/sites/66/2015/01/noimage-18-600x600.jpg" data-srcset="/wp-content/uploads/sites/66/2015/01/noimage-18-600x600.jpg 600w, /wp-content/uploads/sites/66/2015/01/noimage-18-700x700.jpg 700w" width="600" height="600" data-dt-location="/site66/conference/t-012/" style="border-radius:300px;"></div></div></div>
-<div id="ultimate-heading-78926369e94199cb6" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-78926369e94199cb6 uvc-5593 accent-subtitle-color" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-3605636a41cb3a3bc" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-3605636a41cb3a3bc uvc-6050 accent-subtitle-color" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-78926369e94199cb6 h2" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:40px;"}'><h2 style="font-weight:bold;margin-bottom:20px;">Alex Fireblood</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-78926369e94199cb6 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:28px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;margin-bottom:25px;">Producer<br>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3605636a41cb3a3bc h2" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:40px;"}'><h2 style="font-weight:bold;margin-bottom:20px;">Alex Fireblood</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3605636a41cb3a3bc .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:28px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;margin-bottom:25px;">Producer<br>
 at Seven Dev</div>
 </div>
 	<div class="wpb_text_column wpb_content_element ">
@@ -1019,10 +1058,10 @@ at Seven Dev</div>
   box-shadow: none;
 }</style>
 <div class="shortcode-single-image-wrap shortcode-single-image-82779741cf0ebd9d289c08078a1e638b alignnone  vc_custom_1490693011699 enable-bg-rollover dt-icon-bg-off"><div class="shortcode-single-image"><div class="fancy-media-wrap  layzr-bg" style="border-radius:300px;"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20600%20600&#39;%2F%3E" data-src="/wp-content/uploads/sites/66/2015/01/noimage-20-600x600.jpg" data-srcset="/wp-content/uploads/sites/66/2015/01/noimage-20-600x600.jpg 600w, /wp-content/uploads/sites/66/2015/01/noimage-20-700x700.jpg 700w" width="600" height="600" data-dt-location="/site66/conference/t-003/" style="border-radius:300px;"></div></div></div>
-<div id="ultimate-heading-25786369e94295bd4" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-25786369e94295bd4 uvc-2983 accent-subtitle-color" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-781636a41cb3b776" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-781636a41cb3b776 uvc-8958 accent-subtitle-color" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-25786369e94295bd4 h2" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:40px;"}'><h2 style="font-weight:bold;margin-bottom:20px;">Anna Greenwood</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-25786369e94295bd4 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:28px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;margin-bottom:25px;">Financial director<br>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-781636a41cb3b776 h2" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:40px;"}'><h2 style="font-weight:bold;margin-bottom:20px;">Anna Greenwood</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-781636a41cb3b776 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:28px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;margin-bottom:25px;">Financial director<br>
 at Seven Media</div>
 </div>
 	<div class="wpb_text_column wpb_content_element ">
@@ -1036,8 +1075,8 @@ at Seven Media</div>
 </div></div></div>
 </div>
 <div id="benefits" class="vc_row wpb_row vc_row-fluid vc_custom_1490641129210 vc_column-gap-30">
-<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1490620794777"><div class="wpb_wrapper"><div id="ultimate-heading-976369e942965e1" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-976369e942965e1 uvc-8875 " data-hspacer="line_with_icon" data-hline_width="250" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="3" data-hborder_color="#fc2e58" data-icon_width="14" data-hfixer="15" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-976369e942965e1 h2" data-responsive-json-new='{"font-size":"desktop:50px;","line-height":"desktop:60px;"}'><h2 style="font-weight:bold;color:#ffffff;margin-bottom:10px;">WHY CHOOSE SEVEN CONFERENCE</h2></div>
+<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1490620794777"><div class="wpb_wrapper"><div id="ultimate-heading-2388636a41cb3c0da" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2388636a41cb3c0da uvc-3433 " data-hspacer="line_with_icon" data-hline_width="250" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="3" data-hborder_color="#fc2e58" data-icon_width="14" data-hfixer="15" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2388636a41cb3c0da h2" data-responsive-json-new='{"font-size":"desktop:50px;","line-height":"desktop:60px;"}'><h2 style="font-weight:bold;color:#ffffff;margin-bottom:10px;">WHY CHOOSE SEVEN CONFERENCE</h2></div>
 <div class="uvc-heading-spacer line_with_icon" style="topheight:14px;"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="color:#fc2e58;font-size:14px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-bookmark"></i>
@@ -1047,73 +1086,73 @@ at Seven Media</div>
 <div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid vc_column-gap-4 vc_row-o-equal-height vc_row-flex">
 <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-4 vc_col-md-4 vc_col-has-fill"><div class="vc_column-inner vc_custom_1490620552163"><div class="wpb_wrapper">
 <div class="aio-icon-component  vc_custom_1490626348755  accent-icon-bg style_1">
-<div id="Info-box-wrap-3868" class="aio-icon-box top-icon">
+<div id="Info-box-wrap-5018" class="aio-icon-box top-icon">
 <div class="aio-icon-top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon advanced " style="color:#ffffff;background:#ffffff;border-style:double;border-color:;border-width:9px;width:84px;height:84px;line-height:84px;border-radius:500px;font-size:42px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-key"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-3868 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:40px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;">Exclusive Information</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-3868 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Amos glavrida &#8211; Lorem amet glavrida to auris euismod ante a mauris ultrices malesuada ivamus tempus gravida nulla dolor.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-5018 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:40px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;">Exclusive Information</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-5018 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Amos glavrida &#8211; Lorem amet glavrida to auris euismod ante a mauris ultrices malesuada ivamus tempus gravida nulla dolor.</div> <!-- description -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component -->
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-4 vc_col-md-4 vc_col-has-fill"><div class="vc_column-inner vc_custom_1490620589448"><div class="wpb_wrapper">
 <div class="aio-icon-component  vc_custom_1490626400933  accent-icon-bg style_1">
-<div id="Info-box-wrap-8430" class="aio-icon-box top-icon">
+<div id="Info-box-wrap-5595" class="aio-icon-box top-icon">
 <div class="aio-icon-top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon advanced " style="color:#ffffff;background:#ffffff;border-style:double;border-color:;border-width:9px;width:84px;height:84px;line-height:84px;border-radius:500px;font-size:42px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-comments"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-8430 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:40px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;">Personal Consultations</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-8430 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Lorem amet glavrida to auris euismod ante a mauris ultrices malesuada ivamus tempus gravida nulla dolor.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-5595 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:40px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;">Personal Consultations</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-5595 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Lorem amet glavrida to auris euismod ante a mauris ultrices malesuada ivamus tempus gravida nulla dolor.</div> <!-- description -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component -->
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-4 vc_col-md-4 vc_col-has-fill"><div class="vc_column-inner vc_custom_1490620562853"><div class="wpb_wrapper">
 <div class="aio-icon-component  vc_custom_1490626417131  accent-icon-bg style_1">
-<div id="Info-box-wrap-6596" class="aio-icon-box top-icon">
+<div id="Info-box-wrap-7217" class="aio-icon-box top-icon">
 <div class="aio-icon-top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon advanced " style="color:#ffffff;background:#ffffff;border-style:double;border-color:;border-width:9px;width:84px;height:84px;line-height:84px;border-radius:500px;font-size:42px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-building-o"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-6596 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:40px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;">Global Trends</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-6596 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Nulla auris glavrida &#8211; Lorem amet glavrida to auris euismod ante a mauris ultrices malesuada ivamus tempus gravida nulla for dolor.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-7217 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:40px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;">Global Trends</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-7217 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Nulla auris glavrida &#8211; Lorem amet glavrida to auris euismod ante a mauris ultrices malesuada ivamus tempus gravida nulla for dolor.</div> <!-- description -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component -->
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-4 vc_col-md-4 vc_col-has-fill"><div class="vc_column-inner vc_custom_1490620595034"><div class="wpb_wrapper">
 <div class="aio-icon-component  vc_custom_1490626356384  accent-icon-bg style_1">
-<div id="Info-box-wrap-7132" class="aio-icon-box top-icon">
+<div id="Info-box-wrap-6931" class="aio-icon-box top-icon">
 <div class="aio-icon-top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon advanced " style="color:#ffffff;background:#ffffff;border-style:double;border-color:;border-width:9px;width:84px;height:84px;line-height:84px;border-radius:500px;font-size:42px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-group users"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-7132 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:40px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;">Famous Speakers</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-7132 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Amos glavrida ivamus tempus gravida lorem amet glavrida to auris euismod ante a mauris ultrices malesuada ivamus tempus gravida nulla dolor.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-6931 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:40px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;">Famous Speakers</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-6931 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Amos glavrida ivamus tempus gravida lorem amet glavrida to auris euismod ante a mauris ultrices malesuada ivamus tempus gravida nulla dolor.</div> <!-- description -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component -->
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-4 vc_col-md-4 vc_col-has-fill"><div class="vc_column-inner vc_custom_1490620557626"><div class="wpb_wrapper">
 <div class="aio-icon-component  vc_custom_1490626407684  accent-icon-bg style_1">
-<div id="Info-box-wrap-6835" class="aio-icon-box top-icon">
+<div id="Info-box-wrap-9957" class="aio-icon-box top-icon">
 <div class="aio-icon-top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon advanced " style="color:#ffffff;background:#ffffff;border-style:double;border-color:;border-width:9px;width:84px;height:84px;line-height:84px;border-radius:500px;font-size:42px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-bar-chart bar-chart-o"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-6835 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:40px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;">Insights</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-6835 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Ante a mauris ultricesglavrida &#8211; amet glavrida to auris euismod ante a mauris ultrices malesuada ivamus tempus gravida nulla.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-9957 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:40px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;">Insights</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-9957 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Ante a mauris ultricesglavrida &#8211; amet glavrida to auris euismod ante a mauris ultrices malesuada ivamus tempus gravida nulla.</div> <!-- description -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component -->
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-4 vc_col-md-4 vc_col-has-fill"><div class="vc_column-inner vc_custom_1490620600276"><div class="wpb_wrapper">
 <div class="aio-icon-component  vc_custom_1490626424908  accent-icon-bg style_1">
-<div id="Info-box-wrap-3669" class="aio-icon-box top-icon">
+<div id="Info-box-wrap-5364" class="aio-icon-box top-icon">
 <div class="aio-icon-top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon advanced " style="color:#ffffff;background:#ffffff;border-style:double;border-color:;border-width:9px;width:84px;height:84px;line-height:84px;border-radius:500px;font-size:42px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-gift"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-3669 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:40px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;">Gifts &amp; Discounts</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-3669 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Nulla ipsum lorem amet glavrida to auris euismod ante a mauris ultrices malesuada ivamus tempus gravida nulla dolor.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-5364 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:40px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;">Gifts &amp; Discounts</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-5364 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Nulla ipsum lorem amet glavrida to auris euismod ante a mauris ultrices malesuada ivamus tempus gravida nulla dolor.</div> <!-- description -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component -->
 </div></div></div>
@@ -1121,8 +1160,8 @@ at Seven Media</div>
 </div>
 <!-- Row Backgrounds --><div class="upb_bg_img" data-ultimate-bg="url(/wp-content/uploads/sites/66/2015/01/noimage-1.jpg)" data-image-id="id^781|url^https://the7.io/conference/wp-content/uploads/sites/9/2015/01/img-bg-005.jpg|caption^null|alt^null|title^img-bg-005|description^null" data-ultimate-bg-style="vcpb-default" data-bg-img-repeat="no-repeat" data-bg-img-size="cover" data-bg-img-position="" data-parallx_sense="30" data-bg-override="full" data-bg_img_attach="fixed" data-upb-overlay-color="rgba(0,17,62,0.88)" data-upb-bg-animation="" data-fadeout="" data-bg-animation="left-animation" data-bg-animation-type="h" data-animation-repeat="repeat" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false" data-custom-vc-row="" data-vc="6.8.0" data-is_old_vc="" data-theme-support="" data-overlay="true" data-overlay-color="rgba(0,17,62,0.88)" data-overlay-pattern="" data-overlay-pattern-opacity="0.8" data-overlay-pattern-size="" data-overlay-pattern-attachment="scroll"></div>
 <div id="testimonials" class="vc_row wpb_row vc_row-fluid vc_custom_1490641139457">
-<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1490622739213"><div class="wpb_wrapper"><div id="ultimate-heading-38076369e9429aa02" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-38076369e9429aa02 uvc-3994 " data-hspacer="line_with_icon" data-hline_width="250" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="3" data-hborder_color="#fc2e58" data-icon_width="14" data-hfixer="15" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-38076369e9429aa02 h2" data-responsive-json-new='{"font-size":"desktop:50px;","line-height":"desktop:60px;"}'><h2 style="font-weight:bold;margin-bottom:10px;">FROM LATEST CONFERENCE</h2></div>
+<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1490622739213"><div class="wpb_wrapper"><div id="ultimate-heading-8967636a41cb4c26a" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-8967636a41cb4c26a uvc-4468 " data-hspacer="line_with_icon" data-hline_width="250" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="3" data-hborder_color="#fc2e58" data-icon_width="14" data-hfixer="15" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-8967636a41cb4c26a h2" data-responsive-json-new='{"font-size":"desktop:50px;","line-height":"desktop:60px;"}'><h2 style="font-weight:bold;margin-bottom:10px;">FROM LATEST CONFERENCE</h2></div>
 <div class="uvc-heading-spacer line_with_icon" style="topheight:14px;"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="color:#fc2e58;font-size:14px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-bookmark"></i>
@@ -1450,14 +1489,14 @@ at Seven Media</div>
 }</style>
 <div class="owl-carousel carousel-shortcode dt-owl-carousel-call carousel-shortcode-id-3c0a82935029c6a5ab40f018d10912fe bullets-scale-up reposition-arrows arrows-bg-off dt-arrow-border-on dt-arrow-hover-border-on arrows-hover-bg-on  vc_custom_1490635657136 " data-scroll-mode="1" data-col-num="3" data-wide-col-num="3" data-laptop-col="2" data-h-tablet-columns-num="2" data-v-tablet-columns-num="1" data-phone-columns-num="1" data-auto-height="true" data-col-gap="50" data-stage-padding="0" data-speed="800" data-autoplay="false" data-autoplay_speed="6000" data-arrows="true" data-bullet="true" data-next-icon="icon-ar-010-r" data-prev-icon="icon-ar-010-l">
 <div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
-<div id="ultimate-heading-62496369e951e4402" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-62496369e951e4402 uvc-389 accent-subtitle-color accent-icon-color" data-hspacer="line_with_icon" data-hline_width="auto" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="3" data-hborder_color="#3c4bbc" data-icon_width="28" data-hfixer="10" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-4054636a41cb69ec4" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-4054636a41cb69ec4 uvc-3925 accent-subtitle-color accent-icon-color" data-hspacer="line_with_icon" data-hline_width="auto" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="3" data-hborder_color="#3c4bbc" data-icon_width="28" data-hfixer="10" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer line_with_icon" style="margin-bottom:20px;height:28px;"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="font-size:28px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-quote-right"></i>
 </div>
 </div></div></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-62496369e951e4402 h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="font-weight:bold;">Richard Johnson</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-62496369e951e4402 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;margin-bottom:25px;">private lawyer</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4054636a41cb69ec4 h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="font-weight:bold;">Richard Johnson</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4054636a41cb69ec4 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;margin-bottom:25px;">private lawyer</div>
 </div>
 	<div class="wpb_text_column wpb_content_element ">
 		<div class="wpb_wrapper">
@@ -1467,14 +1506,14 @@ at Seven Media</div>
 	</div>
 </div></div></div></div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
-<div id="ultimate-heading-44366369e95203dbe" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-44366369e95203dbe uvc-5360 accent-subtitle-color accent-icon-color" data-hspacer="line_with_icon" data-hline_width="auto" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="3" data-hborder_color="#3c4bbc" data-icon_width="28" data-hfixer="10" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-8484636a41cb6a3cc" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-8484636a41cb6a3cc uvc-5014 accent-subtitle-color accent-icon-color" data-hspacer="line_with_icon" data-hline_width="auto" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="3" data-hborder_color="#3c4bbc" data-icon_width="28" data-hfixer="10" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer line_with_icon" style="margin-bottom:20px;height:28px;"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="font-size:28px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-quote-right"></i>
 </div>
 </div></div></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-44366369e95203dbe h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="font-weight:bold;">Alex Fireblood</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-44366369e95203dbe .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;margin-bottom:25px;">commercial director</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-8484636a41cb6a3cc h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="font-weight:bold;">Alex Fireblood</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-8484636a41cb6a3cc .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;margin-bottom:25px;">commercial director</div>
 </div>
 	<div class="wpb_text_column wpb_content_element ">
 		<div class="wpb_wrapper">
@@ -1484,14 +1523,14 @@ at Seven Media</div>
 	</div>
 </div></div></div></div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
-<div id="ultimate-heading-14726369e952056cc" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-14726369e952056cc uvc-5379 accent-subtitle-color accent-icon-color" data-hspacer="line_with_icon" data-hline_width="auto" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="3" data-hborder_color="#3c4bbc" data-icon_width="28" data-hfixer="10" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-753636a41cb6a7c0" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-753636a41cb6a7c0 uvc-4204 accent-subtitle-color accent-icon-color" data-hspacer="line_with_icon" data-hline_width="auto" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="3" data-hborder_color="#3c4bbc" data-icon_width="28" data-hfixer="10" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer line_with_icon" style="margin-bottom:20px;height:28px;"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="font-size:28px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-quote-right"></i>
 </div>
 </div></div></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-14726369e952056cc h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="font-weight:bold;">Miriam Whitewind</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-14726369e952056cc .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;margin-bottom:25px;">marketing director</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-753636a41cb6a7c0 h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="font-weight:bold;">Miriam Whitewind</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-753636a41cb6a7c0 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;margin-bottom:25px;">marketing director</div>
 </div>
 	<div class="wpb_text_column wpb_content_element ">
 		<div class="wpb_wrapper">
@@ -1501,14 +1540,14 @@ at Seven Media</div>
 	</div>
 </div></div></div></div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
-<div id="ultimate-heading-57506369e952072d8" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-57506369e952072d8 uvc-5791 accent-subtitle-color accent-icon-color" data-hspacer="line_with_icon" data-hline_width="auto" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="3" data-hborder_color="#3c4bbc" data-icon_width="28" data-hfixer="10" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-550636a41cb6abd5" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-550636a41cb6abd5 uvc-601 accent-subtitle-color accent-icon-color" data-hspacer="line_with_icon" data-hline_width="auto" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="3" data-hborder_color="#3c4bbc" data-icon_width="28" data-hfixer="10" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer line_with_icon" style="margin-bottom:20px;height:28px;"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="font-size:28px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-quote-right"></i>
 </div>
 </div></div></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-57506369e952072d8 h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="font-weight:bold;">Tiffany Greenfield</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-57506369e952072d8 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;margin-bottom:25px;">commercial director</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-550636a41cb6abd5 h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="font-weight:bold;">Tiffany Greenfield</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-550636a41cb6abd5 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;margin-bottom:25px;">commercial director</div>
 </div>
 	<div class="wpb_text_column wpb_content_element ">
 		<div class="wpb_wrapper">
@@ -1521,20 +1560,20 @@ at Seven Media</div>
 </div></div></div>
 </div>
 <div id="pricing" class="vc_row wpb_row vc_row-fluid vc_custom_1490643994057">
-<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1490637309460"><div class="wpb_wrapper"><div id="ultimate-heading-61746369e95208aaa" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-61746369e95208aaa uvc-2282 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1490637309460"><div class="wpb_wrapper"><div id="ultimate-heading-4336636a41cb6b349" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-4336636a41cb6b349 uvc-4401 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-61746369e95208aaa h2" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:40px;"}'><h2 style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;color:#3c4bbc;margin-bottom:10px;">PARTICIPATION COST</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-61746369e95208aaa .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:150px;","line-height":"desktop:154px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:normal;color:#3c4bbc;">$789</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4336636a41cb6b349 h2" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:40px;"}'><h2 style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;color:#3c4bbc;margin-bottom:10px;">PARTICIPATION COST</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4336636a41cb6b349 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:150px;","line-height":"desktop:154px;"}' style="font-family:&#039;Roboto Condensed&#039;;font-weight:normal;color:#3c4bbc;">$789</div>
 </div></div></div></div>
-<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-offset-2 vc_col-md-offset-2 vc_col-sm-offset-2"><div class="vc_column-inner vc_custom_1490637356755"><div class="wpb_wrapper"><div id="ultimate-heading-11256369e9520a8ba" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-11256369e9520a8ba uvc-5837 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-offset-2 vc_col-md-offset-2 vc_col-sm-offset-2"><div class="vc_column-inner vc_custom_1490637356755"><div class="wpb_wrapper"><div id="ultimate-heading-2269636a41cb6b50d" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2269636a41cb6b50d uvc-1935 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-11256369e9520a8ba h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;">Proin justo tellus, gravida a sodales et, varius a risus et malesuada fames in faucibus. Phasellus tincidunt nunc nisi, in convallis felis aliquam nec.</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2269636a41cb6b50d h2" data-responsive-json-new='{"font-size":"desktop:22px;","line-height":"desktop:32px;"}'><h2 style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;">Proin justo tellus, gravida a sodales et, varius a risus et malesuada fames in faucibus. Phasellus tincidunt nunc nisi, in convallis felis aliquam nec.</h2></div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1490637116480 vc_column-gap-4 vc_row-o-equal-height vc_row-flex">
 <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-has-fill"><div class="vc_column-inner vc_custom_1490637248575"><div class="wpb_wrapper">
-<div id="ultimate-heading-41226369e9520b03c" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-41226369e9520b03c uvc-2238 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div id="ultimate-heading-1280636a41cb7d03e" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-1280636a41cb7d03e uvc-2257 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-41226369e9520b03c h2" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:40px;"}'><h2 style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;margin-bottom:20px;">For this price you’ll get:</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1280636a41cb7d03e h2" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:40px;"}'><h2 style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;margin-bottom:20px;">For this price you’ll get:</h2></div>
 </div>
 <div class="standard-arrow">
 <ul>
@@ -1548,9 +1587,9 @@ at Seven Media</div>
 </div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-has-fill"><div class="vc_column-inner vc_custom_1490637254733"><div class="wpb_wrapper">
-<div id="ultimate-heading-806369e9520d6c1" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-806369e9520d6c1 uvc-6713 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div id="ultimate-heading-5311636a41cb7d2cb" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-5311636a41cb7d2cb uvc-1933 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-806369e9520d6c1 h2" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:40px;"}'><h2 style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;margin-bottom:20px;">Available for additional cost:</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5311636a41cb7d2cb h2" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:40px;"}'><h2 style="font-family:&#039;Roboto Condensed&#039;;font-weight:bold;margin-bottom:20px;">Available for additional cost:</h2></div>
 </div>
 	<div class="wpb_text_column wpb_content_element  vc_custom_1490637056549">
 		<div class="wpb_wrapper">
@@ -1574,27 +1613,27 @@ at Seven Media</div>
 &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;"></div>
 <div id="contact" class="vc_row wpb_row vc_row-fluid vc_custom_1490640815101">
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6"><div class="vc_column-inner vc_custom_1490628660335"><div class="wpb_wrapper">
-<div id="ultimate-heading-9216369e9520dea8" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-9216369e9520dea8 uvc-2501 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div id="ultimate-heading-8581636a41cb7def4" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-8581636a41cb7def4 uvc-7043 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9216369e9520dea8 h2" data-responsive-json-new='{"font-size":"desktop:50px;mobile_landscape:30px;","line-height":"desktop:60px;mobile_landscape:40px;"}'><h2 style="font-weight:bold;color:#ffffff;margin-bottom:60px;">Register your participation in “Business &amp; Finance” conference today!</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-8581636a41cb7def4 h2" data-responsive-json-new='{"font-size":"desktop:50px;mobile_landscape:30px;","line-height":"desktop:60px;mobile_landscape:40px;"}'><h2 style="font-weight:bold;color:#ffffff;margin-bottom:60px;">Register your participation in “Business &amp; Finance” conference today!</h2></div>
 </div>
-<div id="ultimate-heading-87066369e9520df01" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-87066369e9520df01 uvc-751 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div id="ultimate-heading-1782636a41cb7df33" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-1782636a41cb7df33 uvc-1144 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-87066369e9520df01 h2" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:40px;"}'><h2 style="font-weight:bold;color:#ffffff;margin-bottom:15px;">Contact us:</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1782636a41cb7df33 h2" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:40px;"}'><h2 style="font-weight:bold;color:#ffffff;margin-bottom:15px;">Contact us:</h2></div>
 </div>
-<div id="ultimate-heading-34696369e9520df4f" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-34696369e9520df4f uvc-7957 phone-number" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div id="ultimate-heading-6392636a41cb7df68" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-6392636a41cb7df68 uvc-2778 phone-number" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-34696369e9520df4f h2" data-responsive-json-new='{"font-size":"desktop:50px;mobile_landscape:30px;","line-height":"desktop:60px;mobile_landscape:40px;"}'><h2 style="font-weight:bold;color:#ff2956;margin-bottom:15px;">+ 01 (234) 256 89 00</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6392636a41cb7df68 h2" data-responsive-json-new='{"font-size":"desktop:50px;mobile_landscape:30px;","line-height":"desktop:60px;mobile_landscape:40px;"}'><h2 style="font-weight:bold;color:#ff2956;margin-bottom:15px;">+ 01 (234) 256 89 00</h2></div>
 </div>
-<div id="ultimate-heading-55936369e9520df9e" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-55936369e9520df9e uvc-9415 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div id="ultimate-heading-6030636a41cb7df9c" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-6030636a41cb7df9c uvc-6746 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-55936369e9520df9e h2" data-responsive-json-new='{"font-size":"desktop:30px;mobile_landscape:22px;","line-height":"desktop:40px;mobile_landscape:32px;"}'><h2 style="font-weight:bold;color:#ffffff;">info@sevenconference.com</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6030636a41cb7df9c h2" data-responsive-json-new='{"font-size":"desktop:30px;mobile_landscape:22px;","line-height":"desktop:40px;mobile_landscape:32px;"}'><h2 style="font-weight:bold;color:#ffffff;">info@sevenconference.com</h2></div>
 </div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6"><div class="vc_column-inner vc_custom_1490628728930"><div class="wpb_wrapper">
-<div id="ultimate-heading-14756369e9520e1ec" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-14756369e9520e1ec uvc-486 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div id="ultimate-heading-8941636a41cb7e138" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-8941636a41cb7e138 uvc-5393 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-14756369e9520e1ec h2" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:40px;"}'><h2 style="font-weight:bold;color:#ffffff;margin-bottom:30px;">Registration:</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-8941636a41cb7e138 h2" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:40px;"}'><h2 style="font-weight:bold;color:#ffffff;margin-bottom:30px;">Registration:</h2></div>
 </div>
 <form class="dt-contact-form dt-form" method="post">
 <input type="hidden" name="widget_id" value="presscore-contact-form-widget--1"><input type="hidden" name="send_message" value=""><input type="hidden" name="security_token" value="551d5ad4c4935b98e1ca"><div class="form-fields">
@@ -1792,5 +1831,5 @@ at Seven Media</div>
 </body>
 
 
-<!-- Page supported by LiteSpeed Cache 5.3 on 2022-11-08 05:29:54 -->
+<!-- Page supported by LiteSpeed Cache 5.3 on 2022-11-08 11:47:23 -->
 </html>
