@@ -69,13 +69,52 @@ img.emoji {
 <link rel="stylesheet" id="js_composer_front-css" href="/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=6.8.0" type="text/css" media="all">
 <link rel="stylesheet" id="dt-web-fonts-css" href="https://fonts.googleapis.com/css?family=Open Sans:300,400,600,700|Poppins:300,400,500,600,700|Roboto:400,600,700" type="text/css" media="all">
 <link rel="stylesheet" id="dt-main-css" href="/wp-content/themes/dt-the7/css/main.min.css?ver=11.1.1" type="text/css" media="all">
+<style id="dt-main-inline-css" type="text/css">body #load {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 9901;
+  opacity: 1;
+  visibility: visible;
+  transition: all .35s ease-out;
+}
+.load-wrap {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -ms-flex-pack: center;
+  -ms-justify-content: center;
+  justify-content: center;
+}
+.load-wrap > svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+#load {
+  background: var(--the7-elementor-beautiful-loading-bg,#ffffff);
+  --the7-beautiful-spinner-color2: var(--the7-beautiful-spinner-color,#c5ab6b);
+}</style>
 <link rel="stylesheet" id="the7-custom-scrollbar-css" href="/wp-content/themes/dt-the7/lib/custom-scrollbar/custom-scrollbar.min.css?ver=11.1.1" type="text/css" media="all">
 <link rel="stylesheet" id="the7-wpbakery-css" href="/wp-content/themes/dt-the7/css/wpbakery.min.css?ver=11.1.1" type="text/css" media="all">
-<link rel="stylesheet" id="the7-css-vars-css" href="/wp-content/uploads/sites/51/the7-css/css-vars.css?ver=07fb44505e4d" type="text/css" media="all">
-<link rel="stylesheet" id="dt-custom-css" href="/wp-content/uploads/sites/51/the7-css/custom.css?ver=07fb44505e4d" type="text/css" media="all">
-<link rel="stylesheet" id="dt-media-css" href="/wp-content/uploads/sites/51/the7-css/media.css?ver=07fb44505e4d" type="text/css" media="all">
-<link rel="stylesheet" id="the7-mega-menu-css" href="/wp-content/uploads/sites/51/the7-css/mega-menu.css?ver=07fb44505e4d" type="text/css" media="all">
-<link rel="stylesheet" id="the7-elements-css" href="/wp-content/uploads/sites/51/the7-css/post-type-dynamic.css?ver=07fb44505e4d" type="text/css" media="all">
+<link rel="stylesheet" id="the7-css-vars-css" href="/wp-content/uploads/sites/51/the7-css/css-vars.css?ver=7be765edc653" type="text/css" media="all">
+<link rel="stylesheet" id="dt-custom-css" href="/wp-content/uploads/sites/51/the7-css/custom.css?ver=7be765edc653" type="text/css" media="all">
+<link rel="stylesheet" id="dt-media-css" href="/wp-content/uploads/sites/51/the7-css/media.css?ver=7be765edc653" type="text/css" media="all">
+<link rel="stylesheet" id="the7-mega-menu-css" href="/wp-content/uploads/sites/51/the7-css/mega-menu.css?ver=7be765edc653" type="text/css" media="all">
+<link rel="stylesheet" id="the7-elements-css" href="/wp-content/uploads/sites/51/the7-css/post-type-dynamic.css?ver=7be765edc653" type="text/css" media="all">
 <link rel="stylesheet" id="style-css" href="/wp-content/themes/dt-the7/style.css?ver=11.1.1" type="text/css" media="all">
 <link rel="stylesheet" id="ultimate-vc-addons-google-fonts-css" href="https://fonts.googleapis.com/css?family=Great Vibes|Poppins:regular,500|Raleway:regular,600" type="text/css" media="all">
 <link rel="stylesheet" id="ultimate-vc-addons-style-css" href="/wp-content/plugins/Ultimate_VC_Addons/assets/min-css/style.min.css?ver=3.19.11" type="text/css" media="all">
@@ -408,10 +447,10 @@ WEEKENDS: 08:00 AM - 02:00 PM
 <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-offset-0 vc_col-lg-6 vc_col-md-offset-0 vc_col-md-6 vc_col-sm-offset-0 vc_col-xs-6 vc_hidden-xs vc_col-has-fill"><div class="vc_column-inner vc_custom_1469450001600"><div class="wpb_wrapper"></div></div></div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1469297991002"><div class="wpb_wrapper">
-<div id="ultimate-heading-70216369c8c1b67aa" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-70216369c8c1b67aa uvc-5231 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div id="ultimate-heading-5237636a2ad77e18f" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-5237636a2ad77e18f uvc-342 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-70216369c8c1b67aa h2" data-responsive-json-new='{"font-size":"desktop:40px;","line-height":"desktop:45px;"}'><h2 style="font-family:&#039;Great Vibes&#039;;--font-weight:theme;color:#c5ab6b;">Discover</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-70216369c8c1b67aa .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:35px;","line-height":"desktop:40px;"}' style="font-family:&#039;Poppins&#039;;font-weight:normal;color:#303030;margin-bottom:20px;">OUR HISTORY</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5237636a2ad77e18f h2" data-responsive-json-new='{"font-size":"desktop:40px;","line-height":"desktop:45px;"}'><h2 style="font-family:&#039;Great Vibes&#039;;--font-weight:theme;color:#c5ab6b;">Discover</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5237636a2ad77e18f .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:35px;","line-height":"desktop:40px;"}' style="font-family:&#039;Poppins&#039;;font-weight:normal;color:#303030;margin-bottom:20px;">OUR HISTORY</div>
 </div>
 	<div class="wpb_text_column wpb_content_element  vc_custom_1469185253629">
 		<div class="wpb_wrapper">
@@ -424,9 +463,9 @@ WEEKENDS: 08:00 AM - 02:00 PM
 </div></div></div>
 </div>
 <div id="menu_section" class="vc_row wpb_row vc_row-fluid vc_row-o-equal-height vc_row-flex">
-<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1469131079212"><div class="wpb_wrapper"><div id="ultimate-heading-20816369c8c1c7661" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-20816369c8c1c7661 uvc-4780 " data-hspacer="line_with_icon" data-hline_width="80" data-hicon_type="selector" data-hborder_style="double" data-hborder_height="3" data-hborder_color="rgba(0,0,0,0.15)" data-icon_width="10" data-hfixer="10" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-20816369c8c1c7661 h2" data-responsive-json-new='{"font-size":"desktop:60px;tablet:60px;tablet_portrait:40px;mobile_landscape:40px;mobile:40px;","line-height":"desktop:65px;tablet:65px;tablet_portrait:45px;mobile_landscape:45px;mobile:45px;"}'><h2 style="font-family:&#039;Great Vibes&#039;;--font-weight:theme;color:#c5ab6b;margin-bottom:5px;">Check out our</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-20816369c8c1c7661 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:50px;tablet:50px;tablet_portrait:35px;mobile_landscape:35px;mobile:35px;","line-height":"desktop:55px;tablet:55px;tablet_portrait:40px;mobile_landscape:40px;mobile:40px;"}' style="font-family:&#039;Poppins&#039;;font-weight:normal;color:#303030;">SEASONAL OFFERS</div>
+<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1469131079212"><div class="wpb_wrapper"><div id="ultimate-heading-4619636a2ad77ef43" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-4619636a2ad77ef43 uvc-4729 " data-hspacer="line_with_icon" data-hline_width="80" data-hicon_type="selector" data-hborder_style="double" data-hborder_height="3" data-hborder_color="rgba(0,0,0,0.15)" data-icon_width="10" data-hfixer="10" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4619636a2ad77ef43 h2" data-responsive-json-new='{"font-size":"desktop:60px;tablet:60px;tablet_portrait:40px;mobile_landscape:40px;mobile:40px;","line-height":"desktop:65px;tablet:65px;tablet_portrait:45px;mobile_landscape:45px;mobile:45px;"}'><h2 style="font-family:&#039;Great Vibes&#039;;--font-weight:theme;color:#c5ab6b;margin-bottom:5px;">Check out our</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4619636a2ad77ef43 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:50px;tablet:50px;tablet_portrait:35px;mobile_landscape:35px;mobile:35px;","line-height":"desktop:55px;tablet:55px;tablet_portrait:40px;mobile_landscape:40px;mobile:40px;"}' style="font-family:&#039;Poppins&#039;;font-weight:normal;color:#303030;">SEASONAL OFFERS</div>
 <div class="uvc-heading-spacer line_with_icon" style="margin-top:15px;height:10px;"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="color:rgba(0,0,0,0.25);font-size:10px;display:inline-block;">
 	<i class="icomoon-free-social-contact-16x16-svg"></i>
@@ -435,8 +474,8 @@ WEEKENDS: 08:00 AM - 02:00 PM
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-lg-offset-0 vc_col-lg-6 vc_col-md-offset-0 vc_col-md-6 vc_col-sm-offset-0 vc_col-has-fill"><div class="vc_column-inner vc_custom_1469185593891"><div class="wpb_wrapper"></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-6 vc_col-md-6 vc_col-has-fill"><div class="vc_column-inner vc_custom_1469298224313"><div class="wpb_wrapper">
-<div id="ultimate-heading-54836369c8c1c85d2" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-54836369c8c1c85d2 uvc-418 " data-hspacer="line_with_icon" data-hline_width="80" data-hicon_type="selector" data-hborder_style="double" data-hborder_height="3" data-hborder_color="#c4ac70" data-icon_width="10" data-hfixer="10" data-halign="center" style="text-align:center">
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-54836369c8c1c85d2 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:35px;","line-height":"desktop:40px;"}' style="font-family:&#039;Poppins&#039;;font-weight:normal;color:#303030;margin-top:-5px;">SUMMER SPECIALS</div>
+<div id="ultimate-heading-9268636a2ad77f508" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-9268636a2ad77f508 uvc-6138 " data-hspacer="line_with_icon" data-hline_width="80" data-hicon_type="selector" data-hborder_style="double" data-hborder_height="3" data-hborder_color="#c4ac70" data-icon_width="10" data-hfixer="10" data-halign="center" style="text-align:center">
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9268636a2ad77f508 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:35px;","line-height":"desktop:40px;"}' style="font-family:&#039;Poppins&#039;;font-weight:normal;color:#303030;margin-top:-5px;">SUMMER SPECIALS</div>
 <div class="uvc-heading-spacer line_with_icon" style="margin-top:5px;margin-bottom:20px;height:10px;"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="color:#c4ac70;font-size:10px;display:inline-block;">
 	<i class="icomoon-free-social-contact-16x16-svg"></i>
@@ -444,87 +483,87 @@ WEEKENDS: 08:00 AM - 02:00 PM
 </div></div></div>
 </div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1468281888465 vc_row-o-equal-height vc_row-flex">
-<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-8 vc_col-md-8 vc_col-xs-8"><div class="vc_column-inner vc_custom_1469283122072"><div class="wpb_wrapper"><div id="ultimate-heading-30426369c8c1c9021" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-30426369c8c1c9021 uvc-1394 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-8 vc_col-md-8 vc_col-xs-8"><div class="vc_column-inner vc_custom_1469283122072"><div class="wpb_wrapper"><div id="ultimate-heading-3607636a2ad77f928" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-3607636a2ad77f928 uvc-617 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-30426369c8c1c9021 h2" data-responsive-json-new='{"font-size":"desktop:17px;","line-height":"desktop:22px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:600;margin-bottom:8px;">Green Salad</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-30426369c8c1c9021 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:22px;"}' style="font-weight:normal;margin-bottom:8px;">With classic Italian dressing</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3607636a2ad77f928 h2" data-responsive-json-new='{"font-size":"desktop:17px;","line-height":"desktop:22px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:600;margin-bottom:8px;">Green Salad</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3607636a2ad77f928 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:22px;"}' style="font-weight:normal;margin-bottom:8px;">With classic Italian dressing</div>
 </div></div></div></div>
-<div class="wpb_column vc_column_container vc_col-sm-4 vc_col-lg-offset-0 vc_col-lg-4 vc_col-md-offset-0 vc_col-md-4 vc_col-sm-offset-0 vc_col-xs-4"><div class="vc_column-inner vc_custom_1469283114440"><div class="wpb_wrapper"><div id="ultimate-heading-42616369c8c1c91b9" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-42616369c8c1c91b9 uvc-1720 " data-hspacer="no_spacer" data-halign="right" style="text-align:right">
+<div class="wpb_column vc_column_container vc_col-sm-4 vc_col-lg-offset-0 vc_col-lg-4 vc_col-md-offset-0 vc_col-md-4 vc_col-sm-offset-0 vc_col-xs-4"><div class="vc_column-inner vc_custom_1469283114440"><div class="wpb_wrapper"><div id="ultimate-heading-7746636a2ad77faee" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-7746636a2ad77faee uvc-6746 " data-hspacer="no_spacer" data-halign="right" style="text-align:right">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-42616369c8c1c91b9 h2" data-responsive-json-new='{"font-size":"desktop:17px;","line-height":"desktop:22px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:600;color:#c5ab6b;margin-bottom:8px;">$4.00</h2></div>
-</div></div></div></div>
-</div>
-<div class="hr-thin style-dashed" style="width: 100%;border-color: rgba(34,34,34,0.15);border-top-width: 1px;"></div>
-<div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1468281888465 vc_row-o-equal-height vc_row-flex">
-<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-8 vc_col-md-8 vc_col-xs-8"><div class="vc_column-inner vc_custom_1469283122072"><div class="wpb_wrapper"><div id="ultimate-heading-20806369c8c1c9e3b" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-20806369c8c1c9e3b uvc-8784 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
-<div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-20806369c8c1c9e3b h2" data-responsive-json-new='{"font-size":"desktop:17px;","line-height":"desktop:22px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:600;margin-bottom:8px;">Vegetable Soup</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-20806369c8c1c9e3b .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:22px;"}' style="font-weight:normal;margin-bottom:8px;">With whole-grain croutons</div>
-</div></div></div></div>
-<div class="wpb_column vc_column_container vc_col-sm-4 vc_col-lg-offset-0 vc_col-lg-4 vc_col-md-offset-0 vc_col-md-4 vc_col-sm-offset-0 vc_col-xs-4"><div class="vc_column-inner vc_custom_1469283114440"><div class="wpb_wrapper"><div id="ultimate-heading-56606369c8c1ca089" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-56606369c8c1ca089 uvc-2779 " data-hspacer="no_spacer" data-halign="right" style="text-align:right">
-<div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-56606369c8c1ca089 h2" data-responsive-json-new='{"font-size":"desktop:17px;","line-height":"desktop:22px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:600;color:#c5ab6b;margin-bottom:8px;">$7.00</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-7746636a2ad77faee h2" data-responsive-json-new='{"font-size":"desktop:17px;","line-height":"desktop:22px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:600;color:#c5ab6b;margin-bottom:8px;">$4.00</h2></div>
 </div></div></div></div>
 </div>
 <div class="hr-thin style-dashed" style="width: 100%;border-color: rgba(34,34,34,0.15);border-top-width: 1px;"></div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1468281888465 vc_row-o-equal-height vc_row-flex">
-<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-8 vc_col-md-8 vc_col-xs-8"><div class="vc_column-inner vc_custom_1469283122072"><div class="wpb_wrapper"><div id="ultimate-heading-42496369c8c1ca3ee" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-42496369c8c1ca3ee uvc-4528 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-8 vc_col-md-8 vc_col-xs-8"><div class="vc_column-inner vc_custom_1469283122072"><div class="wpb_wrapper"><div id="ultimate-heading-5803636a2ad78006f" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-5803636a2ad78006f uvc-3170 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-42496369c8c1ca3ee h2" data-responsive-json-new='{"font-size":"desktop:17px;","line-height":"desktop:22px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:600;margin-bottom:8px;">T-Bone Steak</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-42496369c8c1ca3ee .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:22px;"}' style="font-weight:normal;margin-bottom:8px;">With grilled corn and wine sauce</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5803636a2ad78006f h2" data-responsive-json-new='{"font-size":"desktop:17px;","line-height":"desktop:22px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:600;margin-bottom:8px;">Vegetable Soup</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5803636a2ad78006f .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:22px;"}' style="font-weight:normal;margin-bottom:8px;">With whole-grain croutons</div>
 </div></div></div></div>
-<div class="wpb_column vc_column_container vc_col-sm-4 vc_col-lg-offset-0 vc_col-lg-4 vc_col-md-offset-0 vc_col-md-4 vc_col-sm-offset-0 vc_col-xs-4"><div class="vc_column-inner vc_custom_1469283114440"><div class="wpb_wrapper"><div id="ultimate-heading-10166369c8c1de9a9" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-10166369c8c1de9a9 uvc-3296 " data-hspacer="no_spacer" data-halign="right" style="text-align:right">
+<div class="wpb_column vc_column_container vc_col-sm-4 vc_col-lg-offset-0 vc_col-lg-4 vc_col-md-offset-0 vc_col-md-4 vc_col-sm-offset-0 vc_col-xs-4"><div class="vc_column-inner vc_custom_1469283114440"><div class="wpb_wrapper"><div id="ultimate-heading-2432636a2ad78030f" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2432636a2ad78030f uvc-8704 " data-hspacer="no_spacer" data-halign="right" style="text-align:right">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-10166369c8c1de9a9 h2" data-responsive-json-new='{"font-size":"desktop:17px;","line-height":"desktop:22px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:600;color:#c5ab6b;margin-bottom:8px;">$25.00</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2432636a2ad78030f h2" data-responsive-json-new='{"font-size":"desktop:17px;","line-height":"desktop:22px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:600;color:#c5ab6b;margin-bottom:8px;">$7.00</h2></div>
 </div></div></div></div>
 </div>
 <div class="hr-thin style-dashed" style="width: 100%;border-color: rgba(34,34,34,0.15);border-top-width: 1px;"></div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1468281888465 vc_row-o-equal-height vc_row-flex">
-<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-8 vc_col-md-8 vc_col-xs-8"><div class="vc_column-inner vc_custom_1469283122072"><div class="wpb_wrapper"><div id="ultimate-heading-96326369c8c1df749" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-96326369c8c1df749 uvc-2553 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-8 vc_col-md-8 vc_col-xs-8"><div class="vc_column-inner vc_custom_1469283122072"><div class="wpb_wrapper"><div id="ultimate-heading-1083636a2ad79534c" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-1083636a2ad79534c uvc-49 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-96326369c8c1df749 h2" data-responsive-json-new='{"font-size":"desktop:17px;","line-height":"desktop:22px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:600;margin-bottom:8px;">Fruit Salad</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-96326369c8c1df749 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:22px;"}' style="font-weight:normal;margin-bottom:8px;">Strawberry, peach, kiwi &amp; vanilla sauce</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1083636a2ad79534c h2" data-responsive-json-new='{"font-size":"desktop:17px;","line-height":"desktop:22px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:600;margin-bottom:8px;">T-Bone Steak</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1083636a2ad79534c .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:22px;"}' style="font-weight:normal;margin-bottom:8px;">With grilled corn and wine sauce</div>
 </div></div></div></div>
-<div class="wpb_column vc_column_container vc_col-sm-4 vc_col-lg-offset-0 vc_col-lg-4 vc_col-md-offset-0 vc_col-md-4 vc_col-sm-offset-0 vc_col-xs-4"><div class="vc_column-inner vc_custom_1469283114440"><div class="wpb_wrapper"><div id="ultimate-heading-79076369c8c1df93b" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-79076369c8c1df93b uvc-4470 " data-hspacer="no_spacer" data-halign="right" style="text-align:right">
+<div class="wpb_column vc_column_container vc_col-sm-4 vc_col-lg-offset-0 vc_col-lg-4 vc_col-md-offset-0 vc_col-md-4 vc_col-sm-offset-0 vc_col-xs-4"><div class="vc_column-inner vc_custom_1469283114440"><div class="wpb_wrapper"><div id="ultimate-heading-7855636a2ad795535" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-7855636a2ad795535 uvc-164 " data-hspacer="no_spacer" data-halign="right" style="text-align:right">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-79076369c8c1df93b h2" data-responsive-json-new='{"font-size":"desktop:17px;","line-height":"desktop:22px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:600;color:#c5ab6b;margin-bottom:8px;">$5.00</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-7855636a2ad795535 h2" data-responsive-json-new='{"font-size":"desktop:17px;","line-height":"desktop:22px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:600;color:#c5ab6b;margin-bottom:8px;">$25.00</h2></div>
+</div></div></div></div>
+</div>
+<div class="hr-thin style-dashed" style="width: 100%;border-color: rgba(34,34,34,0.15);border-top-width: 1px;"></div>
+<div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1468281888465 vc_row-o-equal-height vc_row-flex">
+<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-8 vc_col-md-8 vc_col-xs-8"><div class="vc_column-inner vc_custom_1469283122072"><div class="wpb_wrapper"><div id="ultimate-heading-6660636a2ad795901" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-6660636a2ad795901 uvc-6090 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div class="uvc-heading-spacer no_spacer" style="top"></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6660636a2ad795901 h2" data-responsive-json-new='{"font-size":"desktop:17px;","line-height":"desktop:22px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:600;margin-bottom:8px;">Fruit Salad</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6660636a2ad795901 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:22px;"}' style="font-weight:normal;margin-bottom:8px;">Strawberry, peach, kiwi &amp; vanilla sauce</div>
+</div></div></div></div>
+<div class="wpb_column vc_column_container vc_col-sm-4 vc_col-lg-offset-0 vc_col-lg-4 vc_col-md-offset-0 vc_col-md-4 vc_col-sm-offset-0 vc_col-xs-4"><div class="vc_column-inner vc_custom_1469283114440"><div class="wpb_wrapper"><div id="ultimate-heading-1034636a2ad795ad6" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-1034636a2ad795ad6 uvc-2173 " data-hspacer="no_spacer" data-halign="right" style="text-align:right">
+<div class="uvc-heading-spacer no_spacer" style="top"></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1034636a2ad795ad6 h2" data-responsive-json-new='{"font-size":"desktop:17px;","line-height":"desktop:22px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:600;color:#c5ab6b;margin-bottom:8px;">$5.00</h2></div>
 </div></div></div></div>
 </div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1469304280839"><div class="wpb_wrapper">
-<div id="ultimate-heading-83806369c8c1dfbbb" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-83806369c8c1dfbbb uvc-1119 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-1186636a2ad795da8" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-1186636a2ad795da8 uvc-2269 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-83806369c8c1dfbbb h2" data-responsive-json-new='{"font-size":"desktop:40px;","line-height":"desktop:45px;"}'><h2 style="font-family:&#039;Great Vibes&#039;;--font-weight:theme;color:#c5ab6b;">Tasty dishes</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-83806369c8c1dfbbb .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:35px;","line-height":"desktop:40px;"}' style="font-family:&#039;Poppins&#039;;font-weight:normal;color:#303030;">FOR LUNCH</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1186636a2ad795da8 h2" data-responsive-json-new='{"font-size":"desktop:40px;","line-height":"desktop:45px;"}'><h2 style="font-family:&#039;Great Vibes&#039;;--font-weight:theme;color:#c5ab6b;">Tasty dishes</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1186636a2ad795da8 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:35px;","line-height":"desktop:40px;"}' style="font-family:&#039;Poppins&#039;;font-weight:normal;color:#303030;">FOR LUNCH</div>
 </div>
-<div id="ultimate-heading-34696369c8c1dfc11" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-34696369c8c1dfc11 uvc-4063 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-4657636a2ad795e10" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-4657636a2ad795e10 uvc-2542 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-34696369c8c1dfc11 h3" data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}'><h3 style="font-family:&#039;Poppins&#039;;font-weight:500;color:#bfbfbf;margin-top:5px;">EVERYDAY 1:00 PM - 3:00 PM</h3></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4657636a2ad795e10 h3" data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}'><h3 style="font-family:&#039;Poppins&#039;;font-weight:500;color:#bfbfbf;margin-top:5px;">EVERYDAY 1:00 PM - 3:00 PM</h3></div>
 </div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1468941589654"><div class="wpb_wrapper">
 <div class="hr-thin style-dashed" style="width: 100%;border-color: rgba(34,34,34,0.15);border-top-width: 1px;"></div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1468281888465 vc_row-o-equal-height vc_row-flex">
-<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-8 vc_col-md-8 vc_col-xs-8"><div class="vc_column-inner vc_custom_1469283122072"><div class="wpb_wrapper"><div id="ultimate-heading-81786369c8c1e0041" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-81786369c8c1e0041 uvc-9243 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-8 vc_col-md-8 vc_col-xs-8"><div class="vc_column-inner vc_custom_1469283122072"><div class="wpb_wrapper"><div id="ultimate-heading-4049636a2ad797345" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-4049636a2ad797345 uvc-450 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-81786369c8c1e0041 h2" data-responsive-json-new='{"font-size":"desktop:17px;","line-height":"desktop:22px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:600;margin-bottom:8px;">Italian Style</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-81786369c8c1e0041 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:22px;"}' style="font-weight:normal;margin-bottom:8px;">Vegetable soup + spaghetti vongole + coffee</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4049636a2ad797345 h2" data-responsive-json-new='{"font-size":"desktop:17px;","line-height":"desktop:22px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:600;margin-bottom:8px;">Italian Style</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4049636a2ad797345 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:22px;"}' style="font-weight:normal;margin-bottom:8px;">Vegetable soup + spaghetti vongole + coffee</div>
 </div></div></div></div>
-<div class="wpb_column vc_column_container vc_col-sm-4 vc_col-lg-offset-0 vc_col-lg-4 vc_col-md-offset-0 vc_col-md-4 vc_col-sm-offset-0 vc_col-xs-4"><div class="vc_column-inner vc_custom_1469283114440"><div class="wpb_wrapper"><div id="ultimate-heading-45826369c8c1e01b9" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-45826369c8c1e01b9 uvc-4653 " data-hspacer="no_spacer" data-halign="right" style="text-align:right">
+<div class="wpb_column vc_column_container vc_col-sm-4 vc_col-lg-offset-0 vc_col-lg-4 vc_col-md-offset-0 vc_col-md-4 vc_col-sm-offset-0 vc_col-xs-4"><div class="vc_column-inner vc_custom_1469283114440"><div class="wpb_wrapper"><div id="ultimate-heading-4615636a2ad797527" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-4615636a2ad797527 uvc-4778 " data-hspacer="no_spacer" data-halign="right" style="text-align:right">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-45826369c8c1e01b9 h2" data-responsive-json-new='{"font-size":"desktop:17px;","line-height":"desktop:22px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:600;color:#c5ab6b;margin-bottom:8px;">$17.00</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4615636a2ad797527 h2" data-responsive-json-new='{"font-size":"desktop:17px;","line-height":"desktop:22px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:600;color:#c5ab6b;margin-bottom:8px;">$17.00</h2></div>
 </div></div></div></div>
 </div>
 <div class="hr-thin style-dashed" style="width: 100%;border-color: rgba(34,34,34,0.15);border-top-width: 1px;"></div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1468281888465 vc_row-o-equal-height vc_row-flex">
-<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-8 vc_col-md-8 vc_col-xs-8"><div class="vc_column-inner vc_custom_1469283122072"><div class="wpb_wrapper"><div id="ultimate-heading-21116369c8c1e1c7b" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-21116369c8c1e1c7b uvc-5697 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-8 vc_col-md-8 vc_col-xs-8"><div class="vc_column-inner vc_custom_1469283122072"><div class="wpb_wrapper"><div id="ultimate-heading-4566636a2ad798363" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-4566636a2ad798363 uvc-769 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-21116369c8c1e1c7b h2" data-responsive-json-new='{"font-size":"desktop:17px;","line-height":"desktop:22px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:600;margin-bottom:8px;">Kids Lunch</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-21116369c8c1e1c7b .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:22px;"}' style="font-weight:normal;margin-bottom:8px;">Tomato soup with croutons + small ceasar salad + apple juice</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4566636a2ad798363 h2" data-responsive-json-new='{"font-size":"desktop:17px;","line-height":"desktop:22px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:600;margin-bottom:8px;">Kids Lunch</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4566636a2ad798363 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:22px;"}' style="font-weight:normal;margin-bottom:8px;">Tomato soup with croutons + small ceasar salad + apple juice</div>
 </div></div></div></div>
-<div class="wpb_column vc_column_container vc_col-sm-4 vc_col-lg-offset-0 vc_col-lg-4 vc_col-md-offset-0 vc_col-md-4 vc_col-sm-offset-0 vc_col-xs-4"><div class="vc_column-inner vc_custom_1469283114440"><div class="wpb_wrapper"><div id="ultimate-heading-75556369c8c1e2338" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-75556369c8c1e2338 uvc-5685 " data-hspacer="no_spacer" data-halign="right" style="text-align:right">
+<div class="wpb_column vc_column_container vc_col-sm-4 vc_col-lg-offset-0 vc_col-lg-4 vc_col-md-offset-0 vc_col-md-4 vc_col-sm-offset-0 vc_col-xs-4"><div class="vc_column-inner vc_custom_1469283114440"><div class="wpb_wrapper"><div id="ultimate-heading-8562636a2ad798576" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-8562636a2ad798576 uvc-7087 " data-hspacer="no_spacer" data-halign="right" style="text-align:right">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-75556369c8c1e2338 h2" data-responsive-json-new='{"font-size":"desktop:17px;","line-height":"desktop:22px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:600;color:#c5ab6b;margin-bottom:8px;">$10.00</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-8562636a2ad798576 h2" data-responsive-json-new='{"font-size":"desktop:17px;","line-height":"desktop:22px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:600;color:#c5ab6b;margin-bottom:8px;">$10.00</h2></div>
 </div></div></div></div>
 </div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid vc_row-o-equal-height vc_row-flex"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-12 vc_col-md-12 vc_col-xs-12 vc_hidden-xs"><div class="vc_column-inner vc_custom_1469296166953"><div class="wpb_wrapper"><div class="hr-thin style-dashed" style="width: 100%;border-color: rgba(34,34,34,0.15);border-top-width: 1px;"></div></div></div></div></div>
@@ -532,26 +571,26 @@ WEEKENDS: 08:00 AM - 02:00 PM
 <div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1468941596931"><div class="wpb_wrapper">
 <div class="hr-thin style-dashed" style="width: 100%;border-color: rgba(34,34,34,0.15);border-top-width: 1px;"></div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1468281888465 vc_row-o-equal-height vc_row-flex">
-<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-8 vc_col-md-8 vc_col-xs-8"><div class="vc_column-inner vc_custom_1469283122072"><div class="wpb_wrapper"><div id="ultimate-heading-97346369c8c1e2ab7" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-97346369c8c1e2ab7 uvc-2554 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-8 vc_col-md-8 vc_col-xs-8"><div class="vc_column-inner vc_custom_1469283122072"><div class="wpb_wrapper"><div id="ultimate-heading-1962636a2ad79b22b" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-1962636a2ad79b22b uvc-845 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-97346369c8c1e2ab7 h2" data-responsive-json-new='{"font-size":"desktop:17px;","line-height":"desktop:22px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:600;margin-bottom:8px;">For Meat Lovers</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-97346369c8c1e2ab7 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:22px;"}' style="font-weight:normal;margin-bottom:8px;">T-bone steak + grilled corn + green salad + red house wine</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1962636a2ad79b22b h2" data-responsive-json-new='{"font-size":"desktop:17px;","line-height":"desktop:22px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:600;margin-bottom:8px;">For Meat Lovers</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1962636a2ad79b22b .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:22px;"}' style="font-weight:normal;margin-bottom:8px;">T-bone steak + grilled corn + green salad + red house wine</div>
 </div></div></div></div>
-<div class="wpb_column vc_column_container vc_col-sm-4 vc_col-lg-offset-0 vc_col-lg-4 vc_col-md-offset-0 vc_col-md-4 vc_col-sm-offset-0 vc_col-xs-4"><div class="vc_column-inner vc_custom_1469283114440"><div class="wpb_wrapper"><div id="ultimate-heading-35316369c8c1e2c18" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-35316369c8c1e2c18 uvc-7489 " data-hspacer="no_spacer" data-halign="right" style="text-align:right">
+<div class="wpb_column vc_column_container vc_col-sm-4 vc_col-lg-offset-0 vc_col-lg-4 vc_col-md-offset-0 vc_col-md-4 vc_col-sm-offset-0 vc_col-xs-4"><div class="vc_column-inner vc_custom_1469283114440"><div class="wpb_wrapper"><div id="ultimate-heading-7536636a2ad79b3d1" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-7536636a2ad79b3d1 uvc-8272 " data-hspacer="no_spacer" data-halign="right" style="text-align:right">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-35316369c8c1e2c18 h2" data-responsive-json-new='{"font-size":"desktop:17px;","line-height":"desktop:22px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:600;color:#c5ab6b;margin-bottom:8px;">$25.50</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-7536636a2ad79b3d1 h2" data-responsive-json-new='{"font-size":"desktop:17px;","line-height":"desktop:22px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:600;color:#c5ab6b;margin-bottom:8px;">$25.50</h2></div>
 </div></div></div></div>
 </div>
 <div class="hr-thin style-dashed" style="width: 100%;border-color: rgba(34,34,34,0.15);border-top-width: 1px;"></div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1468281888465 vc_row-o-equal-height vc_row-flex">
-<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-8 vc_col-md-8 vc_col-xs-8"><div class="vc_column-inner vc_custom_1469283122072"><div class="wpb_wrapper"><div id="ultimate-heading-60756369c8c1e2ed3" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-60756369c8c1e2ed3 uvc-807 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-8 vc_col-md-8 vc_col-xs-8"><div class="vc_column-inner vc_custom_1469283122072"><div class="wpb_wrapper"><div id="ultimate-heading-8312636a2ad79b703" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-8312636a2ad79b703 uvc-8346 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-60756369c8c1e2ed3 h2" data-responsive-json-new='{"font-size":"desktop:17px;","line-height":"desktop:22px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:600;margin-bottom:8px;">Light Summer Lunch</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-60756369c8c1e2ed3 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:22px;"}' style="font-weight:normal;margin-bottom:8px;">Vegetable soup + ceasar salad + coffee</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-8312636a2ad79b703 h2" data-responsive-json-new='{"font-size":"desktop:17px;","line-height":"desktop:22px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:600;margin-bottom:8px;">Light Summer Lunch</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-8312636a2ad79b703 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:22px;"}' style="font-weight:normal;margin-bottom:8px;">Vegetable soup + ceasar salad + coffee</div>
 </div></div></div></div>
-<div class="wpb_column vc_column_container vc_col-sm-4 vc_col-lg-offset-0 vc_col-lg-4 vc_col-md-offset-0 vc_col-md-4 vc_col-sm-offset-0 vc_col-xs-4"><div class="vc_column-inner vc_custom_1469283114440"><div class="wpb_wrapper"><div id="ultimate-heading-44066369c8c1e3040" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-44066369c8c1e3040 uvc-745 " data-hspacer="no_spacer" data-halign="right" style="text-align:right">
+<div class="wpb_column vc_column_container vc_col-sm-4 vc_col-lg-offset-0 vc_col-lg-4 vc_col-md-offset-0 vc_col-md-4 vc_col-sm-offset-0 vc_col-xs-4"><div class="vc_column-inner vc_custom_1469283114440"><div class="wpb_wrapper"><div id="ultimate-heading-658636a2ad79b880" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-658636a2ad79b880 uvc-5354 " data-hspacer="no_spacer" data-halign="right" style="text-align:right">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-44066369c8c1e3040 h2" data-responsive-json-new='{"font-size":"desktop:17px;","line-height":"desktop:22px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:600;color:#c5ab6b;margin-bottom:8px;">$15.00</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-658636a2ad79b880 h2" data-responsive-json-new='{"font-size":"desktop:17px;","line-height":"desktop:22px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:600;color:#c5ab6b;margin-bottom:8px;">$15.00</h2></div>
 </div></div></div></div>
 </div>
 <div class="hr-thin style-dashed" style="width: 100%;border-color: rgba(34,34,34,0.15);border-top-width: 1px;"></div>
@@ -560,9 +599,9 @@ WEEKENDS: 08:00 AM - 02:00 PM
 </div>
 <!-- Row Backgrounds --><div class="upb_color" data-bg-override="ex-full" data-bg-color="#f4f4f4" data-fadeout="" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false" data-custom-vc-row="" data-vc="6.8.0" data-is_old_vc="" data-theme-support="" data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size=""></div>
 <div id="press_section" class="vc_row wpb_row vc_row-fluid vc_custom_1469468500867 vc_row-o-equal-height vc_row-flex">
-<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1469131087143"><div class="wpb_wrapper"><div id="ultimate-heading-63016369c8c204631" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-63016369c8c204631 uvc-6533 " data-hspacer="line_with_icon" data-hline_width="80" data-hicon_type="selector" data-hborder_style="double" data-hborder_height="3" data-hborder_color="rgba(255,255,255,0.5)" data-icon_width="10" data-hfixer="10" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-63016369c8c204631 h2" data-responsive-json-new='{"font-size":"desktop:60px;tablet:60px;tablet_portrait:40px;mobile_landscape:40px;mobile:40px;","line-height":"desktop:65px;tablet:65px;tablet_portrait:45px;mobile_landscape:45px;mobile:45px;"}'><h2 style="font-family:&#039;Great Vibes&#039;;--font-weight:theme;color:#c5ab6b;margin-bottom:5px;">Party with us!</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-63016369c8c204631 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:50px;tablet:50px;tablet_portrait:35px;mobile_landscape:35px;mobile:35px;","line-height":"desktop:55px;tablet:55px;tablet_portrait:40px;mobile_landscape:40px;mobile:40px;"}' style="font-family:&#039;Poppins&#039;;font-weight:normal;color:#ffffff;">UPCOMING EVENTS</div>
+<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1469131087143"><div class="wpb_wrapper"><div id="ultimate-heading-8329636a2ad79e49f" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-8329636a2ad79e49f uvc-3136 " data-hspacer="line_with_icon" data-hline_width="80" data-hicon_type="selector" data-hborder_style="double" data-hborder_height="3" data-hborder_color="rgba(255,255,255,0.5)" data-icon_width="10" data-hfixer="10" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-8329636a2ad79e49f h2" data-responsive-json-new='{"font-size":"desktop:60px;tablet:60px;tablet_portrait:40px;mobile_landscape:40px;mobile:40px;","line-height":"desktop:65px;tablet:65px;tablet_portrait:45px;mobile_landscape:45px;mobile:45px;"}'><h2 style="font-family:&#039;Great Vibes&#039;;--font-weight:theme;color:#c5ab6b;margin-bottom:5px;">Party with us!</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-8329636a2ad79e49f .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:50px;tablet:50px;tablet_portrait:35px;mobile_landscape:35px;mobile:35px;","line-height":"desktop:55px;tablet:55px;tablet_portrait:40px;mobile_landscape:40px;mobile:40px;"}' style="font-family:&#039;Poppins&#039;;font-weight:normal;color:#ffffff;">UPCOMING EVENTS</div>
 <div class="uvc-heading-spacer line_with_icon" style="margin-top:15px;height:10px;"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="color:rgba(255,255,255,0.5);font-size:10px;display:inline-block;">
 	<i class="icomoon-free-social-contact-16x16-svg"></i>
@@ -570,7 +609,7 @@ WEEKENDS: 08:00 AM - 02:00 PM
 </div></div></div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-xs-12 vc_col-has-fill"><div class="vc_column-inner vc_custom_1469450874301"><div class="wpb_wrapper">
-<div id="ult-carousel-4030157986369c8c206622" class="ult-carousel-wrapper  vc_custom_1469451054197  ult_horizontal" data-gutter="15" data-rtl="false"><div class="ult-carousel-33051550816369c8c2065cf ">
+<div id="ult-carousel-190703350636a2ad79e763" class="ult-carousel-wrapper  vc_custom_1469451054197  ult_horizontal" data-gutter="15" data-rtl="false"><div class="ult-carousel-203279270636a2ad79e72a ">
 <div class="ult-item-wrap" data-animation="animated no-animation"><div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1469450631500">
 <div class="ult-item-wrap" data-animation="animated no-animation"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1469450651485"><div class="wpb_wrapper"><div class="ult-item-wrap" data-animation="animated no-animation">
 	<div class="wpb_single_image wpb_content_element vc_align_center">
@@ -581,14 +620,14 @@ WEEKENDS: 08:00 AM - 02:00 PM
 	</div>
 </div></div></div></div></div>
 <div class="ult-item-wrap" data-animation="animated no-animation"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1469450640844"><div class="wpb_wrapper">
-<div class="ult-item-wrap" data-animation="animated no-animation"><div id="ultimate-heading-29206369c8c21fe64" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-29206369c8c21fe64 uvc-8612 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div class="ult-item-wrap" data-animation="animated no-animation"><div id="ultimate-heading-5433636a2ad7ae501" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-5433636a2ad7ae501 uvc-2173 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-29206369c8c21fe64 h2" data-responsive-json-new='{"font-size":"desktop:40px;","line-height":"desktop:45px;"}'><h2 style="font-family:&#039;Great Vibes&#039;;--font-weight:theme;color:#c5ab6b;">Upcoming</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-29206369c8c21fe64 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:35px;","line-height":"desktop:40px;"}' style="font-family:&#039;Poppins&#039;;font-weight:normal;color:#303030;">ROCK &amp; ROLL NIGHT</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5433636a2ad7ae501 h2" data-responsive-json-new='{"font-size":"desktop:40px;","line-height":"desktop:45px;"}'><h2 style="font-family:&#039;Great Vibes&#039;;--font-weight:theme;color:#c5ab6b;">Upcoming</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5433636a2ad7ae501 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:35px;","line-height":"desktop:40px;"}' style="font-family:&#039;Poppins&#039;;font-weight:normal;color:#303030;">ROCK &amp; ROLL NIGHT</div>
 </div></div>
-<div class="ult-item-wrap" data-animation="animated no-animation"><div id="ultimate-heading-39866369c8c21fed2" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-39866369c8c21fed2 uvc-488 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div class="ult-item-wrap" data-animation="animated no-animation"><div id="ultimate-heading-2602636a2ad7ae580" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2602636a2ad7ae580 uvc-5907 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-39866369c8c21fed2 h3" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:24px;"}'><h3 style="font-family:&#039;Poppins&#039;;font-weight:500;margin-top:18px;margin-bottom:20px;">December 05, 2016 21:00 Hs</h3></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2602636a2ad7ae580 h3" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:24px;"}'><h3 style="font-family:&#039;Poppins&#039;;font-weight:500;margin-top:18px;margin-bottom:20px;">December 05, 2016 21:00 Hs</h3></div>
 </div></div>
 <div class="ult-item-wrap" data-animation="animated no-animation">
 	<div class="wpb_text_column wpb_content_element  vc_custom_1469128645297">
@@ -611,14 +650,14 @@ WEEKENDS: 08:00 AM - 02:00 PM
 	</div>
 </div></div></div></div></div>
 <div class="ult-item-wrap" data-animation="animated no-animation"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1469451138520"><div class="wpb_wrapper">
-<div class="ult-item-wrap" data-animation="animated no-animation"><div id="ultimate-heading-99056369c8c33662c" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-99056369c8c33662c uvc-9815 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div class="ult-item-wrap" data-animation="animated no-animation"><div id="ultimate-heading-4245636a2ad7b0987" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-4245636a2ad7b0987 uvc-5442 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-99056369c8c33662c h2" data-responsive-json-new='{"font-size":"desktop:40px;","line-height":"desktop:45px;"}'><h2 style="font-family:&#039;Great Vibes&#039;;--font-weight:theme;color:#c5ab6b;">Upcoming</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-99056369c8c33662c .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:35px;","line-height":"desktop:40px;"}' style="font-family:&#039;Poppins&#039;;font-weight:normal;color:#303030;">POWER ROCK NIGHT</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4245636a2ad7b0987 h2" data-responsive-json-new='{"font-size":"desktop:40px;","line-height":"desktop:45px;"}'><h2 style="font-family:&#039;Great Vibes&#039;;--font-weight:theme;color:#c5ab6b;">Upcoming</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4245636a2ad7b0987 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:35px;","line-height":"desktop:40px;"}' style="font-family:&#039;Poppins&#039;;font-weight:normal;color:#303030;">POWER ROCK NIGHT</div>
 </div></div>
-<div class="ult-item-wrap" data-animation="animated no-animation"><div id="ultimate-heading-24196369c8c336771" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-24196369c8c336771 uvc-6022 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div class="ult-item-wrap" data-animation="animated no-animation"><div id="ultimate-heading-5783636a2ad7b0af2" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-5783636a2ad7b0af2 uvc-1249 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-24196369c8c336771 h3" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:24px;"}'><h3 style="font-family:&#039;Poppins&#039;;font-weight:500;margin-top:18px;margin-bottom:20px;">December 10, 2016 22:00 Hs</h3></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5783636a2ad7b0af2 h3" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:24px;"}'><h3 style="font-family:&#039;Poppins&#039;;font-weight:500;margin-top:18px;margin-bottom:20px;">December 10, 2016 22:00 Hs</h3></div>
 </div></div>
 <div class="ult-item-wrap" data-animation="animated no-animation">
 	<div class="wpb_text_column wpb_content_element  vc_custom_1469128653679">
@@ -641,14 +680,14 @@ WEEKENDS: 08:00 AM - 02:00 PM
 	</div>
 </div></div></div></div></div>
 <div class="ult-item-wrap" data-animation="animated no-animation"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1469451158721"><div class="wpb_wrapper">
-<div class="ult-item-wrap" data-animation="animated no-animation"><div id="ultimate-heading-85696369c8c3e2354" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-85696369c8c3e2354 uvc-6993 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div class="ult-item-wrap" data-animation="animated no-animation"><div id="ultimate-heading-7003636a2ad7b1b01" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-7003636a2ad7b1b01 uvc-3789 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-85696369c8c3e2354 h2" data-responsive-json-new='{"font-size":"desktop:40px;","line-height":"desktop:45px;"}'><h2 style="font-family:&#039;Great Vibes&#039;;--font-weight:theme;color:#c5ab6b;">Upcoming</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-85696369c8c3e2354 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:35px;","line-height":"desktop:40px;"}' style="font-family:&#039;Poppins&#039;;font-weight:normal;color:#303030;">THE7 BAND LIVE</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-7003636a2ad7b1b01 h2" data-responsive-json-new='{"font-size":"desktop:40px;","line-height":"desktop:45px;"}'><h2 style="font-family:&#039;Great Vibes&#039;;--font-weight:theme;color:#c5ab6b;">Upcoming</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-7003636a2ad7b1b01 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:35px;","line-height":"desktop:40px;"}' style="font-family:&#039;Poppins&#039;;font-weight:normal;color:#303030;">THE7 BAND LIVE</div>
 </div></div>
-<div class="ult-item-wrap" data-animation="animated no-animation"><div id="ultimate-heading-36096369c8c3e23cd" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-36096369c8c3e23cd uvc-8786 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div class="ult-item-wrap" data-animation="animated no-animation"><div id="ultimate-heading-2433636a2ad7b1b67" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2433636a2ad7b1b67 uvc-2350 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-36096369c8c3e23cd h3" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:24px;"}'><h3 style="font-family:&#039;Poppins&#039;;font-weight:500;margin-top:18px;margin-bottom:20px;">December 15, 2016 21:30 Hs</h3></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2433636a2ad7b1b67 h3" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:24px;"}'><h3 style="font-family:&#039;Poppins&#039;;font-weight:500;margin-top:18px;margin-bottom:20px;">December 15, 2016 21:30 Hs</h3></div>
 </div></div>
 <div class="ult-item-wrap" data-animation="animated no-animation">
 	<div class="wpb_text_column wpb_content_element  vc_custom_1469128660988">
@@ -663,8 +702,8 @@ WEEKENDS: 08:00 AM - 02:00 PM
 </div></div>
 </div></div>			<script type="text/javascript">
 				jQuery(document).ready(function ($) {
-					if( typeof jQuery('.ult-carousel-33051550816369c8c2065cf').slick == "function"){
-						$('.ult-carousel-33051550816369c8c2065cf').slick({dots: false,autoplaySpeed: 5000,speed: 600,infinite: true,arrows: true,nextArrow: '<button type="button" role="button" aria-label="Next" style="color:#ffffff; font-size:26px;background:#c5ab6b;" class="slick-next square-bg"><i class="ultsl-arrow-right4"><\/i><\/button>',prevArrow: '<button type="button" role="button" aria-label="Previous" style="color:#ffffff; font-size:26px;background:#c5ab6b;" class="slick-prev square-bg"><i class="ultsl-arrow-left4"><\/i><\/button>',slidesToScroll:1,slidesToShow:1,swipe: true,draggable: true,touchMove: true,pauseOnHover: true,pauseOnFocus: false,responsive: [
+					if( typeof jQuery('.ult-carousel-203279270636a2ad79e72a').slick == "function"){
+						$('.ult-carousel-203279270636a2ad79e72a').slick({dots: false,autoplaySpeed: 5000,speed: 600,infinite: true,arrows: true,nextArrow: '<button type="button" role="button" aria-label="Next" style="color:#ffffff; font-size:26px;background:#c5ab6b;" class="slick-next square-bg"><i class="ultsl-arrow-right4"><\/i><\/button>',prevArrow: '<button type="button" role="button" aria-label="Previous" style="color:#ffffff; font-size:26px;background:#c5ab6b;" class="slick-prev square-bg"><i class="ultsl-arrow-left4"><\/i><\/button>',slidesToScroll:1,slidesToShow:1,swipe: true,draggable: true,touchMove: true,pauseOnHover: true,pauseOnFocus: false,responsive: [
 							{
 							  breakpoint: 1026,
 							  settings: {
@@ -696,9 +735,9 @@ WEEKENDS: 08:00 AM - 02:00 PM
 </div>
 <!-- Row Backgrounds --><div class="upb_bg_img" data-ultimate-bg="url(/wp-content/uploads/sites/51/2016/07/press.jpg)" data-image-id="id^83|url^/wp-content/uploads/sites/51/2016/07/press.jpg|caption^null|alt^null|title^press|description^null" data-ultimate-bg-style="vcpb-vz-jquery" data-bg-img-repeat="no-repeat" data-bg-img-size="cover" data-bg-img-position="" data-parallx_sense="30" data-bg-override="full" data-bg_img_attach="scroll" data-upb-overlay-color="rgba(17,17,17,0.65)" data-upb-bg-animation="" data-fadeout="" data-bg-animation="left-animation" data-bg-animation-type="h" data-animation-repeat="repeat" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false" data-custom-vc-row="" data-vc="6.8.0" data-is_old_vc="" data-theme-support="" data-overlay="true" data-overlay-color="rgba(17,17,17,0.65)" data-overlay-pattern="" data-overlay-pattern-opacity="0.8" data-overlay-pattern-size="" data-overlay-pattern-attachment="scroll"></div>
 <div class="vc_row wpb_row vc_row-fluid vc_custom_1469303031979">
-<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1469131640008"><div class="wpb_wrapper"><div id="ultimate-heading-13106369c8c402e0e" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-13106369c8c402e0e uvc-6013 " data-hspacer="line_with_icon" data-hline_width="80" data-hicon_type="selector" data-hborder_style="double" data-hborder_height="3" data-hborder_color="rgba(0,0,0,0.15)" data-icon_width="10" data-hfixer="10" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-13106369c8c402e0e h2" data-responsive-json-new='{"font-size":"desktop:60px;tablet:60px;tablet_portrait:40px;mobile_landscape:40px;mobile:40px;","line-height":"desktop:65px;tablet:65px;tablet_portrait:45px;mobile_landscape:45px;mobile:45px;"}'><h2 style="font-family:&#039;Great Vibes&#039;;--font-weight:theme;color:#c5ab6b;margin-bottom:5px;">Gallery</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-13106369c8c402e0e .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:50px;tablet:50px;tablet_portrait:35px;mobile_landscape:35px;mobile:35px;","line-height":"desktop:55px;tablet:55px;tablet_portrait:40px;mobile_landscape:40px;mobile:40px;"}' style="font-family:&#039;Poppins&#039;;font-weight:normal;color:#303030;">OUR INTERIOR</div>
+<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1469131640008"><div class="wpb_wrapper"><div id="ultimate-heading-2713636a2ad7b4155" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2713636a2ad7b4155 uvc-1940 " data-hspacer="line_with_icon" data-hline_width="80" data-hicon_type="selector" data-hborder_style="double" data-hborder_height="3" data-hborder_color="rgba(0,0,0,0.15)" data-icon_width="10" data-hfixer="10" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2713636a2ad7b4155 h2" data-responsive-json-new='{"font-size":"desktop:60px;tablet:60px;tablet_portrait:40px;mobile_landscape:40px;mobile:40px;","line-height":"desktop:65px;tablet:65px;tablet_portrait:45px;mobile_landscape:45px;mobile:45px;"}'><h2 style="font-family:&#039;Great Vibes&#039;;--font-weight:theme;color:#c5ab6b;margin-bottom:5px;">Gallery</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2713636a2ad7b4155 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:50px;tablet:50px;tablet_portrait:35px;mobile_landscape:35px;mobile:35px;","line-height":"desktop:55px;tablet:55px;tablet_portrait:40px;mobile_landscape:40px;mobile:40px;"}' style="font-family:&#039;Poppins&#039;;font-weight:normal;color:#303030;">OUR INTERIOR</div>
 <div class="uvc-heading-spacer line_with_icon" style="margin-top:15px;height:10px;"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="color:rgba(0,0,0,0.25);font-size:10px;display:inline-block;">
 	<i class="icomoon-free-social-contact-16x16-svg"></i>
@@ -839,9 +878,9 @@ WEEKENDS: 08:00 AM - 02:00 PM
 </div></div></div>
 </div>
 <div class="vc_row wpb_row vc_row-fluid vc_custom_1469300101973">
-<div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-0 vc_col-lg-12 vc_col-md-offset-0 vc_col-md-12 vc_col-sm-offset-0"><div class="vc_column-inner vc_custom_1469132298578"><div class="wpb_wrapper"><div id="ultimate-heading-79236369c8c498c69" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-79236369c8c498c69 uvc-8793 " data-hspacer="line_with_icon" data-hline_width="80" data-hicon_type="selector" data-hborder_style="double" data-hborder_height="3" data-hborder_color="rgba(0,0,0,0.15)" data-icon_width="10" data-hfixer="10" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-79236369c8c498c69 h2" data-responsive-json-new='{"font-size":"desktop:60px;tablet:60px;tablet_portrait:40px;mobile_landscape:40px;mobile:40px;","line-height":"desktop:65px;tablet:65px;tablet_portrait:45px;mobile_landscape:45px;mobile:45px;"}'><h2 style="font-family:&#039;Great Vibes&#039;;--font-weight:theme;color:#c5ab6b;margin-bottom:5px;">What people</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-79236369c8c498c69 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:50px;tablet:50px;tablet_portrait:35px;mobile_landscape:35px;mobile:35px;","line-height":"desktop:55px;tablet:55px;tablet_portrait:40px;mobile_landscape:40px;mobile:40px;"}' style="font-family:&#039;Poppins&#039;;font-weight:normal;color:#303030;">SAY ABOUT US</div>
+<div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-0 vc_col-lg-12 vc_col-md-offset-0 vc_col-md-12 vc_col-sm-offset-0"><div class="vc_column-inner vc_custom_1469132298578"><div class="wpb_wrapper"><div id="ultimate-heading-9035636a2ad80298c" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-9035636a2ad80298c uvc-9043 " data-hspacer="line_with_icon" data-hline_width="80" data-hicon_type="selector" data-hborder_style="double" data-hborder_height="3" data-hborder_color="rgba(0,0,0,0.15)" data-icon_width="10" data-hfixer="10" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9035636a2ad80298c h2" data-responsive-json-new='{"font-size":"desktop:60px;tablet:60px;tablet_portrait:40px;mobile_landscape:40px;mobile:40px;","line-height":"desktop:65px;tablet:65px;tablet_portrait:45px;mobile_landscape:45px;mobile:45px;"}'><h2 style="font-family:&#039;Great Vibes&#039;;--font-weight:theme;color:#c5ab6b;margin-bottom:5px;">What people</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9035636a2ad80298c .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:50px;tablet:50px;tablet_portrait:35px;mobile_landscape:35px;mobile:35px;","line-height":"desktop:55px;tablet:55px;tablet_portrait:40px;mobile_landscape:40px;mobile:40px;"}' style="font-family:&#039;Poppins&#039;;font-weight:normal;color:#303030;">SAY ABOUT US</div>
 <div class="uvc-heading-spacer line_with_icon" style="margin-top:15px;height:10px;"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="color:rgba(0,0,0,0.25);font-size:10px;display:inline-block;">
 	<i class="icomoon-free-social-contact-16x16-svg"></i>
@@ -849,7 +888,7 @@ WEEKENDS: 08:00 AM - 02:00 PM
 </div></div></div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1469303295920"><div class="wpb_wrapper">
-<div id="ult-carousel-12783775836369c8c498fe7" class="ult-carousel-wrapper  vc_custom_1469451281638  ult_horizontal" data-gutter="0" data-rtl="false"><div class="ult-carousel-29507555116369c8c498fa7 ">
+<div id="ult-carousel-2833962286636a2ad802d32" class="ult-carousel-wrapper  vc_custom_1469451281638  ult_horizontal" data-gutter="0" data-rtl="false"><div class="ult-carousel-2456624914636a2ad802cf2 ">
 <div class="ult-item-wrap" data-animation="animated no-animation"><div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="ult-item-wrap" data-animation="animated no-animation"><div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-offset-2 vc_col-lg-8 vc_col-md-offset-2 vc_col-md-8 vc_col-sm-offset-2 vc_col-xs-offset-1 vc_col-xs-10"><div class="vc_column-inner vc_custom_1469132851266"><div class="wpb_wrapper">
 <div class="ult-item-wrap" data-animation="animated no-animation">
 	<div class="wpb_single_image wpb_content_element vc_align_center  vc_custom_1469191547848">
@@ -859,9 +898,9 @@ WEEKENDS: 08:00 AM - 02:00 PM
 		</figure>
 	</div>
 </div>
-<div class="ult-item-wrap" data-animation="animated no-animation"><div id="ultimate-heading-75336369c8c49a68c" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-75336369c8c49a68c uvc-5701 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div class="ult-item-wrap" data-animation="animated no-animation"><div id="ultimate-heading-905636a2ad803b6f" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-905636a2ad803b6f uvc-5294 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-75336369c8c49a68c .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:18px;tablet:18px;tablet_portrait:14px;mobile_landscape:14px;mobile:14px;","line-height":"desktop:30px;tablet:30px;tablet_portrait:24px;mobile_landscape:24px;mobile:24px;"}' style="font-style:italic;font-weight:normal;">In volutpat vehicula iaculis. Nullam dapibus velit vel suscipit malesuada. Morbi tincidunt, dui tristique tincidunt faucibus, purus sapien consectetur libero, vitae venenatis eros lacus vitae erat. Mauris tristique pretium tristique.</div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-905636a2ad803b6f .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:18px;tablet:18px;tablet_portrait:14px;mobile_landscape:14px;mobile:14px;","line-height":"desktop:30px;tablet:30px;tablet_portrait:24px;mobile_landscape:24px;mobile:24px;"}' style="font-style:italic;font-weight:normal;">In volutpat vehicula iaculis. Nullam dapibus velit vel suscipit malesuada. Morbi tincidunt, dui tristique tincidunt faucibus, purus sapien consectetur libero, vitae venenatis eros lacus vitae erat. Mauris tristique pretium tristique.</div>
 </div></div>
 <div class="ult-item-wrap" data-animation="animated no-animation">
 	<div class="wpb_single_image wpb_content_element vc_align_center  vc_custom_1468516279715">
@@ -871,10 +910,10 @@ WEEKENDS: 08:00 AM - 02:00 PM
 		</figure>
 	</div>
 </div>
-<div class="ult-item-wrap" data-animation="animated no-animation"><div id="ultimate-heading-37316369c8c4ae96d" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-37316369c8c4ae96d uvc-6190 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div class="ult-item-wrap" data-animation="animated no-animation"><div id="ultimate-heading-7930636a2ad804026" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-7930636a2ad804026 uvc-3198 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-37316369c8c4ae96d h3" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:24px;"}'><h3 style="font-weight:bold;color:#c5ab6b;margin-top:20px;">RICK JAMES</h3></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-37316369c8c4ae96d .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:bold;">Regular customer</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-7930636a2ad804026 h3" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:24px;"}'><h3 style="font-weight:bold;color:#c5ab6b;margin-top:20px;">RICK JAMES</h3></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-7930636a2ad804026 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:bold;">Regular customer</div>
 </div></div>
 </div></div></div></div></div></div>
 <div class="ult-item-wrap" data-animation="animated no-animation"><div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="ult-item-wrap" data-animation="animated no-animation"><div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-offset-2 vc_col-lg-8 vc_col-md-offset-2 vc_col-md-8 vc_col-sm-offset-2 vc_col-xs-offset-1 vc_col-xs-10"><div class="vc_column-inner vc_custom_1469132851266"><div class="wpb_wrapper">
@@ -886,9 +925,9 @@ WEEKENDS: 08:00 AM - 02:00 PM
 		</figure>
 	</div>
 </div>
-<div class="ult-item-wrap" data-animation="animated no-animation"><div id="ultimate-heading-19016369c8c4e1d66" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-19016369c8c4e1d66 uvc-5689 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div class="ult-item-wrap" data-animation="animated no-animation"><div id="ultimate-heading-1048636a2ad804beb" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-1048636a2ad804beb uvc-4607 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-19016369c8c4e1d66 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:18px;tablet:18px;tablet_portrait:14px;mobile_landscape:14px;mobile:14px;","line-height":"desktop:30px;tablet:30px;tablet_portrait:24px;mobile_landscape:24px;mobile:24px;"}' style="font-style:italic;font-weight:normal;">WOW! Dapibus velit vel suscipit malesuada. Morbi tincidunt, purus sapien consectetur libero, vitae venenatis eros lacus vitae erat. Mauris tristique pretium tristique.</div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1048636a2ad804beb .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:18px;tablet:18px;tablet_portrait:14px;mobile_landscape:14px;mobile:14px;","line-height":"desktop:30px;tablet:30px;tablet_portrait:24px;mobile_landscape:24px;mobile:24px;"}' style="font-style:italic;font-weight:normal;">WOW! Dapibus velit vel suscipit malesuada. Morbi tincidunt, purus sapien consectetur libero, vitae venenatis eros lacus vitae erat. Mauris tristique pretium tristique.</div>
 </div></div>
 <div class="ult-item-wrap" data-animation="animated no-animation">
 	<div class="wpb_single_image wpb_content_element vc_align_center  vc_custom_1468516279715">
@@ -898,10 +937,10 @@ WEEKENDS: 08:00 AM - 02:00 PM
 		</figure>
 	</div>
 </div>
-<div class="ult-item-wrap" data-animation="animated no-animation"><div id="ultimate-heading-73866369c8c4e21d4" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-73866369c8c4e21d4 uvc-601 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div class="ult-item-wrap" data-animation="animated no-animation"><div id="ultimate-heading-7061636a2ad805029" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-7061636a2ad805029 uvc-2797 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-73866369c8c4e21d4 h3" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:24px;"}'><h3 style="font-weight:bold;color:#c5ab6b;margin-top:20px;">ANNA GREENFIELD</h3></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-73866369c8c4e21d4 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:bold;">Restaurant expert</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-7061636a2ad805029 h3" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:24px;"}'><h3 style="font-weight:bold;color:#c5ab6b;margin-top:20px;">ANNA GREENFIELD</h3></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-7061636a2ad805029 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:bold;">Restaurant expert</div>
 </div></div>
 </div></div></div></div></div></div>
 <div class="ult-item-wrap" data-animation="animated no-animation"><div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="ult-item-wrap" data-animation="animated no-animation"><div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-offset-2 vc_col-lg-8 vc_col-md-offset-2 vc_col-md-8 vc_col-sm-offset-2 vc_col-xs-offset-1 vc_col-xs-10"><div class="vc_column-inner vc_custom_1469132851266"><div class="wpb_wrapper">
@@ -913,9 +952,9 @@ WEEKENDS: 08:00 AM - 02:00 PM
 		</figure>
 	</div>
 </div>
-<div class="ult-item-wrap" data-animation="animated no-animation"><div id="ultimate-heading-206369c8c4e2bfc" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-206369c8c4e2bfc uvc-6289 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div class="ult-item-wrap" data-animation="animated no-animation"><div id="ultimate-heading-1153636a2ad8059f4" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-1153636a2ad8059f4 uvc-4213 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-206369c8c4e2bfc .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:18px;tablet:18px;tablet_portrait:14px;mobile_landscape:14px;mobile:14px;","line-height":"desktop:30px;tablet:30px;tablet_portrait:24px;mobile_landscape:24px;mobile:24px;"}' style="font-style:italic;font-weight:normal;">Morbi tincidunt, dui tristique tincidunt faucibus, purus sapien consectetur libero, vitae venenatis eros lacus vitae erat. Mauris tristique pretium tristique. Thanx!</div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1153636a2ad8059f4 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:18px;tablet:18px;tablet_portrait:14px;mobile_landscape:14px;mobile:14px;","line-height":"desktop:30px;tablet:30px;tablet_portrait:24px;mobile_landscape:24px;mobile:24px;"}' style="font-style:italic;font-weight:normal;">Morbi tincidunt, dui tristique tincidunt faucibus, purus sapien consectetur libero, vitae venenatis eros lacus vitae erat. Mauris tristique pretium tristique. Thanx!</div>
 </div></div>
 <div class="ult-item-wrap" data-animation="animated no-animation">
 	<div class="wpb_single_image wpb_content_element vc_align_center  vc_custom_1468516279715">
@@ -925,10 +964,10 @@ WEEKENDS: 08:00 AM - 02:00 PM
 		</figure>
 	</div>
 </div>
-<div class="ult-item-wrap" data-animation="animated no-animation"><div id="ultimate-heading-85176369c8c4e2f17" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-85176369c8c4e2f17 uvc-2715 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div class="ult-item-wrap" data-animation="animated no-animation"><div id="ultimate-heading-7105636a2ad805cb1" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-7105636a2ad805cb1 uvc-6945 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-85176369c8c4e2f17 h3" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:24px;"}'><h3 style="font-weight:bold;color:#c5ab6b;margin-top:20px;">TIFFANY BRIGHT</h3></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-85176369c8c4e2f17 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:bold;">Regular customer</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-7105636a2ad805cb1 h3" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:24px;"}'><h3 style="font-weight:bold;color:#c5ab6b;margin-top:20px;">TIFFANY BRIGHT</h3></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-7105636a2ad805cb1 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:bold;">Regular customer</div>
 </div></div>
 </div></div></div></div></div></div>
 <div class="ult-item-wrap" data-animation="animated no-animation"><div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="ult-item-wrap" data-animation="animated no-animation"><div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-offset-2 vc_col-lg-8 vc_col-md-offset-2 vc_col-md-8 vc_col-sm-offset-2 vc_col-xs-offset-1 vc_col-xs-10"><div class="vc_column-inner vc_custom_1469132851266"><div class="wpb_wrapper">
@@ -940,9 +979,9 @@ WEEKENDS: 08:00 AM - 02:00 PM
 		</figure>
 	</div>
 </div>
-<div class="ult-item-wrap" data-animation="animated no-animation"><div id="ultimate-heading-35016369c8c4e38c3" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-35016369c8c4e38c3 uvc-3941 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div class="ult-item-wrap" data-animation="animated no-animation"><div id="ultimate-heading-9784636a2ad8063a2" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-9784636a2ad8063a2 uvc-8305 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-35016369c8c4e38c3 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:18px;tablet:18px;tablet_portrait:14px;mobile_landscape:14px;mobile:14px;","line-height":"desktop:30px;tablet:30px;tablet_portrait:24px;mobile_landscape:24px;mobile:24px;"}' style="font-style:italic;font-weight:normal;">In volutpat vehicula iaculis. Nullam dapibus velit vel suscipit malesuada. Morbi tincidunt, dui tristique tincidunt faucibus, purus sapien consectetur libero, vitae venenatis eros lacus vitae erat. Mauris tristique pretium tristique.</div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9784636a2ad8063a2 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:18px;tablet:18px;tablet_portrait:14px;mobile_landscape:14px;mobile:14px;","line-height":"desktop:30px;tablet:30px;tablet_portrait:24px;mobile_landscape:24px;mobile:24px;"}' style="font-style:italic;font-weight:normal;">In volutpat vehicula iaculis. Nullam dapibus velit vel suscipit malesuada. Morbi tincidunt, dui tristique tincidunt faucibus, purus sapien consectetur libero, vitae venenatis eros lacus vitae erat. Mauris tristique pretium tristique.</div>
 </div></div>
 <div class="ult-item-wrap" data-animation="animated no-animation">
 	<div class="wpb_single_image wpb_content_element vc_align_center  vc_custom_1468516279715">
@@ -952,16 +991,16 @@ WEEKENDS: 08:00 AM - 02:00 PM
 		</figure>
 	</div>
 </div>
-<div class="ult-item-wrap" data-animation="animated no-animation"><div id="ultimate-heading-92946369c8c4e3b85" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-92946369c8c4e3b85 uvc-9898 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div class="ult-item-wrap" data-animation="animated no-animation"><div id="ultimate-heading-2174636a2ad80663b" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2174636a2ad80663b uvc-7427 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-92946369c8c4e3b85 h3" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:24px;"}'><h3 style="font-weight:bold;color:#c5ab6b;margin-top:20px;">NICK BROWNWOOD</h3></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-92946369c8c4e3b85 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:bold;">Regular customer</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2174636a2ad80663b h3" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:24px;"}'><h3 style="font-weight:bold;color:#c5ab6b;margin-top:20px;">NICK BROWNWOOD</h3></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2174636a2ad80663b .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:bold;">Regular customer</div>
 </div></div>
 </div></div></div></div></div></div>
 </div></div>			<script type="text/javascript">
 				jQuery(document).ready(function ($) {
-					if( typeof jQuery('.ult-carousel-29507555116369c8c498fa7').slick == "function"){
-						$('.ult-carousel-29507555116369c8c498fa7').slick({dots: true,autoplaySpeed: 5000,speed: 600,infinite: true,arrows: true,nextArrow: '<button type="button" role="button" aria-label="Next" style="color:#ffffff; font-size:26px;background:#c5ab6b;" class="slick-next square-bg"><i class="ultsl-arrow-right4"><\/i><\/button>',prevArrow: '<button type="button" role="button" aria-label="Previous" style="color:#ffffff; font-size:26px;background:#c5ab6b;" class="slick-prev square-bg"><i class="ultsl-arrow-left4"><\/i><\/button>',slidesToScroll:1,slidesToShow:1,swipe: true,draggable: true,touchMove: true,pauseOnHover: true,pauseOnFocus: false,responsive: [
+					if( typeof jQuery('.ult-carousel-2456624914636a2ad802cf2').slick == "function"){
+						$('.ult-carousel-2456624914636a2ad802cf2').slick({dots: true,autoplaySpeed: 5000,speed: 600,infinite: true,arrows: true,nextArrow: '<button type="button" role="button" aria-label="Next" style="color:#ffffff; font-size:26px;background:#c5ab6b;" class="slick-next square-bg"><i class="ultsl-arrow-right4"><\/i><\/button>',prevArrow: '<button type="button" role="button" aria-label="Previous" style="color:#ffffff; font-size:26px;background:#c5ab6b;" class="slick-prev square-bg"><i class="ultsl-arrow-left4"><\/i><\/button>',slidesToScroll:1,slidesToShow:1,swipe: true,draggable: true,touchMove: true,pauseOnHover: true,pauseOnFocus: false,responsive: [
 							{
 							  breakpoint: 1026,
 							  settings: {
@@ -993,9 +1032,9 @@ WEEKENDS: 08:00 AM - 02:00 PM
 </div>
 <!-- Row Backgrounds --><div class="upb_color" data-bg-override="ex-full" data-bg-color="#f4f4f4" data-fadeout="" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false" data-custom-vc-row="" data-vc="6.8.0" data-is_old_vc="" data-theme-support="" data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size=""></div>
 <div class="vc_row wpb_row vc_row-fluid custom-columns-gap custom-mobile-paddings vc_custom_1469303055095 vc_column-gap-30 vc_row-o-equal-height vc_row-flex">
-<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1469181114825"><div class="wpb_wrapper"><div id="ultimate-heading-87366369c8c5033ca" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-87366369c8c5033ca uvc-6571 " data-hspacer="line_with_icon" data-hline_width="80" data-hicon_type="selector" data-hborder_style="double" data-hborder_height="3" data-hborder_color="rgba(255,255,255,0.5)" data-icon_width="10" data-hfixer="10" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-87366369c8c5033ca h2" data-responsive-json-new='{"font-size":"desktop:60px;tablet:60px;tablet_portrait:40px;mobile_landscape:40px;mobile:40px;","line-height":"desktop:65px;tablet:65px;tablet_portrait:45px;mobile_landscape:45px;mobile:45px;"}'><h2 style="font-family:&#039;Great Vibes&#039;;--font-weight:theme;color:#c5ab6b;margin-bottom:5px;">Press</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-87366369c8c5033ca .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:50px;tablet:50px;tablet_portrait:35px;mobile_landscape:35px;mobile:35px;","line-height":"desktop:55px;tablet:55px;tablet_portrait:40px;mobile_landscape:40px;mobile:40px;"}' style="font-family:&#039;Poppins&#039;;font-weight:normal;color:#ffffff;">ABOUT US</div>
+<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1469181114825"><div class="wpb_wrapper"><div id="ultimate-heading-4740636a2ad807dfe" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-4740636a2ad807dfe uvc-9997 " data-hspacer="line_with_icon" data-hline_width="80" data-hicon_type="selector" data-hborder_style="double" data-hborder_height="3" data-hborder_color="rgba(255,255,255,0.5)" data-icon_width="10" data-hfixer="10" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4740636a2ad807dfe h2" data-responsive-json-new='{"font-size":"desktop:60px;tablet:60px;tablet_portrait:40px;mobile_landscape:40px;mobile:40px;","line-height":"desktop:65px;tablet:65px;tablet_portrait:45px;mobile_landscape:45px;mobile:45px;"}'><h2 style="font-family:&#039;Great Vibes&#039;;--font-weight:theme;color:#c5ab6b;margin-bottom:5px;">Press</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4740636a2ad807dfe .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:50px;tablet:50px;tablet_portrait:35px;mobile_landscape:35px;mobile:35px;","line-height":"desktop:55px;tablet:55px;tablet_portrait:40px;mobile_landscape:40px;mobile:40px;"}' style="font-family:&#039;Poppins&#039;;font-weight:normal;color:#ffffff;">ABOUT US</div>
 <div class="uvc-heading-spacer line_with_icon" style="margin-top:15px;height:10px;"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="color:rgba(255,255,255,0.5);font-size:10px;display:inline-block;">
 	<i class="icomoon-free-social-contact-16x16-svg"></i>
@@ -1016,9 +1055,9 @@ WEEKENDS: 08:00 AM - 02:00 PM
 
 		</div>
 	</div>
-<div id="ultimate-heading-40016369c8c505965" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-40016369c8c505965 uvc-5996 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-3881636a2ad81b5ef" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-3881636a2ad81b5ef uvc-1152 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-40016369c8c505965 h2" data-responsive-json-new='{"font-size":"desktop:17px;","line-height":"desktop:22px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:600;margin-top:35px;margin-bottom:0px;">Johnny Laub News</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3881636a2ad81b5ef h2" data-responsive-json-new='{"font-size":"desktop:17px;","line-height":"desktop:22px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:600;margin-top:35px;margin-bottom:0px;">Johnny Laub News</h2></div>
 </div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-6 vc_col-has-fill"><div class="vc_column-inner vc_custom_1469181238494"><div class="wpb_wrapper">
@@ -1035,9 +1074,9 @@ WEEKENDS: 08:00 AM - 02:00 PM
 
 		</div>
 	</div>
-<div id="ultimate-heading-51096369c8c5090c5" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-51096369c8c5090c5 uvc-8716 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-5172636a2ad81beda" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-5172636a2ad81beda uvc-2315 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-51096369c8c5090c5 h2" data-responsive-json-new='{"font-size":"desktop:17px;","line-height":"desktop:22px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:600;margin-top:35px;margin-bottom:0px;">Velvet Reviews</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5172636a2ad81beda h2" data-responsive-json-new='{"font-size":"desktop:17px;","line-height":"desktop:22px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:600;margin-top:35px;margin-bottom:0px;">Velvet Reviews</h2></div>
 </div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-6 vc_col-has-fill"><div class="vc_column-inner vc_custom_1469181230619"><div class="wpb_wrapper">
@@ -1054,9 +1093,9 @@ WEEKENDS: 08:00 AM - 02:00 PM
 
 		</div>
 	</div>
-<div id="ultimate-heading-16766369c8c509c59" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-16766369c8c509c59 uvc-5614 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-5246636a2ad81cf76" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-5246636a2ad81cf76 uvc-183 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-16766369c8c509c59 h2" data-responsive-json-new='{"font-size":"desktop:17px;","line-height":"desktop:22px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:600;margin-top:35px;margin-bottom:0px;">Valentina News</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5246636a2ad81cf76 h2" data-responsive-json-new='{"font-size":"desktop:17px;","line-height":"desktop:22px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:600;margin-top:35px;margin-bottom:0px;">Valentina News</h2></div>
 </div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-6 vc_col-has-fill"><div class="vc_column-inner vc_custom_1469181415477"><div class="wpb_wrapper">
@@ -1073,9 +1112,9 @@ WEEKENDS: 08:00 AM - 02:00 PM
 
 		</div>
 	</div>
-<div id="ultimate-heading-60636369c8c51b535" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-60636369c8c51b535 uvc-5590 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-1065636a2ad81da9c" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-1065636a2ad81da9c uvc-125 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-60636369c8c51b535 h2" data-responsive-json-new='{"font-size":"desktop:17px;","line-height":"desktop:22px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:600;margin-top:35px;margin-bottom:0px;">Marcello Magazine</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1065636a2ad81da9c h2" data-responsive-json-new='{"font-size":"desktop:17px;","line-height":"desktop:22px;"}'><h2 style="font-family:&#039;Raleway&#039;;font-weight:600;margin-top:35px;margin-bottom:0px;">Marcello Magazine</h2></div>
 </div>
 </div></div></div>
 </div>
@@ -1090,10 +1129,10 @@ WEEKENDS: 08:00 AM - 02:00 PM
 	</div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-8"><div class="vc_column-inner vc_custom_1469452041053"><div class="wpb_wrapper">
-<div id="ultimate-heading-18106369c8c5987e1" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-18106369c8c5987e1 uvc-6036 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div id="ultimate-heading-3231636a2ad81ecb1" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-3231636a2ad81ecb1 uvc-7036 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-18106369c8c5987e1 h2" data-responsive-json-new='{"font-size":"desktop:40px;","line-height":"desktop:45px;"}'><h2 style="font-family:&#039;Great Vibes&#039;;--font-weight:theme;color:#c5ab6b;">The word from</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-18106369c8c5987e1 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:35px;","line-height":"desktop:40px;"}' style="font-family:&#039;Poppins&#039;;font-weight:normal;color:#303030;margin-bottom:20px;">OUR CHEF</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3231636a2ad81ecb1 h2" data-responsive-json-new='{"font-size":"desktop:40px;","line-height":"desktop:45px;"}'><h2 style="font-family:&#039;Great Vibes&#039;;--font-weight:theme;color:#c5ab6b;">The word from</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3231636a2ad81ecb1 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:35px;","line-height":"desktop:40px;"}' style="font-family:&#039;Poppins&#039;;font-weight:normal;color:#303030;margin-bottom:20px;">OUR CHEF</div>
 </div>
 	<div class="wpb_text_column wpb_content_element ">
 		<div class="wpb_wrapper">
@@ -1103,10 +1142,10 @@ WEEKENDS: 08:00 AM - 02:00 PM
 
 		</div>
 	</div>
-<div id="ultimate-heading-85316369c8c5989d5" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-85316369c8c5989d5 uvc-8608 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div id="ultimate-heading-5288636a2ad81ef3e" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-5288636a2ad81ef3e uvc-8370 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-85316369c8c5989d5 h3" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:24px;"}'><h3 style="font-family:&#039;Poppins&#039;;font-weight:500;color:#303030;margin-top:30px;">Frederico Bagrationi</h3></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-85316369c8c5989d5 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:normal;color:#bfbfbf;"><em>Resto Seven Head Chef</em></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5288636a2ad81ef3e h3" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:24px;"}'><h3 style="font-family:&#039;Poppins&#039;;font-weight:500;color:#303030;margin-top:30px;">Frederico Bagrationi</h3></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5288636a2ad81ef3e .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:normal;color:#bfbfbf;"><em>Resto Seven Head Chef</em></div>
 </div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12 vc_hidden-xs"><div class="vc_column-inner"><div class="wpb_wrapper">
 	<div class="wpb_single_image wpb_content_element vc_align_right  vc_custom_1469452212702">
@@ -1119,9 +1158,9 @@ WEEKENDS: 08:00 AM - 02:00 PM
 </div></div></div>
 </div>
 <div id="reservation" class="vc_row wpb_row vc_row-fluid vc_custom_1469303141605 vc_row-o-equal-height vc_row-flex">
-<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1469182265739"><div class="wpb_wrapper"><div id="ultimate-heading-56836369c8c5c6140" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-56836369c8c5c6140 uvc-4702 " data-hspacer="line_with_icon" data-hline_width="80" data-hicon_type="selector" data-hborder_style="double" data-hborder_height="3" data-hborder_color="rgba(0,0,0,0.15)" data-icon_width="10" data-hfixer="10" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-56836369c8c5c6140 h2" data-responsive-json-new='{"font-size":"desktop:60px;tablet:60px;tablet_portrait:40px;mobile_landscape:40px;mobile:40px;","line-height":"desktop:65px;tablet:65px;tablet_portrait:45px;mobile_landscape:45px;mobile:45px;"}'><h2 style="font-family:&#039;Great Vibes&#039;;--font-weight:theme;color:#c5ab6b;margin-bottom:5px;">Reserve</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-56836369c8c5c6140 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:50px;tablet:50px;tablet_portrait:35px;mobile_landscape:35px;mobile:35px;","line-height":"desktop:55px;tablet:55px;tablet_portrait:40px;mobile_landscape:40px;mobile:40px;"}' style="font-family:&#039;Poppins&#039;;font-weight:normal;color:#303030;">A TABLE</div>
+<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1469182265739"><div class="wpb_wrapper"><div id="ultimate-heading-7559636a2ad8340e5" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-7559636a2ad8340e5 uvc-1431 " data-hspacer="line_with_icon" data-hline_width="80" data-hicon_type="selector" data-hborder_style="double" data-hborder_height="3" data-hborder_color="rgba(0,0,0,0.15)" data-icon_width="10" data-hfixer="10" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-7559636a2ad8340e5 h2" data-responsive-json-new='{"font-size":"desktop:60px;tablet:60px;tablet_portrait:40px;mobile_landscape:40px;mobile:40px;","line-height":"desktop:65px;tablet:65px;tablet_portrait:45px;mobile_landscape:45px;mobile:45px;"}'><h2 style="font-family:&#039;Great Vibes&#039;;--font-weight:theme;color:#c5ab6b;margin-bottom:5px;">Reserve</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-7559636a2ad8340e5 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:50px;tablet:50px;tablet_portrait:35px;mobile_landscape:35px;mobile:35px;","line-height":"desktop:55px;tablet:55px;tablet_portrait:40px;mobile_landscape:40px;mobile:40px;"}' style="font-family:&#039;Poppins&#039;;font-weight:normal;color:#303030;">A TABLE</div>
 <div class="uvc-heading-spacer line_with_icon" style="margin-top:15px;height:10px;"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="color:rgba(0,0,0,0.25);font-size:10px;display:inline-block;">
 	<i class="icomoon-free-social-contact-16x16-svg"></i>
@@ -1149,24 +1188,24 @@ WEEKENDS: 08:00 AM - 02:00 PM
 	</div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-1 vc_col-lg-10 vc_col-md-offset-1 vc_col-md-10 vc_col-sm-offset-0"><div class="vc_column-inner vc_custom_1461332951646"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid">
-<div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1461332837092"><div class="wpb_wrapper"><div id="ultimate-heading-89886369c8c5ca12f" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-89886369c8c5ca12f uvc-7074 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1461332837092"><div class="wpb_wrapper"><div id="ultimate-heading-4287636a2ad83556e" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-4287636a2ad83556e uvc-6064 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-89886369c8c5ca12f .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:15px;","line-height":"desktop:22px;"}' style="font-family:&#039;Poppins&#039;;font-weight:normal;font-style:normal;color:#a0a0a0;">
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4287636a2ad83556e .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:15px;","line-height":"desktop:22px;"}' style="font-family:&#039;Poppins&#039;;font-weight:normal;font-style:normal;color:#a0a0a0;">
 <p style="text-align: center;">121 Rock Sreet, 21 Avenue, New York</p>
 <p></p>
 </div>
 </div></div></div></div>
-<div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1461332842664"><div class="wpb_wrapper"><div id="ultimate-heading-33796369c8c5ca35c" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-33796369c8c5ca35c uvc-6676 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1461332842664"><div class="wpb_wrapper"><div id="ultimate-heading-6507636a2ad83574d" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-6507636a2ad83574d uvc-6072 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-33796369c8c5ca35c .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:15px;","line-height":"desktop:22px;"}' style="font-family:&#039;Poppins&#039;;font-weight:normal;font-style:normal;color:#a0a0a0;">
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6507636a2ad83574d .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:15px;","line-height":"desktop:22px;"}' style="font-family:&#039;Poppins&#039;;font-weight:normal;font-style:normal;color:#a0a0a0;">
 <p style="text-align: center;">Mon-Fri: 08.00 AM &#8211; 10:00 PM</p>
 <p style="text-align: center;">Sat-Sun: 10:00AM &#8211; 11:00 PM</p>
 <p></p>
 </div>
 </div></div></div></div>
-<div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1461332847822"><div class="wpb_wrapper"><div id="ultimate-heading-60476369c8c5ca55f" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-60476369c8c5ca55f uvc-6241 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1461332847822"><div class="wpb_wrapper"><div id="ultimate-heading-5697636a2ad835923" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-5697636a2ad835923 uvc-4164 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-60476369c8c5ca55f .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:15px;","line-height":"desktop:22px;"}' style="font-family:&#039;Poppins&#039;;font-weight:normal;font-style:normal;color:#a0a0a0;">
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5697636a2ad835923 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:15px;","line-height":"desktop:22px;"}' style="font-family:&#039;Poppins&#039;;font-weight:normal;font-style:normal;color:#a0a0a0;">
 <p style="text-align: center;">Reservation Number:</p>
 <p style="text-align: center;">+00 11 222 333444</p>
 <p></p>
@@ -1174,22 +1213,22 @@ WEEKENDS: 08:00 AM - 02:00 PM
 </div></div></div></div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1460570841666"><div class="wpb_wrapper"><div class=" uavc-icons-center uavc-icons ">
-<a class="aio-tooltip 6369c8c5ca9cc" href="#" data-toggle="tooltip" data-placement="" title=""><div class="aio-icon circle " data-animation="" data-animation-delay="03" style="color:#131313;background:#f7f7f7;font-size:18px;margin-right:5px;">
+<a class="aio-tooltip 636a2ad835d14" href="#" data-toggle="tooltip" data-placement="" title=""><div class="aio-icon circle " data-animation="" data-animation-delay="03" style="color:#131313;background:#f7f7f7;font-size:18px;margin-right:5px;">
 	<i class="icomoon-free-social-contact-16x16-facebook"></i>
 </div></a>
-<a class="aio-tooltip 6369c8c5caa18" href="#" data-toggle="tooltip" data-placement="" title=""><div class="aio-icon circle " data-animation="" data-animation-delay="03" style="color:#131313;background:#f7f7f7;font-size:18px;margin-right:5px;">
+<a class="aio-tooltip 636a2ad835d55" href="#" data-toggle="tooltip" data-placement="" title=""><div class="aio-icon circle " data-animation="" data-animation-delay="03" style="color:#131313;background:#f7f7f7;font-size:18px;margin-right:5px;">
 	<i class="icomoon-free-social-contact-16x16-twitter"></i>
 </div></a>
-<a class="aio-tooltip 6369c8c5caa54" href="#" data-toggle="tooltip" data-placement="" title=""><div class="aio-icon circle " data-animation="" data-animation-delay="03" style="color:#131313;background:#f7f7f7;font-size:18px;margin-right:5px;">
+<a class="aio-tooltip 636a2ad835d88" href="#" data-toggle="tooltip" data-placement="" title=""><div class="aio-icon circle " data-animation="" data-animation-delay="03" style="color:#131313;background:#f7f7f7;font-size:18px;margin-right:5px;">
 	<i class="icomoon-free-social-contact-16x16-instagram"></i>
 </div></a>
-<a class="aio-tooltip 6369c8c5caab8" href="#" data-toggle="tooltip" data-placement="" title=""><div class="aio-icon circle " data-animation="" data-animation-delay="03" style="color:#131313;background:#f7f7f7;font-size:18px;margin-right:5px;">
+<a class="aio-tooltip 636a2ad835db7" href="#" data-toggle="tooltip" data-placement="" title=""><div class="aio-icon circle " data-animation="" data-animation-delay="03" style="color:#131313;background:#f7f7f7;font-size:18px;margin-right:5px;">
 	<i class="icomoon-free-social-contact-16x16-pinterest"></i>
 </div></a>
 </div></div></div></div>
-<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1469282395397"><div class="wpb_wrapper"><div id="ultimate-heading-64326369c8c5cbd7f" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-64326369c8c5cbd7f uvc-8327 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1469282395397"><div class="wpb_wrapper"><div id="ultimate-heading-5091636a2ad835f91" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-5091636a2ad835f91 uvc-3101 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-64326369c8c5cbd7f .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:15px;","line-height":"desktop:22px;"}' style="font-family:&#039;Poppins&#039;;font-weight:normal;font-style:normal;color:#a0a0a0;">2016 Seven Restaurant. All Rights Reserved.</div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5091636a2ad835f91 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:15px;","line-height":"desktop:22px;"}' style="font-family:&#039;Poppins&#039;;font-weight:normal;font-style:normal;color:#a0a0a0;">2016 Seven Restaurant. All Rights Reserved.</div>
 </div></div></div></div>
 </div>
 <div class="vc_row-full-width vc_clearfix"></div>
@@ -1374,5 +1413,5 @@ WEEKENDS: 08:00 AM - 02:00 PM
 </body>
 
 
-<!-- Page supported by LiteSpeed Cache 5.3 on 2022-11-08 03:11:02 -->
+<!-- Page supported by LiteSpeed Cache 5.3 on 2022-11-08 10:09:28 -->
 </html>
