@@ -69,13 +69,52 @@ img.emoji {
 <link rel="stylesheet" id="js_composer_front-css" href="/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=6.8.0" type="text/css" media="all">
 <link rel="stylesheet" id="dt-web-fonts-css" href="https://fonts.googleapis.com/css?family=Raleway:400,600,700|Roboto:400,600,700|Roboto Condensed:400,600,700" type="text/css" media="all">
 <link rel="stylesheet" id="dt-main-css" href="/wp-content/themes/dt-the7/css/main.min.css?ver=11.1.1" type="text/css" media="all">
+<style id="dt-main-inline-css" type="text/css">body #load {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 9901;
+  opacity: 1;
+  visibility: visible;
+  transition: all .35s ease-out;
+}
+.load-wrap {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -ms-flex-pack: center;
+  -ms-justify-content: center;
+  justify-content: center;
+}
+.load-wrap > svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+#load {
+  background: var(--the7-elementor-beautiful-loading-bg,#e7b35a);
+  --the7-beautiful-spinner-color2: var(--the7-beautiful-spinner-color,#ffffff);
+}</style>
 <link rel="stylesheet" id="the7-custom-scrollbar-css" href="/wp-content/themes/dt-the7/lib/custom-scrollbar/custom-scrollbar.min.css?ver=11.1.1" type="text/css" media="all">
 <link rel="stylesheet" id="the7-wpbakery-css" href="/wp-content/themes/dt-the7/css/wpbakery.min.css?ver=11.1.1" type="text/css" media="all">
-<link rel="stylesheet" id="the7-css-vars-css" href="/wp-content/uploads/sites/48/the7-css/css-vars.css?ver=52ea1a5461f4" type="text/css" media="all">
-<link rel="stylesheet" id="dt-custom-css" href="/wp-content/uploads/sites/48/the7-css/custom.css?ver=52ea1a5461f4" type="text/css" media="all">
-<link rel="stylesheet" id="dt-media-css" href="/wp-content/uploads/sites/48/the7-css/media.css?ver=52ea1a5461f4" type="text/css" media="all">
-<link rel="stylesheet" id="the7-mega-menu-css" href="/wp-content/uploads/sites/48/the7-css/mega-menu.css?ver=52ea1a5461f4" type="text/css" media="all">
-<link rel="stylesheet" id="the7-elements-css" href="/wp-content/uploads/sites/48/the7-css/post-type-dynamic.css?ver=52ea1a5461f4" type="text/css" media="all">
+<link rel="stylesheet" id="the7-css-vars-css" href="/wp-content/uploads/sites/48/the7-css/css-vars.css?ver=4ffbfd35a7a9" type="text/css" media="all">
+<link rel="stylesheet" id="dt-custom-css" href="/wp-content/uploads/sites/48/the7-css/custom.css?ver=4ffbfd35a7a9" type="text/css" media="all">
+<link rel="stylesheet" id="dt-media-css" href="/wp-content/uploads/sites/48/the7-css/media.css?ver=4ffbfd35a7a9" type="text/css" media="all">
+<link rel="stylesheet" id="the7-mega-menu-css" href="/wp-content/uploads/sites/48/the7-css/mega-menu.css?ver=4ffbfd35a7a9" type="text/css" media="all">
+<link rel="stylesheet" id="the7-elements-css" href="/wp-content/uploads/sites/48/the7-css/post-type-dynamic.css?ver=4ffbfd35a7a9" type="text/css" media="all">
 <link rel="stylesheet" id="style-css" href="/wp-content/themes/dt-the7/style.css?ver=11.1.1" type="text/css" media="all">
 <link rel="stylesheet" id="ultimate-vc-addons-google-fonts-css" href="https://fonts.googleapis.com/css?family=Open Sans:regular,600|" type="text/css" media="all">
 <link rel="stylesheet" id="ultimate-vc-addons-style-css" href="/wp-content/plugins/Ultimate_VC_Addons/assets/min-css/style.min.css?ver=3.19.11" type="text/css" media="all">
@@ -405,9 +444,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </div></div></div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6 vc_col-xs-12"><div class="vc_column-inner"><div class="wpb_wrapper">
-<div id="ultimate-heading-83436369c38fc6e5e" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-83436369c38fc6e5e uvc-1887 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-9218636a22ca68410" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-9218636a22ca68410 uvc-7096 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-83436369c38fc6e5e h2" data-responsive-json-new='{"font-size":"desktop:27px;","line-height":"desktop:32px;"}'><h2 style="font-weight:bold;margin-bottom:20px;">About Seven Coffee</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9218636a22ca68410 h2" data-responsive-json-new='{"font-size":"desktop:27px;","line-height":"desktop:32px;"}'><h2 style="font-weight:bold;margin-bottom:20px;">About Seven Coffee</h2></div>
 </div>
 	<div class="wpb_text_column wpb_content_element  vc_custom_1525332425927">
 		<div class="wpb_wrapper">
@@ -435,8 +474,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </div></div></div>
 </div>
 <div id="location_section" class="vc_row wpb_row vc_row-fluid custom-columns-gap custom-mobile-paddings vc_custom_1525453892321 vc_column-gap-30 vc_row-o-equal-height vc_row-flex">
-<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1461064833484"><div class="wpb_wrapper"><div id="ultimate-heading-88146369c3901cdc8" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-88146369c3901cdc8 uvc-592 " data-hspacer="line_with_icon" data-hline_width="100" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="4" data-hborder_color="#e7b35a" data-icon_width="24" data-hfixer="20" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-88146369c3901cdc8 h2" data-responsive-json-new='{"font-size":"desktop:50px;","line-height":"desktop:60px;"}'><h2 style="font-weight:bold;color:#ffffff;margin-bottom:4px;">Locations</h2></div>
+<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1461064833484"><div class="wpb_wrapper"><div id="ultimate-heading-4786636a22ca7e803" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-4786636a22ca7e803 uvc-3402 " data-hspacer="line_with_icon" data-hline_width="100" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="4" data-hborder_color="#e7b35a" data-icon_width="24" data-hfixer="20" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4786636a22ca7e803 h2" data-responsive-json-new='{"font-size":"desktop:50px;","line-height":"desktop:60px;"}'><h2 style="font-weight:bold;color:#ffffff;margin-bottom:4px;">Locations</h2></div>
 <div class="uvc-heading-spacer line_with_icon" style="topheight:24px;"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="color:#e7b35a;font-size:24px;display:inline-block;">
 	<i class="icomoon-fontawesome-16x16-bookmark"></i>
@@ -458,37 +497,37 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		</div>
 	</div>
 <div class="aio-icon-component  vc_custom_1525341448012   style_1">
-<div id="Info-box-wrap-3385" class="aio-icon-box default-icon">
+<div id="Info-box-wrap-8996" class="aio-icon-box default-icon">
 <div class="aio-icon-default"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="color:#333;font-size:16px;display:inline-block;">
 	<i class="icomoon-fontawesome-16x16-map-marker-alt"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-3385 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:25px;"}' style="font-weight:600;">Address: 421, Brooklyn, New York</h3></div> <!-- header -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-8996 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:25px;"}' style="font-weight:600;">Address: 421, Brooklyn, New York</h3></div> <!-- header -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component --><div class="aio-icon-component  vc_custom_1525341554424   style_1">
-<div id="Info-box-wrap-6852" class="aio-icon-box default-icon">
+<div id="Info-box-wrap-2896" class="aio-icon-box default-icon">
 <div class="aio-icon-default"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="color:#333;font-size:16px;display:inline-block;">
 	<i class="icomoon-fontawesome-16x16-clock"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-6852 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-weight:600;">Open: 9 AM / 22 PM</h3></div> <!-- header -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-2896 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-weight:600;">Open: 9 AM / 22 PM</h3></div> <!-- header -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component --><div class="aio-icon-component  vc_custom_1525341485756   style_1">
-<div id="Info-box-wrap-6536" class="aio-icon-box default-icon">
+<div id="Info-box-wrap-3950" class="aio-icon-box default-icon">
 <div class="aio-icon-default"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="color:#333;font-size:16px;display:inline-block;">
 	<i class="icomoon-fontawesome-16x16-phone"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-6536 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-weight:600;">Phone: +1 354 454878</h3></div> <!-- header -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-3950 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-weight:600;">Phone: +1 354 454878</h3></div> <!-- header -->
 </div> <!-- aio-icon-box -->
-</div> <!-- aio-icon-component --><div id="modal-trg-txt-wrap-6754" class="ult-modal-input-wrapper ult-adjust-bottom-margin map_button  vc_custom_1525341579231  " data-keypress-control="keypress-control-enable" data-overlay-control="overlay-control-enable"><button data-ultimate-target="#modal-trg-txt-wrap-6754 .btn-modal" data-responsive-json-new='{"font-size":"desktop:12px;","line-height":"desktop:30px;"}' style="background:#e7b35a;border-color:#e7b35a;color:#ffffff; font-family:&#039;Open Sans&#039;;font-weight:600;" data-class-id="content-6369c390203e25-54187424" class="btn-modal ult-responsive btn-primary btn-modal-sm overlay-show ult-align-left btn-id-6369c390203e25-54187424" data-overlay-class="overlay-slidedown">See on Map</button></div>
-<div class="ult-overlay content-6369c390203e25-54187424 " data-class="content-6369c390203e25-54187424" id="button-click-overlay" style="background:rgba(0,0,0,0.8); display:none;">
+</div> <!-- aio-icon-component --><div id="modal-trg-txt-wrap-4357" class="ult-modal-input-wrapper ult-adjust-bottom-margin map_button  vc_custom_1525341579231  " data-keypress-control="keypress-control-enable" data-overlay-control="overlay-control-enable"><button data-ultimate-target="#modal-trg-txt-wrap-4357 .btn-modal" data-responsive-json-new='{"font-size":"desktop:12px;","line-height":"desktop:30px;"}' style="background:#e7b35a;border-color:#e7b35a;color:#ffffff; font-family:&#039;Open Sans&#039;;font-weight:600;" data-class-id="content-636a22ca7f9e87-53736381" class="btn-modal ult-responsive btn-primary btn-modal-sm overlay-show ult-align-left btn-id-636a22ca7f9e87-53736381" data-overlay-class="overlay-slidedown">See on Map</button></div>
+<div class="ult-overlay content-636a22ca7f9e87-53736381 " data-class="content-636a22ca7f9e87-53736381" id="button-click-overlay" style="background:rgba(0,0,0,0.8); display:none;">
 	<div class="ult_modal ult-fade ult-small">
-		<div id="ult-modal-wrap-1995" class="ult_modal-content ult-hide" style="border-style:solid;border-width:2px;border-radius:0px;border-color:#333333;">
-			<div data-ultimate-target="#ult-modal-wrap-1995 .ult_modal-body" data-responsive-json-new='{"font-size":"","line-height":""}' class="ult_modal-body ult-responsive ult-html">
+		<div id="ult-modal-wrap-3793" class="ult_modal-content ult-hide" style="border-style:solid;border-width:2px;border-radius:0px;border-color:#333333;">
+			<div data-ultimate-target="#ult-modal-wrap-3793 .ult_modal-body" data-responsive-json-new='{"font-size":"","line-height":""}' class="ult_modal-body ult-responsive ult-html">
 			<div class="wpb_gmaps_widget wpb_content_element"><div class="wpb_wrapper"><div class="wpb_map_wraper"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96873.54747609403!2d-74.01503716167231!3d40.64535309471869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24416947c2109%3A0x82765c7404007886!2sBrooklyn%2C+Nueva+York%2C+EE.+UU.!5e0!3m2!1ses!2sar!4v1461078702833" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div></div></div>
 			</div>
 	</div>
@@ -511,37 +550,37 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		</div>
 	</div>
 <div class="aio-icon-component  vc_custom_1525341448012   style_1">
-<div id="Info-box-wrap-3836" class="aio-icon-box default-icon">
+<div id="Info-box-wrap-1389" class="aio-icon-box default-icon">
 <div class="aio-icon-default"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="color:#333;font-size:16px;display:inline-block;">
 	<i class="icomoon-fontawesome-16x16-map-marker-alt"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-3836 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:25px;"}' style="font-weight:600;">Address: 421, Brooklyn, New York</h3></div> <!-- header -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-1389 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:25px;"}' style="font-weight:600;">Address: 421, Brooklyn, New York</h3></div> <!-- header -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component --><div class="aio-icon-component  vc_custom_1525341554424   style_1">
-<div id="Info-box-wrap-7909" class="aio-icon-box default-icon">
+<div id="Info-box-wrap-4387" class="aio-icon-box default-icon">
 <div class="aio-icon-default"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="color:#333;font-size:16px;display:inline-block;">
 	<i class="icomoon-fontawesome-16x16-clock"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-7909 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-weight:600;">Open: 9 AM / 22 PM</h3></div> <!-- header -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-4387 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-weight:600;">Open: 9 AM / 22 PM</h3></div> <!-- header -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component --><div class="aio-icon-component  vc_custom_1525341485756   style_1">
-<div id="Info-box-wrap-6886" class="aio-icon-box default-icon">
+<div id="Info-box-wrap-3980" class="aio-icon-box default-icon">
 <div class="aio-icon-default"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="color:#333;font-size:16px;display:inline-block;">
 	<i class="icomoon-fontawesome-16x16-phone"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-6886 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-weight:600;">Phone: +1 354 454878</h3></div> <!-- header -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-3980 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-weight:600;">Phone: +1 354 454878</h3></div> <!-- header -->
 </div> <!-- aio-icon-box -->
-</div> <!-- aio-icon-component --><div id="modal-trg-txt-wrap-5600" class="ult-modal-input-wrapper ult-adjust-bottom-margin map_button  vc_custom_1525341579231  " data-keypress-control="keypress-control-enable" data-overlay-control="overlay-control-enable"><button data-ultimate-target="#modal-trg-txt-wrap-5600 .btn-modal" data-responsive-json-new='{"font-size":"desktop:12px;","line-height":"desktop:30px;"}' style="background:#e7b35a;border-color:#e7b35a;color:#ffffff; font-family:&#039;Open Sans&#039;;font-weight:600;" data-class-id="content-6369c390350768-30873312" class="btn-modal ult-responsive btn-primary btn-modal-sm overlay-show ult-align-left btn-id-6369c390350768-30873312" data-overlay-class="overlay-slidedown">See on Map</button></div>
-<div class="ult-overlay content-6369c390350768-30873312 " data-class="content-6369c390350768-30873312" id="button-click-overlay" style="background:rgba(0,0,0,0.8); display:none;">
+</div> <!-- aio-icon-component --><div id="modal-trg-txt-wrap-3179" class="ult-modal-input-wrapper ult-adjust-bottom-margin map_button  vc_custom_1525341579231  " data-keypress-control="keypress-control-enable" data-overlay-control="overlay-control-enable"><button data-ultimate-target="#modal-trg-txt-wrap-3179 .btn-modal" data-responsive-json-new='{"font-size":"desktop:12px;","line-height":"desktop:30px;"}' style="background:#e7b35a;border-color:#e7b35a;color:#ffffff; font-family:&#039;Open Sans&#039;;font-weight:600;" data-class-id="content-636a22ca961352-31923939" class="btn-modal ult-responsive btn-primary btn-modal-sm overlay-show ult-align-left btn-id-636a22ca961352-31923939" data-overlay-class="overlay-slidedown">See on Map</button></div>
+<div class="ult-overlay content-636a22ca961352-31923939 " data-class="content-636a22ca961352-31923939" id="button-click-overlay" style="background:rgba(0,0,0,0.8); display:none;">
 	<div class="ult_modal ult-fade ult-small">
-		<div id="ult-modal-wrap-9928" class="ult_modal-content ult-hide" style="border-style:solid;border-width:2px;border-radius:0px;border-color:#333333;">
-			<div data-ultimate-target="#ult-modal-wrap-9928 .ult_modal-body" data-responsive-json-new='{"font-size":"","line-height":""}' class="ult_modal-body ult-responsive ult-html">
+		<div id="ult-modal-wrap-1857" class="ult_modal-content ult-hide" style="border-style:solid;border-width:2px;border-radius:0px;border-color:#333333;">
+			<div data-ultimate-target="#ult-modal-wrap-1857 .ult_modal-body" data-responsive-json-new='{"font-size":"","line-height":""}' class="ult_modal-body ult-responsive ult-html">
 			<div class="wpb_gmaps_widget wpb_content_element"><div class="wpb_wrapper"><div class="wpb_map_wraper"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96873.54747609403!2d-74.01503716167231!3d40.64535309471869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24416947c2109%3A0x82765c7404007886!2sBrooklyn%2C+Nueva+York%2C+EE.+UU.!5e0!3m2!1ses!2sar!4v1461078702833" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div></div></div>
 			</div>
 	</div>
@@ -564,37 +603,37 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		</div>
 	</div>
 <div class="aio-icon-component  vc_custom_1525341448012   style_1">
-<div id="Info-box-wrap-5791" class="aio-icon-box default-icon">
+<div id="Info-box-wrap-4081" class="aio-icon-box default-icon">
 <div class="aio-icon-default"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="color:#333;font-size:16px;display:inline-block;">
 	<i class="icomoon-fontawesome-16x16-map-marker-alt"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-5791 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:25px;"}' style="font-weight:600;">Address: 421, Brooklyn, New York</h3></div> <!-- header -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-4081 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:25px;"}' style="font-weight:600;">Address: 421, Brooklyn, New York</h3></div> <!-- header -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component --><div class="aio-icon-component  vc_custom_1525341554424   style_1">
-<div id="Info-box-wrap-4703" class="aio-icon-box default-icon">
+<div id="Info-box-wrap-8788" class="aio-icon-box default-icon">
 <div class="aio-icon-default"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="color:#333;font-size:16px;display:inline-block;">
 	<i class="icomoon-fontawesome-16x16-clock"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-4703 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-weight:600;">Open: 9 AM / 22 PM</h3></div> <!-- header -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-8788 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-weight:600;">Open: 9 AM / 22 PM</h3></div> <!-- header -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component --><div class="aio-icon-component  vc_custom_1525341485756   style_1">
-<div id="Info-box-wrap-7561" class="aio-icon-box default-icon">
+<div id="Info-box-wrap-1076" class="aio-icon-box default-icon">
 <div class="aio-icon-default"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="color:#333;font-size:16px;display:inline-block;">
 	<i class="icomoon-fontawesome-16x16-phone"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-7561 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-weight:600;">Phone: +1 354 454878</h3></div> <!-- header -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-1076 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-weight:600;">Phone: +1 354 454878</h3></div> <!-- header -->
 </div> <!-- aio-icon-box -->
-</div> <!-- aio-icon-component --><div id="modal-trg-txt-wrap-3709" class="ult-modal-input-wrapper ult-adjust-bottom-margin map_button  vc_custom_1525341579231  " data-keypress-control="keypress-control-enable" data-overlay-control="overlay-control-enable"><button data-ultimate-target="#modal-trg-txt-wrap-3709 .btn-modal" data-responsive-json-new='{"font-size":"desktop:12px;","line-height":"desktop:30px;"}' style="background:#e7b35a;border-color:#e7b35a;color:#ffffff; font-family:&#039;Open Sans&#039;;font-weight:600;" data-class-id="content-6369c3904cb802-43284177" class="btn-modal ult-responsive btn-primary btn-modal-sm overlay-show ult-align-left btn-id-6369c3904cb802-43284177" data-overlay-class="overlay-slidedown">See on Map</button></div>
-<div class="ult-overlay content-6369c3904cb802-43284177 " data-class="content-6369c3904cb802-43284177" id="button-click-overlay" style="background:rgba(0,0,0,0.8); display:none;">
+</div> <!-- aio-icon-component --><div id="modal-trg-txt-wrap-1662" class="ult-modal-input-wrapper ult-adjust-bottom-margin map_button  vc_custom_1525341579231  " data-keypress-control="keypress-control-enable" data-overlay-control="overlay-control-enable"><button data-ultimate-target="#modal-trg-txt-wrap-1662 .btn-modal" data-responsive-json-new='{"font-size":"desktop:12px;","line-height":"desktop:30px;"}' style="background:#e7b35a;border-color:#e7b35a;color:#ffffff; font-family:&#039;Open Sans&#039;;font-weight:600;" data-class-id="content-636a22ca974df4-14945685" class="btn-modal ult-responsive btn-primary btn-modal-sm overlay-show ult-align-left btn-id-636a22ca974df4-14945685" data-overlay-class="overlay-slidedown">See on Map</button></div>
+<div class="ult-overlay content-636a22ca974df4-14945685 " data-class="content-636a22ca974df4-14945685" id="button-click-overlay" style="background:rgba(0,0,0,0.8); display:none;">
 	<div class="ult_modal ult-fade ult-small">
-		<div id="ult-modal-wrap-7220" class="ult_modal-content ult-hide" style="border-style:solid;border-width:2px;border-radius:0px;border-color:#333333;">
-			<div data-ultimate-target="#ult-modal-wrap-7220 .ult_modal-body" data-responsive-json-new='{"font-size":"","line-height":""}' class="ult_modal-body ult-responsive ult-html">
+		<div id="ult-modal-wrap-9153" class="ult_modal-content ult-hide" style="border-style:solid;border-width:2px;border-radius:0px;border-color:#333333;">
+			<div data-ultimate-target="#ult-modal-wrap-9153 .ult_modal-body" data-responsive-json-new='{"font-size":"","line-height":""}' class="ult_modal-body ult-responsive ult-html">
 			<div class="wpb_gmaps_widget wpb_content_element"><div class="wpb_wrapper"><div class="wpb_map_wraper"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96873.54747609403!2d-74.01503716167231!3d40.64535309471869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24416947c2109%3A0x82765c7404007886!2sBrooklyn%2C+Nueva+York%2C+EE.+UU.!5e0!3m2!1ses!2sar!4v1461078702833" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div></div></div>
 			</div>
 	</div>
@@ -605,8 +644,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </div>
 <!-- Row Backgrounds --><div class="upb_bg_img" data-ultimate-bg="url(/wp-content/uploads/sites/48/2018/05/c-sl-005.jpg)" data-image-id="id^496|url^/wp-content/uploads/sites/48/2018/05/c-sl-005.jpg|caption^null|alt^null|title^c-sl-005|description^null" data-ultimate-bg-style="vcpb-vz-jquery" data-bg-img-repeat="no-repeat" data-bg-img-size="cover" data-bg-img-position="" data-parallx_sense="30" data-bg-override="full" data-bg_img_attach="scroll" data-upb-overlay-color="rgba(0,0,0,0.5)" data-upb-bg-animation="" data-fadeout="" data-bg-animation="left-animation" data-bg-animation-type="h" data-animation-repeat="repeat" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false" data-custom-vc-row="" data-vc="6.8.0" data-is_old_vc="" data-theme-support="" data-overlay="true" data-overlay-color="rgba(0,0,0,0.5)" data-overlay-pattern="" data-overlay-pattern-opacity="0.8" data-overlay-pattern-size="" data-overlay-pattern-attachment="scroll"></div>
 <div id="offers_section" class="vc_row wpb_row vc_row-fluid vc_custom_1461006241850"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1461007742797"><div class="wpb_wrapper">
-<div id="ultimate-heading-71386369c3904e5fd" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-71386369c3904e5fd uvc-9522 " data-hspacer="line_with_icon" data-hline_width="100" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="4" data-hborder_color="#e7b35a" data-icon_width="24" data-hfixer="20" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-71386369c3904e5fd h2" data-responsive-json-new='{"font-size":"desktop:50px;","line-height":"desktop:60px;"}'><h2 style="font-weight:bold;margin-bottom:4px;">Specialities</h2></div>
+<div id="ultimate-heading-6721636a22caae30f" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-6721636a22caae30f uvc-6931 " data-hspacer="line_with_icon" data-hline_width="100" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="4" data-hborder_color="#e7b35a" data-icon_width="24" data-hfixer="20" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6721636a22caae30f h2" data-responsive-json-new='{"font-size":"desktop:50px;","line-height":"desktop:60px;"}'><h2 style="font-weight:bold;margin-bottom:4px;">Specialities</h2></div>
 <div class="uvc-heading-spacer line_with_icon" style="margin-bottom:70px;height:24px;"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="color:#e7b35a;font-size:24px;display:inline-block;">
 	<i class="icomoon-fontawesome-16x16-bookmark"></i>
@@ -732,10 +771,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
   box-shadow: none;
 }</style>
 <div class="shortcode-single-image-wrap shortcode-single-image-58ac0b9229f6d1b53760684f55b8f9ed alignnone  vc_custom_1525343578958 enable-bg-rollover dt-icon-bg-off"><div class="shortcode-single-image"><div class="fancy-media-wrap" style="border-radius:800px;"><a class="layzr-bg rollover rollover-zoom dt-pswp-item pswp-image" href="/wp-content/uploads/sites/48/2018/05/c-sl-014.jpg" title="" data-dt-img-description="" data-large_image_width="1700" data-large_image_height="1100" style="border-radius:800px;"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20800%20800&#39;%2F%3E" data-src="/wp-content/uploads/sites/48/2018/05/c-sl-014-800x800.jpg" data-srcset="/wp-content/uploads/sites/48/2018/05/c-sl-014-800x800.jpg 800w, /wp-content/uploads/sites/48/2018/05/c-sl-014-1100x1100.jpg 1100w" width="800" height="800" data-dt-location="/site48/home/c-sl-014/"></a></div></div></div>
-<div id="ultimate-heading-24346369c3943cb35" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-24346369c3943cb35 uvc-7788 accent-subtitle-color" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-9122636a22cab2cc6" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-9122636a22cab2cc6 uvc-5236 accent-subtitle-color" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-24346369c3943cb35 h2" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}'><h2 style="font-weight:bold;margin-bottom:5px;">Chocolate Cake</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-24346369c3943cb35 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-weight:bold;">$3.50</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9122636a22cab2cc6 h2" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}'><h2 style="font-weight:bold;margin-bottom:5px;">Chocolate Cake</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9122636a22cab2cc6 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-weight:bold;">$3.50</div>
 </div>
 </div></div></div></div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
@@ -759,10 +798,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
   box-shadow: none;
 }</style>
 <div class="shortcode-single-image-wrap shortcode-single-image-fdc12ebd5f82fbc322ea9dea7f68d824 alignnone  vc_custom_1525344051083 enable-bg-rollover dt-icon-bg-off"><div class="shortcode-single-image"><div class="fancy-media-wrap" style="border-radius:800px;"><a class="layzr-bg rollover rollover-zoom dt-pswp-item pswp-image" href="/wp-content/uploads/sites/48/2018/05/c-sl-018.jpg" title="" data-dt-img-description="" data-large_image_width="1100" data-large_image_height="1100" style="border-radius:800px;"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20800%20800&#39;%2F%3E" data-src="/wp-content/uploads/sites/48/2018/05/c-sl-018-800x800.jpg" data-srcset="/wp-content/uploads/sites/48/2018/05/c-sl-018-800x800.jpg 800w, /wp-content/uploads/sites/48/2018/05/c-sl-018.jpg 1100w" width="800" height="800" data-dt-location="/site48/home/c-sl-018/"></a></div></div></div>
-<div id="ultimate-heading-5856369c39452fd7" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-5856369c39452fd7 uvc-6439 accent-subtitle-color" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-104636a22cac73b7" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-104636a22cac73b7 uvc-6262 accent-subtitle-color" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5856369c39452fd7 h2" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}'><h2 style="font-weight:bold;margin-bottom:5px;">Classic Flat White</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5856369c39452fd7 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-weight:bold;">$1.99</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-104636a22cac73b7 h2" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}'><h2 style="font-weight:bold;margin-bottom:5px;">Classic Flat White</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-104636a22cac73b7 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-weight:bold;">$1.99</div>
 </div>
 </div></div></div></div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
@@ -786,10 +825,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
   box-shadow: none;
 }</style>
 <div class="shortcode-single-image-wrap shortcode-single-image-278099ef3cff99d7d78979abd5937c8e alignnone  vc_custom_1525343606863 enable-bg-rollover dt-icon-bg-off"><div class="shortcode-single-image"><div class="fancy-media-wrap" style="border-radius:800px;"><a class="layzr-bg rollover rollover-zoom dt-pswp-item pswp-image" href="/wp-content/uploads/sites/48/2018/05/c-sl-013.jpg" title="" data-dt-img-description="" data-large_image_width="1700" data-large_image_height="1100" style="border-radius:800px;"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20800%20800&#39;%2F%3E" data-src="/wp-content/uploads/sites/48/2018/05/c-sl-013-800x800.jpg" data-srcset="/wp-content/uploads/sites/48/2018/05/c-sl-013-800x800.jpg 800w, /wp-content/uploads/sites/48/2018/05/c-sl-013-1100x1100.jpg 1100w" width="800" height="800" data-dt-location="/site48/home/c-sl-013/"></a></div></div></div>
-<div id="ultimate-heading-20096369c396e06b6" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-20096369c396e06b6 uvc-28 accent-subtitle-color" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-2735636a22cac877c" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2735636a22cac877c uvc-8620 accent-subtitle-color" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-20096369c396e06b6 h2" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}'><h2 style="font-weight:bold;margin-bottom:5px;">Vegan Cheesecake</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-20096369c396e06b6 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-weight:bold;">$2.50</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2735636a22cac877c h2" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}'><h2 style="font-weight:bold;margin-bottom:5px;">Vegan Cheesecake</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2735636a22cac877c .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-weight:bold;">$2.50</div>
 </div>
 </div></div></div></div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
@@ -813,10 +852,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
   box-shadow: none;
 }</style>
 <div class="shortcode-single-image-wrap shortcode-single-image-a3cead6d342225be3568a9670e82624b alignnone  vc_custom_1525344256111 enable-bg-rollover dt-icon-bg-off"><div class="shortcode-single-image"><div class="fancy-media-wrap" style="border-radius:800px;"><a class="layzr-bg rollover rollover-zoom dt-pswp-item pswp-image" href="/wp-content/uploads/sites/48/2018/05/c-sl-021.jpg" title="" data-dt-img-description="" data-large_image_width="1100" data-large_image_height="1100" style="border-radius:800px;"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20800%20800&#39;%2F%3E" data-src="/wp-content/uploads/sites/48/2018/05/c-sl-021-800x800.jpg" data-srcset="/wp-content/uploads/sites/48/2018/05/c-sl-021-800x800.jpg 800w, /wp-content/uploads/sites/48/2018/05/c-sl-021.jpg 1100w" width="800" height="800" data-dt-location="/site48/home/c-sl-021/"></a></div></div></div>
-<div id="ultimate-heading-69386369c398ca9a3" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-69386369c398ca9a3 uvc-6993 accent-subtitle-color" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-8968636a22cade77c" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-8968636a22cade77c uvc-525 accent-subtitle-color" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-69386369c398ca9a3 h2" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}'><h2 style="font-weight:bold;margin-bottom:5px;">Caramel Cappuccino</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-69386369c398ca9a3 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-weight:bold;">$1.99</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-8968636a22cade77c h2" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}'><h2 style="font-weight:bold;margin-bottom:5px;">Caramel Cappuccino</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-8968636a22cade77c .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-weight:bold;">$1.99</div>
 </div>
 </div></div></div></div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
@@ -840,17 +879,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
   box-shadow: none;
 }</style>
 <div class="shortcode-single-image-wrap shortcode-single-image-be499db5cc62c1453459d4593b1bb90d alignnone  vc_custom_1525343816854 enable-bg-rollover dt-icon-bg-off"><div class="shortcode-single-image"><div class="fancy-media-wrap" style="border-radius:800px;"><a class="layzr-bg rollover rollover-zoom dt-pswp-item pswp-image" href="/wp-content/uploads/sites/48/2018/05/c-sl-016.jpg" title="" data-dt-img-description="" data-large_image_width="1700" data-large_image_height="1100" style="border-radius:800px;"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20800%20800&#39;%2F%3E" data-src="/wp-content/uploads/sites/48/2018/05/c-sl-016-800x800.jpg" data-srcset="/wp-content/uploads/sites/48/2018/05/c-sl-016-800x800.jpg 800w, /wp-content/uploads/sites/48/2018/05/c-sl-016-1100x1100.jpg 1100w" width="800" height="800" data-dt-location="/site48/home/c-sl-016/"></a></div></div></div>
-<div id="ultimate-heading-33936369c39c6571a" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-33936369c39c6571a uvc-5435 accent-subtitle-color" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-3284636a22cae02e3" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-3284636a22cae02e3 uvc-9892 accent-subtitle-color" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-33936369c39c6571a h2" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}'><h2 style="font-weight:bold;margin-bottom:5px;">Classic Cheesecake</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-33936369c39c6571a .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-weight:bold;">$3.00</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3284636a22cae02e3 h2" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}'><h2 style="font-weight:bold;margin-bottom:5px;">Classic Cheesecake</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3284636a22cae02e3 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-weight:bold;">$3.00</div>
 </div>
 </div></div></div></div>
 </div>
 </div></div></div></div>
 <div id="menu_section" data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1460646399678 vc_row-has-fill">
-<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div id="ultimate-heading-61156369c39c67585" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-61156369c39c67585 uvc-7042 " data-hspacer="line_with_icon" data-hline_width="100" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="4" data-hborder_color="#e7b35a" data-icon_width="24" data-hfixer="20" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-61156369c39c67585 h2" data-responsive-json-new='{"font-size":"desktop:50px;","line-height":"desktop:60px;"}'><h2 style="font-weight:bold;margin-bottom:4px;">Menu</h2></div>
+<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div id="ultimate-heading-9328636a22cae0cb1" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-9328636a22cae0cb1 uvc-6161 " data-hspacer="line_with_icon" data-hline_width="100" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="4" data-hborder_color="#e7b35a" data-icon_width="24" data-hfixer="20" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9328636a22cae0cb1 h2" data-responsive-json-new='{"font-size":"desktop:50px;","line-height":"desktop:60px;"}'><h2 style="font-weight:bold;margin-bottom:4px;">Menu</h2></div>
 <div class="uvc-heading-spacer line_with_icon" style="margin-bottom:70px;height:24px;"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="color:#e7b35a;font-size:24px;display:inline-block;">
 	<i class="icomoon-fontawesome-16x16-bookmark"></i>
@@ -881,10 +920,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 }</style>
 <div class="shortcode-single-image-wrap shortcode-single-image-cbb3965f4fe272bbd86d6b6965402d35 alignnone  enable-bg-rollover dt-icon-bg-off" style="margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; width:800px;"><div class="shortcode-single-image"><div class="fancy-media-wrap" style="border-radius:800px;"><a class="layzr-bg rollover rollover-zoom dt-pswp-item pswp-image" href="/wp-content/uploads/sites/48/2018/05/c-sl-021.jpg" title="" data-dt-img-description="" data-large_image_width="1100" data-large_image_height="1100" style="border-radius:800px;"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20800%20800&#39;%2F%3E" data-src="/wp-content/uploads/sites/48/2018/05/c-sl-021-800x800.jpg" data-srcset="/wp-content/uploads/sites/48/2018/05/c-sl-021-800x800.jpg 800w, /wp-content/uploads/sites/48/2018/05/c-sl-021.jpg 1100w" width="800" height="800" data-dt-location="/site48/home/c-sl-021/"></a></div></div></div>
 </div></div></div>
-<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-8 vc_col-md-8 vc_col-xs-8"><div class="vc_column-inner vc_custom_1525345597345"><div class="wpb_wrapper"><div id="ultimate-heading-98536369c39c7e92b" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-98536369c39c7e92b uvc-8687 accent-subtitle-color" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-8 vc_col-md-8 vc_col-xs-8"><div class="vc_column-inner vc_custom_1525345597345"><div class="wpb_wrapper"><div id="ultimate-heading-1726636a22cae215e" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-1726636a22cae215e uvc-5252 accent-subtitle-color" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-98536369c39c7e92b h2" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'><h2 style="font-weight:bold;margin-bottom:0px;">Double Espresso</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-98536369c39c7e92b .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:bold;margin-bottom:0px;">$1.50</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1726636a22cae215e h2" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'><h2 style="font-weight:bold;margin-bottom:0px;">Double Espresso</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1726636a22cae215e .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:bold;margin-bottom:0px;">$1.50</div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1525345832964"><div class="wpb_wrapper"><div class="hr-thin style-dashed" style="width: 100%;border-top-width: 1px;"></div></div></div></div>
 </div>
@@ -911,10 +950,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 }</style>
 <div class="shortcode-single-image-wrap shortcode-single-image-2f076c2f2c2f0582dd4c2338fb2e1641 alignnone  enable-bg-rollover dt-icon-bg-off" style="margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; width:800px;"><div class="shortcode-single-image"><div class="fancy-media-wrap" style="border-radius:800px;"><a class="layzr-bg rollover rollover-zoom dt-pswp-item pswp-image" href="/wp-content/uploads/sites/48/2018/05/c-sl-018.jpg" title="" data-dt-img-description="" data-large_image_width="1100" data-large_image_height="1100" style="border-radius:800px;"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20800%20800&#39;%2F%3E" data-src="/wp-content/uploads/sites/48/2018/05/c-sl-018-800x800.jpg" data-srcset="/wp-content/uploads/sites/48/2018/05/c-sl-018-800x800.jpg 800w, /wp-content/uploads/sites/48/2018/05/c-sl-018.jpg 1100w" width="800" height="800" data-dt-location="/site48/home/c-sl-018/"></a></div></div></div>
 </div></div></div>
-<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-8 vc_col-md-8 vc_col-xs-8"><div class="vc_column-inner vc_custom_1525345597345"><div class="wpb_wrapper"><div id="ultimate-heading-91666369c39c98818" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-91666369c39c98818 uvc-36 accent-subtitle-color" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-8 vc_col-md-8 vc_col-xs-8"><div class="vc_column-inner vc_custom_1525345597345"><div class="wpb_wrapper"><div id="ultimate-heading-1463636a22cae30ab" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-1463636a22cae30ab uvc-8993 accent-subtitle-color" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-91666369c39c98818 h2" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'><h2 style="font-weight:bold;margin-bottom:0px;">Classic Flat White</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-91666369c39c98818 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:bold;margin-bottom:0px;">$2.50</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1463636a22cae30ab h2" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'><h2 style="font-weight:bold;margin-bottom:0px;">Classic Flat White</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1463636a22cae30ab .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:bold;margin-bottom:0px;">$2.50</div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1525345832964"><div class="wpb_wrapper"><div class="hr-thin style-dashed" style="width: 100%;border-top-width: 1px;"></div></div></div></div>
 </div>
@@ -941,10 +980,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 }</style>
 <div class="shortcode-single-image-wrap shortcode-single-image-2045c8fc963fdcd33a2999fa6a3d9be0 alignnone  enable-bg-rollover dt-icon-bg-off" style="margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; width:800px;"><div class="shortcode-single-image"><div class="fancy-media-wrap" style="border-radius:800px;"><a class="layzr-bg rollover rollover-zoom dt-pswp-item pswp-image" href="/wp-content/uploads/sites/48/2018/05/c-sl-0125.jpg" title="" data-dt-img-description="" data-large_image_width="1100" data-large_image_height="1100" style="border-radius:800px;"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20800%20800&#39;%2F%3E" data-src="/wp-content/uploads/sites/48/2018/05/c-sl-0125-800x800.jpg" data-srcset="/wp-content/uploads/sites/48/2018/05/c-sl-0125-800x800.jpg 800w, /wp-content/uploads/sites/48/2018/05/c-sl-0125.jpg 1100w" width="800" height="800" data-dt-location="/site48/home/c-sl-0125/"></a></div></div></div>
 </div></div></div>
-<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-8 vc_col-md-8 vc_col-xs-8"><div class="vc_column-inner vc_custom_1525345597345"><div class="wpb_wrapper"><div id="ultimate-heading-85336369c39cb3a3f" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-85336369c39cb3a3f uvc-3367 accent-subtitle-color" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-8 vc_col-md-8 vc_col-xs-8"><div class="vc_column-inner vc_custom_1525345597345"><div class="wpb_wrapper"><div id="ultimate-heading-167636a22cb04c89" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-167636a22cb04c89 uvc-9942 accent-subtitle-color" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-85336369c39cb3a3f h2" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'><h2 style="font-weight:bold;margin-bottom:0px;">Hot Chocolate</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-85336369c39cb3a3f .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:bold;margin-bottom:0px;">$2.99</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-167636a22cb04c89 h2" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'><h2 style="font-weight:bold;margin-bottom:0px;">Hot Chocolate</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-167636a22cb04c89 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:bold;margin-bottom:0px;">$2.99</div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1525345832964"><div class="wpb_wrapper"><div class="hr-thin style-dashed" style="width: 100%;border-top-width: 1px;"></div></div></div></div>
 </div>
@@ -971,10 +1010,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 }</style>
 <div class="shortcode-single-image-wrap shortcode-single-image-856dfe835740292163a0d34b08078dec alignnone  enable-bg-rollover dt-icon-bg-off" style="margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; width:800px;"><div class="shortcode-single-image"><div class="fancy-media-wrap" style="border-radius:800px;"><a class="layzr-bg rollover rollover-zoom dt-pswp-item pswp-image" href="/wp-content/uploads/sites/48/2018/05/c-sl-0126.jpg" title="" data-dt-img-description="" data-large_image_width="1100" data-large_image_height="1100" style="border-radius:800px;"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20800%20800&#39;%2F%3E" data-src="/wp-content/uploads/sites/48/2018/05/c-sl-0126-800x800.jpg" data-srcset="/wp-content/uploads/sites/48/2018/05/c-sl-0126-800x800.jpg 800w, /wp-content/uploads/sites/48/2018/05/c-sl-0126.jpg 1100w" width="800" height="800" data-dt-location="/site48/home/c-sl-0126/"></a></div></div></div>
 </div></div></div>
-<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-8 vc_col-md-8 vc_col-xs-8"><div class="vc_column-inner vc_custom_1525345597345"><div class="wpb_wrapper"><div id="ultimate-heading-14126369c39e4c4f9" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-14126369c39e4c4f9 uvc-9840 accent-subtitle-color" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-8 vc_col-md-8 vc_col-xs-8"><div class="vc_column-inner vc_custom_1525345597345"><div class="wpb_wrapper"><div id="ultimate-heading-2012636a22cb0657a" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2012636a22cb0657a uvc-2924 accent-subtitle-color" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-14126369c39e4c4f9 h2" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'><h2 style="font-weight:bold;margin-bottom:0px;">Coffee with Milk</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-14126369c39e4c4f9 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:bold;margin-bottom:0px;">$1.99</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2012636a22cb0657a h2" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'><h2 style="font-weight:bold;margin-bottom:0px;">Coffee with Milk</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2012636a22cb0657a .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:bold;margin-bottom:0px;">$1.99</div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1525345832964"><div class="wpb_wrapper"><div class="hr-thin style-dashed" style="width: 100%;border-top-width: 1px;"></div></div></div></div>
 </div>
@@ -1003,10 +1042,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 }</style>
 <div class="shortcode-single-image-wrap shortcode-single-image-c0b2f8080c933910b55f7106956ea0e2 alignnone  enable-bg-rollover dt-icon-bg-off" style="margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; width:800px;"><div class="shortcode-single-image"><div class="fancy-media-wrap" style="border-radius:800px;"><a class="layzr-bg rollover rollover-zoom dt-pswp-item pswp-image" href="/wp-content/uploads/sites/48/2018/05/c-sl-0127.jpg" title="" data-dt-img-description="" data-large_image_width="1100" data-large_image_height="1100" style="border-radius:800px;"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20800%20800&#39;%2F%3E" data-src="/wp-content/uploads/sites/48/2018/05/c-sl-0127-800x800.jpg" data-srcset="/wp-content/uploads/sites/48/2018/05/c-sl-0127-800x800.jpg 800w, /wp-content/uploads/sites/48/2018/05/c-sl-0127.jpg 1100w" width="800" height="800" data-dt-location="/site48/home/c-sl-0127/"></a></div></div></div>
 </div></div></div>
-<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-8 vc_col-md-8 vc_col-xs-8"><div class="vc_column-inner vc_custom_1525345597345"><div class="wpb_wrapper"><div id="ultimate-heading-76886369c39f683a7" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-76886369c39f683a7 uvc-720 accent-subtitle-color" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-8 vc_col-md-8 vc_col-xs-8"><div class="vc_column-inner vc_custom_1525345597345"><div class="wpb_wrapper"><div id="ultimate-heading-5349636a22cb1c247" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-5349636a22cb1c247 uvc-7517 accent-subtitle-color" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-76886369c39f683a7 h2" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'><h2 style="font-weight:bold;margin-bottom:0px;">Pour Over Coffee</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-76886369c39f683a7 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:bold;margin-bottom:0px;">$4.50</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5349636a22cb1c247 h2" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'><h2 style="font-weight:bold;margin-bottom:0px;">Pour Over Coffee</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5349636a22cb1c247 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:bold;margin-bottom:0px;">$4.50</div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1525345832964"><div class="wpb_wrapper"><div class="hr-thin style-dashed" style="width: 100%;border-top-width: 1px;"></div></div></div></div>
 </div>
@@ -1033,10 +1072,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 }</style>
 <div class="shortcode-single-image-wrap shortcode-single-image-d04a530f5f3845753023fee1a676da4d alignnone  enable-bg-rollover dt-icon-bg-off" style="margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; width:800px;"><div class="shortcode-single-image"><div class="fancy-media-wrap" style="border-radius:800px;"><a class="layzr-bg rollover rollover-zoom dt-pswp-item pswp-image" href="/wp-content/uploads/sites/48/2018/05/c-sl-000.jpg" title="" data-dt-img-description="" data-large_image_width="1700" data-large_image_height="1100" style="border-radius:800px;"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20800%20800&#39;%2F%3E" data-src="/wp-content/uploads/sites/48/2018/05/c-sl-000-800x800.jpg" data-srcset="/wp-content/uploads/sites/48/2018/05/c-sl-000-800x800.jpg 800w, /wp-content/uploads/sites/48/2018/05/c-sl-000-1100x1100.jpg 1100w" width="800" height="800" data-dt-location="/site48/c-sl-000/"></a></div></div></div>
 </div></div></div>
-<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-8 vc_col-md-8 vc_col-xs-8"><div class="vc_column-inner vc_custom_1525345597345"><div class="wpb_wrapper"><div id="ultimate-heading-68356369c3a164ca6" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-68356369c3a164ca6 uvc-361 accent-subtitle-color" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-8 vc_col-md-8 vc_col-xs-8"><div class="vc_column-inner vc_custom_1525345597345"><div class="wpb_wrapper"><div id="ultimate-heading-859636a22cb1d58a" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-859636a22cb1d58a uvc-8557 accent-subtitle-color" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-68356369c3a164ca6 h2" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'><h2 style="font-weight:bold;margin-bottom:0px;">Cappuccino</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-68356369c3a164ca6 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:bold;margin-bottom:0px;">$3.99</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-859636a22cb1d58a h2" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'><h2 style="font-weight:bold;margin-bottom:0px;">Cappuccino</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-859636a22cb1d58a .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:bold;margin-bottom:0px;">$3.99</div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1525345832964"><div class="wpb_wrapper"><div class="hr-thin style-dashed" style="width: 100%;border-top-width: 1px;"></div></div></div></div>
 </div>
@@ -1063,10 +1102,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 }</style>
 <div class="shortcode-single-image-wrap shortcode-single-image-5db5abb2a54cb635d003e6265267b623 alignnone  enable-bg-rollover dt-icon-bg-off" style="margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; width:800px;"><div class="shortcode-single-image"><div class="fancy-media-wrap" style="border-radius:800px;"><a class="layzr-bg rollover rollover-zoom dt-pswp-item pswp-image" href="/wp-content/uploads/sites/48/2018/05/c-sl-016.jpg" title="" data-dt-img-description="" data-large_image_width="1700" data-large_image_height="1100" style="border-radius:800px;"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20800%20800&#39;%2F%3E" data-src="/wp-content/uploads/sites/48/2018/05/c-sl-016-800x800.jpg" data-srcset="/wp-content/uploads/sites/48/2018/05/c-sl-016-800x800.jpg 800w, /wp-content/uploads/sites/48/2018/05/c-sl-016-1100x1100.jpg 1100w" width="800" height="800" data-dt-location="/site48/home/c-sl-016/"></a></div></div></div>
 </div></div></div>
-<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-8 vc_col-md-8 vc_col-xs-8"><div class="vc_column-inner vc_custom_1525345597345"><div class="wpb_wrapper"><div id="ultimate-heading-21946369c3a167979" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-21946369c3a167979 uvc-8293 accent-subtitle-color" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-8 vc_col-md-8 vc_col-xs-8"><div class="vc_column-inner vc_custom_1525345597345"><div class="wpb_wrapper"><div id="ultimate-heading-9086636a22cb3373e" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-9086636a22cb3373e uvc-708 accent-subtitle-color" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-21946369c3a167979 h2" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'><h2 style="font-weight:bold;margin-bottom:0px;">Classic Cheesecake</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-21946369c3a167979 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:bold;margin-bottom:0px;">$4.50</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9086636a22cb3373e h2" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'><h2 style="font-weight:bold;margin-bottom:0px;">Classic Cheesecake</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9086636a22cb3373e .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:bold;margin-bottom:0px;">$4.50</div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1525345832964"><div class="wpb_wrapper"><div class="hr-thin style-dashed" style="width: 100%;border-top-width: 1px;"></div></div></div></div>
 </div>
@@ -1093,10 +1132,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 }</style>
 <div class="shortcode-single-image-wrap shortcode-single-image-79bed697b710495b7808c2960b362988 alignnone  enable-bg-rollover dt-icon-bg-off" style="margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; width:800px;"><div class="shortcode-single-image"><div class="fancy-media-wrap" style="border-radius:800px;"><a class="layzr-bg rollover rollover-zoom dt-pswp-item pswp-image" href="/wp-content/uploads/sites/48/2018/05/c-sl-014.jpg" title="" data-dt-img-description="" data-large_image_width="1700" data-large_image_height="1100" style="border-radius:800px;"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20800%20800&#39;%2F%3E" data-src="/wp-content/uploads/sites/48/2018/05/c-sl-014-800x800.jpg" data-srcset="/wp-content/uploads/sites/48/2018/05/c-sl-014-800x800.jpg 800w, /wp-content/uploads/sites/48/2018/05/c-sl-014-1100x1100.jpg 1100w" width="800" height="800" data-dt-location="/site48/home/c-sl-014/"></a></div></div></div>
 </div></div></div>
-<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-8 vc_col-md-8 vc_col-xs-8"><div class="vc_column-inner vc_custom_1525345597345"><div class="wpb_wrapper"><div id="ultimate-heading-58066369c3a17cec8" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-58066369c3a17cec8 uvc-9100 accent-subtitle-color" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-8 vc_col-md-8 vc_col-xs-8"><div class="vc_column-inner vc_custom_1525345597345"><div class="wpb_wrapper"><div id="ultimate-heading-6654636a22cb36697" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-6654636a22cb36697 uvc-807 accent-subtitle-color" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-58066369c3a17cec8 h2" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'><h2 style="font-weight:bold;margin-bottom:0px;">Chocolate Cake</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-58066369c3a17cec8 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:bold;margin-bottom:0px;">$3.99</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6654636a22cb36697 h2" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'><h2 style="font-weight:bold;margin-bottom:0px;">Chocolate Cake</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6654636a22cb36697 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:bold;margin-bottom:0px;">$3.99</div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1525345832964"><div class="wpb_wrapper"><div class="hr-thin style-dashed" style="width: 100%;border-top-width: 1px;"></div></div></div></div>
 </div>
@@ -1125,10 +1164,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 }</style>
 <div class="shortcode-single-image-wrap shortcode-single-image-223529166d72ae814f99ce2bb02c5d0b alignnone  enable-bg-rollover dt-icon-bg-off" style="margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; width:800px;"><div class="shortcode-single-image"><div class="fancy-media-wrap" style="border-radius:800px;"><a class="layzr-bg rollover rollover-zoom dt-pswp-item pswp-image" href="/wp-content/uploads/sites/48/2018/05/c-sl-013.jpg" title="" data-dt-img-description="" data-large_image_width="1700" data-large_image_height="1100" style="border-radius:800px;"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20800%20800&#39;%2F%3E" data-src="/wp-content/uploads/sites/48/2018/05/c-sl-013-800x800.jpg" data-srcset="/wp-content/uploads/sites/48/2018/05/c-sl-013-800x800.jpg 800w, /wp-content/uploads/sites/48/2018/05/c-sl-013-1100x1100.jpg 1100w" width="800" height="800" data-dt-location="/site48/home/c-sl-013/"></a></div></div></div>
 </div></div></div>
-<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-8 vc_col-md-8 vc_col-xs-8"><div class="vc_column-inner vc_custom_1525345597345"><div class="wpb_wrapper"><div id="ultimate-heading-6066369c3a180b93" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-6066369c3a180b93 uvc-2300 accent-subtitle-color" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-8 vc_col-md-8 vc_col-xs-8"><div class="vc_column-inner vc_custom_1525345597345"><div class="wpb_wrapper"><div id="ultimate-heading-9493636a22cb4c1b1" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-9493636a22cb4c1b1 uvc-5742 accent-subtitle-color" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6066369c3a180b93 h2" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'><h2 style="font-weight:bold;margin-bottom:0px;">Vegan Cheesecake</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6066369c3a180b93 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:bold;margin-bottom:0px;">$2.50</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9493636a22cb4c1b1 h2" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'><h2 style="font-weight:bold;margin-bottom:0px;">Vegan Cheesecake</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9493636a22cb4c1b1 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:bold;margin-bottom:0px;">$2.50</div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1525345832964"><div class="wpb_wrapper"><div class="hr-thin style-dashed" style="width: 100%;border-top-width: 1px;"></div></div></div></div>
 </div>
@@ -1155,10 +1194,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 }</style>
 <div class="shortcode-single-image-wrap shortcode-single-image-321cd2000c73bbb7657d1db5cb3c5bdf alignnone  enable-bg-rollover dt-icon-bg-off" style="margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; width:800px;"><div class="shortcode-single-image"><div class="fancy-media-wrap" style="border-radius:800px;"><a class="layzr-bg rollover rollover-zoom dt-pswp-item pswp-image" href="/wp-content/uploads/sites/48/2018/05/c-sl-0129.jpg" title="" data-dt-img-description="" data-large_image_width="1700" data-large_image_height="1100" style="border-radius:800px;"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20800%20800&#39;%2F%3E" data-src="/wp-content/uploads/sites/48/2018/05/c-sl-0129-800x800.jpg" data-srcset="/wp-content/uploads/sites/48/2018/05/c-sl-0129-800x800.jpg 800w, /wp-content/uploads/sites/48/2018/05/c-sl-0129-1100x1100.jpg 1100w" width="800" height="800" data-dt-location="/site48/home/c-sl-0129/"></a></div></div></div>
 </div></div></div>
-<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-8 vc_col-md-8 vc_col-xs-8"><div class="vc_column-inner vc_custom_1525345597345"><div class="wpb_wrapper"><div id="ultimate-heading-58966369c3a4646ef" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-58966369c3a4646ef uvc-9101 accent-subtitle-color" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-8 vc_col-md-8 vc_col-xs-8"><div class="vc_column-inner vc_custom_1525345597345"><div class="wpb_wrapper"><div id="ultimate-heading-3819636a22cb4dae3" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-3819636a22cb4dae3 uvc-2809 accent-subtitle-color" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-58966369c3a4646ef h2" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'><h2 style="font-weight:bold;margin-bottom:0px;">American Pancakes</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-58966369c3a4646ef .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:bold;margin-bottom:0px;">$4.50</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3819636a22cb4dae3 h2" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'><h2 style="font-weight:bold;margin-bottom:0px;">American Pancakes</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3819636a22cb4dae3 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:bold;margin-bottom:0px;">$4.50</div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1525345832964"><div class="wpb_wrapper"><div class="hr-thin style-dashed" style="width: 100%;border-top-width: 1px;"></div></div></div></div>
 </div>
@@ -1185,10 +1224,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 }</style>
 <div class="shortcode-single-image-wrap shortcode-single-image-cfad141e02a73b4016dd0a3c81a391f4 alignnone  enable-bg-rollover dt-icon-bg-off" style="margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; width:800px;"><div class="shortcode-single-image"><div class="fancy-media-wrap" style="border-radius:800px;"><a class="layzr-bg rollover rollover-zoom dt-pswp-item pswp-image" href="/wp-content/uploads/sites/48/2018/05/c-sl-0130.jpg" title="" data-dt-img-description="" data-large_image_width="1700" data-large_image_height="1100" style="border-radius:800px;"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20800%20800&#39;%2F%3E" data-src="/wp-content/uploads/sites/48/2018/05/c-sl-0130-800x800.jpg" data-srcset="/wp-content/uploads/sites/48/2018/05/c-sl-0130-800x800.jpg 800w, /wp-content/uploads/sites/48/2018/05/c-sl-0130-1100x1100.jpg 1100w" width="800" height="800" data-dt-location="/site48/home/c-sl-0130/"></a></div></div></div>
 </div></div></div>
-<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-8 vc_col-md-8 vc_col-xs-8"><div class="vc_column-inner vc_custom_1525345597345"><div class="wpb_wrapper"><div id="ultimate-heading-49076369c3a6644ea" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-49076369c3a6644ea uvc-8771 accent-subtitle-color" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-8 vc_col-md-8 vc_col-xs-8"><div class="vc_column-inner vc_custom_1525345597345"><div class="wpb_wrapper"><div id="ultimate-heading-4705636a22cb64baa" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-4705636a22cb64baa uvc-2168 accent-subtitle-color" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-49076369c3a6644ea h2" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'><h2 style="font-weight:bold;margin-bottom:0px;">Apple Pie</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-49076369c3a6644ea .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:bold;margin-bottom:0px;">$2.99</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4705636a22cb64baa h2" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'><h2 style="font-weight:bold;margin-bottom:0px;">Apple Pie</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4705636a22cb64baa .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:bold;margin-bottom:0px;">$2.99</div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1525345832964"><div class="wpb_wrapper"><div class="hr-thin style-dashed" style="width: 100%;border-top-width: 1px;"></div></div></div></div>
 </div>
@@ -1215,10 +1254,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 }</style>
 <div class="shortcode-single-image-wrap shortcode-single-image-232ef9c2aedb1d2fff2bb247078a9a35 alignnone  enable-bg-rollover dt-icon-bg-off" style="margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; width:800px;"><div class="shortcode-single-image"><div class="fancy-media-wrap" style="border-radius:800px;"><a class="layzr-bg rollover rollover-zoom dt-pswp-item pswp-image" href="/wp-content/uploads/sites/48/2018/05/c-sl-0131.jpg" title="" data-dt-img-description="" data-large_image_width="1700" data-large_image_height="1100" style="border-radius:800px;"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20800%20800&#39;%2F%3E" data-src="/wp-content/uploads/sites/48/2018/05/c-sl-0131-800x800.jpg" data-srcset="/wp-content/uploads/sites/48/2018/05/c-sl-0131-800x800.jpg 800w, /wp-content/uploads/sites/48/2018/05/c-sl-0131-1100x1100.jpg 1100w" width="800" height="800" data-dt-location="/site48/home/c-sl-0131/"></a></div></div></div>
 </div></div></div>
-<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-8 vc_col-md-8 vc_col-xs-8"><div class="vc_column-inner vc_custom_1525345597345"><div class="wpb_wrapper"><div id="ultimate-heading-36706369c3a97fc13" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-36706369c3a97fc13 uvc-4306 accent-subtitle-color" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-8 vc_col-md-8 vc_col-xs-8"><div class="vc_column-inner vc_custom_1525345597345"><div class="wpb_wrapper"><div id="ultimate-heading-1819636a22cb66197" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-1819636a22cb66197 uvc-9584 accent-subtitle-color" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-36706369c3a97fc13 h2" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'><h2 style="font-weight:bold;margin-bottom:0px;">Chocolate Ice Сream</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-36706369c3a97fc13 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:bold;margin-bottom:0px;">$2.99</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1819636a22cb66197 h2" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'><h2 style="font-weight:bold;margin-bottom:0px;">Chocolate Ice Сream</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1819636a22cb66197 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:14px;","line-height":"desktop:24px;"}' style="font-weight:bold;margin-bottom:0px;">$2.99</div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1525345832964"><div class="wpb_wrapper"><div class="hr-thin style-dashed" style="width: 100%;border-top-width: 1px;"></div></div></div></div>
 </div>
@@ -1226,8 +1265,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </div>
 <div class="vc_row-full-width vc_clearfix"></div>
 <div id="news_section" class="vc_row wpb_row vc_row-fluid vc_custom_1461066365589"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
-<div id="ultimate-heading-2076369c3a980ae1" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2076369c3a980ae1 uvc-6557 " data-hspacer="line_with_icon" data-hline_width="100" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="4" data-hborder_color="#e7b35a" data-icon_width="24" data-hfixer="20" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2076369c3a980ae1 h2" data-responsive-json-new='{"font-size":"desktop:50px;","line-height":"desktop:60px;"}'><h2 style="font-weight:bold;margin-bottom:4px;">News &amp; Events</h2></div>
+<div id="ultimate-heading-3818636a22cb67174" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-3818636a22cb67174 uvc-2080 " data-hspacer="line_with_icon" data-hline_width="100" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="4" data-hborder_color="#e7b35a" data-icon_width="24" data-hfixer="20" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3818636a22cb67174 h2" data-responsive-json-new='{"font-size":"desktop:50px;","line-height":"desktop:60px;"}'><h2 style="font-weight:bold;margin-bottom:4px;">News &amp; Events</h2></div>
 <div class="uvc-heading-spacer line_with_icon" style="margin-bottom:70px;height:24px;"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="color:#e7b35a;font-size:24px;display:inline-block;">
 	<i class="icomoon-fontawesome-16x16-bookmark"></i>
@@ -1625,8 +1664,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </div>
 </div></div></div></div>
 <div id="press_section" class="vc_row wpb_row vc_row-fluid custom-columns-gap custom-mobile-paddings vc_custom_1525453489529 vc_column-gap-30 vc_row-o-equal-height vc_row-flex">
-<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div id="ultimate-heading-2956369c3b708ad7" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2956369c3b708ad7 uvc-3966 " data-hspacer="line_with_icon" data-hline_width="100" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="4" data-hborder_color="#e7b35a" data-icon_width="24" data-hfixer="20" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2956369c3b708ad7 h2" data-responsive-json-new='{"font-size":"desktop:50px;","line-height":"desktop:60px;"}'><h2 style="font-weight:bold;color:#ffffff;margin-bottom:4px;">Press About Us</h2></div>
+<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div id="ultimate-heading-320636a22cbc86f2" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-320636a22cbc86f2 uvc-3866 " data-hspacer="line_with_icon" data-hline_width="100" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="4" data-hborder_color="#e7b35a" data-icon_width="24" data-hfixer="20" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-320636a22cbc86f2 h2" data-responsive-json-new='{"font-size":"desktop:50px;","line-height":"desktop:60px;"}'><h2 style="font-weight:bold;color:#ffffff;margin-bottom:4px;">Press About Us</h2></div>
 <div class="uvc-heading-spacer line_with_icon" style="margin-bottom:40px;height:24px;"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="color:#e7b35a;font-size:24px;display:inline-block;">
 	<i class="icomoon-fontawesome-16x16-bookmark"></i>
@@ -1647,9 +1686,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 		</div>
 	</div>
-<div id="ultimate-heading-59566369c3b70beee" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-59566369c3b70beee uvc-9504 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-731636a22cbc9540" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-731636a22cbc9540 uvc-8334 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-59566369c3b70beee h2" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}'><h2 style="font-weight:bold;margin-top:40px;margin-bottom:0px;">Baker Experts</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-731636a22cbc9540 h2" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}'><h2 style="font-weight:bold;margin-top:40px;margin-bottom:0px;">Baker Experts</h2></div>
 </div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-6 vc_col-has-fill"><div class="vc_column-inner vc_custom_1525531414618"><div class="wpb_wrapper">
@@ -1666,9 +1705,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 		</div>
 	</div>
-<div id="ultimate-heading-54616369c3b71b498" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-54616369c3b71b498 uvc-5839 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-9937636a22cbde870" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-9937636a22cbde870 uvc-6144 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-54616369c3b71b498 h2" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}'><h2 style="font-weight:bold;margin-top:40px;margin-bottom:0px;">Lollipops News</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9937636a22cbde870 h2" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}'><h2 style="font-weight:bold;margin-top:40px;margin-bottom:0px;">Lollipops News</h2></div>
 </div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-6 vc_col-has-fill"><div class="vc_column-inner vc_custom_1525531420933"><div class="wpb_wrapper">
@@ -1685,9 +1724,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 		</div>
 	</div>
-<div id="ultimate-heading-60906369c3b71e641" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-60906369c3b71e641 uvc-5857 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-6692636a22cbdf49c" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-6692636a22cbdf49c uvc-6351 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-60906369c3b71e641 h2" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}'><h2 style="font-weight:bold;margin-top:40px;margin-bottom:0px;">Cookies News</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6692636a22cbdf49c h2" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}'><h2 style="font-weight:bold;margin-top:40px;margin-bottom:0px;">Cookies News</h2></div>
 </div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-6 vc_col-has-fill"><div class="vc_column-inner vc_custom_1525531425034"><div class="wpb_wrapper">
@@ -1704,9 +1743,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 		</div>
 	</div>
-<div id="ultimate-heading-60886369c3b722f81" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-60886369c3b722f81 uvc-4549 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-8353636a22cbdfec4" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-8353636a22cbdfec4 uvc-5795 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-60886369c3b722f81 h2" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}'><h2 style="font-weight:bold;margin-top:40px;margin-bottom:0px;">Coffee Magazine</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-8353636a22cbdfec4 h2" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}'><h2 style="font-weight:bold;margin-top:40px;margin-bottom:0px;">Coffee Magazine</h2></div>
 </div>
 </div></div></div>
 </div>
@@ -1721,20 +1760,20 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	</div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-1 vc_col-lg-10 vc_col-md-offset-1 vc_col-md-10 vc_col-sm-offset-0"><div class="vc_column-inner vc_custom_1461332951646"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid">
-<div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1461332837092"><div class="wpb_wrapper"><div id="ultimate-heading-44206369c3b7251ce" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-44206369c3b7251ce uvc-7666 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1461332837092"><div class="wpb_wrapper"><div id="ultimate-heading-2702636a22cbe1143" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2702636a22cbe1143 uvc-2896 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-44206369c3b7251ce h3" data-responsive-json-new='{"font-size":"desktop:15px;","line-height":"desktop:22px;"}'><h3 style="--font-weight:theme;color:#ffffff;margin-bottom:10px;">421, Brooklyn, New York</h3></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-44206369c3b7251ce .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:15px;","line-height":"desktop:22px;"}' style="font-weight:normal;color:#ffffff;">+1 354 454878</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2702636a22cbe1143 h3" data-responsive-json-new='{"font-size":"desktop:15px;","line-height":"desktop:22px;"}'><h3 style="--font-weight:theme;color:#ffffff;margin-bottom:10px;">421, Brooklyn, New York</h3></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2702636a22cbe1143 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:15px;","line-height":"desktop:22px;"}' style="font-weight:normal;color:#ffffff;">+1 354 454878</div>
 </div></div></div></div>
-<div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1461332842664"><div class="wpb_wrapper"><div id="ultimate-heading-67776369c3b725376" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-67776369c3b725376 uvc-8354 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1461332842664"><div class="wpb_wrapper"><div id="ultimate-heading-8539636a22cbe13e0" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-8539636a22cbe13e0 uvc-6552 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-67776369c3b725376 h3" data-responsive-json-new='{"font-size":"desktop:15px;","line-height":"desktop:22px;"}'><h3 style="--font-weight:theme;color:#ffffff;margin-bottom:10px;">121, Queens, New York</h3></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-67776369c3b725376 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:15px;","line-height":"desktop:22px;"}' style="font-weight:normal;color:#ffffff;">+1 254 9856985</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-8539636a22cbe13e0 h3" data-responsive-json-new='{"font-size":"desktop:15px;","line-height":"desktop:22px;"}'><h3 style="--font-weight:theme;color:#ffffff;margin-bottom:10px;">121, Queens, New York</h3></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-8539636a22cbe13e0 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:15px;","line-height":"desktop:22px;"}' style="font-weight:normal;color:#ffffff;">+1 254 9856985</div>
 </div></div></div></div>
-<div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1461332847822"><div class="wpb_wrapper"><div id="ultimate-heading-546369c3b725510" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-546369c3b725510 uvc-5216 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1461332847822"><div class="wpb_wrapper"><div id="ultimate-heading-2391636a22cbe1604" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2391636a22cbe1604 uvc-2274 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-546369c3b725510 h3" data-responsive-json-new='{"font-size":"desktop:15px;","line-height":"desktop:22px;"}'><h3 style="--font-weight:theme;color:#ffffff;margin-bottom:10px;">989, Midtown, New York</h3></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-546369c3b725510 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:15px;","line-height":"desktop:22px;"}' style="font-weight:normal;color:#ffffff;">+1 695 985587</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2391636a22cbe1604 h3" data-responsive-json-new='{"font-size":"desktop:15px;","line-height":"desktop:22px;"}'><h3 style="--font-weight:theme;color:#ffffff;margin-bottom:10px;">989, Midtown, New York</h3></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2391636a22cbe1604 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:15px;","line-height":"desktop:22px;"}' style="font-weight:normal;color:#ffffff;">+1 695 985587</div>
 </div></div></div></div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1460570841666"><div class="wpb_wrapper">
@@ -1917,9 +1956,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 <a title="Instagram" href="#" class="instagram single-soc-icon-4454a3726e227c5569358d7fdf24e447 dt-icon-bg-on dt-icon-border-on dt-icon-hover-border-on dt-icon-hover-bg-on  "><i class="soc-icon soc-font-icon dt-icon-instagram"></i><span class="screen-reader-text">Instagram</span></a>
 </div>
 </div></div></div>
-<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div id="ultimate-heading-91456369c3b77b1e6" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-91456369c3b77b1e6 uvc-8402 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div id="ultimate-heading-6305636a22cc03db1" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-6305636a22cc03db1 uvc-7362 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-91456369c3b77b1e6 h2" data-responsive-json-new='{"font-size":"desktop:15px;","line-height":"desktop:22px;"}'><h2 style="--font-weight:theme;color:#a0a0a0;">2016 Seven Coffee. All Rights Reserved.</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6305636a22cc03db1 h2" data-responsive-json-new='{"font-size":"desktop:15px;","line-height":"desktop:22px;"}'><h2 style="--font-weight:theme;color:#a0a0a0;">2016 Seven Coffee. All Rights Reserved.</h2></div>
 </div></div></div></div>
 </div>
 <div class="vc_row-full-width vc_clearfix"></div>
@@ -2118,5 +2157,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </body>
 
 
-<!-- Page supported by LiteSpeed Cache 5.3 on 2022-11-08 02:49:27 -->
+<!-- Page supported by LiteSpeed Cache 5.3 on 2022-11-08 09:35:08 -->
 </html>
