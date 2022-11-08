@@ -70,6 +70,45 @@ img.emoji {
 <link rel="stylesheet" id="js_composer_front-css" href="/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=6.8.0" type="text/css" media="all">
 <link rel="stylesheet" id="dt-web-fonts-css" href="https://fonts.googleapis.com/css?family=Source Sans Pro:400,600,700|Roboto:400,600,700|Fira Sans:400,600,700" type="text/css" media="all">
 <link rel="stylesheet" id="dt-main-css" href="/wp-content/themes/dt-the7/css/main.min.css?ver=11.1.1" type="text/css" media="all">
+<style id="dt-main-inline-css" type="text/css">body #load {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 9901;
+  opacity: 1;
+  visibility: visible;
+  transition: all .35s ease-out;
+}
+.load-wrap {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -ms-flex-pack: center;
+  -ms-justify-content: center;
+  justify-content: center;
+}
+.load-wrap > svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+#load {
+  background: var(--the7-elementor-beautiful-loading-bg,#ffffff);
+  --the7-beautiful-spinner-color2: var(--the7-beautiful-spinner-color,rgba(19,23,25,0.3));
+}</style>
 <link rel="stylesheet" id="the7-custom-scrollbar-css" href="/wp-content/themes/dt-the7/lib/custom-scrollbar/custom-scrollbar.min.css?ver=11.1.1" type="text/css" media="all">
 <link rel="stylesheet" id="the7-wpbakery-css" href="/wp-content/themes/dt-the7/css/wpbakery.min.css?ver=11.1.1" type="text/css" media="all">
 <link rel="stylesheet" id="the7-core-css" href="/wp-content/plugins/dt-the7-core/assets/css/post-type.min.css?ver=2.7.0" type="text/css" media="all">
@@ -333,10 +372,10 @@ color: inherit;
 
 	<div id="about" data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1536913517056 vc_row-o-content-middle vc_row-flex">
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6"><div class="vc_column-inner vc_custom_1580724849555"><div class="wpb_wrapper">
-<div id="ultimate-heading-24356369d40dc67d0" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-24356369d40dc67d0 uvc-5519 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div id="ultimate-heading-1757636a33824c770" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-1757636a33824c770 uvc-6209 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-24356369d40dc67d0 h2" data-responsive-json-new='{"font-size":"desktop:50px;tablet:44px;tablet_portrait:40px;mobile_landscape:34px;mobile:30px;","line-height":"desktop:58px;tablet:52px;tablet_portrait:50px;mobile_landscape:42px;mobile:38px;"}'><h2 style="--font-weight:theme;margin-bottom:25px;">Hi! Looking for someone to build a website for you?</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-24356369d40dc67d0 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:28px;tablet:24px;tablet_portrait:20px;mobile_landscape:18px;","line-height":"desktop:38px;tablet:34px;tablet_portrait:30px;mobile_landscape:28px;"}' style="font-weight:normal;color:#111111;margin-bottom:40px;">Look no more! Nullam accumsan pulvinar lorem ac dictum. Maecenas condimentum auctor. Enim sit amet elit feugiat, vitae tincidunt ipsum lorem ipsum.</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1757636a33824c770 h2" data-responsive-json-new='{"font-size":"desktop:50px;tablet:44px;tablet_portrait:40px;mobile_landscape:34px;mobile:30px;","line-height":"desktop:58px;tablet:52px;tablet_portrait:50px;mobile_landscape:42px;mobile:38px;"}'><h2 style="--font-weight:theme;margin-bottom:25px;">Hi! Looking for someone to build a website for you?</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1757636a33824c770 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:28px;tablet:24px;tablet_portrait:20px;mobile_landscape:18px;","line-height":"desktop:38px;tablet:34px;tablet_portrait:30px;mobile_landscape:28px;"}' style="font-weight:normal;color:#111111;margin-bottom:40px;">Look no more! Nullam accumsan pulvinar lorem ac dictum. Maecenas condimentum auctor. Enim sit amet elit feugiat, vitae tincidunt ipsum lorem ipsum.</div>
 </div>
 <style type="text/css" data-type="the7_shortcodes-inline-css">#default-btn-cfbea9207b4e110497312af4d0a4d987.ico-right-side > i {
   margin-right: 0px;
@@ -356,10 +395,10 @@ color: inherit;
 		</figure>
 	</div>
 </div></div></div>
-<div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-8 vc_col-md-8"><div class="vc_column-inner vc_custom_1470662932541"><div class="wpb_wrapper"><div id="ultimate-heading-25996369d40de3907" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-25996369d40de3907 uvc-2548 accent-subtitle-color" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-8 vc_col-md-8"><div class="vc_column-inner vc_custom_1470662932541"><div class="wpb_wrapper"><div id="ultimate-heading-5031636a33824d67e" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-5031636a33824d67e uvc-6277 accent-subtitle-color" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-25996369d40de3907 h2" data-responsive-json-new='{"font-size":"desktop:32px;tablet:28px;","line-height":"desktop:42px;tablet:38px;"}'><h2 style="--font-weight:theme;">James Seven</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-25996369d40de3907 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:28px;tablet:20px;","line-height":"desktop:38px;tablet:30px;"}' style="font-weight:normal;">Web Master, Programmer</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5031636a33824d67e h2" data-responsive-json-new='{"font-size":"desktop:32px;tablet:28px;","line-height":"desktop:42px;tablet:38px;"}'><h2 style="--font-weight:theme;">James Seven</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5031636a33824d67e .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:28px;tablet:20px;","line-height":"desktop:38px;tablet:30px;"}' style="font-weight:normal;">Web Master, Programmer</div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1470662599017"><div class="wpb_wrapper">
 	<div class="wpb_text_column wpb_content_element ">
@@ -368,13 +407,13 @@ color: inherit;
 
 		</div>
 	</div>
-<div id="ultimate-heading-18306369d40de3b8c" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-18306369d40de3b8c uvc-8525 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div id="ultimate-heading-4893636a33824d981" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-4893636a33824d981 uvc-7088 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-18306369d40de3b8c h2" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}'><h2 style="--font-weight:theme;margin-top:22px;margin-bottom:20px;">Some Facts About Me:</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4893636a33824d981 h2" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}'><h2 style="--font-weight:theme;margin-top:22px;margin-bottom:20px;">Some Facts About Me:</h2></div>
 </div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="uavc-list-icon uavc-list-icon-wrapper ult-adjust-bottom-margin   vc_custom_1536946041276  vc_custom_1536946041276"><ul class="uavc-list">
-<li><div class="uavc-list-content" id="list-icon-wrap-7376">
+<li><div class="uavc-list-content" id="list-icon-wrap-6257">
 <div class="uavc-list-icon accent-icon-color " data-animation="" data-animation-delay="03" style="margin-right:10px;">
 <div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="font-size:12px;display:inline-block;">
@@ -382,9 +421,9 @@ color: inherit;
 </div>
 </div></div>
 </div>
-<span data-ultimate-target="#list-icon-wrap-7376 .uavc-list-desc" data-responsive-json-new='{"font-size":"","line-height":""}' class="uavc-list-desc ult-responsive" style="">Technical education</span>
+<span data-ultimate-target="#list-icon-wrap-6257 .uavc-list-desc" data-responsive-json-new='{"font-size":"","line-height":""}' class="uavc-list-desc ult-responsive" style="">Technical education</span>
 </div></li>
-<li><div class="uavc-list-content" id="list-icon-wrap-2737">
+<li><div class="uavc-list-content" id="list-icon-wrap-4258">
 <div class="uavc-list-icon accent-icon-color " data-animation="" data-animation-delay="03" style="margin-right:10px;">
 <div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="font-size:12px;display:inline-block;">
@@ -392,9 +431,9 @@ color: inherit;
 </div>
 </div></div>
 </div>
-<span data-ultimate-target="#list-icon-wrap-2737 .uavc-list-desc" data-responsive-json-new='{"font-size":"","line-height":""}' class="uavc-list-desc ult-responsive" style="">10+ years of experience</span>
+<span data-ultimate-target="#list-icon-wrap-4258 .uavc-list-desc" data-responsive-json-new='{"font-size":"","line-height":""}' class="uavc-list-desc ult-responsive" style="">10+ years of experience</span>
 </div></li>
-<li><div class="uavc-list-content" id="list-icon-wrap-2253">
+<li><div class="uavc-list-content" id="list-icon-wrap-3380">
 <div class="uavc-list-icon accent-icon-color " data-animation="" data-animation-delay="03" style="margin-right:10px;">
 <div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="font-size:12px;display:inline-block;">
@@ -402,11 +441,11 @@ color: inherit;
 </div>
 </div></div>
 </div>
-<span data-ultimate-target="#list-icon-wrap-2253 .uavc-list-desc" data-responsive-json-new='{"font-size":"","line-height":""}' class="uavc-list-desc ult-responsive" style="">50+ successfull projects</span>
+<span data-ultimate-target="#list-icon-wrap-3380 .uavc-list-desc" data-responsive-json-new='{"font-size":"","line-height":""}' class="uavc-list-desc ult-responsive" style="">50+ successfull projects</span>
 </div></li>
 </ul></div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="uavc-list-icon uavc-list-icon-wrapper ult-adjust-bottom-margin   vc_custom_1536946012682  vc_custom_1536946012682"><ul class="uavc-list">
-<li><div class="uavc-list-content" id="list-icon-wrap-2595">
+<li><div class="uavc-list-content" id="list-icon-wrap-6853">
 <div class="uavc-list-icon accent-icon-color " data-animation="" data-animation-delay="03" style="margin-right:10px;">
 <div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="font-size:12px;display:inline-block;">
@@ -414,9 +453,9 @@ color: inherit;
 </div>
 </div></div>
 </div>
-<span data-ultimate-target="#list-icon-wrap-2595 .uavc-list-desc" data-responsive-json-new='{"font-size":"","line-height":""}' class="uavc-list-desc ult-responsive" style="">Creative and easy-going</span>
+<span data-ultimate-target="#list-icon-wrap-6853 .uavc-list-desc" data-responsive-json-new='{"font-size":"","line-height":""}' class="uavc-list-desc ult-responsive" style="">Creative and easy-going</span>
 </div></li>
-<li><div class="uavc-list-content" id="list-icon-wrap-7172">
+<li><div class="uavc-list-content" id="list-icon-wrap-1502">
 <div class="uavc-list-icon accent-icon-color " data-animation="" data-animation-delay="03" style="margin-right:10px;">
 <div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="font-size:12px;display:inline-block;">
@@ -424,9 +463,9 @@ color: inherit;
 </div>
 </div></div>
 </div>
-<span data-ultimate-target="#list-icon-wrap-7172 .uavc-list-desc" data-responsive-json-new='{"font-size":"","line-height":""}' class="uavc-list-desc ult-responsive" style="">Responsible</span>
+<span data-ultimate-target="#list-icon-wrap-1502 .uavc-list-desc" data-responsive-json-new='{"font-size":"","line-height":""}' class="uavc-list-desc ult-responsive" style="">Responsible</span>
 </div></li>
-<li><div class="uavc-list-content" id="list-icon-wrap-8857">
+<li><div class="uavc-list-content" id="list-icon-wrap-3568">
 <div class="uavc-list-icon accent-icon-color " data-animation="" data-animation-delay="03" style="margin-right:10px;">
 <div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="font-size:12px;display:inline-block;">
@@ -434,7 +473,7 @@ color: inherit;
 </div>
 </div></div>
 </div>
-<span data-ultimate-target="#list-icon-wrap-8857 .uavc-list-desc" data-responsive-json-new='{"font-size":"","line-height":""}' class="uavc-list-desc ult-responsive" style="">Attentive to details</span>
+<span data-ultimate-target="#list-icon-wrap-3568 .uavc-list-desc" data-responsive-json-new='{"font-size":"","line-height":""}' class="uavc-list-desc ult-responsive" style="">Attentive to details</span>
 </div></li>
 </ul></div></div></div></div>
 </div></div></div></div>
@@ -442,56 +481,56 @@ color: inherit;
 <div class="vc_row-full-width vc_clearfix"></div>
 <div id="benefits" data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_custom_1580670055777 vc_row-has-fill vc_row-o-equal-height vc_row-flex">
 <div class="wpb_column vc_column_container vc_col-sm-3/5"><div class="vc_column-inner vc_custom_1580725392447"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1536911342635 vc_row-o-equal-height vc_row-flex">
-<div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-0 vc_col-lg-12 vc_col-md-offset-0 vc_col-md-12 vc_col-sm-offset-0"><div class="vc_column-inner vc_custom_1580725217159"><div class="wpb_wrapper"><div id="ultimate-heading-73216369d40e041e3" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-73216369d40e041e3 uvc-6286 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-73216369d40e041e3 h2" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:28px;"}'><h2 style="--font-weight:theme;">BENEFITS</h2></div>
+<div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-0 vc_col-lg-12 vc_col-md-offset-0 vc_col-md-12 vc_col-sm-offset-0"><div class="vc_column-inner vc_custom_1580725217159"><div class="wpb_wrapper"><div id="ultimate-heading-4917636a33824ed19" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-4917636a33824ed19 uvc-4014 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4917636a33824ed19 h2" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:28px;"}'><h2 style="--font-weight:theme;">BENEFITS</h2></div>
 <div class="uvc-heading-spacer line_only" style="margin-top:5px;margin-bottom:20px;height:3px;"><span class="uvc-headings-line" style="border-style:solid;border-bottom-width:3px;border-color:;width:50px;"></span></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-73216369d40e041e3 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:32px;","line-height":"desktop:42px;"}' style="font-family:&#039;Fira Sans&#039;;font-weight:normal;font-style:normal;color:#111111;margin-bottom:80px;">Why Work With Me</div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4917636a33824ed19 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:32px;","line-height":"desktop:42px;"}' style="font-family:&#039;Fira Sans&#039;;font-weight:normal;font-style:normal;color:#111111;margin-bottom:80px;">Why Work With Me</div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-6 vc_col-md-12"><div class="vc_column-inner vc_custom_1580725250287"><div class="wpb_wrapper">
 <div class="aio-icon-component  vc_custom_1580670093700  accent-icon-color style_1">
-<div id="Info-box-wrap-8851" class="aio-icon-box top-icon">
+<div id="Info-box-wrap-2287" class="aio-icon-box top-icon">
 <div class="aio-icon-top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="font-size:64px;display:inline-block;">
 	<i class="icomoon-elegent-line-icons-32x32-trophy"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-8851 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}' style="">Innovative</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-8851 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Nulla elementum enim sit amet elit feugiat, vitae dolor amet tincidunt ipsum maximus.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-2287 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}' style="">Innovative</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-2287 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Nulla elementum enim sit amet elit feugiat, vitae dolor amet tincidunt ipsum maximus.</div> <!-- description -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component -->
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-6 vc_col-md-12"><div class="vc_column-inner vc_custom_1580725254179"><div class="wpb_wrapper">
 <div class="aio-icon-component  vc_custom_1580670102407  accent-icon-color style_1">
-<div id="Info-box-wrap-1217" class="aio-icon-box top-icon">
+<div id="Info-box-wrap-2610" class="aio-icon-box top-icon">
 <div class="aio-icon-top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="font-size:64px;display:inline-block;">
 	<i class="icomoon-elegent-line-icons-32x32-clock"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-1217 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}' style="">Prompt</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-1217 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Nulla morbi elementum enim sit lorem ipsum amet elit feugiat, vitae tincidunt ipsum maximus.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-2610 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}' style="">Prompt</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-2610 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Nulla morbi elementum enim sit lorem ipsum amet elit feugiat, vitae tincidunt ipsum maximus.</div> <!-- description -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component -->
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-6 vc_col-md-12"><div class="vc_column-inner vc_custom_1580725257979"><div class="wpb_wrapper">
 <div class="aio-icon-component  vc_custom_1580670109453  accent-icon-color style_1">
-<div id="Info-box-wrap-5107" class="aio-icon-box top-icon">
+<div id="Info-box-wrap-5233" class="aio-icon-box top-icon">
 <div class="aio-icon-top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="font-size:64px;display:inline-block;">
 	<i class="icomoon-elegent-line-icons-32x32-lightbulb"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-5107 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}' style="">Creative</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-5107 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Morbi elementum enim sit lorem ipsum amet elit feugiat, vitae tincidunt ipsum maximus.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-5233 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}' style="">Creative</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-5233 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Morbi elementum enim sit lorem ipsum amet elit feugiat, vitae tincidunt ipsum maximus.</div> <!-- description -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component -->
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-6 vc_col-md-12"><div class="vc_column-inner vc_custom_1580725262185"><div class="wpb_wrapper">
 <div class="aio-icon-component  vc_custom_1580670116158  accent-icon-color style_1">
-<div id="Info-box-wrap-4772" class="aio-icon-box top-icon">
+<div id="Info-box-wrap-3447" class="aio-icon-box top-icon">
 <div class="aio-icon-top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="font-size:64px;display:inline-block;">
 	<i class="icomoon-elegent-line-icons-32x32-puzzle"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-4772 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}' style="">Smart</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-4772 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Morbi lorem ipsum enim sit lorem ipsum amet elit feugiat, vitae tincidunt ipsum maximus.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-3447 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}' style="">Smart</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-3447 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Morbi lorem ipsum enim sit lorem ipsum amet elit feugiat, vitae tincidunt ipsum maximus.</div> <!-- description -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component -->
 </div></div></div>
@@ -501,10 +540,10 @@ color: inherit;
 <div class="vc_row-full-width vc_clearfix"></div>
 <div id="portfolio" data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_custom_1536934677687 vc_row-no-padding">
 <div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
-<div id="ultimate-heading-95376369d40e1b73d" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-95376369d40e1b73d uvc-936 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-95376369d40e1b73d h2" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:28px;"}'><h2 style="--font-weight:theme;">PORTFOLIO</h2></div>
+<div id="ultimate-heading-6047636a338250075" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-6047636a338250075 uvc-3922 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6047636a338250075 h2" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:28px;"}'><h2 style="--font-weight:theme;">PORTFOLIO</h2></div>
 <div class="uvc-heading-spacer line_only" style="margin-top:5px;margin-bottom:20px;height:3px;"><span class="uvc-headings-line" style="border-style:solid;border-bottom-width:3px;border-color:;width:50px;"></span></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-95376369d40e1b73d .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:32px;","line-height":"desktop:42px;"}' style="font-family:&#039;Fira Sans&#039;;font-weight:normal;font-style:normal;color:#111111;margin-bottom:30px;">Check Out My Works</div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6047636a338250075 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:32px;","line-height":"desktop:42px;"}' style="font-family:&#039;Fira Sans&#039;;font-weight:normal;font-style:normal;color:#111111;margin-bottom:30px;">Check Out My Works</div>
 </div>
 <style type="text/css" data-type="the7_shortcodes-inline-css">.portfolio-carousel-shortcode.portfolio-carousel-shortcode-id-c46aa4f84b784688a909e832a4d23255.dividers-on.classic-layout-list article {
   padding-top: 0;
@@ -948,16 +987,16 @@ color: inherit;
 </div>
 <div class="vc_row-full-width vc_clearfix"></div>
 <div id="services" data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1580670393858 vc_row-has-fill vc_row-o-equal-height vc_row-flex"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-12 vc_col-md-12"><div class="vc_column-inner vc_custom_1536911971632"><div class="wpb_wrapper">
-<div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-3 vc_col-lg-6 vc_col-md-offset-2 vc_col-md-8 vc_col-sm-offset-0"><div class="vc_column-inner"><div class="wpb_wrapper"><div id="ultimate-heading-92896369d40ee69a7" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-92896369d40ee69a7 uvc-4154 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-92896369d40ee69a7 h2" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:28px;"}'><h2 style="--font-weight:theme;">MY SERVICES</h2></div>
+<div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-3 vc_col-lg-6 vc_col-md-offset-2 vc_col-md-8 vc_col-sm-offset-0"><div class="vc_column-inner"><div class="wpb_wrapper"><div id="ultimate-heading-8742636a33826bf91" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-8742636a33826bf91 uvc-4206 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-8742636a33826bf91 h2" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:28px;"}'><h2 style="--font-weight:theme;">MY SERVICES</h2></div>
 <div class="uvc-heading-spacer line_only" style="margin-top:5px;margin-bottom:20px;height:3px;"><span class="uvc-headings-line" style="border-style:solid;border-bottom-width:3px;border-color:;width:50px;"></span></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-92896369d40ee69a7 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:32px;","line-height":"desktop:42px;"}' style="font-family:&#039;Fira Sans&#039;;font-weight:normal;font-style:normal;color:#111111;margin-bottom:80px;">Stuff I’m Really Good At</div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-8742636a33826bf91 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:32px;","line-height":"desktop:42px;"}' style="font-family:&#039;Fira Sans&#039;;font-weight:normal;font-style:normal;color:#111111;margin-bottom:80px;">Stuff I’m Really Good At</div>
 </div></div></div></div></div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid vc_row-o-equal-height vc_row-flex">
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-3 vc_col-md-6 vc_col-xs-12"><div class="vc_column-inner vc_custom_1536913900823"><div class="wpb_wrapper">
 <div class="flip-box-wrap" style="margin:0px;">
 <div class="flip-box ifb-custom-height accent-icon-color horizontal_flip_left flip-box-custom-height flip-ifb-custom-height" data-min-height="350px">
-<div class="ifb-flip-box" id="flip-box-wrap-3311">
+<div class="ifb-flip-box" id="flip-box-wrap-4010">
 <div class="ifb-face ifb-front " style="color:#111111;color:#777777;background:#ffffff; border-width: 0px;border-style: solid; border-color:#ffffff; border-radius: px;">
 							<div class="ifb-flip-box-section ifb-flip-box-section-vertical-middle">
 							<div class="flip-box-icon"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
@@ -965,15 +1004,15 @@ color: inherit;
 	<i class="icomoon-elegent-line-icons-32x32-basket"></i>
 </div>
 </div></div></div>
-<h3 class="ult-responsive flipbox_heading" data-ultimate-target="#flip-box-wrap-3311 .ult-responsive.flipbox_heading" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}' style="color:#111111; font-family:&#039;&#039;;">E-Shops Development</h3>
-<div class="ifb-flip-box-section-content ult-responsive" data-ultimate-target="#flip-box-wrap-3311 .ifb-flip-box-section-content.ult-responsive" data-responsive-json-new='{"font-size":"","line-height":""}' style="font-family:&#039;&#039;;color:#333333;color:#111111;color:#777777;"><p>- Magento, WooCommerce -</p></div>
+<h3 class="ult-responsive flipbox_heading" data-ultimate-target="#flip-box-wrap-4010 .ult-responsive.flipbox_heading" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}' style="color:#111111; font-family:&#039;&#039;;">E-Shops Development</h3>
+<div class="ifb-flip-box-section-content ult-responsive" data-ultimate-target="#flip-box-wrap-4010 .ifb-flip-box-section-content.ult-responsive" data-responsive-json-new='{"font-size":"","line-height":""}' style="font-family:&#039;&#039;;color:#333333;color:#111111;color:#777777;"><p>- Magento, WooCommerce -</p></div>
 </div>
 </div>
 <!-- END .front -->
 						<div class="ifb-face ifb-back" style="color:#111111;color:#777777;background:#ffffff; border-width: 0px;border-style: solid; border-color:#ffffff; border-radius: px;">
 							<div class="ifb-flip-box-section ifb-flip-box-section-vertical-middle">
-<h3 class="ult-responsive flipbox_heading" data-ultimate-target="#flip-box-wrap-3311 .ult-responsive.flipbox_heading" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}' style="color:#111111; font-family:&#039;&#039;;">E-Shops Development</h3>
-<div class="ifb-flip-box-section-content ult-responsive" data-ultimate-target="#flip-box-wrap-3311 .ifb-flip-box-section-content.ult-responsive" data-responsive-json-new='{"font-size":"","line-height":""}' style="font-family:&#039;&#039;;color:#333333;color:#111111;color:#777777;"><p>Integer nec venenatis pellentesque, suscipit non diam. Nullam accumsan pulvinar lorem ac dictum. Maecenas condimentum euismod auctor.</p></div>
+<h3 class="ult-responsive flipbox_heading" data-ultimate-target="#flip-box-wrap-4010 .ult-responsive.flipbox_heading" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}' style="color:#111111; font-family:&#039;&#039;;">E-Shops Development</h3>
+<div class="ifb-flip-box-section-content ult-responsive" data-ultimate-target="#flip-box-wrap-4010 .ifb-flip-box-section-content.ult-responsive" data-responsive-json-new='{"font-size":"","line-height":""}' style="font-family:&#039;&#039;;color:#333333;color:#111111;color:#777777;"><p>Integer nec venenatis pellentesque, suscipit non diam. Nullam accumsan pulvinar lorem ac dictum. Maecenas condimentum euismod auctor.</p></div>
 </div>
 </div>
 <!-- END .back -->
@@ -985,7 +1024,7 @@ color: inherit;
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-3 vc_col-md-6 vc_col-xs-12"><div class="vc_column-inner vc_custom_1536913907165"><div class="wpb_wrapper">
 <div class="flip-box-wrap" style="margin:0px;">
 <div class="flip-box ifb-custom-height accent-icon-color horizontal_flip_right flip-box-custom-height flip-ifb-custom-height" data-min-height="350px">
-<div class="ifb-flip-box" id="flip-box-wrap-8674">
+<div class="ifb-flip-box" id="flip-box-wrap-2092">
 <div class="ifb-face ifb-front " style="color:#111111;color:#777777;background:#ffffff; border-width: 0px;border-style: solid; border-color:#ffffff; border-radius: px;">
 							<div class="ifb-flip-box-section ifb-flip-box-section-vertical-middle">
 							<div class="flip-box-icon"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
@@ -993,15 +1032,15 @@ color: inherit;
 	<i class="icomoon-elegent-line-icons-32x32-browser"></i>
 </div>
 </div></div></div>
-<h3 class="ult-responsive flipbox_heading" data-ultimate-target="#flip-box-wrap-8674 .ult-responsive.flipbox_heading" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}' style="color:#111111; font-family:&#039;&#039;;">Web Sites Development</h3>
-<div class="ifb-flip-box-section-content ult-responsive" data-ultimate-target="#flip-box-wrap-8674 .ifb-flip-box-section-content.ult-responsive" data-responsive-json-new='{"font-size":"","line-height":""}' style="font-family:&#039;&#039;;color:#333333;color:#111111;color:#777777;"><p>- WordPress, Joomla -</p></div>
+<h3 class="ult-responsive flipbox_heading" data-ultimate-target="#flip-box-wrap-2092 .ult-responsive.flipbox_heading" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}' style="color:#111111; font-family:&#039;&#039;;">Web Sites Development</h3>
+<div class="ifb-flip-box-section-content ult-responsive" data-ultimate-target="#flip-box-wrap-2092 .ifb-flip-box-section-content.ult-responsive" data-responsive-json-new='{"font-size":"","line-height":""}' style="font-family:&#039;&#039;;color:#333333;color:#111111;color:#777777;"><p>- WordPress, Joomla -</p></div>
 </div>
 </div>
 <!-- END .front -->
 						<div class="ifb-face ifb-back" style="color:#111111;color:#777777;background:#ffffff; border-width: 0px;border-style: solid; border-color:#ffffff; border-radius: px;">
 							<div class="ifb-flip-box-section ifb-flip-box-section-vertical-middle">
-<h3 class="ult-responsive flipbox_heading" data-ultimate-target="#flip-box-wrap-8674 .ult-responsive.flipbox_heading" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}' style="color:#111111; font-family:&#039;&#039;;">Web Site Development</h3>
-<div class="ifb-flip-box-section-content ult-responsive" data-ultimate-target="#flip-box-wrap-8674 .ifb-flip-box-section-content.ult-responsive" data-responsive-json-new='{"font-size":"","line-height":""}' style="font-family:&#039;&#039;;color:#333333;color:#111111;color:#777777;"><p>Integer nec venenatis pellentesque, suscipit non diam. Nullam accumsan pulvinar lorem ac dictum. Maecenas condimentum euismod auctor.</p></div>
+<h3 class="ult-responsive flipbox_heading" data-ultimate-target="#flip-box-wrap-2092 .ult-responsive.flipbox_heading" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}' style="color:#111111; font-family:&#039;&#039;;">Web Site Development</h3>
+<div class="ifb-flip-box-section-content ult-responsive" data-ultimate-target="#flip-box-wrap-2092 .ifb-flip-box-section-content.ult-responsive" data-responsive-json-new='{"font-size":"","line-height":""}' style="font-family:&#039;&#039;;color:#333333;color:#111111;color:#777777;"><p>Integer nec venenatis pellentesque, suscipit non diam. Nullam accumsan pulvinar lorem ac dictum. Maecenas condimentum euismod auctor.</p></div>
 </div>
 </div>
 <!-- END .back -->
@@ -1013,7 +1052,7 @@ color: inherit;
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-3 vc_col-md-6 vc_col-xs-12"><div class="vc_column-inner vc_custom_1536913917400"><div class="wpb_wrapper">
 <div class="flip-box-wrap" style="margin:0px;">
 <div class="flip-box ifb-custom-height accent-icon-color horizontal_flip_right flip-box-custom-height flip-ifb-custom-height" data-min-height="350px">
-<div class="ifb-flip-box" id="flip-box-wrap-2871">
+<div class="ifb-flip-box" id="flip-box-wrap-2114">
 <div class="ifb-face ifb-front " style="color:#111111;color:#777777;background:#ffffff; border-width: 0px;border-style: solid; border-color:#ffffff; border-radius: px;">
 							<div class="ifb-flip-box-section ifb-flip-box-section-vertical-middle">
 							<div class="flip-box-icon"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
@@ -1021,15 +1060,15 @@ color: inherit;
 	<i class="icomoon-elegent-line-icons-32x32-bargraph"></i>
 </div>
 </div></div></div>
-<h3 class="ult-responsive flipbox_heading" data-ultimate-target="#flip-box-wrap-2871 .ult-responsive.flipbox_heading" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}' style="color:#111111; font-family:&#039;&#039;;">Online Marketing</h3>
-<div class="ifb-flip-box-section-content ult-responsive" data-ultimate-target="#flip-box-wrap-2871 .ifb-flip-box-section-content.ult-responsive" data-responsive-json-new='{"font-size":"","line-height":""}' style="font-family:&#039;&#039;;color:#333333;color:#111111;color:#777777;"><p>- SEO, SMM, AdWords -</p></div>
+<h3 class="ult-responsive flipbox_heading" data-ultimate-target="#flip-box-wrap-2114 .ult-responsive.flipbox_heading" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}' style="color:#111111; font-family:&#039;&#039;;">Online Marketing</h3>
+<div class="ifb-flip-box-section-content ult-responsive" data-ultimate-target="#flip-box-wrap-2114 .ifb-flip-box-section-content.ult-responsive" data-responsive-json-new='{"font-size":"","line-height":""}' style="font-family:&#039;&#039;;color:#333333;color:#111111;color:#777777;"><p>- SEO, SMM, AdWords -</p></div>
 </div>
 </div>
 <!-- END .front -->
 						<div class="ifb-face ifb-back" style="color:#111111;color:#777777;background:#ffffff; border-width: 0px;border-style: solid; border-color:#ffffff; border-radius: px;">
 							<div class="ifb-flip-box-section ifb-flip-box-section-vertical-middle">
-<h3 class="ult-responsive flipbox_heading" data-ultimate-target="#flip-box-wrap-2871 .ult-responsive.flipbox_heading" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}' style="color:#111111; font-family:&#039;&#039;;">Online Marketing</h3>
-<div class="ifb-flip-box-section-content ult-responsive" data-ultimate-target="#flip-box-wrap-2871 .ifb-flip-box-section-content.ult-responsive" data-responsive-json-new='{"font-size":"","line-height":""}' style="font-family:&#039;&#039;;color:#333333;color:#111111;color:#777777;"><p>Integer nec venenatis. Nullam accumsan pulvinar lorem ac dictum. Maecenas condimentum euismod auctor.</p></div>
+<h3 class="ult-responsive flipbox_heading" data-ultimate-target="#flip-box-wrap-2114 .ult-responsive.flipbox_heading" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}' style="color:#111111; font-family:&#039;&#039;;">Online Marketing</h3>
+<div class="ifb-flip-box-section-content ult-responsive" data-ultimate-target="#flip-box-wrap-2114 .ifb-flip-box-section-content.ult-responsive" data-responsive-json-new='{"font-size":"","line-height":""}' style="font-family:&#039;&#039;;color:#333333;color:#111111;color:#777777;"><p>Integer nec venenatis. Nullam accumsan pulvinar lorem ac dictum. Maecenas condimentum euismod auctor.</p></div>
 </div>
 </div>
 <!-- END .back -->
@@ -1041,7 +1080,7 @@ color: inherit;
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-3 vc_col-md-6 vc_col-xs-12"><div class="vc_column-inner vc_custom_1536913923514"><div class="wpb_wrapper">
 <div class="flip-box-wrap" style="margin:0px;">
 <div class="flip-box ifb-custom-height accent-icon-color horizontal_flip_right flip-box-custom-height flip-ifb-custom-height" data-min-height="350px">
-<div class="ifb-flip-box" id="flip-box-wrap-2120">
+<div class="ifb-flip-box" id="flip-box-wrap-5396">
 <div class="ifb-face ifb-front " style="color:#111111;color:#777777;background:#ffffff; border-width: 0px;border-style: solid; border-color:#ffffff; border-radius: px;">
 							<div class="ifb-flip-box-section ifb-flip-box-section-vertical-middle">
 							<div class="flip-box-icon"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
@@ -1049,15 +1088,15 @@ color: inherit;
 	<i class="icomoon-elegent-line-icons-32x32-chat"></i>
 </div>
 </div></div></div>
-<h3 class="ult-responsive flipbox_heading" data-ultimate-target="#flip-box-wrap-2120 .ult-responsive.flipbox_heading" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}' style="color:#111111; font-family:&#039;&#039;;">Consulting</h3>
-<div class="ifb-flip-box-section-content ult-responsive" data-ultimate-target="#flip-box-wrap-2120 .ifb-flip-box-section-content.ult-responsive" data-responsive-json-new='{"font-size":"","line-height":""}' style="font-family:&#039;&#039;;color:#333333;color:#111111;color:#777777;"><p>- Web, Mobile, E-Commerce -</p></div>
+<h3 class="ult-responsive flipbox_heading" data-ultimate-target="#flip-box-wrap-5396 .ult-responsive.flipbox_heading" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}' style="color:#111111; font-family:&#039;&#039;;">Consulting</h3>
+<div class="ifb-flip-box-section-content ult-responsive" data-ultimate-target="#flip-box-wrap-5396 .ifb-flip-box-section-content.ult-responsive" data-responsive-json-new='{"font-size":"","line-height":""}' style="font-family:&#039;&#039;;color:#333333;color:#111111;color:#777777;"><p>- Web, Mobile, E-Commerce -</p></div>
 </div>
 </div>
 <!-- END .front -->
 						<div class="ifb-face ifb-back" style="color:#111111;color:#777777;background:#ffffff; border-width: 0px;border-style: solid; border-color:#ffffff; border-radius: px;">
 							<div class="ifb-flip-box-section ifb-flip-box-section-vertical-middle">
-<h3 class="ult-responsive flipbox_heading" data-ultimate-target="#flip-box-wrap-2120 .ult-responsive.flipbox_heading" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}' style="color:#111111; font-family:&#039;&#039;;">Consulting</h3>
-<div class="ifb-flip-box-section-content ult-responsive" data-ultimate-target="#flip-box-wrap-2120 .ifb-flip-box-section-content.ult-responsive" data-responsive-json-new='{"font-size":"","line-height":""}' style="font-family:&#039;&#039;;color:#333333;color:#111111;color:#777777;"><p>Lorem ipsum dolor - from fullam accumsan pulvinar lorem ac dictum. Maecenas condimentum euismod auctor.</p></div>
+<h3 class="ult-responsive flipbox_heading" data-ultimate-target="#flip-box-wrap-5396 .ult-responsive.flipbox_heading" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}' style="color:#111111; font-family:&#039;&#039;;">Consulting</h3>
+<div class="ifb-flip-box-section-content ult-responsive" data-ultimate-target="#flip-box-wrap-5396 .ifb-flip-box-section-content.ult-responsive" data-responsive-json-new='{"font-size":"","line-height":""}' style="font-family:&#039;&#039;;color:#333333;color:#111111;color:#777777;"><p>Lorem ipsum dolor - from fullam accumsan pulvinar lorem ac dictum. Maecenas condimentum euismod auctor.</p></div>
 </div>
 </div>
 <!-- END .back -->
@@ -1078,33 +1117,33 @@ color: inherit;
 </div></div></div></div>
 <div class="vc_row-full-width vc_clearfix"></div>
 <div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1580670549549 vc_row-o-equal-height vc_row-o-content-middle vc_row-flex">
-<div class="wpb_column vc_column_container vc_col-sm-6 vc_hidden-sm vc_hidden-xs"><div class="vc_column-inner"><div class="wpb_wrapper"><div id="ultimate-heading-96976369d40f09021" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-96976369d40f09021 uvc-294 " data-hspacer="no_spacer" data-halign="right" style="text-align:right">
+<div class="wpb_column vc_column_container vc_col-sm-6 vc_hidden-sm vc_hidden-xs"><div class="vc_column-inner"><div class="wpb_wrapper"><div id="ultimate-heading-3250636a33826de3d" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-3250636a33826de3d uvc-3956 " data-hspacer="no_spacer" data-halign="right" style="text-align:right">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-96976369d40f09021 h2" data-responsive-json-new='{"font-size":"desktop:32px;tablet:24px;tablet_portrait:20px;","line-height":"desktop:42px;tablet:34px;tablet_portrait:30px;"}'><h2 style="--font-weight:theme;color:#ffffff;">Let's Discuss Your Project!</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3250636a33826de3d h2" data-responsive-json-new='{"font-size":"desktop:32px;tablet:24px;tablet_portrait:20px;","line-height":"desktop:42px;tablet:34px;tablet_portrait:30px;"}'><h2 style="--font-weight:theme;color:#ffffff;">Let's Discuss Your Project!</h2></div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-6 vc_hidden-sm vc_hidden-xs"><div class="vc_column-inner"><div class="wpb_wrapper">
 <div class="aio-icon-component  vc_custom_1580670683443  dt-phone style_1">
-<div id="Info-box-wrap-1766" class="aio-icon-box left-icon">
+<div id="Info-box-wrap-1279" class="aio-icon-box left-icon">
 <div class="aio-icon-left"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon advanced " style="color:#ffffff;border-style:;border-color:#333333;border-width:1px;width:60px;height:60px;line-height:60px;border-radius:500px;font-size:64px;display:inline-block;">
 	<i class="icomoon-the7-font-the7-phone-03"></i>
 </div>
 </div></div></div>
 <div class="aio-ibd-block">
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-1766 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:50px;tablet:38px;mobile_landscape:32px;","line-height":"desktop:60px;tablet:48px;mobile_landscape:42px;"}' style="color:#ffffff;">001 234 56 78</h3></div> <!-- header -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-1279 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:50px;tablet:38px;mobile_landscape:32px;","line-height":"desktop:60px;tablet:48px;mobile_landscape:42px;"}' style="color:#ffffff;">001 234 56 78</h3></div> <!-- header -->
 </div> <!-- aio-ibd-block -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component -->
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_hidden-lg vc_hidden-md"><div class="vc_column-inner"><div class="wpb_wrapper">
 <div class="aio-icon-component  vc_custom_1580670494075  dt-phone style_1">
-<div id="Info-box-wrap-6607" class="aio-icon-box top-icon">
+<div id="Info-box-wrap-3036" class="aio-icon-box top-icon">
 <div class="aio-icon-top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon advanced " style="color:#ffffff;border-style:;border-color:#333333;border-width:1px;width:60px;height:60px;line-height:60px;border-radius:500px;font-size:64px;display:inline-block;">
 	<i class="icomoon-the7-font-the7-phone-03"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-6607 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:50px;mobile_landscape:40px;mobile:32px;","line-height":"desktop:50px;mobile_landscape:40px;mobile:32px;"}' style="color:#ffffff;">001 234 56 78</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-6607 .aio-icon-description" data-responsive-json-new='{"font-size":"desktop:32px;mobile_landscape:20px;mobile:18px;","line-height":"desktop:42px;mobile_landscape:30px;mobile:28px;"}' style="color:#ffffff;">Let&#8217;s Discuss Your Project Now!</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-3036 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:50px;mobile_landscape:40px;mobile:32px;","line-height":"desktop:50px;mobile_landscape:40px;mobile:32px;"}' style="color:#ffffff;">001 234 56 78</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-3036 .aio-icon-description" data-responsive-json-new='{"font-size":"desktop:32px;mobile_landscape:20px;mobile:18px;","line-height":"desktop:42px;mobile_landscape:30px;mobile:28px;"}' style="color:#ffffff;">Let&#8217;s Discuss Your Project Now!</div> <!-- description -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component -->
 </div></div></div>
@@ -1114,10 +1153,10 @@ color: inherit;
 <div id="testimonials" data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_custom_1580719642912 vc_row-has-fill vc_row-o-equal-height vc_row-flex">
 <div class="wpb_column vc_column_container vc_col-sm-2/5 vc_col-has-fill"><div class="vc_column-inner vc_custom_1580725410031"><div class="wpb_wrapper"></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-3/5"><div class="vc_column-inner vc_custom_1580725419726"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1536911342635 vc_row-o-equal-height vc_row-flex">
-<div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-0 vc_col-lg-12 vc_col-md-offset-0 vc_col-md-12 vc_col-sm-offset-0"><div class="vc_column-inner vc_custom_1536925020574"><div class="wpb_wrapper"><div id="ultimate-heading-91266369d40f0a00e" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-91266369d40f0a00e uvc-7287 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-91266369d40f0a00e h2" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:28px;"}'><h2 style="--font-weight:theme;">TESTIMONIALS</h2></div>
+<div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-0 vc_col-lg-12 vc_col-md-offset-0 vc_col-md-12 vc_col-sm-offset-0"><div class="vc_column-inner vc_custom_1536925020574"><div class="wpb_wrapper"><div id="ultimate-heading-7884636a33827d637" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-7884636a33827d637 uvc-5476 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-7884636a33827d637 h2" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:28px;"}'><h2 style="--font-weight:theme;">TESTIMONIALS</h2></div>
 <div class="uvc-heading-spacer line_only" style="margin-top:5px;margin-bottom:20px;height:3px;"><span class="uvc-headings-line" style="border-style:solid;border-bottom-width:3px;border-color:;width:50px;"></span></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-91266369d40f0a00e .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:32px;","line-height":"desktop:42px;"}' style="font-family:&#039;Fira Sans&#039;;font-weight:normal;font-style:normal;color:#111111;margin-bottom:80px;">What Clients Say About Me</div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-7884636a33827d637 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:32px;","line-height":"desktop:42px;"}' style="font-family:&#039;Fira Sans&#039;;font-weight:normal;font-style:normal;color:#111111;margin-bottom:80px;">What Clients Say About Me</div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1536920427317"><div class="wpb_wrapper">
 <style type="text/css" data-type="the7_shortcodes-inline-css">.testimonials-carousel-shortcode.testimonials-carousel-shortcode-id-024bc269838233bf22a24759183b5c79.owl-carousel .owl-nav a {
@@ -1372,17 +1411,17 @@ color: inherit;
 </div>
 <div class="vc_row-full-width vc_clearfix"></div>
 <div id="process" class="vc_row wpb_row vc_row-fluid vc_custom_1536935365802"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
-<div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-3 vc_col-lg-6 vc_col-md-offset-2 vc_col-md-8 vc_col-sm-offset-0"><div class="vc_column-inner"><div class="wpb_wrapper"><div id="ultimate-heading-7726369d412874c3" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-7726369d412874c3 uvc-7047 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-7726369d412874c3 h2" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:28px;"}'><h2 style="--font-weight:theme;">PROCESS</h2></div>
+<div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-3 vc_col-lg-6 vc_col-md-offset-2 vc_col-md-8 vc_col-sm-offset-0"><div class="vc_column-inner"><div class="wpb_wrapper"><div id="ultimate-heading-3350636a338284f69" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-3350636a338284f69 uvc-6216 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3350636a338284f69 h2" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:28px;"}'><h2 style="--font-weight:theme;">PROCESS</h2></div>
 <div class="uvc-heading-spacer line_only" style="margin-top:5px;margin-bottom:20px;height:3px;"><span class="uvc-headings-line" style="border-style:solid;border-bottom-width:3px;border-color:;width:50px;"></span></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-7726369d412874c3 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:32px;","line-height":"desktop:42px;"}' style="font-family:&#039;Fira Sans&#039;;font-weight:normal;font-style:normal;color:#111111;margin-bottom:80px;">6 Short Steps Towards Your Brand New Website</div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3350636a338284f69 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:32px;","line-height":"desktop:42px;"}' style="font-family:&#039;Fira Sans&#039;;font-weight:normal;font-style:normal;color:#111111;margin-bottom:80px;">6 Short Steps Towards Your Brand New Website</div>
 </div></div></div></div></div>
 <div class="smile_icon_list_wrap ult_info_list_container ult-adjust-bottom-margin   vc_custom_1580722490848"><ul class="smile_icon_list top hexagon">
 <li class="icon_list_item" style=" font-size:144px;">
 <div class="icon_list_icon" data-animation="" data-animation-delay="03" style="font-size:48px;background:#f7f7f7;color:#111111;border-color:#f7f7f7;"><i class="icomoon-elegent-line-icons-32x32-chat"></i></div>
-<div class="icon_description" id="Info-list-wrap-4494" style="font-size:48px;">
-<h3 class="ult-responsive info-list-heading" data-ultimate-target="#Info-list-wrap-4494 h3" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}' style="font-family:&#039;Fira Sans&#039;;font-style:italic;font-weight:normal;">1. Discussion</h3>
-<div class="icon_description_text ult-responsive" data-ultimate-target="#Info-list-wrap-4494 .icon_description_text" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-family:&#039;&#039;;">
+<div class="icon_description" id="Info-list-wrap-4421" style="font-size:48px;">
+<h3 class="ult-responsive info-list-heading" data-ultimate-target="#Info-list-wrap-4421 h3" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}' style="font-family:&#039;Fira Sans&#039;;font-style:italic;font-weight:normal;">1. Discussion</h3>
+<div class="icon_description_text ult-responsive" data-ultimate-target="#Info-list-wrap-4421 .icon_description_text" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-family:&#039;&#039;;">
 <p>Nullam accumsan pulvinar lorem ac dictum! Morbi elementum enim sit amet elit feugiat, vitae tincidunt ipsum maximus.</p>
 </div>
 </div>
@@ -1390,9 +1429,9 @@ color: inherit;
 </li>
 <li class="icon_list_item" style=" font-size:144px;">
 <div class="icon_list_icon" data-animation="" data-animation-delay="03" style="font-size:48px;background:#f7f7f7;color:#111111;border-color:#f7f7f7;"><i class="icomoon-elegent-line-icons-32x32-calendar"></i></div>
-<div class="icon_description" id="Info-list-wrap-2281" style="font-size:48px;">
-<h3 class="ult-responsive info-list-heading" data-ultimate-target="#Info-list-wrap-2281 h3" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}' style="font-family:&#039;Fira Sans&#039;;font-style:italic;font-weight:normal;">2. Planning</h3>
-<div class="icon_description_text ult-responsive" data-ultimate-target="#Info-list-wrap-2281 .icon_description_text" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'>
+<div class="icon_description" id="Info-list-wrap-8294" style="font-size:48px;">
+<h3 class="ult-responsive info-list-heading" data-ultimate-target="#Info-list-wrap-8294 h3" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}' style="font-family:&#039;Fira Sans&#039;;font-style:italic;font-weight:normal;">2. Planning</h3>
+<div class="icon_description_text ult-responsive" data-ultimate-target="#Info-list-wrap-8294 .icon_description_text" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}'>
 <p>Pulvinar lorem ac dictum. Maecenas condimentum euismod auctor. Morbi elementum enim sit amet elit feugiat, vitae tincidunt nulla.</p>
 </div>
 </div>
@@ -1400,9 +1439,9 @@ color: inherit;
 </li>
 <li class="icon_list_item" style=" font-size:144px;">
 <div class="icon_list_icon" data-animation="" data-animation-delay="03" style="font-size:48px;background:#f7f7f7;color:#111111;border-color:#f7f7f7;"><i class="icomoon-elegent-line-icons-32x32-pencil"></i></div>
-<div class="icon_description" id="Info-list-wrap-8028" style="font-size:48px;">
-<h3 class="ult-responsive info-list-heading" data-ultimate-target="#Info-list-wrap-8028 h3" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}' style="font-family:&#039;Fira Sans&#039;;font-style:italic;font-weight:normal;">3. Design</h3>
-<div class="icon_description_text ult-responsive" data-ultimate-target="#Info-list-wrap-8028 .icon_description_text" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-family:&#039;&#039;;">
+<div class="icon_description" id="Info-list-wrap-5547" style="font-size:48px;">
+<h3 class="ult-responsive info-list-heading" data-ultimate-target="#Info-list-wrap-5547 h3" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}' style="font-family:&#039;Fira Sans&#039;;font-style:italic;font-weight:normal;">3. Design</h3>
+<div class="icon_description_text ult-responsive" data-ultimate-target="#Info-list-wrap-5547 .icon_description_text" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-family:&#039;&#039;;">
 <p>Lorem ulvinar loraecenas condimentum euismod auctor enim sit amet elit feugiat, vitae tincidunt ipsum maximus nulla.</p>
 </div>
 </div>
@@ -1412,9 +1451,9 @@ color: inherit;
 <div class="smile_icon_list_wrap ult_info_list_container ult-adjust-bottom-margin   vc_custom_1580722483972"><ul class="smile_icon_list top hexagon">
 <li class="icon_list_item" style=" font-size:144px;">
 <div class="icon_list_icon" data-animation="" data-animation-delay="03" style="font-size:48px;background:#f7f7f7;color:#111111;border-color:#f7f7f7;"><i class="icomoon-elegent-line-icons-32x32-expand"></i></div>
-<div class="icon_description" id="Info-list-wrap-4846" style="font-size:48px;">
-<h3 class="ult-responsive info-list-heading" data-ultimate-target="#Info-list-wrap-4846 h3" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}' style="font-family:&#039;Fira Sans&#039;;font-style:italic;font-weight:normal;">4. Coding</h3>
-<div class="icon_description_text ult-responsive" data-ultimate-target="#Info-list-wrap-4846 .icon_description_text" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-family:&#039;&#039;;">
+<div class="icon_description" id="Info-list-wrap-8947" style="font-size:48px;">
+<h3 class="ult-responsive info-list-heading" data-ultimate-target="#Info-list-wrap-8947 h3" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}' style="font-family:&#039;Fira Sans&#039;;font-style:italic;font-weight:normal;">4. Coding</h3>
+<div class="icon_description_text ult-responsive" data-ultimate-target="#Info-list-wrap-8947 .icon_description_text" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-family:&#039;&#039;;">
 <p>Pulvinar lorem ac dictum. Maecenas condimentum euismod auctor. Morbi elementum enim sit amet elit feugiat, vitae tincidunt nulla.</p>
 </div>
 </div>
@@ -1422,9 +1461,9 @@ color: inherit;
 </li>
 <li class="icon_list_item" style=" font-size:144px;">
 <div class="icon_list_icon" data-animation="" data-animation-delay="03" style="font-size:48px;background:#f7f7f7;color:#111111;border-color:#f7f7f7;"><i class="icomoon-elegent-line-icons-32x32-gears"></i></div>
-<div class="icon_description" id="Info-list-wrap-9581" style="font-size:48px;">
-<h3 class="ult-responsive info-list-heading" data-ultimate-target="#Info-list-wrap-9581 h3" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}' style="font-family:&#039;Fira Sans&#039;;font-style:italic;font-weight:normal;">5. Programming</h3>
-<div class="icon_description_text ult-responsive" data-ultimate-target="#Info-list-wrap-9581 .icon_description_text" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-family:&#039;&#039;;">
+<div class="icon_description" id="Info-list-wrap-6678" style="font-size:48px;">
+<h3 class="ult-responsive info-list-heading" data-ultimate-target="#Info-list-wrap-6678 h3" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}' style="font-family:&#039;Fira Sans&#039;;font-style:italic;font-weight:normal;">5. Programming</h3>
+<div class="icon_description_text ult-responsive" data-ultimate-target="#Info-list-wrap-6678 .icon_description_text" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-family:&#039;&#039;;">
 <p>Lorem ulvinar loraecenas condimentum euismod auctor enim sit amet elit feugiat, vitae tincidunt ipsum maximus nulla.</p>
 </div>
 </div>
@@ -1432,9 +1471,9 @@ color: inherit;
 </li>
 <li class="icon_list_item" style=" font-size:144px;">
 <div class="icon_list_icon" data-animation="" data-animation-delay="03" style="font-size:48px;background:#f7f7f7;color:#111111;border-color:#f7f7f7;"><i class="icomoon-elegent-line-icons-32x32-browser"></i></div>
-<div class="icon_description" id="Info-list-wrap-5669" style="font-size:48px;">
-<h3 class="ult-responsive info-list-heading" data-ultimate-target="#Info-list-wrap-5669 h3" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}' style="font-family:&#039;Fira Sans&#039;;font-style:italic;font-weight:normal;">6. Website Is Ready!</h3>
-<div class="icon_description_text ult-responsive" data-ultimate-target="#Info-list-wrap-5669 .icon_description_text" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-family:&#039;&#039;;">
+<div class="icon_description" id="Info-list-wrap-2875" style="font-size:48px;">
+<h3 class="ult-responsive info-list-heading" data-ultimate-target="#Info-list-wrap-2875 h3" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}' style="font-family:&#039;Fira Sans&#039;;font-style:italic;font-weight:normal;">6. Website Is Ready!</h3>
+<div class="icon_description_text ult-responsive" data-ultimate-target="#Info-list-wrap-2875 .icon_description_text" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:26px;"}' style="font-family:&#039;&#039;;">
 <p>Nullam accumsan pulvinar lorem ac dictum! Morbi elementum enim sit amet elit feugiat, vitae tincidunt ipsum maximus.</p>
 </div>
 </div>
@@ -1443,17 +1482,17 @@ color: inherit;
 </ul></div>
 </div></div></div></div>
 <div id="prices" data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1580720227387 vc_row-has-fill vc_row-o-equal-height vc_row-o-content-middle vc_row-flex"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-12 vc_col-md-12"><div class="vc_column-inner vc_custom_1580720223815"><div class="wpb_wrapper">
-<div id="ultimate-heading-13186369d41296658" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-13186369d41296658 uvc-5546 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-13186369d41296658 h2" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:28px;"}'><h2 style="--font-weight:theme;">PRICING PLANS</h2></div>
+<div id="ultimate-heading-8138636a338285dde" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-8138636a338285dde uvc-9108 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-8138636a338285dde h2" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:28px;"}'><h2 style="--font-weight:theme;">PRICING PLANS</h2></div>
 <div class="uvc-heading-spacer line_only" style="margin-top:5px;margin-bottom:20px;height:3px;"><span class="uvc-headings-line" style="border-style:solid;border-bottom-width:3px;border-color:;width:50px;"></span></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-13186369d41296658 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:32px;","line-height":"desktop:42px;"}' style="font-family:&#039;Fira Sans&#039;;font-weight:normal;font-style:normal;color:#111111;margin-bottom:80px;">Best Prices On The Market!</div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-8138636a338285dde .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:32px;","line-height":"desktop:42px;"}' style="font-family:&#039;Fira Sans&#039;;font-weight:normal;font-style:normal;color:#111111;margin-bottom:80px;">Best Prices On The Market!</div>
 </div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1470507893727 vc_row-o-equal-height vc_row-flex">
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-4 vc_col-md-4 vc_col-has-fill"><div class="vc_column-inner vc_custom_1580721759017"><div class="wpb_wrapper">
-<div id="ultimate-heading-55566369d41296bec" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-55566369d41296bec uvc-3283 accent-subtitle-color" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-6655636a338286291" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-6655636a338286291 uvc-5722 accent-subtitle-color" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-55566369d41296bec h2" data-responsive-json-new='{"font-size":"desktop:40px;tablet:32px;","line-height":"desktop:50px;tablet:42px;"}'><h2 style="--font-weight:theme;margin-top:5px;">Basic</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-55566369d41296bec .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:24px;tablet:20px;","line-height":"desktop:34px;tablet:30px;"}' style="font-family:&#039;Fira Sans&#039;;font-style:italic;font-weight:normal;margin-bottom:30px;">Nice &amp; Quick</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6655636a338286291 h2" data-responsive-json-new='{"font-size":"desktop:40px;tablet:32px;","line-height":"desktop:50px;tablet:42px;"}'><h2 style="--font-weight:theme;margin-top:5px;">Basic</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6655636a338286291 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:24px;tablet:20px;","line-height":"desktop:34px;tablet:30px;"}' style="font-family:&#039;Fira Sans&#039;;font-style:italic;font-weight:normal;margin-bottom:30px;">Nice &amp; Quick</div>
 </div>
 	<div class="wpb_text_column wpb_content_element  vc_custom_1536939299733">
 		<div class="wpb_wrapper">
@@ -1482,9 +1521,9 @@ color: inherit;
 
 		</div>
 	</div>
-<div id="ultimate-heading-92596369d41298902" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-92596369d41298902 uvc-1402 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-2409636a3382951ba" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2409636a3382951ba uvc-1759 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-92596369d41298902 h2" data-responsive-json-new='{"font-size":"desktop:50px;","line-height":"desktop:60px;"}'><h2 style="--font-weight:theme;color:#111111;margin-top:30px;">$499</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2409636a3382951ba h2" data-responsive-json-new='{"font-size":"desktop:50px;","line-height":"desktop:60px;"}'><h2 style="--font-weight:theme;color:#111111;margin-top:30px;">$499</h2></div>
 </div>
 	<div class="wpb_text_column wpb_content_element  vc_custom_1536938592480">
 		<div class="wpb_wrapper">
@@ -1494,10 +1533,10 @@ color: inherit;
 	</div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-4 vc_col-md-4 vc_col-has-fill"><div class="vc_column-inner vc_custom_1580721766873"><div class="wpb_wrapper">
-<div id="ultimate-heading-28206369d412991db" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-28206369d412991db uvc-4188 accent-subtitle-color" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-4326636a338295487" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-4326636a338295487 uvc-4089 accent-subtitle-color" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-28206369d412991db h2" data-responsive-json-new='{"font-size":"desktop:40px;tablet:32px;","line-height":"desktop:50px;tablet:42px;"}'><h2 style="--font-weight:theme;margin-top:5px;">Standard</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-28206369d412991db .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:24px;tablet:20px;","line-height":"desktop:34px;tablet:30px;"}' style="font-family:&#039;Fira Sans&#039;;font-style:italic;font-weight:normal;margin-bottom:30px;">Optimal</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4326636a338295487 h2" data-responsive-json-new='{"font-size":"desktop:40px;tablet:32px;","line-height":"desktop:50px;tablet:42px;"}'><h2 style="--font-weight:theme;margin-top:5px;">Standard</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4326636a338295487 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:24px;tablet:20px;","line-height":"desktop:34px;tablet:30px;"}' style="font-family:&#039;Fira Sans&#039;;font-style:italic;font-weight:normal;margin-bottom:30px;">Optimal</div>
 </div>
 	<div class="wpb_text_column wpb_content_element  vc_custom_1536939696285">
 		<div class="wpb_wrapper">
@@ -1526,9 +1565,9 @@ color: inherit;
 
 		</div>
 	</div>
-<div id="ultimate-heading-3326369d41299e02" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-3326369d41299e02 uvc-9307 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-606636a33829573a" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-606636a33829573a uvc-6623 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3326369d41299e02 h2" data-responsive-json-new='{"font-size":"desktop:50px;","line-height":"desktop:60px;"}'><h2 style="--font-weight:theme;color:#111111;margin-top:30px;">$599</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-606636a33829573a h2" data-responsive-json-new='{"font-size":"desktop:50px;","line-height":"desktop:60px;"}'><h2 style="--font-weight:theme;color:#111111;margin-top:30px;">$599</h2></div>
 </div>
 	<div class="wpb_text_column wpb_content_element  vc_custom_1580721422874">
 		<div class="wpb_wrapper">
@@ -1538,10 +1577,10 @@ color: inherit;
 	</div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-4 vc_col-md-4 vc_col-has-fill"><div class="vc_column-inner vc_custom_1580721775043"><div class="wpb_wrapper">
-<div id="ultimate-heading-34266369d4129b4fe" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-34266369d4129b4fe uvc-1440 accent-subtitle-color" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-9711636a33829595b" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-9711636a33829595b uvc-4355 accent-subtitle-color" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-34266369d4129b4fe h2" data-responsive-json-new='{"font-size":"desktop:40px;tablet:32px;","line-height":"desktop:50px;tablet:42px;"}'><h2 style="--font-weight:theme;margin-top:5px;">Extended</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-34266369d4129b4fe .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:24px;tablet:20px;","line-height":"desktop:34px;tablet:30px;"}' style="font-family:&#039;Fira Sans&#039;;font-style:italic;font-weight:normal;margin-bottom:30px;">Big &amp; Bold</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9711636a33829595b h2" data-responsive-json-new='{"font-size":"desktop:40px;tablet:32px;","line-height":"desktop:50px;tablet:42px;"}'><h2 style="--font-weight:theme;margin-top:5px;">Extended</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9711636a33829595b .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:24px;tablet:20px;","line-height":"desktop:34px;tablet:30px;"}' style="font-family:&#039;Fira Sans&#039;;font-style:italic;font-weight:normal;margin-bottom:30px;">Big &amp; Bold</div>
 </div>
 	<div class="wpb_text_column wpb_content_element  vc_custom_1580721483124">
 		<div class="wpb_wrapper">
@@ -1570,9 +1609,9 @@ color: inherit;
 
 		</div>
 	</div>
-<div id="ultimate-heading-59326369d4129b8be" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-59326369d4129b8be uvc-7951 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-8692636a338295c02" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-8692636a338295c02 uvc-3882 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-59326369d4129b8be h2" data-responsive-json-new='{"font-size":"desktop:50px;","line-height":"desktop:60px;"}'><h2 style="--font-weight:theme;color:#111111;margin-top:30px;">$1299</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-8692636a338295c02 h2" data-responsive-json-new='{"font-size":"desktop:50px;","line-height":"desktop:60px;"}'><h2 style="--font-weight:theme;color:#111111;margin-top:30px;">$1299</h2></div>
 </div>
 	<div class="wpb_text_column wpb_content_element  vc_custom_1536938587633">
 		<div class="wpb_wrapper">
@@ -1586,10 +1625,10 @@ color: inherit;
 <div class="vc_row-full-width vc_clearfix"></div>
 <div id="contact" class="vc_row wpb_row vc_row-fluid vc_custom_1470835422348">
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-3 vc_col-lg-6 vc_col-md-offset-2 vc_col-md-8 vc_col-sm-offset-0"><div class="vc_column-inner vc_custom_1536940049489"><div class="wpb_wrapper">
-<div id="ultimate-heading-95846369d4129c1eb" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-95846369d4129c1eb uvc-6112 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-95846369d4129c1eb h2" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:28px;"}'><h2 style="--font-weight:theme;">CONTACT</h2></div>
+<div id="ultimate-heading-3891636a338296167" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-3891636a338296167 uvc-561 accent-border-color" data-hspacer="line_only" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3891636a338296167 h2" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:28px;"}'><h2 style="--font-weight:theme;">CONTACT</h2></div>
 <div class="uvc-heading-spacer line_only" style="margin-top:5px;margin-bottom:20px;height:3px;"><span class="uvc-headings-line" style="border-style:solid;border-bottom-width:3px;border-color:;width:50px;"></span></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-95846369d4129c1eb .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:32px;","line-height":"desktop:42px;"}' style="font-family:&#039;Fira Sans&#039;;font-weight:normal;font-style:normal;color:#111111;margin-bottom:70px;">Let&#8217;s Have A Chat!</div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3891636a338296167 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:32px;","line-height":"desktop:42px;"}' style="font-family:&#039;Fira Sans&#039;;font-weight:normal;font-style:normal;color:#111111;margin-bottom:70px;">Let&#8217;s Have A Chat!</div>
 </div>
 	<div class="wpb_text_column wpb_content_element ">
 		<div class="wpb_wrapper">
@@ -1600,40 +1639,40 @@ color: inherit;
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-5 vc_col-md-5"><div class="vc_column-inner vc_custom_1470835407981"><div class="wpb_wrapper">
 <div class="aio-icon-component  vc_custom_1580722780445  accent-icon-bg style_1">
-<div id="Info-box-wrap-7596" class="aio-icon-box default-icon">
+<div id="Info-box-wrap-8548" class="aio-icon-box default-icon">
 <div class="aio-icon-default"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon advanced " style="color:#ffffff;background:#f2f2f2;border-style:solid;border-color:;border-width:0px;width:40px;height:40px;line-height:40px;border-radius:500px;font-size:20px;display:inline-block;">
 	<i class="icomoon-free-social-contact-16x16-location2"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-7596 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="">San-Francisco, California, USA</h3></div> <!-- header -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-8548 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="">San-Francisco, California, USA</h3></div> <!-- header -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component --><div class="aio-icon-component  vc_custom_1580722785433  accent-icon-bg style_1">
-<div id="Info-box-wrap-1148" class="aio-icon-box default-icon">
+<div id="Info-box-wrap-6664" class="aio-icon-box default-icon">
 <div class="aio-icon-default"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon advanced " style="color:#ffffff;background:#f2f2f2;border-style:solid;border-color:;border-width:0px;width:40px;height:40px;line-height:40px;border-radius:500px;font-size:20px;display:inline-block;">
 	<i class="icomoon-free-social-contact-16x16-mobile"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-1148 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="">+ 011 234 567 89</h3></div> <!-- header -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-6664 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="">+ 011 234 567 89</h3></div> <!-- header -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component --><div class="aio-icon-component  vc_custom_1580722790710  accent-icon-bg style_1">
-<div id="Info-box-wrap-3543" class="aio-icon-box default-icon">
+<div id="Info-box-wrap-6117" class="aio-icon-box default-icon">
 <div class="aio-icon-default"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon advanced " style="color:#ffffff;background:#f2f2f2;border-style:solid;border-color:;border-width:0px;width:40px;height:40px;line-height:40px;border-radius:500px;font-size:20px;display:inline-block;">
 	<i class="icomoon-free-social-contact-16x16-envelop"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-3543 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="">hello@dream-theme.com</h3></div> <!-- header -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-6117 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="">hello@dream-theme.com</h3></div> <!-- header -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component --><div class="aio-icon-component  vc_custom_1580722796002  accent-icon-bg style_1">
-<div id="Info-box-wrap-2942" class="aio-icon-box default-icon">
+<div id="Info-box-wrap-4449" class="aio-icon-box default-icon">
 <div class="aio-icon-default"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon advanced " style="color:#ffffff;background:#f2f2f2;border-style:solid;border-color:;border-width:0px;width:40px;height:40px;line-height:40px;border-radius:500px;font-size:20px;display:inline-block;">
 	<i class="icomoon-free-social-contact-16x16-skype"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-2942 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="">James-Seven</h3></div> <!-- header -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-4449 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="">James-Seven</h3></div> <!-- header -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component -->
 </div></div></div>
@@ -1657,10 +1696,10 @@ color: inherit;
 			<div class="vc_single_image-wrapper vc_box_circle  vc_box_border_grey"><img class="vc_single_image-img " src="/wp-content/uploads/sites/59/2018/09/bw-port-100x100.png" width="100" height="100" alt="bw-port" title="bw-port" data-dt-location="/site59/bw-port/"></div>
 		</figure>
 	</div>
-<div id="ultimate-heading-70746369d41304676" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-70746369d41304676 uvc-7652 accent-subtitle-color" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-4538636a338297669" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-4538636a338297669 uvc-5342 accent-subtitle-color" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-70746369d41304676 h2" data-responsive-json-new='{"font-size":"desktop:24px;mobile_landscape:20px;","line-height":"desktop:34px;mobile_landscape:30px;"}'><h2 style="--font-weight:theme;">James Seven</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-70746369d41304676 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:18px;mobile_landscape:16px;","line-height":"desktop:28px;mobile_landscape:26px;"}' style="font-weight:normal;margin-bottom:15px;">Web Master, Programmer</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4538636a338297669 h2" data-responsive-json-new='{"font-size":"desktop:24px;mobile_landscape:20px;","line-height":"desktop:34px;mobile_landscape:30px;"}'><h2 style="--font-weight:theme;">James Seven</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4538636a338297669 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:18px;mobile_landscape:16px;","line-height":"desktop:28px;mobile_landscape:26px;"}' style="font-weight:normal;margin-bottom:15px;">Web Master, Programmer</div>
 </div>
 <style type="text/css" data-type="the7_shortcodes-inline-css">.dt-shortcode-soc-icons.soc-icons-6d3d70cdad80c3022dac88b2b035272f a {
   margin-right: 4px;
@@ -2076,5 +2115,5 @@ color: inherit;
 </body>
 
 
-<!-- Page supported by LiteSpeed Cache 5.3 on 2022-11-08 03:59:16 -->
+<!-- Page supported by LiteSpeed Cache 5.3 on 2022-11-08 10:46:26 -->
 </html>
