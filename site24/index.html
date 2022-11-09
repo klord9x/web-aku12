@@ -67,15 +67,54 @@ img.emoji {
 <link rel="stylesheet" id="js_composer_front-css" href="/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=6.8.0" type="text/css" media="all">
 <link rel="stylesheet" id="dt-web-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto:400,600,700|Poppins:400,400italic,500,600,700|Roboto Condensed:400,600,700" type="text/css" media="all">
 <link rel="stylesheet" id="dt-main-css" href="/wp-content/themes/dt-the7/css/main.min.css?ver=11.1.1" type="text/css" media="all">
+<style id="dt-main-inline-css" type="text/css">body #load {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 9901;
+  opacity: 1;
+  visibility: visible;
+  transition: all .35s ease-out;
+}
+.load-wrap {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -ms-flex-pack: center;
+  -ms-justify-content: center;
+  justify-content: center;
+}
+.load-wrap > svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+#load {
+  background: var(--the7-elementor-beautiful-loading-bg,#ffffff);
+  --the7-beautiful-spinner-color2: var(--the7-beautiful-spinner-color,#148ba9);
+}</style>
 <link rel="stylesheet" id="the7-custom-scrollbar-css" href="/wp-content/themes/dt-the7/lib/custom-scrollbar/custom-scrollbar.min.css?ver=11.1.1" type="text/css" media="all">
 <link rel="stylesheet" id="the7-wpbakery-css" href="/wp-content/themes/dt-the7/css/wpbakery.min.css?ver=11.1.1" type="text/css" media="all">
 <link rel="stylesheet" id="the7-core-css" href="/wp-content/plugins/dt-the7-core/assets/css/post-type.min.css?ver=2.7.0" type="text/css" media="all">
-<link rel="stylesheet" id="the7-css-vars-css" href="/wp-content/uploads/sites/24/the7-css/css-vars.css?ver=908bedcd21ad" type="text/css" media="all">
-<link rel="stylesheet" id="dt-custom-css" href="/wp-content/uploads/sites/24/the7-css/custom.css?ver=908bedcd21ad" type="text/css" media="all">
-<link rel="stylesheet" id="dt-media-css" href="/wp-content/uploads/sites/24/the7-css/media.css?ver=908bedcd21ad" type="text/css" media="all">
-<link rel="stylesheet" id="the7-mega-menu-css" href="/wp-content/uploads/sites/24/the7-css/mega-menu.css?ver=908bedcd21ad" type="text/css" media="all">
-<link rel="stylesheet" id="the7-elements-albums-portfolio-css" href="/wp-content/uploads/sites/24/the7-css/the7-elements-albums-portfolio.css?ver=908bedcd21ad" type="text/css" media="all">
-<link rel="stylesheet" id="the7-elements-css" href="/wp-content/uploads/sites/24/the7-css/post-type-dynamic.css?ver=908bedcd21ad" type="text/css" media="all">
+<link rel="stylesheet" id="the7-css-vars-css" href="/wp-content/uploads/sites/24/the7-css/css-vars.css?ver=2d4fe310345a" type="text/css" media="all">
+<link rel="stylesheet" id="dt-custom-css" href="/wp-content/uploads/sites/24/the7-css/custom.css?ver=2d4fe310345a" type="text/css" media="all">
+<link rel="stylesheet" id="dt-media-css" href="/wp-content/uploads/sites/24/the7-css/media.css?ver=2d4fe310345a" type="text/css" media="all">
+<link rel="stylesheet" id="the7-mega-menu-css" href="/wp-content/uploads/sites/24/the7-css/mega-menu.css?ver=2d4fe310345a" type="text/css" media="all">
+<link rel="stylesheet" id="the7-elements-albums-portfolio-css" href="/wp-content/uploads/sites/24/the7-css/the7-elements-albums-portfolio.css?ver=2d4fe310345a" type="text/css" media="all">
+<link rel="stylesheet" id="the7-elements-css" href="/wp-content/uploads/sites/24/the7-css/post-type-dynamic.css?ver=2d4fe310345a" type="text/css" media="all">
 <link rel="stylesheet" id="style-css" href="/wp-content/themes/dt-the7/style.css?ver=11.1.1" type="text/css" media="all">
 <link rel="stylesheet" id="ultimate-vc-addons-style-css" href="/wp-content/plugins/Ultimate_VC_Addons/assets/min-css/style.min.css?ver=3.19.11" type="text/css" media="all">
 <link rel="stylesheet" id="ultimate-vc-addons-headings-style-css" href="/wp-content/plugins/Ultimate_VC_Addons/assets/min-css/headings.min.css?ver=3.19.11" type="text/css" media="all">
@@ -85,7 +124,7 @@ img.emoji {
 <script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
 <script type="text/javascript" id="dt-above-fold-js-extra">
 /* <![CDATA[ */
-var dtLocal = {"themeUrl":"\/wp-content\/themes\/dt-the7","passText":"To view this protected post, enter the password below:","moreButtonText":{"loading":"Loading...","loadMore":"Load more"},"postID":"1481","ajaxurl":"\/site24\/wp-admin\/admin-ajax.php","REST":{"baseUrl":"\/site24\/wp-json\/the7\/v1","endpoints":{"sendMail":"\/send-mail"}},"contactMessages":{"required":"One or more fields have an error. Please check and try again.","terms":"Please accept the privacy policy.","fillTheCaptchaError":"Please, fill the captcha."},"captchaSiteKey":"","ajaxNonce":"4a255c3ec6","pageData":{"type":"page","template":"page","layout":null},"themeSettings":{"smoothScroll":"off","lazyLoading":false,"accentColor":{"mode":"solid","color":"#148ba9"},"desktopHeader":{"height":140},"ToggleCaptionEnabled":"disabled","ToggleCaption":"Navigation","floatingHeader":{"showAfter":140,"showMenu":true,"height":60,"logo":{"showLogo":true,"html":"","url":"\/site24\/"}},"topLine":{"floatingTopLine":{"logo":{"showLogo":false,"html":""}}},"mobileHeader":{"firstSwitchPoint":992,"secondSwitchPoint":778,"firstSwitchPointHeight":60,"secondSwitchPointHeight":60,"mobileToggleCaptionEnabled":"disabled","mobileToggleCaption":"Menu"},"stickyMobileHeaderFirstSwitch":{"logo":{"html":""}},"stickyMobileHeaderSecondSwitch":{"logo":{"html":""}},"content":{"textColor":"#85868c","headerColor":"#222222"},"sidebar":{"switchPoint":990},"boxedWidth":"1340px","stripes":{"stripe1":{"textColor":"#787d85","headerColor":"#3b3f4a"},"stripe2":{"textColor":"#8b9199","headerColor":"#ffffff"},"stripe3":{"textColor":"#ffffff","headerColor":"#ffffff"}}},"VCMobileScreenWidth":"778"};
+var dtLocal = {"themeUrl":"\/wp-content\/themes\/dt-the7","passText":"To view this protected post, enter the password below:","moreButtonText":{"loading":"Loading...","loadMore":"Load more"},"postID":"1481","ajaxurl":"\/site24\/wp-admin\/admin-ajax.php","REST":{"baseUrl":"\/site24\/wp-json\/the7\/v1","endpoints":{"sendMail":"\/send-mail"}},"contactMessages":{"required":"One or more fields have an error. Please check and try again.","terms":"Please accept the privacy policy.","fillTheCaptchaError":"Please, fill the captcha."},"captchaSiteKey":"","ajaxNonce":"4bc62993cd","pageData":{"type":"page","template":"page","layout":null},"themeSettings":{"smoothScroll":"off","lazyLoading":false,"accentColor":{"mode":"solid","color":"#148ba9"},"desktopHeader":{"height":140},"ToggleCaptionEnabled":"disabled","ToggleCaption":"Navigation","floatingHeader":{"showAfter":140,"showMenu":true,"height":60,"logo":{"showLogo":true,"html":"","url":"\/site24\/"}},"topLine":{"floatingTopLine":{"logo":{"showLogo":false,"html":""}}},"mobileHeader":{"firstSwitchPoint":992,"secondSwitchPoint":778,"firstSwitchPointHeight":60,"secondSwitchPointHeight":60,"mobileToggleCaptionEnabled":"disabled","mobileToggleCaption":"Menu"},"stickyMobileHeaderFirstSwitch":{"logo":{"html":""}},"stickyMobileHeaderSecondSwitch":{"logo":{"html":""}},"content":{"textColor":"#85868c","headerColor":"#222222"},"sidebar":{"switchPoint":990},"boxedWidth":"1340px","stripes":{"stripe1":{"textColor":"#787d85","headerColor":"#3b3f4a"},"stripe2":{"textColor":"#8b9199","headerColor":"#ffffff"},"stripe3":{"textColor":"#ffffff","headerColor":"#ffffff"}}},"VCMobileScreenWidth":"778"};
 var dtShare = {"shareButtonText":{"facebook":"Share on Facebook","twitter":"Tweet","pinterest":"Pin it","linkedin":"Share on Linkedin","whatsapp":"Share on Whatsapp"},"overlayOpacity":"85"};
 /* ]]> */
 </script>
@@ -904,10 +943,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </div></div></div>
 </div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid">
-<div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1575403372934"><div class="wpb_wrapper"><div id="ultimate-heading-9285636b2a30b15fa" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-9285636b2a30b15fa uvc-638  uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1575403372934"><div class="wpb_wrapper"><div id="ultimate-heading-4232636bfdaa965eb" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-4232636bfdaa965eb uvc-4889  uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9285636b2a30b15fa h3" data-responsive-json-new='{"font-size":"","line-height":""}'><h3 style="font-weight:bold;color:#148ba9;margin-bottom:20px;">Seven Company</h3></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9285636b2a30b15fa .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:34px;","line-height":"desktop:44px;"}' style="font-weight:bold;color:#222222;">The way to get started is to quit talking and begin doing!</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4232636bfdaa965eb h3" data-responsive-json-new='{"font-size":"","line-height":""}'><h3 style="font-weight:bold;color:#148ba9;margin-bottom:20px;">Seven Company</h3></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4232636bfdaa965eb .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:34px;","line-height":"desktop:44px;"}' style="font-weight:bold;color:#222222;">The way to get started is to quit talking and begin doing!</div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1575403379152"><div class="wpb_wrapper">
 	<div class="wpb_text_column wpb_content_element ">
@@ -924,10 +963,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 <div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_custom_1575458012477 vc_row-no-padding">
 <div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1575403932354"><div class="wpb_wrapper">
 <div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-offset-0 vc_col-md-offset-0 vc_col-sm-offset-0 vc_col-xs-6 vc_col-has-fill"><div class="vc_column-inner vc_custom_1575380838085"><div class="wpb_wrapper"></div></div></div></div>
-<div id="ultimate-heading-7331636b2a30b42fb" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-7331636b2a30b42fb uvc-4192 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-3074636bfdaa975d3" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-3074636bfdaa975d3 uvc-6342 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-7331636b2a30b42fb h2" data-responsive-json-new='{"font-size":"desktop:50px;","line-height":"desktop:60px;"}'><h2 style="font-weight:bold;margin-bottom:10px;">Projects</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-7331636b2a30b42fb .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":""}' style="font-weight:normal;">Our portfolio speaks better than words!</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3074636bfdaa975d3 h2" data-responsive-json-new='{"font-size":"desktop:50px;","line-height":"desktop:60px;"}'><h2 style="font-weight:bold;margin-bottom:10px;">Projects</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3074636bfdaa975d3 .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":""}' style="font-weight:normal;">Our portfolio speaks better than words!</div>
 </div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
@@ -1419,13 +1458,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
 <div class="vc_row-full-width vc_clearfix"></div>
 <div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1575453801960 vc_row-has-fill vc_row-o-equal-height vc_row-flex">
 <div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1575449405938">
-<div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1575449353669"><div class="wpb_wrapper"><div id="ultimate-heading-5835636b2a384e837" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-5835636b2a384e837 uvc-7054  uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1575449353669"><div class="wpb_wrapper"><div id="ultimate-heading-7499636bfdab038e4" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-7499636bfdab038e4 uvc-46  uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5835636b2a384e837 h3" data-responsive-json-new='{"font-size":"","line-height":""}'><h3 style="font-weight:bold;color:#148ba9;">You can rely on us!</h3></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-7499636bfdab038e4 h3" data-responsive-json-new='{"font-size":"","line-height":""}'><h3 style="font-weight:bold;color:#148ba9;">You can rely on us!</h3></div>
 </div></div></div></div>
-<div class="wpb_column vc_column_container vc_col-sm-8"><div class="vc_column-inner vc_custom_1575449358551"><div class="wpb_wrapper"><div id="ultimate-heading-7871636b2a384ea39" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-7871636b2a384ea39 uvc-5545  uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div class="wpb_column vc_column_container vc_col-sm-8"><div class="vc_column-inner vc_custom_1575449358551"><div class="wpb_wrapper"><div id="ultimate-heading-8264636bfdab03bcc" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-8264636bfdab03bcc uvc-2916  uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-7871636b2a384ea39 h2" data-responsive-json-new='{"font-size":"","line-height":""}'><h2 style="font-weight:bold;">Success is liking yourself, liking what you do, and liking how you do it.</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-8264636bfdab03bcc h2" data-responsive-json-new='{"font-size":"","line-height":""}'><h2 style="font-weight:bold;">Success is liking yourself, liking what you do, and liking how you do it.</h2></div>
 </div></div></div></div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-8 vc_col-md-7"><div class="vc_column-inner vc_custom_1575452889618"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid vc_row-o-equal-height vc_row-flex">
@@ -2163,33 +2202,33 @@ document.addEventListener("DOMContentLoaded", function(event) {
 <div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid">
 <div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner vc_custom_1575392633420"><div class="wpb_wrapper"><div class="stats-block stats-top  ">
 <div class="aio-icon-top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;"></div></div></div>
-<div class="stats-desc" id="counter-responsv-wrap-2948">
-<div id="counter_2692861113636b2a3c335df" data-id="counter_2692861113636b2a3c335df" data-ultimate-target="#counter-responsv-wrap-2948 .stats-number" data-responsive-json-new='{"font-size":"desktop:60px;","line-height":"desktop:70px;"}' class="stats-number ult-responsive" style=" color:#148ba9; font-weight:bold;color:#222222;" data-speed="3" data-counter-value="95" data-separator="," data-decimal="none">0</div>
-<div class="counter_suffix mycust ult-responsive" data-ultimate-target="#counter-responsv-wrap-2948 .mycust" data-responsive-json-new='{"font-size":"desktop:60px;","line-height":"desktop:70px;"}' style=" font-weight:bold;color:#222222">%</div>
-<div id="counter_2692861113636b2a3c335df" data-ultimate-target="#counter-responsv-wrap-2948 .stats-text" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:28px;"}' class="stats-text ult-responsive" style="font-size:px; color:#148ba9; font-weight:bold;">CUSTOMER SATISFACTION</div>
+<div class="stats-desc" id="counter-responsv-wrap-4692">
+<div id="counter_253363600636bfdab96e7c" data-id="counter_253363600636bfdab96e7c" data-ultimate-target="#counter-responsv-wrap-4692 .stats-number" data-responsive-json-new='{"font-size":"desktop:60px;","line-height":"desktop:70px;"}' class="stats-number ult-responsive" style=" color:#148ba9; font-weight:bold;color:#222222;" data-speed="3" data-counter-value="95" data-separator="," data-decimal="none">0</div>
+<div class="counter_suffix mycust ult-responsive" data-ultimate-target="#counter-responsv-wrap-4692 .mycust" data-responsive-json-new='{"font-size":"desktop:60px;","line-height":"desktop:70px;"}' style=" font-weight:bold;color:#222222">%</div>
+<div id="counter_253363600636bfdab96e7c" data-ultimate-target="#counter-responsv-wrap-4692 .stats-text" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:28px;"}' class="stats-text ult-responsive" style="font-size:px; color:#148ba9; font-weight:bold;">CUSTOMER SATISFACTION</div>
 </div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner vc_custom_1575392638122"><div class="wpb_wrapper"><div class="stats-block stats-top  ">
 <div class="aio-icon-top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;"></div></div></div>
-<div class="stats-desc" id="counter-responsv-wrap-8297">
-<div id="counter_2803813558636b2a3c3393d" data-id="counter_2803813558636b2a3c3393d" data-ultimate-target="#counter-responsv-wrap-8297 .stats-number" data-responsive-json-new='{"font-size":"desktop:60px;","line-height":"desktop:70px;"}' class="stats-number ult-responsive" style=" color:#148ba9; font-weight:bold;color:#222222;" data-speed="3" data-counter-value="50" data-separator="," data-decimal="none">0</div>
-<div class="counter_suffix mycust ult-responsive" data-ultimate-target="#counter-responsv-wrap-8297 .mycust" data-responsive-json-new='{"font-size":"desktop:60px;","line-height":"desktop:70px;"}' style=" font-weight:bold;color:#222222">+</div>
-<div id="counter_2803813558636b2a3c3393d" data-ultimate-target="#counter-responsv-wrap-8297 .stats-text" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:28px;"}' class="stats-text ult-responsive" style="font-size:px; color:#148ba9; font-weight:bold;">SPECIALISTS IN OUR TEAM</div>
+<div class="stats-desc" id="counter-responsv-wrap-9989">
+<div id="counter_3600216302636bfdab97162" data-id="counter_3600216302636bfdab97162" data-ultimate-target="#counter-responsv-wrap-9989 .stats-number" data-responsive-json-new='{"font-size":"desktop:60px;","line-height":"desktop:70px;"}' class="stats-number ult-responsive" style=" color:#148ba9; font-weight:bold;color:#222222;" data-speed="3" data-counter-value="50" data-separator="," data-decimal="none">0</div>
+<div class="counter_suffix mycust ult-responsive" data-ultimate-target="#counter-responsv-wrap-9989 .mycust" data-responsive-json-new='{"font-size":"desktop:60px;","line-height":"desktop:70px;"}' style=" font-weight:bold;color:#222222">+</div>
+<div id="counter_3600216302636bfdab97162" data-ultimate-target="#counter-responsv-wrap-9989 .stats-text" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:28px;"}' class="stats-text ult-responsive" style="font-size:px; color:#148ba9; font-weight:bold;">SPECIALISTS IN OUR TEAM</div>
 </div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner vc_custom_1575392641496"><div class="wpb_wrapper"><div class="stats-block stats-top  ">
 <div class="aio-icon-top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;"></div></div></div>
-<div class="stats-desc" id="counter-responsv-wrap-2808">
-<div id="counter_4048223271636b2a3c33bcf" data-id="counter_4048223271636b2a3c33bcf" data-ultimate-target="#counter-responsv-wrap-2808 .stats-number" data-responsive-json-new='{"font-size":"desktop:60px;","line-height":"desktop:70px;"}' class="stats-number ult-responsive" style=" color:#148ba9; font-weight:bold;color:#222222;" data-speed="3" data-counter-value="26" data-separator="," data-decimal="none">0</div>
-<div id="counter_4048223271636b2a3c33bcf" data-ultimate-target="#counter-responsv-wrap-2808 .stats-text" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:28px;"}' class="stats-text ult-responsive" style="font-size:px; color:#148ba9; font-weight:bold;">INDUSTRY AWARDS</div>
+<div class="stats-desc" id="counter-responsv-wrap-4147">
+<div id="counter_866798892636bfdab973d1" data-id="counter_866798892636bfdab973d1" data-ultimate-target="#counter-responsv-wrap-4147 .stats-number" data-responsive-json-new='{"font-size":"desktop:60px;","line-height":"desktop:70px;"}' class="stats-number ult-responsive" style=" color:#148ba9; font-weight:bold;color:#222222;" data-speed="3" data-counter-value="26" data-separator="," data-decimal="none">0</div>
+<div id="counter_866798892636bfdab973d1" data-ultimate-target="#counter-responsv-wrap-4147 .stats-text" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:28px;"}' class="stats-text ult-responsive" style="font-size:px; color:#148ba9; font-weight:bold;">INDUSTRY AWARDS</div>
 </div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner vc_custom_1575392645188"><div class="wpb_wrapper"><div class="stats-block stats-top  ">
 <div class="aio-icon-top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;"></div></div></div>
-<div class="stats-desc" id="counter-responsv-wrap-1422">
-<div id="counter_787306154636b2a3c357a9" data-id="counter_787306154636b2a3c357a9" data-ultimate-target="#counter-responsv-wrap-1422 .stats-number" data-responsive-json-new='{"font-size":"desktop:60px;","line-height":"desktop:70px;"}' class="stats-number ult-responsive" style=" color:#148ba9; font-weight:bold;color:#222222;" data-speed="3" data-counter-value="150" data-separator="," data-decimal="none">0</div>
-<div class="counter_suffix mycust ult-responsive" data-ultimate-target="#counter-responsv-wrap-1422 .mycust" data-responsive-json-new='{"font-size":"desktop:60px;","line-height":"desktop:70px;"}' style=" font-weight:bold;color:#222222">+</div>
-<div id="counter_787306154636b2a3c357a9" data-ultimate-target="#counter-responsv-wrap-1422 .stats-text" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:28px;"}' class="stats-text ult-responsive" style="font-size:px; color:#148ba9; font-weight:bold;">SUCCESSFUL PROJECTS</div>
+<div class="stats-desc" id="counter-responsv-wrap-4710">
+<div id="counter_1398313730636bfdab9a4f9" data-id="counter_1398313730636bfdab9a4f9" data-ultimate-target="#counter-responsv-wrap-4710 .stats-number" data-responsive-json-new='{"font-size":"desktop:60px;","line-height":"desktop:70px;"}' class="stats-number ult-responsive" style=" color:#148ba9; font-weight:bold;color:#222222;" data-speed="3" data-counter-value="150" data-separator="," data-decimal="none">0</div>
+<div class="counter_suffix mycust ult-responsive" data-ultimate-target="#counter-responsv-wrap-4710 .mycust" data-responsive-json-new='{"font-size":"desktop:60px;","line-height":"desktop:70px;"}' style=" font-weight:bold;color:#222222">+</div>
+<div id="counter_1398313730636bfdab9a4f9" data-ultimate-target="#counter-responsv-wrap-4710 .stats-text" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:28px;"}' class="stats-text ult-responsive" style="font-size:px; color:#148ba9; font-weight:bold;">SUCCESSFUL PROJECTS</div>
 </div>
 </div></div></div></div>
 </div></div></div></div>
@@ -2428,17 +2467,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
 <div class="vc_row wpb_row vc_row-fluid vc_custom_1575463072763">
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-0 vc_col-lg-12 vc_col-md-offset-0 vc_col-md-12 vc_col-sm-offset-0 vc_col-xs-12"><div class="vc_column-inner vc_custom_1575457735920"><div class="wpb_wrapper">
 <div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-offset-0 vc_col-md-offset-0 vc_col-sm-offset-0 vc_col-xs-6 vc_col-has-fill"><div class="vc_column-inner vc_custom_1575381119292"><div class="wpb_wrapper"></div></div></div></div>
-<div id="ultimate-heading-1516636b2a4068504" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-1516636b2a4068504 uvc-9341 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-5096636bfdabc6786" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-5096636bfdabc6786 uvc-9088 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1516636b2a4068504 h2" data-responsive-json-new='{"font-size":"desktop:50px;","line-height":"desktop:60px;"}'><h2 style="font-weight:bold;margin-bottom:10px;">Services</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1516636b2a4068504 .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":""}' style="font-weight:normal;">We love &amp; know what we do!</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5096636bfdabc6786 h2" data-responsive-json-new='{"font-size":"desktop:50px;","line-height":"desktop:60px;"}'><h2 style="font-weight:bold;margin-bottom:10px;">Services</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5096636bfdabc6786 .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":""}' style="font-weight:normal;">We love &amp; know what we do!</div>
 </div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1575452651949"><div class="wpb_wrapper">
-<div id="ultimate-heading-3601636b2a406876a" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-3601636b2a406876a uvc-9731  uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div id="ultimate-heading-1032636bfdabc69ea" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-1032636bfdabc69ea uvc-1525  uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3601636b2a406876a h3" data-responsive-json-new='{"font-size":"","line-height":""}'><h3 style="font-weight:bold;color:#148ba9;margin-bottom:20px;">A big business starts small!</h3></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3601636b2a406876a .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:34px;","line-height":"desktop:44px;"}' style="font-weight:bold;color:#222222;margin-bottom:30px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1032636bfdabc69ea h3" data-responsive-json-new='{"font-size":"","line-height":""}'><h3 style="font-weight:bold;color:#148ba9;margin-bottom:20px;">A big business starts small!</h3></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1032636bfdabc69ea .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:34px;","line-height":"desktop:44px;"}' style="font-weight:bold;color:#222222;margin-bottom:30px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
 </div>
 	<div class="wpb_text_column wpb_content_element ">
 		<div class="wpb_wrapper">
@@ -3107,14 +3146,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </div></div></div></div>
 </div>
 <div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1575459871429 vc_row-has-fill vc_row-o-content-middle vc_row-flex">
-<div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-4 vc_col-md-12"><div class="vc_column-inner vc_custom_1575378589868"><div class="wpb_wrapper"><div id="ultimate-heading-9187636b2a41e0883" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-9187636b2a41e0883 uvc-2649  uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-4 vc_col-md-12"><div class="vc_column-inner vc_custom_1575378589868"><div class="wpb_wrapper"><div id="ultimate-heading-7355636bfdabde525" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-7355636bfdabde525 uvc-3327  uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9187636b2a41e0883 h2" data-responsive-json-new='{"font-size":"","line-height":""}'><h2 style="font-weight:bold;margin-bottom:0px;">Free consultation!</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-7355636bfdabde525 h2" data-responsive-json-new='{"font-size":"","line-height":""}'><h2 style="font-weight:bold;margin-bottom:0px;">Free consultation!</h2></div>
 </div></div></div></div>
-<div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-4 vc_col-md-12"><div class="vc_column-inner vc_custom_1575378595138"><div class="wpb_wrapper"><div id="ultimate-heading-8314636b2a41e0a59" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-8314636b2a41e0a59 uvc-9705 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-4 vc_col-md-12"><div class="vc_column-inner vc_custom_1575378595138"><div class="wpb_wrapper"><div id="ultimate-heading-5277636bfdabde8a9" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-5277636bfdabde8a9 uvc-9403 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-8314636b2a41e0a59 h2" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}'><h2 style="font-weight:bold;">+001 234 56 78</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-8314636b2a41e0a59 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-weight:normal;color:#148ba9;">hello@dream-theme.com</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5277636bfdabde8a9 h2" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}'><h2 style="font-weight:bold;">+001 234 56 78</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5277636bfdabde8a9 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-weight:normal;color:#148ba9;">hello@dream-theme.com</div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-4 vc_col-md-12 vc_col-xs-12"><div class="vc_column-inner vc_custom_1575378844390"><div class="wpb_wrapper">
 <style type="text/css" data-type="the7_shortcodes-inline-css">#default-btn-a68818666ed442ec9930f5123da97b9e {
@@ -3173,53 +3212,53 @@ document.addEventListener("DOMContentLoaded", function(event) {
 <div class="vc_row wpb_row vc_row-fluid vc_custom_1575461767578 vc_row-o-equal-height vc_row-flex">
 <div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1575458048778"><div class="wpb_wrapper">
 <div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-offset-0 vc_col-md-offset-0 vc_col-sm-offset-0 vc_col-xs-6 vc_col-has-fill"><div class="vc_column-inner vc_custom_1575381119292"><div class="wpb_wrapper"></div></div></div></div>
-<div id="ultimate-heading-1321636b2a42343d5" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-1321636b2a42343d5 uvc-5151 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-5908636bfdabe0df6" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-5908636bfdabe0df6 uvc-8457 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1321636b2a42343d5 h2" data-responsive-json-new='{"font-size":"desktop:50px;","line-height":"desktop:60px;"}'><h2 style="font-weight:bold;margin-bottom:10px;">How we work</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1321636b2a42343d5 .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":""}' style="font-weight:normal;">Don’t be busy &#8211; be productive!</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5908636bfdabe0df6 h2" data-responsive-json-new='{"font-size":"desktop:50px;","line-height":"desktop:60px;"}'><h2 style="font-weight:bold;margin-bottom:10px;">How we work</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5908636bfdabe0df6 .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":""}' style="font-weight:normal;">Don’t be busy &#8211; be productive!</div>
 </div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
 <div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1575376546455 vc_column-gap-30 vc_row-o-equal-height vc_row-o-content-middle vc_row-flex">
 <div class="wpb_column vc_column_container vc_col-sm-8 vc_col-has-fill"><div class="vc_column-inner vc_custom_1575465647412"><div class="wpb_wrapper"></div></div></div>
-<div class="wpb_column vc_column_container vc_col-sm-4 vc_col-has-fill"><div class="vc_column-inner vc_custom_1575465601578"><div class="wpb_wrapper"><div id="ultimate-heading-1762636b2a4234a88" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-1762636b2a4234a88 uvc-1982 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div class="wpb_column vc_column_container vc_col-sm-4 vc_col-has-fill"><div class="vc_column-inner vc_custom_1575465601578"><div class="wpb_wrapper"><div id="ultimate-heading-9501636bfdabe57f0" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-9501636bfdabe57f0 uvc-699 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1762636b2a4234a88 h2" data-responsive-json-new='{"font-size":"desktop:50px;","line-height":"desktop:60px;"}'><h2 style="font-weight:bold;color:#148ba9;">01</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1762636b2a4234a88 .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":""}' style="font-weight:normal;">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9501636bfdabe57f0 h2" data-responsive-json-new='{"font-size":"desktop:50px;","line-height":"desktop:60px;"}'><h2 style="font-weight:bold;color:#148ba9;">01</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9501636bfdabe57f0 .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":""}' style="font-weight:normal;">
 <h4>Gathering data</h4>
 <p>Lorem ipsum dolor amet &#8211; bibendum, faucibus mi et, scelerisque mauris. Aenean dapibus massa a sapien hendrerit.</p>
 </div>
 </div></div></div></div>
-<div class="wpb_column vc_column_container vc_col-sm-4 vc_col-has-fill"><div class="vc_column-inner vc_custom_1575465595750"><div class="wpb_wrapper"><div id="ultimate-heading-9567636b2a4234c24" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-9567636b2a4234c24 uvc-8264 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div class="wpb_column vc_column_container vc_col-sm-4 vc_col-has-fill"><div class="vc_column-inner vc_custom_1575465595750"><div class="wpb_wrapper"><div id="ultimate-heading-8097636bfdabe5a44" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-8097636bfdabe5a44 uvc-941 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9567636b2a4234c24 h2" data-responsive-json-new='{"font-size":"desktop:50px;","line-height":"desktop:60px;"}'><h2 style="font-weight:bold;color:#148ba9;">02</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9567636b2a4234c24 .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":""}' style="font-weight:normal;">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-8097636bfdabe5a44 h2" data-responsive-json-new='{"font-size":"desktop:50px;","line-height":"desktop:60px;"}'><h2 style="font-weight:bold;color:#148ba9;">02</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-8097636bfdabe5a44 .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":""}' style="font-weight:normal;">
 <h4>Planning</h4>
 <p>Glavrida ipsum &#8211; augue bibendum, faucibus mi et, scelerisque mauris. Aenean dapibus massa a sapien hendrerit.</p>
 </div>
 </div></div></div></div>
-<div class="wpb_column vc_column_container vc_col-sm-4 vc_col-has-fill"><div class="vc_column-inner vc_custom_1575465574730"><div class="wpb_wrapper"><div id="ultimate-heading-5545636b2a4234da5" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-5545636b2a4234da5 uvc-4279 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div class="wpb_column vc_column_container vc_col-sm-4 vc_col-has-fill"><div class="vc_column-inner vc_custom_1575465574730"><div class="wpb_wrapper"><div id="ultimate-heading-4585636bfdabe5c10" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-4585636bfdabe5c10 uvc-6161 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5545636b2a4234da5 h2" data-responsive-json-new='{"font-size":"desktop:50px;","line-height":"desktop:60px;"}'><h2 style="font-weight:bold;color:#148ba9;">03</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5545636b2a4234da5 .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":""}' style="font-weight:normal;">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4585636bfdabe5c10 h2" data-responsive-json-new='{"font-size":"desktop:50px;","line-height":"desktop:60px;"}'><h2 style="font-weight:bold;color:#148ba9;">03</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4585636bfdabe5c10 .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":""}' style="font-weight:normal;">
 <h4>Implementation</h4>
 <p>Glavrida ipsum &#8211; augue bibendum, faucibus mi et, scelerisque mauris. Aenean dapibus massa a sapien hendrerit.</p>
 </div>
 </div></div></div></div>
-<div class="wpb_column vc_column_container vc_col-sm-4 vc_col-has-fill"><div class="vc_column-inner vc_custom_1575465625939"><div class="wpb_wrapper"><div id="ultimate-heading-5994636b2a4234f2a" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-5994636b2a4234f2a uvc-9269 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div class="wpb_column vc_column_container vc_col-sm-4 vc_col-has-fill"><div class="vc_column-inner vc_custom_1575465625939"><div class="wpb_wrapper"><div id="ultimate-heading-4634636bfdabe5dc8" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-4634636bfdabe5dc8 uvc-7182 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5994636b2a4234f2a h2" data-responsive-json-new='{"font-size":"desktop:50px;","line-height":"desktop:60px;"}'><h2 style="font-weight:bold;color:rgba(255,255,255,0.5);">04</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5994636b2a4234f2a .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":""}' style="font-weight:normal;color:rgba(255,255,255,0.7);">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4634636bfdabe5dc8 h2" data-responsive-json-new='{"font-size":"desktop:50px;","line-height":"desktop:60px;"}'><h2 style="font-weight:bold;color:rgba(255,255,255,0.5);">04</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4634636bfdabe5dc8 .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":""}' style="font-weight:normal;color:rgba(255,255,255,0.7);">
 <h4><span style="color: #ffffff;">Results</span></h4>
 <p>Augue bibendum, faucibus mi et, scelerisque mauris. Aenean dapibus massa a sapien hendrerit. Lorem ipsum dolor!</p>
 </div>
 </div></div></div></div>
 </div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1575460336872">
-<div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1575403372934"><div class="wpb_wrapper"><div id="ultimate-heading-4796636b2a424cd7f" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-4796636b2a424cd7f uvc-8550  uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1575403372934"><div class="wpb_wrapper"><div id="ultimate-heading-3077636bfdac0313b" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-3077636bfdac0313b uvc-2509  uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4796636b2a424cd7f h3" data-responsive-json-new='{"font-size":"","line-height":""}'><h3 style="font-weight:bold;color:#148ba9;margin-bottom:20px;">We know how it works!</h3></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4796636b2a424cd7f .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:34px;","line-height":"desktop:44px;"}' style="font-weight:bold;color:#222222;">If the plan doesn’t work &#8211; change the plan, not the goal.</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3077636bfdac0313b h3" data-responsive-json-new='{"font-size":"","line-height":""}'><h3 style="font-weight:bold;color:#148ba9;margin-bottom:20px;">We know how it works!</h3></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3077636bfdac0313b .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:34px;","line-height":"desktop:44px;"}' style="font-weight:bold;color:#222222;">If the plan doesn’t work &#8211; change the plan, not the goal.</div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1575403379152"><div class="wpb_wrapper">
 	<div class="wpb_text_column wpb_content_element ">
@@ -3235,10 +3274,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 <div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_custom_1575457313316 vc_row-has-fill vc_row-no-padding">
 <div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1575403932354"><div class="wpb_wrapper">
 <div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-offset-0 vc_col-md-offset-0 vc_col-sm-offset-0 vc_col-xs-6 vc_col-has-fill"><div class="vc_column-inner vc_custom_1575380838085"><div class="wpb_wrapper"></div></div></div></div>
-<div id="ultimate-heading-1169636b2a424e774" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-1169636b2a424e774 uvc-1075 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-9581636bfdac06d1f" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-9581636bfdac06d1f uvc-414 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1169636b2a424e774 h2" data-responsive-json-new='{"font-size":"desktop:50px;","line-height":"desktop:60px;"}'><h2 style="font-weight:bold;margin-bottom:10px;">From our blog</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1169636b2a424e774 .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":""}' style="font-weight:normal;">Latest news &amp; events</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9581636bfdac06d1f h2" data-responsive-json-new='{"font-size":"desktop:50px;","line-height":"desktop:60px;"}'><h2 style="font-weight:bold;margin-bottom:10px;">From our blog</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9581636bfdac06d1f .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":""}' style="font-weight:normal;">Latest news &amp; events</div>
 </div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
@@ -3646,10 +3685,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </div>
 <div class="vc_row-full-width vc_clearfix"></div>
 <div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1575463265784 vc_row-has-fill vc_row-o-equal-height vc_row-o-content-middle vc_row-flex">
-<div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-4 vc_col-md-4"><div class="vc_column-inner vc_custom_1575463269081"><div class="wpb_wrapper"><div id="ultimate-heading-9911636b2a46c97ab" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-9911636b2a46c97ab uvc-2839  uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-4 vc_col-md-4"><div class="vc_column-inner vc_custom_1575463269081"><div class="wpb_wrapper"><div id="ultimate-heading-9247636bfdac7e6d5" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-9247636bfdac7e6d5 uvc-9950  uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9911636b2a46c97ab h3" data-responsive-json-new='{"font-size":"","line-height":""}'><h3 style="font-weight:bold;color:rgba(255,255,255,0.5);margin-bottom:20px;">Seven Company</h3></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9911636b2a46c97ab .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:34px;","line-height":"desktop:44px;"}' style="font-weight:bold;color:#ffffff;">Let us improve your business!</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9247636bfdac7e6d5 h3" data-responsive-json-new='{"font-size":"","line-height":""}'><h3 style="font-weight:bold;color:rgba(255,255,255,0.5);margin-bottom:20px;">Seven Company</h3></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9247636bfdac7e6d5 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:34px;","line-height":"desktop:44px;"}' style="font-weight:bold;color:#ffffff;">Let us improve your business!</div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-4 vc_col-md-4"><div class="vc_column-inner vc_custom_1575463219104"><div class="wpb_wrapper">
 	<div class="wpb_text_column wpb_content_element ">
@@ -3660,10 +3699,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	</div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-0 vc_col-lg-4 vc_col-md-offset-0 vc_col-md-4 vc_col-sm-offset-0"><div class="vc_column-inner vc_custom_1575463453249"><div class="wpb_wrapper">
-<div id="ultimate-heading-416636b2a46ca43c" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-416636b2a46ca43c uvc-6499 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-3589636bfdac7ed86" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-3589636bfdac7ed86 uvc-1707 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-416636b2a46ca43c h2" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}'><h2 style="font-weight:bold;color:#ffffff;">+001 234 56 78</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-416636b2a46ca43c .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-weight:normal;color:#ffffff;margin-bottom:30px;">hello@dream-theme.com</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3589636bfdac7ed86 h2" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}'><h2 style="font-weight:bold;color:#ffffff;">+001 234 56 78</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3589636bfdac7ed86 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-weight:normal;color:#ffffff;margin-bottom:30px;">hello@dream-theme.com</div>
 </div>
 <style type="text/css" data-type="the7_shortcodes-inline-css">#default-btn-cbb67e2c3aca95ddbc07137e45599bde {
   border-radius: 100px;
