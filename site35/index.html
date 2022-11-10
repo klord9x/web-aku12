@@ -70,6 +70,45 @@ img.emoji {
 <link rel="stylesheet" id="js_composer_front-css" href="/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=6.8.0" type="text/css" media="all">
 <link rel="stylesheet" id="dt-web-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto:400,600,700|Poppins:400,500,600,700|Roboto Condensed:400,600,700" type="text/css" media="all">
 <link rel="stylesheet" id="dt-main-css" href="/wp-content/themes/dt-the7/css/main.min.css?ver=11.1.1" type="text/css" media="all">
+<style id="dt-main-inline-css" type="text/css">body #load {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 9901;
+  opacity: 1;
+  visibility: visible;
+  transition: all .35s ease-out;
+}
+.load-wrap {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -ms-flex-pack: center;
+  -ms-justify-content: center;
+  justify-content: center;
+}
+.load-wrap > svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+#load {
+  background: var(--the7-elementor-beautiful-loading-bg,transparent linear-gradient(360deg, #38892a 25%, #7dad35 75%, #b6cd37 100%));
+  --the7-beautiful-spinner-color2: var(--the7-beautiful-spinner-color,#ffffff);
+}</style>
 <link rel="stylesheet" id="the7-custom-scrollbar-css" href="/wp-content/themes/dt-the7/lib/custom-scrollbar/custom-scrollbar.min.css?ver=11.1.1" type="text/css" media="all">
 <link rel="stylesheet" id="the7-wpbakery-css" href="/wp-content/themes/dt-the7/css/wpbakery.min.css?ver=11.1.1" type="text/css" media="all">
 <link rel="stylesheet" id="the7-core-css" href="/wp-content/plugins/dt-the7-core/assets/css/post-type.min.css?ver=2.7.0" type="text/css" media="all">
@@ -98,7 +137,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/site35\/wp-admin\/admin-ajax.php","wc
 <script type="text/javascript" src="/wp-content/plugins/js_composer/assets/js/vendors/woocommerce-add-to-cart.js?ver=6.8.0" id="vc_woocommerce-add-to-cart-js-js"></script>
 <script type="text/javascript" id="dt-above-fold-js-extra">
 /* <![CDATA[ */
-var dtLocal = {"themeUrl":"\/wp-content\/themes\/dt-the7","passText":"To view this protected post, enter the password below:","moreButtonText":{"loading":"Loading...","loadMore":"Load more"},"postID":"490","ajaxurl":"\/site35\/wp-admin\/admin-ajax.php","REST":{"baseUrl":"\/site35\/wp-json\/the7\/v1","endpoints":{"sendMail":"\/send-mail"}},"contactMessages":{"required":"One or more fields have an error. Please check and try again.","terms":"Please accept the privacy policy.","fillTheCaptchaError":"Please, fill the captcha."},"captchaSiteKey":"","ajaxNonce":"4a255c3ec6","pageData":{"type":"page","template":"page","layout":null},"themeSettings":{"smoothScroll":"off","lazyLoading":false,"accentColor":{"mode":"solid","color":"#75b325"},"desktopHeader":{"height":120},"ToggleCaptionEnabled":"disabled","ToggleCaption":"Navigation","floatingHeader":{"showAfter":150,"showMenu":true,"height":80,"logo":{"showLogo":true,"html":"<img class=\" preload-me\" src=\"\/wp-content\/uploads\/sites\/35\/2020\/02\/w-l-norm.png\" srcset=\"\/wp-content\/uploads\/sites\/35\/2020\/02\/w-l-norm.png 146w, \/wp-content\/uploads\/sites\/35\/2020\/02\/w-l-hd.png 291w\" width=\"146\" height=\"61\"   sizes=\"146px\" alt=\"Site35\" \/>","url":"\/site35\/"}},"topLine":{"floatingTopLine":{"logo":{"showLogo":false,"html":""}}},"mobileHeader":{"firstSwitchPoint":1100,"secondSwitchPoint":992,"firstSwitchPointHeight":80,"secondSwitchPointHeight":80,"mobileToggleCaptionEnabled":"disabled","mobileToggleCaption":"Menu"},"stickyMobileHeaderFirstSwitch":{"logo":{"html":"<img class=\" preload-me\" src=\"\/wp-content\/uploads\/sites\/35\/2020\/02\/w-l-norm.png\" srcset=\"\/wp-content\/uploads\/sites\/35\/2020\/02\/w-l-norm.png 146w, \/wp-content\/uploads\/sites\/35\/2020\/02\/w-l-hd.png 291w\" width=\"146\" height=\"61\"   sizes=\"146px\" alt=\"Site35\" \/>"}},"stickyMobileHeaderSecondSwitch":{"logo":{"html":"<img class=\" preload-me\" src=\"\/wp-content\/uploads\/sites\/35\/2020\/02\/w-l-norm.png\" srcset=\"\/wp-content\/uploads\/sites\/35\/2020\/02\/w-l-norm.png 146w, \/wp-content\/uploads\/sites\/35\/2020\/02\/w-l-hd.png 291w\" width=\"146\" height=\"61\"   sizes=\"146px\" alt=\"Site35\" \/>"}},"content":{"textColor":"#85868c","headerColor":"#333333"},"sidebar":{"switchPoint":990},"boxedWidth":"1340px","stripes":{"stripe1":{"textColor":"#72777d","headerColor":"#3c3e45"},"stripe2":{"textColor":"#f4f4f5","headerColor":"#f4f4f5"},"stripe3":{"textColor":"#ffffff","headerColor":"#ffffff"}}},"VCMobileScreenWidth":"778","wcCartFragmentHash":"688356883ea715fb620f9055ea5d4810"};
+var dtLocal = {"themeUrl":"\/wp-content\/themes\/dt-the7","passText":"To view this protected post, enter the password below:","moreButtonText":{"loading":"Loading...","loadMore":"Load more"},"postID":"490","ajaxurl":"\/site35\/wp-admin\/admin-ajax.php","REST":{"baseUrl":"\/site35\/wp-json\/the7\/v1","endpoints":{"sendMail":"\/send-mail"}},"contactMessages":{"required":"One or more fields have an error. Please check and try again.","terms":"Please accept the privacy policy.","fillTheCaptchaError":"Please, fill the captcha."},"captchaSiteKey":"","ajaxNonce":"0e4283f9fa","pageData":{"type":"page","template":"page","layout":null},"themeSettings":{"smoothScroll":"off","lazyLoading":false,"accentColor":{"mode":"solid","color":"#75b325"},"desktopHeader":{"height":120},"ToggleCaptionEnabled":"disabled","ToggleCaption":"Navigation","floatingHeader":{"showAfter":150,"showMenu":true,"height":80,"logo":{"showLogo":true,"html":"<img class=\" preload-me\" src=\"\/wp-content\/uploads\/sites\/35\/2020\/02\/w-l-norm.png\" srcset=\"\/wp-content\/uploads\/sites\/35\/2020\/02\/w-l-norm.png 146w, \/wp-content\/uploads\/sites\/35\/2020\/02\/w-l-hd.png 291w\" width=\"146\" height=\"61\"   sizes=\"146px\" alt=\"Site35\" \/>","url":"\/site35\/"}},"topLine":{"floatingTopLine":{"logo":{"showLogo":false,"html":""}}},"mobileHeader":{"firstSwitchPoint":1100,"secondSwitchPoint":992,"firstSwitchPointHeight":80,"secondSwitchPointHeight":80,"mobileToggleCaptionEnabled":"disabled","mobileToggleCaption":"Menu"},"stickyMobileHeaderFirstSwitch":{"logo":{"html":"<img class=\" preload-me\" src=\"\/wp-content\/uploads\/sites\/35\/2020\/02\/w-l-norm.png\" srcset=\"\/wp-content\/uploads\/sites\/35\/2020\/02\/w-l-norm.png 146w, \/wp-content\/uploads\/sites\/35\/2020\/02\/w-l-hd.png 291w\" width=\"146\" height=\"61\"   sizes=\"146px\" alt=\"Site35\" \/>"}},"stickyMobileHeaderSecondSwitch":{"logo":{"html":"<img class=\" preload-me\" src=\"\/wp-content\/uploads\/sites\/35\/2020\/02\/w-l-norm.png\" srcset=\"\/wp-content\/uploads\/sites\/35\/2020\/02\/w-l-norm.png 146w, \/wp-content\/uploads\/sites\/35\/2020\/02\/w-l-hd.png 291w\" width=\"146\" height=\"61\"   sizes=\"146px\" alt=\"Site35\" \/>"}},"content":{"textColor":"#85868c","headerColor":"#333333"},"sidebar":{"switchPoint":990},"boxedWidth":"1340px","stripes":{"stripe1":{"textColor":"#72777d","headerColor":"#3c3e45"},"stripe2":{"textColor":"#f4f4f5","headerColor":"#f4f4f5"},"stripe3":{"textColor":"#ffffff","headerColor":"#ffffff"}}},"VCMobileScreenWidth":"778","wcCartFragmentHash":"688356883ea715fb620f9055ea5d4810"};
 var dtShare = {"shareButtonText":{"facebook":"Share on Facebook","twitter":"Tweet","pinterest":"Pin it","linkedin":"Share on Linkedin","whatsapp":"Share on Whatsapp"},"overlayOpacity":"80"};
 /* ]]> */
 </script>
@@ -428,17 +467,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 	<div id="content" class="content" role="main">
 
-		<div class="vc_row wpb_row vc_row-fluid vc_custom_1550594202637"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-1 vc_col-lg-10 vc_col-md-offset-1 vc_col-md-10"><div class="vc_column-inner vc_custom_1549643930221"><div class="wpb_wrapper"><div id="ultimate-heading-6977636b40794e49b" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-6977636b40794e49b uvc-1541 accent-title-color color-title" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+		<div class="vc_row wpb_row vc_row-fluid vc_custom_1550594202637"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-1 vc_col-lg-10 vc_col-md-offset-1 vc_col-md-10"><div class="vc_column-inner vc_custom_1549643930221"><div class="wpb_wrapper"><div id="ultimate-heading-3212636c4fdd1fa31" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-3212636c4fdd1fa31 uvc-2664 accent-title-color color-title" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6977636b40794e49b h2" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:28px;"}'><h2 style="font-weight:bold;margin-bottom:10px;">State licensed recreational &amp; medical cannabis dispensary</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6977636b40794e49b .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:34px;","line-height":"desktop:44px;"}' style="font-weight:bold;">Welcome to Seven Weed &#8211; one of the oldest &amp; most trusted cannabis dispensaries in Los Angeles, California</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3212636c4fdd1fa31 h2" data-responsive-json-new='{"font-size":"desktop:18px;","line-height":"desktop:28px;"}'><h2 style="font-weight:bold;margin-bottom:10px;">State licensed recreational &amp; medical cannabis dispensary</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3212636c4fdd1fa31 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:34px;","line-height":"desktop:44px;"}' style="font-weight:bold;">Welcome to Seven Weed &#8211; one of the oldest &amp; most trusted cannabis dispensaries in Los Angeles, California</div>
 </div></div></div></div></div>
 <div class="vc_row wpb_row vc_row-fluid vc_custom_1549899735877 vc_row-o-equal-height vc_row-o-content-middle vc_row-flex">
 <div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1549644442557"><div class="wpb_wrapper">
-<div id="ultimate-heading-7429636b407964a6f" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-7429636b407964a6f uvc-7750  uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div id="ultimate-heading-3355636c4fdd35395" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-3355636c4fdd35395 uvc-8447  uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-7429636b407964a6f h4" data-responsive-json-new='{"font-size":"","line-height":""}'><h4 style="font-weight:bold;margin-bottom:15px;">Proin ollicitudin nibh interdum - mollis dolor auctor dolor pretium, nec faucibus turpis eleifend.</h4></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-7429636b407964a6f .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":""}' style="font-weight:normal;margin-bottom:20px;">Duis auctor at lorem ipsum dolor nulla glavriadac &#8211; nibh interdum s interdum vel sollicitudin nibhlod. Suspendisse auctor volutpat turpis, vel sollicitudin nibh interdum non. Praesent quis tortor et est finibus dignissim quis id leo. Suspendisse tempor consectetur odio!</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3355636c4fdd35395 h4" data-responsive-json-new='{"font-size":"","line-height":""}'><h4 style="font-weight:bold;margin-bottom:15px;">Proin ollicitudin nibh interdum - mollis dolor auctor dolor pretium, nec faucibus turpis eleifend.</h4></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3355636c4fdd35395 .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":""}' style="font-weight:normal;margin-bottom:20px;">Duis auctor at lorem ipsum dolor nulla glavriadac &#8211; nibh interdum s interdum vel sollicitudin nibhlod. Suspendisse auctor volutpat turpis, vel sollicitudin nibh interdum non. Praesent quis tortor et est finibus dignissim quis id leo. Suspendisse tempor consectetur odio!</div>
 </div>
 <style type="text/css" data-type="the7_shortcodes-inline-css">#default-btn-a4a8ab5969b7e788468a150170c6892e {
   border-radius: 5px;
@@ -554,10 +593,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	<i class="Defaults-comments"></i>
 </div>
 </div></div>
-<div id="ultimate-heading-6587636b407a05186" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-6587636b407a05186 uvc-7769  uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-3561636c4fdd4dade" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-3561636c4fdd4dade uvc-9533  uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6587636b407a05186 h4" data-responsive-json-new='{"font-size":"","line-height":""}'><h4 style="font-weight:bold;color:#ffffff;margin-top:15px;margin-bottom:10px;">Get Consultation</h4></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6587636b407a05186 .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":""}' style="font-weight:normal;color:#ffffff;">Porttitor tristique eget eu nisi. Donec iaculis velit eu tortor sagittis interdum. Suspendisse auctor volutpat turpis!</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3561636c4fdd4dade h4" data-responsive-json-new='{"font-size":"","line-height":""}'><h4 style="font-weight:bold;color:#ffffff;margin-top:15px;margin-bottom:10px;">Get Consultation</h4></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3561636c4fdd4dade .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":""}' style="font-weight:normal;color:#ffffff;">Porttitor tristique eget eu nisi. Donec iaculis velit eu tortor sagittis interdum. Suspendisse auctor volutpat turpis!</div>
 </div>
 <style type="text/css" data-type="the7_shortcodes-inline-css">#default-btn-0343f06e25010ab4df589d274c16464d {
   border-radius: 5px;
@@ -616,10 +655,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	<i class="Defaults-shopping-cart"></i>
 </div>
 </div></div>
-<div id="ultimate-heading-1774636b407a21182" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-1774636b407a21182 uvc-9167  uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-1048636c4fdd4de7d" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-1048636c4fdd4de7d uvc-4464  uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1774636b407a21182 h4" data-responsive-json-new='{"font-size":"","line-height":""}'><h4 style="font-weight:bold;color:#ffffff;margin-top:15px;margin-bottom:10px;">Order Online</h4></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1774636b407a21182 .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":""}' style="font-weight:normal;color:#ffffff;">Donec at orci non urna porttitor tristique eget eu nisi. Donec iaculis velit eu tortor sagittis interdum. Suspendisse auctor volutpat turpis!</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1048636c4fdd4de7d h4" data-responsive-json-new='{"font-size":"","line-height":""}'><h4 style="font-weight:bold;color:#ffffff;margin-top:15px;margin-bottom:10px;">Order Online</h4></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1048636c4fdd4de7d .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":""}' style="font-weight:normal;color:#ffffff;">Donec at orci non urna porttitor tristique eget eu nisi. Donec iaculis velit eu tortor sagittis interdum. Suspendisse auctor volutpat turpis!</div>
 </div>
 <style type="text/css" data-type="the7_shortcodes-inline-css">#default-btn-2a558e11464ec67ac0def4c8d27d3ff3 {
   border-radius: 5px;
@@ -678,10 +717,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	<i class="Defaults-map-marker"></i>
 </div>
 </div></div>
-<div id="ultimate-heading-7498636b407a6595d" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-7498636b407a6595d uvc-9181  uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-7267636c4fdd4e678" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-7267636c4fdd4e678 uvc-5461  uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-7498636b407a6595d h4" data-responsive-json-new='{"font-size":"","line-height":""}'><h4 style="font-weight:bold;color:#ffffff;margin-top:15px;margin-bottom:10px;">Visit Seven Weed</h4></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-7498636b407a6595d .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":""}' style="font-weight:normal;color:#ffffff;">Aliquam quis justo vel ante venenatis consequat sed sit amet nisl. Aenean gravida dictum orci, id auctor ipsum tempus vel.</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-7267636c4fdd4e678 h4" data-responsive-json-new='{"font-size":"","line-height":""}'><h4 style="font-weight:bold;color:#ffffff;margin-top:15px;margin-bottom:10px;">Visit Seven Weed</h4></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-7267636c4fdd4e678 .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":""}' style="font-weight:normal;color:#ffffff;">Aliquam quis justo vel ante venenatis consequat sed sit amet nisl. Aenean gravida dictum orci, id auctor ipsum tempus vel.</div>
 </div>
 <style type="text/css" data-type="the7_shortcodes-inline-css">#default-btn-b73ca8ef5c3959b021a421d65106e16d {
   border-radius: 5px;
@@ -737,9 +776,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </div>
 <!-- Row Backgrounds --><div class="upb_color" data-bg-override="ex-full" data-bg-color="#75b325" data-fadeout="" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false" data-custom-vc-row="" data-vc="6.8.0" data-is_old_vc="" data-theme-support="" data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size=""></div>
 <div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-0 vc_col-md-offset-0"><div class="vc_column-inner vc_custom_1550505753589"><div class="wpb_wrapper">
-<div id="ultimate-heading-9527636b407a95896" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-9527636b407a95896 uvc-1308 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-3099636c4fdd4fb60" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-3099636c4fdd4fb60 uvc-5310 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9527636b407a95896 h3" data-responsive-json-new='{"font-size":"desktop:34px;","line-height":"desktop:44px;"}'><h3 style="font-weight:bold;margin-bottom:70px;">Special offers from our online store</h3></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3099636c4fdd4fb60 h3" data-responsive-json-new='{"font-size":"desktop:34px;","line-height":"desktop:44px;"}'><h3 style="font-weight:bold;margin-bottom:70px;">Special offers from our online store</h3></div>
 </div>
 <style type="text/css" data-type="the7_shortcodes-inline-css">.products-carousel-shortcode.products-carousel-shortcode-id-9ff546ca87fe23326aa5e5dcd3907870 .owl-nav a {
   width: 54px;
@@ -1012,19 +1051,19 @@ Price per 1 gram </p>
 </div>
 </div></div></div></div>
 <div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-0 vc_col-md-offset-0"><div class="vc_column-inner vc_custom_1550505753589"><div class="wpb_wrapper">
-<div id="ultimate-heading-334636b407c4f8b3" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-334636b407c4f8b3 uvc-6541 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-4260636c4fde7f744" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-4260636c4fde7f744 uvc-2845 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-334636b407c4f8b3 h3" data-responsive-json-new='{"font-size":"desktop:34px;","line-height":"desktop:44px;"}'><h3 style="font-weight:bold;color:#ffffff;margin-bottom:70px;">Few facts about Seven Weed</h3></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4260636c4fde7f744 h3" data-responsive-json-new='{"font-size":"desktop:34px;","line-height":"desktop:44px;"}'><h3 style="font-weight:bold;color:#ffffff;margin-bottom:70px;">Few facts about Seven Weed</h3></div>
 </div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid vc_row-o-equal-height vc_row-o-content-middle vc_row-flex">
-<div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-offset-1 vc_col-lg-6 vc_col-md-offset-1 vc_col-md-6 vc_col-sm-offset-0 vc_col-xs-12 vc_col-has-fill"><div class="vc_column-inner vc_custom_1550511354939"><div class="wpb_wrapper"><div id="ultimate-heading-9430636b407c4fe70" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-9430636b407c4fe70 uvc-1909  uvc-heading-default-font-sizes" data-hspacer="icon_only" data-halign="left" style="text-align:left">
+<div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-offset-1 vc_col-lg-6 vc_col-md-offset-1 vc_col-md-6 vc_col-sm-offset-0 vc_col-xs-12 vc_col-has-fill"><div class="vc_column-inner vc_custom_1550511354939"><div class="wpb_wrapper"><div id="ultimate-heading-6514636c4fde8043a" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-6514636c4fde8043a uvc-8732  uvc-heading-default-font-sizes" data-hspacer="icon_only" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer icon_only" style="top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:left;">
 <div class="aio-icon none " style="color:rgba(255,255,255,0.3);font-size:32px;">
 	<i class="Defaults-leaf"></i>
 </div>
 </div></div></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9430636b407c4fe70 h3" data-responsive-json-new='{"font-size":"","line-height":""}'><h3 style="font-weight:bold;color:#ffffff;margin-bottom:15px;">LOVE WORTHY QUALITY</h3></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9430636b407c4fe70 .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":""}' style="font-weight:normal;color:#ffffff;margin-bottom:20px;">Duis auctor at lorem ipsum dolor nulla glavriadac &#8211; nibh interdum s interdum vel sollicitudin nibhlod. Suspendisse auctor volutpat turpis, vel sollicitudin nibh interdum non. Praesent quis tortor et est finibus dignissim quis id leo. Suspendisse tempor consectetur odio!</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6514636c4fde8043a h3" data-responsive-json-new='{"font-size":"","line-height":""}'><h3 style="font-weight:bold;color:#ffffff;margin-bottom:15px;">LOVE WORTHY QUALITY</h3></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6514636c4fde8043a .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":""}' style="font-weight:normal;color:#ffffff;margin-bottom:20px;">Duis auctor at lorem ipsum dolor nulla glavriadac &#8211; nibh interdum s interdum vel sollicitudin nibhlod. Suspendisse auctor volutpat turpis, vel sollicitudin nibh interdum non. Praesent quis tortor et est finibus dignissim quis id leo. Suspendisse tempor consectetur odio!</div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-offset-0 vc_col-lg-4 vc_col-md-offset-0 vc_col-md-4 vc_col-sm-offset-0 vc_hidden-xs"><div class="vc_column-inner vc_custom_1550511674362"><div class="wpb_wrapper">
 <style type="text/css" data-type="the7_shortcodes-inline-css">.shortcode-single-image-wrap.shortcode-single-image-e744618e0912f52d28d51976208944bd.enable-bg-rollover .rollover i,
@@ -1072,25 +1111,25 @@ Price per 1 gram </p>
 }</style>
 <div class="shortcode-single-image-wrap shortcode-single-image-9598e13572bea62913fa64b06049bad3 alignnone  enable-bg-rollover dt-icon-bg-off" style="margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; width:800px;"><div class="shortcode-single-image"><div class="fancy-media-wrap  layzr-bg" style="border-radius:800px;"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20800%20800&#39;%2F%3E" data-src="/wp-content/uploads/sites/35/2019/01/weed003-800x800.jpg" data-srcset="/wp-content/uploads/sites/35/2019/01/weed003-800x800.jpg 800w, /wp-content/uploads/sites/35/2019/01/weed003-1000x1000.jpg 1000w" width="800" height="800" data-dt-location="/site35/2019/01/11/suspendisse-consectetur-lorem-purus-cannabis/weed003/" style="border-radius:800px;"></div></div></div>
 </div></div></div>
-<div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-offset-0 vc_col-lg-6 vc_col-md-offset-0 vc_col-md-6 vc_col-sm-offset-0 vc_col-xs-12 vc_col-has-fill"><div class="vc_column-inner vc_custom_1550511515212"><div class="wpb_wrapper"><div id="ultimate-heading-6937636b407e1b995" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-6937636b407e1b995 uvc-3182  uvc-heading-default-font-sizes" data-hspacer="icon_only" data-halign="left" style="text-align:left">
+<div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-offset-0 vc_col-lg-6 vc_col-md-offset-0 vc_col-md-6 vc_col-sm-offset-0 vc_col-xs-12 vc_col-has-fill"><div class="vc_column-inner vc_custom_1550511515212"><div class="wpb_wrapper"><div id="ultimate-heading-6133636c4fde988a8" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-6133636c4fde988a8 uvc-3470  uvc-heading-default-font-sizes" data-hspacer="icon_only" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer icon_only" style="top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:left;">
 <div class="aio-icon none " style="color:rgba(255,255,255,0.3);font-size:32px;">
 	<i class="Defaults-leaf"></i>
 </div>
 </div></div></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6937636b407e1b995 h3" data-responsive-json-new='{"font-size":"","line-height":""}'><h3 style="font-weight:bold;color:#ffffff;margin-bottom:15px;">DISCOUNT PROGRAMS</h3></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6937636b407e1b995 .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":""}' style="font-weight:normal;color:#ffffff;margin-bottom:20px;">Nulla met from dolor! Duis auctor at lorem ipsum dolor nulla glavriadac &#8211; nibh interdum s interdum vel sollicitudin nibhlod. Suspendisse auctor volutpat turpis, vel sollicitudin nibh interdum non. Praesent quis tortor et est finibus dignissim quis id leo. Lorem ipsum dolor!</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6133636c4fde988a8 h3" data-responsive-json-new='{"font-size":"","line-height":""}'><h3 style="font-weight:bold;color:#ffffff;margin-bottom:15px;">DISCOUNT PROGRAMS</h3></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6133636c4fde988a8 .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":""}' style="font-weight:normal;color:#ffffff;margin-bottom:20px;">Nulla met from dolor! Duis auctor at lorem ipsum dolor nulla glavriadac &#8211; nibh interdum s interdum vel sollicitudin nibhlod. Suspendisse auctor volutpat turpis, vel sollicitudin nibh interdum non. Praesent quis tortor et est finibus dignissim quis id leo. Lorem ipsum dolor!</div>
 </div></div></div></div>
 </div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid vc_row-o-equal-height vc_row-o-content-middle vc_row-flex">
-<div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-offset-1 vc_col-lg-6 vc_col-md-offset-1 vc_col-md-6 vc_col-xs-12 vc_col-has-fill"><div class="vc_column-inner vc_custom_1550511549280"><div class="wpb_wrapper"><div id="ultimate-heading-3316636b407e1bda1" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-3316636b407e1bda1 uvc-6454  uvc-heading-default-font-sizes" data-hspacer="icon_only" data-halign="left" style="text-align:left">
+<div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-offset-1 vc_col-lg-6 vc_col-md-offset-1 vc_col-md-6 vc_col-xs-12 vc_col-has-fill"><div class="vc_column-inner vc_custom_1550511549280"><div class="wpb_wrapper"><div id="ultimate-heading-4166636c4fde98d26" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-4166636c4fde98d26 uvc-6629  uvc-heading-default-font-sizes" data-hspacer="icon_only" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer icon_only" style="top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:left;">
 <div class="aio-icon none " style="color:rgba(255,255,255,0.3);font-size:32px;">
 	<i class="Defaults-leaf"></i>
 </div>
 </div></div></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3316636b407e1bda1 h3" data-responsive-json-new='{"font-size":"","line-height":""}'><h3 style="font-weight:bold;color:#ffffff;margin-bottom:15px;">PREMIUM SERVICE</h3></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3316636b407e1bda1 .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":""}' style="font-weight:normal;color:#ffffff;margin-bottom:20px;">Lorem ipsum dolor! Duis auctor at lorem ipsum dolor nulla glavriadac &#8211; nibh interdum s interdum vel sollicitudin nibhlod. Suspendisse auctor volutpat turpis, vel sollicitudin nibh interdum non. Praesent quis tortor et est finibus dignissim quis id leo.</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4166636c4fde98d26 h3" data-responsive-json-new='{"font-size":"","line-height":""}'><h3 style="font-weight:bold;color:#ffffff;margin-bottom:15px;">PREMIUM SERVICE</h3></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4166636c4fde98d26 .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":""}' style="font-weight:normal;color:#ffffff;margin-bottom:20px;">Lorem ipsum dolor! Duis auctor at lorem ipsum dolor nulla glavriadac &#8211; nibh interdum s interdum vel sollicitudin nibhlod. Suspendisse auctor volutpat turpis, vel sollicitudin nibh interdum non. Praesent quis tortor et est finibus dignissim quis id leo.</div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-offset-0 vc_col-lg-4 vc_col-md-offset-0 vc_col-md-4 vc_hidden-xs"><div class="vc_column-inner vc_custom_1550511681130"><div class="wpb_wrapper">
 <style type="text/css" data-type="the7_shortcodes-inline-css">.shortcode-single-image-wrap.shortcode-single-image-53b2f80f11ac73b04854e277eb30b6b7.enable-bg-rollover .rollover i,
@@ -1138,22 +1177,22 @@ Price per 1 gram </p>
 }</style>
 <div class="shortcode-single-image-wrap shortcode-single-image-45af4e9c0ada54647b90f0271a5edd46 alignnone  enable-bg-rollover dt-icon-bg-off" style="margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; width:800px;"><div class="shortcode-single-image"><div class="fancy-media-wrap  layzr-bg" style="border-radius:800px;"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20800%20800&#39;%2F%3E" data-src="/wp-content/uploads/sites/35/2019/01/weed022-800x800.jpg" data-srcset="/wp-content/uploads/sites/35/2019/01/weed022-800x800.jpg 800w, /wp-content/uploads/sites/35/2019/01/weed022-1000x1000.jpg 1000w" width="800" height="800" data-dt-location="/site35/2019/01/29/lorem-ipsum-cannabis/weed022/" style="border-radius:800px;"></div></div></div>
 </div></div></div>
-<div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-offset-0 vc_col-lg-6 vc_col-md-offset-0 vc_col-md-6 vc_col-sm-offset-0 vc_col-xs-12 vc_col-has-fill"><div class="vc_column-inner vc_custom_1550511515212"><div class="wpb_wrapper"><div id="ultimate-heading-45636b408405d2b" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-45636b408405d2b uvc-5361  uvc-heading-default-font-sizes" data-hspacer="icon_only" data-halign="left" style="text-align:left">
+<div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-offset-0 vc_col-lg-6 vc_col-md-offset-0 vc_col-md-6 vc_col-sm-offset-0 vc_col-xs-12 vc_col-has-fill"><div class="vc_column-inner vc_custom_1550511515212"><div class="wpb_wrapper"><div id="ultimate-heading-6175636c4fdeb30b0" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-6175636c4fdeb30b0 uvc-9998  uvc-heading-default-font-sizes" data-hspacer="icon_only" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer icon_only" style="top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:left;">
 <div class="aio-icon none " style="color:rgba(255,255,255,0.3);font-size:32px;">
 	<i class="Defaults-leaf"></i>
 </div>
 </div></div></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-45636b408405d2b h3" data-responsive-json-new='{"font-size":"","line-height":""}'><h3 style="font-weight:bold;color:#ffffff;margin-bottom:15px;">EXPERIENCED STAFF</h3></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-45636b408405d2b .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":""}' style="font-weight:normal;color:#ffffff;margin-bottom:20px;">Duis auctor at lorem ipsum dolor nulla glavriadac &#8211; nibh interdum s interdum vel sollicitudin nibhlod. Suspendisse auctor volutpat turpis, vel sollicitudin nibh interdum non. Praesent quis tortor et est finibus dignissim quis id leo. Suspendisse tempor consectetur odio!</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6175636c4fdeb30b0 h3" data-responsive-json-new='{"font-size":"","line-height":""}'><h3 style="font-weight:bold;color:#ffffff;margin-bottom:15px;">EXPERIENCED STAFF</h3></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6175636c4fdeb30b0 .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":""}' style="font-weight:normal;color:#ffffff;margin-bottom:20px;">Duis auctor at lorem ipsum dolor nulla glavriadac &#8211; nibh interdum s interdum vel sollicitudin nibhlod. Suspendisse auctor volutpat turpis, vel sollicitudin nibh interdum non. Praesent quis tortor et est finibus dignissim quis id leo. Suspendisse tempor consectetur odio!</div>
 </div></div></div></div>
 </div>
 </div></div></div></div>
 <!-- Row Backgrounds --><div class="upb_color" data-bg-override="ex-full" data-bg-color="#75b325" data-fadeout="" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false" data-custom-vc-row="" data-vc="6.8.0" data-is_old_vc="" data-theme-support="" data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size=""></div>
 <div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1549899756388"><div class="wpb_wrapper">
-<div id="ultimate-heading-9640636b40841b374" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-9640636b40841b374 uvc-8391 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-8880636c4fdeb46ea" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-8880636c4fdeb46ea uvc-2938 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9640636b40841b374 h3" data-responsive-json-new='{"font-size":"desktop:34px;","line-height":"desktop:44px;"}'><h3 style="font-weight:bold;color:#ffffff;margin-bottom:70px;">What's new at Seven Weed</h3></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-8880636c4fdeb46ea h3" data-responsive-json-new='{"font-size":"desktop:34px;","line-height":"desktop:44px;"}'><h3 style="font-weight:bold;color:#ffffff;margin-bottom:70px;">What's new at Seven Weed</h3></div>
 </div>
 <style type="text/css" data-type="the7_shortcodes-inline-css">.blog-carousel-shortcode.blog-carousel-shortcode-id-78609225715081a4ac8e2de7265d20f6.content-bg-on.classic-layout-list article {
   background: #ffffff;
@@ -1564,10 +1603,10 @@ Price per 1 gram </p>
 </div></div></div></div>
 <!-- Row Backgrounds --><div class="upb_bg_img" data-ultimate-bg="url(/wp-content/uploads/sites/35/2019/01/w002.jpg)" data-image-id="id^21|url^/wp-content/uploads/sites/35/2019/01/w002.jpg|caption^null|alt^null|title^w002|description^null" data-ultimate-bg-style="vcpb-default" data-bg-img-repeat="repeat" data-bg-img-size="cover" data-bg-img-position="" data-parallx_sense="30" data-bg-override="ex-full" data-bg_img_attach="scroll" data-upb-overlay-color="rgba(32,52,6,0.52)" data-upb-bg-animation="" data-fadeout="" data-bg-animation="left-animation" data-bg-animation-type="h" data-animation-repeat="repeat" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false" data-custom-vc-row="" data-vc="6.8.0" data-is_old_vc="" data-theme-support="" data-overlay="true" data-overlay-color="rgba(32,52,6,0.52)" data-overlay-pattern="" data-overlay-pattern-opacity="0.8" data-overlay-pattern-size="" data-overlay-pattern-attachment="scroll"></div>
 <div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1550586394607"><div class="wpb_wrapper">
-<div id="ultimate-heading-4807636b4090e09cd" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-4807636b4090e09cd uvc-7586 accent-subtitle-color uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-6058636c4fdfc7f23" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-6058636c4fdfc7f23 uvc-575 accent-subtitle-color uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4807636b4090e09cd h4" data-responsive-json-new='{"font-size":"","line-height":""}'><h4 style="font-weight:bold;margin-bottom:10px;">322 Beverly Boulevard Los Angeles, CA 90048</h4></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4807636b4090e09cd .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:54px;mobile_landscape:34px;","line-height":"desktop:64px;mobile_landscape:44px;"}' style="font-weight:bold;">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6058636c4fdfc7f23 h4" data-responsive-json-new='{"font-size":"","line-height":""}'><h4 style="font-weight:bold;margin-bottom:10px;">322 Beverly Boulevard Los Angeles, CA 90048</h4></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6058636c4fdfc7f23 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:54px;mobile_landscape:34px;","line-height":"desktop:64px;mobile_landscape:44px;"}' style="font-weight:bold;">
 <i class="fas fa-phone-square" style="padding-right: 10px;"></i><strong>011 233 45 67</strong>
 </div>
 </div>
@@ -1579,9 +1618,9 @@ Price per 1 gram </p>
 	</div>
 </div></div></div></div>
 <div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-10 vc_col-lg-offset-2 vc_col-lg-8 vc_col-md-offset-1 vc_col-md-10 vc_col-sm-offset-1"><div class="vc_column-inner vc_custom_1550599950818"><div class="wpb_wrapper">
-<div id="ultimate-heading-5460636b4090e0f4c" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-5460636b4090e0f4c uvc-4287 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-8792636c4fdfcbefb" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-8792636c4fdfcbefb uvc-6612 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5460636b4090e0f4c h3" data-responsive-json-new='{"font-size":"desktop:34px;","line-height":"desktop:44px;"}'><h3 style="font-weight:bold;color:#ffffff;margin-bottom:70px;">What our customers say</h3></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-8792636c4fdfcbefb h3" data-responsive-json-new='{"font-size":"desktop:34px;","line-height":"desktop:44px;"}'><h3 style="font-weight:bold;color:#ffffff;margin-bottom:70px;">What our customers say</h3></div>
 </div>
 <style type="text/css" data-type="the7_shortcodes-inline-css">.testimonials-carousel-shortcode.testimonials-carousel-shortcode-id-0035e79cb5288169fc10ace31108504e.owl-carousel .owl-nav a {
   width: 54px;
