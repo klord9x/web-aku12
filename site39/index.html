@@ -68,14 +68,53 @@ img.emoji {
 <link rel="stylesheet" id="js_composer_front-css" href="/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=6.8.0" type="text/css" media="all">
 <link rel="stylesheet" id="dt-web-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,600,700" type="text/css" media="all">
 <link rel="stylesheet" id="dt-main-css" href="/wp-content/themes/dt-the7/css/main.min.css?ver=11.1.1" type="text/css" media="all">
+<style id="dt-main-inline-css" type="text/css">body #load {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 9901;
+  opacity: 1;
+  visibility: visible;
+  transition: all .35s ease-out;
+}
+.load-wrap {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -ms-flex-pack: center;
+  -ms-justify-content: center;
+  justify-content: center;
+}
+.load-wrap > svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+#load {
+  background: var(--the7-elementor-beautiful-loading-bg,#ffffff);
+  --the7-beautiful-spinner-color2: var(--the7-beautiful-spinner-color,#f3615a);
+}</style>
 <link rel="stylesheet" id="the7-custom-scrollbar-css" href="/wp-content/themes/dt-the7/lib/custom-scrollbar/custom-scrollbar.min.css?ver=11.1.1" type="text/css" media="all">
 <link rel="stylesheet" id="the7-wpbakery-css" href="/wp-content/themes/dt-the7/css/wpbakery.min.css?ver=11.1.1" type="text/css" media="all">
 <link rel="stylesheet" id="the7-core-css" href="/wp-content/plugins/dt-the7-core/assets/css/post-type.min.css?ver=2.7.0" type="text/css" media="all">
-<link rel="stylesheet" id="the7-css-vars-css" href="/wp-content/uploads/sites/39/the7-css/css-vars.css?ver=bc897722423b" type="text/css" media="all">
-<link rel="stylesheet" id="dt-custom-css" href="/wp-content/uploads/sites/39/the7-css/custom.css?ver=bc897722423b" type="text/css" media="all">
-<link rel="stylesheet" id="dt-media-css" href="/wp-content/uploads/sites/39/the7-css/media.css?ver=bc897722423b" type="text/css" media="all">
-<link rel="stylesheet" id="the7-elements-albums-portfolio-css" href="/wp-content/uploads/sites/39/the7-css/the7-elements-albums-portfolio.css?ver=bc897722423b" type="text/css" media="all">
-<link rel="stylesheet" id="the7-elements-css" href="/wp-content/uploads/sites/39/the7-css/post-type-dynamic.css?ver=bc897722423b" type="text/css" media="all">
+<link rel="stylesheet" id="the7-css-vars-css" href="/wp-content/uploads/sites/39/the7-css/css-vars.css?ver=f09df738dc9d" type="text/css" media="all">
+<link rel="stylesheet" id="dt-custom-css" href="/wp-content/uploads/sites/39/the7-css/custom.css?ver=f09df738dc9d" type="text/css" media="all">
+<link rel="stylesheet" id="dt-media-css" href="/wp-content/uploads/sites/39/the7-css/media.css?ver=f09df738dc9d" type="text/css" media="all">
+<link rel="stylesheet" id="the7-elements-albums-portfolio-css" href="/wp-content/uploads/sites/39/the7-css/the7-elements-albums-portfolio.css?ver=f09df738dc9d" type="text/css" media="all">
+<link rel="stylesheet" id="the7-elements-css" href="/wp-content/uploads/sites/39/the7-css/post-type-dynamic.css?ver=f09df738dc9d" type="text/css" media="all">
 <link rel="stylesheet" id="style-css" href="/wp-content/themes/dt-the7/style.css?ver=11.1.1" type="text/css" media="all">
 <link rel="stylesheet" id="ultimate-vc-addons-style-css" href="/wp-content/plugins/Ultimate_VC_Addons/assets/min-css/style.min.css?ver=3.19.11" type="text/css" media="all">
 <link rel="stylesheet" id="ultimate-vc-addons-btn-css" href="/wp-content/plugins/Ultimate_VC_Addons/assets/min-css/advanced-buttons.min.css?ver=3.19.11" type="text/css" media="all">
@@ -86,7 +125,7 @@ img.emoji {
 <script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
 <script type="text/javascript" id="dt-above-fold-js-extra">
 /* <![CDATA[ */
-var dtLocal = {"themeUrl":"\/wp-content\/themes\/dt-the7","passText":"To view this protected post, enter the password below:","moreButtonText":{"loading":"Loading...","loadMore":"Load more"},"postID":"412","ajaxurl":"\/wp-admin\/admin-ajax.php","REST":{"baseUrl":"\/site39\/wp-json\/the7\/v1","endpoints":{"sendMail":"\/send-mail"}},"contactMessages":{"required":"One or more fields have an error. Please check and try again.","terms":"Please accept the privacy policy.","fillTheCaptchaError":"Please, fill the captcha."},"captchaSiteKey":"","ajaxNonce":"4a255c3ec6","pageData":{"type":"page","template":"microsite","layout":null},"themeSettings":{"smoothScroll":"off","lazyLoading":false,"accentColor":{"mode":"solid","color":"#f3615a"},"desktopHeader":{"height":70},"ToggleCaptionEnabled":"disabled","ToggleCaption":"Navigation","floatingHeader":{"showAfter":94,"showMenu":true,"height":70,"logo":{"showLogo":true,"html":"<img class=\" preload-me\" src=\"\/wp-content\/uploads\/sites\/39\/2017\/10\/logo-header.png\" srcset=\"\/wp-content\/uploads\/sites\/39\/2017\/10\/logo-header.png 50w, \/wp-content\/uploads\/sites\/39\/2017\/10\/logo-header-hd.png 100w\" width=\"50\" height=\"50\"   sizes=\"50px\" alt=\"Site39\" \/>","url":"#!\/up"}},"topLine":{"floatingTopLine":{"logo":{"showLogo":false,"html":""}}},"mobileHeader":{"firstSwitchPoint":1200,"secondSwitchPoint":1200,"firstSwitchPointHeight":70,"secondSwitchPointHeight":70,"mobileToggleCaptionEnabled":"disabled","mobileToggleCaption":"Menu"},"stickyMobileHeaderFirstSwitch":{"logo":{"html":"<img class=\" preload-me\" src=\"\/wp-content\/uploads\/sites\/39\/2017\/10\/logo-header.png\" srcset=\"\/wp-content\/uploads\/sites\/39\/2017\/10\/logo-header.png 50w, \/wp-content\/uploads\/sites\/39\/2017\/10\/logo-header-hd.png 100w\" width=\"50\" height=\"50\"   sizes=\"50px\" alt=\"Site39\" \/>"}},"stickyMobileHeaderSecondSwitch":{"logo":{"html":"<img class=\" preload-me\" src=\"\/wp-content\/uploads\/sites\/39\/2017\/10\/logo-header.png\" srcset=\"\/wp-content\/uploads\/sites\/39\/2017\/10\/logo-header.png 50w, \/wp-content\/uploads\/sites\/39\/2017\/10\/logo-header-hd.png 100w\" width=\"50\" height=\"50\"   sizes=\"50px\" alt=\"Site39\" \/>"}},"content":{"textColor":"#85868c","headerColor":"#333333"},"sidebar":{"switchPoint":990},"boxedWidth":"1340px","stripes":{"stripe1":{"textColor":"#787d85","headerColor":"#3b3f4a"},"stripe2":{"textColor":"#8b9199","headerColor":"#ffffff"},"stripe3":{"textColor":"#ffffff","headerColor":"#ffffff"}}},"VCMobileScreenWidth":"778"};
+var dtLocal = {"themeUrl":"\/wp-content\/themes\/dt-the7","passText":"To view this protected post, enter the password below:","moreButtonText":{"loading":"Loading...","loadMore":"Load more"},"postID":"412","ajaxurl":"\/wp-admin\/admin-ajax.php","REST":{"baseUrl":"\/site39\/wp-json\/the7\/v1","endpoints":{"sendMail":"\/send-mail"}},"contactMessages":{"required":"One or more fields have an error. Please check and try again.","terms":"Please accept the privacy policy.","fillTheCaptchaError":"Please, fill the captcha."},"captchaSiteKey":"","ajaxNonce":"0e4283f9fa","pageData":{"type":"page","template":"microsite","layout":null},"themeSettings":{"smoothScroll":"off","lazyLoading":false,"accentColor":{"mode":"solid","color":"#f3615a"},"desktopHeader":{"height":70},"ToggleCaptionEnabled":"disabled","ToggleCaption":"Navigation","floatingHeader":{"showAfter":94,"showMenu":true,"height":70,"logo":{"showLogo":true,"html":"<img class=\" preload-me\" src=\"\/wp-content\/uploads\/sites\/39\/2017\/10\/logo-header.png\" srcset=\"\/wp-content\/uploads\/sites\/39\/2017\/10\/logo-header.png 50w, \/wp-content\/uploads\/sites\/39\/2017\/10\/logo-header-hd.png 100w\" width=\"50\" height=\"50\"   sizes=\"50px\" alt=\"Site39\" \/>","url":"#!\/up"}},"topLine":{"floatingTopLine":{"logo":{"showLogo":false,"html":""}}},"mobileHeader":{"firstSwitchPoint":1200,"secondSwitchPoint":1200,"firstSwitchPointHeight":70,"secondSwitchPointHeight":70,"mobileToggleCaptionEnabled":"disabled","mobileToggleCaption":"Menu"},"stickyMobileHeaderFirstSwitch":{"logo":{"html":"<img class=\" preload-me\" src=\"\/wp-content\/uploads\/sites\/39\/2017\/10\/logo-header.png\" srcset=\"\/wp-content\/uploads\/sites\/39\/2017\/10\/logo-header.png 50w, \/wp-content\/uploads\/sites\/39\/2017\/10\/logo-header-hd.png 100w\" width=\"50\" height=\"50\"   sizes=\"50px\" alt=\"Site39\" \/>"}},"stickyMobileHeaderSecondSwitch":{"logo":{"html":"<img class=\" preload-me\" src=\"\/wp-content\/uploads\/sites\/39\/2017\/10\/logo-header.png\" srcset=\"\/wp-content\/uploads\/sites\/39\/2017\/10\/logo-header.png 50w, \/wp-content\/uploads\/sites\/39\/2017\/10\/logo-header-hd.png 100w\" width=\"50\" height=\"50\"   sizes=\"50px\" alt=\"Site39\" \/>"}},"content":{"textColor":"#85868c","headerColor":"#333333"},"sidebar":{"switchPoint":990},"boxedWidth":"1340px","stripes":{"stripe1":{"textColor":"#787d85","headerColor":"#3b3f4a"},"stripe2":{"textColor":"#8b9199","headerColor":"#ffffff"},"stripe3":{"textColor":"#ffffff","headerColor":"#ffffff"}}},"VCMobileScreenWidth":"778"};
 var dtShare = {"shareButtonText":{"facebook":"Share on Facebook","twitter":"Tweet","pinterest":"Pin it","linkedin":"Share on Linkedin","whatsapp":"Share on Whatsapp"},"overlayOpacity":"85"};
 /* ]]> */
 </script>
@@ -346,8 +385,8 @@ color: inherit;
 <div id="content" class="content" role="main">
 
 	<div id="about" class="vc_row wpb_row vc_row-fluid vc_custom_1509351079558"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
-<div id="ultimate-heading-3129636b47f14deeb" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-3129636b47f14deeb uvc-8053 " data-hspacer="line_with_icon" data-hline_width="120" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="3" data-hborder_color="#f3615a" data-icon_width="18" data-hfixer="10" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3129636b47f14deeb h1" data-responsive-json-new='{"font-size":"desktop:42px;mobile_landscape:34px;","line-height":"desktop:52px;mobile_landscape:44px;"}'><h1 style="font-weight:bold;">THE7 AGENCY. WHO WE ARE</h1></div>
+<div id="ultimate-heading-1322636c54ccdf26a" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-1322636c54ccdf26a uvc-1783 " data-hspacer="line_with_icon" data-hline_width="120" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="3" data-hborder_color="#f3615a" data-icon_width="18" data-hfixer="10" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1322636c54ccdf26a h1" data-responsive-json-new='{"font-size":"desktop:42px;mobile_landscape:34px;","line-height":"desktop:52px;mobile_landscape:44px;"}'><h1 style="font-weight:bold;">THE7 AGENCY. WHO WE ARE</h1></div>
 <div class="uvc-heading-spacer line_with_icon" style="margin-bottom:60px;height:18px;"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="color:#f3615a;font-size:18px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-chevron-down"></i>
@@ -356,10 +395,10 @@ color: inherit;
 </div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1509566305273 vc_row-o-content-middle vc_row-flex">
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6"><div class="vc_column-inner vc_custom_1509566445127"><div class="wpb_wrapper">
-<div id="ultimate-heading-9386636b47f14e317" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-9386636b47f14e317 uvc-8160 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div id="ultimate-heading-2589636c54ccdfb7d" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2589636c54ccdfb7d uvc-4356 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9386636b47f14e317 h2" data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:36px;"}'><h2 style="font-weight:bold;margin-bottom:20px;">We are Seven Digital Agency</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9386636b47f14e317 .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":"desktop:26px;"}' style="font-weight:normal;margin-bottom:20px;">Duis eu libero in lacus venenatis aliquet. Vivamus sagittis tortor et nisi viverra, vel laoreet nisl auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2589636c54ccdfb7d h2" data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:36px;"}'><h2 style="font-weight:bold;margin-bottom:20px;">We are Seven Digital Agency</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2589636c54ccdfb7d .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":"desktop:26px;"}' style="font-weight:normal;margin-bottom:20px;">Duis eu libero in lacus venenatis aliquet. Vivamus sagittis tortor et nisi viverra, vel laoreet nisl auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 <p>Fusce iaculis odio nec urna metus vestibulum &#8211; commodo egestas, feugiat leo eget vulputate.</p>
 <p>Sed elementum, nulla eu varius fermentum, nibh tortor condimentum lacus, at volutpat neque mauris et leo. Donec at neque egestas, feugiat leo eget, ultrices orci. Pellentesque at dui quam. Nullam lorem ipsum &#8211; urna metus, vestibulum ac gravida id, aliquet at nunc.</p>
 </div>
@@ -566,58 +605,58 @@ color: inherit;
 }</style>
 <div class="owl-carousel carousel-shortcode dt-owl-carousel-call carousel-shortcode-id-fc7002304ec2648a650f89f31fb3ecd3 bullets-fill-in reposition-arrows arrows-bg-off dt-arrow-border-on dt-arrow-hover-border-on disable-arrows-hover-bg arrows-hover-bg-off  " data-scroll-mode="1" data-col-num="3" data-wide-col-num="3" data-laptop-col="3" data-h-tablet-columns-num="2" data-v-tablet-columns-num="1" data-phone-columns-num="1" data-auto-height="false" data-col-gap="50" data-stage-padding="0" data-speed="600" data-autoplay="true" data-autoplay_speed="6000" data-arrows="true" data-bullet="true" data-next-icon="icon-ar-013-r" data-prev-icon="icon-ar-013-l">
 <div class="aio-icon-component  vc_custom_1509381093754  accent-icon-color accent-border-color style_1">
-<div id="Info-box-wrap-6293" class="aio-icon-box left-icon">
+<div id="Info-box-wrap-9346" class="aio-icon-box left-icon">
 <div class="aio-icon-left"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon advanced " style="border-style:solid;border-color:;border-width:3px;width:60px;height:60px;line-height:60px;border-radius:0px;font-size:30px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-trophy"></i>
 </div>
 </div></div></div>
 <div class="aio-ibd-block">
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-6293 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="">Premium Quality</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-6293 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Gravida rutrum sit amet &#8211; from pellentesque vestibulum nibh diam, nec rhoncus dolor fringilla non. Maecenas ut libero sapien amet.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-9346 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="">Premium Quality</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-9346 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Gravida rutrum sit amet &#8211; from pellentesque vestibulum nibh diam, nec rhoncus dolor fringilla non. Maecenas ut libero sapien amet.</div> <!-- description -->
 </div> <!-- aio-ibd-block -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component --><div class="aio-icon-component  vc_custom_1509380404017  accent-icon-color accent-border-color style_1">
-<div id="Info-box-wrap-4861" class="aio-icon-box left-icon">
+<div id="Info-box-wrap-9388" class="aio-icon-box left-icon">
 <div class="aio-icon-left"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon advanced " style="background:rgba(255,255,255,0.01);border-style:solid;border-color:;border-width:3px;width:60px;height:60px;line-height:60px;border-radius:0px;font-size:30px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-rocket"></i>
 </div>
 </div></div></div>
 <div class="aio-ibd-block">
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-4861 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="">Innovative Solutions</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-4861 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Lorem gravida rutrum sit amet id turpis. Pellentesque vestibulum nibh diam, nec rhoncus dolor fringilla non!</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-9388 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="">Innovative Solutions</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-9388 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Lorem gravida rutrum sit amet id turpis. Pellentesque vestibulum nibh diam, nec rhoncus dolor fringilla non!</div> <!-- description -->
 </div> <!-- aio-ibd-block -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component --><div class="aio-icon-component  vc_custom_1509380408626  accent-icon-color accent-border-color style_1">
-<div id="Info-box-wrap-2385" class="aio-icon-box left-icon">
+<div id="Info-box-wrap-1013" class="aio-icon-box left-icon">
 <div class="aio-icon-left"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon advanced " style="background:rgba(255,255,255,0.01);border-style:solid;border-color:;border-width:3px;width:60px;height:60px;line-height:60px;border-radius:0px;font-size:30px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-comments"></i>
 </div>
 </div></div></div>
 <div class="aio-ibd-block">
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-2385 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="">Free Consultations</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-2385 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Pellentesque sagittis &#8211; sed ac commodo metus. Proin finibus vulputate felis quis iaculis. Hurry up!</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-1013 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="">Free Consultations</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-1013 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Pellentesque sagittis &#8211; sed ac commodo metus. Proin finibus vulputate felis quis iaculis. Hurry up!</div> <!-- description -->
 </div> <!-- aio-ibd-block -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component --><div class="aio-icon-component  vc_custom_1509381121354  accent-icon-color accent-border-color style_1">
-<div id="Info-box-wrap-8536" class="aio-icon-box left-icon">
+<div id="Info-box-wrap-7923" class="aio-icon-box left-icon">
 <div class="aio-icon-left"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon advanced " style="border-style:solid;border-color:;border-width:3px;width:60px;height:60px;line-height:60px;border-radius:0px;font-size:30px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-sitemap"></i>
 </div>
 </div></div></div>
 <div class="aio-ibd-block">
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-8536 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="">Multiple Strategies</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-8536 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Gravida rutrum sit amet id turpis. Pellentesque vestibulum nibh diam, nec rhoncus dolor fringilla non. Maecenas ut libero sapien.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-7923 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="">Multiple Strategies</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-7923 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Gravida rutrum sit amet id turpis. Pellentesque vestibulum nibh diam, nec rhoncus dolor fringilla non. Maecenas ut libero sapien.</div> <!-- description -->
 </div> <!-- aio-ibd-block -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component --><div class="aio-icon-component  vc_custom_1509380418290  accent-icon-color accent-border-color style_1">
-<div id="Info-box-wrap-9526" class="aio-icon-box left-icon">
+<div id="Info-box-wrap-2993" class="aio-icon-box left-icon">
 <div class="aio-icon-left"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon advanced " style="background:rgba(255,255,255,0.01);border-style:solid;border-color:;border-width:3px;width:60px;height:60px;line-height:60px;border-radius:0px;font-size:30px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-group users"></i>
 </div>
 </div></div></div>
 <div class="aio-ibd-block">
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-9526 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="">Experienced Team</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-9526 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Duis eleifend nisl in libero pellentesque sagittis. Sed ac commodo metus. Proin finibus vulputate felis quis iaculis.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-2993 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="">Experienced Team</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-2993 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Duis eleifend nisl in libero pellentesque sagittis. Sed ac commodo metus. Proin finibus vulputate felis quis iaculis.</div> <!-- description -->
 </div> <!-- aio-ibd-block -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component -->
@@ -625,8 +664,8 @@ color: inherit;
 </div></div></div></div>
 <div id="benefits" data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_custom_1509462149155 vc_row-has-fill vc_row-no-padding vc_row-o-equal-height vc_row-flex">
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6"><div class="vc_column-inner vc_custom_1509350239419"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-10 vc_col-lg-offset-2 vc_col-lg-8 vc_col-md-offset-1 vc_col-md-10 vc_col-sm-offset-1"><div class="vc_column-inner vc_custom_1509347144158"><div class="wpb_wrapper">
-<div id="ultimate-heading-2601636b47f4b09d4" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2601636b47f4b09d4 uvc-3594 " data-hspacer="line_with_icon" data-hline_width="120" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="3" data-hborder_color="#f3615a" data-icon_width="18" data-hfixer="10" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2601636b47f4b09d4 h1" data-responsive-json-new='{"font-size":"desktop:42px;mobile_landscape:34px;","line-height":"desktop:52px;mobile_landscape:44px;"}'><h1 style="font-weight:bold;">WHY CHOOSE US</h1></div>
+<div id="ultimate-heading-1166636c54cd05aff" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-1166636c54cd05aff uvc-8096 " data-hspacer="line_with_icon" data-hline_width="120" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="3" data-hborder_color="#f3615a" data-icon_width="18" data-hfixer="10" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1166636c54cd05aff h1" data-responsive-json-new='{"font-size":"desktop:42px;mobile_landscape:34px;","line-height":"desktop:52px;mobile_landscape:44px;"}'><h1 style="font-weight:bold;">WHY CHOOSE US</h1></div>
 <div class="uvc-heading-spacer line_with_icon" style="margin-bottom:40px;height:18px;"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="color:#f3615a;font-size:18px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-chevron-down"></i>
@@ -640,36 +679,36 @@ color: inherit;
 		</div>
 	</div>
 <div class="aio-icon-component  vc_custom_1509381135221  accent-icon-color accent-border-color style_1">
-<div id="Info-box-wrap-7194" class="aio-icon-box left-icon">
+<div id="Info-box-wrap-6453" class="aio-icon-box left-icon">
 <div class="aio-icon-left"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon advanced " style="border-style:solid;border-color:;border-width:3px;width:60px;height:60px;line-height:60px;border-radius:0px;font-size:30px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-child"></i>
 </div>
 </div></div></div>
 <div class="aio-ibd-block">
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-7194 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="">Individual Approach</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-7194 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Gravida rutrum sit amet dolor from pellentesque vestibulum nibh diam, nec rhoncus dolor fringilla non.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-6453 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="">Individual Approach</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-6453 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Gravida rutrum sit amet dolor from pellentesque vestibulum nibh diam, nec rhoncus dolor fringilla non.</div> <!-- description -->
 </div> <!-- aio-ibd-block -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component --><div class="aio-icon-component  vc_custom_1509381152837  accent-icon-color accent-border-color style_1">
-<div id="Info-box-wrap-9499" class="aio-icon-box left-icon">
+<div id="Info-box-wrap-8129" class="aio-icon-box left-icon">
 <div class="aio-icon-left"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon advanced " style="border-style:solid;border-color:;border-width:3px;width:60px;height:60px;line-height:60px;border-radius:0px;font-size:30px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-cogs gears"></i>
 </div>
 </div></div></div>
 <div class="aio-ibd-block">
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-9499 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="">Modern Technologies</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-9499 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Gravida rutrum sit amet &#8211; from  diam, nec rhoncus dolor fringilla non libero sapien amet.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-8129 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="">Modern Technologies</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-8129 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Gravida rutrum sit amet &#8211; from  diam, nec rhoncus dolor fringilla non libero sapien amet.</div> <!-- description -->
 </div> <!-- aio-ibd-block -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component --><div class="aio-icon-component  vc_custom_1509381172263  accent-icon-color accent-border-color style_1">
-<div id="Info-box-wrap-2063" class="aio-icon-box left-icon">
+<div id="Info-box-wrap-3886" class="aio-icon-box left-icon">
 <div class="aio-icon-left"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon advanced " style="border-style:solid;border-color:;border-width:3px;width:60px;height:60px;line-height:60px;border-radius:0px;font-size:30px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-cubes"></i>
 </div>
 </div></div></div>
 <div class="aio-ibd-block">
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-2063 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="">Complex Sollutions</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-2063 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Pellentesque vestibulum nibh diam, nec rhoncus dolor fringilla non. Maecenas ut libero sapien amet.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-3886 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="">Complex Sollutions</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-3886 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Pellentesque vestibulum nibh diam, nec rhoncus dolor fringilla non. Maecenas ut libero sapien amet.</div> <!-- description -->
 </div> <!-- aio-ibd-block -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component -->
@@ -678,24 +717,24 @@ color: inherit;
 </div>
 <div class="vc_row-full-width vc_clearfix"></div>
 <div class="vc_row wpb_row vc_row-fluid vc_custom_1509381493624"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-1 vc_col-lg-10 vc_col-md-offset-1 vc_col-md-10 vc_col-sm-offset-0"><div class="vc_column-inner"><div class="wpb_wrapper">
-<div id="ultimate-heading-9849636b47f4b4c99" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-9849636b47f4b4c99 uvc-9355 " data-hspacer="line_with_icon" data-hline_width="120" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="3" data-hborder_color="#f3615a" data-icon_width="18" data-hfixer="10" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9849636b47f4b4c99 h2" data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:36px;"}'><h2 style="font-weight:bold;color:#f3615a;">Limited Time Offer!</h2></div>
+<div id="ultimate-heading-4472636c54cd06652" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-4472636c54cd06652 uvc-9024 " data-hspacer="line_with_icon" data-hline_width="120" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="3" data-hborder_color="#f3615a" data-icon_width="18" data-hfixer="10" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4472636c54cd06652 h2" data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:36px;"}'><h2 style="font-weight:bold;color:#f3615a;">Limited Time Offer!</h2></div>
 <div class="uvc-heading-spacer line_with_icon" style="margin-bottom:30px;height:18px;"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="color:#f3615a;font-size:18px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-chevron-down"></i>
 </div>
 </div></div></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9849636b47f4b4c99 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:42px;mobile_landscape:34px;mobile:26px;","line-height":"desktop:52px;mobile_landscape:44px;mobile:36px;"}' style="font-weight:bold;color:#ffffff;margin-bottom:40px;">Hurry up! Contact us today ang get 100% free first online consultation!</div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4472636c54cd06652 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:42px;mobile_landscape:34px;mobile:26px;","line-height":"desktop:52px;mobile_landscape:44px;mobile:36px;"}' style="font-weight:bold;color:#ffffff;margin-bottom:40px;">Hurry up! Contact us today ang get 100% free first online consultation!</div>
 </div>
-<div class=" vc_custom_1512303887206 ubtn-ctn-center anchor-link"><a class="ubtn-link ult-adjust-bottom-margin ubtn-center ubtn-custom anchor-link" href="#!/contact"><button type="button" id="ubtn-2247" class="ubtn ult-adjust-bottom-margin ult-responsive ubtn-custom ubtn-no-hover-bg  none  ubtn-center   tooltip-636b47f4b4d02" data-hover="#f3615a" data-border-color="#f3615a" data-bg="" data-hover-bg="#ffffff" data-border-hover="#ffffff" data-shadow-hover="" data-shadow-click="none" data-shadow="" data-shd-shadow="" data-ultimate-target="#ubtn-2247" data-responsive-json-new='{"font-size":"desktop:26px;mobile_landscape:20px;","line-height":"desktop:26px;mobile_landscape:30px;"}' style="font-weight:bold;width:500px;min-height:70px;padding:10px 30px;border-radius:0px;border-width:3px;border-color:#f3615a;border-style:solid;color: #f3615a;"><span class="ubtn-hover" style="background-color:#ffffff"></span><span class="ubtn-data ubtn-text ">GET FREE CONSULTATION</span></button></a></div>
+<div class=" vc_custom_1512303887206 ubtn-ctn-center anchor-link"><a class="ubtn-link ult-adjust-bottom-margin ubtn-center ubtn-custom anchor-link" href="#!/contact"><button type="button" id="ubtn-5564" class="ubtn ult-adjust-bottom-margin ult-responsive ubtn-custom ubtn-no-hover-bg  none  ubtn-center   tooltip-636c54cd066ae" data-hover="#f3615a" data-border-color="#f3615a" data-bg="" data-hover-bg="#ffffff" data-border-hover="#ffffff" data-shadow-hover="" data-shadow-click="none" data-shadow="" data-shd-shadow="" data-ultimate-target="#ubtn-5564" data-responsive-json-new='{"font-size":"desktop:26px;mobile_landscape:20px;","line-height":"desktop:26px;mobile_landscape:30px;"}' style="font-weight:bold;width:500px;min-height:70px;padding:10px 30px;border-radius:0px;border-width:3px;border-color:#f3615a;border-style:solid;color: #f3615a;"><span class="ubtn-hover" style="background-color:#ffffff"></span><span class="ubtn-data ubtn-text ">GET FREE CONSULTATION</span></button></a></div>
 </div></div></div></div>
 <!-- Row Backgrounds --><div class="upb_grad" data-grad="background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZGllbnQiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMCUiIHkyPSIxMDAlIj48c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjojMjYwNjMzOyIgLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiNFQzYxNUQ7IiAvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IGZpbGw9InVybCgjZ3JhZGllbnQpIiBoZWlnaHQ9IjEwMCUiIHdpZHRoPSIxMDAlIiAvPjwvc3ZnPg==);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #260633), color-stop(100%, #EC615D));background: -moz-linear-gradient(left,#260633 0%,#EC615D 100%);background: -webkit-linear-gradient(left,#260633 0%,#EC615D 100%);background: -o-linear-gradient(left,#260633 0%,#EC615D 100%);background: -ms-linear-gradient(left,#260633 0%,#EC615D 100%);background: linear-gradient(left,#260633 0%,#EC615D 100%);" data-bg-override="ex-full" data-upb-overlay-color="" data-upb-bg-animation="" data-fadeout="" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false" data-custom-vc-row="" data-vc="6.8.0" data-is_old_vc="" data-theme-support="" data-overlay="false" data-overlay-color="" data-overlay-pattern="" data-overlay-pattern-opacity="" data-overlay-pattern-size=""></div>
 <div id="testimonials" data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_row-no-padding vc_row-o-equal-height vc_row-flex">
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6 vc_col-has-fill"><div class="vc_column-inner vc_custom_1509563207566"><div class="wpb_wrapper"></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6 vc_col-has-fill"><div class="vc_column-inner vc_custom_1509870213257"><div class="wpb_wrapper">
 <div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-10 vc_col-lg-offset-2 vc_col-lg-8 vc_col-md-offset-1 vc_col-md-10 vc_col-sm-offset-1"><div class="vc_column-inner vc_custom_1509994187172"><div class="wpb_wrapper">
-<div id="ultimate-heading-1984636b47f4c688b" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-1984636b47f4c688b uvc-8129 " data-hspacer="line_with_icon" data-hline_width="120" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="3" data-hborder_color="#f3615a" data-icon_width="18" data-hfixer="10" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1984636b47f4c688b h2" data-responsive-json-new='{"font-size":"desktop:42px;mobile_landscape:34px;","line-height":"desktop:52px;mobile_landscape:44px;"}'><h2 style="font-weight:bold;margin-bottom:0px;">WHAT CLIENTS SAY</h2></div>
+<div id="ultimate-heading-3897636c54cd1c5a1" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-3897636c54cd1c5a1 uvc-1547 " data-hspacer="line_with_icon" data-hline_width="120" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="3" data-hborder_color="#f3615a" data-icon_width="18" data-hfixer="10" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3897636c54cd1c5a1 h2" data-responsive-json-new='{"font-size":"desktop:42px;mobile_landscape:34px;","line-height":"desktop:52px;mobile_landscape:44px;"}'><h2 style="font-weight:bold;margin-bottom:0px;">WHAT CLIENTS SAY</h2></div>
 <div class="uvc-heading-spacer line_with_icon" style="margin-bottom:50px;height:18px;"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="color:#f3615a;font-size:18px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-chevron-down"></i>
@@ -1098,8 +1137,8 @@ color: inherit;
 </div>
 <div class="vc_row-full-width vc_clearfix"></div>
 <div id="services" class="vc_row wpb_row vc_row-fluid vc_custom_1509562983357 vc_row-o-equal-height vc_row-o-content-middle vc_row-flex"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-0 vc_col-lg-12 vc_col-md-offset-0 vc_col-md-12 vc_col-sm-offset-0 vc_col-xs-12"><div class="vc_column-inner vc_custom_1499347634300"><div class="wpb_wrapper">
-<div id="ultimate-heading-2929636b47fa64fb9" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2929636b47fa64fb9 uvc-5312 " data-hspacer="line_with_icon" data-hline_width="120" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="3" data-hborder_color="#f3615a" data-icon_width="18" data-hfixer="10" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2929636b47fa64fb9 h2" data-responsive-json-new='{"font-size":"desktop:42px;mobile_landscape:34px;","line-height":"desktop:52px;mobile_landscape:44px;"}'><h2 style="font-weight:bold;color:#ffffff;">OUR SERVICES</h2></div>
+<div id="ultimate-heading-7172636c54cd4dc14" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-7172636c54cd4dc14 uvc-9437 " data-hspacer="line_with_icon" data-hline_width="120" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="3" data-hborder_color="#f3615a" data-icon_width="18" data-hfixer="10" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-7172636c54cd4dc14 h2" data-responsive-json-new='{"font-size":"desktop:42px;mobile_landscape:34px;","line-height":"desktop:52px;mobile_landscape:44px;"}'><h2 style="font-weight:bold;color:#ffffff;">OUR SERVICES</h2></div>
 <div class="uvc-heading-spacer line_with_icon" style="margin-bottom:60px;height:18px;"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="color:#f3615a;font-size:18px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-chevron-down"></i>
@@ -1109,73 +1148,73 @@ color: inherit;
 <div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1499850516346 vc_column-gap-20 vc_row-o-equal-height vc_row-flex">
 <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-has-fill"><div class="vc_column-inner vc_custom_1509381751376"><div class="wpb_wrapper">
 <div class="aio-icon-component  vc_custom_1509380370392  accent-icon-color accent-border-color style_1">
-<div id="Info-box-wrap-3637" class="aio-icon-box top-icon">
+<div id="Info-box-wrap-6441" class="aio-icon-box top-icon">
 <div class="aio-icon-top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon advanced " style="color:#000000;border-style:solid;border-color:#333333;border-width:3px;width:60px;height:60px;line-height:60px;border-radius:0px;font-size:30px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-desktop"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-3637 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:36px;"}' style="font-weight:bold;color:#ffffff;">Web Design</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-3637 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}' style="color:#ffffff;">Proin nisl risus, tincidunt sed rutrum nec, imperdiet ac enim. Morbi faucibusd ac – lorem glavrida liquam erat volutpat.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-6441 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:36px;"}' style="font-weight:bold;color:#ffffff;">Web Design</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-6441 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}' style="color:#ffffff;">Proin nisl risus, tincidunt sed rutrum nec, imperdiet ac enim. Morbi faucibusd ac – lorem glavrida liquam erat volutpat.</div> <!-- description -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component --><div class="hr-thin style-line accent-border-color" style="width: 60px;border-top-width: 3px;"></div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-has-fill"><div class="vc_column-inner vc_custom_1509348746429"><div class="wpb_wrapper">
 <div class="aio-icon-component  vc_custom_1509380365574  accent-icon-color accent-border-color style_1">
-<div id="Info-box-wrap-5134" class="aio-icon-box top-icon">
+<div id="Info-box-wrap-5838" class="aio-icon-box top-icon">
 <div class="aio-icon-top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon advanced " style="color:#333;border-style:solid;border-color:;border-width:3px;width:60px;height:60px;line-height:60px;border-radius:0px;font-size:30px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-shopping-basket"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-5134 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:36px;"}' style="font-weight:bold;">Ecommerce Sollutions</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-5134 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>From amet glavrida roin nisl risus lore ipsum, tincidunt sed rutrum nec, imperdiet ac enim. Morbi faucibusd ac – lorem glavrida liquam erat volutpat.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-5838 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:36px;"}' style="font-weight:bold;">Ecommerce Sollutions</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-5838 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>From amet glavrida roin nisl risus lore ipsum, tincidunt sed rutrum nec, imperdiet ac enim. Morbi faucibusd ac – lorem glavrida liquam erat volutpat.</div> <!-- description -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component --><div class="hr-thin style-line accent-border-color" style="width: 60px;border-top-width: 3px;"></div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-has-fill"><div class="vc_column-inner vc_custom_1509381757325"><div class="wpb_wrapper">
 <div class="aio-icon-component  vc_custom_1509380360237  accent-icon-color accent-border-color style_1">
-<div id="Info-box-wrap-1067" class="aio-icon-box top-icon">
+<div id="Info-box-wrap-6421" class="aio-icon-box top-icon">
 <div class="aio-icon-top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon advanced " style="color:#333;border-style:solid;border-color:;border-width:3px;width:60px;height:60px;line-height:60px;border-radius:0px;font-size:30px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-envelope"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-1067 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:36px;"}' style="font-weight:bold;color:#ffffff;">Email Marketing</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-1067 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}' style="color:#ffffff;">Totincidunt sed rutrum nec, imperdiet ac enim. Morbi faucibusd ac – lorem glavrida liquam erat volutpat glavrida lorem.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-6421 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:36px;"}' style="font-weight:bold;color:#ffffff;">Email Marketing</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-6421 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}' style="color:#ffffff;">Totincidunt sed rutrum nec, imperdiet ac enim. Morbi faucibusd ac – lorem glavrida liquam erat volutpat glavrida lorem.</div> <!-- description -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component --><div class="hr-thin style-line accent-border-color" style="width: 60px;border-top-width: 3px;"></div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-has-fill"><div class="vc_column-inner vc_custom_1499417257639"><div class="wpb_wrapper">
 <div class="aio-icon-component  vc_custom_1509380335243  accent-icon-color accent-border-color style_1">
-<div id="Info-box-wrap-2298" class="aio-icon-box top-icon">
+<div id="Info-box-wrap-8848" class="aio-icon-box top-icon">
 <div class="aio-icon-top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon advanced " style="color:#333;border-style:solid;border-color:;border-width:3px;width:60px;height:60px;line-height:60px;border-radius:0px;font-size:30px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-shield"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-2298 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}' style="font-weight:bold;">Security Services</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-2298 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Lorem ipsum  risus, tincidunt sed rutrum nec, imperdiet ac enim. Morbi faucibusd ac – lorem glavrida liquam erat volutpat.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-8848 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}' style="font-weight:bold;">Security Services</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-8848 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Lorem ipsum  risus, tincidunt sed rutrum nec, imperdiet ac enim. Morbi faucibusd ac – lorem glavrida liquam erat volutpat.</div> <!-- description -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component --><div class="hr-thin style-line accent-border-color" style="width: 60px;border-top-width: 3px;"></div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-has-fill"><div class="vc_column-inner vc_custom_1509381763981"><div class="wpb_wrapper">
 <div class="aio-icon-component  vc_custom_1509380311661  accent-icon-color accent-border-color style_1">
-<div id="Info-box-wrap-8333" class="aio-icon-box top-icon">
+<div id="Info-box-wrap-2516" class="aio-icon-box top-icon">
 <div class="aio-icon-top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon advanced " style="color:#333;border-style:solid;border-color:;border-width:3px;width:60px;height:60px;line-height:60px;border-radius:0px;font-size:30px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-list-alt"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-8333 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:36px;"}' style="font-weight:bold;color:#ffffff;">Programming</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-8333 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}' style="color:#ffffff;">From loin nisl risus lore ipsum, tincidunt sed rutrum nec, imperdiet ac enim. Morbi faucibusd ac – lorem glavrida liquam erat volutpat.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-2516 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:36px;"}' style="font-weight:bold;color:#ffffff;">Programming</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-2516 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}' style="color:#ffffff;">From loin nisl risus lore ipsum, tincidunt sed rutrum nec, imperdiet ac enim. Morbi faucibusd ac – lorem glavrida liquam erat volutpat.</div> <!-- description -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component --><div class="hr-thin style-line accent-border-color" style="width: 60px;border-top-width: 3px;"></div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-4 vc_col-has-fill"><div class="vc_column-inner vc_custom_1499353533362"><div class="wpb_wrapper">
 <div class="aio-icon-component  vc_custom_1509380288376  accent-icon-color accent-border-color style_1">
-<div id="Info-box-wrap-7369" class="aio-icon-box top-icon">
+<div id="Info-box-wrap-9384" class="aio-icon-box top-icon">
 <div class="aio-icon-top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon advanced " style="color:#333;border-style:solid;border-color:;border-width:3px;width:60px;height:60px;line-height:60px;border-radius:0px;font-size:30px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-bar-chart bar-chart-o"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-7369 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}' style="font-weight:bold;">SEO</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-7369 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Proin nisl dolor: tincidunt sed rutrum nec, imperdiet ac enim. Morbi faucibusd ac – lorem glavrida liquam erat volutpat.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-9384 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}' style="font-weight:bold;">SEO</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-9384 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Proin nisl dolor: tincidunt sed rutrum nec, imperdiet ac enim. Morbi faucibusd ac – lorem glavrida liquam erat volutpat.</div> <!-- description -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component --><div class="hr-thin style-line accent-border-color" style="width: 60px;border-top-width: 3px;"></div>
 </div></div></div>
@@ -1183,8 +1222,8 @@ color: inherit;
 </div></div></div></div>
 <!-- Row Backgrounds --><div class="upb_bg_img" data-ultimate-bg="url(/wp-content/uploads/sites/39/2017/10/bg003.jpg)" data-image-id="id^633|url^/wp-content/uploads/sites/39/2017/10/bg003.jpg|caption^null|alt^null|title^bg003|description^null" data-ultimate-bg-style="vcpb-vz-jquery" data-bg-img-repeat="no-repeat" data-bg-img-size="cover" data-bg-img-position="" data-parallx_sense="30" data-bg-override="ex-full" data-bg_img_attach="scroll" data-upb-overlay-color="rgba(26,0,33,0.9)" data-upb-bg-animation="" data-fadeout="" data-bg-animation="left-animation" data-bg-animation-type="h" data-animation-repeat="repeat" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false" data-custom-vc-row="" data-vc="6.8.0" data-is_old_vc="" data-theme-support="" data-overlay="true" data-overlay-color="rgba(26,0,33,0.9)" data-overlay-pattern="" data-overlay-pattern-opacity="0.8" data-overlay-pattern-size="" data-overlay-pattern-attachment="scroll"></div>
 <div id="portfolio" class="vc_row wpb_row vc_row-fluid vc_custom_1509382298518"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
-<div id="ultimate-heading-3080636b47fa980a7" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-3080636b47fa980a7 uvc-5425 " data-hspacer="line_with_icon" data-hline_width="120" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="3" data-hborder_color="#f3615a" data-icon_width="18" data-hfixer="10" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3080636b47fa980a7 h2" data-responsive-json-new='{"font-size":"desktop:52px;mobile_landscape:34px;","line-height":"desktop:62px;mobile_landscape:44px;"}'><h2 style="font-weight:bold;margin-bottom:0px;">CHECK OUT OUR PROJECTS!</h2></div>
+<div id="ultimate-heading-5879636c54cd4f982" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-5879636c54cd4f982 uvc-3192 " data-hspacer="line_with_icon" data-hline_width="120" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="3" data-hborder_color="#f3615a" data-icon_width="18" data-hfixer="10" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5879636c54cd4f982 h2" data-responsive-json-new='{"font-size":"desktop:52px;mobile_landscape:34px;","line-height":"desktop:62px;mobile_landscape:44px;"}'><h2 style="font-weight:bold;margin-bottom:0px;">CHECK OUT OUR PROJECTS!</h2></div>
 <div class="uvc-heading-spacer line_with_icon" style="margin-bottom:40px;height:18px;"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="color:#f3615a;font-size:18px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-chevron-down"></i>
@@ -1580,33 +1619,33 @@ color: inherit;
 </div>
 </div></div></div></div>
 <div class="vc_row wpb_row vc_row-fluid vc_custom_1509563918630 vc_row-o-equal-height vc_row-flex">
-<div class="wpb_column vc_column_container vc_col-sm-6 vc_hidden-sm vc_hidden-xs"><div class="vc_column-inner vc_custom_1509564154759"><div class="wpb_wrapper"><div id="ultimate-heading-2046636b480c96332" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2046636b480c96332 uvc-1905 accent-title-color" data-hspacer="no_spacer" data-halign="right" style="text-align:right">
+<div class="wpb_column vc_column_container vc_col-sm-6 vc_hidden-sm vc_hidden-xs"><div class="vc_column-inner vc_custom_1509564154759"><div class="wpb_wrapper"><div id="ultimate-heading-4443636c54cdc9c0b" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-4443636c54cdc9c0b uvc-2728 accent-title-color" data-hspacer="no_spacer" data-halign="right" style="text-align:right">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2046636b480c96332 h2" data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:36px;"}'><h2 style="font-weight:bold;">Have a project for us? Call us now!</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4443636c54cdc9c0b h2" data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:36px;"}'><h2 style="font-weight:bold;">Have a project for us? Call us now!</h2></div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6 vc_hidden-sm vc_hidden-xs"><div class="vc_column-inner"><div class="wpb_wrapper">
 <div class="aio-icon-component  vc_custom_1511960791062  dt-phone style_1">
-<div id="Info-box-wrap-2825" class="aio-icon-box left-icon">
+<div id="Info-box-wrap-2170" class="aio-icon-box left-icon">
 <div class="aio-icon-left"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon advanced " style="color:#ffffff;border-style:;border-color:#333333;border-width:1px;width:60px;height:60px;line-height:60px;border-radius:500px;font-size:52px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-phone-square"></i>
 </div>
 </div></div></div>
 <div class="aio-ibd-block">
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-2825 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:48px;tablet:42px;mobile_landscape:32px;","line-height":"desktop:58px;tablet:52px;mobile_landscape:42px;"}' style="font-weight:bold;color:#ffffff;">001 234 56 78</h3></div> <!-- header -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-2170 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:48px;tablet:42px;mobile_landscape:32px;","line-height":"desktop:58px;tablet:52px;mobile_landscape:42px;"}' style="font-weight:bold;color:#ffffff;">001 234 56 78</h3></div> <!-- header -->
 </div> <!-- aio-ibd-block -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component -->
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_hidden-lg vc_hidden-md"><div class="vc_column-inner"><div class="wpb_wrapper">
 <div class="aio-icon-component  vc_custom_1511960797943  accent-subtitle-color dt-phone style_1">
-<div id="Info-box-wrap-4841" class="aio-icon-box top-icon">
+<div id="Info-box-wrap-5284" class="aio-icon-box top-icon">
 <div class="aio-icon-top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon advanced " style="color:#ffffff;border-style:;border-color:#333333;border-width:1px;width:60px;height:60px;line-height:60px;border-radius:500px;font-size:52px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-phone-square"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-4841 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:42px;mobile_landscape:34px;","line-height":"desktop:42px;mobile_landscape:34px;"}' style="font-weight:bold;color:#ffffff;">001 234 56 78</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-4841 .aio-icon-description" data-responsive-json-new='{"font-size":"desktop:26px;mobile_landscape:20px;","line-height":"desktop:36px;mobile_landscape:30px;"}' style="font-weight:bold;">Have a project for us?<br>
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-5284 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:42px;mobile_landscape:34px;","line-height":"desktop:42px;mobile_landscape:34px;"}' style="font-weight:bold;color:#ffffff;">001 234 56 78</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-5284 .aio-icon-description" data-responsive-json-new='{"font-size":"desktop:26px;mobile_landscape:20px;","line-height":"desktop:36px;mobile_landscape:30px;"}' style="font-weight:bold;">Have a project for us?<br>
 Call us now!</div> <!-- description -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component -->
@@ -1635,10 +1674,10 @@ Call us now!</div> <!-- description -->
   box-shadow: none;
 }</style>
 <div class="shortcode-single-image-wrap shortcode-single-image-51a833c65d6c5fcd8a14e97244049777 alignnone  vc_custom_1509376012440 enable-bg-rollover dt-icon-bg-off"><div class="shortcode-single-image"><div class="fancy-media-wrap  layzr-bg" style="border-radius:500px;"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20220%20220&#39;%2F%3E" data-src="/wp-content/uploads/sites/39/2017/10/t002-220x220.jpg" data-srcset="/wp-content/uploads/sites/39/2017/10/t002-220x220.jpg 220w, /wp-content/uploads/sites/39/2017/10/t002-440x440.jpg 440w" width="220" height="220" data-dt-location="/site39/dt_testimonials/richard-brown/t002/" style="border-radius:500px;"></div></div></div>
-<div id="ultimate-heading-7777636b480e02d8c" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-7777636b480e02d8c uvc-2830 accent-subtitle-color" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-4211636c54cde05f8" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-4211636c54cde05f8 uvc-1645 accent-subtitle-color" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-7777636b480e02d8c h2" data-responsive-json-new='{"font-size":"desktop:42px;mobile_landscape:34px;","line-height":"desktop:52px;mobile_landscape:44px;"}'><h2 style="font-weight:bold;margin-bottom:0px;">RICHARD SMITH</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-7777636b480e02d8c .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}' style="font-weight:bold;margin-bottom:25px;">Economist. Agency owner.</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4211636c54cde05f8 h2" data-responsive-json-new='{"font-size":"desktop:42px;mobile_landscape:34px;","line-height":"desktop:52px;mobile_landscape:44px;"}'><h2 style="font-weight:bold;margin-bottom:0px;">RICHARD SMITH</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4211636c54cde05f8 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}' style="font-weight:bold;margin-bottom:25px;">Economist. Agency owner.</div>
 </div>
 	<div class="wpb_text_column wpb_content_element  vc_custom_1509376037077">
 		<div class="wpb_wrapper">
@@ -1646,14 +1685,14 @@ Call us now!</div> <!-- description -->
 
 		</div>
 	</div>
-<div id="ultimate-heading-6850636b480e02f36" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-6850636b480e02f36 uvc-9009 accent-subtitle-color uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-9093636c54cde1429" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-9093636c54cde1429 uvc-7888 accent-subtitle-color uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6850636b480e02f36 .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":""}' style="font-weight:bold;margin-bottom:10px;">
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9093636c54cde1429 .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":""}' style="font-weight:bold;margin-bottom:10px;">
 <i class="fa fa-phone" style="padding-right: 5px; margin-left: -10px;"></i>001 234 56 78</div>
 </div>
-<div id="ultimate-heading-3868636b480e02f80" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-3868636b480e02f80 uvc-6160 accent-subtitle-color uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-4784636c54cde1481" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-4784636c54cde1481 uvc-341 accent-subtitle-color uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3868636b480e02f80 .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":""}' style="font-weight:bold;margin-bottom:15px;">
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4784636c54cde1481 .uvc-sub-heading " data-responsive-json-new='{"font-size":"","line-height":""}' style="font-weight:bold;margin-bottom:15px;">
 <i class="fa fa-envelope" style="padding-right: 10px; margin-left: -10px;"></i>richard@dream-theme.com</div>
 </div>
 <style type="text/css" data-type="the7_shortcodes-inline-css">.dt-shortcode-soc-icons.soc-icons-374e62cc844a3c88ad2d19bbc1626215 a {
@@ -1823,8 +1862,8 @@ Call us now!</div> <!-- description -->
 </div>
 <div class="vc_row-full-width vc_clearfix"></div>
 <div class="vc_row wpb_row vc_row-fluid vc_custom_1509377468886"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
-<div id="ultimate-heading-5363636b480e33bf3" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-5363636b480e33bf3 uvc-5404 " data-hspacer="line_with_icon" data-hline_width="120" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="3" data-hborder_color="#f3615a" data-icon_width="18" data-hfixer="10" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5363636b480e33bf3 h2" data-responsive-json-new='{"font-size":"desktop:42px;mobile_landscape:34px;","line-height":"desktop:52px;mobile_landscape:44px;"}'><h2 style="font-weight:bold;margin-bottom:0px;">OUR SPECIALISTS</h2></div>
+<div id="ultimate-heading-9539636c54cde44f7" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-9539636c54cde44f7 uvc-1470 " data-hspacer="line_with_icon" data-hline_width="120" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="3" data-hborder_color="#f3615a" data-icon_width="18" data-hfixer="10" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9539636c54cde44f7 h2" data-responsive-json-new='{"font-size":"desktop:42px;mobile_landscape:34px;","line-height":"desktop:52px;mobile_landscape:44px;"}'><h2 style="font-weight:bold;margin-bottom:0px;">OUR SPECIALISTS</h2></div>
 <div class="uvc-heading-spacer line_with_icon" style="margin-bottom:60px;height:18px;"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="color:#f3615a;font-size:18px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-chevron-down"></i>
@@ -2119,8 +2158,8 @@ Call us now!</div> <!-- description -->
 </div>
 </div></div></div></div>
 <div id="process" class="vc_row wpb_row vc_row-fluid vc_custom_1509563015730 vc_row-o-equal-height vc_row-o-content-middle vc_row-flex">
-<div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-0 vc_col-lg-12 vc_col-md-offset-0 vc_col-md-12 vc_col-sm-offset-0 vc_col-xs-12"><div class="vc_column-inner vc_custom_1499347634300"><div class="wpb_wrapper"><div id="ultimate-heading-7272636b480ee0ffb" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-7272636b480ee0ffb uvc-4573 " data-hspacer="line_with_icon" data-hline_width="120" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="3" data-hborder_color="#f3615a" data-icon_width="18" data-hfixer="10" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-7272636b480ee0ffb h2" data-responsive-json-new='{"font-size":"desktop:42px;mobile_landscape:34px;","line-height":"desktop:52px;mobile_landscape:44px;"}'><h2 style="font-weight:bold;color:#ffffff;">OUR PROCESS</h2></div>
+<div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-0 vc_col-lg-12 vc_col-md-offset-0 vc_col-md-12 vc_col-sm-offset-0 vc_col-xs-12"><div class="vc_column-inner vc_custom_1499347634300"><div class="wpb_wrapper"><div id="ultimate-heading-7621636c54ce6848c" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-7621636c54ce6848c uvc-9952 " data-hspacer="line_with_icon" data-hline_width="120" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="3" data-hborder_color="#f3615a" data-icon_width="18" data-hfixer="10" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-7621636c54ce6848c h2" data-responsive-json-new='{"font-size":"desktop:42px;mobile_landscape:34px;","line-height":"desktop:52px;mobile_landscape:44px;"}'><h2 style="font-weight:bold;color:#ffffff;">OUR PROCESS</h2></div>
 <div class="uvc-heading-spacer line_with_icon" style="margin-bottom:60px;height:18px;"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="color:#f3615a;font-size:18px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-chevron-down"></i>
@@ -2130,81 +2169,81 @@ Call us now!</div> <!-- description -->
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-2 vc_col-lg-8 vc_col-md-offset-2 vc_col-md-8 vc_col-sm-offset-0 vc_hidden-xs"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="smile_icon_list_wrap ult_info_list_container ult-adjust-bottom-margin   vc_custom_1509382756083"><ul class="smile_icon_list top square with_bg">
 <li class="icon_list_item" style=" font-size:90px;">
 <div class="icon_list_icon" data-animation="" data-animation-delay="03" style="font-size:30px;border-width:3px;border-style:solid;background:#f3615a;color:#ffffff;border-color:#f3615a;"><i class="icomoon-font-awesome-14x14-phone-square"></i></div>
-<div class="icon_description" id="Info-list-wrap-9503" style="font-size:30px;">
-<h3 class="ult-responsive info-list-heading" data-ultimate-target="#Info-list-wrap-9503 h3" data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:26px;"}' style="color:#f3615a;">1.</h3>
-<div class="icon_description_text ult-responsive" data-ultimate-target="#Info-list-wrap-9503 .icon_description_text" data-responsive-json-new='{"font-size":"desktop:13px;","line-height":"desktop:18px;"}'></div>
+<div class="icon_description" id="Info-list-wrap-8257" style="font-size:30px;">
+<h3 class="ult-responsive info-list-heading" data-ultimate-target="#Info-list-wrap-8257 h3" data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:26px;"}' style="color:#f3615a;">1.</h3>
+<div class="icon_description_text ult-responsive" data-ultimate-target="#Info-list-wrap-8257 .icon_description_text" data-responsive-json-new='{"font-size":"desktop:13px;","line-height":"desktop:18px;"}'></div>
 </div>
 <div class="icon_list_connector" data-animation="fadeInLeft" data-animation-delay="03" style="border-top-width: 1px;border-top-style: dashed;border-color: #f3615a;"></div>
 </li>
 <li class="icon_list_item" style=" font-size:90px;">
 <div class="icon_list_icon" data-animation="" data-animation-delay="03" style="font-size:30px;border-width:3px;border-style:solid;background:#f3615a;color:#ffffff;border-color:#f3615a;"><i class="icomoon-font-awesome-14x14-list-ol"></i></div>
-<div class="icon_description" id="Info-list-wrap-7757" style="font-size:30px;">
-<h3 class="ult-responsive info-list-heading" data-ultimate-target="#Info-list-wrap-7757 h3" data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:26px;"}' style="color:#f3615a;">2.</h3>
-<div class="icon_description_text ult-responsive" data-ultimate-target="#Info-list-wrap-7757 .icon_description_text" data-responsive-json-new='{"font-size":"desktop:13px;","line-height":"desktop:18px;"}'></div>
+<div class="icon_description" id="Info-list-wrap-6294" style="font-size:30px;">
+<h3 class="ult-responsive info-list-heading" data-ultimate-target="#Info-list-wrap-6294 h3" data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:26px;"}' style="color:#f3615a;">2.</h3>
+<div class="icon_description_text ult-responsive" data-ultimate-target="#Info-list-wrap-6294 .icon_description_text" data-responsive-json-new='{"font-size":"desktop:13px;","line-height":"desktop:18px;"}'></div>
 </div>
 <div class="icon_list_connector" data-animation="fadeInLeft" data-animation-delay="03" style="border-top-width: 1px;border-top-style: dashed;border-color: #f3615a;"></div>
 </li>
 </ul></div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-2 vc_col-lg-8 vc_col-md-offset-2 vc_col-md-8 vc_col-sm-offset-0"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid">
-<div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1509379418786"><div class="wpb_wrapper"><div id="ultimate-heading-4022636b480ee2259" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-4022636b480ee2259 uvc-5261 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1509379418786"><div class="wpb_wrapper"><div id="ultimate-heading-588636c54ce68c1d" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-588636c54ce68c1d uvc-9580 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4022636b480ee2259 h2" data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:36px;"}'><h2 style="font-weight:bold;color:#ffffff;margin-bottom:16px;">First Contact</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4022636b480ee2259 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:28px;"}' style="font-weight:normal;color:#ffffff;">Feugiat leo eget, ultrices orci. Pellentesque at dui quam. Nullam lorem ipsum – urna metus, vestibulum ac gravida id, aliquet at nunc.</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-588636c54ce68c1d h2" data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:36px;"}'><h2 style="font-weight:bold;color:#ffffff;margin-bottom:16px;">First Contact</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-588636c54ce68c1d .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:28px;"}' style="font-weight:normal;color:#ffffff;">Feugiat leo eget, ultrices orci. Pellentesque at dui quam. Nullam lorem ipsum – urna metus, vestibulum ac gravida id, aliquet at nunc.</div>
 </div></div></div></div>
-<div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1509379423147"><div class="wpb_wrapper"><div id="ultimate-heading-5325636b480f02ba7" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-5325636b480f02ba7 uvc-9011 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1509379423147"><div class="wpb_wrapper"><div id="ultimate-heading-2732636c54ce68d5a" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2732636c54ce68d5a uvc-3286 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5325636b480f02ba7 h2" data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:36px;"}'><h2 style="font-weight:bold;color:#ffffff;margin-bottom:15px;">Discussion &amp; Planning</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5325636b480f02ba7 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:28px;"}' style="font-weight:normal;color:#ffffff;">Duis ac turpis a tellus posuere condimentum vitae vitae libero. Curabitur aliquet vitae nulla nec posuere.</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2732636c54ce68d5a h2" data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:36px;"}'><h2 style="font-weight:bold;color:#ffffff;margin-bottom:15px;">Discussion &amp; Planning</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2732636c54ce68d5a .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:28px;"}' style="font-weight:normal;color:#ffffff;">Duis ac turpis a tellus posuere condimentum vitae vitae libero. Curabitur aliquet vitae nulla nec posuere.</div>
 </div></div></div></div>
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-0 vc_hidden-xs"><div class="vc_column-inner vc_custom_1509563525086"><div class="wpb_wrapper"><div class="smile_icon_list_wrap ult_info_list_container ult-adjust-bottom-margin   vc_custom_1509382774810"><ul class="smile_icon_list top square with_bg">
 <li class="icon_list_item" style=" font-size:90px;">
 <div class="icon_list_icon" data-animation="" data-animation-delay="03" style="font-size:30px;border-width:3px;border-style:solid;background:#f3615a;color:#ffffff;border-color:#f3615a;"><i class="icomoon-font-awesome-14x14-suitcase"></i></div>
-<div class="icon_description" id="Info-list-wrap-7310" style="font-size:30px;">
-<h3 class="ult-responsive info-list-heading" data-ultimate-target="#Info-list-wrap-7310 h3" data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:26px;"}' style="color:#f3615a;">3.</h3>
-<div class="icon_description_text ult-responsive" data-ultimate-target="#Info-list-wrap-7310 .icon_description_text" data-responsive-json-new='{"font-size":"desktop:13px;","line-height":"desktop:18px;"}'></div>
+<div class="icon_description" id="Info-list-wrap-2212" style="font-size:30px;">
+<h3 class="ult-responsive info-list-heading" data-ultimate-target="#Info-list-wrap-2212 h3" data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:26px;"}' style="color:#f3615a;">3.</h3>
+<div class="icon_description_text ult-responsive" data-ultimate-target="#Info-list-wrap-2212 .icon_description_text" data-responsive-json-new='{"font-size":"desktop:13px;","line-height":"desktop:18px;"}'></div>
 </div>
 <div class="icon_list_connector" data-animation="fadeInLeft" data-animation-delay="03" style="border-top-width: 1px;border-top-style: dashed;border-color: #f3615a;"></div>
 </li>
 <li class="icon_list_item" style=" font-size:90px;">
 <div class="icon_list_icon" data-animation="" data-animation-delay="03" style="font-size:30px;border-width:3px;border-style:solid;background:#f3615a;color:#ffffff;border-color:#f3615a;"><i class="icomoon-font-awesome-14x14-magic"></i></div>
-<div class="icon_description" id="Info-list-wrap-8286" style="font-size:30px;">
-<h3 class="ult-responsive info-list-heading" data-ultimate-target="#Info-list-wrap-8286 h3" data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:26px;"}' style="color:#f3615a;">4.</h3>
-<div class="icon_description_text ult-responsive" data-ultimate-target="#Info-list-wrap-8286 .icon_description_text" data-responsive-json-new='{"font-size":"desktop:13px;","line-height":"desktop:18px;"}'></div>
+<div class="icon_description" id="Info-list-wrap-2119" style="font-size:30px;">
+<h3 class="ult-responsive info-list-heading" data-ultimate-target="#Info-list-wrap-2119 h3" data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:26px;"}' style="color:#f3615a;">4.</h3>
+<div class="icon_description_text ult-responsive" data-ultimate-target="#Info-list-wrap-2119 .icon_description_text" data-responsive-json-new='{"font-size":"desktop:13px;","line-height":"desktop:18px;"}'></div>
 </div>
 <div class="icon_list_connector" data-animation="fadeInLeft" data-animation-delay="03" style="border-top-width: 1px;border-top-style: dashed;border-color: #f3615a;"></div>
 </li>
 <li class="icon_list_item" style=" font-size:90px;">
 <div class="icon_list_icon" data-animation="" data-animation-delay="03" style="font-size:30px;border-width:3px;border-style:solid;background:#f3615a;color:#ffffff;border-color:#f3615a;"><i class="icomoon-font-awesome-14x14-arrows-alt"></i></div>
-<div class="icon_description" id="Info-list-wrap-2433" style="font-size:30px;">
-<h3 class="ult-responsive info-list-heading" data-ultimate-target="#Info-list-wrap-2433 h3" data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:26px;"}' style="color:#f3615a;">5.</h3>
-<div class="icon_description_text ult-responsive" data-ultimate-target="#Info-list-wrap-2433 .icon_description_text" data-responsive-json-new='{"font-size":"desktop:13px;","line-height":"desktop:18px;"}'></div>
+<div class="icon_description" id="Info-list-wrap-8930" style="font-size:30px;">
+<h3 class="ult-responsive info-list-heading" data-ultimate-target="#Info-list-wrap-8930 h3" data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:26px;"}' style="color:#f3615a;">5.</h3>
+<div class="icon_description_text ult-responsive" data-ultimate-target="#Info-list-wrap-8930 .icon_description_text" data-responsive-json-new='{"font-size":"desktop:13px;","line-height":"desktop:18px;"}'></div>
 </div>
 <div class="icon_list_connector" data-animation="fadeInLeft" data-animation-delay="03" style="border-top-width: 1px;border-top-style: dashed;border-color: #f3615a;"></div>
 </li>
 </ul></div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid">
-<div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1509379436975"><div class="wpb_wrapper"><div id="ultimate-heading-9242636b480f03402" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-9242636b480f03402 uvc-8689 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1509379436975"><div class="wpb_wrapper"><div id="ultimate-heading-6202636c54ce7e839" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-6202636c54ce7e839 uvc-6956 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9242636b480f03402 h2" data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:36px;"}'><h2 style="font-weight:bold;color:#ffffff;margin-bottom:16px;">Final Strategy</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9242636b480f03402 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:28px;"}' style="font-weight:normal;color:#ffffff;">Quisque facilisis fringilla fringilla. Pellentesque fermentum dignissim viverra. Etiam nec nunc est. In vehicula justo vitae ipsum convallis!</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6202636c54ce7e839 h2" data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:36px;"}'><h2 style="font-weight:bold;color:#ffffff;margin-bottom:16px;">Final Strategy</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6202636c54ce7e839 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:28px;"}' style="font-weight:normal;color:#ffffff;">Quisque facilisis fringilla fringilla. Pellentesque fermentum dignissim viverra. Etiam nec nunc est. In vehicula justo vitae ipsum convallis!</div>
 </div></div></div></div>
-<div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1509379441939"><div class="wpb_wrapper"><div id="ultimate-heading-2647636b480f03597" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2647636b480f03597 uvc-1976 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1509379441939"><div class="wpb_wrapper"><div id="ultimate-heading-2972636c54ce7f136" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2972636c54ce7f136 uvc-4598 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2647636b480f03597 h2" data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:36px;"}'><h2 style="font-weight:bold;color:#ffffff;margin-bottom:16px;">Implementation</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2647636b480f03597 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:28px;"}' style="font-weight:normal;color:#ffffff;">Proin nisl risus, tincidunt sed rutrum nec, imperdiet ac enim. Morbi faucibusd ac – lorem glavrida liquam erat volutpat.</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2972636c54ce7f136 h2" data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:36px;"}'><h2 style="font-weight:bold;color:#ffffff;margin-bottom:16px;">Implementation</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2972636c54ce7f136 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:28px;"}' style="font-weight:normal;color:#ffffff;">Proin nisl risus, tincidunt sed rutrum nec, imperdiet ac enim. Morbi faucibusd ac – lorem glavrida liquam erat volutpat.</div>
 </div></div></div></div>
-<div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1509379449836"><div class="wpb_wrapper"><div id="ultimate-heading-6328636b480f038a8" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-6328636b480f038a8 uvc-6364 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1509379449836"><div class="wpb_wrapper"><div id="ultimate-heading-5390636c54ce7f36b" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-5390636c54ce7f36b uvc-8531 " data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6328636b480f038a8 h2" data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:36px;"}'><h2 style="font-weight:bold;color:#ffffff;margin-bottom:16px;">Control</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6328636b480f038a8 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:28px;"}' style="font-weight:normal;color:#ffffff;">Donec a tincidunt dui. Aenean quis nisi lectus. Ut dignissim, erat non viverra accumsan, magna nunc adipiscing elit. Cras accumsan nisi lacus, id faucibus lorem molestie non.</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5390636c54ce7f36b h2" data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:36px;"}'><h2 style="font-weight:bold;color:#ffffff;margin-bottom:16px;">Control</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5390636c54ce7f36b .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:28px;"}' style="font-weight:normal;color:#ffffff;">Donec a tincidunt dui. Aenean quis nisi lectus. Ut dignissim, erat non viverra accumsan, magna nunc adipiscing elit. Cras accumsan nisi lacus, id faucibus lorem molestie non.</div>
 </div></div></div></div>
 </div></div></div></div>
 </div>
 <!-- Row Backgrounds --><div class="upb_bg_img" data-ultimate-bg="url(/wp-content/uploads/sites/39/2017/10/bg003.jpg)" data-image-id="id^633|url^/wp-content/uploads/sites/39/2017/10/bg003.jpg|caption^null|alt^null|title^bg003|description^null" data-ultimate-bg-style="vcpb-vz-jquery" data-bg-img-repeat="no-repeat" data-bg-img-size="cover" data-bg-img-position="" data-parallx_sense="30" data-bg-override="ex-full" data-bg_img_attach="scroll" data-upb-overlay-color="rgba(26,0,33,0.9)" data-upb-bg-animation="" data-fadeout="" data-bg-animation="left-animation" data-bg-animation-type="h" data-animation-repeat="repeat" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false" data-custom-vc-row="" data-vc="6.8.0" data-is_old_vc="" data-theme-support="" data-overlay="true" data-overlay-color="rgba(26,0,33,0.9)" data-overlay-pattern="" data-overlay-pattern-opacity="0.8" data-overlay-pattern-size="" data-overlay-pattern-attachment="scroll"></div>
 <div id="blog" class="vc_row wpb_row vc_row-fluid vc_custom_1510132890741"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
-<div id="ultimate-heading-4004636b480f03f44" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-4004636b480f03f44 uvc-5419 " data-hspacer="line_with_icon" data-hline_width="120" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="3" data-hborder_color="#f3615a" data-icon_width="18" data-hfixer="10" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4004636b480f03f44 h2" data-responsive-json-new='{"font-size":"desktop:42px;mobile_landscape:34px;","line-height":"desktop:52px;mobile_landscape:44px;"}'><h2 style="font-weight:bold;margin-bottom:0px;">FROM OUR BLOG</h2></div>
+<div id="ultimate-heading-7637636c54ce81acc" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-7637636c54ce81acc uvc-9483 " data-hspacer="line_with_icon" data-hline_width="120" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="3" data-hborder_color="#f3615a" data-icon_width="18" data-hfixer="10" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-7637636c54ce81acc h2" data-responsive-json-new='{"font-size":"desktop:42px;mobile_landscape:34px;","line-height":"desktop:52px;mobile_landscape:44px;"}'><h2 style="font-weight:bold;margin-bottom:0px;">FROM OUR BLOG</h2></div>
 <div class="uvc-heading-spacer line_with_icon" style="margin-bottom:60px;height:18px;"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="color:#f3615a;font-size:18px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-chevron-down"></i>
@@ -2694,8 +2733,8 @@ Call us now!</div> <!-- description -->
 </div></div></div></div>
 <div id="contact" data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_custom_1509462180397 vc_row-has-fill vc_row-no-padding vc_row-o-equal-height vc_row-flex">
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6"><div class="vc_column-inner vc_custom_1509350239419"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-10 vc_col-lg-offset-2 vc_col-lg-8 vc_col-md-offset-1 vc_col-md-10 vc_col-sm-offset-1"><div class="vc_column-inner vc_custom_1509347144158"><div class="wpb_wrapper">
-<div id="ultimate-heading-9372636b481db1a32" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-9372636b481db1a32 uvc-7052 " data-hspacer="line_with_icon" data-hline_width="120" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="3" data-hborder_color="#f3615a" data-icon_width="18" data-hfixer="10" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9372636b481db1a32 h2" data-responsive-json-new='{"font-size":"desktop:42px;mobile_landscape:34px;","line-height":"desktop:52px;mobile_landscape:44px;"}'><h2 style="font-weight:bold;margin-bottom:0px;">CONTACT INFO</h2></div>
+<div id="ultimate-heading-144636c54cf1e050" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-144636c54cf1e050 uvc-7058 " data-hspacer="line_with_icon" data-hline_width="120" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="3" data-hborder_color="#f3615a" data-icon_width="18" data-hfixer="10" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-144636c54cf1e050 h2" data-responsive-json-new='{"font-size":"desktop:42px;mobile_landscape:34px;","line-height":"desktop:52px;mobile_landscape:44px;"}'><h2 style="font-weight:bold;margin-bottom:0px;">CONTACT INFO</h2></div>
 <div class="uvc-heading-spacer line_with_icon" style="margin-bottom:60px;height:18px;"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="color:#f3615a;font-size:18px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-chevron-down"></i>
@@ -2703,47 +2742,47 @@ Call us now!</div> <!-- description -->
 </div></div></div>
 </div>
 <div class="aio-icon-component  vc_custom_1509384653271  accent-icon-color accent-border-color style_1">
-<div id="Info-box-wrap-3431" class="aio-icon-box left-icon">
+<div id="Info-box-wrap-3365" class="aio-icon-box left-icon">
 <div class="aio-icon-left"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon advanced " style="border-style:solid;border-color:;border-width:3px;width:60px;height:60px;line-height:60px;border-radius:0px;font-size:30px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-map-signs"></i>
 </div>
 </div></div></div>
 <div class="aio-ibd-block">
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-3431 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="">SoHo 94 Broadway St New York, NY 1001</h3></div> <!-- header -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-3365 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="">SoHo 94 Broadway St New York, NY 1001</h3></div> <!-- header -->
 </div> <!-- aio-ibd-block -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component --><div class="aio-icon-component  vc_custom_1511961087555  accent-icon-color accent-border-color style_1">
-<div id="Info-box-wrap-8174" class="aio-icon-box left-icon">
+<div id="Info-box-wrap-7632" class="aio-icon-box left-icon">
 <div class="aio-icon-left"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon advanced " style="border-style:solid;border-color:;border-width:3px;width:60px;height:60px;line-height:60px;border-radius:0px;font-size:30px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-phone"></i>
 </div>
 </div></div></div>
 <div class="aio-ibd-block">
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-8174 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="">001 234 56 78</h3></div> <!-- header -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-7632 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="">001 234 56 78</h3></div> <!-- header -->
 </div> <!-- aio-ibd-block -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component --><div class="aio-icon-component  vc_custom_1509384738549  accent-icon-color accent-border-color style_1">
-<div id="Info-box-wrap-9833" class="aio-icon-box left-icon">
+<div id="Info-box-wrap-4699" class="aio-icon-box left-icon">
 <div class="aio-icon-left"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon advanced " style="border-style:solid;border-color:;border-width:3px;width:60px;height:60px;line-height:60px;border-radius:0px;font-size:30px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-envelope"></i>
 </div>
 </div></div></div>
 <div class="aio-ibd-block">
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-9833 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="">hello@dream-theme.com</h3></div> <!-- header -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-4699 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="">hello@dream-theme.com</h3></div> <!-- header -->
 </div> <!-- aio-ibd-block -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component --><div class="aio-icon-component  vc_custom_1509384969349  accent-icon-color accent-border-color style_1">
-<div id="Info-box-wrap-1095" class="aio-icon-box left-icon">
+<div id="Info-box-wrap-4218" class="aio-icon-box left-icon">
 <div class="aio-icon-left"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon advanced " style="border-style:solid;border-color:;border-width:3px;width:60px;height:60px;line-height:60px;border-radius:0px;font-size:30px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-clock-o"></i>
 </div>
 </div></div></div>
 <div class="aio-ibd-block">
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-1095 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="">Mon. - Fri. 10:00 - 19:00</h3></div> <!-- header -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-4218 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="">Mon. - Fri. 10:00 - 19:00</h3></div> <!-- header -->
 </div> <!-- aio-ibd-block -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component -->
@@ -2754,8 +2793,8 @@ Call us now!</div> <!-- description -->
 <div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_custom_1509462180397 vc_row-has-fill vc_row-no-padding vc_row-o-equal-height vc_row-flex">
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6 vc_col-has-fill"><div class="vc_column-inner vc_custom_1509965115477"><div class="wpb_wrapper"></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6 vc_col-has-fill"><div class="vc_column-inner vc_custom_1509870221786"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-10 vc_col-lg-offset-2 vc_col-lg-8 vc_col-md-offset-1 vc_col-md-10 vc_col-sm-offset-1"><div class="vc_column-inner vc_custom_1509347144158"><div class="wpb_wrapper">
-<div id="ultimate-heading-6841636b481dc6331" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-6841636b481dc6331 uvc-9902 " data-hspacer="line_with_icon" data-hline_width="120" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="3" data-hborder_color="#f3615a" data-icon_width="18" data-hfixer="10" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6841636b481dc6331 h2" data-responsive-json-new='{"font-size":"desktop:42px;mobile_landscape:34px;","line-height":"desktop:52px;mobile_landscape:44px;"}'><h2 style="font-weight:bold;margin-bottom:0px;">DROP US A LINE</h2></div>
+<div id="ultimate-heading-623636c54cf3467a" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-623636c54cf3467a uvc-6378 " data-hspacer="line_with_icon" data-hline_width="120" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="3" data-hborder_color="#f3615a" data-icon_width="18" data-hfixer="10" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-623636c54cf3467a h2" data-responsive-json-new='{"font-size":"desktop:42px;mobile_landscape:34px;","line-height":"desktop:52px;mobile_landscape:44px;"}'><h2 style="font-weight:bold;margin-bottom:0px;">DROP US A LINE</h2></div>
 <div class="uvc-heading-spacer line_with_icon" style="margin-bottom:40px;height:18px;"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="color:#f3615a;font-size:18px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-chevron-down"></i>
@@ -2782,8 +2821,8 @@ Call us now!</div> <!-- description -->
 </div>
 <div class="vc_row-full-width vc_clearfix"></div>
 <div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_custom_1509869970817 vc_row-no-padding vc_row-o-equal-height vc_row-flex">
-<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1509870018117"><div class="wpb_wrapper"><div id="ultimate-heading-9919636b481dc8058" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-9919636b481dc8058 uvc-293 " data-hspacer="line_with_icon" data-hline_width="120" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="3" data-hborder_color="#f3615a" data-icon_width="18" data-hfixer="10" data-halign="center" style="text-align:center">
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9919636b481dc8058 h2" data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:36px;"}'><h2 style="font-weight:bold;color:#f3615a;">Check Out Our Social Links!</h2></div>
+<div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1509870018117"><div class="wpb_wrapper"><div id="ultimate-heading-7649636c54cf35d2f" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-7649636c54cf35d2f uvc-4609 " data-hspacer="line_with_icon" data-hline_width="120" data-hicon_type="selector" data-hborder_style="solid" data-hborder_height="3" data-hborder_color="#f3615a" data-icon_width="18" data-hfixer="10" data-halign="center" style="text-align:center">
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-7649636c54cf35d2f h2" data-responsive-json-new='{"font-size":"desktop:26px;","line-height":"desktop:36px;"}'><h2 style="font-weight:bold;color:#f3615a;">Check Out Our Social Links!</h2></div>
 <div class="uvc-heading-spacer line_with_icon" style="topheight:18px;"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="color:#f3615a;font-size:18px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-chevron-down"></i>
@@ -2792,43 +2831,43 @@ Call us now!</div> <!-- description -->
 </div></div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-10 vc_col-lg-offset-3 vc_col-lg-6 vc_col-md-offset-2 vc_col-md-8 vc_col-sm-offset-1"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid">
 <div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper">
-<div class="aio-icon-component  vc_custom_1509393175368  accent-icon-bg style_2"><a class="aio-icon-box-link"><div id="Info-box-wrap-1889" class="aio-icon-box top-icon">
+<div class="aio-icon-component  vc_custom_1509393175368  accent-icon-bg style_2"><a class="aio-icon-box-link"><div id="Info-box-wrap-5684" class="aio-icon-box top-icon">
 <div class="aio-icon-top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon advanced " style="color:#ffffff;background:#000000;border-style:;border-color:#333333;border-width:1px;width:70px;height:70px;line-height:70px;border-radius:500px;font-size:30px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-twitter"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-1889 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:18px;"}' style="color:#ffffff;">Twitter</h3></div> <!-- header -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-5684 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:18px;"}' style="color:#ffffff;">Twitter</h3></div> <!-- header -->
 </div> <!-- aio-icon-box --></a></div> <!-- aio-icon-component -->
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper">
-<div class="aio-icon-component  vc_custom_1509393239587  accent-icon-bg style_2"><a class="aio-icon-box-link"><div id="Info-box-wrap-3625" class="aio-icon-box top-icon">
+<div class="aio-icon-component  vc_custom_1509393239587  accent-icon-bg style_2"><a class="aio-icon-box-link"><div id="Info-box-wrap-4208" class="aio-icon-box top-icon">
 <div class="aio-icon-top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon advanced " style="color:#ffffff;background:#000000;border-style:;border-color:#333333;border-width:1px;width:70px;height:70px;line-height:70px;border-radius:500px;font-size:30px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-pinterest-p"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-3625 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:18px;"}' style="color:#ffffff;">Pinterest</h3></div> <!-- header -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-4208 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:18px;"}' style="color:#ffffff;">Pinterest</h3></div> <!-- header -->
 </div> <!-- aio-icon-box --></a></div> <!-- aio-icon-component -->
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper">
-<div class="aio-icon-component  vc_custom_1509393186003  accent-icon-bg style_2"><a class="aio-icon-box-link"><div id="Info-box-wrap-5644" class="aio-icon-box top-icon">
+<div class="aio-icon-component  vc_custom_1509393186003  accent-icon-bg style_2"><a class="aio-icon-box-link"><div id="Info-box-wrap-4319" class="aio-icon-box top-icon">
 <div class="aio-icon-top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon advanced " style="color:#ffffff;background:#000000;border-style:;border-color:#333333;border-width:1px;width:70px;height:70px;line-height:70px;border-radius:500px;font-size:30px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-facebook facebook-f"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-5644 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:18px;"}' style="color:#ffffff;">Facebook</h3></div> <!-- header -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-4319 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:18px;"}' style="color:#ffffff;">Facebook</h3></div> <!-- header -->
 </div> <!-- aio-icon-box --></a></div> <!-- aio-icon-component -->
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper">
-<div class="aio-icon-component  vc_custom_1509393191937  accent-icon-bg style_2"><a class="aio-icon-box-link"><div id="Info-box-wrap-4037" class="aio-icon-box top-icon">
+<div class="aio-icon-component  vc_custom_1509393191937  accent-icon-bg style_2"><a class="aio-icon-box-link"><div id="Info-box-wrap-3079" class="aio-icon-box top-icon">
 <div class="aio-icon-top"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon advanced " style="color:#ffffff;background:#000000;border-style:;border-color:#333333;border-width:1px;width:70px;height:70px;line-height:70px;border-radius:500px;font-size:30px;display:inline-block;">
 	<i class="icomoon-font-awesome-14x14-behance"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-4037 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:18px;"}' style="color:#ffffff;">Behance</h3></div> <!-- header -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-3079 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:18px;"}' style="color:#ffffff;">Behance</h3></div> <!-- header -->
 </div> <!-- aio-icon-box --></a></div> <!-- aio-icon-component -->
 </div></div></div>
 </div></div></div></div>
