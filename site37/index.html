@@ -67,18 +67,57 @@ img.emoji {
 <link rel="stylesheet" id="the7-awesome-fonts-css" href="/wp-content/themes/dt-the7/fonts/FontAwesome/css/all.min.css?ver=11.1.1" type="text/css" media="all">
 <link rel="stylesheet" id="dt-web-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto:400,600,700|Open Sans:400,600,700|Roboto Condensed:400,600,700|Open Sans Condensed:400,600,700" type="text/css" media="all">
 <link rel="stylesheet" id="dt-main-css" href="/wp-content/themes/dt-the7/css/main.min.css?ver=11.1.1" type="text/css" media="all">
+<style id="dt-main-inline-css" type="text/css">body #load {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 9901;
+  opacity: 1;
+  visibility: visible;
+  transition: all .35s ease-out;
+}
+.load-wrap {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -ms-flex-pack: center;
+  -ms-justify-content: center;
+  justify-content: center;
+}
+.load-wrap > svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+#load {
+  background: var(--the7-elementor-beautiful-loading-bg,#ffffff);
+  --the7-beautiful-spinner-color2: var(--the7-beautiful-spinner-color,rgba(51,51,51,0.3));
+}</style>
 <link rel="stylesheet" id="the7-custom-scrollbar-css" href="/wp-content/themes/dt-the7/lib/custom-scrollbar/custom-scrollbar.min.css?ver=11.1.1" type="text/css" media="all">
-<link rel="stylesheet" id="the7-css-vars-css" href="/wp-content/uploads/sites/37/the7-css/css-vars.css?ver=fcd7ef3b49f0" type="text/css" media="all">
-<link rel="stylesheet" id="dt-custom-css" href="/wp-content/uploads/sites/37/the7-css/custom.css?ver=fcd7ef3b49f0" type="text/css" media="all">
-<link rel="stylesheet" id="dt-media-css" href="/wp-content/uploads/sites/37/the7-css/media.css?ver=fcd7ef3b49f0" type="text/css" media="all">
-<link rel="stylesheet" id="the7-mega-menu-css" href="/wp-content/uploads/sites/37/the7-css/mega-menu.css?ver=fcd7ef3b49f0" type="text/css" media="all">
-<link rel="stylesheet" id="the7-elements-css" href="/wp-content/uploads/sites/37/the7-css/post-type-dynamic.css?ver=fcd7ef3b49f0" type="text/css" media="all">
+<link rel="stylesheet" id="the7-css-vars-css" href="/wp-content/uploads/sites/37/the7-css/css-vars.css?ver=eeebc8f0d430" type="text/css" media="all">
+<link rel="stylesheet" id="dt-custom-css" href="/wp-content/uploads/sites/37/the7-css/custom.css?ver=eeebc8f0d430" type="text/css" media="all">
+<link rel="stylesheet" id="dt-media-css" href="/wp-content/uploads/sites/37/the7-css/media.css?ver=eeebc8f0d430" type="text/css" media="all">
+<link rel="stylesheet" id="the7-mega-menu-css" href="/wp-content/uploads/sites/37/the7-css/mega-menu.css?ver=eeebc8f0d430" type="text/css" media="all">
+<link rel="stylesheet" id="the7-elements-css" href="/wp-content/uploads/sites/37/the7-css/post-type-dynamic.css?ver=eeebc8f0d430" type="text/css" media="all">
 <link rel="stylesheet" id="style-css" href="/wp-content/themes/dt-the7/style.css?ver=11.1.1" type="text/css" media="all">
 <script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.6.1" id="jquery-core-js"></script>
 <script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
 <script type="text/javascript" id="dt-above-fold-js-extra">
 /* <![CDATA[ */
-var dtLocal = {"themeUrl":"\/wp-content\/themes\/dt-the7","passText":"To view this protected post, enter the password below:","moreButtonText":{"loading":"Loading...","loadMore":"Load more"},"postID":"5","ajaxurl":"\/site37\/wp-admin\/admin-ajax.php","REST":{"baseUrl":"\/site37\/wp-json\/the7\/v1","endpoints":{"sendMail":"\/send-mail"}},"contactMessages":{"required":"One or more fields have an error. Please check and try again.","terms":"Please accept the privacy policy.","fillTheCaptchaError":"Please, fill the captcha."},"captchaSiteKey":"","ajaxNonce":"4a255c3ec6","pageData":{"type":"page","template":"page","layout":null},"themeSettings":{"smoothScroll":"off","lazyLoading":false,"accentColor":{"mode":"solid","color":"#0853a2"},"desktopHeader":{"height":100},"ToggleCaptionEnabled":"disabled","ToggleCaption":"Navigation","floatingHeader":{"showAfter":160,"showMenu":true,"height":70,"logo":{"showLogo":true,"html":"<img class=\" preload-me\" src=\"\/wp-content\/uploads\/sites\/37\/2018\/11\/g-top.png\" srcset=\"\/wp-content\/uploads\/sites\/37\/2018\/11\/g-top.png 184w, \/wp-content\/uploads\/sites\/37\/2018\/11\/g-top-hd.png 368w\" width=\"184\" height=\"45\"   sizes=\"184px\" alt=\"Site37\" \/>","url":"\/site37\/"}},"topLine":{"floatingTopLine":{"logo":{"showLogo":false,"html":""}}},"mobileHeader":{"firstSwitchPoint":1150,"secondSwitchPoint":992,"firstSwitchPointHeight":70,"secondSwitchPointHeight":70,"mobileToggleCaptionEnabled":"disabled","mobileToggleCaption":"Menu"},"stickyMobileHeaderFirstSwitch":{"logo":{"html":"<img class=\" preload-me\" src=\"\/wp-content\/uploads\/sites\/37\/2018\/11\/g-top.png\" srcset=\"\/wp-content\/uploads\/sites\/37\/2018\/11\/g-top.png 184w, \/wp-content\/uploads\/sites\/37\/2018\/11\/g-top-hd.png 368w\" width=\"184\" height=\"45\"   sizes=\"184px\" alt=\"Site37\" \/>"}},"stickyMobileHeaderSecondSwitch":{"logo":{"html":"<img class=\" preload-me\" src=\"\/wp-content\/uploads\/sites\/37\/2018\/11\/g-top.png\" srcset=\"\/wp-content\/uploads\/sites\/37\/2018\/11\/g-top.png 184w, \/wp-content\/uploads\/sites\/37\/2018\/11\/g-top-hd.png 368w\" width=\"184\" height=\"45\"   sizes=\"184px\" alt=\"Site37\" \/>"}},"content":{"textColor":"#777777","headerColor":"#222222"},"sidebar":{"switchPoint":990},"boxedWidth":"1340px","stripes":{"stripe1":{"textColor":"#787d85","headerColor":"#3b3f4a"},"stripe2":{"textColor":"#8b9199","headerColor":"#ffffff"},"stripe3":{"textColor":"#ffffff","headerColor":"#ffffff"}}}};
+var dtLocal = {"themeUrl":"\/wp-content\/themes\/dt-the7","passText":"To view this protected post, enter the password below:","moreButtonText":{"loading":"Loading...","loadMore":"Load more"},"postID":"5","ajaxurl":"\/site37\/wp-admin\/admin-ajax.php","REST":{"baseUrl":"\/site37\/wp-json\/the7\/v1","endpoints":{"sendMail":"\/send-mail"}},"contactMessages":{"required":"One or more fields have an error. Please check and try again.","terms":"Please accept the privacy policy.","fillTheCaptchaError":"Please, fill the captcha."},"captchaSiteKey":"","ajaxNonce":"0e4283f9fa","pageData":{"type":"page","template":"page","layout":null},"themeSettings":{"smoothScroll":"off","lazyLoading":false,"accentColor":{"mode":"solid","color":"#0853a2"},"desktopHeader":{"height":100},"ToggleCaptionEnabled":"disabled","ToggleCaption":"Navigation","floatingHeader":{"showAfter":160,"showMenu":true,"height":70,"logo":{"showLogo":true,"html":"<img class=\" preload-me\" src=\"\/wp-content\/uploads\/sites\/37\/2018\/11\/g-top.png\" srcset=\"\/wp-content\/uploads\/sites\/37\/2018\/11\/g-top.png 184w, \/wp-content\/uploads\/sites\/37\/2018\/11\/g-top-hd.png 368w\" width=\"184\" height=\"45\"   sizes=\"184px\" alt=\"Site37\" \/>","url":"\/site37\/"}},"topLine":{"floatingTopLine":{"logo":{"showLogo":false,"html":""}}},"mobileHeader":{"firstSwitchPoint":1150,"secondSwitchPoint":992,"firstSwitchPointHeight":70,"secondSwitchPointHeight":70,"mobileToggleCaptionEnabled":"disabled","mobileToggleCaption":"Menu"},"stickyMobileHeaderFirstSwitch":{"logo":{"html":"<img class=\" preload-me\" src=\"\/wp-content\/uploads\/sites\/37\/2018\/11\/g-top.png\" srcset=\"\/wp-content\/uploads\/sites\/37\/2018\/11\/g-top.png 184w, \/wp-content\/uploads\/sites\/37\/2018\/11\/g-top-hd.png 368w\" width=\"184\" height=\"45\"   sizes=\"184px\" alt=\"Site37\" \/>"}},"stickyMobileHeaderSecondSwitch":{"logo":{"html":"<img class=\" preload-me\" src=\"\/wp-content\/uploads\/sites\/37\/2018\/11\/g-top.png\" srcset=\"\/wp-content\/uploads\/sites\/37\/2018\/11\/g-top.png 184w, \/wp-content\/uploads\/sites\/37\/2018\/11\/g-top-hd.png 368w\" width=\"184\" height=\"45\"   sizes=\"184px\" alt=\"Site37\" \/>"}},"content":{"textColor":"#777777","headerColor":"#222222"},"sidebar":{"switchPoint":990},"boxedWidth":"1340px","stripes":{"stripe1":{"textColor":"#787d85","headerColor":"#3b3f4a"},"stripe2":{"textColor":"#8b9199","headerColor":"#ffffff"},"stripe3":{"textColor":"#ffffff","headerColor":"#ffffff"}}}};
 var dtShare = {"shareButtonText":{"facebook":"Share on Facebook","twitter":"Tweet","pinterest":"Pin it","linkedin":"Share on Linkedin","whatsapp":"Share on Whatsapp"},"overlayOpacity":"80"};
 /* ]]> */
 </script>
