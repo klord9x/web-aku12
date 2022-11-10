@@ -67,15 +67,54 @@ img.emoji {
 <link rel="stylesheet" id="js_composer_front-css" href="/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=6.8.0" type="text/css" media="all">
 <link rel="stylesheet" id="dt-web-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto:400,600,700|Open Sans:400,600,700|Roboto Condensed:400,600,700|Open Sans Condensed:400,600,700" type="text/css" media="all">
 <link rel="stylesheet" id="dt-main-css" href="/wp-content/themes/dt-the7/css/main.min.css?ver=11.1.1" type="text/css" media="all">
+<style id="dt-main-inline-css" type="text/css">body #load {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 9901;
+  opacity: 1;
+  visibility: visible;
+  transition: all .35s ease-out;
+}
+.load-wrap {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -ms-flex-pack: center;
+  -ms-justify-content: center;
+  justify-content: center;
+}
+.load-wrap > svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+#load {
+  background: var(--the7-elementor-beautiful-loading-bg,#ffffff);
+  --the7-beautiful-spinner-color2: var(--the7-beautiful-spinner-color,rgba(147,194,72,0.3));
+}</style>
 <link rel="stylesheet" id="the7-custom-scrollbar-css" href="/wp-content/themes/dt-the7/lib/custom-scrollbar/custom-scrollbar.min.css?ver=11.1.1" type="text/css" media="all">
 <link rel="stylesheet" id="the7-wpbakery-css" href="/wp-content/themes/dt-the7/css/wpbakery.min.css?ver=11.1.1" type="text/css" media="all">
 <link rel="stylesheet" id="the7-core-css" href="/wp-content/plugins/dt-the7-core/assets/css/post-type.min.css?ver=2.7.0" type="text/css" media="all">
-<link rel="stylesheet" id="the7-css-vars-css" href="/wp-content/uploads/sites/33/the7-css/css-vars.css?ver=384668d8e34a" type="text/css" media="all">
-<link rel="stylesheet" id="dt-custom-css" href="/wp-content/uploads/sites/33/the7-css/custom.css?ver=384668d8e34a" type="text/css" media="all">
-<link rel="stylesheet" id="dt-media-css" href="/wp-content/uploads/sites/33/the7-css/media.css?ver=384668d8e34a" type="text/css" media="all">
-<link rel="stylesheet" id="the7-mega-menu-css" href="/wp-content/uploads/sites/33/the7-css/mega-menu.css?ver=384668d8e34a" type="text/css" media="all">
-<link rel="stylesheet" id="the7-elements-albums-portfolio-css" href="/wp-content/uploads/sites/33/the7-css/the7-elements-albums-portfolio.css?ver=384668d8e34a" type="text/css" media="all">
-<link rel="stylesheet" id="the7-elements-css" href="/wp-content/uploads/sites/33/the7-css/post-type-dynamic.css?ver=384668d8e34a" type="text/css" media="all">
+<link rel="stylesheet" id="the7-css-vars-css" href="/wp-content/uploads/sites/33/the7-css/css-vars.css?ver=51c1d3fc90bc" type="text/css" media="all">
+<link rel="stylesheet" id="dt-custom-css" href="/wp-content/uploads/sites/33/the7-css/custom.css?ver=51c1d3fc90bc" type="text/css" media="all">
+<link rel="stylesheet" id="dt-media-css" href="/wp-content/uploads/sites/33/the7-css/media.css?ver=51c1d3fc90bc" type="text/css" media="all">
+<link rel="stylesheet" id="the7-mega-menu-css" href="/wp-content/uploads/sites/33/the7-css/mega-menu.css?ver=51c1d3fc90bc" type="text/css" media="all">
+<link rel="stylesheet" id="the7-elements-albums-portfolio-css" href="/wp-content/uploads/sites/33/the7-css/the7-elements-albums-portfolio.css?ver=51c1d3fc90bc" type="text/css" media="all">
+<link rel="stylesheet" id="the7-elements-css" href="/wp-content/uploads/sites/33/the7-css/post-type-dynamic.css?ver=51c1d3fc90bc" type="text/css" media="all">
 <link rel="stylesheet" id="style-css" href="/wp-content/themes/dt-the7/style.css?ver=11.1.1" type="text/css" media="all">
 <link rel="stylesheet" id="ultimate-vc-addons-google-fonts-css" href="https://fonts.googleapis.com/css?family=Open Sans:regular,700" type="text/css" media="all">
 <link rel="stylesheet" id="ultimate-vc-addons-style-css" href="/wp-content/plugins/Ultimate_VC_Addons/assets/min-css/style.min.css?ver=3.19.11" type="text/css" media="all">
@@ -86,7 +125,7 @@ img.emoji {
 <script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
 <script type="text/javascript" id="dt-above-fold-js-extra">
 /* <![CDATA[ */
-var dtLocal = {"themeUrl":"\/wp-content\/themes\/dt-the7","passText":"To view this protected post, enter the password below:","moreButtonText":{"loading":"Loading...","loadMore":"Load more"},"postID":"5","ajaxurl":"\/site33\/wp-admin\/admin-ajax.php","REST":{"baseUrl":"\/site33\/wp-json\/the7\/v1","endpoints":{"sendMail":"\/send-mail"}},"contactMessages":{"required":"One or more fields have an error. Please check and try again.","terms":"Please accept the privacy policy.","fillTheCaptchaError":"Please, fill the captcha."},"captchaSiteKey":"","ajaxNonce":"4a255c3ec6","pageData":{"type":"page","template":"page","layout":null},"themeSettings":{"smoothScroll":"off","lazyLoading":false,"accentColor":{"mode":"solid","color":"#93c248"},"desktopHeader":{"height":100},"ToggleCaptionEnabled":"disabled","ToggleCaption":"Navigation","floatingHeader":{"showAfter":160,"showMenu":true,"height":70,"logo":{"showLogo":true,"html":"<img class=\" preload-me\" src=\"\/wp-content\/uploads\/sites\/33\/2019\/06\/l-top-small.png\" srcset=\"\/wp-content\/uploads\/sites\/33\/2019\/06\/l-top-small.png 94w, \/wp-content\/uploads\/sites\/33\/2019\/06\/l-top-large.png 188w\" width=\"94\" height=\"40\"   sizes=\"94px\" alt=\"Site33\" \/>","url":"\/site33\/"}},"topLine":{"floatingTopLine":{"logo":{"showLogo":false,"html":""}}},"mobileHeader":{"firstSwitchPoint":1100,"secondSwitchPoint":778,"firstSwitchPointHeight":70,"secondSwitchPointHeight":60,"mobileToggleCaptionEnabled":"disabled","mobileToggleCaption":"Menu"},"stickyMobileHeaderFirstSwitch":{"logo":{"html":"<img class=\" preload-me\" src=\"\/wp-content\/uploads\/sites\/33\/2019\/06\/l-top-small.png\" srcset=\"\/wp-content\/uploads\/sites\/33\/2019\/06\/l-top-small.png 94w, \/wp-content\/uploads\/sites\/33\/2019\/06\/l-top-large.png 188w\" width=\"94\" height=\"40\"   sizes=\"94px\" alt=\"Site33\" \/>"}},"stickyMobileHeaderSecondSwitch":{"logo":{"html":"<img class=\" preload-me\" src=\"\/wp-content\/uploads\/sites\/33\/2019\/06\/l-small.png\" srcset=\"\/wp-content\/uploads\/sites\/33\/2019\/06\/l-small.png 61w, \/wp-content\/uploads\/sites\/33\/2019\/06\/l-small-hd.png 122w\" width=\"61\" height=\"26\"   sizes=\"61px\" alt=\"Site33\" \/>"}},"content":{"textColor":"#777777","headerColor":"#262d37"},"sidebar":{"switchPoint":990},"boxedWidth":"1340px","stripes":{"stripe1":{"textColor":"#787d85","headerColor":"#3b3f4a"},"stripe2":{"textColor":"#8b9199","headerColor":"#ffffff"},"stripe3":{"textColor":"#ffffff","headerColor":"#ffffff"}}},"VCMobileScreenWidth":"778"};
+var dtLocal = {"themeUrl":"\/wp-content\/themes\/dt-the7","passText":"To view this protected post, enter the password below:","moreButtonText":{"loading":"Loading...","loadMore":"Load more"},"postID":"5","ajaxurl":"\/site33\/wp-admin\/admin-ajax.php","REST":{"baseUrl":"\/site33\/wp-json\/the7\/v1","endpoints":{"sendMail":"\/send-mail"}},"contactMessages":{"required":"One or more fields have an error. Please check and try again.","terms":"Please accept the privacy policy.","fillTheCaptchaError":"Please, fill the captcha."},"captchaSiteKey":"","ajaxNonce":"0e4283f9fa","pageData":{"type":"page","template":"page","layout":null},"themeSettings":{"smoothScroll":"off","lazyLoading":false,"accentColor":{"mode":"solid","color":"#93c248"},"desktopHeader":{"height":100},"ToggleCaptionEnabled":"disabled","ToggleCaption":"Navigation","floatingHeader":{"showAfter":160,"showMenu":true,"height":70,"logo":{"showLogo":true,"html":"<img class=\" preload-me\" src=\"\/wp-content\/uploads\/sites\/33\/2019\/06\/l-top-small.png\" srcset=\"\/wp-content\/uploads\/sites\/33\/2019\/06\/l-top-small.png 94w, \/wp-content\/uploads\/sites\/33\/2019\/06\/l-top-large.png 188w\" width=\"94\" height=\"40\"   sizes=\"94px\" alt=\"Site33\" \/>","url":"\/site33\/"}},"topLine":{"floatingTopLine":{"logo":{"showLogo":false,"html":""}}},"mobileHeader":{"firstSwitchPoint":1100,"secondSwitchPoint":778,"firstSwitchPointHeight":70,"secondSwitchPointHeight":60,"mobileToggleCaptionEnabled":"disabled","mobileToggleCaption":"Menu"},"stickyMobileHeaderFirstSwitch":{"logo":{"html":"<img class=\" preload-me\" src=\"\/wp-content\/uploads\/sites\/33\/2019\/06\/l-top-small.png\" srcset=\"\/wp-content\/uploads\/sites\/33\/2019\/06\/l-top-small.png 94w, \/wp-content\/uploads\/sites\/33\/2019\/06\/l-top-large.png 188w\" width=\"94\" height=\"40\"   sizes=\"94px\" alt=\"Site33\" \/>"}},"stickyMobileHeaderSecondSwitch":{"logo":{"html":"<img class=\" preload-me\" src=\"\/wp-content\/uploads\/sites\/33\/2019\/06\/l-small.png\" srcset=\"\/wp-content\/uploads\/sites\/33\/2019\/06\/l-small.png 61w, \/wp-content\/uploads\/sites\/33\/2019\/06\/l-small-hd.png 122w\" width=\"61\" height=\"26\"   sizes=\"61px\" alt=\"Site33\" \/>"}},"content":{"textColor":"#777777","headerColor":"#262d37"},"sidebar":{"switchPoint":990},"boxedWidth":"1340px","stripes":{"stripe1":{"textColor":"#787d85","headerColor":"#3b3f4a"},"stripe2":{"textColor":"#8b9199","headerColor":"#ffffff"},"stripe3":{"textColor":"#ffffff","headerColor":"#ffffff"}}},"VCMobileScreenWidth":"778"};
 var dtShare = {"shareButtonText":{"facebook":"Share on Facebook","twitter":"Tweet","pinterest":"Pin it","linkedin":"Share on Linkedin","whatsapp":"Share on Whatsapp"},"overlayOpacity":"80"};
 /* ]]> */
 </script>
@@ -519,10 +558,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 		<div class="vc_row wpb_row vc_row-fluid vc_row-o-equal-height vc_row-o-content-middle vc_row-flex">
 <div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1560422440699"><div class="wpb_wrapper">
-<div id="ultimate-heading-5851636b3bd11e84c" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-5851636b3bd11e84c uvc-6481 accent-subtitle-color" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div id="ultimate-heading-3871636c4c937feab" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-3871636c4c937feab uvc-6950 accent-subtitle-color" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5851636b3bd11e84c h3" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:40px;"}'><h3 style="font-weight:bold;margin-bottom:5px;">Who We Are</h3></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5851636b3bd11e84c .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-weight:normal;margin-bottom:20px;">Fusce dapibus congue diam &#8211; from dolor amet nulla dapibus interdum condimentum.</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3871636c4c937feab h3" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:40px;"}'><h3 style="font-weight:bold;margin-bottom:5px;">Who We Are</h3></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3871636c4c937feab .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-weight:normal;margin-bottom:20px;">Fusce dapibus congue diam &#8211; from dolor amet nulla dapibus interdum condimentum.</div>
 </div>
 	<div class="wpb_text_column wpb_content_element  vc_custom_1560415408529">
 		<div class="wpb_wrapper">
@@ -542,49 +581,49 @@ document.addEventListener("DOMContentLoaded", function(event) {
 <div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1560422445652"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid vc_row-o-equal-height vc_row-flex">
 <div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper">
 <div class="aio-icon-component  vc_custom_1560422238543  accent-icon-color style_1">
-<div id="Info-box-wrap-5832" class="aio-icon-box default-icon">
+<div id="Info-box-wrap-8915" class="aio-icon-box default-icon">
 <div class="aio-icon-default"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="font-size:32px;display:inline-block;">
 	<i class="Defaults-trophy"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-5832 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:700;">High Quality Standards</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-5832 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Nam id sem quis mauris dolor – mauris lorem ipsum nulla it amet ultricies mi dolor at pharetra.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-8915 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:700;">High Quality Standards</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-8915 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Nam id sem quis mauris dolor – mauris lorem ipsum nulla it amet ultricies mi dolor at pharetra.</div> <!-- description -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component -->
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper">
 <div class="aio-icon-component  vc_custom_1560422280079  accent-icon-color style_1">
-<div id="Info-box-wrap-5865" class="aio-icon-box default-icon">
+<div id="Info-box-wrap-9428" class="aio-icon-box default-icon">
 <div class="aio-icon-default"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="font-size:32px;display:inline-block;">
 	<i class="Defaults-group"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-5865 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:700;">Educated &amp; Experienced Team</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-5865 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Lorem ipsumdolor &#8211; porttitor conse quat id vitae dolor lorem tricies mi dolor from.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-9428 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:700;">Educated &amp; Experienced Team</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-9428 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Lorem ipsumdolor &#8211; porttitor conse quat id vitae dolor lorem tricies mi dolor from.</div> <!-- description -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component -->
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper">
 <div class="aio-icon-component  vc_custom_1560422374109  accent-icon-color style_1">
-<div id="Info-box-wrap-7849" class="aio-icon-box default-icon">
+<div id="Info-box-wrap-5445" class="aio-icon-box default-icon">
 <div class="aio-icon-default"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="font-size:32px;display:inline-block;">
 	<i class="Defaults-clipboard"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-7849 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:700;">Modern Business Solutions</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-7849 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Sem quis mauris porttitor mauris lorem ipsum met ultricies mi dolor at pharetra.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-5445 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:700;">Modern Business Solutions</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-5445 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Sem quis mauris porttitor mauris lorem ipsum met ultricies mi dolor at pharetra.</div> <!-- description -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component -->
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper">
 <div class="aio-icon-component  vc_custom_1560422386861  accent-icon-color style_1">
-<div id="Info-box-wrap-9546" class="aio-icon-box default-icon">
+<div id="Info-box-wrap-1959" class="aio-icon-box default-icon">
 <div class="aio-icon-default"><div class="ult-just-icon-wrapper  "><div class="align-icon" style="text-align:center;">
 <div class="aio-icon none " style="font-size:32px;display:inline-block;">
 	<i class="Defaults-cogs"></i>
 </div>
 </div></div></div>
-<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-9546 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:700;">Inspection &amp; Accreditation</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-9546 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Quise dolor – mauris lorem ipsum nulla it amet ultricies mi dolor at pharetra glavrida.</div> <!-- description -->
+<div class="aio-icon-header"><h3 class="aio-icon-title ult-responsive" data-ultimate-target="#Info-box-wrap-1959 .aio-icon-title" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-family:&#039;Open Sans&#039;;font-weight:700;">Inspection &amp; Accreditation</h3></div> <!-- header --><div class="aio-icon-description ult-responsive" data-ultimate-target="#Info-box-wrap-1959 .aio-icon-description" data-responsive-json-new='{"font-size":"","line-height":""}'>Quise dolor – mauris lorem ipsum nulla it amet ultricies mi dolor at pharetra glavrida.</div> <!-- description -->
 </div> <!-- aio-icon-box -->
 </div> <!-- aio-icon-component -->
 </div></div></div>
@@ -593,9 +632,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 <div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_row-no-padding"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1560847972820"><div class="wpb_wrapper"><div class="hr-thin style-dashed" style="width: 100%;border-color: rgba(147,194,72,0.3);border-top-width: 3px;"></div></div></div></div></div>
 <div class="vc_row-full-width vc_clearfix"></div>
 <div class="vc_row wpb_row vc_row-fluid vc_custom_1560847925785"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
-<div id="ultimate-heading-1514636b3bd14e67d" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-1514636b3bd14e67d uvc-3354 accent-border-color uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-110636c4c93973a7" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-110636c4c93973a7 uvc-7937 accent-border-color uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1514636b3bd14e67d h2" data-responsive-json-new='{"font-size":"","line-height":""}'><h2 style="--font-weight:theme;margin-bottom:60px;">Our Services</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-110636c4c93973a7 h2" data-responsive-json-new='{"font-size":"","line-height":""}'><h2 style="--font-weight:theme;margin-bottom:60px;">Our Services</h2></div>
 </div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid vc_row-o-equal-height vc_row-flex">
 <div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner vc_custom_1560417813494"><div class="wpb_wrapper">
@@ -619,10 +658,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
   box-shadow: none;
 }</style>
 <div class="shortcode-single-image-wrap shortcode-single-image-33d0c7b5a3a139763b04f43559862dc3 alignnone  vc_custom_1560848458530 enable-bg-rollover dt-icon-bg-off"><div class="shortcode-single-image"><div class="fancy-media-wrap"><a href="/modern-business/services/web-development/" class=" layzr-bg rollover" aria-label="Image"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20200%20200&#39;%2F%3E" data-src="/wp-content/uploads/sites/33/2018/11/s000-200x200.jpg" data-srcset="/wp-content/uploads/sites/33/2018/11/s000-200x200.jpg 200w, /wp-content/uploads/sites/33/2018/11/s000-400x400.jpg 400w" width="200" height="200" data-dt-location="/site33/services/s000/"></a></div></div></div>
-<div id="ultimate-heading-6362636b3bd237d7c" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-6362636b3bd237d7c uvc-740 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-6281636c4c93afab6" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-6281636c4c93afab6 uvc-28 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6362636b3bd237d7c h2" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}'><h2 style="font-weight:bold;margin-bottom:5px;">Web Development</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6362636b3bd237d7c .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:28px;"}' style="font-weight:normal;margin-bottom:20px;">Curabitur pharetra ac eros scelerisque tempor. Quis odio sagittis pharetra dolor suscipit.</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6281636c4c93afab6 h2" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}'><h2 style="font-weight:bold;margin-bottom:5px;">Web Development</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6281636c4c93afab6 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:28px;"}' style="font-weight:normal;margin-bottom:20px;">Curabitur pharetra ac eros scelerisque tempor. Quis odio sagittis pharetra dolor suscipit.</div>
 </div>
 <style type="text/css" data-type="the7_shortcodes-inline-css">#default-btn-1e2278e0d3908ddd2659f4828e955b2b.ico-right-side > i {
   margin-right: 0px;
@@ -654,10 +693,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
   box-shadow: none;
 }</style>
 <div class="shortcode-single-image-wrap shortcode-single-image-8d03e32e0506a7624f44d6bb2502970a alignnone  vc_custom_1560416409219 enable-bg-rollover dt-icon-bg-off"><div class="shortcode-single-image"><div class="fancy-media-wrap"><a href="/modern-business/services/graphic-design/" class=" layzr-bg rollover" aria-label="Image"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20200%20200&#39;%2F%3E" data-src="/wp-content/uploads/sites/33/2018/11/s004-200x200.jpg" data-srcset="/wp-content/uploads/sites/33/2018/11/s004-200x200.jpg 200w, /wp-content/uploads/sites/33/2018/11/s004-400x400.jpg 400w" width="200" height="200" data-dt-location="/site33/services/s004/"></a></div></div></div>
-<div id="ultimate-heading-2711636b3bd3675fd" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2711636b3bd3675fd uvc-2157 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-2168636c4c93b2fdd" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2168636c4c93b2fdd uvc-4789 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2711636b3bd3675fd h2" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}'><h2 style="font-weight:bold;margin-bottom:5px;">Graphic Design</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2711636b3bd3675fd .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:28px;"}' style="font-weight:normal;margin-bottom:20px;">Donec cursus felis in mollis molesti idunt nulla volutpat tortor lorem nulla dolor amet.</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2168636c4c93b2fdd h2" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}'><h2 style="font-weight:bold;margin-bottom:5px;">Graphic Design</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2168636c4c93b2fdd .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:28px;"}' style="font-weight:normal;margin-bottom:20px;">Donec cursus felis in mollis molesti idunt nulla volutpat tortor lorem nulla dolor amet.</div>
 </div>
 <style type="text/css" data-type="the7_shortcodes-inline-css">#default-btn-6b29cdbbbf760ae22f4dde9e4f76a17d.ico-right-side > i {
   margin-right: 0px;
@@ -689,10 +728,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
   box-shadow: none;
 }</style>
 <div class="shortcode-single-image-wrap shortcode-single-image-d8a6d83dac703d18ce27bd3c4a82027c alignnone  vc_custom_1560416723200 enable-bg-rollover dt-icon-bg-off"><div class="shortcode-single-image"><div class="fancy-media-wrap"><a href="/modern-business/services/video-photography/" class=" layzr-bg rollover" aria-label="Image"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20200%20200&#39;%2F%3E" data-src="/wp-content/uploads/sites/33/2018/11/s001-200x200.jpg" data-srcset="/wp-content/uploads/sites/33/2018/11/s001-200x200.jpg 200w, /wp-content/uploads/sites/33/2018/11/s001-400x400.jpg 400w" width="200" height="200" data-dt-location="/site33/services/s001/"></a></div></div></div>
-<div id="ultimate-heading-6589636b3bd4342d2" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-6589636b3bd4342d2 uvc-2238 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-686636c4c93b3b26" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-686636c4c93b3b26 uvc-5357 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6589636b3bd4342d2 h2" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}'><h2 style="font-weight:bold;margin-bottom:5px;">Video &amp; Photography</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6589636b3bd4342d2 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:28px;"}' style="font-weight:normal;margin-bottom:20px;">Vestibulum quis euismod orci, eget scelerid molestie. Praesent sit amet tempus suscipit.</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-686636c4c93b3b26 h2" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}'><h2 style="font-weight:bold;margin-bottom:5px;">Video &amp; Photography</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-686636c4c93b3b26 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:28px;"}' style="font-weight:normal;margin-bottom:20px;">Vestibulum quis euismod orci, eget scelerid molestie. Praesent sit amet tempus suscipit.</div>
 </div>
 <style type="text/css" data-type="the7_shortcodes-inline-css">#default-btn-b30649b3a8ed10af22ad0d188783e0e2.ico-right-side > i {
   margin-right: 0px;
@@ -724,10 +763,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
   box-shadow: none;
 }</style>
 <div class="shortcode-single-image-wrap shortcode-single-image-b7c9ceb40f459d450b93ff16e0ca47a4 alignnone  vc_custom_1560418077795 enable-bg-rollover dt-icon-bg-off"><div class="shortcode-single-image"><div class="fancy-media-wrap"><a href="/modern-business/services/service-page/" class=" layzr-bg rollover" aria-label="Image"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20200%20200&#39;%2F%3E" data-src="/wp-content/uploads/sites/33/2018/11/s009-200x200.jpg" data-srcset="/wp-content/uploads/sites/33/2018/11/s009-200x200.jpg 200w, /wp-content/uploads/sites/33/2018/11/s009-400x400.jpg 400w" width="200" height="200" data-dt-location="/site33/services/s009/"></a></div></div></div>
-<div id="ultimate-heading-823636b3bd51d0d4" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-823636b3bd51d0d4 uvc-3778 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-6666636c4c93c5dd8" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-6666636c4c93c5dd8 uvc-7703 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-823636b3bd51d0d4 h2" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}'><h2 style="font-weight:bold;margin-bottom:5px;">Branding &amp; Rebranding</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-823636b3bd51d0d4 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:28px;"}' style="font-weight:normal;margin-bottom:20px;">Lorem ipsum &#8211; pharetra ac tempor. Quis odio sagittis pharetra dolor suscipit.</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6666636c4c93c5dd8 h2" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}'><h2 style="font-weight:bold;margin-bottom:5px;">Branding &amp; Rebranding</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6666636c4c93c5dd8 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:28px;"}' style="font-weight:normal;margin-bottom:20px;">Lorem ipsum &#8211; pharetra ac tempor. Quis odio sagittis pharetra dolor suscipit.</div>
 </div>
 <style type="text/css" data-type="the7_shortcodes-inline-css">#default-btn-1419dac26b9ec86f453444a5ea6a390e.ico-right-side > i {
   margin-right: 0px;
@@ -759,10 +798,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
   box-shadow: none;
 }</style>
 <div class="shortcode-single-image-wrap shortcode-single-image-6999ef52fb2bef19e808b389c2356433 alignnone  vc_custom_1560417931032 enable-bg-rollover dt-icon-bg-off"><div class="shortcode-single-image"><div class="fancy-media-wrap"><a href="/modern-business/services/social-media-marketing/" class=" layzr-bg rollover" aria-label="Image"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20200%20200&#39;%2F%3E" data-src="/wp-content/uploads/sites/33/2018/11/s008-200x200.jpg" data-srcset="/wp-content/uploads/sites/33/2018/11/s008-200x200.jpg 200w, /wp-content/uploads/sites/33/2018/11/s008-400x400.jpg 400w" width="200" height="200" data-dt-location="/site33/services/s008/"></a></div></div></div>
-<div id="ultimate-heading-8001636b3bd61f954" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-8001636b3bd61f954 uvc-4978 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-1106636c4c93cae36" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-1106636c4c93cae36 uvc-4541 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-8001636b3bd61f954 h2" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}'><h2 style="font-weight:bold;margin-bottom:5px;">Social Media Marketing</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-8001636b3bd61f954 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:28px;"}' style="font-weight:normal;margin-bottom:20px;">Curabitur pharetra ac eros scelerisque. Quis odio volutpat tellus sagittis, sed pharetra!</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1106636c4c93cae36 h2" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}'><h2 style="font-weight:bold;margin-bottom:5px;">Social Media Marketing</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1106636c4c93cae36 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:28px;"}' style="font-weight:normal;margin-bottom:20px;">Curabitur pharetra ac eros scelerisque. Quis odio volutpat tellus sagittis, sed pharetra!</div>
 </div>
 <style type="text/css" data-type="the7_shortcodes-inline-css">#default-btn-2171806b424a9b8640679808da02db81.ico-right-side > i {
   margin-right: 0px;
@@ -794,10 +833,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
   box-shadow: none;
 }</style>
 <div class="shortcode-single-image-wrap shortcode-single-image-bdb60828bc3d46a986ea6a05e9e5ec16 alignnone  vc_custom_1560418174472 enable-bg-rollover dt-icon-bg-off"><div class="shortcode-single-image"><div class="fancy-media-wrap"><a href="http://Vestibulum quis – lorem euismod orci molestie. Praesent rutrum arcu sit amet tempus" class=" layzr-bg rollover" aria-label="Image"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20200%20200&#39;%2F%3E" data-src="/wp-content/uploads/sites/33/2018/11/s012-200x200.jpg" data-srcset="/wp-content/uploads/sites/33/2018/11/s012-200x200.jpg 200w, /wp-content/uploads/sites/33/2018/11/s012-400x400.jpg 400w" width="200" height="200" data-dt-location="/site33/services/s012/"></a></div></div></div>
-<div id="ultimate-heading-9475636b3bd6e0529" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-9475636b3bd6e0529 uvc-1746 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-9304636c4c93df17b" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-9304636c4c93df17b uvc-4341 " data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9475636b3bd6e0529 h2" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}'><h2 style="font-weight:bold;margin-bottom:5px;">Web Development</h2></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9475636b3bd6e0529 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:28px;"}' style="font-weight:normal;margin-bottom:20px;">Curabitur pharetra ac eros scelerisque tempor. Quis odio sagittis pharetra dolor suscipit.</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9304636c4c93df17b h2" data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}'><h2 style="font-weight:bold;margin-bottom:5px;">Web Development</h2></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-9304636c4c93df17b .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:16px;","line-height":"desktop:28px;"}' style="font-weight:normal;margin-bottom:20px;">Curabitur pharetra ac eros scelerisque tempor. Quis odio sagittis pharetra dolor suscipit.</div>
 </div>
 <style type="text/css" data-type="the7_shortcodes-inline-css">#default-btn-44d0ee78457dd2d66326c0ba59201790.ico-right-side > i {
   margin-right: 0px;
@@ -810,16 +849,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </div></div></div>
 </div>
 </div></div></div></div>
-<div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-2 vc_col-lg-8"><div class="vc_column-inner vc_custom_1560418610056"><div class="wpb_wrapper"><div id="ultimate-heading-3714636b3bd704b33" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-3714636b3bd704b33 uvc-5537 accent-subtitle-color uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-2 vc_col-lg-8"><div class="vc_column-inner vc_custom_1560418610056"><div class="wpb_wrapper"><div id="ultimate-heading-8321636c4c93e0c55" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-8321636c4c93e0c55 uvc-4051 accent-subtitle-color uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3714636b3bd704b33 h3" data-responsive-json-new='{"font-size":"","line-height":""}'><h3 style="font-weight:bold;color:#ffffff;margin-bottom:15px;">Don't decrease there goal. Increase the effort!</h3></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3714636b3bd704b33 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}' style="font-weight:bold;color:#262d37;">&#8211; The7 Modern Business &#8211;</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-8321636c4c93e0c55 h3" data-responsive-json-new='{"font-size":"","line-height":""}'><h3 style="font-weight:bold;color:#ffffff;margin-bottom:15px;">Don't decrease there goal. Increase the effort!</h3></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-8321636c4c93e0c55 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}' style="font-weight:bold;color:#262d37;">&#8211; The7 Modern Business &#8211;</div>
 </div></div></div></div></div>
 <!-- Row Backgrounds --><div class="upb_bg_img" data-ultimate-bg="url(/wp-content/uploads/sites/33/2018/12/t-img054.jpg)" data-image-id="id^1353|url^/wp-content/uploads/sites/33/2018/12/t-img054.jpg|caption^null|alt^null|title^t-img054|description^null" data-ultimate-bg-style="vcpb-vz-jquery" data-bg-img-repeat="repeat" data-bg-img-size="cover" data-bg-img-position="" data-parallx_sense="30" data-bg-override="ex-full" data-bg_img_attach="scroll" data-upb-overlay-color="rgba(38,45,55,0.5)" data-upb-bg-animation="" data-fadeout="fadeout_row_value" data-bg-animation="left-animation" data-bg-animation-type="h" data-animation-repeat="repeat" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false" data-custom-vc-row="" data-vc="6.8.0" data-is_old_vc="" data-theme-support="" data-overlay="true" data-overlay-color="rgba(38,45,55,0.5)" data-overlay-pattern="" data-overlay-pattern-opacity="0.8" data-overlay-pattern-size="" data-overlay-pattern-attachment="scroll" data-seperator="true" data-seperator-type="tilt_left_seperator" data-seperator-shape-size="40" data-seperator-svg-height="100" data-seperator-full-width="true" data-seperator-position="top_bottom_seperator" data-seperator-background-color="#fff" data-icon=""></div>
 <div class="vc_row wpb_row vc_row-fluid vc_custom_1578679719284"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
-<div id="ultimate-heading-7400636b3bd7053f5" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-7400636b3bd7053f5 uvc-9622 accent-border-color uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-1648636c4c9402fa4" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-1648636c4c9402fa4 uvc-6326 accent-border-color uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-7400636b3bd7053f5 h2" data-responsive-json-new='{"font-size":"","line-height":""}'><h2 style="--font-weight:theme;margin-bottom:60px;">Why Work With Us</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-1648636c4c9402fa4 h2" data-responsive-json-new='{"font-size":"","line-height":""}'><h2 style="--font-weight:theme;margin-bottom:60px;">Why Work With Us</h2></div>
 </div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1560419599773 vc_row-o-equal-height vc_row-o-content-middle vc_row-flex">
 <div class="wpb_column vc_column_container vc_col-sm-5"><div class="vc_column-inner vc_custom_1560419496944"><div class="wpb_wrapper">
@@ -845,10 +884,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 <div class="shortcode-single-image-wrap shortcode-single-image-a435e3cb7f1710f2c043d925c8ef8fc2 alignnone  enable-bg-rollover dt-icon-bg-off" style="margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; width:800px;"><div class="shortcode-single-image"><div class="fancy-media-wrap  layzr-bg"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20800%20500&#39;%2F%3E" data-src="/wp-content/uploads/sites/33/2018/11/im001-800x500.jpg" data-srcset="/wp-content/uploads/sites/33/2018/11/im001-800x500.jpg 800w, /wp-content/uploads/sites/33/2018/11/im001-1200x750.jpg 1200w" width="800" height="500" data-dt-location="/site33/2018/11/02/lorem-ipsum-blog-post/im001/"></div></div></div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-7"><div class="vc_column-inner vc_custom_1560419503231"><div class="wpb_wrapper">
-<div id="ultimate-heading-3201636b3bd93a6b5" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-3201636b3bd93a6b5 uvc-6784 accent-subtitle-color" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div id="ultimate-heading-3625636c4c9404d84" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-3625636c4c9404d84 uvc-7586 accent-subtitle-color" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3201636b3bd93a6b5 h4" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:40px;"}'><h4 style="font-weight:bold;margin-bottom:5px;">12 years of experience</h4></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3201636b3bd93a6b5 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-weight:normal;margin-bottom:20px;">Fusce dapibus congue diam &#8211; from nulla dapibus interdum condimentum.</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3625636c4c9404d84 h4" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:40px;"}'><h4 style="font-weight:bold;margin-bottom:5px;">12 years of experience</h4></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3625636c4c9404d84 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-weight:normal;margin-bottom:20px;">Fusce dapibus congue diam &#8211; from nulla dapibus interdum condimentum.</div>
 </div>
 	<div class="wpb_text_column wpb_content_element ">
 		<div class="wpb_wrapper">
@@ -882,10 +921,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 <div class="shortcode-single-image-wrap shortcode-single-image-f61aa0f7016e3558f29264702b484aff alignnone  enable-bg-rollover dt-icon-bg-off" style="margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; width:800px;"><div class="shortcode-single-image"><div class="fancy-media-wrap  layzr-bg"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20800%20500&#39;%2F%3E" data-src="/wp-content/uploads/sites/33/2018/11/img020-800x500.jpg" data-srcset="/wp-content/uploads/sites/33/2018/11/img020-800x500.jpg 800w, /wp-content/uploads/sites/33/2018/11/img020-1200x750.jpg 1200w" width="800" height="500" data-dt-location="/site33/2018/11/14/curabitur-ut-felis-vel-mi-finibus-post-with-cover/img020/"></div></div></div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-7"><div class="vc_column-inner vc_custom_1560419503231"><div class="wpb_wrapper">
-<div id="ultimate-heading-215636b3bdae1787" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-215636b3bdae1787 uvc-7043 accent-subtitle-color" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div id="ultimate-heading-2556636c4c941c58b" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2556636c4c941c58b uvc-4336 accent-subtitle-color" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-215636b3bdae1787 h4" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:40px;"}'><h4 style="font-weight:bold;margin-bottom:5px;">Modern equipment</h4></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-215636b3bdae1787 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-weight:normal;margin-bottom:20px;">Pellentesque – scelerisq vulputate egestas ex aliquam eu!</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2556636c4c941c58b h4" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:40px;"}'><h4 style="font-weight:bold;margin-bottom:5px;">Modern equipment</h4></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2556636c4c941c58b .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-weight:normal;margin-bottom:20px;">Pellentesque – scelerisq vulputate egestas ex aliquam eu!</div>
 </div>
 	<div class="wpb_text_column wpb_content_element ">
 		<div class="wpb_wrapper">
@@ -920,10 +959,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 <div class="shortcode-single-image-wrap shortcode-single-image-3523b557edfca0ec61c94abe7c641199 alignnone  enable-bg-rollover dt-icon-bg-off" style="margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; width:800px;"><div class="shortcode-single-image"><div class="fancy-media-wrap  layzr-bg"><img class="preload-me lazy-load" src="data:image/svg+xml,%3Csvg%20xmlns%3D&#39;http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg&#39;%20viewBox%3D&#39;0%200%20800%20500&#39;%2F%3E" data-src="/wp-content/uploads/sites/33/2018/10/gut006-1-800x500.jpg" data-srcset="/wp-content/uploads/sites/33/2018/10/gut006-1-800x500.jpg 800w, /wp-content/uploads/sites/33/2018/10/gut006-1-1200x750.jpg 1200w" width="800" height="500" data-dt-location="/site33/home/gut006-2/"></div></div></div>
 </div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-7"><div class="vc_column-inner vc_custom_1560419503231"><div class="wpb_wrapper">
-<div id="ultimate-heading-3065636b3bdd7ef4b" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-3065636b3bdd7ef4b uvc-744 accent-subtitle-color" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
+<div id="ultimate-heading-6152636c4c941fb85" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-6152636c4c941fb85 uvc-2265 accent-subtitle-color" data-hspacer="no_spacer" data-halign="left" style="text-align:left">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3065636b3bdd7ef4b h4" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:40px;"}'><h4 style="font-weight:bold;margin-bottom:5px;">Professional team</h4></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3065636b3bdd7ef4b .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-weight:normal;margin-bottom:20px;">Praesent rutrum arcu sit amet tempus suscipit.</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6152636c4c941fb85 h4" data-responsive-json-new='{"font-size":"desktop:30px;","line-height":"desktop:40px;"}'><h4 style="font-weight:bold;margin-bottom:5px;">Professional team</h4></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6152636c4c941fb85 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}' style="font-weight:normal;margin-bottom:20px;">Praesent rutrum arcu sit amet tempus suscipit.</div>
 </div>
 	<div class="wpb_text_column wpb_content_element ">
 		<div class="wpb_wrapper">
@@ -938,9 +977,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 <div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_row-no-padding"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1560847982746"><div class="wpb_wrapper"><div class="hr-thin style-dashed" style="width: 100%;border-color: rgba(147,194,72,0.3);border-top-width: 3px;"></div></div></div></div></div>
 <div class="vc_row-full-width vc_clearfix"></div>
 <div class="vc_row wpb_row vc_row-fluid vc_custom_1560848024112"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
-<div id="ultimate-heading-8669636b3bdd7fcc5" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-8669636b3bdd7fcc5 uvc-1378 accent-border-color uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-8064636c4c9433d04" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-8064636c4c9433d04 uvc-1693 accent-border-color uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-8669636b3bdd7fcc5 h2" data-responsive-json-new='{"font-size":"","line-height":""}'><h2 style="--font-weight:theme;margin-bottom:60px;">Testimonials</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-8064636c4c9433d04 h2" data-responsive-json-new='{"font-size":"","line-height":""}'><h2 style="--font-weight:theme;margin-bottom:60px;">Testimonials</h2></div>
 </div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid">
 <div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper">
@@ -987,16 +1026,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
 }</style>
 <div class="btn-align-center"><a href="/modern-business/testimonials/" class="default-btn-shortcode dt-btn dt-btn-m link-hover-off ico-right-side " id="default-btn-924972a19d95221859f6ecc85913e6cd" style="width:300px;"><span>Read more testimonials</span><i class="Defaults-arrow-right"></i></a></div>
 </div></div></div></div>
-<div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-2 vc_col-lg-8"><div class="vc_column-inner vc_custom_1560418610056"><div class="wpb_wrapper"><div id="ultimate-heading-2626636b3bdd9aa15" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2626636b3bdd9aa15 uvc-421 accent-subtitle-color uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-2 vc_col-lg-8"><div class="vc_column-inner vc_custom_1560418610056"><div class="wpb_wrapper"><div id="ultimate-heading-2727636c4c944bf10" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-2727636c4c944bf10 uvc-102 accent-subtitle-color uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2626636b3bdd9aa15 h3" data-responsive-json-new='{"font-size":"","line-height":""}'><h3 style="font-weight:bold;color:#ffffff;margin-bottom:15px;">Our reputation is the proof!</h3></div>
-<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2626636b3bdd9aa15 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}' style="font-weight:bold;color:#262d37;">&#8211; The7 Modern Business &#8211;</div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2727636c4c944bf10 h3" data-responsive-json-new='{"font-size":"","line-height":""}'><h3 style="font-weight:bold;color:#ffffff;margin-bottom:15px;">Our reputation is the proof!</h3></div>
+<div class="uvc-sub-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-2727636c4c944bf10 .uvc-sub-heading " data-responsive-json-new='{"font-size":"desktop:24px;","line-height":"desktop:34px;"}' style="font-weight:bold;color:#262d37;">&#8211; The7 Modern Business &#8211;</div>
 </div></div></div></div></div>
 <!-- Row Backgrounds --><div class="upb_bg_img" data-ultimate-bg="url(/wp-content/uploads/sites/33/2018/12/t-img047.jpg)" data-image-id="id^1350|url^/wp-content/uploads/sites/33/2018/12/t-img047.jpg|caption^null|alt^null|title^t-img047|description^null" data-ultimate-bg-style="vcpb-vz-jquery" data-bg-img-repeat="repeat" data-bg-img-size="cover" data-bg-img-position="" data-parallx_sense="30" data-bg-override="ex-full" data-bg_img_attach="scroll" data-upb-overlay-color="rgba(38,45,55,0.5)" data-upb-bg-animation="" data-fadeout="fadeout_row_value" data-bg-animation="left-animation" data-bg-animation-type="h" data-animation-repeat="repeat" data-fadeout-percentage="30" data-parallax-content="" data-parallax-content-sense="30" data-row-effect-mobile-disable="true" data-img-parallax-mobile-disable="true" data-rtl="false" data-custom-vc-row="" data-vc="6.8.0" data-is_old_vc="" data-theme-support="" data-overlay="true" data-overlay-color="rgba(38,45,55,0.5)" data-overlay-pattern="" data-overlay-pattern-opacity="0.8" data-overlay-pattern-size="" data-overlay-pattern-attachment="scroll" data-seperator="true" data-seperator-type="tilt_left_seperator" data-seperator-shape-size="40" data-seperator-svg-height="100" data-seperator-full-width="true" data-seperator-position="top_bottom_seperator" data-seperator-background-color="#fff" data-icon=""></div>
 <div class="vc_row wpb_row vc_row-fluid vc_custom_1578679631788"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
-<div id="ultimate-heading-3852636b3bddae023" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-3852636b3bddae023 uvc-7701 accent-border-color uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-5664636c4c944d54c" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-5664636c4c944d54c uvc-39 accent-border-color uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-3852636b3bddae023 h2" data-responsive-json-new='{"font-size":"","line-height":""}'><h2 style="--font-weight:theme;margin-bottom:60px;">Our Team</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-5664636c4c944d54c h2" data-responsive-json-new='{"font-size":"","line-height":""}'><h2 style="--font-weight:theme;margin-bottom:60px;">Our Team</h2></div>
 </div>
 <style type="text/css" data-type="the7_shortcodes-inline-css">.dt-team-shortcode.team-masonry-shortcode-id-97f81be77790cfa508b5afdf9325c6bd .team-desc {
   padding: 0px 0px 0px 0px;
@@ -1190,9 +1229,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 <div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_custom_1560848043109 vc_row-no-padding"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="hr-thin style-dashed" style="width: 100%;border-color: rgba(147,194,72,0.3);border-top-width: 3px;"></div></div></div></div></div>
 <div class="vc_row-full-width vc_clearfix"></div>
 <div class="vc_row wpb_row vc_row-fluid vc_custom_1560848049152"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
-<div id="ultimate-heading-4026636b3bdf03e28" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-4026636b3bdf03e28 uvc-1940 accent-border-color uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-6073636c4c94adf4a" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-6073636c4c94adf4a uvc-6615 accent-border-color uvc-heading-default-font-sizes" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-4026636b3bdf03e28 h2" data-responsive-json-new='{"font-size":"","line-height":""}'><h2 style="--font-weight:theme;margin-bottom:60px;">Latest News</h2></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-6073636c4c94adf4a h2" data-responsive-json-new='{"font-size":"","line-height":""}'><h2 style="--font-weight:theme;margin-bottom:60px;">Latest News</h2></div>
 </div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid">
 <div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner vc_custom_1560954151605"><div class="wpb_wrapper">
@@ -1726,9 +1765,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </div>
 <div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1560954179248 vc_row-has-fill vc_row-o-equal-height vc_row-o-content-middle vc_row-flex">
 <div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner vc_custom_1560692455652"><div class="wpb_wrapper">
-<div id="ultimate-heading-8641636b3be7ae5c5" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-8641636b3be7ae5c5 uvc-1169 accent-border-color" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
+<div id="ultimate-heading-8818636c4c954f32f" class="uvc-heading ult-adjust-bottom-margin ultimate-heading-8818636c4c954f32f uvc-8589 accent-border-color" data-hspacer="no_spacer" data-halign="center" style="text-align:center">
 <div class="uvc-heading-spacer no_spacer" style="top"></div>
-<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-8641636b3be7ae5c5 h4" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}'><h4 style="font-weight:bold;margin-bottom:10px;">FROM OUR GALLERY</h4></div>
+<div class="uvc-main-heading ult-responsive" data-ultimate-target=".uvc-heading.ultimate-heading-8818636c4c954f32f h4" data-responsive-json-new='{"font-size":"desktop:20px;","line-height":"desktop:30px;"}'><h4 style="font-weight:bold;margin-bottom:10px;">FROM OUR GALLERY</h4></div>
 </div>
 <style type="text/css" data-type="the7_shortcodes-inline-css">#default-btn-2c70adf0a66ffd61f9d041dee7300120.ico-right-side > i {
   margin-right: 0px;
